@@ -3,6 +3,8 @@
 Standalone GitHub Pages site for reviewing production Text-to-SVG outputs
 against the validation ground truth and three reference model outputs.
 
+Live site: https://jaejung-dev.github.io/text-to-svg-web/
+
 ## Build Data
 
 The source validation prompts and reference renders are read from
@@ -31,5 +33,5 @@ Open `http://localhost:8010`.
 
 ## Publish
 
-This is a static site. Push this directory to a GitHub repository and enable
-GitHub Pages from the repository root.
+This is a static site. GitHub Pages is configured from the repository root on
+the `master` branch.
