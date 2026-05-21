@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Texture for the floor underneath the rug -->
+    <filter id="floorNoise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.3 0" in="noise" result="turbulence"/>
+      <feComposite operator="in" in="turbulence" in2="SourceGraphic" result="composite"/>
+      <feBlend mode="multiply" in="composite" in2="SourceGraphic" />
+    </filter>
+
+    <!-- Gradient for the carpet fibers/shading -->
+    <radialGradient id="carpetGradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#8a0015" /> <!-- Lighter center -->
+      <stop offset="40%" stop-color="#5c000f" />
+      <stop offset="100%" stop-color="#2a0005" /> <!-- Dark edges -->
+    </radialGradient>
+
+    <!-- Glowing Gold Gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700" />
+      <stop offset="50%" stop-color="#b8860b" />
+      <stop offset="100%" stop-color="#ffd700" />
+    </linearGradient>
+    
+    <!-- Cyberpunk Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background: The Floor (Dark, Industrial) -->
+  <rect x="0" y="0" width="512" height="512" fill="#1a1a1a" />
+  <rect x="0" y="0" width="512" height="512" filter="url(#floorNoise)" opacity="0.6" />
+
+  <!-- Rug Shape: Rectangular with slightly irregular organic edges -->
+  <g id="rug" transform="translate(256, 256)">
+    <!-- Main Rug Body -->
+    <path d="M-220,-220 L220,-220 C240,-220 250,-210 250,-190 L250,190 C250,210 240,220 220,220 L-220,220 C-240,220 -250,210 -250,190 L-250,-190 C-250,-210 -240,-220 -220,-220 Z" 
+          fill="url(#carpetGradient)" stroke="#100000" stroke-width="4" />
+    
+    <!-- Inner Border Pattern (Persian Style Abstract) -->
+    <g stroke="#ffd700" stroke-width="2" fill="none" opacity="0.8">
+      <!-- Main Border -->
+      <path d="M-200,-200 L200,-200 L200,200 L-200,200 Z" stroke-dasharray="10,5" opacity="0.6" />
+      
+      <!-- Corner Accents -->
+      <circle cx="180" cy="180" r="12" fill="none" stroke="url(#goldGradient)" stroke-width="3" />
+      <circle cx="-180" cy="180" r="12" fill="none" stroke="url(#goldGradient)" stroke-width="3" />
+      <circle cx="180" cy="-180" r="12" fill="none" stroke="url(#goldGradient)" stroke-width="3" />
+      <circle cx="-180" cy="-180" r="12" fill="none" stroke="url(#goldGradient)" stroke-width="3" />
+    </g>
+
+    <!-- Central Medallion / Corporate Crest (Abstract) -->
+    <g transform="translate(0,0)" opacity="0.9">
+      <!-- Outer Ring -->
+      <circle cx="0" cy="0" r="80" fill="none" stroke="url(#goldGradient)" stroke-width="4" filter="url(#glow)" />
+      <!-- Inner Geometric Pattern -->
+      <polygon points="0,-60 30,-30 30,30 0,60 -30,30 -30,-30" fill="#ffd700" opacity="0.9" />
+      <circle cx="0" cy="0" r="20" fill="#2a0005" />
+      <!-- Subtle Cyber Lines radiating out -->
+      <g stroke="#ff3333" stroke-width="1" opacity="0.3">
+        <line x1="0" y1="-60" x2="0" y2="-90" />
+        <line x1="0" y1="60" x2="0" y2="90" />
+        <line x1="-60" y1="0" x2="-90" y2="0" />
+        <line x1="60" y1="0" x2="90" y2="0" />
+        <line x1="-42" y1="-42" x2="-65" y2="-65" />
+        <line x1="42" y1="-42" x2="65" y2="-65" />
+        <line x1="42" y1="42" x2="65" y2="65" />
+        <line x1="-42" y1="42" x2="-65" y2="65" />
+      </g>
+    </g>
+
+    <!-- Texture Overlay: Vertical fiber lines -->
+    <g stroke="#000000" stroke-width="1" opacity="0.15">
+      <line x1="-150" y1="-250" x2="-150" y2="250" />
+      <line x1="-100" y1="-250" x2="-100" y2="250" />
+      <line x1="-50" y1="-250" x2="-50" y2="250" />
+      <line x1="50" y1="-250" x2="50" y2="250" />
+      <line x1="100" y1="-250" x2="100" y2="250" />
+      <line x1="150" y1="-250" x2="150" y2="250" />
+      <line x1="0" y1="-250" x2="0" y2="250" />
+    </g>
+
+    <!-- Shadow for depth -->
+    <path d="M-220,-220 L220,-220 C240,-220 250,-210 250,-190 L250,190 C250,210 240,220 220,220 L-220,220 C-240,220 -250,210 -250,190 L-250,-190 C-250,-210 -240,-220 -220,-220 Z" 
+          fill="url(#carpetGradient)" stroke="none" transform="translate(4, 4)" opacity="0.3" />
+  </g>
+  
+  <!-- Ambient Light Reflections (Cyberpunk Neon) -->
+  <rect x="0" y="0" width="512" height="512" fill="url(#lightOverlay)" pointer-events="none" style="mix-blend-mode: overlay;" />
+  <linearGradient id="lightOverlay" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#2a0005" stop-opacity="0" />
+    <stop offset="50%" stop-color="#500000" stop-opacity="0.1" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.4" />
+  </linearGradient>
+</svg>

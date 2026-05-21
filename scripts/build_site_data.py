@@ -21,6 +21,18 @@ ASSETS_DIR = PROJECT_ROOT / "assets"
 DATA_PATH = PROJECT_ROOT / "data" / "site-data.json"
 DEFAULT_ENDPOINT = "https://model-qklg45d3.api.baseten.co/environments/production/predict"
 BASELINE_ORDER = ["gt", "claude", "gemini", "gpt-5.2"]
+PROMPT_PAIR_TEXTS = [
+    "Design a modern logo to illustrate the concept of SAP BASIS Support. You may include the shape of the SAP logo, but without the letters SAP.",
+    "Create an icon for an sftp dlp feature",
+    "illustrate a mountain scene with an eagle above",
+    "Make a design",
+    "Create a single SVG tile for a 2D top-down game map. This tile represents a luxury ornate crimson carpet/rug viewed from directly above, used for the executive floor of a cyberpunk corporate tower owned by a powerful female CEO. It should evoke dark opulence — think Persian rug meets corporate noir.",
+    "i want a logo for GhostVector",
+    "Il progetto prevede l'apertura di una lavanderia automatica self-service nel centro città e vicino alla zona universitaria in Burkina Faso. Il target principale è composto da studenti, lavoratori e residenti urbani. L'attività offrirà lavaggio e asciugatura automatica con sistemi di pagamento moderni (contanti e mobile money), riducendo i costi di personale.",
+    "Create a professional logo for a communications company called Bell",
+    "Design a modern logo to illustrate the concept of SAP BASIS Support. You may include the shape of the SAP logo, but without the letters SAP.",
+    "Une appli pour mon graveur laser ATOMSTAK P1 pour importer un fichier Lightburn et l’exporter en SVG",
+]
 
 
 def asset_name(group_id: str, source: str, original_path: str) -> str:
@@ -68,20 +80,96 @@ def call_text_to_svg(endpoint: str, api_key: str, prompt: str, seed: int, timeou
     return payload
 
 
-def load_existing_generations() -> dict[str, dict[str, Any]]:
+def load_existing_data() -> dict[str, Any]:
     if not DATA_PATH.exists():
         return {}
-    data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+    return json.loads(DATA_PATH.read_text(encoding="utf-8"))
+
+
+def load_existing_generations(existing_data: dict[str, Any]) -> dict[str, dict[str, Any]]:
     return {
         sample["id"]: sample["generated"]
-        for sample in data.get("samples", [])
+        for sample in existing_data.get("samples", [])
         if sample.get("generated", {}).get("asset")
     }
 
 
+def load_existing_prompt_pairs(existing_data: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    return {
+        pair["id"]: pair["generated"]
+        for pair in existing_data.get("prompt_pairs", [])
+        if pair.get("generated", {}).get("asset")
+    }
+
+
+def build_prompt_pairs(args: argparse.Namespace, api_key: str, existing_data: dict[str, Any]) -> list[dict[str, Any]]:
+    existing_pairs = load_existing_prompt_pairs(existing_data)
+    pairs: list[dict[str, Any]] = []
+
+    for index, prompt in enumerate(PROMPT_PAIR_TEXTS, start=1):
+        pair_id = f"prompt-pair-{index:02d}"
+        generated_asset = f"assets/{pair_id}.svg"
+        generated_path = PROJECT_ROOT / generated_asset
+        generated = existing_pairs.get(pair_id, {})
+
+        if generated_path.exists() and generated and not args.force_prompt_pairs:
+            print(f"[prompt {index}/{len(PROMPT_PAIR_TEXTS)}] cached generation {pair_id}")
+        elif args.skip_generation or args.skip_prompt_pairs:
+            generated = {
+                "source": "text-to-svg-production",
+                "label": "Text-to-SVG Production",
+                "asset": generated_asset if generated_path.exists() else None,
+                "status": "cached" if generated_path.exists() else "not_generated",
+            }
+        else:
+            if not api_key:
+                raise RuntimeError("Set BASETEN_API_KEY or pass --api-key to generate prompt pair outputs.")
+            print(f"[prompt {index}/{len(PROMPT_PAIR_TEXTS)}] generating text-to-SVG output for {pair_id}")
+            result = call_text_to_svg(
+                endpoint=args.endpoint,
+                api_key=api_key,
+                prompt=prompt,
+                seed=args.prompt_pair_seed + index - 1,
+                timeout=args.timeout,
+            )
+            svg = result.get("svg") or ""
+            if not svg:
+                raise RuntimeError(f"No SVG returned for {pair_id}: {result}")
+            generated_path.write_text(svg, encoding="utf-8")
+            generated = {
+                "source": "text-to-svg-production",
+                "label": "Text-to-SVG Production",
+                "asset": generated_asset,
+                "status": "ok",
+                "svg_parse_error": result.get("svg_parse_error") or svg_parse_error(svg),
+                "input_tokens": result.get("input_tokens"),
+                "output_tokens": result.get("output_tokens"),
+                "elapsed_seconds": round(float(result.get("elapsed_seconds", 0.0)), 3),
+                "seed": args.prompt_pair_seed + index - 1,
+            }
+            print(
+                "  "
+                f"out={generated['output_tokens']} tokens, "
+                f"{generated['elapsed_seconds']}s, "
+                f"parse={generated['svg_parse_error']}"
+            )
+
+        pairs.append(
+            {
+                "id": pair_id,
+                "index": index,
+                "prompt": prompt,
+                "generated": generated,
+            }
+        )
+
+    return pairs
+
+
 def build_site_data(args: argparse.Namespace) -> dict[str, Any]:
     report = json.loads(SOURCE_REPORT.read_text(encoding="utf-8"))
-    existing_generations = load_existing_generations()
+    existing_data = load_existing_data()
+    existing_generations = load_existing_generations(existing_data)
     api_key = args.api_key or os.getenv("BASETEN_API_KEY", "")
 
     samples: list[dict[str, Any]] = []
@@ -157,11 +245,14 @@ def build_site_data(args: argparse.Namespace) -> dict[str, Any]:
             }
         )
 
+    prompt_pairs = build_prompt_pairs(args=args, api_key=api_key, existing_data=existing_data)
+
     return {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source_report": str(SOURCE_REPORT),
         "generation_endpoint": args.endpoint,
         "samples": samples,
+        "prompt_pairs": prompt_pairs,
     }
 
 
@@ -174,6 +265,9 @@ def main() -> int:
     parser.add_argument("--limit", type=int)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--skip-generation", action="store_true")
+    parser.add_argument("--prompt-pair-seed", type=int, default=2026052101)
+    parser.add_argument("--force-prompt-pairs", action="store_true")
+    parser.add_argument("--skip-prompt-pairs", action="store_true")
     args = parser.parse_args()
 
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)

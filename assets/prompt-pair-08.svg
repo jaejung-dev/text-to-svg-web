@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
+  <!-- Background (optional transparent placeholder) -->
+  <rect width="100%" height="100%" fill="none"/>
+
+  <!-- Logo Icon: Stylized Bell -->
+  <!-- The bell is composed of a main body and a clapper, forming a dynamic 'B' shape implicitly -->
+  <g id="bell-icon" transform="translate(40, 15)">
+    <!-- Main Bell Body (Curved Shape) -->
+    <path id="bell-body" 
+          d="M 25 20 
+             C 25 0, 55 0, 55 20 
+             L 55 35 
+             C 65 35, 70 45, 65 55 
+             C 60 65, 45 65, 45 65 
+             C 45 65, 30 65, 25 55 
+             C 20 45, 25 35, 35 35 
+             L 35 20 
+             C 35 0, 5 0, 5 20 
+             L 5 25 
+             L 25 25 
+             L 25 20 Z" 
+          fill="#003366"/>
+    
+    <!-- Bell Clapper / Inner Accent (White negative space concept or accent shape) -->
+    <path id="bell-clapper" 
+          d="M 25 30 
+             C 25 15, 45 15, 45 30 
+             L 45 45 
+             C 40 40, 30 40, 25 45 
+             Z" 
+          fill="#E3F2FD"/>
+    
+    <!-- Sound Wave (Representing Communication) -->
+    <path id="sound-wave" 
+          d="M 15 50 
+             Q 20 45, 25 50 
+             T 35 50 
+             T 45 50" 
+          stroke="#E3F2FD" 
+          stroke-width="2" 
+          fill="none" 
+          stroke-dasharray="4,2"
+          opacity="0.8"/>
+  </g>
+
+  <!-- Company Name Typography -->
+  <g id="company-name" transform="translate(105, 75)">
+    <!-- Text: "BELL" in a strong, professional sans-serif font -->
+    <text font-family="'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif" 
+          font-size="32" 
+          font-weight="700" 
+          letter-spacing="1.5" 
+          fill="#003366">
+      BELL
+    </text>
+    
+    <!-- Tagline (Subtext) -->
+    <text x="0" y="18" 
+          font-family="'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif" 
+          font-size="10" 
+          letter-spacing="2.5" 
+          fill="#666666" 
+          text-anchor="start">
+      COMMUNICATIONS
+    </text>
+  </g>
+  
+  <!-- Separator Line -->
+  <line x1="34" y1="60" x2="34" y2="90" stroke="#CCCCCC" stroke-width="1"/>
+</svg>

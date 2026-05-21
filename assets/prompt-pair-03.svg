@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Sky Gradient Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F7FA;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Eagle Gradient -->
+    <linearGradient id="eagleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5D4037;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3E2723;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#skyGradient)" />
+
+  <!-- Sun -->
+  <circle cx="700" cy="100" r="40" fill="#FFD54F" opacity="0.8" />
+
+  <!-- Clouds -->
+  <g fill="white" opacity="0.8">
+    <circle cx="150" cy="120" r="25" />
+    <circle cx="180" cy="110" r="30" />
+    <circle cx="210" cy="125" r="25" />
+    
+    <circle cx="500" cy="150" r="20" />
+    <circle cx="530" cy="140" r="25" />
+    <circle cx="560" cy="155" r="20" />
+  </g>
+
+  <!-- Distant Mountains -->
+  <g id="distant-mountains" fill="#5C6BC0">
+    <path d="M0,600 L150,400 L300,500 L450,350 L600,480 L750,380 L900,600 Z" opacity="0.7" />
+    <path d="M100,600 L200,450 L350,550 L500,400 L650,520 L800,430 L950,600 Z" opacity="0.5" />
+  </g>
+
+  <!-- Foreground Mountains -->
+  <g id="foreground-mountains" fill="#37474F">
+    <path d="M0,600 L200,350 L400,500 L600,300 L800,450 L1000,600 Z" />
+    <path d="M200,600 L350,450 L500,550 L650,400 L850,520 L1000,600 Z" opacity="0.8" />
+  </g>
+
+  <!-- Pine Trees -->
+  <g id="trees" fill="#1B5E20">
+    <!-- Tree 1 -->
+    <polygon points="100,600 80,520 120,520" />
+    <polygon points="100,520 75,460 125,460" />
+    <polygon points="100,460 85,400 115,400" />
+    
+    <!-- Tree 2 -->
+    <polygon points="700,600 680,540 720,540" />
+    <polygon points="700,540 670,480 730,480" />
+    <polygon points="700,480 685,430 715,430" />
+    
+    <!-- Tree 3 -->
+    <polygon points="50,600 40,560 60,560" />
+    <polygon points="50,560 35,520 65,520" />
+  </g>
+
+  <!-- Eagle -->
+  <g id="eagle" transform="translate(400, 150) scale(1.2)">
+    <!-- Left Wing -->
+    <path d="M0,0 Q-40,-30 -80,-20 Q-100,-50 -120,-30 Q-80,-10 0,0" fill="url(#eagleGradient)" />
+    
+    <!-- Right Wing -->
+    <path d="M0,0 Q40,-30 80,-20 Q100,-50 120,-30 Q80,-10 0,0" fill="url(#eagleGradient)" />
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="15" rx="15" ry="25" fill="#4E342E" />
+    
+    <!-- Head -->
+    <circle cx="0" cy="-15" r="12" fill="#FFFFFF" />
+    <circle cx="3" cy="-15" r="2" fill="#000000" /> <!-- Eye -->
+    
+    <!-- Beak -->
+    <path d="M-3,-15 L5,-12 L-3,-10 Z" fill="#FFA000" />
+    
+    <!-- Tail Feathers -->
+    <path d="M-10,30 Q0,45 10,30 Q0,40 -10,30" fill="#4E342E" />
+  </g>
+
+  <!-- Ground/Grass -->
+  <rect y="580" width="800" height="20" fill="#4CAF50" />
+</svg>

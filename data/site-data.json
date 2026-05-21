@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21 12:40 UTC",
+  "generated_at": "2026-05-21 14:43 UTC",
   "source_report": "/home/ubuntu/lica-score-web/report-data.json",
   "generation_endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
   "samples": [
@@ -572,6 +572,168 @@
           "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-gpt-5-2-8bd9b4f67f.png"
         }
       ]
+    }
+  ],
+  "prompt_pairs": [
+    {
+      "id": "prompt-pair-01",
+      "index": 1,
+      "prompt": "Design a modern logo to illustrate the concept of SAP BASIS Support. You may include the shape of the SAP logo, but without the letters SAP.",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-01.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 106,
+        "output_tokens": 896,
+        "elapsed_seconds": 305.901,
+        "seed": 2026052101
+      }
+    },
+    {
+      "id": "prompt-pair-02",
+      "index": 2,
+      "prompt": "Create an icon for an sftp dlp feature",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-02.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 87,
+        "output_tokens": 408,
+        "elapsed_seconds": 3.723,
+        "seed": 2026052102
+      }
+    },
+    {
+      "id": "prompt-pair-03",
+      "index": 3,
+      "prompt": "illustrate a mountain scene with an eagle above",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-03.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 85,
+        "output_tokens": 1494,
+        "elapsed_seconds": 11.496,
+        "seed": 2026052103
+      }
+    },
+    {
+      "id": "prompt-pair-04",
+      "index": 4,
+      "prompt": "Make a design",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-04.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 80,
+        "output_tokens": 1436,
+        "elapsed_seconds": 11.193,
+        "seed": 2026052104
+      }
+    },
+    {
+      "id": "prompt-pair-05",
+      "index": 5,
+      "prompt": "Create a single SVG tile for a 2D top-down game map. This tile represents a luxury ornate crimson carpet/rug viewed from directly above, used for the executive floor of a cyberpunk corporate tower owned by a powerful female CEO. It should evoke dark opulence — think Persian rug meets corporate noir.",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-05.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 140,
+        "output_tokens": 2200,
+        "elapsed_seconds": 16.469,
+        "seed": 2026052105
+      }
+    },
+    {
+      "id": "prompt-pair-06",
+      "index": 6,
+      "prompt": "i want a logo for GhostVector",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-06.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 84,
+        "output_tokens": 943,
+        "elapsed_seconds": 7.182,
+        "seed": 2026052106
+      }
+    },
+    {
+      "id": "prompt-pair-07",
+      "index": 7,
+      "prompt": "Il progetto prevede l'apertura di una lavanderia automatica self-service nel centro città e vicino alla zona universitaria in Burkina Faso. Il target principale è composto da studenti, lavoratori e residenti urbani. L'attività offrirà lavaggio e asciugatura automatica con sistemi di pagamento moderni (contanti e mobile money), riducendo i costi di personale.",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-07.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 147,
+        "output_tokens": 3490,
+        "elapsed_seconds": 26.055,
+        "seed": 2026052107
+      }
+    },
+    {
+      "id": "prompt-pair-08",
+      "index": 8,
+      "prompt": "Create a professional logo for a communications company called Bell",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-08.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 87,
+        "output_tokens": 828,
+        "elapsed_seconds": 6.363,
+        "seed": 2026052108
+      }
+    },
+    {
+      "id": "prompt-pair-09",
+      "index": 9,
+      "prompt": "Design a modern logo to illustrate the concept of SAP BASIS Support. You may include the shape of the SAP logo, but without the letters SAP.",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-09.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 106,
+        "output_tokens": 1211,
+        "elapsed_seconds": 9.115,
+        "seed": 2026052109
+      }
+    },
+    {
+      "id": "prompt-pair-10",
+      "index": 10,
+      "prompt": "Une appli pour mon graveur laser ATOMSTAK P1 pour importer un fichier Lightburn et l’exporter en SVG",
+      "generated": {
+        "source": "text-to-svg-production",
+        "label": "Text-to-SVG Production",
+        "asset": "assets/prompt-pair-10.svg",
+        "status": "ok",
+        "svg_parse_error": null,
+        "input_tokens": 104,
+        "output_tokens": 3277,
+        "elapsed_seconds": 24.473,
+        "seed": 2026052110
+      }
     }
   ]
 }

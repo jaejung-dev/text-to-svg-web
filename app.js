@@ -94,6 +94,33 @@ function renderSample(sample, index) {
   `;
 }
 
+function renderPromptPair(pair) {
+  const generated = pair.generated || {};
+  const meta = generated.status === "ok"
+    ? [
+      generated.output_tokens != null ? `${generated.output_tokens} output tokens` : null,
+      generated.elapsed_seconds != null ? `${generated.elapsed_seconds}s` : null,
+      generated.svg_parse_error ? `parse: ${generated.svg_parse_error}` : "valid SVG",
+    ].filter(Boolean).join(" · ")
+    : "Generation pending";
+
+  return `
+    <article class="prompt-pair-card">
+      <div class="prompt-panel">
+        <div class="pair-kicker">Prompt ${escapeHtml(pair.index)}</div>
+        <p>${escapeHtml(pair.prompt)}</p>
+      </div>
+      <div class="pair-output-card">
+        <div class="pair-image-wrap">${assetElement(generated)}</div>
+        <div class="pair-output-meta">
+          <strong>Text-to-SVG Production</strong>
+          <span>${escapeHtml(meta)}</span>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
 async function main() {
   const data = await fetch(`data/site-data.json?v=${Date.now()}`).then((response) => {
     if (!response.ok) throw new Error(`Failed to load site data: ${response.status}`);
@@ -113,6 +140,9 @@ async function main() {
     .map((sample) => sample.generated?.asset)
     .filter(Boolean)
     .map((asset) => `<div class="strip-tile"><img src="${escapeHtml(asset)}" alt="Generated preview" loading="lazy" /></div>`)
+    .join("");
+  document.getElementById("prompt-pairs-grid").innerHTML = (data.prompt_pairs || [])
+    .map(renderPromptPair)
     .join("");
 
   function draw() {
