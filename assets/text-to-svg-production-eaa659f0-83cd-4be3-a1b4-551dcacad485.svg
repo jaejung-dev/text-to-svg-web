@@ -1,0 +1,80 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transparent Background (Implicit) -->
+
+  <!-- Browser Window Container -->
+  <g id="browser-window" transform="translate(50, 40)">
+    
+    <!-- Window Frame / Header Bar -->
+    <rect x="0" y="0" width="300" height="40" fill="#FFD93D" rx="6" />
+    
+    <!-- Window Controls (Three Dots) -->
+    <circle cx="240" cy="20" r="4" fill="#333333" />
+    <circle cx="255" cy="20" r="4" fill="#333333" />
+    <circle cx="270" cy="20" r="4" fill="#333333" />
+
+    <!-- Content Area Background -->
+    <rect x="0" y="40" width="300" height="260" fill="#FFFFFF" rx="0 0 6 6" />
+
+    <!-- Desk Surface (Yellow) -->
+    <rect x="20" y="180" width="260" height="120" fill="#FFD93D" rx="4" />
+
+    <!-- Stack of Lined Paper -->
+    <g id="paper-stack" transform="translate(80, 160)">
+      <!-- Back Sheets -->
+      <rect x="0" y="10" width="100" height="100" fill="#F0F0F0" rx="2" />
+      <rect x="0" y="15" width="100" height="100" fill="#FFFFFF" rx="2" />
+      
+      <!-- Top Sheet (Lined) -->
+      <rect x="0" y="0" width="100" height="100" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" rx="2" />
+      <!-- Lines -->
+      <line x1="0" y1="15" x2="100" y2="15" stroke="#4D9FE6" stroke-width="1.5" />
+      <line x1="0" y1="30" x2="100" y2="30" stroke="#4D9FE6" stroke-width="1.5" />
+      <line x1="0" y1="45" x2="100" y2="45" stroke="#4D9FE6" stroke-width="1.5" />
+      <line x1="0" y1="60" x2="100" y2="60" stroke="#4D9FE6" stroke-width="1.5" />
+      <line x1="0" y1="75" x2="100" y2="75" stroke="#4D9FE6" stroke-width="1.5" />
+      <line x1="0" y1="90" x2="100" y2="90" stroke="#4D9FE6" stroke-width="1.5" />
+    </g>
+
+    <!-- Person -->
+    <g id="person" transform="translate(120, 60)">
+      <!-- Hair (Dark) -->
+      <path d="M20,80 C20,40 60,40 80,80 L85,90 L15,90 Z" fill="#2C3E50" />
+      <path d="M10,80 C10,50 15,40 20,40" fill="#2C3E50" /> <!-- Side hair left -->
+      <path d="M90,80 C90,50 85,40 80,40" fill="#2C3E50" /> <!-- Side hair right -->
+
+      <!-- Face -->
+      <rect x="25" y="40" width="50" height="50" rx="20" fill="#F5D0A9" />
+
+      <!-- Eyes -->
+      <circle cx="38" cy="55" r="3" fill="#000000" />
+      <circle cx="62" cy="55" r="3" fill="#000000" />
+
+      <!-- Smile -->
+      <path d="M38,68 Q45,75 52,68" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="none" />
+
+      <!-- Torso / Red Top -->
+      <path d="M25,90 L30,130 L70,130 L75,90 L50,100 Z" fill="#E63946" />
+
+      <!-- Left Arm (holding pencil) -->
+      <path d="M30,110 L10,130 L25,135" stroke="#F5D0A9" stroke-width="12" stroke-linecap="round" />
+      
+      <!-- Right Arm (supporting) -->
+      <path d="M70,110 L95,130 L80,135" stroke="#F5D0A9" stroke-width="12" stroke-linecap="round" />
+
+      <!-- Pencil (Yellow) -->
+      <g transform="translate(15, 125) rotate(-20)">
+        <!-- Wood body -->
+        <rect x="0" y="0" width="60" height="6" fill="#FFD93D" />
+        <!-- Tip -->
+        <polygon points="0,0 -5,3 0,6" fill="#4D4D4D" />
+        <!-- Eraser (Pink) -->
+        <rect x="55" y="0" width="5" height="6" fill="#FF9AA2" />
+        <!-- Metal band -->
+        <rect x="55" y="0" width="5" height="6" fill="#C0C0C0" />
+      </g>
+      
+      <!-- Hand holding pencil -->
+      <circle cx="18" cy="122" r="4" fill="#F5D0A9" />
+    </g>
+  </g>
+</svg>

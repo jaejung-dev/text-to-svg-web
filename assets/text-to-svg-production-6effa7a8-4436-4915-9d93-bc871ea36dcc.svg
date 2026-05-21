@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Background is intentionally omitted to ensure transparency -->
+  
+  <!-- Group: Bar Chart Elements -->
+  <g id="bar-chart" fill="#C6E0A7" stroke="none">
+    <!-- First Bar (Shortest) -->
+    <rect x="40" y="160" width="40" height="60" rx="4" ry="4" />
+    
+    <!-- Second Bar (Medium) -->
+    <rect x="100" y="120" width="40" height="100" rx="4" ry="4" />
+    
+    <!-- Third Bar (Tallest) -->
+    <rect x="160" y="80" width="40" height="140" rx="4" ry="4" />
+  </g>
+
+  <!-- Group: Upward Trend Arrow -->
+  <g id="trend-arrow" fill="none" stroke="#C6E0A7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Arrow Path: Diagonal upward movement -->
+    <path d="M 30 210 L 210 30" />
+    <!-- Arrowhead -->
+    <path d="M 190 50 L 210 30 L 190 10" />
+  </g>
+</svg>

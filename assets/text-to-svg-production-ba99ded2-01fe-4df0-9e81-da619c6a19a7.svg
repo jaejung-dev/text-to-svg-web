@@ -1,0 +1,70 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#6A4C93" />
+
+  <!-- Group: Light Pink Squiggles -->
+  <g id="squiggles" stroke="#FFB6C1" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M100,150 Q130,120 160,150 T220,150" />
+    <path d="M500,300 Q530,280 560,300 T620,300" />
+    <path d="M700,450 Q730,430 760,450" />
+    <path d="M50,450 Q80,470 110,450 T170,450" />
+  </g>
+
+  <!-- Group: Green Blobs -->
+  <g id="blobs" fill="#90EE90">
+    <circle cx="200" cy="200" r="40" />
+    <ellipse cx="350" cy="150" rx="50" ry="35" transform="rotate(15 350 150)" />
+    <circle cx="600" cy="500" r="45" />
+    <ellipse cx="120" cy="550" rx="30" ry="40" transform="rotate(-10 120 550)" />
+  </g>
+
+  <!-- Group: Peach Flower -->
+  <g id="flower" transform="translate(400, 100)">
+    <!-- Petals -->
+    <circle cx="0" cy="-40" r="15" fill="#FFDAB9" />
+    <circle cx="35" cy="-10" r="15" fill="#FFDAB9" />
+    <circle cx="35" cy="30" r="15" fill="#FFDAB9" />
+    <circle cx="0" cy="60" r="15" fill="#FFDAB9" />
+    <circle cx="-35" cy="30" r="15" fill="#FFDAB9" />
+    <circle cx="-35" cy="-10" r="15" fill="#FFDAB9" />
+    <!-- Center -->
+    <circle cx="0" cy="10" r="12" fill="#FFFACD" />
+  </g>
+
+  <!-- Group: Pink Triangle -->
+  <g id="triangle" fill="#FF69B4">
+    <polygon points="300,400 340,320 380,400" />
+  </g>
+
+  <!-- Group: Light Orange Spirals -->
+  <g id="spirals" stroke="#FFA500" stroke-width="4" fill="none" stroke-linecap="round">
+    <!-- Spiral 1 -->
+    <path d="M650,200 c20,-10 40,10 30,30 c-10,20 -30,10 -40,0 c-10,-10 -10,-30 10,-40 z" />
+    <!-- Spiral 2 (simplified representation) -->
+    <path d="M550,500 c15,-5 30,5 25,20 c-5,15 -20,10 -30,0 c-10,-10 -5,-25 10,-30 z" />
+    <!-- Spiral 3 -->
+    <path d="M750,50 c25,-5 40,15 25,35 c-15,20 -35,5 -40,-5 c-5,-10 0,-25 10,-30 z" />
+  </g>
+
+  <!-- Group: Small Dashes -->
+  <g id="dashes" stroke-width="2" opacity="0.8">
+    <!-- Light Blue Dashes -->
+    <line x1="50" y1="50" x2="70" y2="60" stroke="#ADD8E6" />
+    <line x1="150" y1="350" x2="165" y2="365" stroke="#ADD8E6" />
+    <line x1="250" y1="500" x2="270" y2="510" stroke="#ADD8E6" />
+    
+    <!-- Yellow Dashes -->
+    <line x1="320" y1="80" x2="340" y2="70" stroke="#FFFFE0" />
+    <line x1="480" y1="250" x2="495" y2="265" stroke="#FFFFE0" />
+    <line x1="620" y1="420" x2="640" y2="430" stroke="#FFFFE0" />
+    
+    <!-- Pale Green Dashes -->
+    <line x1="720" y1="150" x2="735" y2="165" stroke="#98FB98" />
+    <line x1="180" y1="200" x2="195" y2="215" stroke="#98FB98" />
+    <line x1="520" y1="550" x2="540" y2="545" stroke="#98FB98" />
+    
+    <!-- Lavender Dashes -->
+    <line x1="400" y1="350" x2="420" y2="360" stroke="#E6E6FA" />
+    <line x1="680" y1="300" x2="695" y2="290" stroke="#E6E6FA" />
+  </g>
+</svg>

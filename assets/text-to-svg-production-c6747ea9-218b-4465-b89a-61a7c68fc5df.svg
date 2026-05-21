@@ -1,0 +1,23 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background for context (optional, not part of the shape itself) -->
+  <rect width="100%" height="100%" fill="white" />
+
+  <!-- Group for the seal/stamp graphic -->
+  <g id="seal-graphic" transform="translate(100, 100)">
+    <!-- 
+      Create a circular path with serrated edges.
+      We construct a circle using a path with many small triangular spikes.
+      The 'light coral' color is approximated using #FF7F50 or #F88C72.
+    -->
+    <path 
+      d="M 50,0 
+         L 55,5 L 53,10 L 58,12 L 54,18 L 59,20 L 52,28 L 58,32 L 48,40 L 42,32 L 38,42 L 28,32 L 20,40 L 12,32 L 8,42 L 2,32 L -2,40 L -12,32 L -20,42 L -28,32 L -38,42 L -42,32 L -48,40 L -58,32 L -52,28 L -59,20 L -54,18 L -58,12 L -53,10 L -55,5 
+         Z" 
+      fill="none" 
+      stroke="#FF8C70" 
+      stroke-width="4" 
+      stroke-linejoin="miter"
+      stroke-linecap="round"
+    />
+  </g>
+</svg>

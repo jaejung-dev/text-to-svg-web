@@ -1,0 +1,54 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background is transparent by default, no rect needed -->
+
+  <!-- Group: Character -->
+  <g id="character">
+    
+    <!-- Bag Strap (Left Shoulder) -->
+    <!-- Positioned over the left shoulder (viewer's right of center) -->
+    <path d="M190 90 L220 150" stroke="#000000" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Body -->
+    <!-- Torso/Shirt -->
+    <rect x="160" y="140" width="80" height="120" rx="10" fill="#FF8C42" /> <!-- Orange Sweater -->
+    
+    <!-- Pants -->
+    <path d="M160 260 L140 340 L170 340 L170 260 Z" fill="#000000" /> <!-- Left Leg -->
+    <path d="M240 260 L260 340 L230 340 L230 260 Z" fill="#000000" /> <!-- Right Leg -->
+
+    <!-- Shoes -->
+    <path d="M140 340 L130 350 L175 350 L170 340 Z" fill="#FFF8DC" /> <!-- Left Shoe -->
+    <path d="M230 340 L225 350 L270 350 L230 340 Z" fill="#FFF8DC" /> <!-- Right Shoe -->
+
+    <!-- Blazer -->
+    <path d="M160 140 L140 200 L170 210 L170 260 L230 260 L230 210 L260 200 L240 140 Z" fill="#008080" /> <!-- Teal Blazer -->
+    
+    <!-- Head -->
+    <circle cx="200" cy="100" r="45" fill="#FFDAB9" /> <!-- Skin tone -->
+
+    <!-- Hair -->
+    <path d="M155 90 Q165 50 200 50 Q235 50 245 90 Z" fill="#4A3728" /> <!-- Dark Brown Hair -->
+
+    <!-- Face Features -->
+    <!-- Closed Eyes (Happy expression) -->
+    <path d="M180 100 Q185 95 190 100" stroke="#333" stroke-width="2" fill="none" />
+    <path d="M210 100 Q215 95 220 100" stroke="#333" stroke-width="2" fill="none" />
+    
+    <!-- Smile -->
+    <path d="M185 120 Q200 135 215 120" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round" />
+
+    <!-- Right Arm (Raised for Peace Sign) -->
+    <path d="M240 160 L280 100 L260 60" stroke="#FFDAB9" stroke-width="18" stroke-linecap="round" fill="none" />
+    
+    <!-- Hand (Peace Sign) -->
+    <!-- Index and Middle finger extended -->
+    <path d="M265 55 L265 35" stroke="#FFDAB9" stroke-width="6" stroke-linecap="round" />
+    <path d="M275 55 L275 35" stroke="#FFDAB9" stroke-width="6" stroke-linecap="round" />
+    <!-- Thumb and other fingers tucked (simplified) -->
+    <path d="M260 60 L270 70 L270 55" stroke="#FFDAB9" stroke-width="6" stroke-linecap="round" fill="none" />
+    
+    <!-- Left Arm (Resting by side) -->
+    <path d="M160 160 L130 220 L120 240" stroke="#FFDAB9" stroke-width="18" stroke-linecap="round" fill="none" />
+
+  </g>
+</svg>

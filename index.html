@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Text-to-SVG Production Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">Text-to-SVG Review</div>
+        <div class="navlinks">
+          <a href="#gallery">Gallery</a>
+          <a href="#method">Method</a>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Production Model Comparison</p>
+          <h1>Text-to-SVG outputs, reviewed like a design board.</h1>
+          <p class="lede">
+            Each sample starts from the same prompt. We compare the ground truth,
+            our production Text-to-SVG output, and three reference model outputs
+            side by side.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#gallery">View gallery</a>
+            <a class="button ghost" href="#method">Read method</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="metric">
+            <span id="sample-count">-</span>
+            <small>samples</small>
+          </div>
+          <div class="metric">
+            <span>5</span>
+            <small>visual columns</small>
+          </div>
+          <div class="metric">
+            <span>8192</span>
+            <small>max new tokens</small>
+          </div>
+        </div>
+      </div>
+      <div id="hero-strip" class="hero-strip" aria-label="Preview thumbnails"></div>
+    </header>
+
+    <main>
+      <section class="summary-band">
+        <div>
+          <p class="eyebrow">Review Flow</p>
+          <h2>GT → Production → Claude → Gemini → GPT-5.2</h2>
+        </div>
+        <div id="bucket-summary" class="bucket-summary"></div>
+      </section>
+
+      <section class="toolbar">
+        <div>
+          <label for="bucket-filter">Filter</label>
+          <select id="bucket-filter">
+            <option value="all">All buckets</option>
+            <option value="simple">Simple</option>
+            <option value="medium">Medium</option>
+            <option value="complex">Complex</option>
+          </select>
+        </div>
+        <div class="muted" id="updated-at"></div>
+      </section>
+
+      <section id="gallery" class="gallery"></section>
+
+      <section id="method" class="method-card">
+        <p class="eyebrow">Method</p>
+        <h2>What this page shows</h2>
+        <p>
+          The production Text-to-SVG service receives each validation prompt and
+          returns raw SVG. The result is displayed between the original ground
+          truth and the existing Claude, Gemini, and GPT-5.2 outputs so that
+          design quality, prompt adherence, and visual structure can be reviewed
+          without reading metrics first.
+        </p>
+      </section>
+    </main>
+
+    <script src="app.js?v=20260521-presentation"></script>
+  </body>
+</html>

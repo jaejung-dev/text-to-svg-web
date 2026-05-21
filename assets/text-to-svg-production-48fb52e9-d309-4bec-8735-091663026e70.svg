@@ -1,0 +1,35 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define the scallop path pattern -->
+    <path id="scalloped-edge" d="M0,0 Q10,-5 20,0 T40,0 T60,0 T80,0 T100,0 T120,0 T140,0 T160,0 T180,0 T200,0 T220,0 T240,0 T260,0 T280,0 T300,0 L300,300 L0,300 Z" />
+  </defs>
+
+  <!-- Background (optional, for contrast) -->
+  <rect width="400" height="300" fill="#f9f9f9" />
+
+  <!-- Main Cream Card -->
+  <rect x="40" y="40" width="320" height="220" fill="#FFFDD0" rx="2" ry="2" />
+
+  <!-- Muted Red Scalloped Border (overlapping card edges) -->
+  <!-- We simulate a border by drawing a slightly larger rectangle with a scalloped bottom edge -->
+  <path d="M30,30 H370 V270 Q380,280 370,290 T350,290 T330,290 T310,290 T290,290 T270,290 T250,290 T230,290 T210,290 T190,290 T170,290 T150,290 T130,290 T110,290 T90,290 T70,290 T50,290 T30,290 V30 Z" 
+        fill="none" 
+        stroke="#E07A7A" 
+        stroke-width="6" 
+        stroke-linecap="round" />
+
+  <!-- Faint Purple-Grey Crease Lines (Top Right) -->
+  <path d="M250,60 Q280,70 300,50" fill="none" stroke="#888899" stroke-width="2" opacity="0.4" stroke-dasharray="4,4" />
+  <path d="M240,50 Q270,60 290,40" fill="none" stroke="#888899" stroke-width="2" opacity="0.3" stroke-dasharray="4,4" />
+
+  <!-- Bright Yellow Scalloped Element (Bottom Right Overlap) -->
+  <!-- Using a custom path to create a scalloped top edge overlapping the red border -->
+  <path d="M220,260 Q240,240 260,260 T300,260 T340,260 T380,260 L380,290 L210,290 Q210,260 220,260" 
+        fill="#FFD700" 
+        stroke="#E6C200" 
+        stroke-width="1" />
+  
+  <!-- Small Purple Line (associated with the yellow element) -->
+  <path d="M330,275 L350,285" fill="none" stroke="#9370DB" stroke-width="3" stroke-linecap="round" />
+
+</svg>

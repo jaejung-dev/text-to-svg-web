@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background is transparent by default -->
+
+  <!-- Main Ham Body Group -->
+  <g id="ham-illustration" transform="rotate(-25 100 100)">
+    
+    <!-- Ham Outline (Body) -->
+    <!-- A rounded, elongated shape representing the ham joint -->
+    <path id="ham-outline" 
+          d="M 60 40 
+             C 80 10, 140 10, 160 40 
+             C 175 65, 170 110, 150 140 
+             C 130 170, 80 180, 50 160 
+             C 20 140, 15 90, 30 65 
+             C 40 50, 50 40, 60 40 Z"
+          fill="white" 
+          stroke="black" 
+          stroke-width="4" 
+          stroke-linejoin="round"/>
+
+    <!-- Netting/Grid Pattern on the Body -->
+    <!-- Diamond shapes to indicate scoring/netting -->
+    <g id="ham-netting" stroke="black" stroke-width="3" fill="none">
+      <!-- Row 1 -->
+      <path d="M 75 55 L 85 65 L 75 75 L 65 65 Z" />
+      <path d="M 95 55 L 105 65 L 95 75 L 85 65 Z" />
+      <path d="M 115 55 L 125 65 L 115 75 L 105 65 Z" />
+      
+      <!-- Row 2 -->
+      <path d="M 70 75 L 80 85 L 70 95 L 60 85 Z" />
+      <path d="M 90 75 L 100 85 L 90 95 L 80 85 Z" />
+      <path d="M 110 75 L 120 85 L 110 95 L 100 85 Z" />
+      <path d="M 130 75 L 140 85 L 130 95 L 120 85 Z" />
+
+      <!-- Row 3 -->
+      <path d="M 80 95 L 90 105 L 80 115 L 70 105 Z" />
+      <path d="M 100 95 L 110 105 L 100 115 L 90 105 Z" />
+      <path d="M 120 95 L 130 105 L 120 115 L 110 105 Z" />
+    </g>
+
+    <!-- Ham End Face (The cut side) -->
+    <!-- Positioned at the wider end (top right in original orientation, top right in rotated) -->
+    <g id="ham-end-face">
+      <!-- Outer rim of the cut -->
+      <ellipse cx="145" cy="55" rx="22" ry="12" 
+               fill="white" stroke="black" stroke-width="4" />
+      
+      <!-- Inner Cross-section details -->
+      <!-- Central small circle (Bone marrow area) -->
+      <circle cx="145" cy="55" r="5" 
+              fill="white" stroke="black" stroke-width="2.5" />
+      
+      <!-- Larger irregular shape 1 (Bone/Muscle texture) - Left side of cut -->
+      <path d="M 140 50 C 130 50, 130 60, 138 62 C 135 58, 135 52, 140 50 Z" 
+            fill="white" stroke="black" stroke-width="2.5" />
+      
+      <!-- Larger irregular shape 2 (Meat/Fat texture) - Right side of cut -->
+      <path d="M 150 55 C 160 55, 160 48, 152 48 C 155 52, 155 58, 150 55 Z" 
+            fill="white" stroke="black" stroke-width="2.5" />
+            
+      <!-- Texture lines inside the meat -->
+      <path d="M 148 52 L 152 54" stroke="black" stroke-width="1.5" />
+      <path d="M 136 54 L 138 58" stroke="black" stroke-width="1.5" />
+    </g>
+
+    <!-- Small Bone protrusion at the end (Optional detail for realism) -->
+    <path d="M 142 45 L 148 45 L 145 50 Z" 
+          fill="white" stroke="black" stroke-width="2.5" />
+
+  </g>
+</svg>

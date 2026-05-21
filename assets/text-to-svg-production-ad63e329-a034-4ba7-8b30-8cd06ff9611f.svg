@@ -1,0 +1,15 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Decorative Frame Placeholder -->
+  <rect 
+    id="rounded-frame" 
+    x="50" 
+    y="50" 
+    width="500" 
+    height="200" 
+    rx="40" 
+    ry="40" 
+    fill="none" 
+    stroke="#FFDAB9" 
+    stroke-width="4"
+  />
+</svg>
