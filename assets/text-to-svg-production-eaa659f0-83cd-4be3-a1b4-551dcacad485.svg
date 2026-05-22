@@ -1,80 +1,65 @@
-<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Transparent Background (Implicit) -->
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser Window Frame -->
+  <g id="browser-window">
+    <rect x="20" y="20" width="360" height="360" fill="#FFD93D" stroke="#FFC107" stroke-width="8"/>
+    <!-- Window Controls -->
+    <circle cx="360" cy="60" r="12" fill="#000000"/>
+    <circle cx="330" cy="60" r="12" fill="#000000"/>
+    <circle cx="300" cy="60" r="12" fill="#000000"/>
+  </g>
 
-  <!-- Browser Window Container -->
-  <g id="browser-window" transform="translate(50, 40)">
-    
-    <!-- Window Frame / Header Bar -->
-    <rect x="0" y="0" width="300" height="40" fill="#FFD93D" rx="6" />
-    
-    <!-- Window Controls (Three Dots) -->
-    <circle cx="240" cy="20" r="4" fill="#333333" />
-    <circle cx="255" cy="20" r="4" fill="#333333" />
-    <circle cx="270" cy="20" r="4" fill="#333333" />
+  <!-- Desk Surface -->
+  <g id="desk">
+    <rect x="20" y="250" width="360" height="130" fill="#FFD93D"/>
+  </g>
 
-    <!-- Content Area Background -->
-    <rect x="0" y="40" width="300" height="260" fill="#FFFFFF" rx="0 0 6 6" />
-
-    <!-- Desk Surface (Yellow) -->
-    <rect x="20" y="180" width="260" height="120" fill="#FFD93D" rx="4" />
-
-    <!-- Stack of Lined Paper -->
-    <g id="paper-stack" transform="translate(80, 160)">
-      <!-- Back Sheets -->
-      <rect x="0" y="10" width="100" height="100" fill="#F0F0F0" rx="2" />
-      <rect x="0" y="15" width="100" height="100" fill="#FFFFFF" rx="2" />
-      
-      <!-- Top Sheet (Lined) -->
-      <rect x="0" y="0" width="100" height="100" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2" rx="2" />
-      <!-- Lines -->
-      <line x1="0" y1="15" x2="100" y2="15" stroke="#4D9FE6" stroke-width="1.5" />
-      <line x1="0" y1="30" x2="100" y2="30" stroke="#4D9FE6" stroke-width="1.5" />
-      <line x1="0" y1="45" x2="100" y2="45" stroke="#4D9FE6" stroke-width="1.5" />
-      <line x1="0" y1="60" x2="100" y2="60" stroke="#4D9FE6" stroke-width="1.5" />
-      <line x1="0" y1="75" x2="100" y2="75" stroke="#4D9FE6" stroke-width="1.5" />
-      <line x1="0" y1="90" x2="100" y2="90" stroke="#4D9FE6" stroke-width="1.5" />
+  <!-- Stack of Paper -->
+  <g id="paper-stack">
+    <rect x="100" y="220" width="200" height="80" fill="#FFFFFF"/>
+    <rect x="105" y="225" width="190" height="80" fill="#FFFFFF"/>
+    <rect x="110" y="230" width="180" height="80" fill="#FFFFFF"/>
+    <!-- Lined Paper -->
+    <g id="paper-lines">
+      <line x1="115" y1="250" x2="285" y2="250" stroke="#B0BEC5" stroke-width="2"/>
+      <line x1="115" y1="270" x2="285" y2="270" stroke="#B0BEC5" stroke-width="2"/>
+      <line x1="115" y1="290" x2="285" y2="290" stroke="#B0BEC5" stroke-width="2"/>
     </g>
+  </g>
 
-    <!-- Person -->
-    <g id="person" transform="translate(120, 60)">
-      <!-- Hair (Dark) -->
-      <path d="M20,80 C20,40 60,40 80,80 L85,90 L15,90 Z" fill="#2C3E50" />
-      <path d="M10,80 C10,50 15,40 20,40" fill="#2C3E50" /> <!-- Side hair left -->
-      <path d="M90,80 C90,50 85,40 80,40" fill="#2C3E50" /> <!-- Side hair right -->
-
-      <!-- Face -->
-      <rect x="25" y="40" width="50" height="50" rx="20" fill="#F5D0A9" />
-
-      <!-- Eyes -->
-      <circle cx="38" cy="55" r="3" fill="#000000" />
-      <circle cx="62" cy="55" r="3" fill="#000000" />
-
-      <!-- Smile -->
-      <path d="M38,68 Q45,75 52,68" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="none" />
-
-      <!-- Torso / Red Top -->
-      <path d="M25,90 L30,130 L70,130 L75,90 L50,100 Z" fill="#E63946" />
-
-      <!-- Left Arm (holding pencil) -->
-      <path d="M30,110 L10,130 L25,135" stroke="#F5D0A9" stroke-width="12" stroke-linecap="round" />
-      
-      <!-- Right Arm (supporting) -->
-      <path d="M70,110 L95,130 L80,135" stroke="#F5D0A9" stroke-width="12" stroke-linecap="round" />
-
-      <!-- Pencil (Yellow) -->
-      <g transform="translate(15, 125) rotate(-20)">
-        <!-- Wood body -->
-        <rect x="0" y="0" width="60" height="6" fill="#FFD93D" />
-        <!-- Tip -->
-        <polygon points="0,0 -5,3 0,6" fill="#4D4D4D" />
-        <!-- Eraser (Pink) -->
-        <rect x="55" y="0" width="5" height="6" fill="#FF9AA2" />
-        <!-- Metal band -->
-        <rect x="55" y="0" width="5" height="6" fill="#C0C0C0" />
-      </g>
-      
-      <!-- Hand holding pencil -->
-      <circle cx="18" cy="122" r="4" fill="#F5D0A9" />
+  <!-- Person's Body -->
+  <g id="person">
+    <!-- Head -->
+    <circle cx="200" cy="140" r="50" fill="#FFE0BD"/>
+    
+    <!-- Hair -->
+    <path d="M 140,140 Q 140,90 200,90 Q 260,90 260,140 Q 260,160 255,155 Q 245,155 240,150 Q 230,160 220,155 Q 210,160 200,155 Q 190,160 180,155 Q 170,150 160,150 Q 145,140 140,140" fill="#3E2723"/>
+    
+    <!-- Face - Eyes -->
+    <circle cx="180" cy="140" r="8" fill="#3E2723"/>
+    <circle cx="220" cy="140" r="8" fill="#3E2723"/>
+    
+    <!-- Smile -->
+    <path d="M 185,165 Q 200,178 215,165" stroke="#3E2723" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Neck -->
+    <rect x="190" y="185" width="20" height="25" fill="#FFE0BD"/>
+    
+    <!-- Body/Top -->
+    <path d="M 155,210 L 155,280 Q 200,290 245,280 L 245,210 Q 200,215 155,210" fill="#F44336"/>
+    
+    <!-- Arms -->
+    <path d="M 155,220 Q 140,240 160,260 L 180,250" stroke="#FFE0BD" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <path d="M 245,220 Q 260,240 240,260 L 220,250" stroke="#FFE0BD" stroke-width="18" fill="none" stroke-linecap="round"/>
+    
+    <!-- Hand writing -->
+    <circle cx="235" cy="265" r="12" fill="#FFE0BD"/>
+    
+    <!-- Yellow Pencil -->
+    <g id="pencil">
+      <line x1="225" y1="280" x2="275" y2="240" stroke="#FFD93D" stroke-width="8" stroke-linecap="round"/>
+      <line x1="225" y1="280" x2="275" y2="240" stroke="#FFA000" stroke-width="2" stroke-linecap="round"/>
+      <polygon points="275,240 270,250 280,250" fill="#8D6E63"/>
+      <polygon points="280,250 280,245 275,255" fill="#FFA000"/>
     </g>
   </g>
 </svg>

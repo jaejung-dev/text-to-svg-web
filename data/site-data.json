@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21 14:43 UTC",
+  "generated_at": "2026-05-22 10:17 UTC",
   "source_report": "/home/ubuntu/lica-score-web/report-data.json",
   "generation_endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
   "samples": [
@@ -13,9 +13,9 @@
         "asset": "assets/text-to-svg-production-0e691069-3f66-497b-be66-6f04192be5b0.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 152,
-        "output_tokens": 351,
-        "elapsed_seconds": 88.023,
+        "input_tokens": 150,
+        "output_tokens": 786,
+        "elapsed_seconds": 7.491,
         "seed": 20260521
       },
       "baselines": [
@@ -51,9 +51,9 @@
         "asset": "assets/text-to-svg-production-2bb28d9c-b0a1-40f3-8a86-96d232a28a80.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 157,
-        "output_tokens": 1097,
-        "elapsed_seconds": 9.117,
+        "input_tokens": 155,
+        "output_tokens": 1302,
+        "elapsed_seconds": 11.978,
         "seed": 20260522
       },
       "baselines": [
@@ -89,9 +89,9 @@
         "asset": "assets/text-to-svg-production-375920f5-f42c-42d0-815d-45c5ff30baeb.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 132,
-        "output_tokens": 287,
-        "elapsed_seconds": 2.257,
+        "input_tokens": 130,
+        "output_tokens": 367,
+        "elapsed_seconds": 3.641,
         "seed": 20260523
       },
       "baselines": [
@@ -127,9 +127,9 @@
         "asset": "assets/text-to-svg-production-475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 155,
-        "output_tokens": 1837,
-        "elapsed_seconds": 13.75,
+        "input_tokens": 153,
+        "output_tokens": 1720,
+        "elapsed_seconds": 15.753,
         "seed": 20260524
       },
       "baselines": [
@@ -165,9 +165,9 @@
         "asset": "assets/text-to-svg-production-48fb52e9-d309-4bec-8735-091663026e70.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 154,
-        "output_tokens": 878,
-        "elapsed_seconds": 6.605,
+        "input_tokens": 152,
+        "output_tokens": 1638,
+        "elapsed_seconds": 15.039,
         "seed": 20260525
       },
       "baselines": [
@@ -203,9 +203,9 @@
         "asset": "assets/text-to-svg-production-6b75002f-4553-4495-af73-69dff9260dd7.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 134,
-        "output_tokens": 55,
-        "elapsed_seconds": 0.662,
+        "input_tokens": 132,
+        "output_tokens": 242,
+        "elapsed_seconds": 2.627,
         "seed": 20260526
       },
       "baselines": [
@@ -241,9 +241,9 @@
         "asset": "assets/text-to-svg-production-6effa7a8-4436-4915-9d93-bc871ea36dcc.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 154,
-        "output_tokens": 362,
-        "elapsed_seconds": 2.767,
+        "input_tokens": 152,
+        "output_tokens": 584,
+        "elapsed_seconds": 5.505,
         "seed": 20260527
       },
       "baselines": [
@@ -279,9 +279,9 @@
         "asset": "assets/text-to-svg-production-789455bd-a5a3-4611-837c-dcbd7aaac18d.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 125,
-        "output_tokens": 166,
-        "elapsed_seconds": 1.343,
+        "input_tokens": 123,
+        "output_tokens": 234,
+        "elapsed_seconds": 2.488,
         "seed": 20260528
       },
       "baselines": [
@@ -317,9 +317,9 @@
         "asset": "assets/text-to-svg-production-7abdd104-8327-4c83-a550-a93ee4a97cf7.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 164,
-        "output_tokens": 1281,
-        "elapsed_seconds": 9.596,
+        "input_tokens": 162,
+        "output_tokens": 2090,
+        "elapsed_seconds": 19.251,
         "seed": 20260529
       },
       "baselines": [
@@ -355,9 +355,9 @@
         "asset": "assets/text-to-svg-production-ad63e329-a034-4ba7-8b30-8cd06ff9611f.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 129,
-        "output_tokens": 138,
-        "elapsed_seconds": 1.141,
+        "input_tokens": 127,
+        "output_tokens": 224,
+        "elapsed_seconds": 2.393,
         "seed": 20260530
       },
       "baselines": [
@@ -393,9 +393,9 @@
         "asset": "assets/text-to-svg-production-ba99ded2-01fe-4df0-9e81-da619c6a19a7.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 146,
-        "output_tokens": 1513,
-        "elapsed_seconds": 11.28,
+        "input_tokens": 144,
+        "output_tokens": 2548,
+        "elapsed_seconds": 23.376,
         "seed": 20260531
       },
       "baselines": [
@@ -431,9 +431,9 @@
         "asset": "assets/text-to-svg-production-c6747ea9-218b-4465-b89a-61a7c68fc5df.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 130,
-        "output_tokens": 448,
-        "elapsed_seconds": 3.42,
+        "input_tokens": 128,
+        "output_tokens": 582,
+        "elapsed_seconds": 5.576,
         "seed": 20260532
       },
       "baselines": [
@@ -469,9 +469,9 @@
         "asset": "assets/text-to-svg-production-cfa27aa4-7443-4ea4-bae7-c2bd746a2e23.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 136,
-        "output_tokens": 859,
-        "elapsed_seconds": 6.49,
+        "input_tokens": 134,
+        "output_tokens": 1107,
+        "elapsed_seconds": 10.227,
         "seed": 20260533
       },
       "baselines": [
@@ -507,9 +507,9 @@
         "asset": "assets/text-to-svg-production-df15ae1c-d219-449f-b27b-c908c615af70.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 132,
-        "output_tokens": 794,
-        "elapsed_seconds": 5.977,
+        "input_tokens": 130,
+        "output_tokens": 1033,
+        "elapsed_seconds": 9.547,
         "seed": 20260534
       },
       "baselines": [
@@ -545,9 +545,9 @@
         "asset": "assets/text-to-svg-production-eaa659f0-83cd-4be3-a1b4-551dcacad485.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 164,
-        "output_tokens": 1518,
-        "elapsed_seconds": 11.344,
+        "input_tokens": 162,
+        "output_tokens": 1471,
+        "elapsed_seconds": 13.537,
         "seed": 20260535
       },
       "baselines": [
@@ -585,9 +585,9 @@
         "asset": "assets/prompt-pair-01.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 106,
-        "output_tokens": 896,
-        "elapsed_seconds": 305.901,
+        "input_tokens": 104,
+        "output_tokens": 4320,
+        "elapsed_seconds": 39.824,
         "seed": 2026052101
       }
     },
@@ -601,9 +601,9 @@
         "asset": "assets/prompt-pair-02.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 87,
-        "output_tokens": 408,
-        "elapsed_seconds": 3.723,
+        "input_tokens": 85,
+        "output_tokens": 2663,
+        "elapsed_seconds": 24.836,
         "seed": 2026052102
       }
     },
@@ -617,9 +617,9 @@
         "asset": "assets/prompt-pair-03.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 85,
-        "output_tokens": 1494,
-        "elapsed_seconds": 11.496,
+        "input_tokens": 83,
+        "output_tokens": 1294,
+        "elapsed_seconds": 11.932,
         "seed": 2026052103
       }
     },
@@ -633,9 +633,9 @@
         "asset": "assets/prompt-pair-04.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 80,
-        "output_tokens": 1436,
-        "elapsed_seconds": 11.193,
+        "input_tokens": 78,
+        "output_tokens": 1791,
+        "elapsed_seconds": 16.45,
         "seed": 2026052104
       }
     },
@@ -649,9 +649,9 @@
         "asset": "assets/prompt-pair-05.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 140,
-        "output_tokens": 2200,
-        "elapsed_seconds": 16.469,
+        "input_tokens": 138,
+        "output_tokens": 1645,
+        "elapsed_seconds": 15.06,
         "seed": 2026052105
       }
     },
@@ -665,9 +665,9 @@
         "asset": "assets/prompt-pair-06.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 84,
-        "output_tokens": 943,
-        "elapsed_seconds": 7.182,
+        "input_tokens": 82,
+        "output_tokens": 1376,
+        "elapsed_seconds": 12.966,
         "seed": 2026052106
       }
     },
@@ -681,8 +681,8 @@
         "asset": "assets/prompt-pair-07.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 147,
-        "output_tokens": 3490,
+        "input_tokens": 145,
+        "output_tokens": 2834,
         "elapsed_seconds": 26.055,
         "seed": 2026052107
       }
@@ -697,9 +697,9 @@
         "asset": "assets/prompt-pair-08.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 87,
-        "output_tokens": 828,
-        "elapsed_seconds": 6.363,
+        "input_tokens": 85,
+        "output_tokens": 1028,
+        "elapsed_seconds": 9.526,
         "seed": 2026052108
       }
     },
@@ -713,9 +713,9 @@
         "asset": "assets/prompt-pair-09.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 106,
-        "output_tokens": 1211,
-        "elapsed_seconds": 9.115,
+        "input_tokens": 104,
+        "output_tokens": 3208,
+        "elapsed_seconds": 29.276,
         "seed": 2026052109
       }
     },
@@ -729,9 +729,9 @@
         "asset": "assets/prompt-pair-10.svg",
         "status": "ok",
         "svg_parse_error": null,
-        "input_tokens": 104,
-        "output_tokens": 3277,
-        "elapsed_seconds": 24.473,
+        "input_tokens": 102,
+        "output_tokens": 2553,
+        "elapsed_seconds": 23.449,
         "seed": 2026052110
       }
     }

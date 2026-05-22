@@ -1,70 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150" width="400" height="150">
-  <!-- Background (optional transparent placeholder) -->
-  <rect width="100%" height="100%" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150">
+  <!-- Logo Background (subtle gradient) -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
-  <!-- Logo Icon: Stylized Bell -->
-  <!-- The bell is composed of a main body and a clapper, forming a dynamic 'B' shape implicitly -->
-  <g id="bell-icon" transform="translate(40, 15)">
-    <!-- Main Bell Body (Curved Shape) -->
-    <path id="bell-body" 
-          d="M 25 20 
-             C 25 0, 55 0, 55 20 
-             L 55 35 
-             C 65 35, 70 45, 65 55 
-             C 60 65, 45 65, 45 65 
-             C 45 65, 30 65, 25 55 
-             C 20 45, 25 35, 35 35 
-             L 35 20 
-             C 35 0, 5 0, 5 20 
-             L 5 25 
-             L 25 25 
-             L 25 20 Z" 
-          fill="#003366"/>
-    
-    <!-- Bell Clapper / Inner Accent (White negative space concept or accent shape) -->
-    <path id="bell-clapper" 
-          d="M 25 30 
-             C 25 15, 45 15, 45 30 
-             L 45 45 
-             C 40 40, 30 40, 25 45 
-             Z" 
-          fill="#E3F2FD"/>
-    
-    <!-- Sound Wave (Representing Communication) -->
-    <path id="sound-wave" 
-          d="M 15 50 
-             Q 20 45, 25 50 
-             T 35 50 
-             T 45 50" 
-          stroke="#E3F2FD" 
-          stroke-width="2" 
-          fill="none" 
-          stroke-dasharray="4,2"
-          opacity="0.8"/>
+  <!-- Bell Icon Group -->
+  <g id="bell-icon" transform="translate(40, 50)">
+    <!-- Bell body -->
+    <path id="bell-shape" fill="url(#logoGradient)" d="M 60,5 L 95,70 A 35,35 0 0,1 25,70 Z" />
+    <!-- Bell clapper -->
+    <circle id="bell-clapper" cx="50" cy="65" r="12" fill="#ffffff" opacity="0.9" />
+    <!-- Bell sound waves (3 arcs) -->
+    <path id="wave1" d="M 50,5 A 40,40 0 0,1 30,35" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.6" />
+    <path id="wave2" d="M 50,5 A 55,55 0 0,1 20,45" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.4" />
+    <path id="wave3" d="M 50,5 A 70,70 0 0,1 10,55" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.3" />
+    <!-- Top bell mount -->
+    <path id="bell-mount" d="M 45,5 L 55,5 L 55,10 L 45,10 Z" fill="#ffffff" opacity="0.8" />
   </g>
 
-  <!-- Company Name Typography -->
-  <g id="company-name" transform="translate(105, 75)">
-    <!-- Text: "BELL" in a strong, professional sans-serif font -->
-    <text font-family="'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif" 
-          font-size="32" 
-          font-weight="700" 
-          letter-spacing="1.5" 
-          fill="#003366">
-      BELL
-    </text>
-    
-    <!-- Tagline (Subtext) -->
-    <text x="0" y="18" 
-          font-family="'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif" 
-          font-size="10" 
-          letter-spacing="2.5" 
-          fill="#666666" 
-          text-anchor="start">
-      COMMUNICATIONS
-    </text>
+  <!-- Text Group -->
+  <g id="text-elements">
+    <!-- Company Name -->
+    <text id="company-name" x="140" y="85" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="url(#logoGradient)" letter-spacing="2">Bell</text>
+    <!-- Tagline -->
+    <text id="tagline" x="140" y="115" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#6b7280" letter-spacing="4">CONNECTING WORLD</text>
   </g>
-  
-  <!-- Separator Line -->
-  <line x1="34" y1="60" x2="34" y2="90" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- Decorative line -->
+  <line id="decorative-line" x1="140" y1="75" x2="280" y2="75" stroke="#2563eb" stroke-width="2" opacity="0.3" />
 </svg>

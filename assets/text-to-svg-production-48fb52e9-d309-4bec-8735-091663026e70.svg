@@ -1,35 +1,27 @@
-<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Define the scallop path pattern -->
-    <path id="scalloped-edge" d="M0,0 Q10,-5 20,0 T40,0 T60,0 T80,0 T100,0 T120,0 T140,0 T160,0 T180,0 T200,0 T220,0 T240,0 T260,0 T280,0 T300,0 L300,300 L0,300 Z" />
-  </defs>
-
-  <!-- Background (optional, for contrast) -->
-  <rect width="400" height="300" fill="#f9f9f9" />
-
-  <!-- Main Cream Card -->
-  <rect x="40" y="40" width="320" height="220" fill="#FFFDD0" rx="2" ry="2" />
-
-  <!-- Muted Red Scalloped Border (overlapping card edges) -->
-  <!-- We simulate a border by drawing a slightly larger rectangle with a scalloped bottom edge -->
-  <path d="M30,30 H370 V270 Q380,280 370,290 T350,290 T330,290 T310,290 T290,290 T270,290 T250,290 T230,290 T210,290 T190,290 T170,290 T150,290 T130,290 T110,290 T90,290 T70,290 T50,290 T30,290 V30 Z" 
-        fill="none" 
-        stroke="#E07A7A" 
-        stroke-width="6" 
-        stroke-linecap="round" />
-
-  <!-- Faint Purple-Grey Crease Lines (Top Right) -->
-  <path d="M250,60 Q280,70 300,50" fill="none" stroke="#888899" stroke-width="2" opacity="0.4" stroke-dasharray="4,4" />
-  <path d="M240,50 Q270,60 290,40" fill="none" stroke="#888899" stroke-width="2" opacity="0.3" stroke-dasharray="4,4" />
-
-  <!-- Bright Yellow Scalloped Element (Bottom Right Overlap) -->
-  <!-- Using a custom path to create a scalloped top edge overlapping the red border -->
-  <path d="M220,260 Q240,240 260,260 T300,260 T340,260 T380,260 L380,290 L210,290 Q210,260 220,260" 
-        fill="#FFD700" 
-        stroke="#E6C200" 
-        stroke-width="1" />
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cream-colored card background -->
+  <rect id="card-background" x="20" y="30" width="360" height="440" fill="#F5E6D3" rx="4"/>
   
-  <!-- Small Purple Line (associated with the yellow element) -->
-  <path d="M330,275 L350,285" fill="none" stroke="#9370DB" stroke-width="3" stroke-linecap="round" />
-
+  <!-- Muted red scalloped border -->
+  <g id="red-scalloped-border">
+    <defs>
+      <path id="scalloped-path" d="M 0 0 Q 10 -15 20 0 T 40 0 T 60 0 T 80 0 T 100 0 T 120 0 T 140 0 T 160 0 T 180 0 T 200 0 T 220 0 T 240 0 T 260 0 T 280 0 T 300 0 T 320 0 T 340 0 T 360 0"/>
+    </defs>
+    <path d="M 20 30 Q 30 15 40 30 T 60 30 T 80 30 T 100 30 T 120 30 T 140 30 T 160 30 T 180 30 T 200 30 T 220 30 T 240 30 T 260 30 T 280 30 T 300 30 T 320 30 T 340 30 T 360 30 T 380 30 T 380 50 T 380 70 L 380 90 Q 365 105 380 120 T 380 140 T 380 160 T 380 180 T 380 200 T 380 220 T 380 240 T 380 260 T 380 280 T 380 300 T 380 320 T 380 340 T 380 360 T 380 380 T 380 400 T 380 420 L 380 440 T 360 440 T 340 440 T 320 440 T 300 440 T 280 440 T 260 440 T 240 440 T 220 440 T 200 440 T 180 440 T 160 440 T 140 440 T 120 440 T 100 440 T 80 440 T 60 440 T 40 440 T 20 440 T 20 420 T 20 400 T 20 380 T 20 360 T 20 340 T 20 320 T 20 300 T 20 280 T 20 260 T 20 240 T 20 220 T 20 200 T 20 180 T 20 160 T 20 140 T 20 120 T 20 100 T 20 80 T 20 60 T 20 50 T 20 30 Z" fill="none" stroke="#D48C8C" stroke-width="25" stroke-linejoin="round" opacity="0.9"/>
+  </g>
+  
+  <!-- Bright yellow scalloped element at bottom right -->
+  <g id="yellow-scalloped-element">
+    <path d="M 280 320 Q 300 300 320 320 T 340 320 T 360 320 T 380 320 L 380 380 Q 360 360 380 380 T 380 400 T 380 420" fill="#FFD700" opacity="0.9"/>
+    <path d="M 280 320 Q 300 300 320 320 T 340 320 T 360 320 T 380 320 L 380 380 Q 360 360 380 380 T 380 400 T 380 420" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.7"/>
+  </g>
+  
+  <!-- Small purple line near yellow element -->
+  <line id="purple-line" x1="320" y1="340" x2="350" y2="360" stroke="#9B6FA3" stroke-width="2" opacity="0.85"/>
+  
+  <!-- Faint purple-grey crease lines in top right -->
+  <g id="crease-lines">
+    <line x1="280" y1="80" x2="360" y2="120" stroke="#8E8992" stroke-width="1.5" opacity="0.3"/>
+    <line x1="300" y1="90" x2="380" y2="130" stroke="#8E8992" stroke-width="1.5" opacity="0.25"/>
+  </g>
 </svg>

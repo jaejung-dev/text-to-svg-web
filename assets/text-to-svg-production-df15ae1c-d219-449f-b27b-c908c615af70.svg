@@ -1,42 +1,42 @@
-<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background is transparent by default -->
+<svg width="300" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Petal shape for reuse -->
+    <path id="petalShape" d="M 150,120 C 180,80 220,80 220,120 C 220,160 180,180 150,150 C 120,180 80,160 80,120 C 80,80 120,80 150,120 Z"/>
+  </defs>
 
-  <!-- Flower Head Group -->
-  <g id="flower-head">
-    <!-- Petals -->
-    <!-- Top Petal -->
-    <ellipse id="petal-1" cx="100" cy="85" rx="25" ry="35" 
-             fill="#d8b4e2" stroke="#ffb6c1" stroke-width="3" transform="rotate(0 100 85)"/>
-    <!-- Top-Right Petal -->
-    <ellipse id="petal-2" cx="125" cy="105" rx="25" ry="35" 
-             fill="#d8b4e2" stroke="#ffb6c1" stroke-width="3" transform="rotate(72 100 85)"/>
-    <!-- Bottom-Right Petal -->
-    <ellipse id="petal-3" cx="115" cy="135" rx="25" ry="35" 
-             fill="#d8b4e2" stroke="#ffb6c1" stroke-width="3" transform="rotate(144 100 85)"/>
-    <!-- Bottom-Left Petal -->
-    <ellipse id="petal-4" cx="85" cy="135" rx="25" ry="35" 
-             fill="#d8b4e2" stroke="#ffb6c1" stroke-width="3" transform="rotate(216 100 85)"/>
-    <!-- Top-Left Petal -->
-    <ellipse id="petal-5" cx="75" cy="105" rx="25" ry="35" 
-             fill="#d8b4e2" stroke="#ffb6c1" stroke-width="3" transform="rotate(288 100 85)"/>
+  <!-- Petals Group -->
+  <g id="petals">
+    <!-- Center Petal -->
+    <use href="#petalShape" x="0" y="0" fill="#C495D9" stroke="#F4C2D6" stroke-width="3"/>
     
-    <!-- Center -->
-    <circle id="flower-center" cx="100" cy="100" r="20" 
-            fill="#fffacd" stroke="#f0e68c" stroke-width="2"/>
+    <!-- Left Petal -->
+    <use href="#petalShape" x="0" y="0" fill="#C495D9" stroke="#F4C2D6" stroke-width="3" transform="rotate(-72, 150, 150)"/>
+    
+    <!-- Right Petal -->
+    <use href="#petalShape" x="0" y="0" fill="#C495D9" stroke="#F4C2D6" stroke-width="3" transform="rotate(72, 150, 150)"/>
+    
+    <!-- Top-Left Petal -->
+    <use href="#petalShape" x="0" y="0" fill="#C495D9" stroke="#F4C2D6" stroke-width="3" transform="rotate(-144, 150, 150)"/>
+    
+    <!-- Top-Right Petal -->
+    <use href="#petalShape" x="0" y="0" fill="#C495D9" stroke="#F4C2D6" stroke-width="3" transform="rotate(144, 150, 150)"/>
   </g>
 
-  <!-- Stem -->
-  <!-- Curved path for the stem -->
-  <path id="stem" d="M100 120 Q 90 180 100 220" 
-        fill="none" stroke="#90ee90" stroke-width="6" stroke-linecap="round"/>
+  <!-- Flower Center -->
+  <circle id="center" cx="150" cy="150" r="25" fill="#FFF5B0" stroke="#FFE066" stroke-width="2"/>
 
-  <!-- Leaves -->
+  <!-- Stem Group -->
+  <g id="stem">
+    <!-- Main Stem -->
+    <path d="M 150,175 Q 165,250 145,300 Q 135,350 150,380" fill="none" stroke="#7BB666" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Leaves Group -->
   <g id="leaves">
     <!-- Left Leaf -->
-    <path id="leaf-left" d="M100 160 Q 60 150 50 170 Q 70 175 95 165" 
-          fill="#32cd32" stroke="#228b22" stroke-width="2"/>
+    <path d="M 145,320 Q 100,310 85,340 Q 105,360 140,345 Q 150,330 145,320 Z" fill="#7BB666" stroke="#5A914A" stroke-width="2"/>
+    
     <!-- Right Leaf -->
-    <path id="leaf-right" d="M100 200 Q 140 210 150 190 Q 130 185 105 195" 
-          fill="#32cd32" stroke="#228b22" stroke-width="2"/>
+    <path d="M 145,350 Q 105,330 90,360 Q 110,380 150,370 Q 160,355 145,350 Z" fill="#7BB666" stroke="#5A914A" stroke-width="2"/>
   </g>
 </svg>

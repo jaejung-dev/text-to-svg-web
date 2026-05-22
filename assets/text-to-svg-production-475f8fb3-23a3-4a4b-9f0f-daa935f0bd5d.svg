@@ -1,75 +1,84 @@
-<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background Group (Transparent) -->
-  <g id="background" />
-
-  <!-- Head Group -->
-  <g id="head">
-    <!-- Face Skin -->
-    <path d="M100,80 C100,50 120,40 150,40 C180,40 200,50 200,80 C200,110 190,140 150,160 C110,140 100,110 100,80 Z" fill="#D4A574" />
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Person Group -->
+  <g id="person">
     
-    <!-- Mouth (Open) -->
-    <path d="M130,130 Q150,145 170,130 Q150,155 130,130 Z" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="1"/>
+    <!-- Hair (Teal-Blue, Short) -->
+    <g id="hair">
+      <path d="M 120 180 Q 120 100 200 100 Q 280 100 280 180 L 270 170 Q 270 130 200 130 Q 130 130 130 170 Z" fill="#008B8B" />
+      <path d="M 125 160 Q 125 140 140 140 L 155 140 L 155 160 Z" fill="#008B8B" />
+      <path d="M 260 160 Q 260 140 245 140 L 230 140 L 230 160 Z" fill="#008B8B" />
+    </g>
     
-    <!-- Teeth (White) -->
-    <path d="M135,132 Q150,145 165,132 Q150,148 135,132 Z" fill="#FFFFFF" />
-    <!-- Upper teeth detail -->
-    <path d="M136,133 L136,139 L150,148 L164,139 L164,133" fill="none" stroke="#E0E0E0" stroke-width="0.5"/>
-    <!-- Lower teeth detail -->
-    <path d="M137,139 Q150,148 163,139" fill="none" stroke="#E0E0E0" stroke-width="0.5"/>
-
-    <!-- Eyes (Simple dots) -->
-    <circle cx="135" cy="100" r="6" fill="#333333" />
-    <circle cx="165" cy="100" r="6" fill="#333333" />
+    <!-- Face (Light Brown Skin) -->
+    <g id="face">
+      <ellipse cx="200" cy="200" rx="70" ry="80" fill="#D4A574" />
+    </g>
+    
+    <!-- Eyes -->
+    <g id="eyes">
+      <circle cx="170" cy="190" r="12" fill="#FFFFFF" />
+      <circle cx="230" cy="190" r="12" fill="#FFFFFF" />
+      <circle cx="170" cy="190" r="5" fill="#333333" />
+      <circle cx="230" cy="190" r="5" fill="#333333" />
+    </g>
     
     <!-- Eyebrows -->
-    <path d="M128,90 Q135,85 142,90" stroke="#8B694C" stroke-width="2" fill="none" />
-    <path d="M158,90 Q165,85 172,90" stroke="#8B694C" stroke-width="2" fill="none" />
-
-    <!-- Nose (Minimalist dot) -->
-    <circle cx="150" cy="115" r="2" fill="#B58B6E" />
+    <g id="eyebrows">
+      <path d="M 155 170 Q 170 165 185 170" stroke="#8B6F4E" stroke-width="3" fill="none" />
+      <path d="M 215 170 Q 230 165 245 170" stroke="#8B6F4E" stroke-width="3" fill="none" />
+    </g>
     
     <!-- Cheeks -->
-    <circle cx="125" cy="120" r="6" fill="#E8B4A6" fill-opacity="0.6" />
-    <circle cx="175" cy="120" r="6" fill="#E8B4A6" fill-opacity="0.6" />
-  </g>
-
-  <!-- Hair Group -->
-  <g id="hair">
-    <!-- Short Teal-Blue Hair -->
-    <path d="M95,80 C95,40 120,30 150,30 C180,30 205,40 205,80 C205,60 195,50 150,50 C105,50 95,60 95,80 Z" fill="#008080" />
-    <!-- Hair bangs detail -->
-    <path d="M100,80 C100,60 110,55 120,55 C125,55 125,65 125,65" stroke="#006666" stroke-width="2" fill="none"/>
-    <path d="M130,55 C135,50 145,50 150,55" stroke="#006666" stroke-width="2" fill="none"/>
-    <path d="M160,65 C165,65 170,55 175,55 C185,55 195,60 195,80" stroke="#006666" stroke-width="2" fill="none"/>
-  </g>
-
-  <!-- Body Group -->
-  <g id="body">
-    <!-- Sweater Body -->
-    <path d="M100,160 L100,300 L200,300 L200,160 C150,150 100,160 100,160 Z" fill="#FFFFFF" />
+    <g id="cheeks">
+      <ellipse cx="155" cy="215" rx="15" ry="10" fill="#F5B7B1" opacity="0.6" />
+      <ellipse cx="245" cy="215" rx="15" ry="10" fill="#F5B7B1" opacity="0.6" />
+    </g>
     
-    <!-- High Collar -->
-    <path d="M110,160 L110,200 L150,210 L190,200 L190,160 C150,180 110,160 110,160 Z" fill="#FFFFFF" />
+    <!-- Mouth (Open, Brushing Teeth) -->
+    <g id="mouth">
+      <!-- Open Mouth Shape -->
+      <ellipse cx="200" cy="235" rx="30" ry="20" fill="#FFFFFF" />
+      <!-- Upper Teeth -->
+      <path d="M 180 225 Q 200 225 220 225 L 215 240 Q 200 240 185 240 Z" fill="#FFFFFF" />
+      <!-- Lower Teeth -->
+      <path d="M 185 245 Q 200 245 215 245 L 215 255 Q 200 255 185 255 Z" fill="#FFFFFF" />
+    </g>
     
-    <!-- Black Stripe on Neck -->
-    <path d="M110,200 L150,210 L190,200" stroke="#000000" stroke-width="4" stroke-linecap="round" />
-    <path d="M110,200 L150,210 L190,200" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" /> <!-- Highlight -->
-  </g>
-
-  <!-- Hand & Toothbrush Group -->
-  <g id="brushing-action">
-    <!-- Arm -->
-    <path d="M200,180 L230,190 L240,180 L230,170 Z" fill="#D4A574" />
-    <path d="M200,180 L220,185 L240,190" fill="none" stroke="#D4A574" stroke-width="20" stroke-linecap="round"/>
+    <!-- Nose -->
+    <g id="nose">
+      <path d="M 200 205 L 195 220 L 205 220 Z" fill="#C48A5C" />
+    </g>
     
-    <!-- Hand holding brush -->
-    <path d="M230,185 L240,185 C245,185 250,185 250,190 C250,195 245,195 240,195 L230,195" fill="#D4A574" />
-
-    <!-- Toothbrush Handle (Black) -->
-    <rect x="245" y="165" width="12" height="40" rx="4" fill="#000000" transform="rotate(-30 251 185)" />
+    <!-- Sweater (White with High Collar) -->
+    <g id="sweater">
+      <path d="M 80 350 L 80 270 Q 200 260 320 270 L 320 350 Z" fill="#FFFFFF" />
+      <!-- High Collar -->
+      <path d="M 120 270 Q 200 250 280 270 L 280 290 Q 200 280 120 290 Z" fill="#FFFFFF" />
+    </g>
     
-    <!-- Toothbrush Head (White/Bristles) -->
-    <rect x="242" y="155" width="18" height="12" rx="6" fill="#E0E0E0" transform="rotate(-30 251 161)" />
-    <path d="M242,155 L260,155 L260,167 L242,167 Z" fill="#FFFFFF" transform="rotate(-30 251 161)" />
+    <!-- Neck Stripe (Black) -->
+    <g id="neck-stripe">
+      <ellipse cx="200" cy="265" rx="80" ry="25" fill="#000000" />
+      <!-- Collar Opening -->
+      <ellipse cx="200" cy="265" rx="45" ry="15" fill="#FFFFFF" />
+    </g>
+    
+    <!-- Arms (Simplified) -->
+    <g id="arms">
+      <path d="M 80 300 Q 60 350 40 330" stroke="#D4A574" stroke-width="15" stroke-linecap="round" />
+      <path d="M 320 300 Q 340 350 360 330" stroke="#D4A574" stroke-width="15" stroke-linecap="round" />
+    </g>
+    
+    <!-- Hand Holding Toothbrush -->
+    <g id="hand">
+      <ellipse cx="130" cy="280" rx="25" ry="20" fill="#D4A574" />
+    </g>
+    
+    <!-- Toothbrush (Black) -->
+    <g id="toothbrush">
+      <path d="M 100 285 L 140 265 L 145 270 L 105 290 Z" fill="#000000" />
+      <rect x="135" y="260" width="20" height="5" fill="#000000" transform="rotate(15 145 262.5)" />
+    </g>
+    
   </g>
 </svg>

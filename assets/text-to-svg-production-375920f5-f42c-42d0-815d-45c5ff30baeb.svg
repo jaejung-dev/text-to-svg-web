@@ -1,22 +1,16 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- White Background -->
-  <rect x="0" y="0" width="200" height="200" fill="#FFFFFF" />
-
-  <!-- Centered Hexagon with Rounded Corners -->
-  <!-- A hexagon has 6 sides. We define the points for a regular hexagon centered at (100,100) with radius 70. -->
-  <!-- The shape is stroked with a dark blue-gray color and rounded joins/corners for a modern feel. -->
-  <path id="hexagon-outline"
-        d="M 100,30 
-           L 160,65 
-           L 160,135 
-           L 100,170 
-           L 40,135 
-           L 40,65 
-           Z"
-        fill="none"
-        stroke="#2F3A45" 
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-dasharray="none" />
+  <!-- Background -->
+  <rect width="200" height="200" fill="white"/>
+  
+  <!-- Hexagon -->
+  <g id="hexagon-shape">
+    <path 
+      d="M 100 20 L 157.74 53.3 L 157.74 116.7 L 100 150 L 42.26 116.7 L 42.26 53.3 Z" 
+      fill="none" 
+      stroke="#2C3E50" 
+      stroke-width="4" 
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+  </g>
 </svg>

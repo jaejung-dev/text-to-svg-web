@@ -1,23 +1,23 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background for context (optional, not part of the shape itself) -->
-  <rect width="100%" height="100%" fill="white" />
-
-  <!-- Group for the seal/stamp graphic -->
-  <g id="seal-graphic" transform="translate(100, 100)">
-    <!-- 
-      Create a circular path with serrated edges.
-      We construct a circle using a path with many small triangular spikes.
-      The 'light coral' color is approximated using #FF7F50 or #F88C72.
-    -->
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Starburst/Seal Shape with Serrated Edges -->
+  <g id="starburst-seal" transform="translate(150, 150)">
     <path 
-      d="M 50,0 
-         L 55,5 L 53,10 L 58,12 L 54,18 L 59,20 L 52,28 L 58,32 L 48,40 L 42,32 L 38,42 L 28,32 L 20,40 L 12,32 L 8,42 L 2,32 L -2,40 L -12,32 L -20,42 L -28,32 L -38,42 L -42,32 L -48,40 L -58,32 L -52,28 L -59,20 L -54,18 L -58,12 L -53,10 L -55,5 
-         Z" 
+      id="jagged-circle"
+      d="M 150 50 
+         L 160 90 L 180 70 L 200 100 L 210 60 
+         L 240 90 L 270 70 L 270 110 L 310 120 
+         L 280 150 L 310 180 L 270 190 L 270 230 
+         L 210 240 L 240 270 L 200 290 L 180 260 
+         L 150 280 L 120 260 L 100 290 L 60 270 
+         L 90 240 L 30 230 L 30 190 L -10 180 
+         L 20 150 L -10 120 L 30 110 L 30 70 
+         L -10 90 L 60 60 L 100 100 L 120 70 
+         L 150 50 Z"
       fill="none" 
-      stroke="#FF8C70" 
-      stroke-width="4" 
-      stroke-linejoin="miter"
-      stroke-linecap="round"
+      stroke="#FF7F50" 
+      stroke-width="3" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
     />
   </g>
 </svg>

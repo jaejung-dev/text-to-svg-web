@@ -1,10 +1,7 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Define the frame (border) -->
-  <!-- Outer container background is the frame color -->
-  <rect x="0" y="0" width="400" height="300" fill="#8B4513" />
+  <!-- Background/Brown Frame -->
+  <rect id="frame-background" x="0" y="0" width="400" height="300" fill="#8B4513"/>
   
-  <!-- Center white rectangular area -->
-  <!-- Calculates padding to create a symmetric border -->
-  <!-- Padding = 40px from each side -->
-  <rect x="40" y="40" width="320" height="220" fill="#FFFFFF" />
+  <!-- Center White Rectangle -->
+  <rect id="center-area" x="40" y="40" width="320" height="220" fill="#FFFFFF"/>
 </svg>

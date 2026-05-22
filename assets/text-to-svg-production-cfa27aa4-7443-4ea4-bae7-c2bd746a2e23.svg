@@ -1,47 +1,55 @@
-<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Definitions for the checkerboard pattern -->
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <pattern id="checkerboardPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-      <!-- Light beige square -->
-      <rect x="0" y="0" width="20" height="20" fill="#F5E6C8" />
-      <!-- Black square -->
-      <rect x="20" y="0" width="20" height="20" fill="#111111" />
-      <!-- Black square -->
-      <rect x="0" y="20" width="20" height="20" fill="#111111" />
-      <!-- Light beige square -->
-      <rect x="20" y="20" width="20" height="20" fill="#F5E6C8" />
+    <!-- Checkerboard pattern -->
+    <pattern id="checkerboard" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="20" height="20" fill="#1a1a1a"/>
+      <rect x="20" y="0" width="20" height="20" fill="#f5e6d3"/>
+      <rect x="0" y="20" width="20" height="20" fill="#f5e6d3"/>
+      <rect x="20" y="20" width="20" height="20" fill="#1a1a1a"/>
     </pattern>
+    
+    <!-- Diamond gradient -->
+    <linearGradient id="diamondGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff9c4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffeb3b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdd835;stop-opacity:1" />
+    </linearGradient>
   </defs>
-
-  <!-- Background (Transparent by default, but adding a subtle placeholder for visualization) -->
-  <rect x="0" y="0" width="500" height="400" fill="none" />
-
-  <!-- Main Frame Group -->
-  <g id="frame">
-    <!-- Outer Frame Border (Checkerboard Pattern) -->
-    <!-- Frame dimensions: Top/Bottom 60px, Left/Right 60px -->
-    <!-- Top Bar -->
-    <rect x="40" y="20" width="420" height="60" fill="url(#checkerboardPattern)" />
-    <!-- Bottom Bar -->
-    <rect x="40" y="320" width="420" height="60" fill="url(#checkerboardPattern)" />
-    <!-- Left Bar -->
-    <rect x="20" y="80" width="60" height="240" fill="url(#checkerboardPattern)" />
-    <!-- Right Bar -->
-    <rect x="420" y="80" width="60" height="240" fill="url(#checkerboardPattern)" />
-
-    <!-- Inner Content Area (Transparent) -->
-    <rect x="80" y="80" width="340" height="240" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="5,5" />
-    <!-- Label indicating transparency/content area -->
-    <text x="250" y="200" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#888" opacity="0.5">Content Area</text>
+  
+  <!-- Frame background -->
+  <g id="frame-background">
+    <!-- Outer frame border -->
+    <rect x="40" y="40" width="520" height="320" fill="url(#checkerboard)"/>
+    <!-- Inner border for depth -->
+    <rect x="50" y="50" width="500" height="300" fill="none" stroke="#1a1a1a" stroke-width="3"/>
   </g>
-
-  <!-- Vibrant Light Yellow Diamond Graphic -->
-  <!-- Placed in bottom left corner, overlapping the frame -->
-  <g id="diamondGraphic" transform="translate(100, 300)">
-    <!-- Diamond shape (rotated square) -->
-    <polygon points="0,0 40,40 0,80 -40,40" fill="#FFD700" stroke="#DAA520" stroke-width="2" />
-    <!-- Internal detail to make it a "graphic" -->
-    <polygon points="0,20 20,40 0,60 -20,40" fill="#FFFACD" opacity="0.8" />
-    <polygon points="0,25 15,40 0,55 -15,40" fill="#FFD700" />
+  
+  <!-- Transparent content area -->
+  <g id="content-area">
+    <rect x="80" y="80" width="440" height="240" fill="transparent"/>
+    <!-- Content placeholder text -->
+    <text x="300" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#999" opacity="0.5">
+      Content Area
+    </text>
+  </g>
+  
+  <!-- Yellow diamond in bottom left -->
+  <g id="decorative-diamond" transform="translate(60, 300)">
+    <polygon points="0,-40 35,0 0,40 -35,0" fill="url(#diamondGradient)" opacity="0.9"/>
+    <polygon points="0,-38 33,0 0,38 -33,0" fill="none" stroke="#fbc02d" stroke-width="1"/>
+  </g>
+  
+  <!-- Frame corner accents -->
+  <g id="corner-accent" transform="translate(40, 40)">
+    <path d="M0,20 L20,20 L20,0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+  <g id="corner-accent" transform="translate(560, 40)">
+    <path d="M0,20 L-20,20 L-20,0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+  <g id="corner-accent" transform="translate(40, 360)">
+    <path d="M0,-20 L20,-20 L20,0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+  <g id="corner-accent" transform="translate(560, 360)">
+    <path d="M0,-20 L-20,-20 L-20,0" fill="none" stroke="#1a1a1a" stroke-width="2"/>
   </g>
 </svg>
