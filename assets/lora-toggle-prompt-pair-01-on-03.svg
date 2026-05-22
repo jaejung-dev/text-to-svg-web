@@ -1,0 +1,109 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles -->
+  <defs>
+    <linearGradient id="baseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F3D82;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099CC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="supportGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00A7E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CC9F0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#F5F5F5"/>
+  
+  <!-- Main SAP-style parallelogram shapes (foundation) -->
+  <g id="foundation-elements" filter="url(#glow)">
+    <!-- Left parallelogram -->
+    <polygon points="80,120 180,120 160,220 60,220" 
+             fill="url(#baseGradient)" 
+             stroke="#FFFFFF" 
+             stroke-width="2"/>
+    
+    <!-- Right parallelogram (slightly offset) -->
+    <polygon points="150,140 250,140 230,240 130,240" 
+             fill="#1D5F9C" 
+             stroke="#FFFFFF" 
+             stroke-width="2"/>
+    
+    <!-- Central connecting element -->
+    <polygon points="180,160 220,160 200,200 160,200" 
+             fill="#0099CC" 
+             opacity="0.9"/>
+  </g>
+  
+  <!-- Support pillars/shields (representing protection and support) -->
+  <g id="support-pillars">
+    <!-- Left pillar -->
+    <path d="M 100,220 L 100,280 L 140,300 L 140,240 Z" 
+          fill="url(#supportGradient)" 
+          opacity="0.85"/>
+    
+    <!-- Right pillar -->
+    <path d="M 200,240 L 200,300 L 240,280 L 240,220 Z" 
+          fill="url(#supportGradient)" 
+          opacity="0.85"/>
+    
+    <!-- Central support -->
+    <path d="M 165,260 L 165,300 L 235,280 L 235,240 Z" 
+          fill="#00A7E1" 
+          opacity="0.95"/>
+  </g>
+  
+  <!-- Supporting circular nodes (technology connection) -->
+  <g id="connection-nodes" stroke="#0099CC" stroke-width="2" fill="#FFFFFF">
+    <!-- Top left node -->
+    <circle cx="120" cy="160" r="8"/>
+    <circle cx="180" cy="180" r="6"/>
+    
+    <!-- Right side node -->
+    <circle cx="220" cy="190" r="8"/>
+    <circle cx="200" cy="230" r="6"/>
+    
+    <!-- Bottom nodes (support base) -->
+    <circle cx="140" cy="290" r="7"/>
+    <circle cx="210" cy="290" r="7"/>
+  </g>
+  
+  <!-- Connecting lines (integration) -->
+  <g id="connection-lines" stroke="#4CC9F0" stroke-width="3" opacity="0.4">
+    <line x1="128" y1="168" x2="186" y2="186" stroke-dasharray="6,4"/>
+    <line x1="186" y1="186" x2="228" y2="198" stroke-dasharray="6,4"/>
+    <line x1="208" y1="236" x2="148" y2="297" stroke-dasharray="6,4"/>
+    <line x1="218" y1="297" x2="230" y2="238" stroke-dasharray="6,4"/>
+  </g>
+  
+  <!-- Protective shield overlay -->
+  <path d="M 160,100 L 240,100 L 230,180 L 170,180 Z" 
+        fill="#FFFFFF" 
+        opacity="0.2" 
+        stroke="#0099CC" 
+        stroke-width="2"/>
+  
+  <!-- Upward arrows (growth and support direction) -->
+  <g id="directional-arrows" fill="#00A7E1" opacity="0.9">
+    <polygon points="130,310 125,325 135,325"/>
+    <polygon points="200,310 195,325 205,325"/>
+    <polygon points="270,310 265,325 275,325"/>
+  </g>
+  
+  <!-- Accent elements -->
+  <g id="accent-details">
+    <!-- Diagonal lines suggesting stability -->
+    <line x1="60" y1="240" x2="100" y2="240" stroke="#0099CC" stroke-width="3" opacity="0.6"/>
+    <line x1="100" y1="240" x2="140" y2="240" stroke="#0099CC" stroke-width="3" opacity="0.6"/>
+    <line x1="200" y1="220" x2="240" y2="220" stroke="#0099CC" stroke-width="3" opacity="0.6"/>
+  </g>
+  
+  <!-- Bottom stabilization bar -->
+  <rect x="120" y="320" width="160" height="8" fill="#0F3D82" opacity="0.3"/>
+</svg>

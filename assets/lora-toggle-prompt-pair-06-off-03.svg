@@ -1,0 +1,73 @@
+<svg viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GhostVector Logo</title>
+  <desc id="desc">A modern tech logo featuring a vector arrow fading into a ghostly trail, paired with stylized typography.</desc>
+
+  <defs>
+    <!-- Gradient for the ghostly fading trail effect -->
+    <linearGradient id="ghost-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#00d2ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow filter for the vector element -->
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Icon Group: Geometric Vector Shape with Ghostly Trail -->
+  <g id="icon-visual" transform="translate(10, 10)">
+    <!-- Ghost Trail (Fading outlines behind) -->
+    <g id="ghost-trail" opacity="0.3">
+      <path d="M25 10 L35 20 L25 30 Z" fill="none" stroke="#ffffff" stroke-width="1.5" transform="translate(0, 5) scale(0.8)"/>
+      <path d="M25 10 L35 20 L25 30 Z" fill="none" stroke="#ffffff" stroke-width="1.5" transform="translate(0, 10) scale(0.6)"/>
+      <path d="M25 10 L35 20 L25 30 Z" fill="none" stroke="#ffffff" stroke-width="1.5" transform="translate(0, 15) scale(0.4)"/>
+    </g>
+    
+    <!-- Main Vector Element (Solid, Leading Edge) -->
+    <polygon id="vector-core" 
+             points="25,10 35,20 25,30" 
+             fill="url(#ghost-fade)" 
+             stroke="#00d2ff" 
+             stroke-width="1.5" 
+             filter="url(#soft-glow)" />
+             
+    <!-- Connecting Line for Vector Path -->
+    <line x1="0" y1="20" x2="25" y2="20" 
+          stroke="url(#ghost-fade)" 
+          stroke-width="2" 
+          stroke-linecap="round"/>
+  </g>
+
+  <!-- Text Group: Logo Name -->
+  <g id="logo-text" transform="translate(75, 50)">
+    <!-- "Ghost" - Lighter, ethereal weight -->
+    <text id="text-ghost" 
+          x="0" 
+          y="0" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-weight="300" 
+          font-size="28" 
+          fill="#cccccc"
+          letter-spacing="2">
+      GHOST
+    </text>
+    
+    <!-- "Vector" - Bold, structural weight -->
+    <text id="text-vector" 
+          x="72" 
+          y="0" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-weight="700" 
+          font-size="28" 
+          fill="#00d2ff"
+          letter-spacing="2">
+      VECTOR
+    </text>
+  </g>
+</svg>

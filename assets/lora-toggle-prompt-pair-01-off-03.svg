@@ -1,0 +1,89 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1f44;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#051126;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- SAP Block Gradients -->
+    <linearGradient id="blueBlock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3882E4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#002F6C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeBlock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F58518;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C96000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenBlock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#82B53C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B5E12;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redBlock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D51F19;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B0A0A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="yellowBlock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB81C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D69300;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow Filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main Background Circle -->
+  <circle cx="150" cy="150" r="145" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.1"/>
+
+  <!-- SAP Shape Structure (Grouped) -->
+  <g id="sap-shape" transform="translate(150, 150)" filter="url(#dropShadow)">
+    
+    <!-- Top Left Block -->
+    <polygon points="-55,-45 0,-55 30,-45 0,-35" fill="url(#blueBlock)" />
+    
+    <!-- Top Right Block -->
+    <polygon points="0,-55 55,-45 55,-35 0,-25" fill="url(#orangeBlock)" />
+    
+    <!-- Middle Left Block -->
+    <polygon points="-60,-20 0,-30 30,-20 0,-10" fill="url(#greenBlock)" />
+    
+    <!-- Middle Right Block -->
+    <polygon points="0,-30 60,-20 60,-10 0,0" fill="url(#redBlock)" />
+    
+    <!-- Bottom Base Block -->
+    <polygon points="-65,10 0,0 65,10 0,45" fill="url(#yellowBlock)" />
+    
+  </g>
+
+  <!-- Support Element: Gear / Cog Icon -->
+  <!-- Placed centrally over the blocks to represent "BASIS Support" -->
+  <g id="support-gear" transform="translate(150, 135)" opacity="0.9">
+    <!-- Gear Body -->
+    <circle cx="0" cy="0" r="18" fill="white" />
+    
+    <!-- Gear Teeth -->
+    <path d="M-13,-13 l3,-3 l6,-6 l-3,3 l-3,-3 l3,-3 M13,-13 l3,-3 l6,-6 l-3,3 l3,-3 l-3,3 M13,13 l3,3 l6,6 l-3,-3 l3,3 l-3,3 M-13,13 l3,3 l6,6 l-3,-3 l-3,3 l3,3" 
+          stroke="none" fill="#f0f0f0"/>
+          
+    <!-- Gear Inner Detail -->
+    <path d="M0,-10 l0,-6 M0,10 l0,6 M-10,0 l-6,0 M10,0 l6,0 M-7,-7 l-4.5,-4.5 M7,-7 l4.5,-4.5 M7,7 l4.5,4.5 M-7,7 l-4.5,4.5" 
+          stroke="#051126" stroke-width="4" stroke-linecap="round"/>
+          
+    <!-- Shield Overlay (Concept of Security/Stability) -->
+    <path d="M0,0 l-8,-4 l-2,-10 l20,0 l2,10 l-8,4 z" fill="#fff" opacity="0.2"/>
+  </g>
+  
+  <!-- Glow Effect under gear -->
+  <circle cx="150" cy="135" r="25" fill="white" opacity="0.15" filter="blur(10px)"/>
+
+</svg>

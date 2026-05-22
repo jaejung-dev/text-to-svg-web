@@ -1,0 +1,88 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main Corporate Gradient -->
+    <linearGradient id="sapBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00548C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003058;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Support Accent Gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00B0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0072CE;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow Effect -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Main Logo Group -->
+  <g id="SAP-BASIS-Support-Logo" transform="translate(64, 64)">
+    
+    <!-- 1. The SAP Parallelogram Shape (The Foundation) -->
+    <g id="base-shape">
+      <!-- Main Parallelogram Body -->
+      <path d="M 0 128 L 384 128 L 330 448 L -54 448 Z" 
+            fill="url(#sapBlueGradient)" 
+            stroke="#FFFFFF" 
+            stroke-width="2"
+            filter="url(#softGlow)" />
+      
+      <!-- Inner Grid Pattern (Representing Structure/System) -->
+      <g id="system-grid" opacity="0.2" fill="#FFFFFF">
+        <rect x="40" y="168" width="30" height="30" />
+        <rect x="110" y="168" width="30" height="30" />
+        <rect x="180" y="168" width="30" height="30" />
+        <rect x="250" y="168" width="30" height="30" />
+        
+        <rect x="40" y="248" width="30" height="30" />
+        <rect x="110" y="248" width="30" height="30" />
+        <rect x="180" y="248" width="30" height="30" />
+        <rect x="250" y="248" width="30" height="30" />
+        
+        <rect x="40" y="328" width="30" height="30" />
+        <rect x="110" y="328" width="30" height="30" />
+        <rect x="180" y="328" width="30" height="30" />
+        <rect x="250" y="328" width="30" height="30" />
+      </g>
+    </g>
+
+    <!-- 2. BASIS Support Symbol (Gear + Shield + Arrow) -->
+    <g id="support-symbol" transform="translate(192, 288)">
+      
+      <!-- Shield Shape (Protection/Foundation) -->
+      <path d="M 0 60 L 50 40 L 50 20 A 50 50 0 0 0 0 0 A 50 50 0 0 0 -50 20 L -50 40 L 0 60 Z" 
+            fill="#1a2c4b" 
+            stroke="url(#accentGradient)" 
+            stroke-width="4" />
+
+      <!-- Gear Cogs (Technical BASIS) -->
+      <g id="gear-teeth" stroke="#FFFFFF" stroke-width="4" fill="none">
+        <circle cx="0" cy="30" r="15" /> <!-- Base -->
+        <!-- Spokes -->
+        <line x1="0" y1="45" x2="0" y2="55" />
+        <line x1="0" y1="15" x2="0" y2="5" />
+        <line x1="12.99" y1="22.5" x2="17" y2="15" />
+        <line x1="-12.99" y1="22.5" x2="-17" y2="15" />
+        <line x1="12.99" y1="37.5" x2="17" y2="45" />
+        <line x1="-12.99" y1="37.5" x2="-17" y2="45" />
+      </g>
+      
+      <!-- Upward Arrow (Support/Growth) -->
+      <path d="M 0 30 L 0 10 L -10 10 L -10 0 L 0 10 L 10 0 L 10 10 L 10 30 Z" 
+            fill="url(#accentGradient)" />
+    </g>
+
+    <!-- 3. Decorative Elements (Connectivity) -->
+    <g id="connectivity-lines" stroke="#FFFFFF" stroke-width="2" opacity="0.6" stroke-linecap="round">
+      <!-- Top highlight line -->
+      <path d="M 10 138 L 374 138" />
+      <!-- Side accent -->
+      <line x1="-44" y1="438" x2="310" y2="138" />
+    </g>
+
+  </g>
+</svg>

@@ -1,0 +1,131 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc">
+  <title id="title">Il Progetto: Lavanderia Self-Service Burkina Faso</title>
+  <desc id="desc">Infografica illustrativa che mostra una lavanderia automatica self-service in città con sistemi di pagamento moderni per studenti e lavoratori.</desc>
+  
+  <defs>
+    <!-- Gradients for depth -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4f4f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="metallicGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e6e6e6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cccccc;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1c40f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d35400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background City Elements -->
+  <rect width="800" height="600" fill="url(#skyGradient)" />
+  
+  <!-- Stylized Buildings in Background -->
+  <g id="city-silhouette" opacity="0.3">
+    <rect x="50" y="300" width="80" height="200" fill="#95a5a6" />
+    <rect x="140" y="250" width="60" height="250" fill="#7f8c8d" />
+    <rect x="650" y="280" width="90" height="220" fill="#95a5a6" />
+  </g>
+
+  <!-- Main Service Area (The Laundry Building) -->
+  <g id="laundry-location" transform="translate(0, 100)">
+    <!-- Building Facade -->
+    <rect x="100" y="200" width="600" height="350" fill="#f39c12" /> <!-- Burkina Faso inspired accent color -->
+    <rect x="100" y="180" width="600" height="20" fill="#e67e22" /> <!-- Roof edge -->
+    
+    <!-- Signage -->
+    <rect x="150" y="190" width="500" height="60" fill="#ffffff" stroke="#333" stroke-width="2" rx="5" />
+    <text x="400" y="230" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#e67e22">AUTO-SERVICE</text>
+    
+    <!-- Windows/Doors -->
+    <rect x="120" y="350" width="100" height="150" fill="#bdc3c7" stroke="#34495e" stroke-width="2" />
+    <rect x="580" y="350" width="100" height="150" fill="#bdc3c7" stroke="#34495e" stroke-width="2" />
+  </g>
+
+  <!-- The Machines (Foreground) -->
+  <g id="machines" transform="translate(200, 350)">
+    <!-- Machine 1 -->
+    <g id="machine-1">
+      <rect x="0" y="0" width="160" height="240" fill="url(#metallicGradient)" stroke="#95a5a6" stroke-width="2" rx="5" />
+      <!-- Door -->
+      <circle cx="80" cy="140" r="45" fill="#ecf0f1" stroke="#3498db" stroke-width="4" />
+      <circle cx="80" cy="140" r="35" fill="#3498db" opacity="0.2" /> <!-- Window -->
+      <!-- Buttons -->
+      <circle cx="50" cy="50" r="8" fill="#95a5a6" />
+      <circle cx="50" cy="80" r="8" fill="#95a5a6" />
+      <circle cx="110" cy="50" r="8" fill="#95a5a6" />
+      <!-- Water Icon -->
+      <path d="M80,180 L80,195 M75,190 L85,190" stroke="#3498db" stroke-width="3" />
+      <text x="80" y="220" text-anchor="middle" font-family="Arial" font-size="12">LAVAGGIO</text>
+    </g>
+    
+    <!-- Machine 2 -->
+    <g id="machine-2" transform="translate(190, 0)">
+      <rect x="0" y="0" width="160" height="240" fill="url(#metallicGradient)" stroke="#95a5a6" stroke-width="2" rx="5" />
+      <!-- Door -->
+      <circle cx="80" cy="140" r="45" fill="#ecf0f1" stroke="#e67e22" stroke-width="4" />
+      <circle cx="80" cy="140" r="35" fill="#e67e22" opacity="0.2" /> <!-- Window -->
+      <!-- Buttons -->
+      <circle cx="50" cy="50" r="8" fill="#95a5a6" />
+      <circle cx="50" cy="80" r="8" fill="#95a5a6" />
+      <circle cx="110" cy="50" r="8" fill="#95a5a6" />
+      <!-- Fire/Heat Icon -->
+      <path d="M80,180 Q90,160 80,150 Q70,160 80,180" stroke="#e67e22" stroke-width="3" fill="none" />
+      <text x="80" y="220" text-anchor="middle" font-family="Arial" font-size="12">ASCIUGATURA</text>
+    </g>
+  </g>
+
+  <!-- People (Target Audience) -->
+  <g id="users">
+    <!-- Student with Mobile Money -->
+    <g transform="translate(380, 280)">
+      <!-- Head -->
+      <circle cx="20" cy="20" r="15" fill="#f1c40f" />
+      <!-- Body -->
+      <path d="M5,35 L20,100 L35,35" fill="#3498db" />
+      <!-- Bag -->
+      <rect x="-10" y="60" width="15" height="25" fill="#8e44ad" />
+      <!-- Phone & Money Signal -->
+      <g transform="translate(25, 40)">
+         <rect x="0" y="0" width="8" height="12" fill="#333" rx="1" />
+         <path d="M12,2 L18,0 M24,6 L28,5" stroke="#f1c40f" stroke-width="2" stroke-linecap="round"/>
+         <text x="20" y="-10" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">Mobile Money</text>
+      </g>
+    </g>
+    
+    <!-- Worker/Clean Clothes -->
+    <g transform="translate(580, 280)">
+      <!-- Head -->
+      <circle cx="20" cy="20" r="15" fill="#d35400" />
+      <!-- Body -->
+      <rect x="5" y="35" width="30" height="50" fill="#2c3e50" />
+      <!-- Clean Clothes Bundle -->
+      <path d="M10,50 L30,50 L40,30 L0,30 Z" fill="#fff" stroke="#bdc3c7" stroke-width="1" />
+      <text x="20" y="15" text-anchor="middle" font-family="Arial" font-size="12" fill="#2c3e50">Lavoratore</text>
+    </g>
+  </g>
+
+  <!-- Info Bubbles -->
+  <g id="info-bubbles">
+    <!-- Payment Method -->
+    <circle cx="650" cy="150" r="40" fill="#ffffff" stroke="#27ae60" stroke-width="2" />
+    <rect x="635" y="135" width="30" height="20" fill="#333" opacity="0.8" />
+    <path d="M650,150 L655,145 L660,150 L655,155 Z" fill="#2ecc71" />
+    <text x="650" y="120" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Pagamento</text>
+    <text x="650" y="110" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Moderno</text>
+    
+    <!-- Efficiency/No Personnel -->
+    <circle cx="150" cy="150" r="40" fill="#ffffff" stroke="#2980b9" stroke-width="2" />
+    <path d="M140,150 L160,150 M150,140 L150,160" stroke="#2980b9" stroke-width="2" /> <!-- Clock face -->
+    <text x="150" y="120" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">24/7</text>
+    <text x="150" y="110" text-anchor="middle" font-family="Arial" font-size="10" fill="#333">Efficienza</text>
+  </g>
+
+  <!-- Bottom Banner Text -->
+  <rect x="0" y="540" width="800" height="60" fill="#34495e" />
+  <text x="400" y="570" text-anchor="middle" font-family="Arial" font-size="14" fill="#ecf0f1">Centro Città &lt;--&gt; Università | Servizi Automatici &amp; Accessibili</text>
+</svg>

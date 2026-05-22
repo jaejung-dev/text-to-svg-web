@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title desc">
+  <title id="title">SAP BASIS Support Logo Concept</title>
+  <desc id="desc">A modern logo design illustrating SAP BASIS Support using the iconic four-block SAP structure with a central gear icon representing technical infrastructure and maintenance.</desc>
+  
+  <defs>
+    <!-- Gradient for the SAP Blue Blocks -->
+    <linearGradient id="sap-gradient-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0099FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0055AA;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for the Shadow/Depth -->
+    <linearGradient id="sap-gradient-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066CC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Support Accent Gradient -->
+    <linearGradient id="support-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main SAP Logo Shape -->
+  <g id="sap-structural-shape" transform="translate(250, 250)">
+    <!-- Top Left Block -->
+    <g id="sap-block-tl" transform="translate(-125, -125)">
+      <path d="M 0 0 L 50 0 L 50 50 L 0 50 Z" fill="url(#sap-gradient-light)" />
+      <path d="M 0 50 L 0 100 L 50 50 L 50 0 Z" fill="url(#sap-gradient-dark)" />
+    </g>
+    
+    <!-- Top Right Block -->
+    <g id="sap-block-tr" transform="translate(-75, -125)">
+      <path d="M 0 0 L 50 0 L 50 50 L 0 50 Z" fill="url(#sap-gradient-light)" />
+      <path d="M 50 50 L 50 100 L 100 50 L 50 0 Z" fill="url(#sap-gradient-dark)" />
+    </g>
+    
+    <!-- Bottom Left Block -->
+    <g id="sap-block-bl" transform="translate(-125, -75)">
+      <path d="M 0 0 L 50 0 L 50 50 L 0 50 Z" fill="url(#sap-gradient-light)" />
+      <path d="M 0 50 L 0 100 L 50 50 L 50 0 Z" fill="url(#sap-gradient-dark)" />
+    </g>
+    
+    <!-- Bottom Right Block -->
+    <g id="sap-block-br" transform="translate(-75, -75)">
+      <path d="M 0 0 L 50 0 L 50 50 L 0 50 Z" fill="url(#sap-gradient-light)" />
+      <path d="M 50 50 L 50 100 L 100 50 L 50 0 Z" fill="url(#sap-gradient-dark)" />
+    </g>
+  </g>
+
+  <!-- BASIS Support Elements -->
+  <g id="basis-support-symbol" transform="translate(250, 250)">
+    <!-- Gear Icon representing Infrastructure/Maintenance -->
+    <g id="gear-icon">
+      <!-- Outer Ring -->
+      <circle cx="0" cy="0" r="35" stroke="url(#support-gradient)" stroke-width="2" fill="none" />
+      <!-- Gear Teeth -->
+      <path d="M -30 0 L -35 -10 L -25 -10 Z M -15 0 L -20 -15 L -10 -15 Z M 0 -30 L -10 -35 L 10 -35 Z M 15 0 L 20 -15 L 30 -15 Z M 30 0 L 35 -10 L 25 -10 Z M 15 0 L 20 15 L 30 15 Z M 30 0 L 35 10 L 25 10 Z M 15 0 L 20 15 L 10 15 Z M 0 30 L 10 35 L -10 35 Z M -15 0 L -20 15 L -30 15 Z M -30 0 L -35 10 L -25 10 Z M -15 0 L -20 15 L -10 15 Z M 0 30 L -10 35 L 10 35 Z" stroke="url(#support-gradient)" stroke-width="2" fill="none" transform="scale(0.8)" />
+      <!-- Inner Hub -->
+      <circle cx="0" cy="0" r="10" fill="url(#support-gradient)" />
+    </g>
+    
+    <!-- Pulse Ring for Active Monitoring -->
+    <circle cx="0" cy="0" r="40" stroke="#4CAF50" stroke-width="1" fill="none" opacity="0.6">
+      <animateTransform attributeName="transform" type="scale" from="1 1" to="1.2 1.2" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>

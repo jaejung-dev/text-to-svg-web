@@ -1,0 +1,95 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Base Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)" />
+  
+  <!-- Main Design Container -->
+  <g id="mainDesign" transform="translate(400, 300)">
+    
+    <!-- Outer Circle -->
+    <circle r="250" fill="none" stroke="url(#accentGradient)" stroke-width="3" opacity="0.3" />
+    
+    <!-- Decorative Circles -->
+    <g id="decorativeCircles">
+      <circle r="180" fill="none" stroke="#4ecca3" stroke-width="2" opacity="0.4" />
+      <circle r="120" fill="none" stroke="#e94560" stroke-width="2" opacity="0.6" />
+      <circle r="60" fill="none" stroke="#ffd700" stroke-width="2" />
+    </g>
+    
+    <!-- Geometric Shapes -->
+    <g id="geometricShapes">
+      <!-- Triangle -->
+      <polygon points="-80,-100 80,-100 0,50" fill="rgba(233,69,96,0.2)" stroke="#e94560" stroke-width="2" />
+      
+      <!-- Diamond -->
+      <rect x="-40" y="-40" width="80" height="80" fill="rgba(78,204,163,0.2)" stroke="#4ecca3" stroke-width="2" transform="rotate(45)" />
+      
+      <!-- Hexagon -->
+      <polygon points="-60,0 -30,-52 30,-52 60,0 30,52 -30,52" fill="rgba(255,215,0,0.2)" stroke="#ffd700" stroke-width="2" />
+    </g>
+    
+    <!-- Connecting Lines -->
+    <g id="connectingLines">
+      <line x1="-200" y1="0" x2="200" y2="0" stroke="#4ecca3" stroke-width="1" opacity="0.3" />
+      <line x1="0" y1="-200" x2="0" y2="200" stroke="#4ecca3" stroke-width="1" opacity="0.3" />
+    </g>
+    
+    <!-- Accent Points -->
+    <g id="accentPoints">
+      <circle cx="180" cy="0" r="8" fill="#4ecca3" />
+      <circle cx="-180" cy="0" r="8" fill="#4ecca3" />
+      <circle cx="0" cy="180" r="8" fill="#4ecca3" />
+      <circle cx="0" cy="-180" r="8" fill="#4ecca3" />
+    </g>
+    
+    <!-- Center Glow Effect -->
+    <circle r="40" fill="url(#glowGradient)" opacity="0.5" />
+    
+    <!-- Center Dot -->
+    <circle r="15" fill="#e94560" />
+    
+  </g>
+  
+  <!-- Corner Decorations -->
+  <g id="cornerDecorations">
+    <!-- Top Left -->
+    <path d="M 20 20 L 60 20 L 60 60 Z" fill="none" stroke="#4ecca3" stroke-width="2" />
+    
+    <!-- Top Right -->
+    <path d="M 740 20 L 780 20 L 780 60 Z" fill="none" stroke="#4ecca3" stroke-width="2" />
+    
+    <!-- Bottom Left -->
+    <path d="M 20 540 L 60 540 L 60 580 Z" fill="none" stroke="#4ecca3" stroke-width="2" />
+    
+    <!-- Bottom Right -->
+    <path d="M 740 540 L 780 540 L 780 580 Z" fill="none" stroke="#4ecca3" stroke-width="2" />
+  </g>
+  
+  <!-- Floating Particles -->
+  <g id="particles" opacity="0.6">
+    <circle cx="150" cy="150" r="4" fill="#ffd700" />
+    <circle cx="650" cy="100" r="6" fill="#ffd700" />
+    <circle cx="700" cy="450" r="3" fill="#4ecca3" />
+    <circle cx="100" cy="500" r="5" fill="#e94560" />
+    <circle cx="400" cy="100" r="3" fill="#ffd700" />
+    <circle cx="400" cy="500" r="4" fill="#4ecca3" />
+  </g>
+</svg>

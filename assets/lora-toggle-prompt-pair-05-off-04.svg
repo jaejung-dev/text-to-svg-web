@@ -1,0 +1,126 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Crimson gradients for depth -->
+    <radialGradient id="carpetBase" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#660000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#440000;stop-opacity:1"/>
+    </radialGradient>
+    
+    <!-- Gold gradient for accents -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#DAA520;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1"/>
+    </linearGradient>
+    
+    <!-- Dark overlay for cyberpunk mood -->
+    <radialGradient id="shadowGradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.3"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Outer border frame -->
+  <g id="borderFrame">
+    <rect x="8" y="8" width="496" height="496" fill="#2B1B1B" stroke="#443322" stroke-width="3"/>
+    <rect x="16" y="16" width="480" height="480" fill="url(#carpetBase)" stroke="#8B0000" stroke-width="2"/>
+  </g>
+  
+  <!-- Ornate outer border pattern -->
+  <g id="outerBorder">
+    <path d="M 32 32 L 480 32 L 480 480 L 32 480 Z" fill="none" stroke="#DAA520" stroke-width="4" opacity="0.7"/>
+    <circle cx="32" cy="32" r="8" fill="url(#goldGradient)"/>
+    <circle cx="480" cy="32" r="8" fill="url(#goldGradient)"/>
+    <circle cx="32" cy="480" r="8" fill="url(#goldGradient)"/>
+    <circle cx="480" cy="480" r="8" fill="url(#goldGradient)"/>
+    
+    <!-- Corner medallions -->
+    <g id="cornerMedallions">
+      <g id="cornerTL">
+        <path d="M 32 64 C 64 64 96 64 128 64 C 128 32 96 32 64 32 Z" fill="#8B0000" stroke="#DAA520" stroke-width="2"/>
+        <circle cx="80" cy="48" r="6" fill="url(#goldGradient)"/>
+      </g>
+      <g id="cornerTR">
+        <path d="M 384 64 C 352 64 320 64 288 64 C 288 32 320 32 352 32 Z" fill="#8B0000" stroke="#DAA520" stroke-width="2"/>
+        <circle cx="320" cy="48" r="6" fill="url(#goldGradient)"/>
+      </g>
+      <g id="cornerBL">
+        <path d="M 32 448 C 64 448 96 448 128 448 C 128 480 96 480 64 480 Z" fill="#8B0000" stroke="#DAA520" stroke-width="2"/>
+        <circle cx="80" cy="464" r="6" fill="url(#goldGradient)"/>
+      </g>
+      <g id="cornerBR">
+        <path d="M 384 448 C 352 448 320 448 288 448 C 288 480 320 480 352 480 Z" fill="#8B0000" stroke="#DAA520" stroke-width="2"/>
+        <circle cx="320" cy="464" r="6" fill="url(#goldGradient)"/>
+      </g>
+    </g>
+    
+    <!-- Border intricate patterns -->
+    <g id="borderPatterns">
+      <rect x="48" y="48" width="416" height="416" fill="none" stroke="#8B0000" stroke-width="1" opacity="0.5"/>
+      <rect x="64" y="64" width="384" height="384" fill="none" stroke="#440000" stroke-width="1" opacity="0.3"/>
+    </g>
+  </g>
+  
+  <!-- Central medallion design -->
+  <g id="centralMedallion">
+    <circle cx="256" cy="256" r="80" fill="none" stroke="#DAA520" stroke-width="3"/>
+    <circle cx="256" cy="256" r="70" fill="url(#goldGradient)" opacity="0.3"/>
+    <circle cx="256" cy="256" r="55" fill="#660000" stroke="#DAA520" stroke-width="2"/>
+    <circle cx="256" cy="256" r="40" fill="#8B0000"/>
+    <circle cx="256" cy="256" r="25" fill="#440000" stroke="#DAA520" stroke-width="2"/>
+    <circle cx="256" cy="256" r="12" fill="url(#goldGradient)"/>
+    
+    <!-- Radiating patterns -->
+    <g id="radiatingLines">
+      <line x1="256" y1="100" x2="256" y2="150" stroke="#DAA520" stroke-width="2"/>
+      <line x1="256" y1="362" x2="256" y2="412" stroke="#DAA520" stroke-width="2"/>
+      <line x1="100" y1="256" x2="150" y2="256" stroke="#DAA520" stroke-width="2"/>
+      <line x1="362" y1="256" x2="412" y2="256" stroke="#DAA520" stroke-width="2"/>
+      <line x1="146" y1="146" x2="185" y2="185" stroke="#DAA520" stroke-width="2"/>
+      <line x1="366" y1="366" x2="327" y2="327" stroke="#DAA520" stroke-width="2"/>
+      <line x1="366" y1="146" x2="327" y2="185" stroke="#DAA520" stroke-width="2"/>
+      <line x1="146" y1="366" x2="185" y2="327" stroke="#DAA520" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Ornamental corner designs within carpet -->
+  <g id="innerCornerDecor">
+    <g id="innerTL">
+      <path d="M 80 80 C 120 80 160 80 160 120 C 160 160 120 160 80 160 Z" fill="#660000" stroke="#DAA520" stroke-width="1"/>
+      <circle cx="120" cy="120" r="10" fill="url(#goldGradient)"/>
+    </g>
+    <g id="innerTR">
+      <path d="M 352 80 C 312 80 272 80 272 120 C 272 160 312 160 352 160 Z" fill="#660000" stroke="#DAA520" stroke-width="1"/>
+      <circle cx="312" cy="120" r="10" fill="url(#goldGradient)"/>
+    </g>
+    <g id="innerBL">
+      <path d="M 80 352 C 120 352 160 352 160 312 C 160 272 120 272 80 272 Z" fill="#660000" stroke="#DAA520" stroke-width="1"/>
+      <circle cx="120" cy="312" r="10" fill="url(#goldGradient)"/>
+    </g>
+    <g id="innerBR">
+      <path d="M 352 352 C 312 352 272 352 272 312 C 272 272 312 272 352 272 Z" fill="#660000" stroke="#DAA520" stroke-width="1"/>
+      <circle cx="312" cy="312" r="10" fill="url(#goldGradient)"/>
+    </g>
+  </g>
+  
+  <!-- Geometric pattern overlay -->
+  <g id="patternOverlay" opacity="0.3">
+    <pattern id="geometricPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 L 20 0 L 40 20 L 20 40 Z" fill="none" stroke="#DAA520" stroke-width="0.5"/>
+      <circle cx="20" cy="20" r="3" fill="#DAA520"/>
+    </pattern>
+    <rect x="0" y="0" width="512" height="512" fill="url(#geometricPattern)"/>
+  </g>
+  
+  <!-- Cyberpunk corporate emblem/stamp -->
+  <g id="corporateMark" opacity="0.4">
+    <path d="M 200 200 L 312 200 L 312 312 L 200 312 Z" fill="none" stroke="#DAA520" stroke-width="2"/>
+    <text x="256" y="260" font-family="Arial, sans-serif" font-size="12" fill="#DAA520" text-anchor="middle" letter-spacing="4">CEO</text>
+  </g>
+  
+  <!-- Shadow overlay for depth -->
+  <g id="depthShadow">
+    <rect x="0" y="0" width="512" height="512" fill="url(#shadowGradient)"/>
+  </g>
+</svg>

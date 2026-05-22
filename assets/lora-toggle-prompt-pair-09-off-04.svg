@@ -1,0 +1,37 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logoTitle">
+  <title id="logoTitle">SAP BASIS Support Logo</title>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Shield Element -->
+  <g id="support-shield" opacity="0.2">
+    <path d="M100 30 L150 50 V130 Q140 170 100 170 Q60 170 50 130 V50 Z" fill="#003366" stroke="#003366" stroke-width="2"/>
+  </g>
+
+  <!-- SAP Logo Shape (4 Blocks) -->
+  <g id="sap-bricks" fill="#FFC600" filter="url(#glow)">
+    <rect x="65" y="65" width="30" height="30"/>
+    <rect x="105" y="65" width="30" height="30"/>
+    <rect x="65" y="105" width="30" height="30"/>
+    <rect x="105" y="105" width="30" height="30"/>
+  </g>
+
+  <!-- Connection Node (BASIS System Core) -->
+  <g id="system-core">
+    <circle cx="100" cy="100" r="15" fill="#FFFFFF" opacity="0.1"/>
+    <circle cx="100" cy="100" r="8" fill="#003366"/>
+    <path d="M100 92 L100 108 M92 100 L108 100" stroke="#003366" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Base Support Pillar -->
+  <g id="support-base">
+    <path d="M100 135 L100 150 M100 150 L130 150 M100 150 L70 150" stroke="#003366" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

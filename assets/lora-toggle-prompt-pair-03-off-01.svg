@@ -1,0 +1,88 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for gradients -->
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F7FA;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Mountain Back Gradient -->
+    <linearGradient id="mountainBackGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A4A6A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2B2B40;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Mountain Mid Gradient -->
+    <linearGradient id="mountainMidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5F6F8F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3E4A5F;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Mountain Front Gradient -->
+    <linearGradient id="mountainFrontGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5C7050;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E3A20;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Eagle Gradient -->
+    <linearGradient id="eagleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3E2723;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5D4037;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3E2723;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Background -->
+  <g id="layer-sky">
+    <rect x="0" y="0" width="800" height="600" fill="url(#skyGradient)" />
+    <!-- Sun -->
+    <circle cx="700" cy="100" r="40" fill="#FFD700" opacity="0.8" />
+    <circle cx="700" cy="100" r="55" fill="#FFD700" opacity="0.2" />
+  </g>
+
+  <!-- Back Mountains -->
+  <g id="layer-mountains-back">
+    <path d="M-50 600 L 0 350 L 150 450 L 300 250 L 450 380 L 600 200 L 750 350 L 850 600 Z" fill="url(#mountainBackGrad)" />
+    <!-- Snow Cap Back -->
+    <path d="M 300 250 L 280 300 L 320 300 Z" fill="white" opacity="0.7" />
+    <path d="M 600 200 L 580 250 L 620 250 Z" fill="white" opacity="0.7" />
+  </g>
+
+  <!-- Mid Mountains -->
+  <g id="layer-mountains-mid">
+    <path d="M-50 600 L 0 400 L 200 350 L 400 500 L 600 350 L 800 400 L 850 600 Z" fill="url(#mountainMidGrad)" />
+    <!-- Snow Cap Mid -->
+    <path d="M 200 350 L 180 390 L 220 390 Z" fill="white" opacity="0.7" />
+  </g>
+
+  <!-- Front Mountains -->
+  <g id="layer-mountains-front">
+    <path d="M-50 600 L 100 450 L 250 550 L 450 450 L 650 550 L 800 450 L 850 600 Z" fill="url(#mountainFrontGrad)" />
+    <!-- Snow Cap Front -->
+    <path d="M 100 450 L 80 500 L 120 500 Z" fill="white" opacity="0.7" />
+    <path d="M 450 450 L 430 500 L 470 500 Z" fill="white" opacity="0.7" />
+  </g>
+
+  <!-- Eagle -->
+  <g id="group-eagle" transform="translate(400, 150) scale(1.5) rotate(-10)">
+    <!-- Left Wing -->
+    <path d="M 0 0 Q -100 -80 -120 -150 Q -110 -100 -40 -60 L 0 0" fill="url(#eagleGrad)" stroke="#3E2723" stroke-width="1" />
+    <!-- Right Wing -->
+    <path d="M 0 0 Q 100 -80 120 -150 Q 110 -100 40 -60 L 0 0" fill="url(#eagleGrad)" stroke="#3E2723" stroke-width="1" />
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="15" ry="25" fill="#3E2723" />
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="10" fill="#3E2723" />
+    <!-- Beak -->
+    <path d="M -5 -25 L 5 -25 L 0 -15 Z" fill="#FFA000" />
+    <!-- Eye -->
+    <circle cx="-3" cy="-22" r="1.5" fill="black" />
+  </g>
+
+  <!-- Foreground Details (Optional Grass/Rock hints) -->
+  <g id="layer-details">
+    <path d="M 0 600 L 50 580 L 100 600 Z" fill="#1B2610" opacity="0.5" />
+    <path d="M 700 600 L 750 580 L 800 600 Z" fill="#1B2610" opacity="0.5" />
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle for cohesion -->
+  <circle cx="200" cy="200" r="180" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Main SAP-style trapezoid arrangement -->
+  <g id="sap-trapezoids" transform="translate(200, 200)">
+    <!-- Trapezoid 1 - Blue -->
+    <path d="M-60,-40 L-20,-40 L0,10 L-10,10 Z" fill="#0055a8"/>
+    
+    <!-- Trapezoid 2 - Dark Blue -->
+    <path d="M-20,-40 L20,-40 L0,10 L-10,10 Z" fill="#00468c"/>
+    
+    <!-- Trapezoid 3 - Medium Blue -->
+    <path d="M20,-40 L60,-40 L40,10 L0,10 Z" fill="#0055a8"/>
+    
+    <!-- Trapezoid 4 - Light Blue (top right) -->
+    <path d="M0,10 L40,10 L60,50 L40,50 Z" fill="#00468c"/>
+    
+    <!-- Trapezoid 5 - Bottom Left (completing the shape) -->
+    <path d="M-60,-40 L-10,10 L0,10 L-10,-40 Z" fill="#0055a8"/>
+    
+    <!-- Trapezoid 6 - Bottom Center -->
+    <path d="M-10,10 L40,50 L0,90 L-50,50 Z" fill="#00468c"/>
+    
+    <!-- Trapezoid 7 - Bottom Right -->
+    <path d="M40,10 L60,50 L40,50 L0,90 Z" fill="#0055a8"/>
+    
+    <!-- Trapezoid 8 - Inner Core -->
+    <path d="M-10,10 L0,90 L40,50 L0,10 Z" fill="#00468c"/>
+  </g>
+  
+  <!-- Gear/Support Element (representing maintenance & support) -->
+  <g id="support-gear" transform="translate(200, 200)">
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#0055a8" stroke-width="3"/>
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#00468c" stroke-width="2"/>
+    <circle cx="0" cy="0" r="12" fill="#0055a8"/>
+    <!-- Gear teeth -->
+    <path d="M0,-35 L3,-30 L6,-35 L9,-30 L12,-35 L15,-30 L18,-35 L21,-30 L24,-35 L27,-30 L30,-35 L33,-30 L35,-35 L33,-38 L30,-33 L27,-38 L24,-33 L21,-38 L18,-33 L15,-38 L12,-33 L9,-38 L6,-33 L3,-38 L0,-35 L-3,-38 L-6,-33 L-9,-38 L-12,-33 L-15,-38 L-18,-33 L-21,-38 L-24,-33 L-27,-38 L-30,-33 L-33,-38 L-35,-35 L-33,-30" fill="none" stroke="#0055a8" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Shield element (representing protection/security) -->
+  <g id="shield" transform="translate(200, 200)">
+    <path d="M0,-20 C25,-20 35,0 35,20 C35,35 20,45 0,45 C-20,45 -35,35 -35,20 C-35,0 -25,-20 0,-20 Z" fill="#e3f2fd" stroke="#0055a8" stroke-width="2"/>
+    <path d="M0,-20 C15,-20 20,5 20,20 C20,30 10,38 0,38 C-10,38 -20,30 -20,20 C-20,5 -15,-20 0,-20 Z" fill="#bbdefb"/>
+  </g>
+  
+  <!-- Network/Connection lines (representing connectivity) -->
+  <g id="connections" stroke="#0055a8" stroke-width="1.5" fill="none" opacity="0.6">
+    <line x1="200" y1="200" x2="260" y2="150"/>
+    <line x1="200" y1="200" x2="260" y2="250"/>
+    <line x1="200" y1="200" x2="140" y2="150"/>
+    <line x1="200" y1="200" x2="140" y2="250"/>
+    <line x1="200" y1="200" x2="200" y2="120"/>
+    <line x1="200" y1="200" x2="200" y2="280"/>
+  </g>
+  
+  <!-- Connection dots -->
+  <g id="connection-dots" fill="#00468c">
+    <circle cx="260" cy="150" r="3"/>
+    <circle cx="260" cy="250" r="3"/>
+    <circle cx="140" cy="150" r="3"/>
+    <circle cx="140" cy="250" r="3"/>
+    <circle cx="200" cy="120" r="3"/>
+    <circle cx="200" cy="280" r="3"/>
+  </g>
+  
+  <!-- Highlight accents -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#0055a8" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Text placeholder (optional, can be customized) -->
+  <!-- <text x="200" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#00468c" font-weight="bold">BASIS SUPPORT</text> -->
+</svg>

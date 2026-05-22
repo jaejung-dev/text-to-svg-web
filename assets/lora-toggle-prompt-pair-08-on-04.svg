@@ -1,0 +1,64 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Bell Communications Logo</title>
+  <desc id="desc">A professional logo featuring a stylized golden bell icon with a blue gradient signal wave, next to the company name "BELL" in bold sans-serif typography.</desc>
+  
+  <defs>
+    <!-- Gradient for the bell body (Gold to Orange) -->
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for the signal wave (Blue) -->
+    <linearGradient id="signalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0052D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4364F7;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Logo Container Group -->
+  <g id="Logo" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="bold">
+    
+    <!-- Icon Group: The Stylized Bell -->
+    <g id="Icon" transform="translate(20, 30)" filter="url(#shadow)">
+      <!-- The Clapper (The small circle inside) -->
+      <circle cx="50" cy="95" r="8" fill="#fff" stroke="#FFD700" stroke-width="2"/>
+      
+      <!-- The Bell Body -->
+      <path d="M 20,20 A 30,30 0 0,1 80,20 
+               Q 90,20 90,60 
+               Q 90,95 50,95 
+               Q 10,95 10,60 
+               Q 10,20 20,20 Z" 
+            fill="url(#bellGradient)" stroke="#C69C00" stroke-width="2"/>
+      
+      <!-- The Signal Wave (Blue accent representing communications) -->
+      <path d="M 20,40 Q 50,40 80,40 M 20,50 Q 50,50 80,50 M 20,60 Q 50,60 80,60" 
+            stroke="#fff" stroke-width="3" fill="none" opacity="0.6"/>
+      
+      <!-- A "call" swoosh or signal indicator to the left of the bell -->
+      <path d="M 5,20 Q 0,40 5,60" 
+            stroke="url(#signalGradient)" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Text Group: Company Name -->
+    <g id="Text" transform="translate(120, 75)">
+      <text x="0" y="0" fill="#1A237E" font-size="50" letter-spacing="2">BELL</text>
+      <text x="0" y="35" fill="#5C6BC0" font-size="14" letter-spacing="6" font-weight="normal">COMMUNICATIONS</text>
+    </g>
+    
+  </g>
+</svg>

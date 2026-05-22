@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Base carpet tile -->
+  <g id="carpet-tile">
+    <!-- Background layer -->
+    <rect width="100" height="100" fill="#2a0a0a"/>
+    
+    <!-- Dark crimson base gradient -->
+    <defs>
+      <radialGradient id="carpetBase" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" style="stop-color:#5c0a0a;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#1a0303;stop-opacity:1"/>
+      </radialGradient>
+      
+      <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1"/>
+        <stop offset="50%" style="stop-color:#b8860b;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1"/>
+      </linearGradient>
+      
+      <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#000000;stop-opacity:0.6"/>
+        <stop offset="100%" style="stop-color:#000000;stop-opacity:0.2"/>
+      </linearGradient>
+    </defs>
+    
+    <rect width="100" height="100" fill="url(#carpetBase)"/>
+    
+    <!-- Outer border frame -->
+    <g id="border">
+      <rect x="2" y="2" width="96" height="96" fill="none" stroke="#b8860b" stroke-width="2"/>
+      <rect x="5" y="5" width="90" height="90" fill="none" stroke="#ffd700" stroke-width="1"/>
+    </g>
+    
+    <!-- Central ornamental medallion (Persian rug style) -->
+    <g id="medallion" opacity="0.9">
+      <ellipse cx="50" cy="50" rx="22" ry="22" fill="none" stroke="#ffd700" stroke-width="1"/>
+      <ellipse cx="50" cy="50" rx="18" ry="18" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+      
+      <!-- Inner geometric pattern -->
+      <polygon points="50,28 58,36 42,36" fill="url(#goldGradient)"/>
+      <polygon points="50,72 58,64 42,64" fill="url(#goldGradient)"/>
+      <polygon points="72,50 64,58 64,42" fill="url(#goldGradient)"/>
+      <polygon points="28,50 36,58 36,42" fill="url(#goldGradient)"/>
+    </g>
+    
+    <!-- Corner ornaments (Persian style) -->
+    <g id="corners">
+      <!-- Top-left corner -->
+      <path d="M 12 15 A 10 10 0 0 1 22 25 L 15 22 Z" fill="#b8860b"/>
+      <path d="M 15 18 A 7 7 0 0 1 20 23 L 17 20 Z" fill="url(#goldGradient)"/>
+      
+      <!-- Top-right corner -->
+      <path d="M 88 15 A 10 10 0 0 0 78 25 L 85 22 Z" fill="#b8860b"/>
+      <path d="M 85 18 A 7 7 0 0 0 80 23 L 83 20 Z" fill="url(#goldGradient)"/>
+      
+      <!-- Bottom-left corner -->
+      <path d="M 12 85 A 10 10 0 0 0 22 75 L 15 78 Z" fill="#b8860b"/>
+      <path d="M 15 82 A 7 7 0 0 0 20 77 L 17 80 Z" fill="url(#goldGradient)"/>
+      
+      <!-- Bottom-right corner -->
+      <path d="M 88 85 A 10 10 0 0 1 78 75 L 85 78 Z" fill="#b8860b"/>
+      <path d="M 85 82 A 7 7 0 0 1 80 77 L 83 80 Z" fill="url(#goldGradient)"/>
+    </g>
+    
+    <!-- Geometric cyberpunk-inspired accents (angular elements) -->
+    <g id="cyber-accents">
+      <rect x="20" y="47" width="15" height="6" fill="#3a0a0a"/>
+      <rect x="65" y="47" width="15" height="6" fill="#3a0a0a"/>
+      <rect x="47" y="20" width="6" height="15" fill="#3a0a0a"/>
+      <rect x="47" y="65" width="6" height="15" fill="#3a0a0a"/>
+    </g>
+    
+    <!-- Repeating pattern elements -->
+    <g id="pattern" opacity="0.6">
+      <!-- Diamond patterns -->
+      <circle cx="25" cy="25" r="3" fill="#ffd700"/>
+      <circle cx="75" cy="25" r="3" fill="#ffd700"/>
+      <circle cx="25" cy="75" r="3" fill="#ffd700"/>
+      <circle cx="75" cy="75" r="3" fill="#ffd700"/>
+      
+      <!-- Circular motifs -->
+      <circle cx="30" cy="50" r="2" fill="#b8860b"/>
+      <circle cx="70" cy="50" r="2" fill="#b8860b"/>
+      <circle cx="50" cy="30" r="2" fill="#b8860b"/>
+      <circle cx="50" cy="70" r="2" fill="#b8860b"/>
+      
+      <!-- Connecting lines -->
+      <line x1="30" y1="50" x2="35" y2="45" stroke="#b8860b" stroke-width="0.5"/>
+      <line x1="70" y1="50" x2="65" y2="45" stroke="#b8860b" stroke-width="0.5"/>
+      <line x1="50" y1="30" x2="45" y2="35" stroke="#b8860b" stroke-width="0.5"/>
+      <line x1="50" y1="70" x2="45" y2="65" stroke="#b8860b" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Ornate medallion borders -->
+    <circle cx="50" cy="50" r="24" fill="none" stroke="#3a0a0a" stroke-width="2"/>
+    <circle cx="50" cy="50" r="16" fill="none" stroke="#ffd700" stroke-width="0.5"/>
+    
+    <!-- Micro-texture overlay (subtle wear/distress) -->
+    <g id="texture" opacity="0.15">
+      <circle cx="35" cy="40" r="1.5" fill="#1a0303"/>
+      <circle cx="65" cy="60" r="2" fill="#1a0303"/>
+      <circle cx="45" cy="35" r="1" fill="#1a0303"/>
+      <circle cx="55" cy="65" r="1.5" fill="#1a0303"/>
+      <circle cx="30" cy="55" r="1" fill="#1a0303"/>
+    </g>
+    
+    <!-- Shadow/darkening overlay for depth -->
+    <rect width="100" height="100" fill="url(#shadowGradient)" opacity="0.3"/>
+    
+    <!-- Corner detail highlights -->
+    <g id="highlights" opacity="0.4">
+      <circle cx="5" cy="5" r="3" fill="#ffd700"/>
+      <circle cx="95" cy="5" r="3" fill="#ffd700"/>
+      <circle cx="5" cy="95" r="3" fill="#ffd700"/>
+      <circle cx="95" cy="95" r="3" fill="#ffd700"/>
+    </g>
+  </g>
+</svg>

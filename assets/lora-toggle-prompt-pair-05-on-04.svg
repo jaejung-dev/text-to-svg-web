@@ -1,0 +1,140 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+  <!-- DEFINITIONS -->
+  <defs>
+    <!-- Rug Fabric Gradient (Dark Opulence) -->
+    <radialGradient id="rugGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#660011" />
+      <stop offset="40%" stop-color="#4a0008" />
+      <stop offset="100%" stop-color="#2b0005" />
+    </radialGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d76e" />
+      <stop offset="50%" stop-color="#996515" />
+      <stop offset="100%" stop-color="#482a08" />
+    </linearGradient>
+
+    <!-- Cyberpunk Glow Gradient -->
+    <linearGradient id="cyberGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#bd00ff" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Pattern Tile for Weave -->
+    <pattern id="weavePattern" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#2b0005" />
+      <rect x="0.5" y="0.5" width="3" height="3" fill="#3d0007" />
+    </pattern>
+
+    <!-- Lighting Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="black" stop-opacity="0" />
+      <stop offset="100%" stop-color="black" stop-opacity="0.7" />
+    </radialGradient>
+
+    <!-- Noise Filter for Fabric Texture -->
+    <filter id="noiseFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.1 0" />
+    </filter>
+  </defs>
+
+  <!-- 1. FLOOR TILE BACKGROUND -->
+  <g id="group-floor" transform="translate(128, 128)">
+    <rect x="-128" y="-128" width="256" height="256" fill="#1a1a1a" />
+    <!-- Subtle grid lines for the floor -->
+    <path d="M-128 0 L128 0" stroke="#252525" stroke-width="1" />
+    <path d="M0 -128 L0 128" stroke="#252525" stroke-width="1" />
+  </g>
+
+  <!-- 2. RUG BASE -->
+  <g id="group-rug-base" transform="translate(128, 128)">
+    <!-- Main Rug Shape with rounded corners -->
+    <path d="M-110 -110 L110 -110 A15 15 0 0 1 125 -95 L125 95 A15 15 0 0 1 110 110 L-110 110 A15 15 0 0 1 -125 95 L-125 -95 A15 15 0 0 1 -110 -110" 
+          fill="url(#rugGradient)" />
+    <!-- Fabric Texture Overlay -->
+    <rect x="-125" y="-95" width="250" height="190" fill="url(#weavePattern)" filter="url(#noiseFilter)" opacity="0.6" />
+  </g>
+
+  <!-- 3. ORNATE PATTERN -->
+  <g id="group-pattern" transform="translate(128, 128)">
+    <!-- Border Design (Persian-style simplified) -->
+    <path d="M-105 -105 L105 -105 L105 105 L-105 105 Z" 
+          fill="none" stroke="url(#goldGradient)" stroke-width="4" opacity="0.9" />
+    
+    <!-- Inner Border Frame -->
+    <rect x="-95" y="-95" width="190" height="190" fill="none" stroke="#663300" stroke-width="2" opacity="0.5" />
+    
+    <!-- Corner Motifs -->
+    <path d="M-85 -85 L-15 -85 L-15 -15 L-85 -15 Z" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" />
+    <path d="M85 -85 L15 -85 L15 -15 L85 -15 Z" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" />
+    <path d="M-85 85 L-15 85 L-15 15 L-85 15 Z" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" />
+    <path d="M85 85 L15 85 L15 15 L85 15 Z" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" />
+
+    <!-- Central Medallion (Abstract) -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M0 -35 L-25 -10 L0 15 L25 -10 Z" fill="none" stroke="#3d1500" stroke-width="1" opacity="0.5"/>
+    <path d="M0 -35 L25 -10 L0 15 L-25 -10 Z" fill="none" stroke="#3d1500" stroke-width="1" opacity="0.5"/>
+    <circle cx="0" cy="0" r="10" fill="url(#goldGradient)" />
+    
+    <!-- Weaving Geometric Intricacies -->
+    <g fill="none" stroke="url(#goldGradient)" stroke-width="0.5" opacity="0.3">
+      <path d="M-50 -50 L50 50 M50 -50 L-50 50" />
+      <circle cx="0" cy="0" r="25" fill="none" />
+      <rect x="-30" y="-30" width="60" height="60" fill="none" transform="rotate(45)" />
+    </g>
+  </g>
+
+  <!-- 4. CYBERPUNK/NOIR ELEMENTS -->
+  <g id="group-cyberpunk" transform="translate(128, 128)">
+    <!-- Subtle Data Streams woven into the rug -->
+    <path d="M-100 -100 L100 100" stroke="url(#cyberGlow)" stroke-width="1" opacity="0.15" />
+    <path d="M-100 100 L100 -100" stroke="url(#cyberGlow)" stroke-width="1" opacity="0.1" />
+    
+    <!-- Corporate Logo / Seal Hint (Bottom Center) -->
+    <path d="M-5 105 L5 105 A5 5 0 0 1 15 100 L5 95 Z" fill="url(#cyberGlow)" opacity="0.6" />
+    
+    <!-- Small Circuit Pattern near edges -->
+    <rect x="-90" y="-90" width="4" height="4" fill="#00f3ff" opacity="0.3" />
+    <rect x="90" y="90" width="4" height="4" fill="#bd00ff" opacity="0.3" />
+  </g>
+
+  <!-- 5. FRINGE (Top and Bottom) -->
+  <g id="group-fringe">
+    <g transform="translate(128, 128)">
+      <!-- Top Fringe -->
+      <g fill="#4a0008" stroke="#660011" stroke-width="0.5">
+        <line x1="-90" y1="-100" x2="-90" y2="-115" />
+        <line x1="-85" y1="-100" x2="-85" y2="-115" />
+        <line x1="-80" y1="-100" x2="-80" y2="-115" />
+        <line x1="-75" y1="-100" x2="-75" y2="-115" />
+        <line x1="-70" y1="-100" x2="-70" y2="-115" />
+        <line x1="-65" y1="-100" x2="-65" y2="-115" />
+        <line x1="-60" y1="-100" x2="-60" y2="-115" />
+        <line x1="-55" y1="-100" x2="-55" y2="-115" />
+        <line x1="-50" y1="-100" x2="-50" y2="-115" />
+      </g>
+      <!-- Bottom Fringe -->
+      <g fill="#4a0008" stroke="#660011" stroke-width="0.5">
+        <line x1="-90" y1="100" x2="-90" y2="115" />
+        <line x1="-85" y1="100" x2="-85" y2="115" />
+        <line x1="-80" y1="100" x2="-80" y2="115" />
+        <line x1="-75" y1="100" x2="-75" y2="115" />
+        <line x1="-70" y1="100" x2="-70" y2="115" />
+        <line x1="-65" y1="-100" x2="-65" y2="115" />
+        <line x1="-60" y1="100" x2="-60" y2="115" />
+        <line x1="-55" y1="100" x2="-55" y2="115" />
+        <line x1="-50" y1="100" x2="-50" y2="115" />
+      </g>
+    </g>
+  </g>
+
+  <!-- 6. LIGHTING & ATMOSPHERE -->
+  <g id="group-lighting" pointer-events="none">
+    <!-- Vignette for Spotlight Focus -->
+    <rect x="0" y="0" width="256" height="256" fill="url(#vignette)" />
+    <!-- Ambient Neon Reflection on top layer -->
+    <path d="M-100 100 L100 -100" stroke="url(#cyberGlow)" stroke-width="2" opacity="0.1" />
+  </g>
+</svg>

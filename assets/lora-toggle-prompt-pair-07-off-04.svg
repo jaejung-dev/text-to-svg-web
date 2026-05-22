@@ -1,0 +1,124 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90A4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C5F70;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="clothesGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F8FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect id="background-sky" x="0" y="0" width="800" height="600" fill="url(#skyGradient)" />
+  
+  <!-- Street/Urban Background -->
+  <g id="urban-background">
+    <rect id="street" x="0" y="450" width="800" height="150" fill="#555555" />
+    <rect id="sidewalk-left" x="0" y="430" width="200" height="20" fill="#888888" />
+    <rect id="sidewalk-right" x="600" y="430" width="200" height="20" fill="#888888" />
+  </g>
+  
+  <!-- Building/Laundry Facility -->
+  <g id="laundry-building">
+    <rect id="building-base" x="200" y="180" width="400" height="250" fill="url(#buildingGradient)" stroke="#2C3E50" stroke-width="2"/>
+    <rect id="building-roof" x="180" y="150" width="440" height="35" fill="#3A5F6E" />
+    
+    <!-- Windows -->
+    <rect id="window-1" x="230" y="220" width="80" height="60" fill="#B8E0FF" stroke="#2C3E50" stroke-width="2"/>
+    <rect id="window-2" x="350" y="220" width="80" height="60" fill="#B8E0FF" stroke="#2C3E50" stroke-width="2"/>
+    <rect id="window-3" x="470" y="220" width="80" height="60" fill="#B8E0FF" stroke="#2C3E50" stroke-width="2"/>
+    
+    <!-- Main Entrance -->
+    <path id="entrance" d="M 380 430 L 380 280 L 420 280 L 420 430" fill="none" stroke="#2C3E50" stroke-width="3"/>
+    <rect id="door" x="385" y="300" width="30" height="130" fill="#4A90A4" stroke="#2C3E50" stroke-width="2"/>
+    
+    <!-- Sign -->
+    <rect id="sign-background" x="280" y="170" width="240" height="50" fill="#FFFFFF" stroke="#2C3E50" stroke-width="2" rx="5"/>
+    <text id="sign-text" x="400" y="200" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50" text-anchor="middle">LAUNDERY</text>
+  </g>
+  
+  <!-- Washing Machines -->
+  <g id="washing-machines">
+    <circle id="machine-1" cx="280" cy="380" r="40" fill="#FFFFFF" stroke="#2C3E50" stroke-width="3"/>
+    <circle id="machine-2" cx="400" cy="380" r="40" fill="#FFFFFF" stroke="#2C3E50" stroke-width="3"/>
+    <circle id="machine-3" cx="520" cy="380" r="40" fill="#FFFFFF" stroke="#2C3E50" stroke-width="3"/>
+    
+    <!-- Machine doors -->
+    <circle id="door-1" cx="280" cy="380" r="20" fill="#E8F4F8" stroke="#2C3E50" stroke-width="2"/>
+    <circle id="door-2" cx="400" cy="380" r="20" fill="#E8F4F8" stroke="#2C3E50" stroke-width="2"/>
+    <circle id="door-3" cx="520" cy="380" r="20" fill="#E8F4F8" stroke="#2C3E50" stroke-width="2"/>
+    
+    <!-- Control panels -->
+    <rect id="panel-1" x="265" y="350" width="30" height="20" fill="#3A5F6E"/>
+    <rect id="panel-2" x="385" y="350" width="30" height="20" fill="#3A5F6E"/>
+    <rect id="panel-3" x="505" y="350" width="30" height="20" fill="#3A5F6E"/>
+  </g>
+  
+  <!-- Target Audience Icons -->
+  <g id="target-audience">
+    <!-- Students -->
+    <g id="students">
+      <circle id="student-1" cx="100" cy="500" r="25" fill="#FFFFFF" stroke="#2C3E50" stroke-width="2"/>
+      <circle id="student-2" cx="140" cy="500" r="25" fill="#FFFFFF" stroke="#2C3E50" stroke-width="2"/>
+      <circle id="student-3" cx="180" cy="500" r="25" fill="#FFFFFF" stroke="#2C3E50" stroke-width="2"/>
+    </g>
+    
+    <!-- Workers -->
+    <g id="workers">
+      <circle id="worker-1" cx="660" cy="500" r="25" fill="#FFFFFF" stroke="#2C3E50" stroke-width="2"/>
+      <circle id="worker-2" cx="700" cy="500" r="25" fill="#FFFFFF" stroke="#2C3E50" stroke-width="2"/>
+      <circle id="worker-3" cx="740" cy="500" r="25" fill="#FFFFFF" stroke="#2C3E50" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Payment Methods Icons -->
+  <g id="payment-methods">
+    <!-- Cash Icon -->
+    <rect id="cash-icon" x="600" y="100" width="60" height="40" fill="#4CAF50" stroke="#2E7D32" stroke-width="2" rx="5"/>
+    <text id="cash-text" x="630" y="128" font-family="Arial" font-size="20" fill="white" text-anchor="middle">$</text>
+    
+    <!-- Mobile Money Icon -->
+    <rect id="mobile-icon" x="700" y="100" width="60" height="40" fill="#FF9800" stroke="#E65100" stroke-width="2" rx="5"/>
+    <path id="mobile-signal" d="M 725 115 L 725 125 M 730 112 L 730 128 M 735 109 L 735 131" stroke="white" stroke-width="2"/>
+    <text id="mobile-text" x="730" y="128" font-family="Arial" font-size="20" fill="white" text-anchor="middle">M</text>
+  </g>
+  
+  <!-- Location Badge -->
+  <g id="location-badge">
+    <circle id="badge-bg" cx="70" cy="100" r="50" fill="#FF5722" stroke="#E64A19" stroke-width="3"/>
+    <text id="location-text" x="70" y="105" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">CITY</text>
+    <text id="uni-text" x="70" y="125" font-family="Arial" font-size="12" fill="white" text-anchor="middle">CENTER</text>
+  </g>
+  
+  <!-- Burkina Faso Flag Elements -->
+  <g id="burkina-flag">
+    <rect id="flag-red" x="50" y="20" width="40" height="20" fill="#E31B23"/>
+    <rect id="flag-green" x="50" y="40" width="40" height="20" fill="#009E60"/>
+    <rect id="flag-star-bg" x="65" y="25" width="10" height="10" fill="#FFCD00"/>
+    <polygon id="flag-star" points="70,25 71.5,28.5 75,28.5 72,31 73.5,34.5 70,32 66.5,34.5 68,31 65,28.5 68.5,28.5" fill="#FFCD00"/>
+  </g>
+  
+  <!-- Service Flow Arrows -->
+  <g id="service-flow">
+    <path id="arrow-1" d="M 400 430 L 400 480" stroke="#2C3E50" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+    <path id="arrow-2" d="M 450 430 L 450 480" stroke="#2C3E50" stroke-width="2" stroke-dasharray="5,3"/>
+    <path id="arrow-3" d="M 350 430 L 350 480" stroke="#2C3E50" stroke-width="2" stroke-dasharray="5,3"/>
+  </g>
+  
+  <!-- Legend Box -->
+  <g id="legend">
+    <rect id="legend-bg" x="20" y="500" width="200" height="80" fill="rgba(255,255,255,0.9)" stroke="#2C3E50" stroke-width="2" rx="8"/>
+    <text id="legend-title" x="120" y="525" font-family="Arial" font-size="12" font-weight="bold" fill="#2C3E50" text-anchor="middle">SERVICES</text>
+    <circle id="legend-wash" cx="40" cy="555" r="8" fill="#4A90A4"/>
+    <text id="legend-wash-text" x="55" y="560" font-family="Arial" font-size="10" fill="#2C3E50">Washing</text>
+    <circle id="legend-dry" cx="120" cy="555" r="8" fill="#87CEEB"/>
+    <text id="legend-dry-text" x="135" y="560" font-family="Arial" font-size="10" fill="#2C3E50">Drying</text>
+  </g>
+</svg>

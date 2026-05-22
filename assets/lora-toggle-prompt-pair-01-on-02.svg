@@ -1,0 +1,58 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the SAP yellow bars to give a modern metallic look -->
+    <linearGradient id="sapGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD325;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F7A300;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradient for the dark background -->
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#101a21;stop-opacity:1" />
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feOffset in="blur" dx="0" dy="5" result="offsetBlur"/>
+      <feMerge>
+        <feMergeNode in="offsetBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Circle representing the modern tech container -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGradient)" />
+
+  <!-- Background Tech Network Elements (Subtle) -->
+  <g opacity="0.1" stroke="#FFF" stroke-width="1" fill="none">
+    <path d="M100,100 L300,300" />
+    <path d="M100,300 L300,100" />
+    <circle cx="100" cy="100" r="2" />
+    <circle cx="300" cy="300" r="2" />
+    <circle cx="300" cy="100" r="2" />
+    <circle cx="100" cy="300" r="2" />
+    <circle cx="200" cy="200" r="2" />
+  </g>
+
+  <!-- Foundation Layer (Representing "BASIS" / Infrastructure) -->
+  <!-- A sleek dark grey base plate -->
+  <rect x="50" y="280" width="300" height="50" rx="5" fill="#34495E" filter="url(#shadow)" />
+  <rect x="50" y="280" width="300" height="5" fill="#1ABC9C" /> <!-- Teal accent line -->
+
+  <!-- The SAP Shape (Abstracted as 3 pillars) -->
+  <!-- Representing the iconic yellow shape without the letters -->
+  <g transform="translate(200, 180)" filter="url(#shadow)">
+    <!-- Left Bar -->
+    <rect x="-130" y="-110" width="80" height="220" rx="10" fill="url(#sapGold)" />
+    <!-- Middle Bar -->
+    <rect x="-40" y="-110" width="80" height="220" rx="10" fill="url(#sapGold)" />
+    <!-- Right Bar -->
+    <rect x="50" y="-110" width="80" height="220" rx="10" fill="url(#sapGold)" />
+    
+    <!-- Connecting Lines (Highlighting the "Support/Architecture" aspect) -->
+    <rect x="-140" y="-40" width="320" height="10" rx="5" fill="#FFF" fill-opacity="0.2" />
+  </g>
+</svg>

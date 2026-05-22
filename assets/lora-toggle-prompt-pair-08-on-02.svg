@@ -1,0 +1,107 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Bell Icon Group -->
+  <g id="bell-icon" transform="translate(50, 50)">
+    <!-- Bell body -->
+    <path id="bell-shape" 
+          d="M60 20 
+             C30 20 15 45 15 60 
+             L15 80 
+             C15 95 25 105 35 105 
+             C35 105 45 105 45 105 
+             C45 105 55 105 55 105 
+             C65 105 75 95 75 80 
+             L75 60 
+             C75 45 60 20 60 20 Z"
+          fill="url(#bellGradient)"
+          stroke="#1e40af"
+          stroke-width="2"/>
+    
+    <!-- Bell clapper -->
+    <path id="bell-clapper" 
+          d="M55 70 
+             Q50 85 50 95 
+             Q50 100 55 100 
+             Q60 100 60 95 
+             Q60 85 55 70 Z"
+          fill="#ffffff"/>
+    
+    <!-- Bell top loop -->
+    <circle id="bell-loop" 
+            cx="60" 
+            cy="20" 
+            r="8" 
+            fill="none" 
+            stroke="url(#bellGradient)" 
+            stroke-width="4"/>
+    
+    <!-- Signal waves (communication symbol) -->
+    <g id="signal-waves" opacity="0.6">
+      <path d="M60 115 Q70 125 80 115" 
+            fill="none" 
+            stroke="url(#bellGradient)" 
+            stroke-width="2" 
+            stroke-linecap="round"/>
+      <path d="M60 125 Q70 135 80 125" 
+            fill="none" 
+            stroke="url(#bellGradient)" 
+            stroke-width="2" 
+            stroke-linecap="round"/>
+      <path d="M60 135 Q70 145 80 135" 
+            fill="none" 
+            stroke="url(#bellGradient)" 
+            stroke-width="2" 
+            stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Company Name Text Group -->
+  <g id="company-name" transform="translate(150, 100)">
+    <!-- Main title -->
+    <text id="bell-name" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-size="42" 
+          font-weight="700" 
+          fill="url(#bellGradient)"
+          filter="url(#shadow)">
+      Bell
+    </text>
+    
+    <!-- Tagline -->
+    <text id="bell-tagline" 
+          x="0" 
+          y="22" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-size="11" 
+          fill="#6b7280"
+          letter-spacing="4">
+      COMMUNICATIONS
+    </text>
+    
+    <!-- Connecting line -->
+    <line id="divider" 
+          x1="0" 
+          y1="15" 
+          x2="130" 
+          y2="15" 
+          stroke="url(#bellGradient)" 
+          stroke-width="2"
+          stroke-linecap="round"/>
+  </g>
+  
+  <!-- Corner accent -->
+  <g id="accent" transform="translate(340, 150)">
+    <circle cx="0" cy="0" r="5" fill="url(#bellGradient)"/>
+    <circle cx="15" cy="0" r="5" fill="url(#bellGradient)"/>
+    <circle cx="30" cy="0" r="5" fill="url(#bellGradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,147 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Sky and City -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect x="0" y="0" width="800" height="600" fill="url(#skyGradient)"/>
+
+  <!-- City Skyline -->
+  <g id="city-skyline">
+    <rect x="50" y="350" width="80" height="150" fill="#D4A574"/>
+    <rect x="140" y="320" width="60" height="180" fill="#D4A574"/>
+    <rect x="210" y="360" width="90" height="140" fill="#D4A574"/>
+    <rect x="310" y="340" width="70" height="160" fill="#D4A574"/>
+    <rect x="390" y="310" width="50" height="190" fill="#D4A574"/>
+  </g>
+
+  <!-- Self-Service Laundry Building -->
+  <g id="laundry-building">
+    <rect x="450" y="300" width="300" height="200" fill="#FFD700" stroke="#D4A574" stroke-width="3"/>
+    <!-- Roof -->
+    <polygon points="450,300 600,260 750,300" fill="#FF8C00"/>
+    <!-- Windows -->
+    <rect x="480" y="350" width="50" height="60" fill="#87CEEB" stroke="#555" stroke-width="2"/>
+    <rect x="550" y="350" width="50" height="60" fill="#87CEEB" stroke="#555" stroke-width="2"/>
+    <rect x="620" y="350" width="50" height="60" fill="#87CEEB" stroke="#555" stroke-width="2"/>
+    <rect x="690" y="350" width="50" height="60" fill="#87CEEB" stroke="#555" stroke-width="2"/>
+    <!-- Door -->
+    <rect x="590" y="400" width="60" height="100" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+    <!-- Sign -->
+    <rect x="530" y="280" width="140" height="30" fill="#FF0000" stroke="#FFF" stroke-width="2"/>
+    <text x="600" y="302" font-family="Arial" font-size="14" fill="white" text-anchor="middle">LAVANDERIA SELF-SERVICE</text>
+  </g>
+
+  <!-- Washing Machines -->
+  <g id="washing-machines">
+    <rect x="480" y="420" width="60" height="80" fill="#E8E8E8" stroke="#333" stroke-width="2"/>
+    <circle cx="510" cy="445" r="15" fill="#87CEEB" stroke="#333" stroke-width="2"/>
+    <rect x="505" y="455" width="10" height="3" fill="#333"/>
+    
+    <rect x="560" y="420" width="60" height="80" fill="#E8E8E8" stroke="#333" stroke-width="2"/>
+    <circle cx="590" cy="445" r="15" fill="#87CEEB" stroke="#333" stroke-width="2"/>
+    <rect x="585" y="455" width="10" height="3" fill="#333"/>
+    
+    <rect x="640" y="420" width="60" height="80" fill="#E8E8E8" stroke="#333" stroke-width="2"/>
+    <circle cx="670" cy="445" r="15" fill="#87CEEB" stroke="#333" stroke-width="2"/>
+    <rect x="665" y="455" width="10" height="3" fill="#333"/>
+  </g>
+
+  <!-- Drying Machines -->
+  <g id="drying-machines">
+    <rect x="480" y="520" width="60" height="70" fill="#E8E8E8" stroke="#333" stroke-width="2"/>
+    <circle cx="510" cy="550" r="12" fill="#FF8C00" stroke="#333" stroke-width="2"/>
+    
+    <rect x="560" y="520" width="60" height="70" fill="#E8E8E8" stroke="#333" stroke-width="2"/>
+    <circle cx="590" cy="550" r="12" fill="#FF8C00" stroke="#333" stroke-width="2"/>
+    
+    <rect x="640" y="520" width="60" height="70" fill="#E8E8E8" stroke="#333" stroke-width="2"/>
+    <circle cx="670" cy="550" r="12" fill="#FF8C00" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Payment Terminal -->
+  <g id="payment-terminal">
+    <rect x="530" y="480" width="70" height="90" fill="#333" rx="5"/>
+    <rect x="545" y="500" width="40" height="25" fill="#90EE90" rx="2"/>
+    <rect x="545" y="530" width="40" height="30" fill="#E0E0E0" rx="3"/>
+    <text x="565" y="475" font-family="Arial" font-size="10" fill="white" text-anchor="middle">PAGAMENTO</text>
+    <text x="565" y="485" font-family="Arial" font-size="8" fill="white" text-anchor="middle">MOBILE</text>
+  </g>
+
+  <!-- People (Students, Workers, Residents) -->
+  <g id="people">
+    <!-- Student with backpack -->
+    <g id="student-1">
+      <circle cx="400" cy="500" r="20" fill="#FFDAB9"/>
+      <rect x="385" y="520" width="30" height="50" fill="#4169E1"/>
+      <rect x="380" y="520" width="15" height="25" fill="#8B4513"/>
+      <rect x="370" y="520" width="10" height="40" fill="#4169E1"/>
+      <rect x="390" y="520" width="10" height="40" fill="#4169E1"/>
+    </g>
+    
+    <!-- Worker with briefcase -->
+    <g id="worker-1">
+      <circle cx="440" cy="500" r="20" fill="#FFDAB9"/>
+      <rect x="425" y="520" width="30" height="50" fill="#2F4F4F"/>
+      <rect x="420" y="540" width="25" height="30" fill="#8B4513"/>
+      <rect x="410" y="520" width="10" height="40" fill="#2F4F4F"/>
+      <rect x="430" y="520" width="10" height="40" fill="#2F4F4F"/>
+    </g>
+    
+    <!-- Resident -->
+    <g id="resident-1">
+      <circle cx="480" cy="500" r="20" fill="#FFDAB9"/>
+      <rect x="465" y="520" width="30" height="50" fill="#9932CC"/>
+      <rect x="455" y="520" width="10" height="40" fill="#9932CC"/>
+      <rect x="475" y="520" width="10" height="40" fill="#9932CC"/>
+    </g>
+    
+    <!-- Another student -->
+    <g id="student-2">
+      <circle cx="720" cy="520" r="20" fill="#FFDAB9"/>
+      <rect x="705" y="540" width="30" height="45" fill="#DC143C"/>
+      <rect x="695" y="540" width="10" height="35" fill="#DC143C"/>
+      <rect x="715" y="540" width="10" height="35" fill="#DC143C"/>
+    </g>
+  </g>
+
+  <!-- Mobile Payment Icons -->
+  <g id="mobile-payment">
+    <circle cx="350" cy="540" r="25" fill="#32CD32" stroke="#006400" stroke-width="2"/>
+    <rect x="340" y="530" width="20" height="30" fill="#000" rx="2"/>
+    <text x="362.5" y="550" font-family="Arial" font-size="10" fill="white" text-anchor="middle">$</text>
+    
+    <circle cx="760" cy="540" r="25" fill="#FFD700" stroke="#B8860B" stroke-width="2"/>
+    <rect x="750" y="530" width="20" height="30" fill="#000" rx="2"/>
+    <text x="772.5" y="550" font-family="Arial" font-size="10" fill="white" text-anchor="middle">M</text>
+  </g>
+
+  <!-- University Symbol -->
+  <g id="university-symbol">
+    <rect x="700" y="200" width="60" height="80" fill="#9370DB" rx="5"/>
+    <rect x="715" y="220" width="30" height="20" fill="#FFF"/>
+    <text x="730" y="240" font-family="Arial" font-size="8" fill="black" text-anchor="middle">UNIV</text>
+  </g>
+
+  <!-- Burkina Faso Colors Accent -->
+  <g id="burkina-accent">
+    <rect x="450" y="260" width="150" height="10" fill="#009E60"/>
+    <rect x="450" y="270" width="150" height="10" fill="#E31B23"/>
+    <rect x="570" y="280" width="30" height="10" fill="#FFD700"/>
+  </g>
+
+  <!-- Ground/Street -->
+  <rect x="0" y="580" width="800" height="20" fill="#D3D3D3"/>
+
+  <!-- Text Labels -->
+  <text x="400" y="60" font-family="Arial" font-size="18" font-weight="bold" fill="#333" text-anchor="middle">Laundromat Self-Service Burkina Faso</text>
+  <text x="400" y="80" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">Centro Città &amp; Zona Universitaria</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the "Ghostly" fill -->
+    <linearGradient id="ghostGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Glow filter for the icon -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Container -->
+  <rect width="400" height="150" fill="#0f172a" rx="10" />
+
+  <!-- Logo Group -->
+  <g transform="translate(50, 25)">
+    
+    <!-- The "Ghost" Vector Icon -->
+    <g id="icon" filter="url(#glow)">
+      <!-- The Ghost Shape (Fill) -->
+      <path d="M75 25 L125 25 L125 90 L100 120 L75 90 Z" fill="url(#ghostGlow)" stroke="none" />
+      
+      <!-- The Vector Outline (Stroke) -->
+      <path d="M75 25 L125 25 L125 90 L100 120 L75 90" 
+            fill="none" 
+            stroke="#06b6d4" 
+            stroke-width="3" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" />
+            
+      <!-- Vector Nodes (The "Vector" Concept) -->
+      <circle cx="75" cy="25" r="3" fill="#06b6d4" />
+      <circle cx="125" cy="25" r="3" fill="#06b6d4" />
+      <circle cx="125" cy="90" r="3" fill="#06b6d4" />
+      <circle cx="100" cy="120" r="3" fill="#06b6d4" />
+      <circle cx="75" cy="90" r="3" fill="#06b6d4" />
+      
+      <!-- Connecting lines to visualize the vector path -->
+      <line x1="75" y1="25" x2="125" y2="25" stroke="#06b6d4" stroke-width="1" opacity="0.3" />
+      <line x1="125" y1="25" x2="125" y2="90" stroke="#06b6d4" stroke-width="1" opacity="0.3" />
+      <line x1="125" y1="90" x2="100" y2="120" stroke="#06b6d4" stroke-width="1" opacity="0.3" />
+      <line x1="100" y1="120" x2="75" y2="90" stroke="#06b6d4" stroke-width="1" opacity="0.3" />
+      <line x1="75" y1="90" x2="75" y2="25" stroke="#06b6d4" stroke-width="1" opacity="0.3" />
+    </g>
+
+    <!-- Text Group -->
+    <g id="text" transform="translate(20, 110)">
+      <!-- "Ghost" Text -->
+      <text x="0" y="0" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="300" fill="#ffffff" letter-spacing="4">
+        GHOST
+      </text>
+      
+      <!-- "Vector" Text -->
+      <text x="0" y="20" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" fill="#06b6d4" letter-spacing="1">
+        VECTOR
+      </text>
+    </g>
+  </g>
+</svg>

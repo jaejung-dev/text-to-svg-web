@@ -1,0 +1,40 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ghostGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="vectorGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0051ff" />
+      <stop offset="100%" stop-color="#00d4ff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Icon Group -->
+  <g id="logo-icon" transform="translate(10, 10)">
+    <!-- Ghost Shape (Curved & Ethereal) -->
+    <path d="M 15,55 C 15,30 30,20 40,20 C 50,20 60,25 60,40 L 50,55 L 40,55 L 30,55 L 20,55 C 15,55 15,55 15,55 Z" 
+          fill="url(#ghostGradient)" stroke="none" />
+    
+    <!-- Vector Path Overlay (Sharp & Precise) -->
+    <path d="M 25,35 L 55,35 M 55,35 L 65,45 M 55,35 L 65,25" 
+          stroke="#00d4ff" stroke-width="2" fill="none" stroke-linecap="round" />
+    <circle cx="65" cy="35" r="3" fill="#00d4ff" />
+    
+    <!-- Stylized Ghost Outline -->
+    <path d="M 10,45 C 10,20 40,15 50,15 C 55,15 55,20 55,25 C 55,40 50,45 45,45 L 30,45 L 15,45 C 10,45 10,45 10,45 Z" 
+          fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.5" />
+  </g>
+
+  <!-- Text Group -->
+  <g id="logo-text" transform="translate(90, 55)">
+    <!-- Ghost Text -->
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-weight="normal" font-size="32" fill="url(#vectorGradient)" letter-spacing="1">
+      Ghost
+    </text>
+    <!-- Vector Text -->
+    <text x="0" y="14" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="32" fill="#ffffff" letter-spacing="1">
+      Vector
+    </text>
+  </g>
+</svg>

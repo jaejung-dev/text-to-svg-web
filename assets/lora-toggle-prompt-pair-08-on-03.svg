@@ -1,0 +1,43 @@
+<svg width="250" height="80" viewBox="0 0 250 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main Gradient for the Bell Icon -->
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0044cc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for the Text -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a4a4a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Container Group -->
+  <g id="Bell-Logo" transform="translate(5, 5)">
+    
+    <!-- Icon Group -->
+    <g id="Icon-Group" transform="translate(0, 0)">
+      <!-- Bell Shape -->
+      <path d="M48 12C48 12 42 2 26 2C10 2 4 12 4 12V20H92V12H88V8C88 4.68629 85.3137 2 82 2C78.6863 2 76 4.68629 76 8V12H72V8C72 4.68629 69.3137 2 66 2C62.6863 2 60 4.68629 60 8V12H56V8C56 4.68629 53.3137 2 50 2C46.6863 2 44 4.68629 44 8V12H40V8C40 4.68629 37.3137 2 34 2C30.6863 2 28 4.68629 28 8V12H24V8C24 4.68629 21.3137 2 18 2C14.6863 2 12 4.68629 12 8V12H8V12C8 12 8 22 26 22C44 22 44 12 44 12V8C44 4.68629 41.3137 2 38 2C34.6863 2 32 4.68629 32 8V12H28V8C28 4.68629 25.3137 2 22 2C18.6863 2 16 4.68629 16 8V12H12V12C12 22 14 24 30 24C46 24 48 22 48 22V12Z" 
+            fill="url(#bellGradient)" stroke="none"/>
+      
+      <!-- Internal Communication Symbol (Sound wave line) -->
+      <path d="M16 18C16 18 20 20 24 20C28 20 32 18 32 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      
+      <!-- Highlight/Gloss -->
+      <path d="M30 6C30 6 32 8 34 8C36 8 38 6 38 6" fill="white" fill-opacity="0.3"/>
+    </g>
+
+    <!-- Typography Group -->
+    <g id="Typography" transform="translate(60, 34)">
+      <text font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" font-size="32" fill="url(#textGradient)" letter-spacing="-1">
+        BELL
+      </text>
+      <text x="0" y="24" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" fill="#666666" letter-spacing="4">
+        COMMUNICATIONS
+      </text>
+    </g>
+
+  </g>
+</svg>

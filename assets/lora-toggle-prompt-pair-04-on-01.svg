@@ -1,0 +1,73 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="triangleGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#533483;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect id="background" x="0" y="0" width="800" height="600" fill="url(#bgGradient)" />
+
+  <!-- Main Circle Group -->
+  <g id="circle-shapes" filter="url(#glow)">
+    <circle cx="200" cy="200" r="80" fill="url(#circleGradient)" opacity="0.8"/>
+    <circle cx="220" cy="220" r="60" fill="#e94560" opacity="0.6"/>
+    <circle cx="240" cy="240" r="40" fill="#533483" opacity="0.7"/>
+  </g>
+
+  <!-- Triangle Group -->
+  <g id="triangle-shapes">
+    <polygon points="500,150 550,250 450,250" fill="url(#triangleGradient)" opacity="0.9" transform="rotate(-15 500 200)"/>
+    <polygon points="520,180 540,230 500,230" fill="#e94560" opacity="0.7" transform="rotate(-15 500 200)"/>
+  </g>
+
+  <!-- Rectangle Stripes -->
+  <g id="stripe-pattern" opacity="0.4">
+    <rect x="100" y="350" width="200" height="10" fill="#e94560"/>
+    <rect x="100" y="370" width="180" height="10" fill="#e94560"/>
+    <rect x="100" y="390" width="160" height="10" fill="#e94560"/>
+    <rect x="100" y="410" width="140" height="10" fill="#e94560"/>
+    <rect x="100" y="430" width="120" height="10" fill="#e94560"/>
+  </g>
+
+  <!-- Decorative Lines -->
+  <g id="decorative-lines" stroke="#533483" stroke-width="2" fill="none" opacity="0.5">
+    <line x1="600" y1="100" x2="700" y2="500"/>
+    <line x1="650" y1="100" x2="750" y2="500"/>
+    <line x1="550" y1="150" x2="650" y2="550"/>
+  </g>
+
+  <!-- Accent Dots -->
+  <g id="accent-dots" fill="#e94560">
+    <circle cx="700" cy="100" r="5" opacity="0.9"/>
+    <circle cx="720" cy="150" r="4" opacity="0.8"/>
+    <circle cx="680" cy="200" r="6" opacity="0.7"/>
+    <circle cx="740" cy="250" r="3" opacity="0.6"/>
+    <circle cx="660" cy="300" r="5" opacity="0.5"/>
+  </g>
+
+  <!-- Top Banner -->
+  <g id="banner">
+    <rect x="50" y="30" width="700" height="60" rx="30" fill="#16213e" opacity="0.8" stroke="#e94560" stroke-width="2"/>
+    <text x="400" y="65" font-family="Arial, sans-serif" font-size="24" fill="#e94560" text-anchor="middle" font-weight="bold">ABSTRACT</text>
+  </g>
+
+  <!-- Bottom Accent -->
+  <ellipse id="bottom-accent" cx="400" cy="570" rx="300" ry="20" fill="#e94560" opacity="0.15"/>
+</svg>

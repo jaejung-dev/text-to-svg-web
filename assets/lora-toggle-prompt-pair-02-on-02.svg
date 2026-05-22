@@ -1,0 +1,39 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  
+  <!-- Shield/DLP background -->
+  <path d="M32 18 C42 18 50 24 50 24 L50 36 C50 46 32 56 32 56 C32 56 14 46 14 36 L14 24 C14 24 22 18 32 18 Z" 
+        fill="#42a5f5" opacity="0.9"/>
+  
+  <!-- Lock symbol -->
+  <g transform="translate(32,32)">
+    <!-- Lock body -->
+    <rect x="-8" y="6" width="16" height="14" rx="2" fill="#fff" opacity="0.95"/>
+    <!-- Lock shackle -->
+    <path d="M-6 6 V-4 A6 6 0 0 1 6 -4 V6" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Lock keyhole -->
+    <circle cx="0" cy="10" r="2.5" fill="#1976d2"/>
+    <rect x="-1.5" y="12" width="3" height="4" fill="#1976d2"/>
+  </g>
+  
+  <!-- File icon overlay (top right) -->
+  <g transform="translate(42,12)">
+    <path d="M0 0 H14 V14 H4 L0 10 Z" fill="#fff" opacity="0.95"/>
+    <rect x="4" y="6" width="8" height="2" fill="#1976d2" opacity="0.6"/>
+    <rect x="4" y="10" width="6" height="2" fill="#1976d2" opacity="0.6"/>
+  </g>
+  
+  <!-- Arrows for transfer (SFTP) -->
+  <g transform="translate(32,32)">
+    <!-- Up arrow -->
+    <path d="M-3 -8 L0 -12 L3 -8" fill="none" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M0 -6 L0 -10" fill="none" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+    <!-- Down arrow -->
+    <path d="M-3 8 L0 12 L3 8" fill="none" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M0 6 L0 10" fill="none" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Glow effect for security -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#1976d2" stroke-width="1" opacity="0.3"/>
+</svg>

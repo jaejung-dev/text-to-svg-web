@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F7FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E3F2FD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Container -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#bgGradient)" />
+
+  <!-- Group: Core Icon -->
+  <g id="icon-content" transform="translate(32, 32)">
+    
+    <!-- Layer 1: The Shield (DLP Protection) -->
+    <path d="M0 -24 L16 -18 L16 0 C16 12 0 18 0 18 C0 18 -16 12 -16 0 L-16 -18 Z" fill="#2196F3" />
+
+    <!-- Layer 2: Transfer Arrow (SFTP Up/Out) -->
+    <!-- Positioned slightly behind the shield to indicate movement -->
+    <path d="M-4 -8 L-4 0 M0 -14 L-4 -10 L-4 -18 L4 -18 L4 -10 L0 -14 Z" fill="#90CAF9" />
+    
+    <!-- Layer 3: The Document/File -->
+    <g transform="translate(0, -2)">
+      <!-- Main paper body -->
+      <path d="M-10 -14 L10 -14 L10 14 L-10 14 Z" fill="#FFFFFF" />
+      <!-- Folded corner -->
+      <path d="M10 -14 L10 -6 L2 -6 Z" fill="#FFFFFF" />
+      
+      <!-- Lines on paper -->
+      <rect x="-6" y="-4" width="12" height="1.5" rx="0.5" fill="#E0E0E0" />
+      <rect x="-6" y="-1" width="10" height="1.5" rx="0.5" fill="#E0E0E0" />
+      <rect x="-6" y="2" width="8" height="1.5" rx="0.5" fill="#E0E0E0" />
+    </g>
+
+    <!-- Layer 4: The Lock (Security/SFTP) -->
+    <!-- Centered on the document -->
+    <g transform="translate(0, 0)">
+      <!-- Shackle -->
+      <path d="M-5 -4 C-5 -8 -2 -10 0 -10 C2 -10 5 -8 5 -4 V0 H-5 Z" fill="#1565C0" />
+      <!-- Body -->
+      <rect x="-5" y="0" width="10" height="8" rx="1.5" fill="#1565C0" />
+      <!-- Keyhole (White) -->
+      <circle cx="0" cy="2" r="1.2" fill="#FFFFFF" />
+      <rect x="-0.6" y="3.2" width="1.2" height="3" fill="#FFFFFF" />
+    </g>
+  </g>
+</svg>

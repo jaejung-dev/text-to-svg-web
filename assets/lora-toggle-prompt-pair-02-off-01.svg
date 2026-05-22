@@ -1,0 +1,52 @@
+<svg width="256" height="256" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">SFTP Data Loss Prevention Icon</title>
+  <desc id="desc">A blue shield protecting a file icon with data transfer arrows, symbolizing secure file transfer and protection against data loss.</desc>
+
+  <!-- 
+    Layer 1: The Shield Background 
+    Represents DLP (Data Loss Prevention) protection layer.
+    Color: Blue (#2563eb)
+  -->
+  <g id="shield-background">
+    <path d="M32 4C20 4 10 12 10 20V48C10 56 22 62 32 62C42 62 54 56 54 48V20C54 12 44 4 32 4Z" 
+          fill="#2563eb" stroke="#1e40af" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 
+    Layer 2: The Document (File)
+    Represents the data file being transferred.
+    Color: White (#ffffff)
+  -->
+  <g id="file-data" transform="translate(0, 4)">
+    <path d="M20 18H42V46H20V18Z" fill="#ffffff" stroke="#1e3a8a" stroke-width="1.5"/>
+    <!-- File Fold -->
+    <path d="M42 18V26C42 27.1 41.1 28 40 28H32" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+    <!-- Scan Line / Inspection Layer (DLP Feature) -->
+    <line x1="24" y1="28" x2="38" y2="28" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24" y1="34" x2="38" y2="34" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24" y1="40" x2="38" y2="40" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 
+    Layer 3: Transfer Arrows (SFTP Feature)
+    Represents the Secure File Transfer Protocol.
+    Color: Blue gradient or solid matching the shield.
+  -->
+  <g id="sftp-transfer" transform="translate(0, 4)">
+    <!-- Up Arrow -->
+    <path d="M14 36L20 30L20 42" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Down Arrow -->
+    <path d="M50 28L44 34L44 22" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 
+    Layer 4: Security Lock Overlay
+    Reinforces the "Secure" aspect of SFTP and DLP.
+    Color: Blue (#2563eb)
+  -->
+  <g id="security-lock" transform="translate(30, 24) scale(0.8)">
+    <path d="M12 10V7C12 4.2 9.8 2 7 2C4.2 2 2 4.2 2 7V10" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <rect x="3" y="10" width="14" height="9" rx="2" stroke="#2563eb" stroke-width="2.5" fill="#ffffff"/>
+  </g>
+
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Tile Background -->
+  <g id="carpet-tile" clip-path="url(#tile-corners)">
+    <!-- Shadow Layer -->
+    <g id="shadows">
+      <rect x="0" y="0" width="256" height="256" fill="#1a0a0a"/>
+      <circle cx="128" cy="128" r="120" fill="#0d0404" opacity="0.7"/>
+      <radialGradient id="center-glow" cx="128" cy="128" r="80">
+        <stop offset="0" stop-color="#2a0505"/>
+        <stop offset="1" stop-color="#0d0404" stop-opacity="0"/>
+      </radialGradient>
+    </g>
+
+    <!-- Base Carpet -->
+    <g id="carpet-base">
+      <rect x="4" y="4" width="248" height="248" fill="#580a0a"/>
+      <rect x="8" y="8" width="240" height="240" fill="#4a0808"/>
+      <rect x="12" y="12" width="232" height="232" fill="#520606"/>
+    </g>
+
+    <!-- Ornate Border Pattern -->
+    <g id="border-pattern" fill="#c9a55c">
+      <!-- Outer border -->
+      <rect x="16" y="16" width="224" height="224" fill="none" stroke="#8b5a2b" stroke-width="2"/>
+      
+      <!-- Corner ornaments -->
+      <path d="M24 24 Q40 24 48 40 Q40 56 24 48" fill="none" stroke="#c9a55c" stroke-width="3"/>
+      <path d="M232 24 Q248 24 240 40 Q248 56 232 48" fill="none" stroke="#c9a55c" stroke-width="3"/>
+      <path d="M24 232 Q40 232 48 216 Q40 200 24 208" fill="none" stroke="#c9a55c" stroke-width="3"/>
+      <path d="M232 232 Q248 232 240 216 Q248 200 232 208" fill="none" stroke="#c9a55c" stroke-width="3"/>
+
+      <!-- Border segments -->
+      <path d="M40 16 L56 16 M184 16 L216 16" stroke="#c9a55c" stroke-width="4"/>
+      <path d="M40 240 L56 240 M184 240 L216 240" stroke="#c9a55c" stroke-width="4"/>
+      <path d="M240 40 L240 56 M240 184 L240 216" stroke="#c9a55c" stroke-width="4"/>
+      <path d="M16 40 L16 56 M16 184 L16 216" stroke="#c9a55c" stroke-width="4"/>
+    </g>
+
+    <!-- Main Persian Medallion Pattern -->
+    <g id="central-medallion">
+      <ellipse cx="128" cy="128" rx="90" ry="70" fill="#3d0404" opacity="0.6"/>
+      <ellipse cx="128" cy="128" rx="70" ry="50" fill="#4a0606" opacity="0.7"/>
+      
+      <!-- Central diamond -->
+      <polygon points="128,58 198,128 128,198 58,128" fill="#2d0303"/>
+      
+      <!-- Gold accents in center -->
+      <polygon points="128,80 160,112 128,144 96,112" fill="#d4af37" opacity="0.8"/>
+      <circle cx="128" cy="128" r="8" fill="#ffd700"/>
+    </g>
+
+    <!-- Radiating Pattern Lines -->
+    <g id="radiating-pattern" fill="none" stroke="#8b4513" stroke-width="1" opacity="0.3">
+      <line x1="128" y1="58" x2="128" y2="198"/>
+      <line x1="58" y1="128" x2="198" y2="128"/>
+      <line x1="73" y1="73" x2="183" y2="183"/>
+      <line x1="183" y1="73" x2="73" y2="183"/>
+    </g>
+
+    <!-- Ornate Corner Motifs -->
+    <g id="corner-motifs" fill="#c9a55c">
+      <!-- Top-left -->
+      <path d="M24 40 Q32 32 40 40 Q32 48 24 40" fill="#8b4513"/>
+      <circle cx="32" cy="40" r="2" fill="#c9a55c"/>
+      
+      <!-- Top-right -->
+      <path d="M232 40 Q240 32 248 40 Q240 48 232 40" fill="#8b4513"/>
+      <circle cx="224" cy="40" r="2" fill="#c9a55c"/>
+      
+      <!-- Bottom-left -->
+      <path d="M24 216 Q32 224 40 216 Q32 208 24 216" fill="#8b4513"/>
+      <circle cx="32" cy="216" r="2" fill="#c9a55c"/>
+      
+      <!-- Bottom-right -->
+      <path d="M232 216 Q240 224 248 216 Q240 208 232 216" fill="#8b4513"/>
+      <circle cx="224" cy="216" r="2" fill="#c9a55c"/>
+    </g>
+
+    <!-- Textured Patterns -->
+    <g id="texture" fill="#2a0303" opacity="0.2">
+      <circle cx="80" cy="100" r="15" fill="none" stroke-width="1"/>
+      <circle cx="176" cy="100" r="15" fill="none" stroke-width="1"/>
+      <circle cx="80" cy="156" r="15" fill="none" stroke-width="1"/>
+      <circle cx="176" cy="156" r="15" fill="none" stroke-width="1"/>
+    </g>
+
+    <!-- Cyberpunk Accents - subtle tech elements -->
+    <g id="tech-accents" fill="#2d5a7a" opacity="0.3">
+      <rect x="20" y="120" width="10" height="16" rx="1"/>
+      <rect x="226" y="120" width="10" height="16" rx="1"/>
+      <rect x="120" y="20" width="16" height="10" rx="1"/>
+      <rect x="120" y="226" width="16" height="10" rx="1"/>
+    </g>
+  </g>
+
+  <!-- Tile Clip Path for rounded corners -->
+  <defs>
+    <clipPath id="tile-corners">
+      <rect x="0" y="0" width="256" height="256" rx="8" ry="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer Border Frame -->
+  <rect x="0" y="0" width="256" height="256" fill="none" stroke="#3a1a1a" stroke-width="4" rx="8" ry="8"/>
+  
+  <!-- Subtle highlight for tile edges -->
+  <rect x="2" y="2" width="252" height="252" fill="none" stroke="#6a2a2a" stroke-width="1" opacity="0.5" rx="6" ry="6"/>
+</svg>

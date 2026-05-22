@@ -1,0 +1,83 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradients -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="gradient4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#a8edea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fed6e3;stop-opacity:1" />
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <g id="background">
+    <rect width="800" height="600" fill="#1a1a2e" rx="10" ry="10"/>
+  </g>
+
+  <!-- Decorative Circles -->
+  <g id="decorative-circles" opacity="0.6">
+    <circle cx="100" cy="100" r="60" fill="url(#gradient1)" filter="url(#shadow)"/>
+    <circle cx="700" cy="100" r="50" fill="url(#gradient2)" filter="url(#shadow)"/>
+    <circle cx="100" cy="500" r="45" fill="url(#gradient3)" filter="url(#shadow)"/>
+    <circle cx="700" cy="500" r="70" fill="url(#gradient4)" filter="url(#shadow)"/>
+  </g>
+
+  <!-- Central Design -->
+  <g id="central-design" transform="translate(400,300)">
+    <!-- Main Hexagon -->
+    <polygon points="0,-100 86,-50 86,50 0,100 -86,50 -86,-50" 
+             fill="url(#gradient1)" 
+             filter="url(#shadow)"
+             stroke="rgba(255,255,255,0.3)"
+             stroke-width="2"/>
+    
+    <!-- Inner Triangle -->
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" 
+             fill="url(#gradient2)" 
+             opacity="0.8"
+             filter="url(#shadow)"/>
+    
+    <!-- Central Circle -->
+    <circle cx="0" cy="0" r="30" fill="url(#gradient3)" filter="url(#shadow)"/>
+  </g>
+
+  <!-- Connecting Lines -->
+  <g id="connecting-lines" opacity="0.4">
+    <line x1="160" y1="160" x2="350" y2="250" stroke="url(#gradient1)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="640" y1="160" x2="550" y2="250" stroke="url(#gradient2)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="160" y1="440" x2="350" y2="350" stroke="url(#gradient3)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="640" y1="440" x2="550" y2="350" stroke="url(#gradient4)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating Shapes -->
+  <g id="floating-shapes" opacity="0.7">
+    <rect x="200" y="150" width="40" height="40" fill="url(#gradient1)" transform="rotate(45 220 170)" filter="url(#shadow)"/>
+    <rect x="560" y="150" width="40" height="40" fill="url(#gradient2)" transform="rotate(45 580 170)" filter="url(#shadow)"/>
+    <rect x="200" y="410" width="40" height="40" fill="url(#gradient3)" transform="rotate(45 220 430)" filter="url(#shadow)"/>
+    <rect x="560" y="410" width="40" height="40" fill="url(#gradient4)" transform="rotate(45 580 430)" filter="url(#shadow)"/>
+  </g>
+
+  <!-- Star Accents -->
+  <g id="star-accent" opacity="0.5">
+    <polygon points="400,50 405,65 420,65 408,75 413,90 400,80 387,90 392,75 380,65 395,65" fill="#f5576c" filter="url(#shadow)"/>
+    <polygon points="400,550 405,565 420,565 408,575 413,590 400,580 387,590 392,575 380,565 395,565" fill="#4facfe" filter="url(#shadow)"/>
+  </g>
+
+  <!-- Frame -->
+  <g id="frame">
+    <rect x="20" y="20" width="760" height="560" fill="none" stroke="url(#gradient1)" stroke-width="2" rx="10" ry="10" opacity="0.3"/>
+  </g>
+</svg>

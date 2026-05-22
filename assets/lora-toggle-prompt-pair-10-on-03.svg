@@ -1,0 +1,120 @@
+<svg viewBox="0 0 400 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ecca3"/>
+      <stop offset="100%" style="stop-color:#45b393"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Device Frame -->
+  <g id="deviceFrame" transform="translate(50, 50)">
+    <!-- Phone body -->
+    <rect x="0" y="0" width="300" height="700" rx="30" fill="#2d3748" stroke="#4a5568" stroke-width="3"/>
+    <!-- Screen -->
+    <rect x="10" y="10" width="280" height="680" rx="20" fill="url(#bgGradient)"/>
+    <!-- Camera notch -->
+    <ellipse cx="150" cy="25" rx="60" ry="15" fill="#1a1a2e"/>
+  </g>
+  
+  <!-- App Header -->
+  <g id="appHeader" transform="translate(50, 100)">
+    <!-- ATOMSTAK Brand -->
+    <text x="150" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#4ecca3" text-anchor="middle">ATOMSTAK</text>
+    <text x="150" y="55" font-family="Arial, sans-serif" font-size="12" fill="#a0aec0" text-anchor="middle">LASER P1 APP</text>
+    
+    <!-- Connection Status -->
+    <circle cx="260" cy="45" r="8" fill="#4ecca3"/>
+    <circle cx="260" cy="45" r="4" fill="#16213e"/>
+    <text x="275" y="50" font-family="Arial, sans-serif" font-size="10" fill="#4ecca3">CONNECTÉ</text>
+  </g>
+  
+  <!-- Main Content Area -->
+  <g id="mainContent" transform="translate(70, 120)">
+    <!-- Import Section -->
+    <rect x="0" y="0" width="260" height="140" rx="15" fill="#2d3748" opacity="0.5"/>
+    <text x="130" y="30" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">IMPORT</text>
+    
+    <!-- Lightburn Icon -->
+    <g transform="translate(100, 50)">
+      <rect x="-30" y="-30" width="60" height="60" rx="10" fill="#f39c12" opacity="0.9"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">L</text>
+      <text x="0" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">B</text>
+    </g>
+    
+    <!-- Arrow Indicator -->
+    <polygon points="130,100 145,90 130,80" fill="#4ecca3"/>
+    
+    <!-- Export Section -->
+    <rect x="0" y="150" width="260" height="140" rx="15" fill="#2d3748" opacity="0.5"/>
+    <text x="130" y="180" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">EXPORT</text>
+    
+    <!-- SVG Icon -->
+    <g transform="translate(100, 200)">
+      <rect x="-30" y="-30" width="60" height="60" rx="10" fill="#4ecca3" opacity="0.9"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">S</text>
+      <text x="0" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">V</text>
+    </g>
+  </g>
+  
+  <!-- File Info Section -->
+  <g id="fileInfo" transform="translate(70, 350)">
+    <rect x="0" y="0" width="260" height="120" rx="15" fill="#2d3748" opacity="0.6"/>
+    <text x="130" y="25" font-family="Arial, sans-serif" font-size="12" fill="#a0aec0" text-anchor="middle">FICHIER ACTUEL</text>
+    
+    <!-- File Icon -->
+    <path d="M80,50 h40 v60 h-40 z" fill="#63b3ed"/>
+    <path d="M120,50 v-15 h25" fill="none" stroke="#63b3ed" stroke-width="2"/>
+    
+    <!-- File Name -->
+    <text x="135" y="70" font-family="Arial, sans-serif" font-size="11" fill="#fff" text-anchor="start">project_lightburn</text>
+    <text x="135" y="90" font-family="Arial, sans-serif" font-size="10" fill="#a0aec0" text-anchor="start">.lbz</text>
+    <text x="135" y="110" font-family="Arial, sans-serif" font-size="10" fill="#a0aec0" text-anchor="start">2.4 MB</text>
+  </g>
+  
+  <!-- Action Button -->
+  <g id="actionButton" transform="translate(70, 520)">
+    <rect x="0" y="0" width="260" height="60" rx="30" fill="url(#accentGradient)" filter="url(#shadow)"/>
+    <text x="130" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">
+      CONVERTIR
+    </text>
+    <!-- Arrow Icon -->
+    <path d="M170,35 l15,-10 l-15,-10 v20 z" fill="#fff"/>
+  </g>
+  
+  <!-- ATOMSTAK P1 Logo Corner -->
+  <g id="brandingCorner" transform="translate(310, 650)">
+    <circle cx="0" cy="0" r="35" fill="#1a1a2e"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" fill="#4ecca3" text-anchor="middle">ATOMSTAK</text>
+    <text x="0" y="18" font-family="Arial, sans-serif" font-size="8" fill="#a0aec0" text-anchor="middle">LASER P1</text>
+  </g>
+  
+  <!-- Bottom Navigation -->
+  <g id="bottomNav" transform="translate(50, 700)">
+    <rect x="0" y="0" width="300" height="50" rx="0 0 25 25" fill="#2d3748"/>
+    
+    <!-- Home Icon -->
+    <g transform="translate(30, 20)">
+      <path d="M0,0 h20 v15 h-5 v10 h-10 v-10 h-5 z" fill="#4ecca3"/>
+    </g>
+    
+    <!-- Files Icon -->
+    <g transform="translate(95, 20)">
+      <rect x="0" y="5" width="14" height="14" rx="2" fill="#718096"/>
+      <rect x="0" y="0" width="14" height="5" rx="1" fill="#718096"/>
+    </g>
+    
+    <!-- Settings Icon -->
+    <g transform="translate(260, 20)">
+      <circle cx="7" cy="7" r="5" stroke="#718096" stroke-width="2" fill="none"/>
+      <circle cx="7" cy="7" r="2" fill="#718096"/>
+    </g>
+  </g>
+</svg>

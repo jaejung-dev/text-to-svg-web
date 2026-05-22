@@ -1,0 +1,63 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc">
+  <title id="title">SAP BASIS Support Logo</title>
+  <desc id="desc">A modern logo representing SAP BASIS Support, featuring the iconic triangular structure integrated with server infrastructure elements.</desc>
+  
+  <defs>
+    <!-- Gradient for the Triangles (Modern Tech Blue) -->
+    <linearGradient id="triGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0056b3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for Background Shield -->
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f8ff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#e6f2ff;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Gear Pattern Definition -->
+    <g id="gearIcon">
+      <circle cx="0" cy="0" r="35" stroke="#ffffff" stroke-width="3" fill="none"/>
+      <circle cx="0" cy="0" r="20" stroke="#ffffff" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+      <!-- Spokes -->
+      <line x1="0" y1="-35" x2="0" y2="-15" stroke="#ffffff" stroke-width="3"/>
+      <line x1="0" y1="15" x2="0" y2="35" stroke="#ffffff" stroke-width="3"/>
+      <line x1="-35" y1="0" x2="-15" y2="0" stroke="#ffffff" stroke-width="3"/>
+      <line x1="15" y1="0" x2="35" y2="0" stroke="#ffffff" stroke-width="3"/>
+      <line x1="-25" y1="-25" x2="-15" y2="-15" stroke="#ffffff" stroke-width="3"/>
+      <line x1="25" y1="25" x2="15" y2="15" stroke="#ffffff" stroke-width="3"/>
+      <line x1="25" y1="-25" x2="15" y2="-15" stroke="#ffffff" stroke-width="3"/>
+      <line x1="-25" y1="25" x2="-15" y2="15" stroke="#ffffff" stroke-width="3"/>
+    </g>
+  </defs>
+
+  <!-- Group 1: Background Shield (Symbolizing Protection/Support) -->
+  <g id="background">
+    <path d="M 150 40 L 240 90 L 240 210 L 150 260 L 60 210 L 60 90 Z" 
+          fill="url(#shieldGradient)" stroke="#0056b3" stroke-width="2" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- Group 2: The Structural Base (SAP Triangle Shape Reference) -->
+  <g id="structure" transform="translate(150, 150)">
+    <!-- Top Triangle (Application Layer) -->
+    <path d="M -50 -90 L 0 -40 L 50 -90 Z" fill="url(#triGradient)" transform="translate(0, -20)"/>
+    
+    <!-- Left Bottom Triangle (Infrastructure Left) -->
+    <path d="M -90 50 L -50 0 L -40 90 Z" fill="url(#triGradient)" transform="translate(0, 0)"/>
+    
+    <!-- Right Bottom Triangle (Infrastructure Right) -->
+    <path d="M 90 50 L 50 0 L 40 90 Z" fill="url(#triGradient)" transform="translate(0, 0)"/>
+    
+    <!-- Connecting Foundation Line (Symbolizing Stability) -->
+    <line x1="-80" y1="120" x2="80" y2="120" stroke="#003366" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Group 3: Central Element (BASIS / Technology Mechanism) -->
+  <g id="center-mechanism" transform="translate(150, 150)">
+    <!-- Use the gear icon defined in defs, centered -->
+    <use href="#gearIcon" transform="translate(0, 0) scale(1)"/>
+    
+    <!-- Subtle support checkmark overlay (Abstract) -->
+    <path d="M -15 10 L -5 20 L 15 0" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  </g>
+</svg>

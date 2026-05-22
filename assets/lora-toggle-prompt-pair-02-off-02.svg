@@ -1,0 +1,36 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Container -->
+  <g id="icon-background">
+    <rect x="4" y="4" width="56" height="56" rx="16" fill="#1E3A8A"/>
+  </g>
+
+  <!-- Transfer Arrows (SFTP) -->
+  <g id="transfer-arrows" stroke="#34D399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Upward Arrow -->
+    <path d="M48 32C48 32 44 24 36 24C28 24 24 32 24 32" fill="none"/>
+    <path d="M32 28V20M28 24H36" stroke="#34D399" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Downward Arrow -->
+    <path d="M16 32C16 32 20 40 28 40C36 40 40 32 40 32" fill="none"/>
+    <path d="M32 44V36M28 40H36" stroke="#34D399" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Shield Layer (DLP Protection) -->
+  <g id="shield-layer">
+    <path d="M32 56C32 56 56 48 56 24V12C56 12 32 20 32 20C32 20 8 12 8 12V24C8 48 32 56 32 56Z" fill="#60A5FA"/>
+  </g>
+
+  <!-- File/Data Layer (SFTP Content) -->
+  <g id="data-file" fill="#1E3A8A">
+    <rect x="22" y="22" width="20" height="20" rx="2"/>
+    <path d="M22 22V28C22 28 24 26 32 26C40 26 42 28 42 28V22H22Z" fill="#1E3A8A"/>
+  </g>
+
+  <!-- Security Lock (Security Feature) -->
+  <g id="security-lock" fill="#10B981">
+    <rect x="29" y="29" width="6" height="6" rx="1" fill="white"/>
+    <path d="M32 27V24C32 22.5 33.5 21 35 21H37C38.5 21 40 22.5 40 24V27" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M35 27V27" stroke="none" fill="none" stroke-width="4"/> <!-- Inner hole -->
+    <circle cx="32" cy="29" r="1" fill="#10B981"/>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for a modern, 3D look on the SAP shape -->
+    <linearGradient id="sapGreenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A651" />
+      <stop offset="100%" stop-color="#008A42" />
+    </linearGradient>
+    
+    <!-- Gradient for the gear to give it a metallic look -->
+    <linearGradient id="gearGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E6E6E6" />
+      <stop offset="50%" stop-color="#A0A0A0" />
+      <stop offset="100%" stop-color="#D1D1D1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 
+    1. The SAP Logo Shape (Trapezoid)
+    This represents the "SAP" brand identity.
+    Using the characteristic slanted shape.
+  -->
+  <g id="SAP-Logo-Shape">
+    <path id="Trapezoid" 
+          d="M 100,0 L 412,0 L 370,412 L 142,412 Z" 
+          fill="url(#sapGreenGradient)" 
+          stroke="#007D3A" 
+          stroke-width="2"/>
+  </g>
+
+  <!-- 
+    2. The "Support" / "BASIS" Concept
+    This is a stylized gear (representing the technical "engine" or "Basis")
+    with a positive/plus sign (representing "Support").
+  -->
+  <g id="Basis-Gear-Icon" transform="translate(256, 256)">
+    
+    <!-- Gear Background (Green circle for contrast) -->
+    <circle r="90" fill="#FFFFFF" opacity="0.1"/>
+    
+    <!-- Gear Teeth -->
+    <path id="Gear-Teeth"
+          fill="url(#gearGradient)"
+          d="M 0,-90 
+             L 25,-85 L 28,-60 L 55,-55 L 70,-30 L 90,-25 
+             L 85,0 L 90,25 L 70,30 L 55,55 L 28,60 L 25,85 
+             L 0,90 
+             L -25,85 L -28,60 L -55,55 L -70,30 L -90,25 
+             L -85,0 L -90,-25 L -70,-30 L -55,-55 L -28,-60 L -25,-85 Z"/>
+
+    <!-- Central Hub -->
+    <circle r="25" fill="url(#gearGradient)" />
+    
+    <!-- Hexagon inside hub for technical detail -->
+    <polygon points="0,-25 21.65,-12.5 21.65,12.5 0,25 -21.65,12.5 -21.65,-12.5" 
+             fill="#D1D1D1" />
+
+    <!-- The "Plus" / "Support" Sign -->
+    <!-- This sits on top of the gear to imply "Support" service -->
+    <path id="Support-Plus"
+          d="M -40,0 L 40,0 M 0,-40 L 0,40"
+          stroke="#007D3A" 
+          stroke-width="12" 
+          stroke-linecap="round"
+          filter="drop-shadow(0px 0px 2px rgba(255,255,255,0.5))"/>
+          
+    <!-- A subtle diagonal brace line to visualize "Basis/Foundation" structure -->
+    <line x1="-60" y1="60" x2="60" y2="-60" 
+          stroke="#FFFFFF" 
+          stroke-width="4" 
+          opacity="0.2"/>
+  </g>
+
+  <!-- 
+    3. Subtle "Stabilizer" Line
+    A decorative line that mimics the structural support of a building 
+    (Basis = Foundation), reinforcing the SAP shape.
+  -->
+  <path d="M 142,412 L 256,412" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+
+</svg>

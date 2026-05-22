@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <defs>
+    <!-- Gradient for the Bell Icon: A modern blend of deep purple and electric blue -->
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6A0DAD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0047FF;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Font definition for a clean, sans-serif look -->
+    <style>
+      .brand-text {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        fill: #1C1C1C;
+        letter-spacing: -1px;
+      }
+    </style>
+  </defs>
+
+  <!-- Logo Icon Group -->
+  <g id="icon-group" transform="translate(10, 20)">
+    <!-- Stylized Bell Shape -->
+    <!-- The path creates a rounded bell with a flat bottom and a clear handle area -->
+    <path d="M10,10 C10,2 20,0 20,0 C20,0 30,2 30,10 L30,25 C45,25 55,30 50,45 C45,50 35,50 30,50 L30,50 C25,50 15,50 10,45 C5,30 15,25 30,25 L30,10 Z" 
+          fill="url(#bellGradient)" stroke="#1C1C1C" stroke-width="1" stroke-linejoin="round"/>
+    
+    <!-- The Clapper (inner part) - implied by a cutout or shape -->
+    <circle cx="30" cy="35" r="3" fill="#FFFFFF" opacity="0.8" />
+  </g>
+
+  <!-- Brand Text Group -->
+  <g id="text-group" transform="translate(75, 68)">
+    <text x="0" y="0" class="brand-text">Bell</text>
+  </g>
+</svg>

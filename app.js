@@ -102,14 +102,68 @@ function renderSample(sample, index) {
 }
 
 function renderPromptPair(pair) {
-  const generated = pair.generated || {};
-  const meta = generated.status === "ok"
-    ? [
-      generated.output_tokens != null ? `${generated.output_tokens} output tokens` : null,
-      generated.elapsed_seconds != null ? `${generated.elapsed_seconds}s` : null,
-      generated.svg_parse_error ? `parse: ${generated.svg_parse_error}` : "valid SVG",
-    ].filter(Boolean).join(" · ")
-    : "Generation pending";
+  function metaLine(result) {
+    if (result?.status !== "ok") {
+      return result?.error || result?.svg_parse_error || "Generation pending";
+    }
+    return [
+      result.output_tokens != null ? `${result.output_tokens} tok` : null,
+      result.elapsed_seconds != null ? `${result.elapsed_seconds}s` : null,
+      result.svg_parse_error ? `parse: ${result.svg_parse_error}` : "valid SVG",
+    ].filter(Boolean).join(" · ");
+  }
+
+  function modelCard(result, title) {
+    const meta = metaLine(result);
+
+    return `
+      <div class="pair-output-card">
+        <div class="pair-image-wrap">${assetElement(result)}</div>
+        <div class="pair-output-meta">
+          <strong>${escapeHtml(title)}</strong>
+          <span>${escapeHtml(meta)}</span>
+        </div>
+      </div>
+    `;
+  }
+
+  function loraRunCard(result, modeLabel) {
+    return `
+      <div class="lora-run-card ${result?.status === "ok" ? "" : "pending"}">
+        <div class="lora-run-image">${assetElement(result)}</div>
+        <div class="lora-run-meta">
+          <strong>${escapeHtml(modeLabel)} #${escapeHtml(result?.run || "-")}</strong>
+          <span>${escapeHtml(metaLine(result))}</span>
+        </div>
+      </div>
+    `;
+  }
+
+  function loraModeSection(title, items) {
+    const runs = Array.from({ length: 4 }, (_, index) => {
+      const run = index + 1;
+      return (items || []).find((item) => Number(item.run) === run) || {
+        run,
+        status: "pending",
+        label: `${title} #${run}`,
+      };
+    });
+
+    return `
+      <section class="lora-mode-section">
+        <div class="lora-mode-head">
+          <h3>${escapeHtml(title)}</h3>
+          <span>default sampling · 4 runs</span>
+        </div>
+        <div class="lora-runs-grid">
+          ${runs.map((run) => loraRunCard(run, title)).join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  const toggle = pair.lora_toggle;
+  const hasToggle = toggle && ((toggle.on || []).length || (toggle.off || []).length);
 
   return `
     <article class="prompt-pair-card">
@@ -117,13 +171,17 @@ function renderPromptPair(pair) {
         <div class="pair-kicker">Prompt ${escapeHtml(pair.index)}</div>
         <p>${escapeHtml(pair.prompt)}</p>
       </div>
-      <div class="pair-output-card">
-        <div class="pair-image-wrap">${assetElement(generated)}</div>
-        <div class="pair-output-meta">
-          <strong>Text-to-SVG Production</strong>
-          <span>${escapeHtml(meta)}</span>
+      ${hasToggle ? `
+        <div class="lora-toggle-grid">
+          ${loraModeSection("LoRA ON", toggle.on || [])}
+          ${loraModeSection("LoRA OFF", toggle.off || [])}
         </div>
-      </div>
+      ` : `
+        <div class="pair-outputs-grid">
+          ${modelCard(pair.generated || {}, "SGLang Production")}
+          ${modelCard(pair.hf_lora || {}, "HF LoRA local")}
+        </div>
+      `}
     </article>
   `;
 }

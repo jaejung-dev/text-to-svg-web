@@ -1,0 +1,105 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a4f7a"/>
+      <stop offset="100%" style="stop-color:#4a90b8"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#skyGradient)"/>
+  
+  <!-- Clouds -->
+  <g id="clouds" fill="white" opacity="0.8">
+    <ellipse cx="150" cy="100" rx="40" ry="25"/>
+    <ellipse cx="190" cy="95" rx="35" ry="22"/>
+    <ellipse cx="220" cy="100" rx="30" ry="20"/>
+    
+    <ellipse cx="600" cy="150" rx="50" ry="30"/>
+    <ellipse cx="660" cy="145" rx="40" ry="25"/>
+    
+    <ellipse cx="400" cy="200" rx="45" ry="28"/>
+    <ellipse cx="450" cy="195" rx="38" ry="24"/>
+  </g>
+  
+  <!-- Back Mountains -->
+  <g id="back-mountains" fill="#2c3e50">
+    <polygon points="0,450 150,280 300,450"/>
+    <polygon points="200,450 400,250 600,450"/>
+    <polygon points="450,450 650,270 800,450"/>
+  </g>
+  
+  <!-- Middle Mountains -->
+  <g id="middle-mountains" fill="#34495e" filter="url(#softShadow)">
+    <polygon points="0,500 100,380 200,500"/>
+    <polygon points="150,500 300,350 450,500"/>
+    <polygon points="350,500 500,360 650,500"/>
+    <polygon points="550,500 700,370 800,500"/>
+  </g>
+  
+  <!-- Foreground Hills -->
+  <g id="foreground-hills" fill="#27ae60">
+    <ellipse cx="200" cy="580" rx="120" ry="60"/>
+    <ellipse cx="500" cy="570" rx="150" ry="70"/>
+    <ellipse cx="700" cy="560" rx="100" ry="55"/>
+  </g>
+  
+  <!-- Snow Caps on Mountains -->
+  <g id="snow-caps" fill="#ecf0f1" opacity="0.9">
+    <polygon points="150,280 165,310 135,310"/>
+    <polygon points="400,250 420,290 380,290"/>
+    <polygon points="650,270 665,305 635,305"/>
+  </g>
+  
+  <!-- Eagle -->
+  <g id="eagle" transform="translate(400, 150)">
+    <!-- Wings -->
+    <path d="M-120,0 Q-180,-60 -160,-100 L-100,-80 Q-110,-50 -120,0" 
+          fill="#5d4037" stroke="#3e2723" stroke-width="2"/>
+    <path d="M120,0 Q180,-60 160,-100 L100,-80 Q110,-50 120,0" 
+          fill="#5d4037" stroke="#3e2723" stroke-width="2"/>
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="25" ry="35" fill="#4e342e" stroke="#3e2723" stroke-width="1"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="15" fill="#8d6e63" stroke="#5d4037" stroke-width="1"/>
+    
+    <!-- Beak -->
+    <path d="M-5,-28 Q0,-35 5,-28 L0,-20 Z" fill="#ffb74d" stroke="#f57c00" stroke-width="1"/>
+    
+    <!-- Eye -->
+    <circle cx="-3" cy="-28" r="3" fill="#fff"/>
+    <circle cx="-3" cy="-28" r="1.5" fill="#000"/>
+    
+    <!-- Feather Details on Wings -->
+    <path d="M-120,0 Q-150,-40 -140,-80 L-110,-60 Z" fill="#6d4c41" opacity="0.6"/>
+    <path d="M120,0 Q150,-40 140,-80 L110,-60 Z" fill="#6d4c41" opacity="0.6"/>
+  </g>
+  
+  <!-- Sun Rays -->
+  <g id="sun-rays" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="1">
+    <line x1="400" y1="50" x2="400" y2="120"/>
+    <line x1="400" y1="50" x2="470" y2="100"/>
+    <line x1="400" y1="50" x2="330" y2="100"/>
+    <line x1="400" y1="50" x2="370" y2="130"/>
+    <line x1="400" y1="50" x2="430" y2="130"/>
+  </g>
+  
+  <!-- Sun -->
+  <circle cx="400" cy="60" r="30" fill="#ffeb3b" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.7;0.9" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Foreground Details -->
+  <g id="foreground-details" opacity="0.7">
+    <path d="M50,560 Q70,520 90,560 Q110,540 130,560" fill="none" stroke="#1b5e20" stroke-width="2"/>
+    <path d="M700,550 Q720,510 740,550 Q760,530 780,550" fill="none" stroke="#1b5e20" stroke-width="2"/>
+    <circle cx="250" cy="555" r="3" fill="#2e7d32"/>
+    <circle cx="550" cy="545" r="4" fill="#2e7d32"/>
+    <circle cx="650" cy="550" r="3" fill="#2e7d32"/>
+  </g>
+</svg>

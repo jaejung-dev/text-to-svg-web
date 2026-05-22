@@ -1,0 +1,45 @@
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-labelledby="sftpDlpTitle sftpDlpDesc">
+  <title id="sftpDlpTitle">SFTP DLP Feature Icon</title>
+  <desc id="sftpDlpDesc">Security icon for Secure File Transfer Protocol Data Loss Prevention feature</desc>
+  
+  <!-- Background circle -->
+  <circle id="background" cx="64" cy="64" r="60" fill="#1a365d"/>
+  
+  <!-- Shield base -->
+  <g id="shield-group">
+    <path id="shield" d="M64 20 L96 35 L96 60 C96 88 72 108 64 112 C56 108 32 88 32 60 L32 35 Z" fill="#2d4a7e"/>
+    <path id="shield-highlight" d="M64 28 L90 42 L90 60 C90 84 68 102 64 105 C60 102 38 84 38 60 L38 42 Z" fill="#4a6fa5" opacity="0.3"/>
+  </g>
+  
+  <!-- Lock symbol -->
+  <g id="lock-group">
+    <rect id="lock-body" x="52" y="56" width="24" height="20" rx="3" fill="#f6ad55"/>
+    <path id="lock-shackle" d="M56 56 L56 44 C56 40 60 36 64 36 C68 36 72 40 72 44 L72 56" stroke="#f6ad55" stroke-width="4" fill="none"/>
+  </g>
+  
+  <!-- File/document element -->
+  <g id="file-group">
+    <path id="file-shape" d="M72 76 L72 92 C72 94 70 96 68 96 L52 96 C50 96 48 94 48 92 L48 68 C48 66 50 64 52 64 L68 64 C70 64 72 66 72 68 Z" fill="#4299e1"/>
+    <path id="file-tab" d="M48 64 L68 64 L72 68 L72 56 L48 56 Z" fill="#63b3ed"/>
+    <line id="file-lines" x1="54" y1="72" x2="66" y2="72" stroke="#1a202c" stroke-width="2"/>
+    <line id="file-lines2" x1="54" y1="76" x2="66" y2="76" stroke="#1a202c" stroke-width="2"/>
+    <line id="file-lines3" x1="54" y1="80" x2="66" y2="80" stroke="#1a202c" stroke-width="2"/>
+  </g>
+  
+  <!-- Security border -->
+  <circle id="security-border" cx="64" cy="64" r="58" fill="none" stroke="#48bb78" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Protection dots -->
+  <circle id="dot-1" cx="64" cy="32" r="4" fill="#48bb78"/>
+  <circle id="dot-2" cx="92" cy="64" r="4" fill="#48bb78"/>
+  <circle id="dot-3" cx="64" cy="96" r="4" fill="#48bb78"/>
+  <circle id="dot-4" cx="36" cy="64" r="4" fill="#48bb78"/>
+  
+  <!-- Network arrows indicating secure transfer -->
+  <g id="transfer-arrows">
+    <path id="arrow-up" d="M64 24 L64 32" stroke="#63b3ed" stroke-width="3" fill="none"/>
+    <polygon id="arrowhead-up" points="60,32 64,24 68,32" fill="#63b3ed"/>
+    <path id="arrow-down" d="M64 104 L64 96" stroke="#63b3ed" stroke-width="3" fill="none"/>
+    <polygon id="arrowhead-down" points="60,96 64,104 68,96" fill="#63b3ed"/>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A5D4F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C3E34;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="snowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F0F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect id="sky" x="0" y="0" width="800" height="600" fill="url(#skyGradient)" />
+  
+  <!-- Distant Clouds -->
+  <g id="clouds" opacity="0.7">
+    <ellipse cx="150" cy="80" rx="60" ry="25" fill="white" opacity="0.8" />
+    <ellipse cx="200" cy="90" rx="70" ry="30" fill="white" opacity="0.8" />
+    <ellipse cx="600" cy="100" rx="80" ry="35" fill="white" opacity="0.8" />
+    <ellipse cx="700" cy="85" rx="70" ry="28" fill="white" opacity="0.8" />
+  </g>
+  
+  <!-- Far Mountains -->
+  <g id="farMountains">
+    <path id="farMountain1" d="M -50 450 L 150 280 L 350 450 Z" fill="url(#mountainGradient)" opacity="0.7" />
+    <path id="farMountain2" d="M 200 450 L 400 220 L 600 450 Z" fill="url(#mountainGradient)" opacity="0.6" />
+    <path id="farMountain3" d="M 500 450 L 750 260 L 850 450 Z" fill="url(#mountainGradient)" opacity="0.5" />
+  </g>
+  
+  <!-- Middle Mountains -->
+  <g id="middleMountains">
+    <path id="midMountain1" d="M -50 500 L 200 320 L 450 500 Z" fill="url(#mountainGradient)" />
+    <path id="midMountain2" d="M 350 500 L 600 300 L 850 500 Z" fill="#5A6E5F" />
+  </g>
+  
+  <!-- Main Mountain -->
+  <g id="mainMountain">
+    <path id="mountainBase" d="M -100 550 L 250 280 L 600 550 Z" fill="url(#mountainGradient)" />
+    <!-- Snow Cap -->
+    <path id="snowCap" d="M 250 280 L 280 340 L 300 320 L 320 380 L 350 340 L 360 300 L 390 360 L 420 320 L 450 380 L 480 340 L 500 360 L 530 320 L 560 380 L 600 550 Z" fill="url(#snowGradient)" />
+    <!-- Snow Shadow -->
+    <path id="snowShadow" d="M 280 340 L 300 320 L 320 380 L 350 340 L 360 300 L 390 360 L 420 320 L 450 380 L 480 340 L 500 360 L 530 320 L 560 380 Z" fill="white" opacity="0.3" />
+  </g>
+  
+  <!-- Foreground Trees -->
+  <g id="foregroundTrees">
+    <!-- Left Tree -->
+    <path id="tree1" d="M 80 550 L 60 480 L 100 480 Z" fill="#2D3E2E" />
+    <circle id="treeTrunk1" cx="80" cy="550" r="8" fill="#4A3728" />
+    
+    <!-- Center Tree -->
+    <path id="tree2" d="M 350 550 L 330 470 L 370 470 Z" fill="#2D3E2E" />
+    <circle id="treeTrunk2" cx="350" cy="550" r="10" fill="#4A3728" />
+    
+    <!-- Right Tree -->
+    <path id="tree3" d="M 650 550 L 630 460 L 670 460 Z" fill="#2D3E2E" />
+    <circle id="treeTrunk3" cx="650" cy="550" r="9" fill="#4A3728" />
+  </g>
+  
+  <!-- Eagle -->
+  <g id="eagle">
+    <path id="eagleWingLeft" d="M 180 120 L 120 80 L 160 100 Z" fill="#1A1A1A" />
+    <path id="eagleWingRight" d="M 220 120 L 280 80 L 240 100 Z" fill="#1A1A1A" />
+    <ellipse id="eagleBody" cx="200" cy="130" rx="25" ry="15" fill="#2C2C2C" />
+    <path id="eagleTail" d="M 180 140 L 165 160 L 235 160 L 220 140 Z" fill="#1A1A1A" />
+    <ellipse id="eagleHead" cx="225" cy="125" rx="12" ry="10" fill="#2C2C2C" />
+    <path id="eagleBeak" d="M 235 125 L 245 130 L 235 135 Z" fill="#FFAA00" />
+    <circle id="eagleEye" cx="230" cy="122" r="2" fill="#FF6600" />
+  </g>
+  
+  <!-- Ground/Valley -->
+  <ellipse id="valley" cx="400" cy="580" rx="400" ry="40" fill="#3D5A3A" />
+  
+  <!-- River Path -->
+  <path id="river" d="M 0 570 Q 200 580 400 570 T 800 575" stroke="#87CEEB" stroke-width="4" fill="none" opacity="0.6" />
+</svg>

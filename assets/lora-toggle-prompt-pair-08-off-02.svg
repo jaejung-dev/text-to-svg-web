@@ -1,0 +1,83 @@
+<svg width="500" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bell Communications Logo">
+  <defs>
+    <!-- Define a subtle gradient for the bell icon to add depth -->
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#172554;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter for subtle elevation -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g id="logo-container">
+    <!-- LOGO ICON -->
+    <g id="bell-icon" filter="url(#dropShadow)" transform="translate(40, 40)">
+      <!-- The outer bell shape -->
+      <path 
+        d="M25 10 
+           C45 10 55 30 55 50 
+           C55 85 25 105 25 105 
+           C25 105 -5 85 -5 50 
+           C-5 30 5 10 25 10 Z" 
+        fill="url(#bellGradient)" 
+      />
+      <!-- The inner clapper/circle representing sound -->
+      <circle 
+        cx="25" 
+        cy="75" 
+        r="8" 
+        fill="#ffffff" 
+      />
+      <!-- A subtle white highlight curve -->
+      <path 
+        d="M35 15 C45 25 50 40 45 50" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        opacity="0.3"
+      />
+    </g>
+
+    <!-- LOGO TEXT -->
+    <g id="logo-text" transform="translate(140, 40)">
+      <!-- Company Name -->
+      <text 
+        x="0" 
+        y="0" 
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" 
+        font-size="42" 
+        font-weight="700" 
+        letter-spacing="1.5" 
+        fill="#111827"
+      >
+        BELL
+      </text>
+      
+      <!-- Subtitle / Industry Identifier -->
+      <text 
+        x="0" 
+        y="32" 
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" 
+        font-size="12" 
+        font-weight="400" 
+        letter-spacing="4" 
+        fill="#6b7280" 
+        text-transform="uppercase"
+      >
+        GLOBAL COMMUNICATIONS
+      </text>
+    </g>
+  </g>
+</svg>

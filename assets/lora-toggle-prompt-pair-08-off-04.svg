@@ -1,0 +1,77 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo background (transparent) -->
+  <defs>
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Bell Icon Group -->
+  <g id="bell-icon" transform="translate(20, 10)">
+    <!-- Bell body -->
+    <path d="M 25 5 Q 25 25 45 25 L 55 25 Q 75 25 75 5 L 50 5 Z" 
+          fill="url(#bellGradient)" 
+          filter="url(#shadow)" />
+    
+    <!-- Bell clapper -->
+    <circle cx="40" cy="15" r="8" fill="white" opacity="0.9" />
+    
+    <!-- Bell detail line -->
+    <line x1="25" y1="5" x2="75" y2="5" stroke="white" stroke-width="1" stroke-opacity="0.5" />
+    
+    <!-- Bell outline accent -->
+    <path d="M 45 25 L 55 25" stroke="white" stroke-width="2" />
+    
+    <!-- Sound waves (communications symbol) -->
+    <path d="M 80 20 Q 90 20 100 25 Q 90 30 80 25" 
+          fill="none" 
+          stroke="#60a5fa" 
+          stroke-width="2" 
+          opacity="0.6" />
+    <path d="M 105 20 Q 115 20 125 25 Q 115 30 105 25" 
+          fill="none" 
+          stroke="#60a5fa" 
+          stroke-width="2" 
+          opacity="0.4" />
+  </g>
+  
+  <!-- Company Name Group -->
+  <g id="company-name" transform="translate(130, 65)">
+    <text id="company-text" 
+          font-family="Georgia, 'Times New Roman', serif" 
+          font-size="42" 
+          font-weight="bold" 
+          fill="url(#textGradient)">
+      Bell
+    </text>
+    <text id="tagline" 
+          x="0" 
+          y="22" 
+          font-family="Arial, sans-serif" 
+          font-size="12" 
+          font-weight="300" 
+          letter-spacing="2" 
+          fill="#64748b" 
+          text-anchor="start">
+      COMMUNICATIONS
+    </text>
+  </g>
+  
+  <!-- Decorative underline accent -->
+  <line id="accent-line" 
+        x1="130" 
+        y1="98" 
+        x2="230" 
+        y2="98" 
+        stroke="url(#textGradient)" 
+        stroke-width="2" 
+        opacity="0.5" />
+</svg>
