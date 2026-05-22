@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Definitions for reusable elements -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F7FA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#66BB6A;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky Background -->
+  <rect id="sky" x="0" y="0" width="800" height="600" fill="url(#skyGradient)"/>
+
+  <!-- Ground/Cityscape -->
+  <rect id="ground" x="0" y="400" width="800" height="200" fill="#8D6E63"/>
+
+  <!-- Urban Buildings Background -->
+  <g id="backgroundBuildings">
+    <rect id="cityBuilding1" x="50" y="250" width="80" height="150" fill="#A1887F" opacity="0.6"/>
+    <rect id="cityBuilding2" x="150" y="220" width="60" height="180" fill="#B0BEC5" opacity="0.5"/>
+    <rect id="cityBuilding3" x="650" y="280" width="70" height="120" fill="#A1887F" opacity="0.5"/>
+  </g>
+
+  <!-- Main Laundromat Building -->
+  <g id="laundromat" filter="url(#shadow)">
+    <!-- Main Building Structure -->
+    <rect id="buildingBody" x="250" y="300" width="300" height="200" fill="url(#buildingGradient)" rx="5"/>
+    <rect id="buildingRoof" x="240" y="280" width="320" height="30" fill="#388E3C" rx="5"/>
+
+    <!-- Entrance Door -->
+    <rect id="entrance" x="365" y="400" width="70" height="100" fill="#5D4037" rx="3"/>
+    <circle id="doorKnob" cx="420" cy="450" r="5" fill="#FFC107"/>
+
+    <!-- Large Windows showing washing machines -->
+    <g id="windows">
+      <rect id="window1" x="270" y="320" width="80" height="60" fill="#B3E5FC" rx="3"/>
+      <rect id="window2" x="370" y="320" width="80" height="60" fill="#B3E5FC" rx="3"/>
+      <rect id="window3" x="470" y="320" width="80" height="60" fill="#B3E5FC" rx="3"/>
+    </g>
+
+    <!-- Washing Machines Inside -->
+    <g id="washingMachines">
+      <rect id="machine1" x="280" y="330" width="60" height="50" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="5"/>
+      <rect id="machine2" x="380" y="330" width="60" height="50" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="5"/>
+      <rect id="machine3" x="480" y="330" width="60" height="50" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="5"/>
+      
+      <!-- Machine Details -->
+      <circle id="machineWindow1" cx="310" cy="355" r="10" fill="#42A5F5" opacity="0.7"/>
+      <circle id="machineWindow2" cx="410" cy="355" r="10" fill="#42A5F5" opacity="0.7"/>
+      <circle id="machineWindow3" cx="510" cy="355" r="10" fill="#42A5F5" opacity="0.7"/>
+    </g>
+
+    <!-- Laundromat Sign -->
+    <rect id="signBackground" x="320" y="270" width="160" height="40" fill="#FFC107" rx="5"/>
+    <text id="signText" x="400" y="297" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#3E2723" text-anchor="middle">
+      SELF-SERVICE
+    </text>
+  </g>
+
+  <!-- Payment System Signage -->
+  <g id="paymentSign" transform="translate(600, 180)" filter="url(#shadow)">
+    <rect x="0" y="0" width="180" height="100" fill="#2196F3" rx="8"/>
+    <text x="90" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PAGAMENTO</text>
+    <text x="90" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">MODERNO</text>
+    <g id="cashIcon" transform="translate(30, 60)">
+      <rect x="0" y="0" width="25" height="20" fill="#FFC107" rx="2"/>
+      <text x="12" y="15" font-family="Arial" font-size="10" fill="#3E2723">$</text>
+    </g>
+    <g id="mobileIcon" transform="translate(110, 55)">
+      <rect x="0" y="0" width="20" height="30" fill="#FF5722" rx="3"/>
+      <circle cx="10" cy="10" r="2" fill="#FFC107"/>
+    </g>
+  </g>
+
+  <!-- People - Students/Workers/Residents -->
+  <g id="people" filter="url(#shadow)">
+    <!-- Student with backpack -->
+    <circle id="studentHead" cx="150" cy="450" r="15" fill="#FFCC80"/>
+    <rect id="studentBody" x="130" y="465" width="40" height="50" fill="#1565C0" rx="5"/>
+    <rect id="backpack" x="120" y="470" width="60" height="45" fill="#5D4037" rx="3"/>
+    <circle id="studentHead2" cx="200" cy="460" r="14" fill="#FFCC80"/>
+    <rect id="studentBody2" x="185" y="475" width="30" height="45" fill="#3E2723" rx="5"/>
+
+    <!-- Worker -->
+    <circle id="workerHead" cx="500" cy="450" r="15" fill="#FFCC80"/>
+    <rect id="workerBody" x="480" y="465" width="40" height="50" fill="#795548" rx="5"/>
+    <rect id="uniform" x="480" y="470" width="40" height="45" fill="#FFC107" rx="3"/>
+
+    <!-- Resident -->
+    <circle id="residentHead" cx="650" cy="455" r="15" fill="#FFCC80"/>
+    <rect id="residentBody" x="630" y="470" width="40" height="45" fill="#455A64" rx="5"/>
+  </g>
+
+  <!-- University Area Indicator -->
+  <g id="universityIndicator" transform="translate(680, 100)">
+    <circle cx="0" cy="0" r="20" fill="#9C27B0" opacity="0.8"/>
+    <text x="25" y="5" font-family="Arial" font-size="10" fill="#333">Università</text>
+  </g>
+
+  <!-- Burkina Faso Context Elements -->
+  <g id="burkinaFasoContext">
+    <!-- Flag Colors Accent -->
+    <rect id="flagRed" x="20" y="550" width="250" height="10" fill="#D21034"/>
+    <rect id="flagGreen" x="20" y="565" width="250" height="10" fill="#009E60"/>
+    <rect id="flagYellow" x="20" y="580" width="250" height="10" fill="#FFCD00"/>
+    <polygon id="star" points="100,540 105,548 113,548 107,553 109,561 100,556 91,561 93,553 87,548 95,548" fill="#FFCD00"/>
+  </g>
+
+  <!-- Information Panel -->
+  <g id="infoPanel" transform="translate(30, 400)">
+    <rect x="0" y="0" width="180" height="120" fill="#FFFFFF" rx="8" stroke="#BDBDBD" stroke-width="1"/>
+    <text x="90" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333" text-anchor="middle">Servizi Offerti</text>
+    <text x="20" y="45" font-family="Arial, sans-serif" font-size="10" fill="#333">• Lavaggio Automatico</text>
+    <text x="20" y="62" font-family="Arial, sans-serif" font-size="10" fill="#333">• Asciugatura</text>
+    <text x="20" y="79" font-family="Arial, sans-serif" font-size="10" fill="#333">• Self-Service</text>
+    <text x="20" y="96" font-family="Arial, sans-serif" font-size="10" fill="#333">• Pagamento Mobile</text>
+    <text x="20" y="113" font-family="Arial, sans-serif" font-size="10" fill="#333">• Target: Studenti/Lavoratori</text>
+  </g>
+
+  <!-- Urban Elements -->
+  <g id="urbanElements">
+    <!-- Street -->
+    <rect id="street" x="0" y="500" width="800" height="100" fill="#424242"/>
+    <!-- Street Lines -->
+    <line x1="0" y1="520" x2="800" y2="520" stroke="#FFC107" stroke-width="3" stroke-dasharray="20,15"/>
+    <!-- Sidewalk -->
+    <rect id="sidewalk" x="0" y="490" width="800" height="15" fill="#9E9E9E"/>
+    <!-- Street Lamp -->
+    <line id="lampPost" x1="680" y1="400" x2="680" y2="500" stroke="#333" stroke-width="4"/>
+    <ellipse id="lampLight" cx="680" cy="400" rx="20" ry="15" fill="#FFC107" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="laserGravGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#343a40;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#212529;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e272e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <!-- Markers for arrows -->
+    <marker id="arrowHead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e67e22" />
+    </marker>
+    <marker id="arrowHeadLight" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4834d4" />
+    </marker>
+    <!-- Patterns -->
+    <pattern id="gridPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#e1e8ed" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <g id="background-layer">
+    <rect width="800" height="450" fill="url(#bgGradient)" />
+    <rect width="800" height="450" fill="url(#gridPattern)" opacity="0.3" />
+    <!-- Faint shadow -->
+    <rect width="800" height="450" fill="black" opacity="0.02" />
+  </g>
+
+  <!-- Laser Engraver (Background Context) -->
+  <g id="laser-engraver-context" transform="translate(50, 120) scale(0.9)">
+    <rect x="0" y="50" width="200" height="120" rx="5" fill="url(#laserGravGradient)" />
+    <rect x="10" y="60" width="180" height="100" fill="#000" opacity="0.3" />
+    <!-- Laser Head Representation -->
+    <rect x="150" y="10" width="50" height="60" rx="3" fill="#555" />
+    <circle cx="175" cy="60" r="10" fill="#e67e22" />
+    <!-- Bed Lines -->
+    <path d="M 20 160 L 180 160" stroke="#444" stroke-width="2" />
+    <path d="M 30 180 L 190 180" stroke="#444" stroke-width="2" />
+    <path d="M 50 200 L 170 200" stroke="#444" stroke-width="2" />
+    <!-- Brand Text -->
+    <text x="20" y="115" fill="#aaa" font-family="Arial, sans-serif" font-size="12" font-weight="bold">ATOMSTAK P1</text>
+  </g>
+
+  <!-- Main App Interface (Foreground) -->
+  <g id="app-interface">
+    <!-- Phone Frame -->
+    <g id="phone-frame" transform="translate(250, 50)">
+      <rect x="0" y="0" width="300" height="350" rx="20" fill="url(#phoneGradient)" stroke="#555" stroke-width="2"/>
+      <!-- Notch -->
+      <rect x="100" y="5" width="100" height="10" rx="5" fill="#111" />
+      <!-- Screen Content Background -->
+      <rect x="10" y="20" width="280" height="320" rx="10" fill="#f8f9fa" stroke="#e0e0e0" stroke-width="1"/>
+    </g>
+
+    <!-- App UI Elements -->
+    <g id="app-content" transform="translate(260, 60)">
+      <!-- Header -->
+      <rect x="0" y="0" width="280" height="50" fill="#ffffff" />
+      <line x1="0" y1="50" x2="280" y2="50" stroke="#e9ecef" stroke-width="1" />
+      <text x="140" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">Laser Manager</text>
+      <text x="140" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Atomstak P1 Connected</text>
+
+      <!-- Section: Import -->
+      <g id="section-import" transform="translate(10, 70)">
+        <rect x="0" y="0" width="260" height="80" rx="8" fill="white" stroke="#ddd" stroke-width="1"/>
+        <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Importer un fichier</text>
+        <text x="20" y="55" font-family="Arial, sans-serif" font-size="12" fill="#666">Formats supportés : .LBR, .LBP</text>
+        <!-- File Icon -->
+        <rect x="200" y="15" width="40" height="50" rx="4" fill="#e3f2fd" stroke="#2196f3" stroke-width="1"/>
+        <path d="M 210 30 L 230 30 L 230 50 L 210 50" fill="none" stroke="#2196f3" stroke-width="2"/>
+        <text x="215" y="45" font-family="Arial, sans-serif" font-size="8" fill="#2196f3" text-anchor="middle">LB</text>
+      </g>
+
+      <!-- Section: Export -->
+      <g id="section-export" transform="translate(10, 170)">
+        <rect x="0" y="0" width="260" height="80" rx="8" fill="white" stroke="#ddd" stroke-width="1"/>
+        <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Exporter en SVG</text>
+        <text x="20" y="55" font-family="Arial, sans-serif" font-size="12" fill="#666">Optimisé pour découpe vectorielle</text>
+        <!-- File Icon -->
+        <rect x="200" y="15" width="40" height="50" rx="4" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+        <path d="M 210 30 L 230 30 L 230 50 L 210 50" fill="none" stroke="#ff9800" stroke-width="2"/>
+        <text x="215" y="45" font-family="Arial, sans-serif" font-size="8" fill="#ff9800" text-anchor="middle">SVG</text>
+      </g>
+
+      <!-- Action Button -->
+      <g id="action-btn" transform="translate(10, 270)">
+        <rect x="0" y="0" width="260" height="50" rx="8" fill="#e67e22" />
+        <text x="130" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">TRAITER</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Workflow Arrows / Visual Connection -->
+  <g id="workflow-flow">
+    <!-- Arrow Importing into App -->
+    <path d="M 450 235 L 520 235" stroke="#4834d4" stroke-width="3" marker-end="url(#arrowHeadLight)" fill="none"/>
+    <!-- Arrow Exporting from App -->
+    <path d="M 560 235 L 630 235" stroke="#e67e22" stroke-width="3" marker-end="url(#arrowHead)" fill="none"/>
+  </g>
+
+  <!-- Workflow Labels -->
+  <g id="workflow-labels">
+    <text x="450" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#4834d4" font-weight="bold">Import .Lightburn</text>
+    <text x="630" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#e67e22" font-weight="bold">Export .SVG</text>
+    <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#555">Processus complet</text>
+  </g>
+
+  <!-- Footer / Status -->
+  <g id="footer-status" transform="translate(0, 400)">
+    <line x1="0" y1="0" x2="800" y2="0" stroke="#ddd" stroke-width="1"/>
+    <text x="20" y="20" font-family="Arial, sans-serif" font-size="12" fill="#888">État: Prêt à graver</text>
+    <text x="700" y="20" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#888">v1.0.2</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle id="background" cx="64" cy="64" r="60" fill="#2563eb" opacity="0.1"/>
+  <circle id="main-bg" cx="64" cy="64" r="55" fill="#1e40af"/>
+  
+  <!-- Shield Background -->
+  <path id="shield" d="M64 20 C45 20 20 35 20 60 C20 85 40 100 64 110 C88 100 108 85 108 60 C108 35 83 20 64 20 Z" fill="#10b981"/>
+  
+  <!-- Lock Body -->
+  <rect id="lock-body" x="44" y="55" width="40" height="35" rx="5" fill="#fef3c7"/>
+  
+  <!-- Lock Shackle -->
+  <path id="lock-shackle" d="M44 55 C44 35, 48 30, 64 30 C80 30, 84 35, 84 55" stroke="#fef3c7" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect id="lock-bar" x="44" y="55" width="40" height="8" rx="2" fill="#ef4444"/>
+  
+  <!-- Arrow Transfer Indicators -->
+  <g id="transfer-arrows">
+    <!-- Up Arrow -->
+    <path d="M30 50 L30 40 L34 40 L34 36 L40 42 L34 48 L34 44 L30 44 Z" fill="#34d399"/>
+    
+    <!-- Down Arrow -->
+    <path d="M98 78 L98 88 L94 88 L94 92 L88 86 L94 80 L94 84 L98 84 Z" fill="#34d399"/>
+    
+    <!-- Right Arrow -->
+    <path d="M50 74 L40 74 L40 78 L36 74 L40 70 L40 74 L50 74 Z" fill="#34d399"/>
+    
+    <!-- Left Arrow -->
+    <path d="M78 50 L88 50 L88 46 L92 50 L88 54 L88 50 L78 50 Z" fill="#34d399"/>
+  </g>
+  
+  <!-- Security Badge -->
+  <circle id="security-badge" cx="64" cy="64" r="12" fill="#ef4444"/>
+  <text id="security-text" x="64" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">!</text>
+  
+  <!-- Document/File Layer -->
+  <path id="file-layer" d="M40 35 L64 35 L88 55 L88 85 L40 85 Z" fill="#10b981" opacity="0.8"/>
+  <path id="file-corner" d="M64 35 L88 55 L78 55 L78 35 Z" fill="#059669"/>
+  
+  <!-- Document Lines -->
+  <path id="file-lines" d="M45 45 H75 M45 52 H70 M45 59 H65" stroke="#fef3c7" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Connection Lines (SFTP Data Flow) -->
+  <g id="connection-lines" stroke="#34d399" stroke-width="2" stroke-dasharray="4,2">
+    <line x1="25" y1="64" x2="35" y2="64"/>
+    <line x1="93" y1="64" x2="103" y2="64"/>
+    <line x1="64" y1="25" x2="64" y2="35"/>
+    <line x1="64" y1="103" x2="64" y2="93"/>
+  </g>
+</svg>

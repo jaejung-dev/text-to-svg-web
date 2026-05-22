@@ -1,0 +1,104 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A5D23;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2D3A14;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect id="sky" x="0" y="0" width="800" height="600" fill="url(#skyGradient)" />
+
+  <!-- Sun -->
+  <circle id="sun" cx="700" cy="100" r="40" fill="#FFD700" opacity="0.9" />
+  <circle id="sun-glow" cx="700" cy="100" r="60" fill="#FFD700" opacity="0.3" />
+
+  <!-- Foreground Mountains -->
+  <g id="mountains-foreground">
+    <path d="M0 450 L200 300 L400 450 Z" fill="url(#mountainGradient)" />
+    <path d="M350 420 L500 320 L650 420 Z" fill="url(#mountainGradient)" />
+    <path d="M600 400 L750 320 L800 400 Z" fill="url(#mountainGradient)" />
+  </g>
+
+  <!-- Middle Ground Mountains -->
+  <g id="mountains-middle">
+    <path d="M0 480 L250 350 L450 480 Z" fill="#3D4F1F" opacity="0.85" />
+    <path d="M380 460 L580 380 L780 460 Z" fill="#3D4F1F" opacity="0.85" />
+    <path d="M520 440 L680 400 L800 440 Z" fill="#3D4F1F" opacity="0.85" />
+  </g>
+
+  <!-- Background Mountains -->
+  <g id="mountains-background">
+    <path d="M0 520 L300 400 L500 520 Z" fill="#2D3A14" opacity="0.7" />
+    <path d="M420 500 L620 440 L800 500 Z" fill="#2D3A14" opacity="0.7" />
+  </g>
+
+  <!-- Snow Caps on Mountains -->
+  <g id="snow-caps">
+    <path d="M200 300 L250 340 L220 380 Z" fill="white" opacity="0.9" />
+    <path d="M450 320 L520 360 L500 400 Z" fill="white" opacity="0.9" />
+    <path d="M600 400 L660 420 L640 450 Z" fill="white" opacity="0.9" />
+    <path d="M750 320 L780 350 L760 380 Z" fill="white" opacity="0.9" />
+  </g>
+
+  <!-- Eagle -->
+  <g id="eagle" transform="translate(400, 150)">
+    <!-- Left Wing -->
+    <path d="M0 0 Q-40 -30 -80 -10 Q-100 -40 -120 -50" fill="none" stroke="#3D2817" stroke-width="8" stroke-linecap="round" />
+    <path d="M-80 -10 L-120 -50 L-90 -30 Z" fill="#3D2817" />
+    
+    <!-- Right Wing -->
+    <path d="M0 0 Q40 -30 80 -10 Q100 -40 120 -50" fill="none" stroke="#3D2817" stroke-width="8" stroke-linecap="round" />
+    <path d="M80 -10 L120 -50 L90 -30 Z" fill="#3D2817" />
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="20" rx="15" ry="25" fill="#3D2817" />
+    
+    <!-- Head -->
+    <circle cx="0" cy="-5" r="12" fill="#3D2817" />
+    
+    <!-- Beak -->
+    <path d="M8 -8 L20 -10 L8 -5 Z" fill="#FFA500" />
+    
+    <!-- Eye -->
+    <circle cx="4" cy="-8" r="3" fill="black" />
+    <circle cx="5" cy="-9" r="1" fill="white" />
+    
+    <!-- Tail -->
+    <path d="M-5 40 L0 55 L5 40 Z" fill="#3D2817" />
+  </g>
+
+  <!-- Clouds -->
+  <g id="clouds" opacity="0.8">
+    <ellipse cx="150" cy="80" rx="60" ry="25" fill="white" />
+    <ellipse cx="200" cy="70" rx="50" ry="20" fill="white" />
+    <ellipse cx="600" cy="120" rx="80" ry="30" fill="white" />
+    <ellipse cx="680" cy="100" rx="60" ry="25" fill="white" />
+  </g>
+
+  <!-- Trees (foreground) -->
+  <g id="trees">
+    <!-- Pine tree 1 -->
+    <path d="M50 600 L80 500 L110 600 Z" fill="#2D4A1F" />
+    <path d="M70 600 L80 540 L90 600 Z" fill="#1D3315" />
+    <rect x="77" y="600" width="6" height="20" fill="#3D2817" />
+    
+    <!-- Pine tree 2 -->
+    <path d="M720 600 L750 510 L780 600 Z" fill="#2D4A1F" />
+    <path d="M740 600 L750 550 L760 600 Z" fill="#1D3315" />
+    <rect x="747" y="600" width="6" height="20" fill="#3D2817" />
+    
+    <!-- Pine tree 3 -->
+    <path d="M750 600 L770 530 L790 600 Z" fill="#2D4A1F" />
+    <path d="M765 600 L770 565 L775 600 Z" fill="#1D3315" />
+    <rect x="767" y="600" width="5" height="18" fill="#3D2817" />
+  </g>
+
+  <!-- Water Reflection (bottom) -->
+  <rect id="water" x="0" y="580" width="800" height="20" fill="#4A90C2" opacity="0.6" />
+</svg>

@@ -1,0 +1,88 @@
+<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the deep crimson carpet base -->
+    <linearGradient id="crimson-pile" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5e0814" /> <!-- Deep crimson -->
+      <stop offset="50%" stop-color="#7a1424" /> <!-- Highlighted pile -->
+      <stop offset="100%" stop-color="#5e0814" />
+    </linearGradient>
+
+    <!-- Gradient for the metallic gold accents -->
+    <linearGradient id="gold-metallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c2a872" /> <!-- Antique Bronze -->
+      <stop offset="50%" stop-color="#ffd700" /> <!-- Bright Gold -->
+      <stop offset="100%" stop-color="#b8860b" /> <!-- Darker Bronze -->
+    </linearGradient>
+
+    <!-- Vignette gradient for the "Corporate Noir" shadow feel -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.9" />
+    </radialGradient>
+    
+    <!-- Noise texture for carpet realism -->
+    <filter id="carpet-noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#800000" surfaceScale="1">
+        <feDistantLight azimuth="45" elevation="60" />
+      </feDiffuseLighting>
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+  </defs>
+
+  <!-- Group 1: The Background Floor -->
+  <g id="floor">
+    <rect x="0" y="0" width="100" height="100" fill="#1a0505" rx="4" ry="4" />
+  </g>
+
+  <!-- Group 2: The Crimson Carpet Base -->
+  <g id="carpet-body">
+    <!-- Main Rug Shape -->
+    <rect x="8" y="8" width="84" height="84" fill="url(#crimson-pile)" stroke="#3a0000" stroke-width="0.5" rx="2" ry="2" />
+    
+    <!-- Texture Overlay -->
+    <rect x="8" y="8" width="84" height="84" fill="url(#carpet-noise)" opacity="0.3" style="mix-blend-mode: soft-light;" />
+  </g>
+
+  <!-- Group 3: The Ornamental Border -->
+  <g id="border">
+    <!-- Outer geometric frame -->
+    <rect x="12" y="12" width="76" height="76" fill="none" stroke="url(#gold-metallic)" stroke-width="1.5" rx="1" />
+    
+    <!-- Inner decorative band -->
+    <path d="M18 18 L82 18 L82 82 L18 82 Z" fill="none" stroke="#4a0812" stroke-width="4" opacity="0.8" />
+    
+    <!-- Corner Motifs (Stylized Geometric/Persian) -->
+    <path d="M18 18 L12 12 L18 12 Z" fill="none" stroke="url(#gold-metallic)" stroke-width="2" stroke-linecap="square" />
+    <path d="M82 18 L88 12 L82 12 Z" fill="none" stroke="url(#gold-metallic)" stroke-width="2" stroke-linecap="square" />
+    <path d="M18 82 L12 88 L18 88 Z" fill="none" stroke="url(#gold-metallic)" stroke-width="2" stroke-linecap="square" />
+    <path d="M82 82 L88 88 L82 88 Z" fill="none" stroke="url(#gold-metallic)" stroke-width="2" stroke-linecap="square" />
+    
+    <!-- Dashed Border Line for "Corporate" sharpness -->
+    <path d="M22 18 L78 18 L78 22 L78 78 L74 78 L74 82 L26 82 L26 78 L22 78 L22 22 Z" fill="none" stroke="url(#gold-metallic)" stroke-width="1" stroke-dasharray="2,2" opacity="0.6" />
+  </g>
+
+  <!-- Group 4: Central Medallion (Cyber-Persian Fusion) -->
+  <g id="central-medallion">
+    <!-- Outer Ring -->
+    <circle cx="50" cy="50" r="12" fill="none" stroke="url(#gold-metallic)" stroke-width="1" />
+    <circle cx="50" cy="50" r="10" fill="none" stroke="#3a0000" stroke-width="1" />
+    
+    <!-- Main Star/Crystal Shape -->
+    <path d="M50 44 L54 50 L50 56 L46 50 Z" fill="url(#gold-metallic)" stroke="#3a0000" stroke-width="0.5" />
+    
+    <!-- Secondary Crystalline Points -->
+    <path d="M50 36 L58 50 L50 64 L42 50 Z" fill="none" stroke="url(#gold-metallic)" stroke-width="0.5" stroke-linecap="round" />
+    
+    <!-- Central Gem / CEO Logo placeholder -->
+    <polygon points="50,38 53,45 50,52 47,45" fill="#c2a872" opacity="0.8" />
+    <polygon points="50,48 52,51 50,54 48,51" fill="#ffd700" opacity="0.9" />
+  </g>
+
+  <!-- Group 5: Atmospheric Overlay (The Noir Feel) -->
+  <g id="atmosphere">
+    <rect x="0" y="0" width="100" height="100" fill="url(#vignette)" pointer-events="none" />
+    <!-- Subtle shine indicating a polished corporate office -->
+    <rect x="40" y="0" width="20" height="100" fill="#ffffff" opacity="0.03" style="mix-blend-mode: overlay;" />
+  </g>
+</svg>

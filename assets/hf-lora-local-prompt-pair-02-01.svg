@@ -1,0 +1,20 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+
+  <!-- Shield Shape (Representing DLP/Security) -->
+  <path d="M32 10 L50 12 L50 28 C50 42 42 50 36 52 C30 50 22 42 22 28 L22 12 L32 10 Z" fill="#FFFFFF" stroke="#1976D2" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Up Arrow (Representing Upload/SFTP) -->
+  <path d="M32 20 L32 10 L37 15 L32 15 L32 18 L27 15 L32 10 Z" fill="#1976D2"/>
+  
+  <!-- Down Arrow (Representing Download/SFTP) -->
+  <path d="M32 44 L32 54 L37 49 L32 49 L32 46 L27 49 L32 54 Z" fill="#1976D2"/>
+
+  <!-- Lock Overlay (Representing Secure Connection) -->
+  <path d="M26 28 V32 H38 V28 H26 Z M25 32 V39 C25 41 27 43 30 43 C33 43 35 41 35 39 V32 H39 V39 C39 43 35 47 30 47 C25 47 21 43 21 39 V32 H25 Z" fill="#1976D2"/>
+  
+  <!-- Small Keyhole detail -->
+  <circle cx="30" cy="35.5" r="1.5" fill="#FFFFFF"/>
+
+</svg>

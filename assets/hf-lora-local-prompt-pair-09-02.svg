@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Gradients for Metallic Base -->
+    <linearGradient id="baseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f0f0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#cccccc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a0a0a0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="20%" style="stop-color:#ffffff;stop-opacity:0.6" />
+      <stop offset="80%" style="stop-color:#ffffff;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="gearGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#dddddd;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Shadow Filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Group: The Foundation (Basis) -->
+  <g id="Foundation" filter="url(#dropShadow)">
+    <!-- Main Base Plate -->
+    <path d="M 150,420 L 350,420 L 380,480 L 120,480 Z" fill="url(#baseGradient)" stroke="#999" stroke-width="2" />
+    
+    <!-- Server Rack Lines (Indicating Support Layers) -->
+    <rect x="160" y="435" width="180" height="5" fill="#666" rx="2" />
+    <rect x="160" y="450" width="180" height="5" fill="#666" rx="2" />
+    <rect x="160" y="465" width="180" height="5" fill="#666" rx="2" />
+    
+    <!-- LED Lights -->
+    <circle cx="175" cy="445" r="2" fill="#00ff00" />
+    <circle cx="190" cy="460" r="2" fill="#00ff00" />
+    <circle cx="175" cy="475" r="2" fill="#ffcc00" />
+  </g>
+
+  <!-- Group: The SAP Logo Shape -->
+  <g id="LogoShape" transform="translate(0, -50)" filter="url(#dropShadow)">
+    <!-- Top Left - Red -->
+    <path d="M 100,50 L 250,50 L 200,150 L 50,150 Z" fill="#C43736" />
+    
+    <!-- Top Right - Grey -->
+    <path d="M 250,50 L 400,50 L 350,150 L 200,150 Z" fill="#C0C0C0" />
+    
+    <!-- Bottom Left - Grey -->
+    <path d="M 50,150 L 200,150 L 150,250 L 0,250 Z" fill="#C0C0C0" />
+    
+    <!-- Bottom Right - Red (Contains the Gear for Support) -->
+    <path d="M 200,150 L 350,150 L 300,250 L 150,250 Z" fill="#C43736" />
+  </g>
+
+  <!-- Group: The Support Element (Gear) inside the Logo -->
+  <!-- Placed specifically in the Bottom-Right Red Triangle of the logo -->
+  <g id="SupportGear" transform="translate(250, 200)">
+    <!-- Gear Shape -->
+    <path d="M -15,-10 L -12,-5 L -8,-5 L -6,-2 L -10,0 L -6,2 L -8,5 L -12,5 L -15,10 L -12,15 L -8,12 L -5,12 L -2,16 L 0,12 L 5,12 L 8,15 L 12,10 L 15,5 L 10,0 L 15,-5 L 12,-12 L 8,-12 L 5,-16 L 2,-12 L 6,-12 Z" fill="none" stroke="white" stroke-width="3" />
+    <!-- Inner Circle -->
+    <circle cx="0" cy="0" r="5" fill="#ffffff" fill-opacity="0.8" />
+    <!-- Connection to Base (Arrow) -->
+    <path d="M 0,-20 L 0,-40" stroke="white" stroke-width="2" stroke-dasharray="2,2" />
+  </g>
+
+</svg>

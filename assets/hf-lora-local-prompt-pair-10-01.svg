@@ -1,0 +1,115 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buttonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e94560;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="laserGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)" />
+  
+  <!-- App Container -->
+  <g id="app-container">
+    <rect x="50" y="50" width="700" height="500" rx="20" fill="#0f0f1a" stroke="#333" stroke-width="2" />
+    
+    <!-- Header -->
+    <g id="header">
+      <rect x="50" y="50" width="700" height="60" rx="18" fill="#1a1a2e" stroke="#e94560" stroke-width="2" />
+      <text x="400" y="85" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#e94560" text-anchor="middle">ATOMSTAK P1</text>
+      <text x="400" y="110" font-family="Arial, sans-serif" font-size="14" fill="#00ff88" text-anchor="middle">Laser Engraving App</text>
+    </g>
+    
+    <!-- Status Bar -->
+    <g id="status-bar">
+      <rect x="50" y="110" width="700" height="40" rx="10" fill="#16213e" stroke="#333" stroke-width="1" />
+      <circle cx="80" cy="125" r="8" fill="#00ff88" />
+      <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Connecté</text>
+      <text x="650" y="130" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">P1 Ready</text>
+    </g>
+    
+    <!-- Main Content Area -->
+    <g id="main-content">
+      <rect x="50" y="160" width="700" height="180" rx="15" fill="#1a1a2e" stroke="#333" stroke-width="1" />
+      <text x="100" y="195" font-family="Arial, sans-serif" font-size="16" fill="#e94560" font-weight="bold">Importation de fichier</text>
+      
+      <!-- File Preview Area -->
+      <rect x="80" y="200" width="200" height="120" rx="10" fill="#0f0f1a" stroke="#555" stroke-width="2" stroke-dasharray="5,5" />
+      <text x="180" y="230" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">LightBurn</text>
+      <text x="180" y="250" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">Format (.lbrn)</text>
+      <text x="180" y="280" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">Preview</text>
+      
+      <!-- Laser Preview in Center -->
+      <g id="laser-preview" transform="translate(300, 210)">
+        <rect x="0" y="0" width="120" height="80" fill="#1a1a2e" stroke="#00ff88" stroke-width="2" rx="5" />
+        <rect x="5" y="5" width="110" height="70" fill="none" stroke="#333" stroke-width="1" />
+        <ellipse cx="60" cy="40" rx="30" ry="20" fill="none" stroke="#00ff88" stroke-width="2" opacity="0.6">
+          <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite" />
+        </ellipse>
+        <line x1="0" y1="40" x2="120" y2="40" stroke="#00ff88" stroke-width="1" opacity="0.5">
+          <animate attributeName="y1" values="40;38;40" dur="3s" repeatCount="indefinite" />
+          <animate attributeName="y2" values="40;38;40" dur="3s" repeatCount="indefinite" />
+        </line>
+      </g>
+      
+      <!-- Export Preview -->
+      <rect x="450" y="200" width="200" height="120" rx="10" fill="#0f0f1a" stroke="#333" stroke-width="1" />
+      <text x="550" y="235" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Export</text>
+      <text x="550" y="255" font-family="Arial, sans-serif" font-size="10" fill="#00ff88" text-anchor="middle">SVG Vector</text>
+      <rect x="480" y="265" width="140" height="50" rx="5" fill="#16213e" stroke="#555" stroke-width="1" />
+      <text x="550" y="290" font-family="Arial, sans-serif" font-size="10" fill="#e94560" text-anchor="middle">.SVG Ready</text>
+    </g>
+    
+    <!-- Arrow Animation -->
+    <g id="arrow-anim">
+      <line x1="280" y1="250" x2="295" y2="250" stroke="#e94560" stroke-width="3" />
+      <polygon points="295,250 310,250 305,245 305,255" fill="#e94560" />
+    </g>
+    
+    <!-- Action Buttons -->
+    <g id="action-buttons">
+      <rect x="50" y="360" width="320" height="50" rx="25" fill="url(#buttonGradient)" stroke="#e94560" stroke-width="2" />
+      <text x="210" y="392" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">Import LightBurn</text>
+      
+      <rect x="430" y="360" width="320" height="50" rx="25" fill="#00ff88" stroke="#00ff88" stroke-width="2" />
+      <text x="590" y="392" font-family="Arial, sans-serif" font-size="16" fill="#0f0f1a" text-anchor="middle">Export SVG</text>
+    </g>
+    
+    <!-- Progress Bar -->
+    <g id="progress-bar">
+      <rect x="50" y="430" width="700" height="10" rx="5" fill="#16213e" />
+      <rect x="50" y="430" width="450" height="10" rx="5" fill="#00ff88">
+        <animate attributeName="width" values="450;500;450" dur="2s" repeatCount="indefinite" />
+      </rect>
+      <text x="400" y="455" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Traitement en cours...</text>
+    </g>
+    
+    <!-- Laser Machine Icon -->
+    <g id="machine-icon" transform="translate(700, 530)">
+      <rect x="0" y="0" width="40" height="30" fill="#333" stroke="#555" stroke-width="1" />
+      <circle cx="20" cy="15" r="8" fill="#00ff88" opacity="0.7">
+        <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <line x1="15" y1="15" x2="25" y2="15" stroke="#00ff88" stroke-width="2">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite" />
+      </line>
+    </g>
+    
+    <!-- Connection Status -->
+    <g id="connection-status">
+      <rect x="630" y="535" width="65" height="25" rx="12" fill="#00ff88" />
+      <text x="662" y="553" font-family="Arial, sans-serif" font-size="11" fill="#0f0f1a" text-anchor="middle">OK</text>
+    </g>
+    
+    <!-- Footer Info -->
+    <text x="400" y="580" font-family="Arial, sans-serif" font-size="11" fill="#666" text-anchor="middle">Atomstak P1 • Version 2.1.4</text>
+  </g>
+</svg>

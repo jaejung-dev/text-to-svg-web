@@ -139,8 +139,10 @@ function renderPromptPair(pair) {
     `;
   }
 
-  function loraModeSection(title, items) {
-    const runs = Array.from({ length: 4 }, (_, index) => {
+  function loraModeSection(title, items, options = {}) {
+    const runCount = options.runCount || 4;
+    const subtitle = options.subtitle || "default sampling · 4 runs";
+    const runs = Array.from({ length: runCount }, (_, index) => {
       const run = index + 1;
       return (items || []).find((item) => Number(item.run) === run) || {
         run,
@@ -153,7 +155,7 @@ function renderPromptPair(pair) {
       <section class="lora-mode-section">
         <div class="lora-mode-head">
           <h3>${escapeHtml(title)}</h3>
-          <span>default sampling · 4 runs</span>
+          <span>${escapeHtml(subtitle)}</span>
         </div>
         <div class="lora-runs-grid">
           ${runs.map((run) => loraRunCard(run, title)).join("")}
@@ -163,7 +165,9 @@ function renderPromptPair(pair) {
   }
 
   const toggle = pair.lora_toggle;
+  const hfLocal = pair.hf_lora_local;
   const hasToggle = toggle && ((toggle.on || []).length || (toggle.off || []).length);
+  const hasHfLocal = hfLocal && (hfLocal.runs || []).length;
 
   return `
     <article class="prompt-pair-card">
@@ -175,6 +179,11 @@ function renderPromptPair(pair) {
         <div class="lora-toggle-grid">
           ${loraModeSection("LoRA ON", toggle.on || [])}
           ${loraModeSection("LoRA OFF", toggle.off || [])}
+          ${hasHfLocal ? loraModeSection(
+            "HF LoRA local",
+            hfLocal.runs || [],
+            { runCount: 2, subtitle: "local PEFT · 2 runs" },
+          ) : ""}
         </div>
       ` : `
         <div class="pair-outputs-grid">

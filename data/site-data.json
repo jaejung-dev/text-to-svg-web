@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22 12:37 UTC",
+  "generated_at": "2026-05-22 13:52 UTC",
   "source_report": "/home/ubuntu/lica-score-web/report-data.json",
   "generation_endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
   "samples": [
@@ -743,6 +743,48 @@
             "sha256": "270b5bc2032aa3ced88111a452bae848f016daed1450b51e3f83b54a9d14291d"
           }
         ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-01-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 104,
+            "output_tokens": 5129,
+            "elapsed_seconds": 652.026,
+            "svg_parse_error": null,
+            "svg_chars": 2135,
+            "sha256": "b39693fd27d2b7c1647b4e06a16c00416ffe891a512e87f5da83b4bc9c12e625",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-01-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 104,
+            "output_tokens": 5129,
+            "elapsed_seconds": 652.026,
+            "svg_parse_error": null,
+            "svg_chars": 4297,
+            "sha256": "ea12d9272db115fcf505eaa9c0176450c4f6f39e0aaa3f3f56b01ca32b1340ce",
+            "raw_text_prefix": null
+          }
+        ]
       }
     },
     {
@@ -911,6 +953,48 @@
             "svg_parse_error": null,
             "svg_chars": 1949,
             "sha256": "fc3ee30a5308e582405d52a5248de74a4ae567213457ef67a7ecbb7a518935c1"
+          }
+        ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-02-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 85,
+            "output_tokens": 3638,
+            "elapsed_seconds": 455.147,
+            "svg_parse_error": null,
+            "svg_chars": 979,
+            "sha256": "6a53caa5f53d93265283afe0d2f3848351a9505cc461c890c6233f63a40af1d2",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-02-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 85,
+            "output_tokens": 3638,
+            "elapsed_seconds": 455.147,
+            "svg_parse_error": null,
+            "svg_chars": 2247,
+            "sha256": "b17000352b66c56a6164f2777c0b6306220663da9248886c37b8691f24bfeee6",
+            "raw_text_prefix": null
           }
         ]
       }
@@ -1083,6 +1167,48 @@
             "sha256": "7cdf62a35d7edb7acd66768710b8ea8f7948ac53e36e74288cfe819088bfadb0"
           }
         ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-03-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 83,
+            "output_tokens": 2111,
+            "elapsed_seconds": 269.048,
+            "svg_parse_error": null,
+            "svg_chars": 4091,
+            "sha256": "6c9fa1a70a1cdb84c687298735281a901916f1a609de9f8e3128646f871b6614",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-03-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 83,
+            "output_tokens": 2111,
+            "elapsed_seconds": 269.048,
+            "svg_parse_error": null,
+            "svg_chars": 3458,
+            "sha256": "a36c834b816050bc29fd0a2cbc77d57440c23b259b8b8f4ed5955245fa4f4f40",
+            "raw_text_prefix": null
+          }
+        ]
       }
     },
     {
@@ -1251,6 +1377,48 @@
             "svg_parse_error": null,
             "svg_chars": 2955,
             "sha256": "e826756a598a10fda15f60368a7756b996d07a4b7dfc04245d971f372feb1c85"
+          }
+        ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-04-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 78,
+            "output_tokens": 1747,
+            "elapsed_seconds": 221.877,
+            "svg_parse_error": null,
+            "svg_chars": 2720,
+            "sha256": "c75e8d70f45378fa473a8ab0640c9f013ce7122221f7c7564c0a5d143630cec3",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-04-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 78,
+            "output_tokens": 1747,
+            "elapsed_seconds": 221.877,
+            "svg_parse_error": null,
+            "svg_chars": 3686,
+            "sha256": "05f88261a8c1b7b37b0ac5347f71a2044b8e3fa39ad2bf431334fe583c80be4f",
+            "raw_text_prefix": null
           }
         ]
       }
@@ -1423,6 +1591,48 @@
             "sha256": "bfc03159fded40d9b6918e3a535686effd6f7a2ced79da6775f87265d994e5de"
           }
         ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-05-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 138,
+            "output_tokens": 3499,
+            "elapsed_seconds": 419.861,
+            "svg_parse_error": null,
+            "svg_chars": 4430,
+            "sha256": "9932aa75cbd8db41d4e6aa1c5b31ebee0f0d8063737538aaea8d2abc49e16f7d",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-05-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": null,
+            "output_tokens": null,
+            "elapsed_seconds": null,
+            "svg_parse_error": null,
+            "svg_chars": 6315,
+            "sha256": "a649362a99bb9405ce8fc65a7084087251f50b368bcb76abdd4570a2d63f503d",
+            "cached": true
+          }
+        ]
       }
     },
     {
@@ -1591,6 +1801,48 @@
             "svg_parse_error": null,
             "svg_chars": 1791,
             "sha256": "8cec2d47e9f2254bcc06aa35f97551d94058b3ec6f05491221dc9c3b25be7ae1"
+          }
+        ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-06-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 82,
+            "output_tokens": 4852,
+            "elapsed_seconds": 637.167,
+            "svg_parse_error": null,
+            "svg_chars": 1789,
+            "sha256": "2752f3e12d5d242912d1926904a5e9e636b86a7e780ab0a1c1976666f1c7fab4",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-06-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 82,
+            "output_tokens": 4852,
+            "elapsed_seconds": 637.167,
+            "svg_parse_error": null,
+            "svg_chars": 2782,
+            "sha256": "6eec38aaf32575803c26188f609b834de5e06c95278529f3fea8f8a87b135812",
+            "raw_text_prefix": null
           }
         ]
       }
@@ -1763,6 +2015,48 @@
             "sha256": "2e422c72da1f49a30d7d27debf4ceda2cb638f6d65d391e2d9b327dc7dbd76e3"
           }
         ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-07-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 145,
+            "output_tokens": 4852,
+            "elapsed_seconds": 637.167,
+            "svg_parse_error": null,
+            "svg_chars": 7381,
+            "sha256": "d74b1819dbc0519b457e554cf8f7af8af609744ee54bc3a35cedaabdeda583ed",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-07-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 145,
+            "output_tokens": 4852,
+            "elapsed_seconds": 637.167,
+            "svg_parse_error": null,
+            "svg_chars": 6284,
+            "sha256": "c503de90ed47f92bb663377f963b288d372f9ce7b109ee4ea45c4493c7a27530",
+            "raw_text_prefix": null
+          }
+        ]
       }
     },
     {
@@ -1931,6 +2225,48 @@
             "svg_parse_error": null,
             "svg_chars": 2532,
             "sha256": "584ee93a47dffff454399866a8e56f2506d536c92e63794e2fccbe974f81538b"
+          }
+        ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-08-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 85,
+            "output_tokens": 4852,
+            "elapsed_seconds": 637.167,
+            "svg_parse_error": null,
+            "svg_chars": 2604,
+            "sha256": "961a2732b5ec796bf75949ce614dcc21c614436c44f34bde203def3b451ce41b",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-08-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 85,
+            "output_tokens": 5093,
+            "elapsed_seconds": 638.471,
+            "svg_parse_error": null,
+            "svg_chars": 2383,
+            "sha256": "9ea1793bc153bb253a2220ef8edf3b3f5724f8ebc71e1356cb1ca8659e3b3f50",
+            "raw_text_prefix": null
           }
         ]
       }
@@ -2103,6 +2439,48 @@
             "sha256": "acdc6dc1893c549cf1dab356c1c07d0fa0430667568a8d1d17a9ba8d63fda6e3"
           }
         ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-09-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 104,
+            "output_tokens": 5093,
+            "elapsed_seconds": 638.471,
+            "svg_parse_error": null,
+            "svg_chars": 2462,
+            "sha256": "b107e3bb97c6cd93a4c2568cde62d1221cbc7dcb0ea9f81ca904e11eb92a6141",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-09-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 104,
+            "output_tokens": 5093,
+            "elapsed_seconds": 638.471,
+            "svg_parse_error": null,
+            "svg_chars": 3369,
+            "sha256": "cc35f0cb9c79e41e1fca205bfb1b3693184890fda6c3e432ee3179d0ba4fa988",
+            "raw_text_prefix": null
+          }
+        ]
       }
     },
     {
@@ -2273,9 +2651,52 @@
             "sha256": "5a75548b83cc9b7708b1830260f8230a97b77b5d05db1008d106947807d1c408"
           }
         ]
+      },
+      "hf_lora_local": {
+        "label": "HF LoRA local",
+        "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+        "runs_per_prompt": 2,
+        "base_model": "Qwen/Qwen3.5-35B-A3B",
+        "lora_path": "/home/ubuntu/lora-only",
+        "no_stop_constraint": true,
+        "runs": [
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #1",
+            "asset": "assets/hf-lora-local-prompt-pair-10-01.svg",
+            "status": "ok",
+            "run": 1,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 102,
+            "output_tokens": 5093,
+            "elapsed_seconds": 638.471,
+            "svg_parse_error": null,
+            "svg_chars": 6573,
+            "sha256": "537f6e7df600ae8ff2b15866652bdc0186d35da28b046ec686b81bc52eb79a84",
+            "raw_text_prefix": null
+          },
+          {
+            "source": "hf-lora-local",
+            "label": "HF LoRA local #2",
+            "asset": "assets/hf-lora-local-prompt-pair-10-02.svg",
+            "status": "ok",
+            "run": 2,
+            "settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+            "stop_constraint": null,
+            "input_tokens": 102,
+            "output_tokens": 5093,
+            "elapsed_seconds": 638.471,
+            "svg_parse_error": null,
+            "svg_chars": 6833,
+            "sha256": "a6814b61d44fbbe87c8f8ab53d81efbf85a37fd4e672e035c259331df821ede6",
+            "raw_text_prefix": null
+          }
+        ]
       }
     }
   ],
   "lora_toggle_endpoint": "https://model-wl1pmo0q.api.baseten.co/environments/production/predict",
-  "lora_toggle_settings": "default sampling (temperature 0.9, top_p 0.95, top_k 50)"
+  "lora_toggle_settings": "default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+  "hf_lora_local_settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)"
 }

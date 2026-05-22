@@ -1,0 +1,78 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5f7a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5a9fd4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#87ceeb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a5d6f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b7c8e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky Layer -->
+  <rect id="sky-background" x="0" y="0" width="800" height="600" fill="url(#skyGradient)"/>
+  
+  <!-- Sun -->
+  <circle id="sun" cx="680" cy="100" r="45" fill="#ffd93d" opacity="0.9"/>
+  
+  <!-- Clouds -->
+  <g id="clouds" opacity="0.7">
+    <ellipse cx="150" cy="120" rx="60" ry="25" fill="white"/>
+    <ellipse cx="210" cy="115" rx="50" ry="22" fill="white"/>
+    <ellipse cx="550" cy="80" rx="70" ry="30" fill="white"/>
+    <ellipse cx="620" cy="85" rx="55" ry="25" fill="white"/>
+    <ellipse cx="100" cy="180" rx="45" ry="20" fill="white"/>
+  </g>
+  
+  <!-- Distant Mountains -->
+  <g id="distant-mountains">
+    <path d="M0,400 L100,280 L200,320 L300,250 L400,310 L500,260 L600,330 L700,270 L800,300 L800,600 L0,600 Z" fill="url(#mountainGradient)" opacity="0.7"/>
+  </g>
+  
+  <!-- Middle Mountains -->
+  <g id="middle-mountains">
+    <path d="M0,450 L120,340 L240,380 L320,320 L450,360 L550,310 L650,370 L750,330 L800,350 L800,600 L0,600 Z" fill="#3d4a5e" opacity="0.85"/>
+  </g>
+  
+  <!-- Foreground Mountains -->
+  <g id="foreground-mountains">
+    <path d="M0,520 L80,420 L180,480 L280,440 L380,490 L500,460 L600,500 L700,470 L800,490 L800,600 L0,600 Z" fill="#2c3a4a"/>
+    <!-- Snow caps on foreground mountains -->
+    <path d="M180,480 L200,450 L220,480 Z" fill="white"/>
+    <path d="M380,490 L400,460 L420,490 Z" fill="white"/>
+    <path d="M500,460 L520,430 L540,460 Z" fill="white"/>
+    <path d="M700,470 L720,440 L740,470 Z" fill="white"/>
+  </g>
+  
+  <!-- Eagle -->
+  <g id="eagle" transform="translate(400, 150)">
+    <!-- Wings -->
+    <path id="eagle-wing-left" d="M-80,-30 Q-120,-80,-150,-100 L-60,-40 Z" fill="#2b2b2b"/>
+    <path id="eagle-wing-right" d="M80,-30 Q120,-80,150,-100 L60,-40 Z" fill="#2b2b2b"/>
+    
+    <!-- Wing details (feathers) -->
+    <path id="eagle-wing-left-feathers" d="M-80,-30 Q-100,-60,-120,-85 M-60,-40 Q-75,-70,-90,-95 M-40,-35 Q-55,-65,-70,-90" stroke="#3a3a3a" stroke-width="2" fill="none"/>
+    <path id="eagle-wing-right-feathers" d="M80,-30 Q100,-60,120,-85 M60,-40 Q75,-70,90,-95 M40,-35 Q55,-65,70,-90" stroke="#3a3a3a" stroke-width="2" fill="none"/>
+    
+    <!-- Body -->
+    <ellipse id="eagle-body" cx="0" cy="0" rx="25" ry="15" fill="#2b2b2b"/>
+    
+    <!-- Head -->
+    <circle id="eagle-head" cx="20" cy="-10" r="12" fill="#2b2b2b"/>
+    
+    <!-- Beak -->
+    <path id="eagle-beak" d="M32,-10 L45,-5 L32,0 Z" fill="#d4af37"/>
+    
+    <!-- Tail feathers -->
+    <path id="eagle-tail" d="M-25,5 L-35,-5 L-25,-5 L-30,5 Z" fill="#2b2b2b"/>
+  </g>
+  
+  <!-- Optional: Ground/Base -->
+  <rect id="ground" x="0" y="580" width="800" height="20" fill="#2d4a3e" opacity="0.8"/>
+  
+  <!-- Shadow under eagle for depth -->
+  <ellipse id="eagle-shadow" cx="400" cy="450" rx="100" ry="20" fill="black" opacity="0.1"/>
+</svg>

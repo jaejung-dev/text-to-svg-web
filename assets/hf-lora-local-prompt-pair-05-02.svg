@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Background base layer -->
+  <rect id="carpet-base" x="0" y="0" width="256" height="256" fill="#3d0a12"/>
+  
+  <!-- Outer border frame -->
+  <rect id="outer-border" x="8" y="8" width="240" height="240" fill="none" stroke="#1a0307" stroke-width="4"/>
+  <rect id="inner-border" x="12" y="12" width="232" height="232" fill="#2a050a"/>
+  
+  <!-- Decorative border pattern -->
+  <g id="border-pattern">
+    <!-- Repeating geometric elements along edges -->
+    <g id="top-border">
+      <path d="M16 36 L24 24 L32 36" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M48 36 L56 24 L64 36" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M80 36 L88 24 L96 36" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M112 36 L120 24 L128 36" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M144 36 L152 24 L160 36" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M176 36 L184 24 L192 36" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M208 36 L216 24 L224 36" stroke="#d4af37" stroke-width="2" fill="none"/>
+    </g>
+    <g id="bottom-border">
+      <path d="M16 220 L24 232 L32 220" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M48 220 L56 232 L64 220" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M80 220 L88 232 L96 220" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M112 220 L120 232 L128 220" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M144 220 L152 232 L160 220" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M176 220 L184 232 L192 220" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M208 220 L216 232 L224 220" stroke="#d4af37" stroke-width="2" fill="none"/>
+    </g>
+    <g id="left-border">
+      <path d="M36 16 L24 24 L36 32" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M36 48 L24 56 L36 64" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M36 80 L24 88 L36 96" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M36 112 L24 120 L36 128" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M36 144 L24 152 L36 160" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M36 176 L24 184 L36 192" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M36 208 L24 216 L36 224" stroke="#d4af37" stroke-width="2" fill="none"/>
+    </g>
+    <g id="right-border">
+      <path d="M220 16 L232 24 L220 32" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M220 48 L232 56 L220 64" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M220 80 L232 88 L220 96" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M220 112 L232 120 L220 128" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M220 144 L232 152 L220 160" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M220 176 L232 184 L220 192" stroke="#d4af37" stroke-width="2" fill="none"/>
+      <path d="M220 208 L232 216 L220 224" stroke="#d4af37" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Corner ornamentation -->
+  <g id="corner-ornaments">
+    <path d="M16 16 L40 16 L16 40 Z" fill="#1a0307" stroke="#8b0000" stroke-width="2"/>
+    <path d="M240 16 L216 16 L240 40 Z" fill="#1a0307" stroke="#8b0000" stroke-width="2"/>
+    <path d="M16 240 L40 240 L16 216 Z" fill="#1a0307" stroke="#8b0000" stroke-width="2"/>
+    <path d="M240 240 L216 240 L240 216 Z" fill="#1a0307" stroke="#8b0000" stroke-width="2"/>
+  </g>
+  
+  <!-- Central medallion -->
+  <g id="central-medallion">
+    <!-- Primary medallion shape -->
+    <circle cx="128" cy="128" r="48" fill="#6b1a30" stroke="#d4af37" stroke-width="3"/>
+    <circle cx="128" cy="128" r="36" fill="#4a0e1e" stroke="#8b0000" stroke-width="2"/>
+    <circle cx="128" cy="128" r="24" fill="#2a050a"/>
+    
+    <!-- Inner ornate pattern -->
+    <path d="M128 90 L128 166 M90 128 L166 128" stroke="#d4af37" stroke-width="2"/>
+    <path d="M128 90 L108 110 L128 130 M128 166 L108 146 L128 126 M128 90 L148 110 L128 130 M128 166 L148 146 L128 126" stroke="#8b0000" stroke-width="2" fill="none"/>
+    
+    <!-- Cyberpunk accent elements -->
+    <circle cx="128" cy="128" r="8" fill="#00aaff" opacity="0.7"/>
+    <circle cx="128" cy="128" r="12" fill="none" stroke="#00aaff" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Secondary border pattern around medallion -->
+  <g id="secondary-border">
+    <path d="M64 64 L80 48 L96 64 L112 48 L128 64 L144 48 L160 64 L176 48 L192 64 L208 48 L224 64" fill="none" stroke="#8b0000" stroke-width="2"/>
+    <path d="M64 192 L80 208 L96 192 L112 208 L128 192 L144 208 L160 192 L176 208 L192 192 L208 208 L224 192" fill="none" stroke="#8b0000" stroke-width="2"/>
+    <path d="M64 64 L48 80 L64 96 L48 112 L64 128 L48 144 L64 160 L48 176 L64 192" fill="none" stroke="#8b0000" stroke-width="2"/>
+    <path d="M192 64 L208 80 L192 96 L208 112 L192 128 L208 144 L192 160 L208 176 L192 192" fill="none" stroke="#8b0000" stroke-width="2"/>
+  </g>
+  
+  <!-- Corner medallions -->
+  <g id="corner-medallions">
+    <g id="top-left">
+      <circle cx="40" cy="40" r="12" fill="#2a050a" stroke="#d4af37" stroke-width="2"/>
+      <path d="M40 30 L40 50 M30 40 L50 40" stroke="#8b0000" stroke-width="1"/>
+    </g>
+    <g id="top-right">
+      <circle cx="216" cy="40" r="12" fill="#2a050a" stroke="#d4af37" stroke-width="2"/>
+      <path d="M216 30 L216 50 M206 40 L226 40" stroke="#8b0000" stroke-width="1"/>
+    </g>
+    <g id="bottom-left">
+      <circle cx="40" cy="216" r="12" fill="#2a050a" stroke="#d4af37" stroke-width="2"/>
+      <path d="M40 206 L40 226 M30 216 L50 216" stroke="#8b0000" stroke-width="1"/>
+    </g>
+    <g id="bottom-right">
+      <circle cx="216" cy="216" r="12" fill="#2a050a" stroke="#d4af37" stroke-width="2"/>
+      <path d="M216 206 L216 226 M206 216 L226 216" stroke="#8b0000" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Subtle texture overlay for depth -->
+  <rect id="texture-overlay" x="0" y="0" width="256" height="256" fill="none" stroke="#1a0307" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Shadow effect for edge depth -->
+  <rect id="shadow-edge" x="8" y="8" width="240" height="240" fill="none" stroke="#0a0204" stroke-width="4" opacity="0.4"/>
+</svg>

@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F4A460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D2691E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BBDEFB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background: Sky -->
+  <g id="bg-sky">
+    <rect x="0" y="0" width="800" height="500" fill="url(#skyGradient)" />
+    <!-- Sun -->
+    <circle cx="700" cy="80" r="40" fill="#FFD54F" opacity="0.8" />
+  </g>
+
+  <!-- Background: City Silhouettes (City Center & University Area) -->
+  <g id="group-cityscape" opacity="0.4">
+    <!-- University Building (Left) -->
+    <rect x="50" y="150" width="80" height="120" fill="#78909C" />
+    <rect x="130" y="150" width="80" height="120" fill="#78909C" />
+    <rect x="130" y="130" width="80" height="30" fill="#78909C" /> <!-- Dome -->
+    <!-- City Buildings (Right) -->
+    <rect x="500" y="100" width="60" height="170" fill="#78909C" />
+    <rect x="570" y="120" width="60" height="150" fill="#78909C" />
+    <rect x="640" y="160" width="60" height="110" fill="#78909C" />
+  </g>
+
+  <!-- Main Laundry Facility (Building) -->
+  <g id="group-laundry-store">
+    <!-- Main Structure -->
+    <rect x="300" y="250" width="200" height="180" fill="url(#buildingGradient)" stroke="#5D4037" stroke-width="3" />
+    <!-- Entrance Door -->
+    <rect x="370" y="350" width="60" height="80" fill="#4E342E" rx="5" />
+    <circle cx="425" cy="390" r="3" fill="#FFD54F" /> <!-- Handle -->
+    <!-- Windows showing machines -->
+    <g id="group-windows">
+      <!-- Window 1 -->
+      <rect x="320" y="280" width="40" height="40" fill="#81D4FA" stroke="#01579B" stroke-width="2" />
+      <!-- Window 2 -->
+      <rect x="480" y="280" width="40" height="40" fill="#81D4FA" stroke="#01579B" stroke-width="2" />
+      <!-- Window 3 -->
+      <rect x="530" y="280" width="40" height="40" fill="#81D4FA" stroke="#01579B" stroke-width="2" />
+      <!-- Laundry Machines visible inside -->
+      <circle cx="340" cy="300" r="12" fill="#FFFFFF" stroke="#29B6F6" stroke-width="2" />
+      <circle cx="500" cy="300" r="12" fill="#FFFFFF" stroke="#29B6F6" stroke-width="2" />
+      <circle cx="550" cy="300" r="12" fill="#FFFFFF" stroke="#29B6F6" stroke-width="2" />
+    </g>
+    <!-- Signboard -->
+    <rect x="320" y="220" width="160" height="25" fill="#FFFFFF" stroke="#333" />
+    <text x="400" y="238" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">LAUNDROMAT</text>
+    <text x="400" y="255" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#555">Self-Service</text>
+    <!-- Burkina Faso Flag Hint (Small) -->
+    <g transform="translate(480, 260)">
+       <rect width="12" height="6" fill="#FF0000"/>
+       <rect x="0" y="6" width="12" height="6" fill="#008000"/>
+       <rect x="0" y="12" width="12" height="6" fill="#FFD700"/>
+    </g>
+  </g>
+
+  <!-- Ground -->
+  <g id="group-ground">
+    <rect x="0" y="430" width="800" height="70" fill="#EFEBE9" stroke="#BCAAA4" stroke-width="2" />
+  </g>
+
+  <!-- Customers (Target Audience) -->
+  <g id="group-customers">
+    <!-- Student (University target) -->
+    <g transform="translate(250, 380)">
+      <!-- Body -->
+      <rect x="10" y="30" width="20" height="35" rx="5" fill="#3F51B5" />
+      <!-- Head -->
+      <circle cx="20" cy="15" r="12" fill="#FBC02D" />
+      <!-- Book/Bag -->
+      <rect x="25" y="40" width="20" height="15" fill="#D32F2F" rx="2" />
+      <!-- Legs -->
+      <line x1="15" y1="65" x2="15" y2="75" stroke="#333" stroke-width="3" />
+      <line x1="25" y1="65" x2="25" y2="75" stroke="#333" stroke-width="3" />
+      <text x="20" y="85" font-size="8" text-anchor="middle" fill="#555">Studenti</text>
+    </g>
+
+    <!-- Worker (Urban Resident) -->
+    <g transform="translate(550, 380)">
+      <!-- Body -->
+      <rect x="10" y="30" width="20" height="35" rx="5" fill="#455A64" />
+      <!-- Head -->
+      <circle cx="20" cy="15" r="12" fill="#FFCCBC" />
+      <!-- Briefcase -->
+      <rect x="0" y="45" width="22" height="15" fill="#5D4037" />
+      <!-- Legs -->
+      <line x1="15" y1="65" x2="15" y2="75" stroke="#333" stroke-width="3" />
+      <line x1="25" y1="65" x2="25" y2="75" stroke="#333" stroke-width="3" />
+      <text x="20" y="85" font-size="8" text-anchor="middle" fill="#555">Lavoratori</text>
+    </g>
+  </g>
+
+  <!-- Payment Methods (Mobile Money & Cash) -->
+  <g id="group-payment-methods">
+    <!-- Mobile Money -->
+    <g transform="translate(700, 150)">
+       <rect x="0" y="0" width="80" height="50" rx="8" fill="#E0F2F1" stroke="#009688" stroke-width="2" />
+       <text x="40" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#00695C">Mobile Money</text>
+       <g transform="translate(25, 30)">
+          <rect x="0" y="0" width="30" height="20" rx="3" fill="#000" />
+          <circle cx="15" cy="10" r="5" fill="#4CAF50" />
+          <rect x="5" y="12" width="20" height="4" fill="#4CAF50" /> <!-- Signal -->
+       </g>
+    </g>
+
+    <!-- Cash/Coins -->
+    <g transform="translate(650, 250)">
+       <rect x="0" y="0" width="80" height="50" rx="8" fill="#FFF3E0" stroke="#F57C00" stroke-width="2" />
+       <text x="40" y="25" font-family="Arial" font-size="10" text-anchor="middle" fill="#E65100">Contanti</text>
+       <circle cx="20" cy="30" r="8" fill="#FFD700" stroke="#FBC02D" />
+       <circle cx="40" cy="30" r="8" fill="#FFD700" stroke="#FBC02D" />
+       <circle cx="60" cy="30" r="8" fill="#FFD700" stroke="#FBC02D" />
+    </g>
+  </g>
+
+  <!-- Info Text (Reducing Personnel Cost) -->
+  <g id="group-info-bubble">
+    <circle cx="100" cy="250" r="30" fill="#FFFFFF" stroke="#666" />
+    <text x="100" y="255" font-size="12" text-anchor="middle" font-weight="bold" fill="#333">No Staff</text>
+    <line x1="130" y1="250" x2="160" y2="220" stroke="#333" stroke-width="2" />
+    <text x="160" y="210" font-size="10" fill="#666">Costi ridotti</text>
+  </g>
+
+</svg>

@@ -1,0 +1,86 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradients and patterns -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f39c12;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="triangleGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#16a085;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="rectGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Pattern for decorative circles -->
+    <pattern id="dotPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="2" fill="white" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <g id="background">
+    <rect x="0" y="0" width="800" height="600" fill="url(#bgGradient)" />
+    <rect x="0" y="0" width="800" height="600" fill="url(#dotPattern)" />
+  </g>
+  
+  <!-- Large central circle -->
+  <g id="centralCircle" opacity="0.9">
+    <circle cx="400" cy="300" r="120" fill="url(#circleGradient)" />
+    <circle cx="400" cy="300" r="80" fill="url(#circleGradient)" opacity="0.7" />
+    <circle cx="400" cy="300" r="40" fill="#ffffff" opacity="0.3" />
+  </g>
+  
+  <!-- Triangle group -->
+  <g id="triangles" transform="translate(150, 100)">
+    <polygon points="0,0 100,0 50,86.6" fill="url(#triangleGradient)" />
+    <polygon points="50,0 100,0 75,43.3" fill="url(#triangleGradient)" opacity="0.6" />
+    <polygon points="0,0 50,0 25,43.3" fill="url(#triangleGradient)" opacity="0.8" />
+  </g>
+  
+  <!-- Rectangle group -->
+  <g id="rectangles" transform="translate(550, 150)">
+    <rect x="0" y="0" width="150" height="80" rx="10" ry="10" fill="url(#rectGradient)" />
+    <rect x="20" y="20" width="110" height="40" rx="5" ry="5" fill="#ffffff" opacity="0.2" />
+  </g>
+  
+  <!-- Small decorative circles -->
+  <g id="decorativeCircles" opacity="0.8">
+    <circle cx="100" cy="450" r="25" fill="#e74c3c" />
+    <circle cx="250" cy="480" r="15" fill="#f39c12" />
+    <circle cx="350" cy="450" r="30" fill="#16a085" />
+    <circle cx="450" cy="500" r="20" fill="#2ecc71" />
+    <circle cx="550" cy="460" r="35" fill="#9b59b6" />
+    <circle cx="650" cy="430" r="18" fill="#3498db" />
+  </g>
+  
+  <!-- Connecting lines -->
+  <g id="connectingLines" stroke="white" stroke-width="2" opacity="0.3">
+    <line x1="200" y1="186" x2="400" y2="300" />
+    <line x1="700" y1="230" x2="400" y2="300" />
+    <line x1="125" y1="475" x2="400" y2="300" />
+  </g>
+  
+  <!-- Decorative arcs -->
+  <g id="decorativeArcs" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.2">
+    <path d="M 200 200 Q 400 150 600 200" />
+    <path d="M 200 400 Q 400 450 600 400" />
+  </g>
+  
+  <!-- Corner decorative elements -->
+  <g id="corners" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.15">
+    <path d="M 20 20 Q 40 20 40 40 L 40 40" />
+    <path d="M 780 20 Q 760 20 760 40 L 760 40" />
+    <path d="M 20 580 Q 40 580 40 560 L 40 560" />
+    <path d="M 780 580 Q 760 580 760 560 L 760 560" />
+  </g>
+</svg>

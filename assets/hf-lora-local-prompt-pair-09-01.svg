@@ -1,0 +1,48 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <title>SAP BASIS Support Logo</title>
+  <defs>
+    <style>
+      .sap-blue-dark { fill: #001D41; }
+      .sap-blue-light { fill: #78B1E3; }
+      .gear-white { fill: #FFFFFF; }
+      .gear-outline { fill: none; stroke: #FFFFFF; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round;}
+    </style>
+  </defs>
+
+  <!-- Main Icon Container -->
+  <g id="logo-container" transform="translate(28, 28)">
+    
+    <!-- 1. The SAP Logo Shape (The Foundation) -->
+    <!-- Top-Left Quadrant (Dark Blue) -->
+    <rect class="sap-blue-dark" x="0" y="0" width="100" height="100" rx="8" ry="8" />
+    <!-- Top-Right Quadrant (Light Blue) -->
+    <rect class="sap-blue-light" x="100" y="0" width="100" height="100" rx="8" ry="8" />
+    <!-- Bottom-Left Quadrant (Dark Blue) -->
+    <rect class="sap-blue-dark" x="0" y="100" width="100" height="100" rx="8" ry="8" />
+    <!-- Bottom-Right Quadrant (Light Blue) -->
+    <rect class="sap-blue-light" x="100" y="100" width="100" height="100" rx="8" ry="8" />
+
+    <!-- 2. The "BASIS" Symbol (The Technical Core) -->
+    <!-- We place a stylized gear in the center to represent "Support", "Maintenance", and "System Mechanics" -->
+    <g id="basis-gear" transform="translate(128, 128)">
+      
+      <!-- Outer Gear Teeth -->
+      <path class="gear-outline" d="M0 -45 L5 -35 M5 -35 L15 -35 M15 -35 L20 -20 M20 -20 L35 -15 M35 -15 L35 -5 M35 -5 L20 0 M35 -5 L35 5 M35 5 L20 10 M20 10 L35 15 M35 15 L35 25 M35 25 L20 30 M20 30 L5 35 M5 35 L0 45 M0 45 L-5 35 M-5 35 L-15 35 M-15 35 L-20 20 M-20 20 L-35 15 M-35 15 L-35 5 M-35 5 L-20 0 M-35 5 L-35 -5 M-35 -5 L-20 -10 M-20 -10 L-35 -15 M-35 -15 L-35 -25 M-35 -25 L-20 -30 M-20 -30 L-5 -35" />
+      
+      <!-- Inner Gear Mechanism (The "Nuts and Bolts") -->
+      <circle class="gear-outline" cx="0" cy="0" r="15" />
+      
+      <!-- Connection Nodes (Representing Servers/Databases) -->
+      <circle class="sap-blue-dark" cx="0" cy="0" r="5" />
+      <circle class="sap-blue-dark" cx="0" cy="-30" r="6" />
+      <circle class="sap-blue-dark" cx="26" cy="15" r="6" />
+      <circle class="sap-blue-dark" cx="-26" cy="15" r="6" />
+      
+      <!-- Dynamic Flow Lines (The "Support" Connection) -->
+      <path class="gear-outline" d="M0 -25 L0 -15" />
+      <path class="gear-outline" d="M20 10 L12 10" />
+      <path class="gear-outline" d="M-20 10 L-12 10" />
+    </g>
+
+  </g>
+</svg>

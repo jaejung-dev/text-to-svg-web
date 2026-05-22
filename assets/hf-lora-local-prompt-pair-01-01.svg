@@ -1,0 +1,42 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8f9fa" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- SAP-style four squares (without letters) -->
+  <g id="sap-squares">
+    <!-- Top left square -->
+    <rect x="50" y="40" width="25" height="25" rx="5" fill="#B63324"/>
+    <!-- Top right square -->
+    <rect x="75" y="40" width="25" height="25" rx="5" fill="#E44826"/>
+    <!-- Bottom left square -->
+    <rect x="50" y="65" width="25" height="25" rx="5" fill="#FF5F43"/>
+    <!-- Bottom right square -->
+    <rect x="75" y="65" width="25" height="25" rx="5" fill="#B63324"/>
+  </g>
+  
+  <!-- Support infrastructure elements -->
+  <g id="support-layers">
+    <!-- Concentric circles for system layers -->
+    <circle cx="100" cy="100" r="60" fill="none" stroke="#0058A8" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="100" cy="100" r="45" fill="none" stroke="#0058A8" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="100" cy="100" r="30" fill="none" stroke="#0058A8" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Network/technology connection lines -->
+    <line x1="100" y1="20" x2="100" y2="35" stroke="#0058A8" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="100" y1="165" x2="100" y2="150" stroke="#0058A8" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="20" y1="100" x2="35" y2="100" stroke="#0058A8" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="165" y1="100" x2="150" y2="100" stroke="#0058A8" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Shield/Support badge -->
+  <path d="M85 115 L115 115 L110 145 L100 155 L90 145 Z" fill="#B63324" opacity="0.9"/>
+  
+  <!-- Support checkmark -->
+  <polyline points="95 125 99 130 108 118" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Connection nodes -->
+  <circle cx="100" cy="100" r="8" fill="#0058A8" opacity="0.8"/>
+  
+  <!-- Light effect -->
+  <ellipse cx="100" cy="100" rx="70" ry="35" fill="none" stroke="#B63324" stroke-width="0.5" opacity="0.3" stroke-dasharray="3,3"/>
+</svg>
