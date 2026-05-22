@@ -16,6 +16,8 @@ const BADGES = {
   "gpt-5.2": "Ref",
 };
 
+let ASSET_CACHE_KEY = "";
+
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, (char) => ({
     "&": "&amp;",
@@ -26,11 +28,16 @@ function escapeHtml(value) {
   })[char]);
 }
 
+function assetUrl(asset) {
+  const separator = asset.includes("?") ? "&" : "?";
+  return `${asset}${separator}v=${encodeURIComponent(ASSET_CACHE_KEY)}`;
+}
+
 function assetElement(item) {
   if (!item?.asset) {
     return `<div class="empty">Not generated yet</div>`;
   }
-  const asset = escapeHtml(item.asset);
+  const asset = escapeHtml(assetUrl(item.asset));
   return `<img src="${asset}" alt="${escapeHtml(item.label)}" loading="lazy" />`;
 }
 
@@ -126,6 +133,7 @@ async function main() {
     if (!response.ok) throw new Error(`Failed to load site data: ${response.status}`);
     return response.json();
   });
+  ASSET_CACHE_KEY = data.generated_at || String(Date.now());
 
   const gallery = document.getElementById("gallery");
   const filter = document.getElementById("bucket-filter");
@@ -139,7 +147,7 @@ async function main() {
     .slice(0, 5)
     .map((sample) => sample.generated?.asset)
     .filter(Boolean)
-    .map((asset) => `<div class="strip-tile"><img src="${escapeHtml(asset)}" alt="Generated preview" loading="lazy" /></div>`)
+    .map((asset) => `<div class="strip-tile"><img src="${escapeHtml(assetUrl(asset))}" alt="Generated preview" loading="lazy" /></div>`)
     .join("");
   document.getElementById("prompt-pairs-grid").innerHTML = (data.prompt_pairs || [])
     .map(renderPromptPair)
