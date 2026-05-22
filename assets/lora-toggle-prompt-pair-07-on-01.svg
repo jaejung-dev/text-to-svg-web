@@ -1,117 +1,165 @@
-<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
-  <!-- Sky Background -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" aria-labelledby="svg-title">
+  <title id="svg-title">Progetto Lavanderia Burkina Faso</title>
+  
+  <!-- Definitions and Gradients -->
   <defs>
     <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#E0F7FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
     </linearGradient>
-    
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+    <linearGradient id="machineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E3E3E3;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E3E3E3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8C00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  
-  <!-- Sky -->
-  <rect width="800" height="500" fill="url(#skyGradient)"/>
-  
-  <!-- Background Buildings (City Center) -->
-  <g id="cityBackground" opacity="0.6">
-    <rect x="50" y="150" width="60" height="120" fill="#A8A8A8"/>
-    <rect x="130" y="100" width="50" height="170" fill="#B8B8B8"/>
-    <rect x="650" y="180" width="70" height="90" fill="#989898"/>
-    <rect x="740" y="120" width="40" height="150" fill="#A8A8A8"/>
+
+  <!-- Background: Sky and Ground -->
+  <g id="environment">
+    <rect x="0" y="0" width="800" height="600" fill="url(#skyGradient)" />
+    <!-- Grass/Ground area -->
+    <rect x="0" y="520" width="800" height="80" fill="#E8F5E9" />
   </g>
-  
-  <!-- Ground/Land -->
-  <rect x="0" y="350" width="800" height="150" fill="#D4A574"/>
-  
-  <!-- Main Laundry Building -->
-  <g id="laundryBuilding" filter="url(#shadow)">
-    <!-- Building Base -->
-    <rect x="200" y="180" width="320" height="170" fill="#5B9BD5" stroke="#3A7BC0" stroke-width="3"/>
-    
+
+  <!-- Background: City Center & University Silhouette -->
+  <g id="city-skyline">
+    <g fill="#B0BEC5">
+      <!-- Buildings representing City Center/University -->
+      <rect x="50" y="300" width="60" height="220" />
+      <rect x="120" y="280" width="80" height="240" />
+      <rect x="210" y="320" width="50" height="200" />
+      <rect x="270" y="290" width="70" height="230" />
+      <!-- University Arch -->
+      <path d="M350,320 L350,250 L450,250 L450,320" fill="#B0BEC5" />
+      <rect x="390" y="270" width="20" height="50" fill="#81D4FA" />
+    </g>
+  </g>
+
+  <!-- The Laundry Shop Structure -->
+  <g id="shop-building" transform="translate(250, 350)" filter="url(#dropShadow)">
+    <!-- Main Structure -->
+    <rect x="0" y="0" width="300" height="170" rx="10" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="2"/>
     <!-- Roof -->
-    <path d="M 190 180 L 520 180 L 360 120 Z" fill="#C41E3A"/>
+    <path d="M-10,0 L150,-40 L310,0" fill="#FF7043" stroke="#D84315" stroke-width="2"/>
+    <!-- Glass Front -->
+    <rect x="20" y="30" width="260" height="110" fill="#81D4FA" fill-opacity="0.3" stroke="#4FC3F7" stroke-width="2"/>
+    <!-- Entrance Door -->
+    <rect x="130" y="80" width="40" height="60" fill="#FFFFFF" stroke="#4FC3F7" stroke-width="2"/>
+    <!-- Signage -->
+    <rect x="10" y="10" width="280" height="40" fill="#333333"/>
+    <text x="150" y="37" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">LAUNDERY SELF-SERVICE</text>
+    <text x="150" y="57" font-family="Arial, sans-serif" font-size="14" fill="#FFCC80" text-anchor="middle">BURKINA FASO</text>
+  </g>
+
+  <!-- Inside the Shop: Washing Machines -->
+  <g id="machines-interior" transform="translate(270, 420)">
+    <!-- Machine 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="100" height="120" rx="5" fill="url(#machineGradient)" stroke="#9E9E9E" stroke-width="2"/>
+      <circle cx="50" cy="50" r="35" fill="#29B6F6" fill-opacity="0.4" stroke="#0277BD" stroke-width="3"/>
+      <!-- Detergent Drawer -->
+      <rect x="10" y="85" width="80" height="15" rx="3" fill="#CFD8DC" stroke="#90A4AE" stroke-width="1"/>
+      <!-- Window Reflection -->
+      <path d="M20,10 L70,10" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+      <text x="50" y="140" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">WASH</text>
+    </g>
+    <!-- Machine 2 -->
+    <g transform="translate(110, 0)">
+      <rect x="0" y="0" width="100" height="120" rx="5" fill="url(#machineGradient)" stroke="#9E9E9E" stroke-width="2"/>
+      <circle cx="50" cy="50" r="35" fill="#66BB6A" fill-opacity="0.4" stroke="#388E3C" stroke-width="3"/>
+      <rect x="10" y="85" width="80" height="15" rx="3" fill="#CFD8DC" stroke="#90A4AE" stroke-width="1"/>
+      <path d="M20,10 L70,10" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+      <text x="50" y="140" font-family="Arial" font-size="12" fill="#555" text-anchor="middle">DRY</text>
+    </g>
+    <!-- Machine 3 -->
+    <g transform="translate(220, 0)">
+      <rect x="0" y="0" width="100" height="120" rx="5" fill="url(#machineGradient)" stroke="#9E9E9E" stroke-width="2"/>
+      <circle cx="50" cy="50" r="35" fill="#29B6F6" fill-opacity="0.4" stroke="#0277BD" stroke-width="3"/>
+      <rect x="10" y="85" width="80" height="15" rx="3" fill="#CFD8DC" stroke="#90A4AE" stroke-width="1"/>
+      <path d="M20,10 L70,10" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- Users: Students and Workers -->
+  <g id="users">
+    <!-- Student with Backpack -->
+    <g transform="translate(280, 510)">
+      <circle cx="30" cy="20" r="15" fill="#FFCC80" /> <!-- Skin -->
+      <path d="M15,35 Q30,25 45,35 L45,60 L15,60 Z" fill="#455A64" /> <!-- Clothes -->
+      <path d="M10,35 Q20,10 30,35 Q40,10 50,35" fill="#37474F" /> <!-- Backpack -->
+      <path d="M40,45 L60,35 L65,40 L45,50" fill="#FF5722" /> <!-- Basket with clothes -->
+    </g>
+    <!-- Worker with Briefcase -->
+    <g transform="translate(450, 510)">
+      <circle cx="30" cy="20" r="15" fill="#FFCC80" />
+      <path d="M15,35 L45,35 L45,70 L15,70 Z" fill="#1565C0" /> <!-- Suit -->
+      <rect x="5" y="55" width="5" height="15" fill="#000" /> <!-- Arm -->
+      <rect x="5" y="45" width="20" height="10" fill="#3E2723" /> <!-- Briefcase -->
+    </g>
+  </g>
+
+  <!-- Modern Payment Methods: Mobile Money & Cash -->
+  <g id="payment-methods" transform="translate(600, 250)" filter="url(#dropShadow)">
+    <!-- Floating Card/Phone -->
+    <rect x="0" y="0" width="100" height="140" rx="8" fill="#455A64" stroke="#78909C" stroke-width="2"/>
+    <rect x="10" y="10" width="80" height="120" rx="5" fill="#E0E0E0"/>
+    <!-- Screen -->
+    <rect x="20" y="30" width="60" height="40" rx="3" fill="#26C6DA"/>
+    <!-- Icon -->
+    <circle cx="50" cy="50" r="15" fill="white"/>
+    <rect x="45" y="43" width="10" height="14" rx="2" fill="#4CAF50"/>
+    <rect x="48" y="43" width="4" height="4" fill="white"/>
+    <!-- Signal Lines -->
+    <path d="M10,110 Q50,120 90,110" stroke="#607D8B" stroke-width="2" fill="none"/>
+    <path d="M10,125 Q50,135 90,125" stroke="#607D8B" stroke-width="2" fill="none"/>
     
-    <!-- Entrance -->
-    <rect x="340" y="260" width="80" height="90" fill="#2E5A8A"/>
-    <rect x="345" y="265" width="70" height="80" fill="#4A90E2"/>
-    <text x="380" y="320" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">SELF-SERVICE</text>
-    
-    <!-- Washing Machines (through window) -->
-    <rect x="220" y="200" width="50" height="60" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
-    <circle cx="245" cy="230" r="15" fill="#E8F4F8" stroke="#3A7BC0" stroke-width="2"/>
-    <circle cx="245" cy="230" r="8" fill="#C41E3A"/>
-    
-    <rect x="280" y="200" width="50" height="60" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
-    <circle cx="305" cy="230" r="15" fill="#E8F4F8" stroke="#3A7BC0" stroke-width="2"/>
-    <circle cx="305" cy="230" r="8" fill="#C41E3A"/>
-    
-    <!-- Drying Machines -->
-    <rect x="500" y="200" width="50" height="60" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
-    <circle cx="525" cy="230" r="15" fill="#E8F4F8" stroke="#3A7BC0" stroke-width="2"/>
-    <circle cx="525" cy="230" r="8" fill="#C41E3A"/>
+    <!-- Currency Floating Icons -->
+    <circle cx="120" cy="20" r="20" fill="#FFD54F" stroke="#F57F17" stroke-width="2">
+      <text x="120" y="26" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">CFA</text>
+    </circle>
+    <circle cx="120" cy="100" r="20" fill="#FFCC80" stroke="#EF6C00" stroke-width="2">
+      <text x="120" y="106" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">USD</text>
+    </circle>
+  </g>
+
+  <!-- Feature Icons (Reduced Staff, Fast) -->
+  <g id="features" transform="translate(50, 450)">
+    <g transform="translate(0, 0)">
+      <circle cx="20" cy="20" r="15" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+      <path d="M10,15 L15,20 L20,15" fill="none" stroke="#F57F17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="20" y="45" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">FAST</text>
+    </g>
+    <g transform="translate(50, 0)">
+      <circle cx="20" cy="20" r="15" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+      <rect x="12" y="15" width="16" height="12" rx="2" fill="none" stroke="#F57F17" stroke-width="2"/>
+      <text x="20" y="45" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">SECURE</text>
+    </g>
+    <g transform="translate(100, 0)">
+      <circle cx="20" cy="20" r="15" fill="#FFF9C4" stroke="#FBC02D" stroke-width="2"/>
+      <path d="M10,12 L30,12 L20,28 Z" fill="none" stroke="#F57F17" stroke-width="2"/>
+      <text x="20" y="45" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">ECO</text>
+    </g>
   </g>
   
-  <!-- Payment System Icons -->
-  <g id="paymentSystem">
-    <!-- Payment sign -->
-    <rect x="550" y="150" width="120" height="50" fill="#2E8B57" rx="5" opacity="0.9"/>
-    <text x="610" y="180" font-family="Arial" font-size="12" fill="white" text-anchor="middle">METTI DI PAGAMENTO</text>
+  <!-- Info Box Overlay -->
+  <g id="info-overlay" transform="translate(50, 50)">
+    <rect x="0" y="0" width="200" height="150" rx="10" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="10" y="25" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#333">TARGET AUDIENCE</text>
+    <line x1="10" y1="30" x2="190" y2="30" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="15" y="50" font-family="Arial, sans-serif" font-size="12" fill="#555">• Studenti Universitari</text>
+    <text x="15" y="70" font-family="Arial, sans-serif" font-size="12" fill="#555">• Lavoratori Città</text>
+    <text x="15" y="90" font-family="Arial, sans-serif" font-size="12" fill="#555">• Residenti Urbani</text>
     
-    <!-- Cash Icon -->
-    <circle cx="580" cy="160" r="15" fill="#90EE90" stroke="#228B22" stroke-width="2"/>
-    <text x="580" y="165" font-family="Arial" font-size="14" fill="#228B22" text-anchor="middle">$</text>
-    
-    <!-- Mobile Money Icon -->
-    <rect x="615" y="145" width="25" height="30" fill="#FFD700" stroke="#B8860B" stroke-width="2" rx="3"/>
-    <text x="627.5" y="170" font-family="Arial" font-size="12" fill="#8B4513" text-anchor="middle">+</text>
-  </g>
-  
-  <!-- People (Target Audience) -->
-  <g id="people">
-    <!-- Student with backpack -->
-    <circle cx="150" cy="380" r="12" fill="#FFDAB9"/>
-    <rect x="140" y="390" width="20" height="25" fill="#4169E1"/>
-    <rect x="130" y="395" width="35" height="15" fill="#8B4513"/>
-    <text x="150" y="405" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Studente</text>
-    
-    <!-- Worker -->
-    <circle cx="100" cy="400" r="12" fill="#FFDAB9"/>
-    <rect x="90" y="410" width="20" height="30" fill="#2F4F4F"/>
-    <text x="100" y="415" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Lavoratore</text>
-    
-    <!-- Resident -->
-    <circle cx="580" cy="390" r="12" fill="#FFDAB9"/>
-    <rect x="570" y="400" width="20" height="28" fill="#8B0000"/>
-    <text x="580" y="410" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Residente</text>
-  </g>
-  
-  <!-- University Building in Background -->
-  <g id="university">
-    <rect x="650" y="80" width="80" height="100" fill="#F4A460"/>
-    <path d="M 640 80 L 740 80 L 690 30 Z" fill="#8B4513"/>
-    <rect x="670" y="100" width="20" height="40" fill="#FFE4B5"/>
-    <text x="690" y="160" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">UNIVERSITÀ</text>
-  </g>
-  
-  <!-- Info Panel -->
-  <g id="infoPanel" transform="translate(20, 360)">
-    <rect width="250" height="120" fill="#FFF" stroke="#333" stroke-width="2" rx="5" opacity="0.95"/>
-    <text x="125" y="25" font-family="Arial" font-size="14" fill="#333" text-anchor="middle" font-weight="bold">LAUNDRY SELF-SERVICE</text>
-    <text x="125" y="45" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Lavaggio & Asciugatura Automatica</text>
-    <text x="15" y="65" font-family="Arial" font-size="10" fill="#333">✓ Sistema di pagamento moderno</text>
-    <text x="15" y="80" font-family="Arial" font-size="10" fill="#333">✓ Contanti e Mobile Money</text>
-    <text x="15" y="95" font-family="Arial" font-size="10" fill="#333">✓ Riduzione costi personale</text>
-    <text x="15" y="110" font-family="Arial" font-size="10" fill="#333">✓ Burkina Faso - Centro Città</text>
-  </g>
-  
-  <!-- Burkina Faso Flag Element -->
-  <g id="flag">
-    <rect x="690" y="400" width="30" height="20">
-      <rect width="30" height="10" fill="#FF0000"/>
-      <rect y="10" width="30" height="10" fill="#009A49"/>
-    </rect>
-    <polygon points="700,405 705,412 700,419" fill="#FFD700"/>
+    <text x="10" y="115" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#333">KEY FEATURES</text>
+    <line x1="10" y1="120" x2="190" y2="120" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="15" y="140" font-family="Arial, sans-serif" font-size="12" fill="#555">• Pagamenti Mobili (CFA)</text>
+    <text x="15" y="160" font-family="Arial, sans-serif" font-size="12" fill="#555">• Automazione Totale</text>
   </g>
 </svg>

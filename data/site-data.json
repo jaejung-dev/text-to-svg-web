@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22 12:28 UTC",
+  "generated_at": "2026-05-22 12:37 UTC",
   "source_report": "/home/ubuntu/lica-score-web/report-data.json",
   "generation_endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
   "samples": [
@@ -2230,11 +2230,11 @@
             "lora_enabled": false,
             "adapter": null,
             "input_tokens": 102,
-            "output_tokens": 5429,
-            "elapsed_seconds": 38.367,
-            "svg_parse_error": "undefined entity: line 41, column 126",
-            "svg_chars": 5195,
-            "sha256": "984cde69a88d5fabd8133b6ada5b55f60a3198ac9e99f9a95dc30ffe6f9285e8"
+            "output_tokens": 2844,
+            "elapsed_seconds": 13.566,
+            "svg_parse_error": null,
+            "svg_chars": 3432,
+            "sha256": "15402d94ca06ae01670aa3d060a727bb9b5f1c70d83ac3c5861dbf637e95524a"
           },
           {
             "source": "sglang-lora-off",
