@@ -1,26 +1,30 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define the light yellowish-green color -->
   <defs>
     <style>
-      .chart-group { fill: #C5E1A5; }
-      .arrow-group { fill: #C5E1A5; }
+      .bar-color { fill: #A8D5A9; }
+      .arrow-color { fill: #A8D5A9; }
     </style>
   </defs>
-  
-  <!-- Bar chart bars -->
-  <g id="bars-group" class="chart-group">
-    <rect id="bar-1" x="35" y="120" width="25" height="60" rx="3" />
-    <rect id="bar-2" x="75" y="90" width="25" height="90" rx="3" />
-    <rect id="bar-3" x="115" y="50" width="25" height="130" rx="3" />
+
+  <!-- Group for bar chart -->
+  <g id="bar-chart">
+    <!-- First bar (shortest) -->
+    <rect id="bar-1" class="bar-color" x="40" y="120" width="30" height="60" rx="3"/>
+    
+    <!-- Second bar (medium) -->
+    <rect id="bar-2" class="bar-color" x="85" y="85" width="30" height="95" rx="3"/>
+    
+    <!-- Third bar (tallest) -->
+    <rect id="bar-3" class="bar-color" x="130" y="45" width="30" height="135" rx="3"/>
   </g>
-  
-  <!-- Upward arrow indicating growth -->
-  <g id="arrow-group" class="arrow-group" transform="translate(100, 100)">
-    <!-- Arrow shaft -->
-    <line x1="0" y1="30" x2="30" y2="0" stroke="#C5E1A5" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Group for upward arrow -->
+  <g id="trend-arrow">
+    <!-- Arrow body -->
+    <line id="arrow-line" class="arrow-color" x1="50" y1="140" x2="165" y2="35" stroke="#A8D5A9" stroke-width="4" stroke-linecap="round"/>
+    
     <!-- Arrowhead -->
-    <polygon points="30,0 24,12 36,12" fill="#C5E1A5" />
+    <path id="arrowhead" class="arrow-color" d="M 165 35 L 155 40 L 160 25 Z"/>
   </g>
-  
-  <!-- Optional axis line for visual reference -->
-  <line id="axis" x1="20" y1="180" x2="180" y2="180" stroke="#C5E1A5" stroke-width="2" opacity="0.5" />
 </svg>

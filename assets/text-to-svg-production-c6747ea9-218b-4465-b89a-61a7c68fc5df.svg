@@ -1,23 +1,30 @@
-<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Starburst/Seal Shape with Serrated Edges -->
-  <g id="starburst-seal" transform="translate(150, 150)">
-    <path 
-      id="jagged-circle"
-      d="M 150 50 
-         L 160 90 L 180 70 L 200 100 L 210 60 
-         L 240 90 L 270 70 L 270 110 L 310 120 
-         L 280 150 L 310 180 L 270 190 L 270 230 
-         L 210 240 L 240 270 L 200 290 L 180 260 
-         L 150 280 L 120 260 L 100 290 L 60 270 
-         L 90 240 L 30 230 L 30 190 L -10 180 
-         L 20 150 L -10 120 L 30 110 L 30 70 
-         L -10 90 L 60 60 L 100 100 L 120 70 
-         L 150 50 Z"
-      fill="none" 
-      stroke="#FF7F50" 
-      stroke-width="3" 
-      stroke-linecap="round" 
-      stroke-linejoin="round"
-    />
+<svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define light coral/peach color -->
+  <defs>
+    <style>
+      .seal-edge { fill: none; stroke: #FF8C8C; stroke-width: 2; }
+      .seal-center { fill: none; }
+    </style>
+  </defs>
+
+  <!-- Outer jagged/serrated circular edge -->
+  <g id="jagged-edge" class="seal-edge" transform="translate(100, 100)">
+    <!-- Create 16-pointed starburst pattern with rounded tips -->
+    <path d="M 0,-70 L 10,-65 L 18,-70 L 26,-65 L 35,-68 L 42,-62 L 50,-66 L 56,-58 L 62,-62 L 68,-55 L 72,-60 L 75,-70 L 72,-80 L 68,-75 L 62,-78 L 56,-72 L 50,-76 L 42,-70 L 35,-74 L 26,-68 L 18,-75 L 10,-70 Z" fill="none" stroke="#FF8C8C" stroke-width="3"/>
+  </g>
+
+  <!-- Inner decorative circle for seal appearance -->
+  <circle cx="100" cy="100" r="45" fill="none" stroke="#FF8C8C" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Small decorative dots around inner circle -->
+  <g id="decorative-dots" class="seal-center" fill="#FF8C8C">
+    <circle cx="100" cy="50" r="1.5"/>
+    <circle cx="142" cy="71" r="1.5"/>
+    <circle cx="150" cy="100" r="1.5"/>
+    <circle cx="142" cy="129" r="1.5"/>
+    <circle cx="100" cy="150" r="1.5"/>
+    <circle cx="58" cy="129" r="1.5"/>
+    <circle cx="50" cy="100" r="1.5"/>
+    <circle cx="58" cy="71" r="1.5"/>
   </g>
 </svg>

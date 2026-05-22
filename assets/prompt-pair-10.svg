@@ -1,88 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800" width="400" height="800">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 667" width="375" height="667">
   <!-- Phone Frame -->
   <g id="phone-frame">
-    <rect x="20" y="20" width="360" height="760" rx="25" fill="#1a1a2e" stroke="#2d2d44" stroke-width="3"/>
-    <rect x="25" y="25" width="350" height="750" rx="20" fill="#16213e"/>
-    <rect x="160" y="15" width="80" height="8" rx="4" fill="#0f3460"/>
+    <rect x="0" y="0" width="375" height="667" fill="#1a1a2e"/>
+    <rect x="10" y="10" width="355" height="647" rx="30" fill="#16213e" stroke="#0f3460" stroke-width="2"/>
   </g>
 
   <!-- App Header -->
-  <g id="app-header" transform="translate(40, 60)">
-    <text x="140" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#e94560">ATOMSTAK P1</text>
-    <text x="140" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#00fff5">Laser Control App</text>
+  <g id="app-header">
+    <rect x="0" y="0" width="375" height="80" fill="#0f3460"/>
+    <text x="187" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">ATOMSTAK P1</text>
+    <text x="187" y="55" font-family="Arial, sans-serif" font-size="11" fill="#b8c5d6" text-anchor="middle">Graveur Laser</text>
   </g>
 
   <!-- Import Section -->
-  <g id="import-section" transform="translate(40, 120)">
-    <rect x="0" y="0" width="320" height="120" rx="10" fill="#1a1a2e" stroke="#00fff5" stroke-width="2"/>
-    <circle cx="40" cy="60" r="25" fill="#00fff5"/>
-    <path d="M35 55 l10 10 l5 -15" fill="none" stroke="#1a1a2e" stroke-width="3"/>
-    <text x="80" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Import File</text>
-    <text x="80" y="70" font-family="Arial, sans-serif" font-size="11" fill="#a0a0a0">LightBurn format supported</text>
-    <text x="80" y="90" font-family="Arial, sans-serif" font-size="10" fill="#00fff5">.LBRN • .LBRN2</text>
-    <rect x="240" y="85" width="75" height="35" rx="5" fill="#e94560"/>
-    <text x="277" y="107" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Browse</text>
+  <g id="import-section">
+    <rect x="25" y="100" width="325" height="120" rx="15" fill="#1f4068" stroke="#4a90e2" stroke-width="1"/>
+    <circle cx="60" cy="160" r="35" fill="#4a90e2"/>
+    <path d="M52 152 L60 160 L68 152 L64 156 L64 144 L66 144 L66 154 L58 154 L58 144 L60 144 Z" fill="#ffffff"/>
+    <text x="110" y="155" font-family="Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="bold">Importer</text>
+    <text x="110" y="175" font-family="Arial, sans-serif" font-size="11" fill="#b8c5d6">Fichier Lightburn (.lbrn)</text>
   </g>
 
-  <!-- Processing Section -->
-  <g id="processing-section" transform="translate(40, 260)">
-    <rect x="0" y="0" width="320" height="140" rx="10" fill="#1a1a2e" stroke="#2d2d44" stroke-width="2"/>
-    <text x="160" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#00fff5">PROCESSING</text>
-    <rect x="40" y="45" width="240" height="6" rx="3" fill="#0f3460"/>
-    <rect x="40" y="45" width="180" height="6" rx="3" fill="#e94560"/>
-    <text x="160" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">75%</text>
-    <g id="laser-icon" transform="translate(160, 95)">
-      <path d="M0 0 L30 30 L0 60 L-5 55 L20 30 L-5 5 L0 0" fill="#00fff5"/>
-      <circle cx="30" cy="30" r="15" fill="none" stroke="#e94560" stroke-width="2"/>
-      <circle cx="30" cy="30" r="8" fill="#00fff5"/>
-    </g>
-    <text x="160" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0">File conversion in progress</text>
+  <!-- Divider Arrow -->
+  <g id="divider-arrow">
+    <line x1="187" y1="235" x2="187" y2="265" stroke="#6b7280" stroke-width="2"/>
+    <polygon points="187,260 180,250 194,250" fill="#6b7280"/>
   </g>
 
   <!-- Export Section -->
-  <g id="export-section" transform="translate(40, 430)">
-    <rect x="0" y="0" width="320" height="120" rx="10" fill="#1a1a2e" stroke="#00fff5" stroke-width="2"/>
-    <circle cx="40" cy="60" r="25" fill="#00fff5"/>
-    <path d="M35 55 l10 10 l5 -15" fill="none" stroke="#1a1a2e" stroke-width="3"/>
-    <text x="80" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Export Format</text>
-    <text x="80" y="70" font-family="Arial, sans-serif" font-size="11" fill="#a0a0a0">Compatible with engravers</text>
-    <text x="80" y="90" font-family="Arial, sans-serif" font-size="10" fill="#00fff5">.SVG • Vector optimized</text>
-    <rect x="240" y="85" width="75" height="35" rx="5" fill="#00fff5"/>
-    <text x="277" y="107" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1a1a2e">Export</text>
+  <g id="export-section">
+    <rect x="25" y="280" width="325" height="120" rx="15" fill="#1f4068" stroke="#4a90e2" stroke-width="1"/>
+    <circle cx="60" cy="340" r="35" fill="#4a90e2"/>
+    <path d="M55 332 L60 337 L65 332 L63 342 L73 342 L67 348 L67 362 L65 362 L65 344 L55 344 Z" fill="#ffffff"/>
+    <text x="110" y="335" font-family="Arial, sans-serif" font-size="15" fill="#ffffff" font-weight="bold">Exporter</text>
+    <text x="110" y="355" font-family="Arial, sans-serif" font-size="11" fill="#b8c5d6">Format SVG</text>
   </g>
 
-  <!-- Laser Preview Area -->
-  <g id="laser-preview" transform="translate(40, 580)">
-    <rect x="0" y="0" width="320" height="180" rx="10" fill="#0f0f1a" stroke="#2d2d44" stroke-width="2"/>
-    <text x="160" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#a0a0a0">PREVIEW</text>
-    <!-- Grid pattern -->
-    <g id="grid" stroke="#1a1a2e" stroke-width="1">
-      <line x1="20" y1="30" x2="280" y2="30"/>
-      <line x1="20" y1="60" x2="280" y2="60"/>
-      <line x1="20" y1="90" x2="280" y2="90"/>
-      <line x1="20" y1="120" x2="280" y2="120"/>
-      <line x1="20" y1="150" x2="280" y2="150"/>
-      <line x1="20" y1="30" x2="20" y2="160"/>
-      <line x1="80" y1="30" x2="80" y2="160"/>
-      <line x1="140" y1="30" x2="140" y2="160"/>
-      <line x1="200" y1="30" x2="200" y2="160"/>
-      <line x1="260" y1="30" x2="260" y2="160"/>
-    </g>
-    <!-- Laser path simulation -->
-    <path d="M50 100 Q100 50 150 100 T250 100" fill="none" stroke="#00fff5" stroke-width="2" opacity="0.6"/>
-    <circle cx="50" cy="100" r="4" fill="#e94560"/>
-    <circle cx="150" cy="50" r="4" fill="#e94560"/>
-    <circle cx="250" cy="100" r="4" fill="#e94560"/>
-    <!-- Atomstak P1 logo placeholder -->
-    <rect x="130" y="140" width="60" height="20" rx="3" fill="#1a1a2e"/>
-    <text x="160" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#00fff5">ATOMSTAK P1</text>
+  <!-- File Preview Area -->
+  <g id="file-preview">
+    <rect x="25" y="430" width="325" height="150" rx="15" fill="#16213e" stroke="#4a90e2" stroke-width="1"/>
+    <rect x="40" y="445" width="60" height="120" rx="5" fill="#0f3460" stroke="#6b7280"/>
+    <rect x="60" y="465" width="40" height="5" rx="2" fill="#6b7280"/>
+    <rect x="60" y="480" width="35" height="5" rx="2" fill="#6b7280"/>
+    <rect x="60" y="495" width="45" height="5" rx="2" fill="#6b7280"/>
+    <text x="115" y="470" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">design.lbrn</text>
+    <text x="115" y="490" font-family="Arial, sans-serif" font-size="11" fill="#b8c5d6">1.2 MB • Prévisualisation</text>
   </g>
 
-  <!-- Status Bar -->
-  <g id="status-bar" transform="translate(40, 780)">
-    <rect x="0" y="0" width="320" height="35" rx="5" fill="#16213e"/>
-    <text x="20" y="22" font-family="Arial, sans-serif" font-size="10" fill="#a0a0a0">Connected</text>
-    <circle cx="300" cy="15" r="3" fill="#00ff00"/>
-    <text x="310" y="22" font-family="Arial, sans-serif" font-size="10" fill="#00ff00">●</text>
+  <!-- Action Button -->
+  <g id="action-button">
+    <rect x="100" y="600" width="175" height="50" rx="25" fill="#4a90e2"/>
+    <text x="187" y="630" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">Traiter</text>
+  </g>
+
+  <!-- Footer Status -->
+  <g id="footer-status">
+    <line x1="0" y1="650" x2="375" y2="650" stroke="#4a90e2" stroke-width="1"/>
+    <text x="20" y="665" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">▲ READY</text>
+    <text x="200" y="665" font-family="Arial, sans-serif" font-size="9" fill="#6b7280">ATOMSTAK P1 • CONNECTED</text>
   </g>
 </svg>

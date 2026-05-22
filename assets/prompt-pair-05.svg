@@ -1,72 +1,159 @@
-<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-  <!-- Tile definition for 2D top-down game map -->
-  
-  <!-- Group: Carpet Base Layer -->
-  <g id="carpet-base">
-    <!-- Main crimson background -->
-    <rect x="0" y="0" width="128" height="128" fill="#8B0000"/>
-    <!-- Subtle texture overlay -->
-    <rect x="0" y="0" width="128" height="128" fill="url(#texture-gradient)" opacity="0.1"/>
-  </g>
-  
-  <!-- Group: Ornate Persian Pattern -->
-  <g id="persian-pattern">
-    <!-- Central medallion -->
-    <ellipse cx="64" cy="64" rx="32" ry="28" fill="#6B0000" stroke="#1A1A1A" stroke-width="2"/>
-    <ellipse cx="64" cy="64" rx="24" ry="20" fill="#990000" stroke="#2D0000" stroke-width="1"/>
-    
-    <!-- Medallion inner details -->
-    <circle cx="64" cy="64" r="8" fill="#1A1A1A"/>
-    <circle cx="64" cy="64" r="5" fill="#3D0000"/>
-    
-    <!-- Corner ornamental motifs -->
-    <path d="M 10 10 L 25 10 L 25 25 Z" fill="#6B0000" opacity="0.8"/>
-    <path d="M 118 10 L 103 10 L 103 25 Z" fill="#6B0000" opacity="0.8"/>
-    <path d="M 10 118 L 25 118 L 25 103 Z" fill="#6B0000" opacity="0.8"/>
-    <path d="M 118 118 L 103 118 L 103 103 Z" fill="#6B0000" opacity="0.8"/>
-  </g>
-  
-  <!-- Group: Decorative Border -->
-  <g id="carpet-border">
-    <!-- Outer border frame -->
-    <rect x="4" y="4" width="120" height="120" fill="#1A1A1A" stroke="#8B0000" stroke-width="4"/>
-    <rect x="6" y="6" width="116" height="116" fill="none" stroke="#B8860B" stroke-width="2" stroke-dasharray="4,2"/>
-    
-    <!-- Corner diamond accents -->
-    <path d="M 8 8 L 16 16 L 8 24 Z" fill="#B8860B" opacity="0.6"/>
-    <path d="M 120 8 L 112 16 L 120 24 Z" fill="#B8860B" opacity="0.6"/>
-    <path d="M 8 120 L 16 112 L 8 104 Z" fill="#B8860B" opacity="0.6"/>
-    <path d="M 120 120 L 112 112 L 120 104 Z" fill="#B8860B" opacity="0.6"/>
-  </g>
-  
-  <!-- Group: Corporate Noir Accents -->
-  <g id="cyberpunk-accent">
-    <!-- Subtle metallic sheen -->
-    <rect x="0" y="0" width="128" height="128" fill="url(#metallic-sheen)" opacity="0.15"/>
-    
-    <!-- Dark shadow zones for depth -->
-    <rect x="4" y="4" width="120" height="120" fill="none" stroke="#0A0A0A" stroke-width="3" opacity="0.4"/>
-  </g>
-  
-  <!-- Group: Fringe Details -->
-  <g id="fringe-details">
-    <line x1="64" y1="4" x2="64" y2="10" stroke="#6B0000" stroke-width="2" opacity="0.8"/>
-    <line x1="64" y1="124" x2="64" y2="120" stroke="#6B0000" stroke-width="2" opacity="0.8"/>
-    <line x1="4" y1="64" x2="10" y2="64" stroke="#6B0000" stroke-width="2" opacity="0.8"/>
-    <line x1="124" y1="64" x2="118" y2="64" stroke="#6B0000" stroke-width="2" opacity="0.8"/>
-  </g>
-  
-  <!-- Gradients -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
   <defs>
-    <radialGradient id="texture-gradient" cx="50%" cy="50%" r="50%">
+    <!-- Crimson gradients for depth -->
+    <linearGradient id="carpetBase" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#6B0000;stop-opacity:1"/>
-    </radialGradient>
-    
-    <linearGradient id="metallic-sheen" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#B8860B;stop-opacity:0.3"/>
-      <stop offset="50%" style="stop-color:#8B0000;stop-opacity:0.1"/>
-      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:0.2"/>
+      <stop offset="50%" style="stop-color:#660000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4D0000;stop-opacity:1"/>
     </linearGradient>
+    
+    <!-- Gold accents for opulence -->
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#F0C044;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1"/>
+    </linearGradient>
+    
+    <!-- Black gradient for contrast -->
+    <linearGradient id="darkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1"/>
+    </linearGradient>
+    
+    <!-- Persian pattern repeat group -->
+    <g id="persianMotif">
+      <!-- Central medallion -->
+      <ellipse cx="64" cy="64" rx="18" ry="24" fill="none" stroke="#B8860B" stroke-width="2"/>
+      <circle cx="64" cy="64" r="10" fill="#3a0000"/>
+      <circle cx="64" cy="64" r="6" fill="url(#goldAccent)"/>
+      <!-- Petals around medallion -->
+      <ellipse cx="64" cy="40" rx="6" ry="10" fill="#5c0000"/>
+      <ellipse cx="64" cy="88" rx="6" ry="10" fill="#5c0000"/>
+      <ellipse cx="40" cy="64" rx="10" ry="6" fill="#5c0000"/>
+      <ellipse cx="88" cy="64" rx="10" ry="6" fill="#5c0000"/>
+    </g>
+    
+    <!-- Border pattern element -->
+    <g id="borderPattern">
+      <rect x="-4" y="-4" width="8" height="8" fill="#3a0000"/>
+      <circle cx="0" cy="0" r="3" fill="url(#goldAccent)"/>
+    </g>
   </defs>
+  
+  <!-- Tile base -->
+  <rect x="0" y="0" width="128" height="128" fill="url(#carpetBase)" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <!-- Border frame -->
+  <rect x="8" y="8" width="112" height="112" fill="none" stroke="#B8860B" stroke-width="3" opacity="0.8"/>
+  <rect x="12" y="12" width="104" height="104" fill="none" stroke="#4D0000" stroke-width="1"/>
+  
+  <!-- Inner border pattern -->
+  <g id="borderDeco">
+    <!-- Corner elements -->
+    <circle cx="10" cy="10" r="8" fill="#3a0000" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="118" cy="10" r="8" fill="#3a0000" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="10" cy="118" r="8" fill="#3a0000" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="118" cy="118" r="8" fill="#3a0000" stroke="#D4AF37" stroke-width="2"/>
+    
+    <!-- Border repeating elements -->
+    <g opacity="0.6">
+      <use href="#borderPattern" x="24" y="10"/>
+      <use href="#borderPattern" x="40" y="10"/>
+      <use href="#borderPattern" x="56" y="10"/>
+      <use href="#borderPattern" x="72" y="10"/>
+      <use href="#borderPattern" x="88" y="10"/>
+      <use href="#borderPattern" x="104" y="10"/>
+      
+      <use href="#borderPattern" x="24" y="118"/>
+      <use href="#borderPattern" x="40" y="118"/>
+      <use href="#borderPattern" x="56" y="118"/>
+      <use href="#borderPattern" x="72" y="118"/>
+      <use href="#borderPattern" x="88" y="118"/>
+      <use href="#borderPattern" x="104" y="118"/>
+      
+      <use href="#borderPattern" x="10" y="24"/>
+      <use href="#borderPattern" x="10" y="40"/>
+      <use href="#borderPattern" x="10" y="56"/>
+      <use href="#borderPattern" x="10" y="72"/>
+      <use href="#borderPattern" x="10" y="88"/>
+      <use href="#borderPattern" x="10" y="104"/>
+      
+      <use href="#borderPattern" x="118" y="24"/>
+      <use href="#borderPattern" x="118" y="40"/>
+      <use href="#borderPattern" x="118" y="56"/>
+      <use href="#borderPattern" x="118" y="72"/>
+      <use href="#borderPattern" x="118" y="88"/>
+      <use href="#borderPattern" x="118" y="104"/>
+    </g>
+  </g>
+  
+  <!-- Main carpet field -->
+  <rect x="20" y="20" width="88" height="88" fill="none" stroke="#3a0000" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Central ornate pattern -->
+  <g id="centralMedallion">
+    <!-- Large central medallion -->
+    <use href="#persianMotif"/>
+    
+    <!-- Secondary medallions at corners -->
+    <g opacity="0.7">
+      <ellipse cx="32" cy="32" rx="8" ry="12" fill="none" stroke="#B8860B" stroke-width="1.5"/>
+      <circle cx="32" cy="32" r="5" fill="#5c0000"/>
+      <circle cx="32" cy="32" r="3" fill="#F0C044"/>
+      
+      <ellipse cx="96" cy="32" rx="8" ry="12" fill="none" stroke="#B8860B" stroke-width="1.5"/>
+      <circle cx="96" cy="32" r="5" fill="#5c0000"/>
+      <circle cx="96" cy="32" r="3" fill="#F0C044"/>
+      
+      <ellipse cx="32" cy="96" rx="8" ry="12" fill="none" stroke="#B8860B" stroke-width="1.5"/>
+      <circle cx="32" cy="96" r="5" fill="#5c0000"/>
+      <circle cx="32" cy="96" r="3" fill="#F0C044"/>
+      
+      <ellipse cx="96" cy="96" rx="8" ry="12" fill="none" stroke="#B8860B" stroke-width="1.5"/>
+      <circle cx="96" cy="96" r="5" fill="#5c0000"/>
+      <circle cx="96" cy="96" r="3" fill="#F0C044"/>
+    </g>
+  </g>
+  
+  <!-- Corner corner patterns -->
+  <g id="cornerDecorations">
+    <path d="M 16,16 L 24,24 L 16,32 Z" fill="#3a0000" stroke="#D4AF37" stroke-width="1"/>
+    <path d="M 112,16 L 104,24 L 112,32 Z" fill="#3a0000" stroke="#D4AF37" stroke-width="1"/>
+    <path d="M 16,112 L 24,104 L 16,96 Z" fill="#3a0000" stroke="#D4AF37" stroke-width="1"/>
+    <path d="M 112,112 L 104,104 L 112,96 Z" fill="#3a0000" stroke="#D4AF37" stroke-width="1"/>
+  </g>
+  
+  <!-- Interstitial geometric patterns -->
+  <g opacity="0.5">
+    <!-- Diamond patterns between medallions -->
+    <path d="M 64,20 L 72,32 L 64,44 L 56,32 Z" fill="#4D0000" stroke="#D4AF37" stroke-width="0.5"/>
+    <path d="M 64,84 L 72,96 L 64,108 L 56,96 Z" fill="#4D0000" stroke="#D4AF37" stroke-width="0.5"/>
+    <path d="M 20,64 L 32,72 L 44,64 L 32,56 Z" fill="#4D0000" stroke="#D4AF37" stroke-width="0.5"/>
+    <path d="M 84,64 L 96,72 L 108,64 L 96,56 Z" fill="#4D0000" stroke="#D4AF37" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Cyberpunk corporate accents (subtle tech elements) -->
+  <g opacity="0.3">
+    <!-- Thin circuit-like lines suggesting high-tech -->
+    <line x1="64" y1="8" x2="64" y2="20" stroke="#B8860B" stroke-width="0.5"/>
+    <line x1="64" y1="120" x2="64" y2="108" stroke="#B8860B" stroke-width="0.5"/>
+    <line x1="8" y1="64" x2="20" y2="64" stroke="#B8860B" stroke-width="0.5"/>
+    <line x1="120" y1="64" x2="108" y2="64" stroke="#B8860B" stroke-width="0.5"/>
+    
+    <!-- Small corner accents with tech feel -->
+    <rect x="14" y="14" width="2" height="2" fill="#D4AF37"/>
+    <rect x="112" y="14" width="2" height="2" fill="#D4AF37"/>
+    <rect x="14" y="112" width="2" height="2" fill="#D4AF37"/>
+    <rect x="112" y="112" width="2" height="2" fill="#D4AF37"/>
+  </g>
+  
+  <!-- Shadow overlay for depth -->
+  <rect x="0" y="0" width="128" height="128" fill="url(#darkGradient)" opacity="0.15"/>
+  
+  <!-- Slight vignette effect -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="50%">
+    <stop offset="70%" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="100%" style="stop-color:#000000;stop-opacity:0.25"/>
+  </radialGradient>
+  <rect x="0" y="0" width="128" height="128" fill="url(#vignette)"/>
 </svg>

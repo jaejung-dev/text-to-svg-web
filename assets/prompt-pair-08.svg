@@ -1,41 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150">
-  <!-- Logo Background (subtle gradient) -->
   <defs>
-    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    <!-- Gradient for bell icon -->
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    
+    <!-- Subtle glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
   </defs>
-
+  
+  <!-- Main background -->
+  <rect width="400" height="150" fill="#ffffff"/>
+  
   <!-- Bell Icon Group -->
-  <g id="bell-icon" transform="translate(40, 50)">
-    <!-- Bell body -->
-    <path id="bell-shape" fill="url(#logoGradient)" d="M 60,5 L 95,70 A 35,35 0 0,1 25,70 Z" />
+  <g id="bell-icon" transform="translate(60, 35)">
+    <!-- Bell silhouette -->
+    <path d="M 25 8 Q 25 35 55 35 Q 85 35 85 8 L 85 0 Q 85 0 55 0 Q 25 0 25 0 Z" 
+          fill="url(#bellGradient)" filter="url(#glow)"/>
+    
+    <!-- Bell bottom curve -->
+    <path d="M 15 35 Q 25 55 40 65 Q 55 55 65 35" 
+          fill="none" stroke="url(#bellGradient)" stroke-width="3" stroke-linecap="round"/>
+    
     <!-- Bell clapper -->
-    <circle id="bell-clapper" cx="50" cy="65" r="12" fill="#ffffff" opacity="0.9" />
-    <!-- Bell sound waves (3 arcs) -->
-    <path id="wave1" d="M 50,5 A 40,40 0 0,1 30,35" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.6" />
-    <path id="wave2" d="M 50,5 A 55,55 0 0,1 20,45" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.4" />
-    <path id="wave3" d="M 50,5 A 70,70 0 0,1 10,55" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.3" />
-    <!-- Top bell mount -->
-    <path id="bell-mount" d="M 45,5 L 55,5 L 55,10 L 45,10 Z" fill="#ffffff" opacity="0.8" />
+    <circle cx="40" cy="45" r="4" fill="#ffffff" opacity="0.9"/>
+    
+    <!-- Sound waves -->
+    <g id="sound-waves" opacity="0.6">
+      <path d="M 95 25 Q 105 25 115 35" fill="none" stroke="url(#bellGradient)" stroke-width="2"/>
+      <path d="M 95 35 Q 105 35 115 45" fill="none" stroke="url(#bellGradient)" stroke-width="2"/>
+      <path d="M 95 45 Q 105 45 115 55" fill="none" stroke="url(#bellGradient)" stroke-width="2"/>
+    </g>
   </g>
-
-  <!-- Text Group -->
-  <g id="text-elements">
-    <!-- Company Name -->
-    <text id="company-name" x="140" y="85" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" fill="url(#logoGradient)" letter-spacing="2">Bell</text>
+  
+  <!-- Company Name -->
+  <g id="company-name" transform="translate(160, 90)">
+    <!-- Primary text -->
+    <text font-family="'Arial', sans-serif" font-size="42" font-weight="700" fill="url(#bellGradient)">
+      Bell
+    </text>
+    
     <!-- Tagline -->
-    <text id="tagline" x="140" y="115" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#6b7280" letter-spacing="4">CONNECTING WORLD</text>
+    <text y="28" font-family="'Arial', sans-serif" font-size="14" font-weight="400" fill="#6b7280" letter-spacing="2">
+      COMMUNICATIONS
+    </text>
+    
+    <!-- Decorative line -->
+    <line x1="0" y1="12" x2="140" y2="12" stroke="url(#bellGradient)" stroke-width="2" opacity="0.3"/>
   </g>
-
-  <!-- Decorative line -->
-  <line id="decorative-line" x1="140" y1="75" x2="280" y2="75" stroke="#2563eb" stroke-width="2" opacity="0.3" />
+  
+  <!-- Subtle corner accent -->
+  <path d="M 370 10 L 390 10 L 390 30" fill="none" stroke="url(#bellGradient)" stroke-width="2" stroke-linecap="round"/>
 </svg>

@@ -1,67 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="sap-basis-logo">
-  <!-- Background - subtle gradient -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <defs>
-    <linearGradient id="baseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0F72B3;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0050A0;stop-opacity:1" />
-    </linearGradient>
+    <!-- Gradient for depth -->
     <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#E8F4F8;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#B8D9E8;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#f47920;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#555555;stop-opacity:1" />
     </linearGradient>
+    
+    <!-- Support glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   
-  <!-- Main SAP-shaped container -->
-  <g id="sap-base">
-    <rect x="50" y="50" width="300" height="300" rx="40" ry="40" fill="url(#baseGradient)" />
+  <!-- Background circle for cohesion -->
+  <circle cx="200" cy="200" r="190" fill="#f8f9fa"/>
+  
+  <!-- Core structural elements representing infrastructure -->
+  <g id="foundation">
+    <!-- Bottom support base -->
+    <rect x="140" y="280" width="120" height="8" rx="4" fill="#2c3e50"/>
+    
+    <!-- Vertical support pillars -->
+    <rect x="160" y="220" width="12" height="60" rx="2" fill="#34495e"/>
+    <rect x="228" y="220" width="12" height="60" rx="2" fill="#34495e"/>
+    
+    <!-- Horizontal connection beams -->
+    <rect x="160" y="245" width="80" height="6" rx="3" fill="#7f8c8d"/>
+    <rect x="160" y="258" width="80" height="6" rx="3" fill="#7f8c8d"/>
   </g>
   
-  <!-- Corner accent squares (SAP signature style) -->
-  <g id="corner-accent">
-    <rect x="70" y="70" width="50" height="50" rx="10" ry="10" fill="#FFFFFF" fill-opacity="0.15"/>
-    <rect x="280" y="70" width="50" height="50" rx="10" ry="10" fill="#FFFFFF" fill-opacity="0.15"/>
-    <rect x="70" y="280" width="50" height="50" rx="10" ry="10" fill="#FFFFFF" fill-opacity="0.15"/>
-    <rect x="280" y="280" width="50" height="50" rx="10" ry="10" fill="#FFFFFF" fill-opacity="0.15"/>
+  <!-- SAP-inspired trapezoid (without letters) -->
+  <g id="sapShape" transform="translate(200,140)">
+    <!-- Main trapezoid body -->
+    <polygon points="-35,30 -35,-40 35,-40 35,30" fill="url(#techGradient)" opacity="0.95"/>
+    
+    <!-- Inner accent stripe -->
+    <rect x="-35" y="-10" width="70" height="8" fill="#f39c12" opacity="0.8"/>
+    
+    <!-- Support indicator - right side highlight -->
+    <rect x="30" y="-40" width="8" height="70" fill="#1abc9c" opacity="0.6"/>
   </g>
   
-  <!-- Central gear/cog icon representing system administration -->
-  <g id="central-gear" transform="translate(200, 200)">
-    <circle cx="0" cy="0" r="65" fill="#FFFFFF" fill-opacity="0.1" stroke="#FFFFFF" stroke-width="2"/>
-    <circle cx="0" cy="0" r="45" fill="#FFFFFF" fill-opacity="0.2"/>
-    <g id="gear-teeth">
-      <circle cx="0" cy="-65" r="12" fill="#FFFFFF" fill-opacity="0.3"/>
-      <circle cx="0" cy="65" r="12" fill="#FFFFFF" fill-opacity="0.3"/>
-      <circle cx="-65" cy="0" r="12" fill="#FFFFFF" fill-opacity="0.3"/>
-      <circle cx="65" cy="0" r="12" fill="#FFFFFF" fill-opacity="0.3"/>
-      <circle cx="-45" cy="-45" r="12" fill="#FFFFFF" fill-opacity="0.3"/>
-      <circle cx="45" cy="-45" r="12" fill="#FFFFFF" fill-opacity="0.3"/>
-      <circle cx="-45" cy="45" r="12" fill="#FFFFFF" fill-opacity="0.3"/>
-      <circle cx="45" cy="45" r="12" fill="#FFFFFF" fill-opacity="0.3"/>
-    </g>
-    <!-- Support shield icon inside gear -->
-    <path d="M 0,-25 L 15,-30 L 15,-5 L 30,-5 L 25,15 L 0,30 L -25,15 L -30,-5 L -15,-5 L -15,-30 Z" 
-          fill="#FFFFFF" fill-opacity="0.25"/>
+  <!-- Support signal lines -->
+  <g id="supportSignals" opacity="0.7">
+    <!-- Uplink arrow -->
+    <line x1="200" y1="280" x2="200" y2="200" stroke="#27ae60" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="200,200 195,210 205,210" fill="#27ae60"/>
+    
+    <!-- Signal bars on sides -->
+    <line x1="150" y1="250" x2="150" y2="180" stroke="#3498db" stroke-width="2"/>
+    <line x1="250" y1="250" x2="250" y2="180" stroke="#3498db" stroke-width="2"/>
   </g>
   
-  <!-- Supporting infrastructure lines (network/connections) -->
-  <g id="infrastructure-lines" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="3" fill="none">
-    <line x1="100" y1="150" x2="100" y2="250"/>
-    <line x1="300" y1="150" x2="300" y2="250"/>
-    <line x1="150" y1="100" x2="250" y2="100"/>
-    <line x1="150" y1="300" x2="250" y2="300"/>
-    <circle cx="100" cy="150" r="4" fill="#FFFFFF"/>
-    <circle cx="300" cy="150" r="4" fill="#FFFFFF"/>
-    <circle cx="150" cy="100" r="4" fill="#FFFFFF"/>
-    <circle cx="250" cy="100" r="4" fill="#FFFFFF"/>
-    <circle cx="100" cy="250" r="4" fill="#FFFFFF"/>
-    <circle cx="300" cy="250" r="4" fill="#FFFFFF"/>
-    <circle cx="150" cy="300" r="4" fill="#FFFFFF"/>
-    <circle cx="250" cy="300" r="4" fill="#FFFFFF"/>
+  <!-- Base support platform -->
+  <g id="platform" opacity="0.8">
+    <ellipse cx="200" cy="300" rx="80" ry="15" fill="#ecf0f1"/>
+    <ellipse cx="200" cy="305" rx="70" ry="10" fill="#bdc3c7"/>
+    <ellipse cx="200" cy="310" rx="60" ry="8" fill="#95a5a6"/>
   </g>
   
-  <!-- Subtle glow effect -->
-  <circle cx="200" cy="200" r="80" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="5,5"/>
+  <!-- Connection nodes -->
+  <g id="nodes">
+    <circle cx="160" cy="240" r="4" fill="#1abc9c" filter="url(#glow)"/>
+    <circle cx="200" cy="240" r="4" fill="#1abc9c" filter="url(#glow)"/>
+    <circle cx="240" cy="240" r="4" fill="#1abc9c" filter="url(#glow)"/>
+  </g>
   
-  <!-- Highlight reflection -->
-  <ellipse cx="240" cy="100" rx="60" ry="20" fill="#FFFFFF" fill-opacity="0.08" transform="rotate(-20 240 100)"/>
+  <!-- Abstract support badge circle -->
+  <circle cx="200" cy="160" r="45" stroke="#ecf0f1" stroke-width="2" fill="none"/>
+  
+  <!-- Corner accents for modern feel -->
+  <path d="M 365 35 L 365 20 L 380 5 L 395 20 L 395 35" fill="none" stroke="#7f8c8d" stroke-width="2"/>
+  <path d="M 35 35 L 35 20 L 5 5 L 20 20 L 35 35" fill="none" stroke="#7f8c8d" stroke-width="2"/>
 </svg>

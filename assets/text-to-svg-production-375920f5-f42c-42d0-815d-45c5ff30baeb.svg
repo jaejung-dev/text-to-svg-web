@@ -1,16 +1,19 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="200" height="200" fill="white"/>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- White background -->
+  <rect width="400" height="400" fill="#ffffff"/>
   
-  <!-- Hexagon -->
-  <g id="hexagon-shape">
-    <path 
-      d="M 100 20 L 157.74 53.3 L 157.74 116.7 L 100 150 L 42.26 116.7 L 42.26 53.3 Z" 
-      fill="none" 
-      stroke="#2C3E50" 
-      stroke-width="4" 
-      stroke-linejoin="round"
-      stroke-linecap="round"
-    />
-  </g>
+  <!-- Centered hexagon with rounded corners -->
+  <path id="hexagon"
+        d="M 200 60 
+           L 320 130 
+           L 320 270 
+           L 200 340 
+           L 80 270 
+           L 80 130 
+           Z"
+        fill="none"
+        stroke="#4a5568"
+        stroke-width="8"
+        stroke-linejoin="round"
+        stroke-linecap="round"/>
 </svg>

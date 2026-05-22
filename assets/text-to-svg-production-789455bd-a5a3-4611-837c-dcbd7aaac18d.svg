@@ -1,7 +1,19 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background/Brown Frame -->
-  <rect id="frame-background" x="0" y="0" width="400" height="300" fill="#8B4513"/>
+  <!-- SVG Container -->
+  <defs>
+    <style>
+      .frame { fill: #8B4513; }
+      .content-area { fill: #FFFFFF; }
+    </style>
+  </defs>
   
-  <!-- Center White Rectangle -->
-  <rect id="center-area" x="40" y="40" width="320" height="220" fill="#FFFFFF"/>
+  <!-- Outer Frame/Border -->
+  <g id="brown-frame" class="frame">
+    <rect x="0" y="0" width="400" height="300"/>
+  </g>
+  
+  <!-- Inner White Content Area -->
+  <g id="white-content" class="content-area">
+    <rect x="40" y="30" width="320" height="240"/>
+  </g>
 </svg>

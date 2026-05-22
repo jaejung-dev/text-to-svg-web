@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22 10:17 UTC",
+  "generated_at": "2026-05-22 10:29 UTC",
   "source_report": "/home/ubuntu/lica-score-web/report-data.json",
   "generation_endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
   "samples": [
@@ -14,8 +14,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 150,
-        "output_tokens": 786,
-        "elapsed_seconds": 7.491,
+        "output_tokens": 734,
+        "elapsed_seconds": 6.889,
         "seed": 20260521
       },
       "baselines": [
@@ -52,8 +52,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 155,
-        "output_tokens": 1302,
-        "elapsed_seconds": 11.978,
+        "output_tokens": 1585,
+        "elapsed_seconds": 14.457,
         "seed": 20260522
       },
       "baselines": [
@@ -90,8 +90,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 130,
-        "output_tokens": 367,
-        "elapsed_seconds": 3.641,
+        "output_tokens": 401,
+        "elapsed_seconds": 3.865,
         "seed": 20260523
       },
       "baselines": [
@@ -128,8 +128,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 153,
-        "output_tokens": 1720,
-        "elapsed_seconds": 15.753,
+        "output_tokens": 1221,
+        "elapsed_seconds": 11.164,
         "seed": 20260524
       },
       "baselines": [
@@ -166,8 +166,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 152,
-        "output_tokens": 1638,
-        "elapsed_seconds": 15.039,
+        "output_tokens": 946,
+        "elapsed_seconds": 8.81,
         "seed": 20260525
       },
       "baselines": [
@@ -204,8 +204,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 132,
-        "output_tokens": 242,
-        "elapsed_seconds": 2.627,
+        "output_tokens": 254,
+        "elapsed_seconds": 2.568,
         "seed": 20260526
       },
       "baselines": [
@@ -242,8 +242,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 152,
-        "output_tokens": 584,
-        "elapsed_seconds": 5.505,
+        "output_tokens": 577,
+        "elapsed_seconds": 5.424,
         "seed": 20260527
       },
       "baselines": [
@@ -280,8 +280,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 123,
-        "output_tokens": 234,
-        "elapsed_seconds": 2.488,
+        "output_tokens": 317,
+        "elapsed_seconds": 3.109,
         "seed": 20260528
       },
       "baselines": [
@@ -318,8 +318,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 162,
-        "output_tokens": 2090,
-        "elapsed_seconds": 19.251,
+        "output_tokens": 1347,
+        "elapsed_seconds": 12.297,
         "seed": 20260529
       },
       "baselines": [
@@ -356,8 +356,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 127,
-        "output_tokens": 224,
-        "elapsed_seconds": 2.393,
+        "output_tokens": 234,
+        "elapsed_seconds": 2.434,
         "seed": 20260530
       },
       "baselines": [
@@ -394,8 +394,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 144,
-        "output_tokens": 2548,
-        "elapsed_seconds": 23.376,
+        "output_tokens": 1973,
+        "elapsed_seconds": 17.957,
         "seed": 20260531
       },
       "baselines": [
@@ -432,8 +432,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 128,
-        "output_tokens": 582,
-        "elapsed_seconds": 5.576,
+        "output_tokens": 744,
+        "elapsed_seconds": 6.892,
         "seed": 20260532
       },
       "baselines": [
@@ -470,8 +470,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 134,
-        "output_tokens": 1107,
-        "elapsed_seconds": 10.227,
+        "output_tokens": 788,
+        "elapsed_seconds": 7.294,
         "seed": 20260533
       },
       "baselines": [
@@ -508,8 +508,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 130,
-        "output_tokens": 1033,
-        "elapsed_seconds": 9.547,
+        "output_tokens": 1254,
+        "elapsed_seconds": 11.544,
         "seed": 20260534
       },
       "baselines": [
@@ -546,8 +546,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 162,
-        "output_tokens": 1471,
-        "elapsed_seconds": 13.537,
+        "output_tokens": 1659,
+        "elapsed_seconds": 15.136,
         "seed": 20260535
       },
       "baselines": [
@@ -586,8 +586,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 104,
-        "output_tokens": 4320,
-        "elapsed_seconds": 39.824,
+        "output_tokens": 1417,
+        "elapsed_seconds": 12.905,
         "seed": 2026052101
       }
     },
@@ -602,8 +602,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 85,
-        "output_tokens": 2663,
-        "elapsed_seconds": 24.836,
+        "output_tokens": 2522,
+        "elapsed_seconds": 22.981,
         "seed": 2026052102
       }
     },
@@ -618,8 +618,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 83,
-        "output_tokens": 1294,
-        "elapsed_seconds": 11.932,
+        "output_tokens": 1695,
+        "elapsed_seconds": 15.488,
         "seed": 2026052103
       }
     },
@@ -634,8 +634,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 78,
-        "output_tokens": 1791,
-        "elapsed_seconds": 16.45,
+        "output_tokens": 1761,
+        "elapsed_seconds": 16.075,
         "seed": 2026052104
       }
     },
@@ -650,8 +650,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 138,
-        "output_tokens": 1645,
-        "elapsed_seconds": 15.06,
+        "output_tokens": 3393,
+        "elapsed_seconds": 31.155,
         "seed": 2026052105
       }
     },
@@ -666,8 +666,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 82,
-        "output_tokens": 1376,
-        "elapsed_seconds": 12.966,
+        "output_tokens": 1228,
+        "elapsed_seconds": 11.294,
         "seed": 2026052106
       }
     },
@@ -682,8 +682,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 145,
-        "output_tokens": 2834,
-        "elapsed_seconds": 26.055,
+        "output_tokens": 5158,
+        "elapsed_seconds": 47.864,
         "seed": 2026052107
       }
     },
@@ -698,8 +698,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 85,
-        "output_tokens": 1028,
-        "elapsed_seconds": 9.526,
+        "output_tokens": 1060,
+        "elapsed_seconds": 9.757,
         "seed": 2026052108
       }
     },
@@ -714,8 +714,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 104,
-        "output_tokens": 3208,
-        "elapsed_seconds": 29.276,
+        "output_tokens": 1558,
+        "elapsed_seconds": 14.194,
         "seed": 2026052109
       }
     },
@@ -730,8 +730,8 @@
         "status": "ok",
         "svg_parse_error": null,
         "input_tokens": 102,
-        "output_tokens": 2553,
-        "elapsed_seconds": 23.449,
+        "output_tokens": 1702,
+        "elapsed_seconds": 15.472,
         "seed": 2026052110
       }
     }
