@@ -179,49 +179,7 @@ function renderPromptPair(pair) {
     `;
   }
 
-  function loraRunCard(result, modeLabel) {
-    return `
-      <div class="lora-run-card ${result?.status === "ok" ? "" : "pending"}">
-        <div class="lora-run-image">${assetElement(result)}</div>
-        <div class="lora-run-meta">
-          <strong>${escapeHtml(modeLabel)} #${escapeHtml(result?.run || "-")}</strong>
-          <span>${escapeHtml(metaLine(result))}</span>
-        </div>
-      </div>
-    `;
-  }
-
-  function loraModeSection(title, items, options = {}) {
-    const runCount = options.runCount || 4;
-    const subtitle = options.subtitle || "default sampling · 4 runs";
-    const runs = Array.from({ length: runCount }, (_, index) => {
-      const run = index + 1;
-      return (items || []).find((item) => Number(item.run) === run) || {
-        run,
-        status: "pending",
-        label: `${title} #${run}`,
-      };
-    });
-
-    return `
-      <section class="lora-mode-section">
-        <div class="lora-mode-head">
-          <h3>${escapeHtml(title)}</h3>
-          <span>${escapeHtml(subtitle)}</span>
-        </div>
-        <div class="lora-runs-grid">
-          ${runs.map((run) => loraRunCard(run, title)).join("")}
-        </div>
-      </section>
-    `;
-  }
-
-  const toggle = pair.lora_toggle;
-  const hfLocal = pair.hf_lora_local;
-  const hasToggle = toggle && ((toggle.on || []).length || (toggle.off || []).length);
-  const hasHfLocal = hfLocal && (hfLocal.runs || []).length;
   const modelGenerations = pair.model_generations || {};
-  const hasModelGenerations = ORDER.some((source) => modelGenerations[source]);
 
   return `
     <article class="prompt-pair-card">
@@ -230,34 +188,18 @@ function renderPromptPair(pair) {
         <p>${escapeHtml(pair.prompt)}</p>
       </div>
       <div class="prompt-pair-results">
-        ${hasModelGenerations ? `
-          <section class="lora-mode-section">
-            <div class="lora-mode-head">
-              <h3>Base / V1 / V2</h3>
-              <span>${escapeHtml(pair.lica_winner ? `Lica winner: ${LABELS[pair.lica_winner] || pair.lica_winner}` : "Lica pending")}</span>
-            </div>
-            <div class="pair-outputs-grid model-comparison-grid">
-              ${MODEL_COMPARISON_ORDER.map((source) => modelCard(
-                modelGenerations[source] || { source, label: LABELS[source], status: "pending" },
-                LABELS[source] || source,
-              )).join("")}
-            </div>
-          </section>
-        ` : ""}
-        ${hasToggle ? `
-          ${loraModeSection("LoRA ON", toggle.on || [])}
-          ${loraModeSection("LoRA OFF", toggle.off || [])}
-          ${hasHfLocal ? loraModeSection(
-            "HF LoRA local",
-            hfLocal.runs || [],
-            { runCount: 2, subtitle: "local PEFT · 2 runs" },
-          ) : ""}
-        ` : !hasModelGenerations ? `
-          <div class="pair-outputs-grid">
-          ${modelCard(pair.generated || {}, "SGLang Production")}
-          ${modelCard(pair.hf_lora || {}, "HF LoRA local")}
+        <section class="lora-mode-section">
+          <div class="lora-mode-head">
+            <h3>Base / V1 / V2</h3>
+            <span>${escapeHtml(pair.lica_winner ? `Lica winner: ${LABELS[pair.lica_winner] || pair.lica_winner}` : "Lica pending")}</span>
           </div>
-        ` : ""}
+          <div class="pair-outputs-grid model-comparison-grid">
+            ${MODEL_COMPARISON_ORDER.map((source) => modelCard(
+              modelGenerations[source] || { source, label: LABELS[source], status: "pending" },
+              LABELS[source] || source,
+            )).join("")}
+          </div>
+        </section>
       </div>
     </article>
   `;
