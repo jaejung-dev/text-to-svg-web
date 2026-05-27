@@ -1,0 +1,44 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#ffffff"/>
+  
+  <!-- Logo Icon Group -->
+  <g id="logo-icon" transform="translate(30, 50)">
+    <!-- Vector Grid Background -->
+    <g id="vector-grid">
+      <path d="M 0 0 L 40 0 L 40 40 L 0 40 Z" fill="none" stroke="#4A90E2" stroke-width="1" opacity="0.3"/>
+      <path d="M 0 0 L 0 40 L 40 40" fill="none" stroke="#4A90E2" stroke-width="1" opacity="0.3"/>
+    </g>
+    
+    <!-- Ghost Shape -->
+    <g id="ghost">
+      <path d="M 20 10 C 10 10 5 20 5 30 L 5 45 C 5 48 7 50 10 50 L 15 50 L 15 65 C 15 68 17 70 20 70 C 23 70 25 68 25 65 L 25 50 L 30 50 C 33 50 35 48 35 45 L 35 30 C 35 20 30 10 20 10 Z" 
+            fill="#E8F4FD" stroke="#4A90E2" stroke-width="2"/>
+      
+      <!-- Ghost Eyes -->
+      <ellipse cx="15" cy="38" rx="3" ry="5" fill="#4A90E2"/>
+      <ellipse cx="25" cy="38" rx="3" ry="5" fill="#4A90E2"/>
+      
+      <!-- Vector Accent Line -->
+      <path d="M 20 75 L 35 85" stroke="#4A90E2" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="20" cy="75" r="2" fill="#4A90E2"/>
+      <circle cx="35" cy="85" r="2" fill="#4A90E2"/>
+    </g>
+  </g>
+  
+  <!-- Text Group -->
+  <g id="logo-text" transform="translate(90, 95)">
+    <!-- Ghost -->
+    <text font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#4A90E2">Ghost</text>
+    <!-- Vector -->
+    <text font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2C3E50">Vector</text>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g id="decorative">
+    <circle cx="350" cy="30" r="3" fill="#4A90E2" opacity="0.5"/>
+    <circle cx="365" cy="45" r="2" fill="#4A90E2" opacity="0.5"/>
+    <circle cx="380" cy="30" r="2" fill="#4A90E2" opacity="0.5"/>
+    <path d="M 5 180 L 40 180" stroke="#4A90E2" stroke-width="1" opacity="0.3"/>
+  </g>
+</svg>

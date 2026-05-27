@@ -1,0 +1,86 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser Window Frame -->
+  <g id="browser-window">
+    <rect x="20" y="20" width="360" height="360" rx="10" fill="#FFD93D" stroke="#E6C200" stroke-width="4"/>
+    <!-- Window Header -->
+    <rect x="20" y="20" width="360" height="40" rx="10" fill="#FFD93D"/>
+    <!-- Browser Dots -->
+    <circle cx="50" cy="40" r="5" fill="#333333"/>
+    <circle cx="70" cy="40" r="5" fill="#333333"/>
+    <circle cx="90" cy="40" r="5" fill="#333333"/>
+    <!-- Window Content Background -->
+    <rect x="20" y="60" width="360" height="320" rx="6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Yellow Desk -->
+  <g id="desk">
+    <rect x="50" y="260" width="300" height="80" rx="5" fill="#FFD93D"/>
+    <!-- Desk shadow -->
+    <rect x="50" y="335" width="300" height="10" rx="5" fill="#E6C200" opacity="0.5"/>
+  </g>
+
+  <!-- Stack of Lined Paper -->
+  <g id="paper-stack">
+    <!-- Top paper -->
+    <rect x="120" y="200" width="160" height="100" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+    <!-- Paper lines -->
+    <line x1="135" y1="220" x2="265" y2="220" stroke="#BFD8E8" stroke-width="2"/>
+    <line x1="135" y1="240" x2="265" y2="240" stroke="#BFD8E8" stroke-width="2"/>
+    <line x1="135" y1="260" x2="265" y2="260" stroke="#BFD8E8" stroke-width="2"/>
+    <line x1="135" y1="280" x2="265" y2="280" stroke="#BFD8E8" stroke-width="2"/>
+    <!-- Page number -->
+    <text x="280" y="235" font-family="Arial" font-size="10" fill="#BFD8E8">1</text>
+    <text x="280" y="255" font-family="Arial" font-size="10" fill="#BFD8E8">2</text>
+    <text x="280" y="275" font-family="Arial" font-size="10" fill="#BFD8E8">3</text>
+  </g>
+
+  <!-- Smiling Person -->
+  <g id="person">
+    <!-- Body with red top -->
+    <path d="M140 200 L140 250 L150 255 L160 245 L160 260 L170 260 L170 255 L180 245 L190 255 L200 250 L200 200 Z" fill="#E63946"/>
+    <!-- Neck -->
+    <rect x="165" y="180" width="10" height="20" fill="#FFD6A5"/>
+    <!-- Head -->
+    <ellipse cx="170" cy="160" rx="25" ry="28" fill="#FFD6A5"/>
+    <!-- Dark hair -->
+    <path d="M145 155 Q145 120 170 120 Q195 120 195 155 Q195 160 190 165 L150 165 Q145 160 145 155" fill="#2D2D2D"/>
+    <!-- Hair bangs -->
+    <path d="M155 145 Q160 135 165 140 Q170 135 175 140 Q180 135 185 145" fill="#2D2D2D"/>
+    <!-- Eyes -->
+    <ellipse cx="162" cy="160" rx="4" ry="5" fill="#333333"/>
+    <ellipse cx="178" cy="160" rx="4" ry="5" fill="#333333"/>
+    <!-- Eyebrows -->
+    <path d="M158 150 Q162 145 166 150" stroke="#333333" stroke-width="2" fill="none"/>
+    <path d="M174 150 Q178 145 182 150" stroke="#333333" stroke-width="2" fill="none"/>
+    <!-- Smile -->
+    <path d="M165 175 Q170 180 175 175" stroke="#E63946" stroke-width="2.5" fill="none"/>
+    <!-- Cheeks -->
+    <ellipse cx="158" cy="170" rx="5" ry="3" fill="#FFB399" opacity="0.6"/>
+    <ellipse cx="182" cy="170" rx="5" ry="3" fill="#FFB399" opacity="0.6"/>
+  </g>
+
+  <!-- Arm writing -->
+  <g id="arm">
+    <path d="M170 250 L185 230 L195 215" stroke="#FFD6A5" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M170 250 L185 230 L195 215" stroke="#E63946" stroke-width="8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Yellow Pencil -->
+  <g id="pencil">
+    <line x1="190" y1="215" x2="230" y2="205" stroke="#FFD93D" stroke-width="6" stroke-linecap="round"/>
+    <!-- Pencil tip -->
+    <polygon points="230,205 235,207 232,212" fill="#8B4513"/>
+    <!-- Pencil wood -->
+    <polygon points="232,212 235,207 230,205" fill="#D2691E"/>
+    <!-- Eraser -->
+    <rect x="185" y="210" width="12" height="6" fill="#FFB6C1"/>
+    <!-- Metal band -->
+    <rect x="188" y="210" width="6" height="6" fill="#C0C0C0"/>
+  </g>
+
+  <!-- Decorative elements -->
+  <g id="decorations">
+    <!-- Small check mark on paper -->
+    <path d="M200 270 L205 275 L215 265" stroke="#4CAF50" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

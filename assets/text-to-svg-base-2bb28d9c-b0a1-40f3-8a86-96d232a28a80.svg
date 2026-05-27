@@ -1,0 +1,77 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (transparent) -->
+  
+  <!-- Person Group -->
+  <g id="person">
+    
+    <!-- Left Leg -->
+    <g id="left-leg">
+      <rect id="left-pants" x="145" y="300" width="45" height="140" fill="#1A1A1A"/>
+      <path id="left-shoe" d="M145,440 h45 v15 q0,5 -5,5 h-35 q-5,0 -5,-5 v-15" fill="#F5E6D3"/>
+    </g>
+    
+    <!-- Right Leg -->
+    <g id="right-leg">
+      <rect id="right-pants" x="210" y="300" width="45" height="140" fill="#1A1A1A"/>
+      <path id="right-shoe" d="M210,440 h45 v15 q0,5 -5,5 h-35 q-5,0 -5,-5 v-15" fill="#F5E6D3"/>
+    </g>
+    
+    <!-- Body - Sweater -->
+    <g id="sweater">
+      <path id="sweater-body" d="M150,280 h100 q10,0 10,10 v30 q0,10 -10,10 h-100 q-10,0 -10,-10 v-30 q0,-10 10,-10" fill="#FF6B35"/>
+    </g>
+    
+    <!-- Body - Blazer -->
+    <g id="blazer">
+      <path id="blazer-left" d="M150,180 q-5,0 -5,5 v95 q0,5 5,5 h-5 v-100 h5" fill="#26A69A"/>
+      <path id="blazer-right" d="M250,180 q5,0 5,5 v95 q0,5 -5,5 h5 v-100 h-5" fill="#26A69A"/>
+      <rect id="blazer-center" x="145" y="180" width="110" height="120" fill="#26A69A"/>
+      <rect id="blazer-lapel-left" x="170" y="180" width="15" height="90" fill="#1B8A7F"/>
+      <rect id="blazer-lapel-right" x="215" y="180" width="15" height="90" fill="#1B8A7F"/>
+    </g>
+    
+    <!-- Right Arm (Peace Sign) -->
+    <g id="right-arm">
+      <path id="right-sleeve" d="M240,190 q0,-5 5,-5 h5 q5,0 5,5 v30 q0,5 -5,5 h-5 q-5,0 -5,-5" fill="#FF6B35"/>
+      <path id="right-forearm" d="M250,220 v35 q0,5 -5,5 h-5 q-5,0 -5,-5 v-35 q0,-5 5,-5 h5 q5,0 5,5" fill="#F5D0A9"/>
+      <path id="right-hand" d="M235,255 h15 v15 h-15" fill="#F5D0A9"/>
+      <path id="peace-sign" d="M242,255 l-5,12 h3 l2,-5 2,5 h3 l-5,-12" fill="none" stroke="#F5D0A9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+    <!-- Left Arm -->
+    <g id="left-arm">
+      <path id="left-sleeve" d="M160,190 q0,-5 -5,-5 h-5 q-5,0 -5,5 v30 q0,5 5,5 h5 q5,0 5,-5" fill="#FF6B35"/>
+      <path id="left-forearm" d="M150,220 v35 q0,5 5,5 h5 q5,0 5,-5 v-35 q0,-5 -5,-5 h-5 q-5,0 -5,5" fill="#F5D0A9"/>
+    </g>
+    
+    <!-- Neck -->
+    <path id="neck" d="M200,180 v20" stroke="#F5D0A9" stroke-width="12" fill="none"/>
+    
+    <!-- Head -->
+    <g id="head">
+      <!-- Hair -->
+      <path id="hair-back" d="M165,160 q0,-10 10,-10 h50 q10,0 10,10 v10 h-80" fill="#1A1A1A"/>
+      <path id="hair-front" d="M160,165 q5,-15 20,-15 h40 q15,0 20,15 v5 q0,5 -10,5 h-40 q-10,0 -10,-5" fill="#1A1A1A"/>
+      
+      <!-- Face -->
+      <ellipse id="face" cx="200" cy="190" rx="35" ry="42" fill="#F5D0A9"/>
+      
+      <!-- Eyes Closed (Smiling) -->
+      <path id="eye-left" d="M175,185 q5,5 10,0" stroke="#1A1A1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path id="eye-right" d="M225,185 q-5,5 -10,0" stroke="#1A1A1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+      
+      <!-- Smile -->
+      <path id="mouth" d="M190,215 q10,10 20,0" stroke="#1A1A1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+      
+      <!-- Cheeks -->
+      <ellipse id="cheek-left" cx="175" cy="200" rx="5" ry="3" fill="#F5A6A6" opacity="0.5"/>
+      <ellipse id="cheek-right" cx="225" cy="200" rx="5" ry="3" fill="#F5A6A6" opacity="0.5"/>
+    </g>
+    
+    <!-- Bag Strap -->
+    <g id="bag">
+      <path id="bag-strap" d="M150,180 q-15,0 -15,30 q0,15 10,15 h5 q5,0 5,-15 v-30" fill="none" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    
+  </g>
+</svg>

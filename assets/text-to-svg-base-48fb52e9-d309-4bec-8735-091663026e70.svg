@@ -1,0 +1,31 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cream-colored rectangular card -->
+  <rect id="card-base" x="50" y="40" width="300" height="220" fill="#FFF8E7" rx="4"/>
+  
+  <!-- Scalloped muted red border -->
+  <g id="red-scalloped-border">
+    <path d="M 70 50 L 80 45 L 90 50 L 100 45 L 110 50 L 120 45 L 130 50 L 140 45 L 150 50 L 160 45 L 170 50 L 180 45 L 190 50 L 200 45 L 210 50 L 220 45 L 230 50 L 240 45 L 250 50 L 260 45 L 270 50 L 280 45 L 290 50 L 300 45 L 310 50 L 320 45 L 330 50 L 340 45 L 350 50" stroke="#D46A6A" stroke-width="3" fill="none"/>
+    <path d="M 350 50 V 60 L 345 70 L 350 80 L 350 90 V 100" stroke="#D46A6A" stroke-width="3" fill="none"/>
+    <path d="M 350 110 V 120 L 345 130 L 350 140 L 350 150 V 160" stroke="#D46A6A" stroke-width="3" fill="none"/>
+    <path d="M 350 170 V 180 L 345 190 L 350 200 L 350 210 V 220" stroke="#D46A6A" stroke-width="3" fill="none"/>
+    <path d="M 350 220 L 345 225 L 335 220 L 325 225 L 315 220 L 305 225 L 295 220 L 285 225 L 275 220 L 265 225 L 255 220 L 245 225 L 235 220 L 225 225 L 215 220 L 205 225 L 195 220 L 185 225 L 175 220 L 165 225 L 155 220 L 145 225 L 135 220 L 125 225 L 115 220 L 105 225 L 95 220 L 85 225 L 75 220 L 70 220" stroke="#D46A6A" stroke-width="3" fill="none"/>
+    <path d="M 50 220 L 50 210 L 55 200 L 50 190 L 50 180 V 170" stroke="#D46A6A" stroke-width="3" fill="none"/>
+    <path d="M 50 160 V 150 L 55 140 L 50 130 L 50 120 V 110" stroke="#D46A6A" stroke-width="3" fill="none"/>
+    <path d="M 50 100 V 90 L 55 80 L 50 70 L 50 60 V 50" stroke="#D46A6A" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Bright yellow scalloped element at bottom right -->
+  <g id="yellow-scalloped-element">
+    <path d="M 320 200 L 330 195 L 340 200 L 350 195 L 360 200 L 370 195 L 380 200 L 390 195 L 400 200" fill="#FFD700" stroke="#F4C430" stroke-width="2"/>
+    <path d="M 350 200 V 210 L 345 220 L 350 230 L 350 240 V 250" fill="#FFD700" stroke="#F4C430" stroke-width="2"/>
+  </g>
+  
+  <!-- Small purple line -->
+  <line id="purple-line" x1="340" y1="220" x2="365" y2="235" stroke="#9B7EBD" stroke-width="2"/>
+  
+  <!-- Faint purple-grey crease lines on cream surface -->
+  <g id="crease-lines">
+    <path d="M 300 60 Q 310 65 300 70" stroke="#A89FA8" stroke-width="1" fill="none" opacity="0.4"/>
+    <path d="M 290 75 Q 300 80 290 85" stroke="#A89FA8" stroke-width="1" fill="none" opacity="0.4"/>
+  </g>
+</svg>

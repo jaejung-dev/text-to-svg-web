@@ -1,0 +1,52 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#9B59B6"/>
+  
+  <!-- Group: Abstract Shapes -->
+  <g id="abstract-shapes">
+    <!-- Light Pink Squiggle 1 -->
+    <path id="squiggle-1" d="M50 80 Q70 60 90 80 T130 80" stroke="#FFB6C1" stroke-width="3" fill="none" opacity="0.8"/>
+    
+    <!-- Light Pink Squiggle 2 -->
+    <path id="squiggle-2" d="M180 140 Q200 120 220 140 T260 140" stroke="#FFB6C1" stroke-width="3" fill="none" opacity="0.8"/>
+    
+    <!-- Green Blob 1 -->
+    <ellipse id="blob-green-1" cx="100" cy="200" rx="25" ry="30" fill="#90EE90" opacity="0.7"/>
+    
+    <!-- Green Blob 2 -->
+    <circle id="blob-green-2" cx="320" cy="80" r="22" fill="#32CD32" opacity="0.6"/>
+    
+    <!-- Peach Flower -->
+    <g id="flower-peach">
+      <circle cx="280" cy="220" r="8" fill="#FFDAB9"/>
+      <circle cx="265" cy="210" r="12" fill="#FADADD" opacity="0.9"/>
+      <circle cx="295" cy="210" r="12" fill="#FADADD" opacity="0.9"/>
+      <circle cx="265" cy="230" r="12" fill="#FADADD" opacity="0.9"/>
+      <circle cx="295" cy="230" r="12" fill="#FADADD" opacity="0.9"/>
+      <circle cx="280" cy="240" r="12" fill="#FADADD" opacity="0.9"/>
+    </g>
+    
+    <!-- Pink Triangle -->
+    <polygon id="triangle-pink" points="150,50 175,90 125,90" fill="#FF69B4" opacity="0.75"/>
+    
+    <!-- Light Orange Spiral 1 -->
+    <path id="spiral-orange-1" d="M340,150 c10,-10 15,-5 15,5 s-5,15 -15,5 s5,-15 15,-5 c-10,10 -15,5 -15,-5 z" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Light Orange Spiral 2 -->
+    <path id="spiral-orange-2" d="M360,240 c5,-8 10,-3 10,4 s-4,10 -10,4 s4,-10 10,-4 c-5,8 -10,3 -10,-4 z" fill="none" stroke="#FFA500" stroke-width="2" opacity="0.7"/>
+  </g>
+  
+  <!-- Group: Decorative Dashes -->
+  <g id="decorative-dashes">
+    <line x1="80" y1="120" x2="90" y2="120" stroke="#98FB98" stroke-width="2" opacity="0.6"/>
+    <line x1="200" y1="180" x2="210" y2="180" stroke="#98FB98" stroke-width="2" opacity="0.6"/>
+    <line x1="300" y1="60" x2="308" y2="68" stroke="#E6E6FA" stroke-width="2" opacity="0.5"/>
+    <line x1="50" y1="240" x2="58" y2="248" stroke="#FFE4B5" stroke-width="2" opacity="0.6"/>
+    <line x1="160" y1="100" x2="170" y2="98" stroke="#DDA0DD" stroke-width="2" opacity="0.5"/>
+    <line x1="270" y1="160" x2="280" y2="155" stroke="#FFF8DC" stroke-width="2" opacity="0.5"/>
+    <line x1="350" y1="200" x2="352" y2="210" stroke="#F0FFFF" stroke-width="2" opacity="0.6"/>
+    <line x1="120" y1="40" x2="125" y2="45" stroke="#AFEEEE" stroke-width="2" opacity="0.5"/>
+    <line x1="240" y1="260" x2="248" y2="255" stroke="#E6E6FA" stroke-width="2" opacity="0.5"/>
+    <line x1="380" y1="120" x2="385" y2="125" stroke="#B0E0E6" stroke-width="2" opacity="0.5"/>
+  </g>
+</svg>

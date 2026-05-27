@@ -1,0 +1,80 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for reusable patterns -->
+  <defs>
+    <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F78B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A5C8D;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="gearGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E90FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066CC;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="180" fill="#F5F5F5"/>
+  
+  <!-- SAP-inspired hexagon pattern (background elements) -->
+  <g id="hexagon-pattern" filter="url(#dropShadow)">
+    <path d="M200 80 L269.3 120 V200 L200 240 L130.7 200 V120 Z" 
+          fill="none" stroke="url(#hexGradient)" stroke-width="2" opacity="0.4"/>
+    <path d="M200 110 L252.6 140 V195 L200 220 L147.4 195 V140 Z" 
+          fill="none" stroke="url(#hexGradient)" stroke-width="2" opacity="0.6"/>
+    <rect x="170" y="170" width="60" height="60" 
+          fill="none" stroke="url(#hexGradient)" stroke-width="1" transform="rotate(45 200 200)"/>
+  </g>
+  
+  <!-- Central gear icon representing support/maintenance -->
+  <g id="gear" transform="translate(200, 200)" filter="url(#dropShadow)">
+    <!-- Outer gear teeth -->
+    <path d="M0 -90 L20 -85 L40 -50 L60 -10 L60 10 L40 50 L20 85 L0 90 L-20 85 L-40 50 L-60 10 L-60 -10 L-40 -50 L-20 -85 Z" 
+          fill="url(#gearGradient)" stroke="white" stroke-width="2"/>
+    
+    <!-- Inner gear body -->
+    <circle cx="0" cy="0" r="45" fill="white" opacity="0.3"/>
+    
+    <!-- Center hub -->
+    <circle cx="0" cy="0" r="20" fill="url(#gearGradient)" stroke="white" stroke-width="2"/>
+    
+    <!-- Support bolt/screw symbol -->
+    <path d="M0 -15 L5 0 L0 15 L-5 0 Z" fill="url(#gearGradient)"/>
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="url(#gearGradient)" stroke-width="3"/>
+    <line x1="0" y1="-15" x2="0" y2="15" stroke="url(#gearGradient)" stroke-width="3"/>
+  </g>
+  
+  <!-- Circuit/network lines for tech infrastructure -->
+  <g id="circuit-lines" opacity="0.6">
+    <line x1="100" y1="200" x2="140" y2="200" stroke="url(#hexGradient)" stroke-width="2"/>
+    <line x1="260" y1="200" x2="300" y2="200" stroke="url(#hexGradient)" stroke-width="2"/>
+    <line x1="200" y1="100" x2="200" y2="140" stroke="url(#hexGradient)" stroke-width="2"/>
+    <line x1="200" y1="260" x2="200" y2="300" stroke="url(#hexGradient)" stroke-width="2"/>
+    
+    <!-- Small nodes -->
+    <circle cx="100" cy="200" r="4" fill="url(#hexGradient)"/>
+    <circle cx="300" cy="200" r="4" fill="url(#hexGradient)"/>
+    <circle cx="200" cy="100" r="4" fill="url(#hexGradient)"/>
+    <circle cx="200" cy="300" r="4" fill="url(#hexGradient)"/>
+  </g>
+  
+  <!-- Text element for BASIS -->
+  <text x="200" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0F78B8">
+    BASIS
+  </text>
+  
+  <text x="200" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666666">
+    SUPPORT &amp; MAINTENANCE
+  </text>
+</svg>

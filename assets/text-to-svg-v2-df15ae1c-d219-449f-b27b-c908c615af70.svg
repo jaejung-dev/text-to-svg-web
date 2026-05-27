@@ -1,0 +1,36 @@
+<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Flower Head Group -->
+  <g id="flower-head" stroke-linecap="round">
+    <!-- Petals (5 rounded, light purple with pale pink outline) -->
+    <path id="petal-1" d="M100 55 C 85 35, 60 35, 70 60 C 80 80, 90 80, 100 65 Z" 
+          fill="#D8B4E2" stroke="#E6C8DC" stroke-width="2.5"/>
+    <path id="petal-2" d="M100 55 C 115 35, 140 35, 130 60 C 120 80, 110 80, 100 65 Z" 
+          fill="#D8B4E2" stroke="#E6C8DC" stroke-width="2.5"/>
+    <path id="petal-3" d="M70 75 C 60 95, 60 115, 75 105 C 85 95, 80 80, 70 75 Z" 
+          fill="#D8B4E2" stroke="#E6C8DC" stroke-width="2.5"/>
+    <path id="petal-4" d="M130 75 C 140 95, 140 115, 125 105 C 115 95, 120 80, 130 75 Z" 
+          fill="#D8B4E2" stroke="#E6C8DC" stroke-width="2.5"/>
+    <path id="petal-5" d="M100 90 C 90 75, 110 75, 100 90 Z" 
+          fill="#D8B4E2" stroke="#E6C8DC" stroke-width="2.5"/>
+    
+    <!-- Center Circle (soft yellow) -->
+    <circle id="center" cx="100" cy="78" r="16" fill="#FFED6A" stroke="#F5DE8B" stroke-width="2"/>
+  </g>
+  
+  <!-- Stem and Leaves Group -->
+  <g id="stem-group" stroke-linecap="round">
+    <!-- Stem (curves gently downwards) -->
+    <path id="stem" d="M100 95 Q 105 140 98 185" 
+          stroke="#8AC674" stroke-width="7" fill="none"/>
+    
+    <!-- Left Leaf (almond shaped) -->
+    <ellipse id="leaf-left" cx="82" cy="135" rx="22" ry="11" 
+             fill="#76C47D" stroke="#5DA85F" stroke-width="1.5" 
+             transform="rotate(-28, 82, 135)"/>
+    
+    <!-- Right Leaf (almond shaped) -->
+    <ellipse id="leaf-right" cx="118" cy="150" rx="22" ry="11" 
+             fill="#76C47D" stroke="#5DA85F" stroke-width="1.5" 
+             transform="rotate(28, 118, 150)"/>
+  </g>
+</svg>

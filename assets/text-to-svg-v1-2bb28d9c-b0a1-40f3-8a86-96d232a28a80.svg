@@ -1,0 +1,76 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Transparent -->
+  <defs>
+    <style>
+      .face { fill: #FFE4C4; }
+      .hair { fill: #3D2314; }
+      .blazer { fill: #008B8B; }
+      .sweater { fill: #FF8C00; }
+      .pants { fill: #1A1A1A; }
+      .shoes { fill: #FFFDD0; }
+      .strap { fill: #000000; }
+      .skin { fill: #FFE4C4; }
+    </style>
+  </defs>
+  
+  <!-- Bag Strap on Left Shoulder -->
+  <g id="bag-strap">
+    <path d="M 140 180 L 120 280" stroke="black" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Body -->
+  <g id="body">
+    <!-- Torso with Sweater -->
+    <rect x="145" y="200" width="110" height="140" rx="10" class="sweater"/>
+    
+    <!-- Blazer -->
+    <path d="M 140 180 L 150 190 L 145 340 L 255 340 L 250 190 L 260 180 L 200 230 Z" class="blazer"/>
+  </g>
+  
+  <!-- Arms -->
+  <g id="arms">
+    <!-- Left Arm (lower, holding nothing) -->
+    <ellipse cx="130" cy="250" rx="20" ry="50" class="skin"/>
+    
+    <!-- Right Arm (raised making peace sign) -->
+    <path d="M 270 200 L 280 130" stroke="#FFE4C4" stroke-width="22" stroke-linecap="round" class="skin"/>
+  </g>
+  
+  <!-- Hand with Peace Sign -->
+  <g id="right-hand">
+    <path d="M 275 125 L 275 105 L 280 105 L 280 125" fill="#FFE4C4" stroke="none"/>
+    <path d="M 280 105 L 285 115" stroke="#FFE4C4" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 280 105 L 275 118" stroke="#FFE4C4" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Head -->
+  <g id="head">
+    <!-- Hair -->
+    <ellipse cx="200" cy="140" rx="55" ry="45" class="hair"/>
+    
+    <!-- Face -->
+    <ellipse cx="200" cy="180" rx="45" ry="55" class="face"/>
+    
+    <!-- Eyes (closed) - arched lines -->
+    <path d="M 175 175 Q 185 168 195 175" stroke="#3D2314" stroke-width="3" fill="none"/>
+    <path d="M 205 175 Q 215 168 225 175" stroke="#3D2314" stroke-width="3" fill="none"/>
+    
+    <!-- Smile -->
+    <path d="M 185 200 Q 200 215 215 200" stroke="#3D2314" stroke-width="3" fill="none"/>
+    
+    <!-- Cheeks (subtle blush) -->
+    <ellipse cx="175" cy="195" rx="12" ry="8" fill="#FFB6C1" opacity="0.4"/>
+    <ellipse cx="225" cy="195" rx="12" ry="8" fill="#FFB6C1" opacity="0.4"/>
+  </g>
+  
+  <!-- Legs -->
+  <g id="legs">
+    <!-- Left Leg -->
+    <path d="M 160 340 L 155 440" stroke="#1A1A1A" stroke-width="28" stroke-linecap="round" class="pants"/>
+    <rect x="145" y="440" width="25" height="35" rx="5" class="shoes"/>
+    
+    <!-- Right Leg -->
+    <path d="M 240 340 L 245 440" stroke="#1A1A1A" stroke-width="28" stroke-linecap="round" class="pants"/>
+    <rect x="230" y="440" width="25" height="35" rx="5" class="shoes"/>
+  </g>
+</svg>

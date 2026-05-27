@@ -1,0 +1,66 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hair -->
+  <g id="hair">
+    <path d="M100 120 Q100 70 200 65 Q300 70 300 120 L300 110 Q300 85 200 80 Q100 85 100 110 Z" fill="#008B8B"/>
+    <path d="M110 125 Q110 95 200 90 Q290 95 290 125 L290 120 Q290 100 200 95 Q110 100 110 120 Z" fill="#009B9B"/>
+  </g>
+
+  <!-- Head/Face -->
+  <g id="head">
+    <ellipse cx="200" cy="140" rx="75" ry="80" fill="#E8B89C"/>
+    <!-- Eyes -->
+    <circle cx="175" cy="135" r="8" fill="#333333"/>
+    <circle cx="225" cy="135" r="8" fill="#333333"/>
+    <circle cx="177" cy="133" r="3" fill="#FFFFFF"/>
+    <circle cx="227" cy="133" r="3" fill="#FFFFFF"/>
+    <!-- Mouth -->
+    <path d="M180 165 Q200 155 220 165 Z" fill="#D4A5A5"/>
+    <!-- Smile line -->
+    <path d="M185 168 Q200 178 215 168" fill="none" stroke="#8B4545" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Teeth (visible in mouth) -->
+  <g id="teeth">
+    <rect x="188" y="158" width="24" height="12" rx="2" fill="#FFFFFF"/>
+    <path d="M188 158 L188 170 L190 170 L190 160 L210 160 L210 170 L212 170 L212 158 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Body/Sweater -->
+  <g id="sweater">
+    <path d="M100 220 L100 350 Q100 380 200 380 Q300 380 300 350 L300 220 L200 200 Z" fill="#FFFFFF"/>
+    <!-- High collar -->
+    <path d="M150 220 L200 200 L250 220 L250 230 L200 210 L150 230 Z" fill="#FFFFFF"/>
+    <!-- Black stripe details -->
+    <line x1="150" y1="230" x2="250" y2="230" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+    <line x1="155" y1="235" x2="245" y2="235" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    <!-- Sleeve line -->
+    <line x1="200" y1="220" x2="200" y2="380" stroke="#E0E0E0" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Arm/Hand -->
+  <g id="hand">
+    <path d="M280 240 Q310 250 320 280 Q325 300 320 310 L280 300 Z" fill="#E8B89C"/>
+    <path d="M280 240 L280 280 L270 280 L270 240 Z" fill="#E8B89C"/>
+    <!-- Fingers -->
+    <circle cx="310" cy="285" r="6" fill="#E8B89C"/>
+    <circle cx="315" cy="295" r="5" fill="#E8B89C"/>
+    <circle cx="310" cy="300" r="5" fill="#E8B89C"/>
+    <circle cx="305" cy="305" r="4" fill="#E8B89C"/>
+  </g>
+
+  <!-- Toothbrush -->
+  <g id="toothbrush">
+    <!-- Handle -->
+    <path d="M310 300 L340 250 L345 245 L315 295 Z" fill="#1A1A1A"/>
+    <!-- Neck -->
+    <line x1="320" y1="280" x2="325" y2="265" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round"/>
+    <!-- Brush head -->
+    <rect x="328" y="240" width="15" height="20" rx="3" fill="#333333"/>
+    <!-- Bristles -->
+    <path d="M330 240 L332 235 L338 235 L340 240" fill="#FFFFFF"/>
+    <line x1="332" y1="235" x2="332" y2="230" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="336" y1="235" x2="336" y2="230" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="340" y1="235" x2="340" y2="230" stroke="#CCCCCC" stroke-width="1"/>
+    <line x1="334" y1="235" x2="334" y2="228" stroke="#CCCCCC" stroke-width="1"/>
+  </g>
+</svg>

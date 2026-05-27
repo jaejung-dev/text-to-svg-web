@@ -1,0 +1,69 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect id="background" x="0" y="0" width="600" height="600" fill="#9B59B6" />
+
+  <!-- Pink Squiggles -->
+  <g id="squiggles" stroke="#FFAFCC" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M50,100 Q80,60 110,100 T170,100" />
+    <path d="M400,50 Q430,20 460,50 T520,50" />
+    <path d="M200,450 Q230,420 260,450 T320,450" />
+    <path d="M50,400 Q80,350 110,400 T170,400" />
+  </g>
+
+  <!-- Green Blobs -->
+  <g id="blobs" fill="#88D8B0">
+    <circle cx="80" cy="80" r="35" />
+    <path d="M450,120 C480,100 510,100 530,120 C550,140 530,160 500,160 C470,160 420,140 450,120 Z" />
+    <circle cx="150" cy="500" r="40" />
+    <ellipse cx="500" cy="480" rx="30" ry="45" transform="rotate(30 500 480)" />
+  </g>
+
+  <!-- Peach Flower -->
+  <g id="flower" fill="#FFD3B6" stroke="#FFCC80" stroke-width="2">
+    <!-- Center -->
+    <circle cx="300" cy="300" r="15" fill="#FFEAA7" />
+    <!-- Petals -->
+    <ellipse cx="300" cy="250" rx="20" ry="35" />
+    <ellipse cx="300" cy="350" rx="20" ry="35" />
+    <ellipse cx="350" cy="300" rx="35" ry="20" />
+    <ellipse cx="250" cy="300" rx="35" ry="20" />
+    <ellipse cx="335" cy="265" rx="20" ry="30" transform="rotate(45 335 265)" />
+    <ellipse cx="265" cy="265" rx="20" ry="30" transform="rotate(-45 265 265)" />
+    <ellipse cx="335" cy="335" rx="20" ry="30" transform="rotate(-45 335 335)" />
+    <ellipse cx="265" cy="335" rx="20" ry="30" transform="rotate(45 265 335)" />
+  </g>
+
+  <!-- Pink Triangle -->
+  <g id="triangle">
+    <polygon points="450,150 490,210 410,210" fill="#FF6B6B" />
+    <polygon points="120,420 140,460 100,460" fill="#FF6B6B" />
+  </g>
+
+  <!-- Light Orange Spirals -->
+  <g id="spirals" fill="none" stroke="#FFCA93" stroke-width="3" stroke-linecap="round">
+    <!-- Spiral 1 -->
+    <path d="M100,500 C130,480 150,450 130,420 C110,390 80,390 60,410 C40,430 40,460 60,480 C80,500 110,500 130,480" />
+    <!-- Spiral 2 -->
+    <path d="M520,80 C490,90 470,110 470,140 C470,170 490,190 520,180 C550,170 560,140 550,110 C540,80 520,80 520,80 Z" />
+  </g>
+
+  <!-- Small Dashes -->
+  <g id="dashes">
+    <!-- Soft Blue -->
+    <line x1="50" y1="200" x2="80" y2="200" stroke="#A29BFE" stroke-width="4" />
+    <line x1="200" y1="100" x2="230" y2="100" stroke="#A29BFE" stroke-width="4" />
+    <line x1="450" y1="350" x2="480" y2="350" stroke="#A29BFE" stroke-width="4" />
+    <!-- Soft Yellow -->
+    <line x1="350" y1="550" x2="380" y2="520" stroke="#FFCB70" stroke-width="4" />
+    <line x1="50" y1="350" x2="50" y2="380" stroke="#FFCB70" stroke-width="4" />
+    <line x1="250" y1="200" x2="250" y2="230" stroke="#FFCB70" stroke-width="4" />
+    <!-- Soft Teal -->
+    <line x1="550" y1="50" x2="520" y2="50" stroke="#55E6C1" stroke-width="4" />
+    <line x1="100" y1="550" x2="100" y2="520" stroke="#55E6C1" stroke-width="4" />
+    <line x1="300" y1="50" x2="330" y2="50" stroke="#55E6C1" stroke-width="4" />
+    <!-- White/Very Light -->
+    <line x1="400" y1="450" x2="430" y2="450" stroke="#FFFFFF" stroke-width="3" opacity="0.5" />
+    <line x1="150" y1="150" x2="150" y2="180" stroke="#FFFFFF" stroke-width="3" opacity="0.5" />
+    <line x1="500" y1="250" x2="530" y2="250" stroke="#FFFFFF" stroke-width="3" opacity="0.5" />
+  </g>
+</svg>

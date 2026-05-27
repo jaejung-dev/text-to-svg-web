@@ -1,0 +1,46 @@
+<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Navy Blue Color -->
+    <style>
+      .logo-text { 
+        fill: #1a2850; 
+        stroke: #1a2850; 
+        stroke-width: 2; 
+        stroke-linecap: round; 
+        stroke-linejoin: round;
+        fill-rule: nonzero;
+      }
+      .bg-white {
+        fill: #ffffff;
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="200" class="bg-white"/>
+  
+  <!-- Complete flowing script wordmark -->
+  <g id="calidora-wordmark" class="logo-text">
+    
+    <!-- Oversized Dramatic C - starts high, loops down with sweeping underline -->
+    <path class="c-letter" d="M 80 60 Q 75 90 80 110 Q 85 140 120 150 L 180 145 Q 220 142 230 135 M 80 60 Q 85 30 100 25 Q 120 20 135 35 Q 145 48 140 65 Z"/>
+    
+    <!-- Letter A - connected to C's underline -->
+    <path class="a-letter" d="M 220 135 L 235 125 L 245 155 Q 250 165 260 165 L 275 165 Q 285 165 290 155 L 300 130 L 315 135 L 325 165 Q 330 175 340 175 L 355 175 Q 365 175 370 165 L 380 140 L 395 135"/>
+    
+    <!-- Letter I - simple elegant vertical -->
+    <path class="i-letter" d="M 415 140 L 415 165 Q 415 175 425 175 Q 435 175 435 165 L 435 140"/>
+    
+    <!-- Letter L - downward stroke connecting to rest -->
+    <path class="l-letter" d="M 455 130 L 455 165 Q 455 175 465 175 Q 475 175 475 165 L 475 130"/>
+    
+    <!-- Letter O - continuous oval shape -->
+    <path class="o-letter" d="M 490 125 Q 475 125 475 140 Q 475 155 490 155 Q 505 155 505 140 Q 505 125 490 125 Z"/>
+    
+    <!-- Letter I - second i, same as first -->
+    <path class="i-letter-2" d="M 515 140 L 515 165 Q 515 175 525 175 Q 535 175 535 165 L 535 140"/>
+    
+    <!-- Letter D - rounded end with slight flourish -->
+    <path class="d-letter" d="M 550 125 Q 535 125 535 140 Q 535 155 550 155 Q 565 155 565 140 Q 565 125 550 125 Z M 550 125 L 560 115"/>
+  </g>
+</svg>

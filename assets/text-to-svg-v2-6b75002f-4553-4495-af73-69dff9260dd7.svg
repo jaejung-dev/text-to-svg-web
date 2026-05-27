@@ -1,0 +1,4 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background layer representing complete black visual space -->
+  <rect id="black-background" x="0" y="0" width="800" height="600" fill="#000000"/>
+</svg>

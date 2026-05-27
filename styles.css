@@ -379,7 +379,7 @@ select {
 
 .comparison-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 14px;
   position: relative;
 }
@@ -414,7 +414,7 @@ select {
 }
 
 .featured .image-wrap::after {
-  content: "Production";
+  content: "V2";
   position: absolute;
   top: 12px;
   left: 12px;
@@ -477,6 +477,26 @@ select {
   color: var(--muted);
   font-size: 12px;
   line-height: 1.45;
+}
+
+.score-pill {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 9px;
+  border: 1px solid rgba(57, 87, 255, 0.24);
+  border-radius: 999px;
+  padding: 5px 9px;
+  background: rgba(57, 87, 255, 0.08);
+  color: #243fce;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: -0.01em;
+}
+
+.score-pill.winner {
+  border-color: rgba(26, 143, 90, 0.34);
+  background: rgba(26, 143, 90, 0.12);
+  color: var(--green);
 }
 
 .method-card {
@@ -577,6 +597,16 @@ select {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+}
+
+.prompt-pair-results {
+  display: grid;
+  gap: 18px;
+}
+
+.model-comparison-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 16px;
 }
 
 .pair-output-card {
@@ -712,10 +742,29 @@ select {
 }
 
 .empty {
+  width: 100%;
+  min-height: 180px;
+  display: grid;
+  place-content: center;
+  gap: 8px;
   padding: 40px;
   border-radius: 24px;
-  background: #fff;
+  border: 1px dashed rgba(57, 87, 255, 0.24);
+  background: rgba(255, 255, 255, 0.78);
   color: var(--muted);
+  text-align: center;
+}
+
+.empty strong {
+  color: var(--ink);
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+.empty span {
+  max-width: 220px;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 @media (max-width: 1180px) {

@@ -1,0 +1,105 @@
+<svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for reusable gradients and filters -->
+  <defs>
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Logo Container Group -->
+  <g id="logoContainer" filter="url(#dropShadow)">
+    
+    <!-- Bell Icon Shape -->
+    <g id="bellIcon">
+      <!-- Bell Body - curved shape -->
+      <path id="bellBody" 
+            d="M 45 70 L 45 90 C 45 110, 85 110, 85 90 L 85 70 M 72 90 L 72 95 M 58 90 L 58 95 M 40 85 Q 63 120, 86 85" 
+            fill="none" 
+            stroke="url(#bellGradient)" 
+            stroke-width="4" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"/>
+      
+      <!-- Bell Clapper -->
+      <circle id="bellClapper" 
+              cx="63" 
+              cy="85" 
+              r="6" 
+              fill="#2563eb"/>
+      
+      <!-- Top mount/hook -->
+      <path id="bellMount" 
+            d="M 45 70 L 35 55 L 91 55 L 85 70" 
+            fill="none" 
+            stroke="url(#bellGradient)" 
+            stroke-width="4" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"/>
+      
+      <!-- Connection nodes (representing network/communications) -->
+      <circle id="node1" cx="42" cy="80" r="3" fill="#2563eb" opacity="0.8"/>
+      <circle id="node2" cx="83" cy="80" r="3" fill="#2563eb" opacity="0.8"/>
+      
+      <!-- Signal waves from top of bell -->
+      <path id="signalWave1" 
+            d="M 63 55 Q 58 48, 63 42 Q 68 48, 63 55" 
+            fill="none" 
+            stroke="url(#bellGradient)" 
+            stroke-width="2" 
+            opacity="0.6"/>
+      <path id="signalWave2" 
+            d="M 63 55 Q 60 45, 63 38 Q 66 45, 63 55" 
+            fill="none" 
+            stroke="url(#bellGradient)" 
+            stroke-width="2" 
+            opacity="0.4"/>
+    </g>
+    
+    <!-- Company Name Text -->
+    <text id="companyName" 
+          x="115" 
+          y="88" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-size="42" 
+          font-weight="600" 
+          fill="url(#bellGradient)"
+          letter-spacing="1"
+          dominant-baseline="middle">
+      BELL
+    </text>
+    
+    <!-- Tagline (optional professional touch) -->
+    <text id="tagline" 
+          x="115" 
+          y="115" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-size="14" 
+          fill="#64748b"
+          letter-spacing="2"
+          text-transform="uppercase">
+      Communications Network
+    </text>
+    
+    <!-- Decorative underline accent -->
+    <line id="accentLine" 
+          x1="110" 
+          y1="122" 
+          x2="260" 
+          y2="122" 
+          stroke="url(#bellGradient)" 
+          stroke-width="3" 
+          stroke-linecap="round"/>
+  </g>
+</svg>

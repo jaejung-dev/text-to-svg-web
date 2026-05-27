@@ -1,0 +1,91 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Sky Gradient: Deep Blue to Light Blue -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Sun Glow -->
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Mountain Shadows -->
+    <linearGradient id="mountainShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#475569;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- ========================== -->
+  <!-- Background Layer           -->
+  <!-- ========================== -->
+  <g id="background-layer">
+    <!-- Sky -->
+    <rect x="0" y="0" width="800" height="600" fill="url(#skyGradient)" />
+    
+    <!-- Sun -->
+    <circle cx="700" cy="100" r="60" fill="url(#sunGradient)" opacity="0.6" />
+    <circle cx="700" cy="100" r="30" fill="#fbbf24" opacity="0.9" />
+  </g>
+
+  <!-- ========================== -->
+  <!-- Cloud Layer                -->
+  <!-- ========================== -->
+  <g id="clouds-layer" fill="#ffffff" opacity="0.8">
+    <circle cx="100" cy="150" r="40" />
+    <circle cx="140" cy="160" r="50" />
+    <circle cx="180" cy="150" r="40" />
+    
+    <circle cx="600" cy="80" r="30" opacity="0.6" />
+    <circle cx="630" cy="90" r="40" opacity="0.6" />
+  </g>
+
+  <!-- ========================== -->
+  <!-- Mountain Layers            -->
+  <!-- ========================== -->
+  <g id="mountains-layer">
+    
+    <!-- Distant Mountain (Far) -->
+    <path id="mountain-back" d="M0,600 L200,300 L500,450 L800,600 Z" fill="#cbd5e1" opacity="0.8" />
+    
+    <!-- Mid-range Mountain -->
+    <path id="mountain-mid" d="M0,600 L350,150 L600,400 L800,600 Z" fill="url(#mountainShadow)" opacity="0.9" />
+    
+    <!-- Snow Cap on Mid Mountain -->
+    <path id="snow-cap" d="M350,150 L320,220 L380,220 Z" fill="#f8fafc" />
+  </g>
+
+  <!-- ========================== -->
+  <!-- Foreground Eagle           -->
+  <!-- ========================== -->
+  <g id="eagle-group" transform="translate(400, 200) rotate(0)">
+    
+    <!-- Wings -->
+    <g id="wings" fill="#111827">
+      <!-- Left Wing -->
+      <path d="M0,0 L-120,-60 L-140,-90 L-100,-70 Z" /> 
+      <path d="M0,0 L-100,-70 L-50,-20 Z" />
+      
+      <!-- Right Wing -->
+      <path d="M0,0 L120,-60 L140,-90 L100,-70 Z" />
+      <path d="M0,0 L100,-70 L50,-20 Z" />
+    </g>
+
+    <!-- Body -->
+    <ellipse id="body" cx="0" cy="0" rx="25" ry="15" fill="#1f2937" transform="rotate(10)" />
+
+    <!-- Head -->
+    <g id="head">
+      <circle cx="25" cy="10" r="10" fill="#1f2937" />
+      <circle cx="32" cy="6" r="2" fill="#fca5a5" /> <!-- Eye -->
+      <path d="M32,12 L42,16 L32,20 Z" fill="#f59e0b" /> <!-- Beak -->
+    </g>
+
+    <!-- Tail -->
+    <path id="tail" d="M-15,0 L-35,-5 L-35,5 Z" fill="#1f2937" />
+  </g>
+
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#FFFFFF" />
+  
+  <!-- Word Cruncher Icon Group -->
+  <g id="icon">
+    <!-- Compressed Diamond Base -->
+    
+    <!-- Book Cover (Deep Navy) - Left Side -->
+    <path id="book-cover" d="M8,32 L32,8 L32,56 Z" fill="#1B263B" />
+    
+    <!-- Book Pages (Bright Teal) - Right Side -->
+    <path id="book-pages" d="M56,32 L32,8 L32,56 Z" fill="#00B4D8" />
+    
+    <!-- Text Lines on Pages (Navy) - Suggesting compressed text -->
+    <line id="text-1" x1="36" y1="24" x2="48" y2="30" stroke="#1B263B" stroke-width="2" stroke-linecap="round" />
+    <line id="text-2" x1="36" y1="32" x2="48" y2="38" stroke="#1B263B" stroke-width="2" stroke-linecap="round" />
+    <line id="text-3" x1="36" y1="40" x2="48" y2="46" stroke="#1B263B" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Spine Detail (Navy) - Adding thickness to left side -->
+    <rect id="spine-detail" x="6" y="28" width="4" height="8" rx="2" fill="#1B263B" />
+  </g>
+</svg>

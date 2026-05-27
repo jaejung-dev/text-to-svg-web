@@ -1,0 +1,49 @@
+<svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Group -->
+  <g id="background" opacity="0"/>
+
+  <!-- Chart Bars Group -->
+  <g id="chart-bars" transform="translate(40, 100)">
+    <!-- First bar (shortest) -->
+    <rect id="bar-1" 
+          x="0" 
+          y="0" 
+          width="40" 
+          height="60" 
+          fill="#D4E8B6" 
+          rx="4"/>
+    
+    <!-- Second bar (medium height) -->
+    <rect id="bar-2" 
+          x="50" 
+          y="-30" 
+          width="40" 
+          height="90" 
+          fill="#D4E8B6" 
+          rx="4"/>
+    
+    <!-- Third bar (tallest) -->
+    <rect id="bar-3" 
+          x="100" 
+          y="-60" 
+          width="40" 
+          height="120" 
+          fill="#D4E8B6" 
+          rx="4"/>
+  </g>
+
+  <!-- Arrow Group -->
+  <g id="growth-arrow">
+    <!-- Arrow line -->
+    <path id="arrow-line" 
+          d="M 30 210 L 220 40" 
+          stroke="#D4E8B6" 
+          stroke-width="6" 
+          stroke-linecap="round"/>
+    
+    <!-- Arrow head -->
+    <polygon id="arrow-head" 
+             points="220,40 210,55 230,55" 
+             fill="#D4E8B6"/>
+  </g>
+</svg>

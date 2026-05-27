@@ -1,0 +1,58 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Checkerboard pattern -->
+    <pattern id="checkerPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="20" height="20" fill="#1a1a1a"/>
+      <rect x="20" y="0" width="20" height="20" fill="#F5E6CA"/>
+      <rect x="0" y="20" width="20" height="20" fill="#F5E6CA"/>
+      <rect x="20" y="20" width="20" height="20" fill="#1a1a1a"/>
+    </pattern>
+    
+    <!-- Yellow diamond gradient -->
+    <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF9C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFECB3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background (transparent center) -->
+  <rect x="0" y="0" width="400" height="500" fill="none"/>
+  
+  <!-- Checkerboard Frame Background -->
+  <g id="frame">
+    <!-- Top border -->
+    <rect x="20" y="20" width="360" height="60" fill="url(#checkerPattern)"/>
+    
+    <!-- Bottom border -->
+    <rect x="20" y="420" width="360" height="60" fill="url(#checkerPattern)"/>
+    
+    <!-- Left border -->
+    <rect x="20" y="80" width="60" height="340" fill="url(#checkerPattern)"/>
+    
+    <!-- Right border -->
+    <rect x="320" y="80" width="60" height="340" fill="url(#checkerPattern)"/>
+  </g>
+  
+  <!-- Corner joins for cleaner look -->
+  <g id="cornerJoins">
+    <rect x="20" y="20" width="60" height="60" fill="url(#checkerPattern)"/>
+    <rect x="320" y="20" width="60" height="60" fill="url(#checkerPattern)"/>
+    <rect x="20" y="420" width="60" height="60" fill="url(#checkerPattern)"/>
+    <rect x="320" y="420" width="60" height="60" fill="url(#checkerPattern)"/>
+  </g>
+  
+  <!-- Light yellow diamond in bottom left corner -->
+  <g id="yellowDiamond" transform="translate(60, 420)">
+    <polygon points="-30,-30 30,-30 30,30 -30,30" 
+             fill="url(#yellowGradient)" 
+             opacity="0.9"
+             stroke="#FFE082" 
+             stroke-width="2"/>
+    <polygon points="0,-45 45,0 0,45 -45,0" 
+             fill="url(#yellowGradient)" 
+             opacity="1"/>
+  </g>
+  
+  <!-- Transparent center area (for content) -->
+  <rect x="80" y="80" width="240" height="340" fill="none" stroke="none"/>
+</svg>

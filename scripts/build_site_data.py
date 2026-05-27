@@ -28,10 +28,10 @@ PROMPT_PAIR_TEXTS = [
     "Make a design",
     "Create a single SVG tile for a 2D top-down game map. This tile represents a luxury ornate crimson carpet/rug viewed from directly above, used for the executive floor of a cyberpunk corporate tower owned by a powerful female CEO. It should evoke dark opulence — think Persian rug meets corporate noir.",
     "i want a logo for GhostVector",
-    "Il progetto prevede l'apertura di una lavanderia automatica self-service nel centro città e vicino alla zona universitaria in Burkina Faso. Il target principale è composto da studenti, lavoratori e residenti urbani. L'attività offrirà lavaggio e asciugatura automatica con sistemi di pagamento moderni (contanti e mobile money), riducendo i costi di personale.",
+    'A simple, flat design icon for a digital "Word Cruncher." Two-color palette: Deep Navy and Bright Teal. The icon features a stylized book being compressed into a diamond shape, symbolizing the refinement of language. High contrast, white background, minimalist vector style.',
     "Create a professional logo for a communications company called Bell",
     "Design a modern logo to illustrate the concept of SAP BASIS Support. You may include the shape of the SAP logo, but without the letters SAP.",
-    "Une appli pour mon graveur laser ATOMSTAK P1 pour importer un fichier Lightburn et l’exporter en SVG",
+    'The logo is a clean, elegant wordmark that reads "Calidora" in a flowing script. It is set in a deep navy blue against a white background, giving it a refined, understated feel. The capital "C" is oversized and dramatic, beginning with a tall upward loop and sweeping down into a long, curved underline that subtly supports the rest of the word. That underline tapers off naturally near the end, creating movement without feeling busy. The lettering is smooth and connected, with soft, rounded strokes and consistent line weight - more modern script than ornate calligraphy. It feels feminine but not overly delicate. There are no additional symbols, icons, or embellishments; the personality comes entirely from the typography. Overall vibe: Minimal. Confident. Slightly romantic. Boutique-luxury without trying too hard.',
 ]
 
 

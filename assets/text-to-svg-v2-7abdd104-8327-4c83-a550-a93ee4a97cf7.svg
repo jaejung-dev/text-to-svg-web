@@ -1,0 +1,50 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Ham Body Outline -->
+  <g id="ham-outline">
+    <ellipse cx="100" cy="100" rx="85" ry="90" 
+             fill="white" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Circular Cross-Section End (Top Right) -->
+    <ellipse cx="165" cy="80" rx="35" ry="30" 
+             fill="white" stroke="black" stroke-width="3"/>
+    
+    <!-- Bone in Cross-Section -->
+    <circle cx="168" cy="82" r="8" 
+            fill="white" stroke="black" stroke-width="2.5"/>
+  </g>
+  
+  <!-- Scoring/Diamond Grid Pattern on Ham Surface -->
+  <g id="scoring-pattern">
+    <!-- Top Row Diamonds -->
+    <polygon points="130,55 145,48 160,55 145,62" 
+             fill="none" stroke="black" stroke-width="2"/>
+    <polygon points="150,45 165,38 180,45 165,52" 
+             fill="none" stroke="black" stroke-width="2"/>
+    <polygon points="135,65 150,58 165,65 150,72" 
+             fill="none" stroke="black" stroke-width="2"/>
+    
+    <!-- Middle Row Diamonds -->
+    <polygon points="115,75 130,68 145,75 130,82" 
+             fill="none" stroke="black" stroke-width="2"/>
+    <polygon points="125,85 140,78 155,85 140,92" 
+             fill="none" stroke="black" stroke-width="2"/>
+    <polygon points="105,95 120,88 135,95 120,102" 
+             fill="none" stroke="black" stroke-width="2"/>
+    
+    <!-- Bottom Row Diamonds -->
+    <polygon points="100,115 115,108 130,115 115,122" 
+             fill="none" stroke="black" stroke-width="2"/>
+    <polygon points="110,125 125,118 140,125 125,132" 
+             fill="none" stroke="black" stroke-width="2"/>
+    <polygon points="90,135 105,128 120,135 105,142" 
+             fill="none" stroke="black" stroke-width="2"/>
+  </g>
+  
+  <!-- Meat Texture Details in Cross-Section -->
+  <g id="meat-texture">
+    <path d="M 150 55 Q 170 50 185 75 Q 175 95 155 90" 
+          fill="none" stroke="black" stroke-width="2" opacity="0.8"/>
+    <path d="M 145 60 Q 165 65 175 85 Q 160 100 148 95" 
+          fill="none" stroke="black" stroke-width="2" opacity="0.6"/>
+  </g>
+</svg>

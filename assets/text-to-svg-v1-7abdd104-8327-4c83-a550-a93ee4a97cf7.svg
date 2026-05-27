@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <!-- Grid pattern for ham body -->
+    <pattern id="hamGrid" patternUnits="userSpaceOnUse" width="15" height="15">
+      <path d="M0,0 L15,15 M15,0 L0,15" stroke="#000" stroke-width="1.5" fill="none"/>
+    </pattern>
+  </defs>
+  
+  <!-- Main ham body -->
+  <g id="hamBody">
+    <!-- Outer shape of ham with diamond grid pattern -->
+    <path d="M 85,40 Q 60,60 50,95 Q 40,130 55,160 Q 70,185 100,185 Q 130,185 145,160 Q 160,130 150,95 Q 140,60 115,40 Z" 
+          fill="white" stroke="#000" stroke-width="3"/>
+    
+    <!-- Diamond grid pattern overlay -->
+    <path d="M 85,40 Q 60,60 50,95 Q 40,130 55,160 Q 70,185 100,185 Q 130,185 145,160 Q 160,130 150,95 Q 140,60 115,40 Z" 
+          fill="url(#hamGrid)" stroke="none"/>
+    
+    <!-- Additional grid lines for texture -->
+    <g fill="none" stroke="#000" stroke-width="1.5">
+      <line x1="75" y1="60" x2="90" y2="80"/>
+      <line x1="85" y1="50" x2="100" y2="70"/>
+      <line x1="95" y1="45" x2="110" y2="65"/>
+      <line x1="105" y1="45" x2="120" y2="65"/>
+      <line x1="115" y1="50" x2="130" y2="70"/>
+      <line x1="125" y1="60" x2="140" y2="80"/>
+      <line x1="130" y1="75" x2="145" y2="95"/>
+      <line x1="135" y1="95" x2="150" y2="115"/>
+      <line x1="130" y1="120" x2="145" y2="140"/>
+      <line x1="120" y1="135" x2="135" y2="155"/>
+      <line x1="105" y1="145" x2="120" y2="165"/>
+      <line x1="90" y1="145" x2="105" y2="165"/>
+      <line x1="75" y1="135" x2="90" y2="155"/>
+      <line x1="65" y1="120" x2="80" y2="140"/>
+      <line x1="60" y1="100" x2="75" y2="120"/>
+      <line x1="70" y1="80" x2="85" y2="100"/>
+    </g>
+  </g>
+  
+  <!-- Cross-section end (wider circular end) -->
+  <g id="hamCrossSection">
+    <!-- Outer circle of cross-section -->
+    <ellipse cx="165" cy="95" rx="25" ry="20" 
+             fill="white" stroke="#000" stroke-width="3"/>
+    
+    <!-- Central bone circle -->
+    <circle cx="165" cy="95" r="5" 
+            fill="white" stroke="#000" stroke-width="2"/>
+    
+    <!-- First meat texture shape (irregular oval) -->
+    <ellipse cx="165" cy="85" rx="10" ry="6" 
+             fill="none" stroke="#000" stroke-width="1.5"/>
+    
+    <!-- Second meat texture shape (irregular oval) -->
+    <ellipse cx="165" cy="105" rx="10" ry="6" 
+             fill="none" stroke="#000" stroke-width="1.5"/>
+    
+    <!-- Additional texture lines for meat -->
+    <path d="M 158 85 Q 165 88 172 85" 
+          fill="none" stroke="#000" stroke-width="1.2"/>
+    <path d="M 158 105 Q 165 102 172 105" 
+          fill="none" stroke="#000" stroke-width="1.2"/>
+    <path d="M 162 95 Q 165 98 168 95" 
+          fill="none" stroke="#000" stroke-width="1.2"/>
+  </g>
+  
+  <!-- Link between body and cross-section -->
+  <g id="hamNeck">
+    <path d="M 145,65 L 155,80" 
+          fill="none" stroke="#000" stroke-width="3"/>
+    <path d="M 145,75 L 155,90" 
+          fill="none" stroke="#000" stroke-width="3"/>
+  </g>
+</svg>

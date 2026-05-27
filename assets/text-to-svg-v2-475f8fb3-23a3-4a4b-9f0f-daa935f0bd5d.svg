@@ -1,0 +1,67 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body/Clothing Group -->
+  <g id="body-and-clothing">
+    <!-- White sweater body -->
+    <ellipse cx="200" cy="280" rx="90" ry="100" fill="#ffffff"/>
+    
+    <!-- Black collar stripes -->
+    <rect x="140" y="180" width="120" height="8" rx="2" fill="#000000"/>
+    <rect x="140" y="240" width="120" height="8" rx="2" fill="#000000"/>
+    
+    <!-- Left sleeve -->
+    <path d="M110 280 Q90 350 100 400 L130 390 Q125 340 140 280 Z" fill="#ffffff"/>
+    
+    <!-- Right sleeve -->
+    <path d="M290 280 Q310 350 300 400 L270 390 Q275 340 260 280 Z" fill="#ffffff"/>
+  </g>
+  
+  <!-- Head Group -->
+  <g id="head">
+    <!-- Face shape (light brown skin) -->
+    <ellipse cx="200" cy="150" rx="75" ry="90" fill="#d4a574"/>
+    
+    <!-- Short teal-blue hair -->
+    <path d="M125 130 C125 80 150 50 200 50 C250 50 275 80 275 130 L275 145 C275 145 260 120 200 120 C140 120 125 145 125 145 Z" fill="#2bbad5"/>
+    
+    <!-- Eyebrows -->
+    <path d="M160 135 Q170 125 180 135" stroke="#5c4033" stroke-width="3" fill="none"/>
+    <path d="M220 135 Q230 125 240 135" stroke="#5c4033" stroke-width="3" fill="none"/>
+    
+    <!-- Eyes -->
+    <circle cx="175" cy="145" r="8" fill="#ffffff"/>
+    <circle cx="175" cy="145" r="4" fill="#333333"/>
+    <circle cx="225" cy="145" r="8" fill="#ffffff"/>
+    <circle cx="225" cy="145" r="4" fill="#333333"/>
+    
+    <!-- Smile/Mouth -->
+    <path d="M180 180 Q200 200 220 180" stroke="#5c4033" stroke-width="3" fill="none"/>
+    
+    <!-- Open mouth interior -->
+    <path d="M190 185 Q200 205 210 185" fill="#ffffff"/>
+    
+    <!-- Teeth (visible inside open mouth) -->
+    <ellipse cx="200" cy="195" rx="8" ry="5" fill="#ffffff"/>
+    <ellipse cx="200" cy="195" rx="5" ry="3" fill="#f0f0f0"/>
+  </g>
+  
+  <!-- Arms Group -->
+  <g id="arms">
+    <!-- Left arm holding toothbrush -->
+    <path d="M120 290 Q100 350 110 380" stroke="#d4a574" stroke-width="25" fill="none"/>
+    
+    <!-- Hand holding brush -->
+    <ellipse cx="110" cy="390" rx="15" ry="18" fill="#d4a574"/>
+  </g>
+  
+  <!-- Toothbrush Group -->
+  <g id="toothbrush">
+    <!-- Black handle -->
+    <line x1="115" y1="385" x2="195" y2="190" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Brush head -->
+    <rect x="195" y="175" width="25" height="20" rx="4" fill="#333333"/>
+    
+    <!-- Brush bristles (white) -->
+    <rect x="195" y="175" width="25" height="10" rx="2" fill="#ffffff"/>
+  </g>
+</svg>

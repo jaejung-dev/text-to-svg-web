@@ -1,0 +1,19 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define colors -->
+    <style>
+      .frame { fill: #8B4513; }
+      .content-area { fill: #FFFFFF; }
+    </style>
+  </defs>
+  
+  <!-- Frame border - outer rectangle -->
+  <g id="brown-frame">
+    <rect x="0" y="0" width="400" height="300" class="frame"/>
+  </g>
+  
+  <!-- White content area - inner rectangle -->
+  <g id="white-content-area">
+    <rect x="20" y="15" width="360" height="270" class="content-area"/>
+  </g>
+</svg>

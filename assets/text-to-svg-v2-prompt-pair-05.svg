@@ -1,0 +1,168 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradients and filters -->
+  <defs>
+    <!-- Base crimson gradient -->
+    <linearGradient id="crimsonBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A00020;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#600010;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gold accent gradient -->
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="rugShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="1" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Texture pattern for rug fibers -->
+    <pattern id="fiberTexture" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#900020"/>
+      <circle cx="4" cy="4" r="1" fill="#A00010" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Rug shadow beneath -->
+  <ellipse cx="128" cy="128" rx="118" ry="118" fill="#000000" opacity="0.4" filter="url(#rugShadow)" stroke="#1a0000" stroke-width="1"/>
+  
+  <!-- Main rug body -->
+  <g id="rugBody" filter="url(#rugShadow)">
+    <!-- Base layer -->
+    <rect x="8" y="8" width="240" height="240" fill="url(#crimsonBase)"/>
+    
+    <!-- Fiber texture overlay -->
+    <rect x="8" y="8" width="240" height="240" fill="url(#fiberTexture)"/>
+    
+    <!-- Corner tassels/shadows -->
+    <circle cx="8" cy="8" r="6" fill="#400010" opacity="0.4"/>
+    <circle cx="248" cy="8" r="6" fill="#400010" opacity="0.4"/>
+    <circle cx="8" cy="248" r="6" fill="#400010" opacity="0.4"/>
+    <circle cx="248" cy="248" r="6" fill="#400010" opacity="0.4"/>
+  </g>
+  
+  <!-- Inner decorative band (Persian medallion style) -->
+  <g id="innerBand">
+    <!-- Primary ornamental frame -->
+    <path d="M 40 40 L 216 40 Q 232 40 232 56 L 232 200 Q 232 216 216 216 L 40 216 Q 24 216 24 200 L 24 56 Q 24 40 40 40 Z" 
+          fill="none" 
+          stroke="url(#goldAccent)" 
+          stroke-width="3"
+          opacity="0.85"/>
+    
+    <!-- Secondary decorative line -->
+    <path d="M 44 44 L 212 44 Q 224 44 224 56 L 224 200 Q 224 212 212 212 L 44 212 Q 32 212 32 200 L 32 56 Q 32 44 44 44 Z" 
+          fill="none" 
+          stroke="#B8860B" 
+          stroke-width="1.5"
+          opacity="0.6"/>
+  </g>
+  
+  <!-- Central medallion (cyberpunk-Persian fusion) -->
+  <g id="centralMedallion">
+    <!-- Outer medallion ring -->
+    <circle cx="128" cy="128" r="60" 
+            fill="none" 
+            stroke="url(#goldAccent)" 
+            stroke-width="4"
+            opacity="0.9"/>
+    
+    <!-- Eight-pointed star (Persian geometry meets cyber geometry) -->
+    <polygon points="128,68 135,80 148,78 150,91 162,95 155,107 168,112 160,124 172,136 158,140 166,152 153,155 160,168 147,168 140,180 128,173 116,180 109,168 96,168 103,155 90,152 98,140 84,136 97,124 90,112 103,107 96,95 108,91 110,78 123,80" 
+            fill="none" 
+            stroke="url(#goldAccent)" 
+            stroke-width="2.5"/>
+    
+    <!-- Inner geometric core -->
+    <circle cx="128" cy="128" r="25" 
+            fill="url(#goldAccent)" 
+            opacity="0.7"/>
+    
+    <!-- Core detail - corporate insignia symbol -->
+    <polygon points="128,108 136,115 128,123 120,115" fill="#8B0000"/>
+    <polygon points="128,128 136,135 128,143 120,135" fill="#8B0000"/>
+    <polygon points="128,128 120,135 128,123 136,115" fill="#400010"/>
+    
+    <!-- Tech circuit accents radiating from center -->
+    <line x1="128" y1="100" x2="128" y2="85" stroke="#B8860B" stroke-width="2"/>
+    <line x1="128" y1="156" x2="128" y2="171" stroke="#B8860B" stroke-width="2"/>
+    <line x1="100" y1="128" x2="85" y2="128" stroke="#B8860B" stroke-width="2"/>
+    <line x1="156" y1="128" x2="171" y2="128" stroke="#B8860B" stroke-width="2"/>
+    
+    <!-- Small gem-like accents at corners of medallion -->
+    <circle cx="128" cy="68" r="3" fill="url(#goldAccent)" opacity="0.9"/>
+    <circle cx="128" cy="188" r="3" fill="url(#goldAccent)" opacity="0.9"/>
+    <circle cx="68" cy="128" r="3" fill="url(#goldAccent)" opacity="0.9"/>
+    <circle cx="188" cy="128" r="3" fill="url(#goldAccent)" opacity="0.9"/>
+  </g>
+  
+  <!-- Border ornamentation bands -->
+  <g id="borderOrnaments">
+    <!-- Repeating diamond motif along edges -->
+    <g opacity="0.7">
+      <polygon points="40,32 44,38 40,44 36,38" fill="url(#goldAccent)"/>
+      <polygon points="64,32 68,38 64,44 60,38" fill="url(#goldAccent)"/>
+      <polygon points="88,32 92,38 88,44 84,38" fill="url(#goldAccent)"/>
+      <polygon points="112,32 116,38 112,44 108,38" fill="url(#goldAccent)"/>
+      <polygon points="136,32 140,38 136,44 132,38" fill="url(#goldAccent)"/>
+      <polygon points="160,32 164,38 160,44 156,38" fill="url(#goldAccent)"/>
+      <polygon points="184,32 188,38 184,44 180,38" fill="url(#goldAccent)"/>
+      <polygon points="208,32 212,38 208,44 204,38" fill="url(#goldAccent)"/>
+      
+      <!-- Bottom edge mirrors -->
+      <polygon points="40,224 44,218 40,212 36,218" fill="url(#goldAccent)"/>
+      <polygon points="64,224 68,218 64,212 60,218" fill="url(#goldAccent)"/>
+      <polygon points="88,224 92,218 88,212 84,218" fill="url(#goldAccent)"/>
+      <polygon points="112,224 116,218 112,212 108,218" fill="url(#goldAccent)"/>
+      <polygon points="136,224 140,218 136,212 132,218" fill="url(#goldAccent)"/>
+      <polygon points="160,224 164,218 160,212 156,218" fill="url(#goldAccent)"/>
+      <polygon points="184,224 188,218 184,212 180,218" fill="url(#goldAccent)"/>
+      <polygon points="208,224 212,218 208,212 204,218" fill="url(#goldAccent)"/>
+      
+      <!-- Left edge ornaments -->
+      <polygon points="32,64 26,68 32,74 38,68" fill="url(#goldAccent)"/>
+      <polygon points="32,88 26,92 32,98 38,92" fill="url(#goldAccent)"/>
+      <polygon points="32,112 26,116 32,122 38,116" fill="url(#goldAccent)"/>
+      <polygon points="32,136 26,140 32,146 38,140" fill="url(#goldAccent)"/>
+      <polygon points="32,160 26,164 32,170 38,164" fill="url(#goldAccent)"/>
+      <polygon points="32,184 26,188 32,194 38,188" fill="url(#goldAccent)"/>
+      <polygon points="32,208 26,212 32,218 38,212" fill="url(#goldAccent)"/>
+      
+      <!-- Right edge ornaments -->
+      <polygon points="224,64 230,68 224,74 218,68" fill="url(#goldAccent)"/>
+      <polygon points="224,88 230,92 224,98 218,92" fill="url(#goldAccent)"/>
+      <polygon points="224,112 230,116 224,122 218,116" fill="url(#goldAccent)"/>
+      <polygon points="224,136 230,140 224,146 218,140" fill="url(#goldAccent)"/>
+      <polygon points="224,160 230,164 224,170 218,164" fill="url(#goldAccent)"/>
+      <polygon points="224,184 230,188 224,194 218,188" fill="url(#goldAccent)"/>
+      <polygon points="224,208 230,212 224,218 218,212" fill="url(#goldAccent)"/>
+    </g>
+  </g>
+  
+  <!-- Subtle wear marks for authenticity (executive office high traffic) -->
+  <g id="wearMarks" opacity="0.15">
+    <ellipse cx="128" cy="128" rx="100" ry="90" fill="#000000"/>
+    <path d="M 100 60 Q 128 55 156 60 T 100 60" fill="none" stroke="#000000" stroke-width="2"/>
+    <path d="M 100 196 Q 128 201 156 196 T 100 196" fill="none" stroke="#000000" stroke-width="2"/>
+  </g>
+  
+  <!-- Cyberpunk corporate logo watermark (subtle, barely visible) -->
+  <g id="logoWatermark" opacity="0.05">
+    <rect x="100" y="90" width="56" height="16" fill="#B8860B"/>
+    <rect x="108" y="94" width="8" height="8" fill="#000000"/>
+    <rect x="128" y="94" width="8" height="8" fill="#000000"/>
+    <rect x="148" y="94" width="8" height="8" fill="#000000"/>
+  </g>
+</svg>

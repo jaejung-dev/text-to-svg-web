@@ -1,0 +1,60 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#f0f4f8"/>
+  
+  <!-- Outer SAP Blue Ring -->
+  <circle cx="100" cy="100" r="88" fill="#0099cc" stroke="#0070a0" stroke-width="3"/>
+  
+  <!-- Inner Circle -->
+  <circle cx="100" cy="100" r="72" fill="#ffffff"/>
+  
+  <!-- Shield/Support Shape -->
+  <path d="M100 55 L130 65 L130 105 Q130 135 100 145 Q70 135 70 105 L70 65 Z" fill="#0099cc" opacity="0.9"/>
+  
+  <!-- Gear/Technical Icon -->
+  <g transform="translate(100, 100)">
+    <!-- Outer Gear Ring -->
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#0070a0" stroke-width="3"/>
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#0070a0" stroke-width="2"/>
+    
+    <!-- Gear Teeth -->
+    <g stroke="#0099cc" stroke-width="3" stroke-linecap="round">
+      <line x1="0" y1="-28" x2="0" y2="-20"/>
+      <line x1="0" y1="28" x2="0" y2="20"/>
+      <line x1="28" y1="0" x2="20" y2="0"/>
+      <line x1="-28" y1="0" x2="-20" y2="0"/>
+      <line x1="20" y1="-20" x2="14" y2="-14"/>
+      <line x1="-20" y1="-20" x2="-14" y2="-14"/>
+      <line x1="20" y1="20" x2="14" y2="14"/>
+      <line x1="-20" y1="20" x2="-14" y2="14"/>
+    </g>
+    
+    <!-- Center Support Star -->
+    <polygon points="0,-8 7.6,-2.3 4.7,7.1 -4.7,7.1 -7.6,-2.3" fill="#0099cc"/>
+  </g>
+  
+  <!-- Support Lines (Vertical) -->
+  <g stroke="#0070a0" stroke-width="2" stroke-linecap="round">
+    <line x1="75" y1="85" x2="75" y2="95"/>
+    <line x1="125" y1="85" x2="125" y2="95"/>
+    <line x1="100" y1="82" x2="100" y2="98"/>
+  </g>
+  
+  <!-- Checkmark Support Symbol -->
+  <path d="M85 108 L93 116 L112 97" fill="none" stroke="#0070a0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Accent Dots -->
+  <circle cx="65" cy="100" r="3" fill="#0099cc"/>
+  <circle cx="135" cy="100" r="3" fill="#0099cc"/>
+  
+  <!-- Light Reflection -->
+  <ellipse cx="85" cy="80" rx="12" ry="8" fill="url(#reflection)" opacity="0.3"/>
+  
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="reflection" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

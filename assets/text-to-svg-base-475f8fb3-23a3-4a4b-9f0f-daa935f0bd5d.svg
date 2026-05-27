@@ -1,0 +1,58 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hair Group -->
+  <g id="hair">
+    <path d="M100 120 Q100 60 200 60 Q300 60 300 120 L300 150 L100 150 Z" fill="#20B2AA"/>
+    <ellipse cx="100" cy="110" rx="30" ry="25" fill="#20B2AA"/>
+    <ellipse cx="300" cy="110" rx="30" ry="25" fill="#20B2AA"/>
+  </g>
+
+  <!-- Face/Skin Group -->
+  <g id="face">
+    <ellipse cx="200" cy="180" rx="80" ry="90" fill="#D7B799"/>
+  </g>
+
+  <!-- Eyes Group -->
+  <g id="eyes">
+    <ellipse cx="170" cy="165" rx="12" ry="10" fill="#FFFFFF"/>
+    <circle cx="170" cy="165" r="5" fill="#333333"/>
+    <ellipse cx="230" cy="165" rx="12" ry="10" fill="#FFFFFF"/>
+    <circle cx="230" cy="165" r="5" fill="#333333"/>
+  </g>
+
+  <!-- Mouth Group -->
+  <g id="mouth">
+    <ellipse cx="200" cy="240" rx="20" ry="15" fill="#333333"/>
+    <path d="M185 240 Q200 250 215 240" fill="#FFFFFF"/>
+    <ellipse cx="190" cy="238" rx="8" ry="6" fill="#FFFFFF"/>
+    <ellipse cx="200" cy="235" rx="8" ry="6" fill="#FFFFFF"/>
+    <ellipse cx="210" cy="238" rx="8" ry="6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Toothbrush Group -->
+  <g id="toothbrush">
+    <path d="M260 240 L320 220 L330 235 L270 255 Z" fill="#000000"/>
+    <path d="M265 245 L310 230" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="325" cy="227" r="3" fill="#000000"/>
+  </g>
+
+  <!-- Neck Group -->
+  <g id="neck">
+    <path d="M180 260 L200 300 L220 260" fill="#D7B799"/>
+  </g>
+
+  <!-- Sweater Collar Group -->
+  <g id="sweater-collar">
+    <path d="M140 280 L200 310 L260 280 L260 320 L200 360 L140 320 Z" fill="#FFFFFF"/>
+    <path d="M140 280 L200 310 L260 280" stroke="#000000" stroke-width="3"/>
+  </g>
+
+  <!-- Sweater Body Group -->
+  <g id="sweater-body">
+    <path d="M120 320 L280 320 L280 500 L120 500 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Arm Group -->
+  <g id="arm">
+    <path d="M280 320 L330 260" stroke="#D7B799" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

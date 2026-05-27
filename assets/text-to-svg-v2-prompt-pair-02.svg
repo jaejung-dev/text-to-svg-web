@@ -1,0 +1,28 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="128" cy="128" r="120" fill="#1E40AF"/>
+  
+  <!-- Shield base for DLP -->
+  <path d="M128 60 L180 75 V120 C180 165 128 195 128 195 C128 195 76 165 76 120 V75 L128 60 Z" 
+        fill="#F59E0B" stroke="#FBBF24" stroke-width="4"/>
+  
+  <!-- Shield outline details -->
+  <path d="M128 65 L170 78 V120 C170 158 128 185 128 185 C128 185 86 158 86 120 V78 L128 65 Z" 
+        fill="none" stroke="#F59E0B" stroke-width="2"/>
+  
+  <!-- Lock on shield -->
+  <rect x="110" y="95" width="36" height="28" rx="4" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="118" y="103" width="20" height="12" rx="2" fill="#DC2626"/>
+  
+  <!-- Download/Transfer arrow -->
+  <path d="M128 160 V80" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M115 100 L128 85 L141 100" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Connection lines for SFTP -->
+  <line x1="128" y1="75" x2="60" y2="50" stroke="#FFFFFF" stroke-width="3" opacity="0.6"/>
+  <line x1="128" y1="75" x2="196" y2="50" stroke="#FFFFFF" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Corner accents -->
+  <path d="M76 58 L65 52" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 58 L191 52" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .basis-shield { fill: #232e3c; }
+      .gear-path { fill: none; stroke: #fff; stroke-width: 2; }
+      .block-a { fill: #00548b; }
+      .block-b { fill: #f68d1f; }
+      .block-c { fill: #008000; }
+      .block-d { fill: #ffcc00; }
+      .support-icon { fill: #232e3c; }
+    </style>
+  </defs>
+  
+  <!-- SAP Parallelogram Base Shape -->
+  <g id="sap-rhombus">
+    <path class="block-a" d="M40,50 L100,30 L160,50 L100,70 Z"/>
+    <path class="block-b" d="M40,50 L100,70 L100,110 L40,90 Z"/>
+    <path class="block-c" d="M100,70 L160,50 L160,90 L100,110 Z"/>
+    <path class="block-d" d="M40,90 L100,110 L160,90 L100,150 Z"/>
+  </g>
+  
+  <!-- Support/Gear Element Overlay -->
+  <g id="basis-support">
+    <circle class="basis-shield" cx="100" cy="100" r="35"/>
+    <path class="gear-path" d="M100,65 L100,35 M100,165 L100,135 M65,100 L35,100 M165,100 L135,100 M73.6,73.6 L52.3,52.3 M147.7,147.7 L126.4,126.4 M73.6,126.4 L52.3,147.7 M147.7,52.3 L126.4,73.6"/>
+    <circle class="basis-shield" cx="100" cy="100" r="12"/>
+    <path class="support-icon" d="M100,75 L100,82 M100,118 L100,125 M75,100 L82,100 M118,100 L125,100 M84,84 L89,89 M116,116 L121,121 M84,116 L89,111 M116,84 L121,89"/>
+  </g>
+  
+  <!-- Decorative Technology Elements -->
+  <g id="tech-accent">
+    <path fill="none" stroke="#232e3c" stroke-width="1" stroke-opacity="0.3" d="M30,20 L30,180"/>
+    <path fill="none" stroke="#232e3c" stroke-width="1" stroke-opacity="0.3" d="M170,20 L170,180"/>
+    <circle cx="30" cy="20" r="2" fill="#232e3c"/>
+    <circle cx="170" cy="20" r="2" fill="#232e3c"/>
+    <circle cx="30" cy="180" r="2" fill="#232e3c"/>
+    <circle cx="170" cy="180" r="2" fill="#232e3c"/>
+  </g>
+</svg>

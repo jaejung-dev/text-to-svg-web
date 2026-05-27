@@ -1,0 +1,65 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo Group -->
+  <g id="bell-logo">
+    <!-- Background Circle (Subtle) -->
+    <circle id="bg-circle" cx="60" cy="60" r="55" fill="#1a365d" opacity="0.1"/>
+    
+    <!-- Bell Icon -->
+    <g id="bell-icon">
+      <!-- Bell Body -->
+      <path id="bell-body" 
+            d="M 40,50 Q 40,80 60,80 Q 80,80 80,50 
+               M 40,50 A 20,20 0 0,1 80,50
+               M 55,50 L 55,35
+               M 45,35 A 10,10 0 0,1 65,35
+               M 55,35 L 55,25
+               M 60,25 A 5,5 0 0,1 70,25" 
+            fill="none" 
+            stroke="#2c5282" 
+            stroke-width="3" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"/>
+      
+      <!-- Clapper -->
+      <circle id="bell-clapper" cx="60" cy="42" r="4" fill="#2c5282"/>
+      
+      <!-- Radiating Waves (Communication Symbol) -->
+      <path id="wave-1" d="M 85,50 Q 95,50 100,55" fill="none" stroke="#3182ce" stroke-width="2" opacity="0.6"/>
+      <path id="wave-2" d="M 85,55 Q 95,55 105,60" fill="none" stroke="#3182ce" stroke-width="2" opacity="0.5"/>
+      <path id="wave-3" d="M 85,60 Q 95,60 110,65" fill="none" stroke="#3182ce" stroke-width="2" opacity="0.4"/>
+    </g>
+    
+    <!-- Company Name -->
+    <text id="company-name" 
+          x="120" 
+          y="58" 
+          font-family="Arial, sans-serif" 
+          font-size="36" 
+          font-weight="700" 
+          fill="#1a365d"
+          letter-spacing="2">
+      Bell
+    </text>
+    
+    <!-- Tagline -->
+    <text id="tagline" 
+          x="120" 
+          y="85" 
+          font-family="Arial, sans-serif" 
+          font-size="12" 
+          fill="#4a5568"
+          letter-spacing="3">
+      CONNECTING THE WORLD
+    </text>
+    
+    <!-- Underline Accent -->
+    <line id="accent-line" 
+          x1="115" 
+          y1="92" 
+          x2="250" 
+          y2="92" 
+          stroke="#3182ce" 
+          stroke-width="2" 
+          opacity="0.5"/>
+  </g>
+</svg>

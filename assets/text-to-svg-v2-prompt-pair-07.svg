@@ -1,0 +1,38 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#ffffff"/>
+  
+  <!-- Diamond shape base (compressed book container) -->
+  <g id="diamond-base">
+    <polygon points="100,20 170,100 100,180 30,100" 
+             fill="#00d4aa" 
+             opacity="0.9"/>
+  </g>
+  
+  <!-- Book spine element inside diamond -->
+  <g id="book-spine">
+    <rect x="95" y="40" width="10" height="100" 
+          fill="#1a2b4c" 
+          rx="2"/>
+  </g>
+  
+  <!-- Pages representation -->
+  <g id="book-pages">
+    <path d="M 65,80 L 135,80 L 130,90 L 70,90 Z" 
+          fill="#1a2b4c"/>
+    <path d="M 68,95 L 132,95 L 128,105 L 72,105 Z" 
+          fill="#1a2b4c"/>
+    <path d="M 70,110 L 130,110 L 126,120 L 74,120 Z" 
+          fill="#1a2b4c"/>
+  </g>
+  
+  <!-- Compression lines (symbolizing word crunching) -->
+  <g id="compression-lines">
+    <line x1="40" y1="100" x2="60" y2="100" 
+          stroke="#00d4aa" 
+          stroke-width="3"/>
+    <line x1="140" y1="100" x2="160" y2="100" 
+          stroke="#00d4aa" 
+          stroke-width="3"/>
+  </g>
+</svg>

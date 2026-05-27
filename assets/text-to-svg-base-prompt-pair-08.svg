@@ -1,0 +1,39 @@
+<svg viewBox="0 0 350 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the Bell Icon to give it a premium, dimensional look -->
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#004e92;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000428;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Text Gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2b2e46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004e92;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Icon Group -->
+  <g id="logo-icon" transform="translate(10, 10)">
+    <!-- Bell Shape -->
+    <path d="M 45,5 C 25,5 10,20 10,45 C 10,75 35,95 45,105 C 55,95 80,75 80,45 C 80,20 65,5 45,5 Z" 
+          fill="url(#bellGradient)" stroke="#ffffff" stroke-width="1.5"/>
+    
+    <!-- Inner Signal/Clapper Shape (Abstract) -->
+    <circle cx="45" cy="55" r="12" fill="none" stroke="#ffffff" stroke-width="3"/>
+    
+    <!-- Dynamic swoosh representing connectivity -->
+    <path d="M 35,40 Q 45,45 55,40" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Logo Text Group -->
+  <g id="logo-text" transform="translate(80, 85)">
+    <!-- Main Word -->
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="bold" 
+          fill="url(#textGradient)" letter-spacing="-1">BELL</text>
+    
+    <!-- Tagline / Descriptor -->
+    <text x="0" y="28" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="300" 
+          fill="#5c5c5c" letter-spacing="3">GLOBAL COMMUNICATIONS</text>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="circleGradient1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="circleGradient2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </radialGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Large decorative circles -->
+  <g id="background-circles">
+    <circle cx="150" cy="150" r="80" fill="url(#circleGradient1)" opacity="0.4"/>
+    <circle cx="650" cy="450" r="100" fill="url(#circleGradient2)" opacity="0.3"/>
+    <circle cx="700" cy="150" r="60" fill="#e94560" opacity="0.2"/>
+  </g>
+  
+  <!-- Central geometric design -->
+  <g id="central-design">
+    <!-- Hexagon -->
+    <polygon points="400,200 470,240 470,320 400,360 330,320 330,240" 
+             fill="none" stroke="#e94560" stroke-width="3" opacity="0.8"/>
+    
+    <!-- Inner circle -->
+    <circle cx="400" cy="280" r="40" fill="url(#circleGradient1)" opacity="0.6" filter="url(#glow)"/>
+    
+    <!-- Rotated square -->
+    <rect x="350" y="230" width="100" height="100" transform="rotate(45 400 280)" 
+          fill="none" stroke="#00d9ff" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Floating shapes -->
+  <g id="floating-elements" opacity="0.6">
+    <circle cx="100" cy="500" r="25" fill="#e94560"/>
+    <circle cx="700" cy="80" r="30" fill="#00d9ff"/>
+    <circle cx="200" cy="300" r="15" fill="#e94560"/>
+    <circle cx="600" cy="500" r="20" fill="#00d9ff"/>
+    <circle cx="50" cy="250" r="35" fill="#e94560"/>
+  </g>
+  
+  <!-- Decorative lines -->
+  <g id="decorative-lines" stroke="#00d9ff" stroke-width="1" opacity="0.3">
+    <line x1="0" y1="100" x2="200" y2="100"/>
+    <line x1="600" y1="500" x2="800" y2="500"/>
+    <line x1="150" y1="0" x2="150" y2="150"/>
+    <line x1="650" y1="450" x2="650" y2="600"/>
+  </g>
+  
+  <!-- Corner accents -->
+  <g id="corner-accents" fill="#e94560">
+    <path d="M0 0 L30 0 L0 30 Z"/>
+    <path d="M800 0 L770 0 L800 30 Z"/>
+    <path d="M0 600 L30 600 L0 570 Z"/>
+    <path d="M800 600 L770 600 L800 570 Z"/>
+  </g>
+</svg>

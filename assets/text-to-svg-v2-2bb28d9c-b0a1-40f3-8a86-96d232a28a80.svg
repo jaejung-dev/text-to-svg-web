@@ -1,0 +1,85 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Group: Character -->
+  <g id="character" transform="translate(200, 50)">
+    
+    <!-- Background transparent area (invisible but defines canvas) -->
+    <rect x="-50" y="-100" width="300" height="550" fill="transparent"/>
+    
+    <!-- Legs -->
+    <g id="legs">
+      <path d="M-40 200 L-50 380 L-30 380 L-30 230 L-40 200 Z" fill="#1a1a1a"/>
+      <path d="M40 200 L50 380 L30 380 L30 230 L40 200 Z" fill="#1a1a1a"/>
+    </g>
+    
+    <!-- Shoes -->
+    <g id="shoes">
+      <ellipse cx="-40" cy="380" rx="20" ry="12" fill="#f5e6c8"/>
+      <ellipse cx="40" cy="380" rx="20" ry="12" fill="#f5e6c8"/>
+    </g>
+    
+    <!-- Torso/Body base -->
+    <ellipse cx="0" cy="200" rx="45" ry="80" fill="#feae3d"/>
+    
+    <!-- Blazer -->
+    <g id="blazer">
+      <path d="M-45 200 L-30 220 L-25 280 L25 280 L30 220 L45 200 Z" fill="#2ca3a3"/>
+      <line x1="0" y1="200" x2="0" y2="280" stroke="#1e8e8e" stroke-width="2"/>
+    </g>
+    
+    <!-- Head -->
+    <g id="head">
+      <ellipse cx="0" cy="120" rx="35" ry="40" fill="#ffdbb4"/>
+      
+      <!-- Hair -->
+      <path d="M-35 100 C-35 80, -30 70, 0 70 C30 70, 35 80, 35 100 C35 115, 25 120, 0 120 C-25 120, -35 115, -35 100 Z" fill="#3d2914"/>
+      
+      <!-- Face Features -->
+      <g id="face">
+        <!-- Closed Eyes -->
+        <path d="M-15 120 Q-8 115, -2 120" stroke="#3d2914" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <path d="M2 120 Q8 115, 15 120" stroke="#3d2914" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        
+        <!-- Smiling Mouth -->
+        <path d="M-10 140 Q0 150, 10 140" stroke="#d46a6a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        
+        <!-- Blush -->
+        <ellipse cx="-20" cy="135" rx="8" ry="5" fill="#ffb3b3" opacity="0.6"/>
+        <ellipse cx="20" cy="135" rx="8" ry="5" fill="#ffb3b3" opacity="0.6"/>
+      </g>
+      
+      <!-- Neck -->
+      <rect x="-8" y="155" width="16" height="25" fill="#ffdbb4"/>
+    </g>
+    
+    <!-- Right Arm (Peace Sign) -->
+    <g id="right-arm">
+      <!-- Upper Arm -->
+      <path d="M35 215 L55 180 L45 175 L25 210 Z" fill="#ffdbb4"/>
+      
+      <!-- Sleeve -->
+      <path d="M35 215 L55 180 L55 185 L30 220 Z" fill="#2ca3a3"/>
+      
+      <!-- Forearm -->
+      <path d="M55 180 L65 155 L58 150 L48 175 Z" fill="#ffdbb4"/>
+      
+      <!-- Hand -->
+      <circle cx="65" cy="155" r="12" fill="#ffdbb4"/>
+      
+      <!-- Peace Sign Fingers -->
+      <path d="M60 150 L60 140" stroke="#ffdbb4" stroke-width="3" stroke-linecap="round"/>
+      <path d="M68 150 L68 138" stroke="#ffdbb4" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Left Arm -->
+    <g id="left-arm">
+      <path d="M-35 215 L-55 195 L-48 190 L-28 225 Z" fill="#ffdbb4"/>
+      <path d="M-35 215 L-55 195 L-55 198 L-30 230 Z" fill="#2ca3a3"/>
+    </g>
+    
+    <!-- Bag Strap -->
+    <g id="bag-strap">
+      <path d="M-40 205 C-50 205, -50 230, -45 250" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+    
+  </g>
+</svg>

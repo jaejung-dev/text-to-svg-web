@@ -1,0 +1,98 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for depth and lighting -->
+    <radialGradient id="rugCenterGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#7a1212; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#290000; stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37; stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8a6e2e; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4d3d15; stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000; stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#000; stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#000; stop-opacity:0.8" />
+    </linearGradient>
+
+    <!-- Noise filter for carpet texture -->
+    <filter id="carpetTexture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#8a1c1c" surfaceScale="1.5">
+        <feDistantLight azimuth="45" elevation="60" />
+      </feDiffuseLighting>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 -0.5" in="diffuseLighting" result="coloredNoise" />
+      <feComposite operator="in" in="coloredNoise" in2="SourceGraphic" result="composite" />
+    </filter>
+
+    <!-- Pattern for intricate weaving -->
+    <pattern id="weavePattern" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="4" height="4" fill="none" />
+      <line x1="0" y1="0" x2="4" y2="4" stroke="#4a0a0a" stroke-width="1" opacity="0.3" />
+      <line x1="4" y1="0" x2="0" y2="4" stroke="#4a0a0a" stroke-width="1" opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <!-- 1. The Floor (Dark Corporate Environment) -->
+  <rect width="64" height="64" fill="#1a1a1a" />
+  
+  <!-- 2. Main Carpet Area (Crimson Base) -->
+  <g id="rug-base">
+    <rect x="4" y="4" width="56" height="56" rx="0.5" ry="0.5" fill="#5e0a0a" />
+    
+    <!-- Texture Overlay -->
+    <rect x="4" y="4" width="56" height="56" fill="url(#weavePattern)" opacity="0.4" />
+    <rect x="4" y="4" width="56" height="56" fill="url(#carpetTexture)" opacity="0.2" style="mix-blend-mode: overlay;" />
+    
+    <!-- Lighting/Vignette -->
+    <rect x="4" y="4" width="56" height="56" fill="url(#shadowGradient)" opacity="0.6" />
+    <rect x="4" y="4" width="56" height="56" fill="url(#rugCenterGlow)" opacity="0.4" />
+  </g>
+
+  <!-- 3. Ornate Border (Persian/Geometric Hybrid) -->
+  <g id="border-layer">
+    <!-- Outer Binding -->
+    <rect x="5" y="5" width="54" height="54" fill="none" stroke="#220000" stroke-width="0.5" />
+    
+    <!-- Geometric Corners -->
+    <path d="M5,5 L9,9 M9,9 L9,5 M5,5 L5,9 M55,5 L51,9 M55,5 L55,9 M5,55 L9,51 M5,55 L5,51 M55,55 L51,51 M55,55 L55,51" 
+          stroke="url(#goldGradient)" stroke-width="1" opacity="0.8" fill="none" />
+
+    <!-- Inner Ornate Band -->
+    <rect x="8" y="8" width="48" height="48" fill="none" stroke="#000" stroke-width="1" />
+    <rect x="9" y="9" width="46" height="46" fill="none" stroke="#8a1c1c" stroke-width="0.5" />
+    
+    <!-- Complex Border Pattern (Simplified Chevron/Floral mix) -->
+    <path d="M12,12 L52,12 L52,52 L12,52 Z" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" opacity="0.6" />
+  </g>
+
+  <!-- 4. Central Medallion (The "CEO" Monogram/Stylized Star) -->
+  <g id="centerpiece" transform="translate(32,32)">
+    <!-- Background Star -->
+    <polygon points="0,-8 2.5,-4 7,-4 3.5,-1 5,4 0,1 -5,4 -3.5,-1 -7,-4 -2.5,-4" 
+             fill="#b8860b" opacity="0.3" />
+    
+    <!-- Main Diamond Medallion -->
+    <rect x="-8" y="-8" width="16" height="16" transform="rotate(45)" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.8" />
+    
+    <!-- Inner Detailed Diamond -->
+    <rect x="-4" y="-4" width="8" height="8" transform="rotate(45)" fill="none" stroke="#5e0a0a" stroke-width="1" />
+    
+    <!-- The "M" or Sharp Logo (Corporate Monogram) -->
+    <path d="M-3,-6 L0,2 L3,-6 M-2,-3 L0,0 L2,-3" 
+          stroke="url(#goldGradient)" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- 5. Floor Reflections/Sheen (Cyberpunk touch) -->
+  <rect x="0" y="0" width="64" height="64" fill="url(#shadowGradient)" style="mix-blend-mode: multiply;" />
+  
+  <!-- Subtle Spotlights -->
+  <ellipse cx="16" cy="16" rx="6" ry="6" fill="#fff" opacity="0.05" />
+  <ellipse cx="48" cy="48" rx="6" ry="6" fill="#fff" opacity="0.05" />
+  <ellipse cx="16" cy="48" rx="6" ry="6" fill="#fff" opacity="0.05" />
+  <ellipse cx="48" cy="16" rx="6" ry="6" fill="#fff" opacity="0.05" />
+
+</svg>

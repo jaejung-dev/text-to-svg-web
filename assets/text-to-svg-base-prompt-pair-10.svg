@@ -1,0 +1,18 @@
+<svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="150" fill="#ffffff" />
+
+  <!-- Typography Group -->
+  <g transform="translate(60, 85)" style="font-family: 'Great Vibes', 'Brush Script MT', 'Lucida Calligraphy', cursive; font-size: 90px; font-weight: 300; letter-spacing: -2px;">
+    <!-- Wordmark Text -->
+    <text fill="#0B2242" style="dominant-baseline: alphabetic;">Calidora</text>
+  </g>
+
+  <!-- Custom C Underline Element -->
+  <!-- Added to ensure the specific dramatic swoop and tapering underline described -->
+  <path d="M 45 105 C 45 80, 55 60, 75 60 C 95 60, 115 65, 130 70 C 150 75, 200 75, 240 70 C 270 66, 290 60, 310 55 C 330 50, 340 45, 340 45" fill="none" stroke="#0B2242" stroke-width="1.5" stroke-linecap="round" style="opacity: 0.6" />
+
+  <!-- Subtle C Stem Extension -->
+  <!-- Reinforces the oversized C feel with a vertical connection -->
+  <path d="M 45 60 C 30 40, 45 10, 55 10 L 55 60" fill="none" stroke="#0B2242" stroke-width="1.5" stroke-linecap="round" />
+</svg>

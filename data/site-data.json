@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22 13:52 UTC",
+  "generated_at": "2026-05-27 19:22 UTC",
   "source_report": "/home/ubuntu/lica-score-web/report-data.json",
   "generation_endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
   "samples": [
@@ -39,7 +39,40 @@
           "label": "gpt-5.2",
           "asset": "assets/0e691069-3f66-497b-be66-6f04192be5b0-gpt-5-2-56b608a7e6.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-0e691069-3f66-497b-be66-6f04192be5b0.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 150,
+          "output_tokens": 818,
+          "elapsed_seconds": 8.921,
+          "svg_chars": 1356,
+          "sha256": "2f582833d4b51160bd4c6a455050e8591185c13ce2290f4bb9eda0e35e5a411f",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": null,
+          "status": "error",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='model-qklg45d3.api.baseten.co', port=443): Read timed out. (read timeout=180)\"))"
+        },
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": null,
+          "status": "error",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='model-wpj7zz8w.api.baseten.co', port=443): Read timed out. (read timeout=180)\"))"
+        }
+      }
     },
     {
       "id": "2bb28d9c-b0a1-40f3-8a86-96d232a28a80",
@@ -77,7 +110,109 @@
           "label": "gpt-5.2",
           "asset": "assets/2bb28d9c-b0a1-40f3-8a86-96d232a28a80-gpt-5-2-cdf1e1b172.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-2bb28d9c-b0a1-40f3-8a86-96d232a28a80.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 155,
+          "output_tokens": 2007,
+          "elapsed_seconds": 9.351,
+          "svg_chars": 3560,
+          "sha256": "687e293d0f266279d360d42c3a06155377716412463639df6457b840f2d2601d",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-2bb28d9c-b0a1-40f3-8a86-96d232a28a80.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 155,
+          "output_tokens": 1342,
+          "elapsed_seconds": 12.916,
+          "svg_chars": 2686,
+          "sha256": "2716ceada90a8805454e38e794eef7f5eae4e769de55bda45f1b39cedc6e8e2b",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-2bb28d9c-b0a1-40f3-8a86-96d232a28a80.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 155,
+          "output_tokens": 1638,
+          "elapsed_seconds": 15.348,
+          "svg_chars": 3130,
+          "sha256": "b985f3422e489e816dc05afdc9b400887e9406a34d1bc7d0a4795a885f740c28",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "gt": {
+          "id": "gt",
+          "index": 0,
+          "score": 0.96875,
+          "raw_cosine": 0.96875,
+          "logit": 14.0625
+        },
+        "claude": {
+          "id": "claude",
+          "index": 1,
+          "score": 0.9140625,
+          "raw_cosine": 0.9140625,
+          "logit": 13.25
+        },
+        "gpt-5.2": {
+          "id": "gpt-5.2",
+          "index": 1,
+          "score": 0.8125,
+          "raw_cosine": 0.8125,
+          "logit": 11.75
+        },
+        "gemini": {
+          "id": "gemini",
+          "index": 0,
+          "score": 0.74609375,
+          "raw_cosine": 0.74609375,
+          "logit": 10.8125
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.98046875,
+          "raw_cosine": 0.98046875,
+          "logit": 14.1875
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.98046875,
+          "raw_cosine": 0.98046875,
+          "logit": 14.1875
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.9765625,
+          "raw_cosine": 0.9765625,
+          "logit": 14.1875
+        }
+      },
+      "lica_winner": "text-to-svg-base",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 2.923
     },
     {
       "id": "375920f5-f42c-42d0-815d-45c5ff30baeb",
@@ -115,7 +250,40 @@
           "label": "gpt-5.2",
           "asset": "assets/375920f5-f42c-42d0-815d-45c5ff30baeb-gpt-5-2-d58cf7add7.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-375920f5-f42c-42d0-815d-45c5ff30baeb.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 130,
+          "output_tokens": 525,
+          "elapsed_seconds": 5.191,
+          "svg_chars": 651,
+          "sha256": "2e1b9fbd640be303c1c932975013bc35b93ac4ac06ff65226d95a036d8836082",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": null,
+          "status": "error",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='model-qklg45d3.api.baseten.co', port=443): Read timed out. (read timeout=600)\"))"
+        },
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": null,
+          "status": "error",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='model-wpj7zz8w.api.baseten.co', port=443): Read timed out. (read timeout=600)\"))"
+        }
+      }
     },
     {
       "id": "475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d",
@@ -153,7 +321,109 @@
           "label": "gpt-5.2",
           "asset": "assets/475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d-gpt-5-2-071dfd12d6.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 153,
+          "output_tokens": 1308,
+          "elapsed_seconds": 5.988,
+          "svg_chars": 1980,
+          "sha256": "3cc83e45033930fbfd555dea98c6c4fa0782b85d1e58c882f7b91c1afb452631",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 153,
+          "output_tokens": 1317,
+          "elapsed_seconds": 12.149,
+          "svg_chars": 2501,
+          "sha256": "48f07ebf9e95c4604b3d631bfcfea7199e3fe3f2d5e8007790e8b2670d431d5c",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 153,
+          "output_tokens": 1782,
+          "elapsed_seconds": 16.244,
+          "svg_chars": 2976,
+          "sha256": "1515db6dd7b28969c19ec7d505b448a1afd72bae882c8c3749d52936e3dfb9dc",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "gt": {
+          "id": "gt",
+          "index": 0,
+          "score": 0.96875,
+          "raw_cosine": 0.96875,
+          "logit": 14.0625
+        },
+        "claude": {
+          "id": "claude",
+          "index": 1,
+          "score": 0.671875,
+          "raw_cosine": 0.671875,
+          "logit": 9.75
+        },
+        "gpt-5.2": {
+          "id": "gpt-5.2",
+          "index": 1,
+          "score": 0.7109375,
+          "raw_cosine": 0.7109375,
+          "logit": 10.3125
+        },
+        "gemini": {
+          "id": "gemini",
+          "index": 0,
+          "score": 0.6484375,
+          "raw_cosine": 0.6484375,
+          "logit": 9.375
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.984375,
+          "raw_cosine": 0.984375,
+          "logit": 14.25
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.9765625,
+          "raw_cosine": 0.9765625,
+          "logit": 14.1875
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.96875,
+          "raw_cosine": 0.96875,
+          "logit": 14.0625
+        }
+      },
+      "lica_winner": "text-to-svg-base",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 2.674
     },
     {
       "id": "48fb52e9-d309-4bec-8735-091663026e70",
@@ -191,7 +461,109 @@
           "label": "gpt-5.2",
           "asset": "assets/48fb52e9-d309-4bec-8735-091663026e70-gpt-5-2-be1f49a8ef.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-48fb52e9-d309-4bec-8735-091663026e70.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 152,
+          "output_tokens": 1527,
+          "elapsed_seconds": 14.056,
+          "svg_chars": 2835,
+          "sha256": "536dd82be457fa8fbaffad31ac014273d63070982e3679f1e368eb89b4858a2a",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-48fb52e9-d309-4bec-8735-091663026e70.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 152,
+          "output_tokens": 2527,
+          "elapsed_seconds": 23.01,
+          "svg_chars": 4413,
+          "sha256": "41b38834d944128c5944d8054a8b3a93145edc7d25c0a4d84014c0f0aff7cd40",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-48fb52e9-d309-4bec-8735-091663026e70.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 152,
+          "output_tokens": 1682,
+          "elapsed_seconds": 7.291,
+          "svg_chars": 2446,
+          "sha256": "9446d7d5791731b9536106c86af1f937d74e52eb6d5cc27dba46e3852823bdfc",
+          "engine": "sglang",
+          "lora_enabled": false
+        }
+      },
+      "lica_scored_at": "2026-05-27 18:53 UTC",
+      "lica_score_elapsed_seconds": 64.111,
+      "lica_scores": {
+        "gt": {
+          "id": "gt",
+          "index": 0,
+          "score": 0.984375,
+          "raw_cosine": 0.984375,
+          "logit": 14.25
+        },
+        "claude": {
+          "id": "claude",
+          "index": 1,
+          "score": 0.65234375,
+          "raw_cosine": 0.65234375,
+          "logit": 9.4375
+        },
+        "gpt-5.2": {
+          "id": "gpt-5.2",
+          "index": 1,
+          "score": 0.67578125,
+          "raw_cosine": 0.67578125,
+          "logit": 9.8125
+        },
+        "gemini": {
+          "id": "gemini",
+          "index": 0,
+          "score": 0.66015625,
+          "raw_cosine": 0.66015625,
+          "logit": 9.5625
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.984375,
+          "raw_cosine": 0.984375,
+          "logit": 14.25
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.88671875,
+          "raw_cosine": 0.88671875,
+          "logit": 12.875
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.953125,
+          "raw_cosine": 0.953125,
+          "logit": 13.8125
+        }
+      },
+      "lica_winner": "gt",
+      "lica_score_errors": []
     },
     {
       "id": "6b75002f-4553-4495-af73-69dff9260dd7",
@@ -229,7 +601,32 @@
           "label": "gpt-5.2",
           "asset": "assets/6b75002f-4553-4495-af73-69dff9260dd7-gpt-5-2-bbfcfa6ec6.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-6b75002f-4553-4495-af73-69dff9260dd7.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 132,
+          "output_tokens": 311,
+          "elapsed_seconds": 3.16,
+          "svg_chars": 225,
+          "sha256": "b8f6db3fb50ab1894c09f764379a6c5321808f851be724386ee3c0e0874635e4",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": null,
+          "status": "error",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "error": "HTTPError('500 Server Error: Internal Server Error for url: https://model-wpj7zz8w.api.baseten.co/environments/production/predict')"
+        }
+      }
     },
     {
       "id": "6effa7a8-4436-4915-9d93-bc871ea36dcc",
@@ -267,7 +664,24 @@
           "label": "gpt-5.2",
           "asset": "assets/6effa7a8-4436-4915-9d93-bc871ea36dcc-gpt-5-2-b88a8356bb.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-6effa7a8-4436-4915-9d93-bc871ea36dcc.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 152,
+          "output_tokens": 661,
+          "elapsed_seconds": 6.272,
+          "svg_chars": 1147,
+          "sha256": "e044d8852ed795e17ad03c2f402e5405e239d88905fdf1d0e5fd9133d7b4aa9d",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      }
     },
     {
       "id": "789455bd-a5a3-4611-837c-dcbd7aaac18d",
@@ -305,7 +719,24 @@
           "label": "gpt-5.2",
           "asset": "assets/789455bd-a5a3-4611-837c-dcbd7aaac18d-gpt-5-2-f9df2d6ac9.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-789455bd-a5a3-4611-837c-dcbd7aaac18d.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 123,
+          "output_tokens": 317,
+          "elapsed_seconds": 3.197,
+          "svg_chars": 534,
+          "sha256": "544d5bf1693fb5edfd091881a7495d5babc443d3946f2eb80c80699f6432c958",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      }
     },
     {
       "id": "7abdd104-8327-4c83-a550-a93ee4a97cf7",
@@ -343,7 +774,109 @@
           "label": "gpt-5.2",
           "asset": "assets/7abdd104-8327-4c83-a550-a93ee4a97cf7-gpt-5-2-34823c7d90.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-7abdd104-8327-4c83-a550-a93ee4a97cf7.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 162,
+          "output_tokens": 1058,
+          "elapsed_seconds": 9.816,
+          "svg_chars": 2101,
+          "sha256": "7a3ff83266a24a87c73af50371ee27d55f65bff359c552410a3786acea43ec09",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-7abdd104-8327-4c83-a550-a93ee4a97cf7.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 162,
+          "output_tokens": 1556,
+          "elapsed_seconds": 14.185,
+          "svg_chars": 3002,
+          "sha256": "41bad449e5531509f2be46eaf048fa5d369345916d4f2e435d0cc25edd2b1b32",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-7abdd104-8327-4c83-a550-a93ee4a97cf7.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 162,
+          "output_tokens": 4169,
+          "elapsed_seconds": 18.494,
+          "svg_chars": 1732,
+          "sha256": "7540725b0e2c017cf74c534263e39e74cb874e501952fc02e8182835611e7d79",
+          "engine": "sglang",
+          "lora_enabled": false
+        }
+      },
+      "lica_scores": {
+        "gt": {
+          "id": "gt",
+          "index": 0,
+          "score": 0.98828125,
+          "raw_cosine": 0.98828125,
+          "logit": 14.3125
+        },
+        "claude": {
+          "id": "claude",
+          "index": 1,
+          "score": 0.7421875,
+          "raw_cosine": 0.7421875,
+          "logit": 10.75
+        },
+        "gemini": {
+          "id": "gemini",
+          "index": 0,
+          "score": 0.984375,
+          "raw_cosine": 0.984375,
+          "logit": 14.25
+        },
+        "gpt-5.2": {
+          "id": "gpt-5.2",
+          "index": 1,
+          "score": 0.80078125,
+          "raw_cosine": 0.80078125,
+          "logit": 11.625
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.98828125,
+          "raw_cosine": 0.98828125,
+          "logit": 14.3125
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.984375,
+          "raw_cosine": 0.984375,
+          "logit": 14.25
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.984375,
+          "raw_cosine": 0.984375,
+          "logit": 14.25
+        }
+      },
+      "lica_winner": "gt",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 2.127
     },
     {
       "id": "ad63e329-a034-4ba7-8b30-8cd06ff9611f",
@@ -381,7 +914,24 @@
           "label": "gpt-5.2",
           "asset": "assets/ad63e329-a034-4ba7-8b30-8cd06ff9611f-gpt-5-2-c3f1113462.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-ad63e329-a034-4ba7-8b30-8cd06ff9611f.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 127,
+          "output_tokens": 310,
+          "elapsed_seconds": 3.144,
+          "svg_chars": 457,
+          "sha256": "6f53653537bf84200d585715e1b0fe5e6280345ce86ccb833db2a6a3fcd5ad75",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      }
     },
     {
       "id": "ba99ded2-01fe-4df0-9e81-da619c6a19a7",
@@ -419,7 +969,109 @@
           "label": "gpt-5.2",
           "asset": "assets/ba99ded2-01fe-4df0-9e81-da619c6a19a7-gpt-5-2-ef15a781a8.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-ba99ded2-01fe-4df0-9e81-da619c6a19a7.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 144,
+          "output_tokens": 1443,
+          "elapsed_seconds": 13.145,
+          "svg_chars": 2824,
+          "sha256": "cdb48d1e1c1daaedcfd9ad37614be4a7531e441760558ab0de66008b40adab54",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-ba99ded2-01fe-4df0-9e81-da619c6a19a7.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 144,
+          "output_tokens": 3955,
+          "elapsed_seconds": 17.333,
+          "svg_chars": 3340,
+          "sha256": "6b3e9b5cb8bbd8a6d54e53bf44d6248ae97cfa859ad34bee70f107652487e84c",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-ba99ded2-01fe-4df0-9e81-da619c6a19a7.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 144,
+          "output_tokens": 3110,
+          "elapsed_seconds": 28.229,
+          "svg_chars": 3415,
+          "sha256": "7f8d8cdc52b7f4ad1608bdd01c5b00c25a09f7579a925aad1d611959e98f1bb2",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "gt": {
+          "id": "gt",
+          "index": 0,
+          "score": 0.96875,
+          "raw_cosine": 0.96875,
+          "logit": 14.0625
+        },
+        "claude": {
+          "id": "claude",
+          "index": 1,
+          "score": 0.81640625,
+          "raw_cosine": 0.81640625,
+          "logit": 11.8125
+        },
+        "gpt-5.2": {
+          "id": "gpt-5.2",
+          "index": 1,
+          "score": 0.74609375,
+          "raw_cosine": 0.74609375,
+          "logit": 10.8125
+        },
+        "gemini": {
+          "id": "gemini",
+          "index": 0,
+          "score": 0.69921875,
+          "raw_cosine": 0.69921875,
+          "logit": 10.125
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.94140625,
+          "raw_cosine": 0.94140625,
+          "logit": 13.625
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.91796875,
+          "raw_cosine": 0.91796875,
+          "logit": 13.3125
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.96875,
+          "raw_cosine": 0.96875,
+          "logit": 14.0625
+        }
+      },
+      "lica_winner": "gt",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 2.811
     },
     {
       "id": "c6747ea9-218b-4465-b89a-61a7c68fc5df",
@@ -457,7 +1109,24 @@
           "label": "gpt-5.2",
           "asset": "assets/c6747ea9-218b-4465-b89a-61a7c68fc5df-gpt-5-2-c5bbc9b475.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-c6747ea9-218b-4465-b89a-61a7c68fc5df.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 128,
+          "output_tokens": 480,
+          "elapsed_seconds": 4.659,
+          "svg_chars": 522,
+          "sha256": "ad44d00d0e2eb99eceb894eb2afa657b6b2688d0608d6c61bb27f38206f48efa",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      }
     },
     {
       "id": "cfa27aa4-7443-4ea4-bae7-c2bd746a2e23",
@@ -495,7 +1164,24 @@
           "label": "gpt-5.2",
           "asset": "assets/cfa27aa4-7443-4ea4-bae7-c2bd746a2e23-gpt-5-2-e607f85982.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-cfa27aa4-7443-4ea4-bae7-c2bd746a2e23.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 134,
+          "output_tokens": 1073,
+          "elapsed_seconds": 9.963,
+          "svg_chars": 2336,
+          "sha256": "ca3253cc9f28f6e2fcf7805812dd6408611fa86c20e437689f7b47104564b88d",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      }
     },
     {
       "id": "df15ae1c-d219-449f-b27b-c908c615af70",
@@ -533,7 +1219,24 @@
           "label": "gpt-5.2",
           "asset": "assets/df15ae1c-d219-449f-b27b-c908c615af70-gpt-5-2-371ffe18b2.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-df15ae1c-d219-449f-b27b-c908c615af70.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 130,
+          "output_tokens": 1670,
+          "elapsed_seconds": 15.344,
+          "svg_chars": 1767,
+          "sha256": "4a94ba76b1c2a26e550c75e9bfd43b9798a34b6c15ebd9c20fa101bfe6964c2c",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      }
     },
     {
       "id": "eaa659f0-83cd-4be3-a1b4-551dcacad485",
@@ -571,7 +1274,109 @@
           "label": "gpt-5.2",
           "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-gpt-5-2-8bd9b4f67f.png"
         }
-      ]
+      ],
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-eaa659f0-83cd-4be3-a1b4-551dcacad485.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 162,
+          "output_tokens": 1993,
+          "elapsed_seconds": 18.228,
+          "svg_chars": 3816,
+          "sha256": "2dd65e88807b55153d4a4315393ec5b0eb34ec5f1a24e8d7d65d2d89fd125d1d",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-eaa659f0-83cd-4be3-a1b4-551dcacad485.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 162,
+          "output_tokens": 3037,
+          "elapsed_seconds": 13.525,
+          "svg_chars": 3017,
+          "sha256": "80e8b1dad13bf8cf446df5d99b2335800ef877a960834f675450eebac654cabd",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-eaa659f0-83cd-4be3-a1b4-551dcacad485.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 162,
+          "output_tokens": 2107,
+          "elapsed_seconds": 19.089,
+          "svg_chars": 3968,
+          "sha256": "e348bd4d72ec9799aeed3308f579eeb534ed72d26472ede54d8feee1ae3fd70f",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "gt": {
+          "id": "gt",
+          "index": 0,
+          "score": 0.96484375,
+          "raw_cosine": 0.96484375,
+          "logit": 14.0
+        },
+        "claude": {
+          "id": "claude",
+          "index": 1,
+          "score": 0.6875,
+          "raw_cosine": 0.6875,
+          "logit": 10.0
+        },
+        "gpt-5.2": {
+          "id": "gpt-5.2",
+          "index": 1,
+          "score": 0.6875,
+          "raw_cosine": 0.6875,
+          "logit": 10.0
+        },
+        "gemini": {
+          "id": "gemini",
+          "index": 0,
+          "score": 0.63671875,
+          "raw_cosine": 0.63671875,
+          "logit": 9.25
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.96484375,
+          "raw_cosine": 0.96484375,
+          "logit": 14.0
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.9453125,
+          "raw_cosine": 0.9453125,
+          "logit": 13.6875
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.98046875,
+          "raw_cosine": 0.98046875,
+          "logit": 14.1875
+        }
+      },
+      "lica_winner": "text-to-svg-v2",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 2.833
     }
   ],
   "prompt_pairs": [
@@ -785,7 +1590,81 @@
             "raw_text_prefix": null
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-01.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 104,
+          "output_tokens": 2009,
+          "elapsed_seconds": 18.39,
+          "svg_chars": 4023,
+          "sha256": "48d1a6ecf7921794096c7a5b31485ea2e64397e56739287247915185170e753d",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-01.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 104,
+          "output_tokens": 1213,
+          "elapsed_seconds": 5.309,
+          "svg_chars": 1771,
+          "sha256": "1e896bf75b3affaf52c7db33e3fb5fab668fe49c32e4411c341ee5464f1a4902",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-01.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 104,
+          "output_tokens": 3172,
+          "elapsed_seconds": 28.893,
+          "svg_chars": 2583,
+          "sha256": "c2308c2225602f1f29bb90355859cccd8f028eadbb24ec01b10ffa24b0652ba5",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.984375,
+          "raw_cosine": 0.984375,
+          "logit": 14.25
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.97265625,
+          "raw_cosine": 0.97265625,
+          "logit": 14.125
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.8671875,
+          "raw_cosine": 0.8671875,
+          "logit": 12.5625
+        }
+      },
+      "lica_winner": "text-to-svg-base",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 0.85
     },
     {
       "id": "prompt-pair-02",
@@ -997,7 +1876,81 @@
             "raw_text_prefix": null
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-02.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 85,
+          "output_tokens": 883,
+          "elapsed_seconds": 8.693,
+          "svg_chars": 1417,
+          "sha256": "61c473fb50dfed4e613d6984fd3845d8dfe80f548bf17b8592e427829960c876",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-02.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 85,
+          "output_tokens": 1087,
+          "elapsed_seconds": 5.081,
+          "svg_chars": 1922,
+          "sha256": "4e6c7186574b4839950bb0a6aedd99e32818cfc7c9007d4cabb22dc0fedc5336",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-02.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 85,
+          "output_tokens": 959,
+          "elapsed_seconds": 9.33,
+          "svg_chars": 2008,
+          "sha256": "d22fcd690d32db524163222aa4aebd9642df3eb50c3572f6efbb965e9a47e31a",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.9765625,
+          "raw_cosine": 0.9765625,
+          "logit": 14.1875
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.96484375,
+          "raw_cosine": 0.96484375,
+          "logit": 14.0
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.94921875,
+          "raw_cosine": 0.94921875,
+          "logit": 13.75
+        }
+      },
+      "lica_winner": "text-to-svg-v1",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 0.834
     },
     {
       "id": "prompt-pair-03",
@@ -1209,7 +2162,81 @@
             "raw_text_prefix": null
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-03.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 83,
+          "output_tokens": 1529,
+          "elapsed_seconds": 6.644,
+          "svg_chars": 3169,
+          "sha256": "927e0b7552c2ae24bfb44e3aca513388bfcdb403213f95c72493355818c08a22",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-03.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 83,
+          "output_tokens": 1913,
+          "elapsed_seconds": 17.539,
+          "svg_chars": 3793,
+          "sha256": "b883569be2062466dab17bd642ec4b4e3029781ec1a08be011b739cba1911040",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-03.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 83,
+          "output_tokens": 2606,
+          "elapsed_seconds": 23.713,
+          "svg_chars": 3257,
+          "sha256": "b453807a54dea519c4748647704361f4366ea4b3535d7974ef173da3b95cede7",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.9609375,
+          "raw_cosine": 0.9609375,
+          "logit": 13.9375
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.953125,
+          "raw_cosine": 0.953125,
+          "logit": 13.8125
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.953125,
+          "raw_cosine": 0.953125,
+          "logit": 13.8125
+        }
+      },
+      "lica_winner": "text-to-svg-v1",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 2.054
     },
     {
       "id": "prompt-pair-04",
@@ -1421,7 +2448,81 @@
             "raw_text_prefix": null
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-04.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 78,
+          "output_tokens": 1361,
+          "elapsed_seconds": 6.272,
+          "svg_chars": 2852,
+          "sha256": "6f35d96ad9d03ca6e1cc6b81b14a226d93900e59e76762d08e36842faf131c68",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-04.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 78,
+          "output_tokens": 1432,
+          "elapsed_seconds": 13.222,
+          "svg_chars": 3193,
+          "sha256": "33c72e08205b7ffbc25ee8ec515d84ab76c0ce96a430b72ebc14ed279b29df52",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-04.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 78,
+          "output_tokens": 1108,
+          "elapsed_seconds": 10.218,
+          "svg_chars": 2271,
+          "sha256": "9da714b7ead77aa4177691b522d43ec7b8c38920a2f4332bc93a4789ea21a47b",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.95703125,
+          "raw_cosine": 0.95703125,
+          "logit": 13.875
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.94140625,
+          "raw_cosine": 0.94140625,
+          "logit": 13.625
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.9453125,
+          "raw_cosine": 0.9453125,
+          "logit": 13.6875
+        }
+      },
+      "lica_winner": "text-to-svg-base",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 2.086
     },
     {
       "id": "prompt-pair-05",
@@ -1633,7 +2734,81 @@
             "cached": true
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-05.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 138,
+          "output_tokens": 3273,
+          "elapsed_seconds": 14.26,
+          "svg_chars": 4950,
+          "sha256": "4f66fbd4d126e97b01a3364f34a3c76782a577659c762992a1bd24df00458e30",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-05.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 138,
+          "output_tokens": 3995,
+          "elapsed_seconds": 36.87,
+          "svg_chars": 8184,
+          "sha256": "c67557bbc2e4c2b00e6a3e1623a1c69ea0dc44c8fab8c54ffe9629806f3199ef",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-05.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 138,
+          "output_tokens": 2628,
+          "elapsed_seconds": 23.931,
+          "svg_chars": 5771,
+          "sha256": "ec9fd7bb920281abc769a65474883c37db01172006442904a711076d6d1f083a",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.98046875,
+          "raw_cosine": 0.98046875,
+          "logit": 14.1875
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.9765625,
+          "raw_cosine": 0.9765625,
+          "logit": 14.1875
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.97265625,
+          "raw_cosine": 0.97265625,
+          "logit": 14.125
+        }
+      },
+      "lica_winner": "text-to-svg-base",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 0.965
     },
     {
       "id": "prompt-pair-06",
@@ -1845,12 +3020,86 @@
             "raw_text_prefix": null
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-06.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 82,
+          "output_tokens": 2268,
+          "elapsed_seconds": 9.803,
+          "svg_chars": 2799,
+          "sha256": "88cb4ad4e1587890b5618d7cce6d89d04f6d9499b1d96da4a1cc024bf00c1c98",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-06.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 82,
+          "output_tokens": 1177,
+          "elapsed_seconds": 10.867,
+          "svg_chars": 2380,
+          "sha256": "7dca3c944e5093db34bc94a624cf98ba03f23b43643a656615c0a31e12d2be90",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-06.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 82,
+          "output_tokens": 991,
+          "elapsed_seconds": 9.145,
+          "svg_chars": 1885,
+          "sha256": "2a32b1ac28f13f4b9658ead88719cd5418b7766c74e70ae9562eb0a4ed788a0e",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.9765625,
+          "raw_cosine": 0.9765625,
+          "logit": 14.1875
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.9609375,
+          "raw_cosine": 0.9609375,
+          "logit": 13.9375
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.96484375,
+          "raw_cosine": 0.96484375,
+          "logit": 14.0
+        }
+      },
+      "lica_winner": "text-to-svg-v1",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 0.937
     },
     {
       "id": "prompt-pair-07",
       "index": 7,
-      "prompt": "Il progetto prevede l'apertura di una lavanderia automatica self-service nel centro città e vicino alla zona universitaria in Burkina Faso. Il target principale è composto da studenti, lavoratori e residenti urbani. L'attività offrirà lavaggio e asciugatura automatica con sistemi di pagamento moderni (contanti e mobile money), riducendo i costi di personale.",
+      "prompt": "A simple, flat design icon for a digital \"Word Cruncher.\" Two-color palette: Deep Navy and Bright Teal. The icon features a stylized book being compressed into a diamond shape, symbolizing the refinement of language. High contrast, white background, minimalist vector style.",
       "generated": {
         "source": "text-to-svg-production",
         "label": "Text-to-SVG Production",
@@ -2057,7 +3306,81 @@
             "raw_text_prefix": null
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-07.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 131,
+          "output_tokens": 5643,
+          "elapsed_seconds": 25.372,
+          "svg_chars": 1058,
+          "sha256": "344dcba54ddac339e83686977a095a80b1fb15d539e0c2cf06be63ad9dc08636",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-07.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 131,
+          "output_tokens": 670,
+          "elapsed_seconds": 6.31,
+          "svg_chars": 1122,
+          "sha256": "67312ceb952556b76e63ba16de077d1481e99ad98388578508db208b65dbdd24",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-07.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 131,
+          "output_tokens": 893,
+          "elapsed_seconds": 8.286,
+          "svg_chars": 1461,
+          "sha256": "b330eac8a66c4375292b31e2656d9a81b8369f9a07813953e1dffd8333f52e0a",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.98046875,
+          "raw_cosine": 0.98046875,
+          "logit": 14.1875
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.98046875,
+          "raw_cosine": 0.98046875,
+          "logit": 14.1875
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.96875,
+          "raw_cosine": 0.96875,
+          "logit": 14.0625
+        }
+      },
+      "lica_winner": "text-to-svg-base",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 0.808
     },
     {
       "id": "prompt-pair-08",
@@ -2269,7 +3592,81 @@
             "raw_text_prefix": null
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-08.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 85,
+          "output_tokens": 1953,
+          "elapsed_seconds": 8.373,
+          "svg_chars": 1753,
+          "sha256": "fecacd525c9233872ce92ff9a2db1b92c974b10f729bed321387d21faab04ce6",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-08.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 85,
+          "output_tokens": 1332,
+          "elapsed_seconds": 12.185,
+          "svg_chars": 3371,
+          "sha256": "e3cde36f8074b4665287f64ad0f6bd2f464ee95c315d4584c908751c09c21ce2",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-08.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 85,
+          "output_tokens": 942,
+          "elapsed_seconds": 8.621,
+          "svg_chars": 2002,
+          "sha256": "0d145b661a4ce773711471fb3b56fdad0238efd029984566bd107dcd06e76d8a",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.97265625,
+          "raw_cosine": 0.97265625,
+          "logit": 14.125
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.96875,
+          "raw_cosine": 0.96875,
+          "logit": 14.0625
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.97265625,
+          "raw_cosine": 0.97265625,
+          "logit": 14.125
+        }
+      },
+      "lica_winner": "text-to-svg-v1",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 0.796
     },
     {
       "id": "prompt-pair-09",
@@ -2481,12 +3878,86 @@
             "raw_text_prefix": null
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-09.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 104,
+          "output_tokens": 1207,
+          "elapsed_seconds": 5.522,
+          "svg_chars": 2289,
+          "sha256": "623352ae09c3e7367805dbda674343c035d1c3e88c9656caa8539820f97af28a",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-09.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 104,
+          "output_tokens": 1700,
+          "elapsed_seconds": 15.485,
+          "svg_chars": 3639,
+          "sha256": "730cf3f0639ae280bcf4f4076db9a36b96a1d7f9a2f71f08a171ae168423b8d3",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-09.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 104,
+          "output_tokens": 4617,
+          "elapsed_seconds": 42.33,
+          "svg_chars": 3464,
+          "sha256": "7dcbcbc87bc3fc5940dc625f4bacd8bb5653bf30d45e83bc786df2c35fd04e31",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scores": {
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.9765625,
+          "raw_cosine": 0.9765625,
+          "logit": 14.1875
+        },
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.7578125,
+          "raw_cosine": 0.7578125,
+          "logit": 11.0
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.95703125,
+          "raw_cosine": 0.95703125,
+          "logit": 13.875
+        }
+      },
+      "lica_winner": "text-to-svg-base",
+      "lica_score_errors": [],
+      "lica_scored_at": "2026-05-27 18:32 UTC",
+      "lica_score_elapsed_seconds": 1.153
     },
     {
       "id": "prompt-pair-10",
       "index": 10,
-      "prompt": "Une appli pour mon graveur laser ATOMSTAK P1 pour importer un fichier Lightburn et l’exporter en SVG",
+      "prompt": "The logo is a clean, elegant wordmark that reads \"Calidora\" in a flowing script. It is set in a deep navy blue against a white background, giving it a refined, understated feel. The capital \"C\" is oversized and dramatic, beginning with a tall upward loop and sweeping down into a long, curved underline that subtly supports the rest of the word. That underline tapers off naturally near the end, creating movement without feeling busy. The lettering is smooth and connected, with soft, rounded strokes and consistent line weight - more modern script than ornate calligraphy. It feels feminine but not overly delicate. There are no additional symbols, icons, or embellishments; the personality comes entirely from the typography. Overall vibe: Minimal. Confident. Slightly romantic. Boutique-luxury without trying too hard.",
       "generated": {
         "source": "text-to-svg-production",
         "label": "Text-to-SVG Production",
@@ -2693,10 +4164,114 @@
             "raw_text_prefix": null
           }
         ]
-      }
+      },
+      "model_generations": {
+        "text-to-svg-base": {
+          "source": "text-to-svg-base",
+          "label": "Base",
+          "asset": "assets/text-to-svg-base-prompt-pair-10.svg",
+          "status": "ok",
+          "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 243,
+          "output_tokens": 5521,
+          "elapsed_seconds": 24.878,
+          "svg_chars": 1083,
+          "sha256": "984cb1c705c39b9443df4bd12ca476b725162c952c54732422a12bca8bcf903b",
+          "engine": "sglang",
+          "lora_enabled": false
+        },
+        "text-to-svg-v2": {
+          "source": "text-to-svg-v2",
+          "label": "V2",
+          "asset": "assets/text-to-svg-v2-prompt-pair-10.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict",
+          "svg_parse_error": null,
+          "input_tokens": 243,
+          "output_tokens": 1223,
+          "elapsed_seconds": 11.314,
+          "svg_chars": 1909,
+          "sha256": "585a5db958d99568cc57731d60300ae99a9fa5d0f0b36e6a2b8c5b5527143b20",
+          "engine": "sglang",
+          "lora_enabled": true
+        },
+        "text-to-svg-v1": {
+          "source": "text-to-svg-v1",
+          "label": "V1",
+          "asset": "assets/text-to-svg-v1-prompt-pair-10.svg",
+          "status": "ok",
+          "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict",
+          "svg_parse_error": null,
+          "input_tokens": 243,
+          "output_tokens": 3829,
+          "elapsed_seconds": 35.055,
+          "svg_chars": 5877,
+          "sha256": "01d403342abeb3312b560079738f326a482837163d0e1b99916162b15af14e0e",
+          "engine": "sglang",
+          "lora_enabled": true
+        }
+      },
+      "lica_scored_at": "2026-05-27 18:52 UTC",
+      "lica_score_elapsed_seconds": 62.821,
+      "lica_scores": {
+        "text-to-svg-v1": {
+          "id": "text-to-svg-v1",
+          "index": 1,
+          "score": 0.97265625,
+          "raw_cosine": 0.97265625,
+          "logit": 14.125
+        },
+        "text-to-svg-base": {
+          "id": "text-to-svg-base",
+          "index": 0,
+          "score": 0.9609375,
+          "raw_cosine": 0.9609375,
+          "logit": 13.9375
+        },
+        "text-to-svg-v2": {
+          "id": "text-to-svg-v2",
+          "index": 0,
+          "score": 0.9765625,
+          "raw_cosine": 0.9765625,
+          "logit": 14.1875
+        }
+      },
+      "lica_winner": "text-to-svg-v2",
+      "lica_score_errors": []
     }
   ],
   "lora_toggle_endpoint": "https://model-wl1pmo0q.api.baseten.co/environments/production/predict",
   "lora_toggle_settings": "default sampling (temperature 0.9, top_p 0.95, top_k 50)",
-  "hf_lora_local_settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)"
+  "hf_lora_local_settings": "HF PEFT local default sampling (temperature 0.9, top_p 0.95, top_k 50)",
+  "model_comparison": {
+    "models": [
+      {
+        "id": "text-to-svg-base",
+        "label": "Base",
+        "endpoint": "https://model-wpj7zz8w.api.baseten.co/environments/production/predict"
+      },
+      {
+        "id": "text-to-svg-v1",
+        "label": "V1",
+        "endpoint": "https://model-qklg45d3.api.baseten.co/deployment/wpjkvkp/predict"
+      },
+      {
+        "id": "text-to-svg-v2",
+        "label": "V2",
+        "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict"
+      }
+    ],
+    "model_order": [
+      "text-to-svg-base",
+      "text-to-svg-v1",
+      "text-to-svg-v2"
+    ],
+    "lica_endpoint": "https://model-32p625xq.api.baseten.co/environments/production/predict",
+    "generation_payload": {
+      "description": "PROMPT"
+    },
+    "last_started_at": "2026-05-27 18:59 UTC",
+    "last_completed_at": "2026-05-27 18:53 UTC"
+  }
 }

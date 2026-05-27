@@ -1,0 +1,12 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Decorative seal/starburst pattern with jagged edges -->
+  <g id="seal-graphic" transform="translate(100, 100)">
+    <path 
+      d="M 0 -75 L 15 -45 L 45 -45 L 15 -15 L 45 15 L 75 15 L 45 45 L 75 75 L 45 45 L 15 45 L 15 75 L -15 45 L -45 45 L -15 15 L -45 -15 L -75 -15 L -45 -45 L -75 -45 L -45 -15 L -45 -45 Z"
+      fill="none"
+      stroke="#E9A887"
+      stroke-width="4"
+      stroke-linejoin="round"
+    />
+  </g>
+</svg>

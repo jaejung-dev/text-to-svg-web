@@ -1,8 +1,12 @@
-const ORDER = ["gt", "text-to-svg-production", "claude", "gemini", "gpt-5.2"];
+const ORDER = ["gt", "text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2", "claude", "gemini", "gpt-5.2"];
+const MODEL_COMPARISON_ORDER = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2"];
 
 const LABELS = {
   gt: "Ground Truth",
   "text-to-svg-production": "Text-to-SVG",
+  "text-to-svg-base": "Base",
+  "text-to-svg-v1": "V1",
+  "text-to-svg-v2": "V2",
   claude: "Claude",
   gemini: "Gemini",
   "gpt-5.2": "GPT-5.2",
@@ -11,6 +15,9 @@ const LABELS = {
 const BADGES = {
   gt: "GT",
   "text-to-svg-production": "Ours",
+  "text-to-svg-base": "Base",
+  "text-to-svg-v1": "V1",
+  "text-to-svg-v2": "V2",
   claude: "Ref",
   gemini: "Ref",
   "gpt-5.2": "Ref",
@@ -33,43 +40,84 @@ function assetUrl(asset) {
   return `${asset}${separator}v=${encodeURIComponent(ASSET_CACHE_KEY)}`;
 }
 
+function itemStatus(item) {
+  if (item?.status) return item.status;
+  if (item?.asset) return "ok";
+  return "pending";
+}
+
+function placeholderText(item) {
+  const status = itemStatus(item);
+  if (status === "error") return "Baseten unavailable";
+  if (status === "no_svg") return "No SVG returned";
+  return "Baseten pending";
+}
+
 function assetElement(item) {
   if (!item?.asset) {
-    return `<div class="empty">Not generated yet</div>`;
+    return `<div class="empty"><strong>${escapeHtml(placeholderText(item))}</strong><span>Placeholder until generation completes.</span></div>`;
   }
   const asset = escapeHtml(assetUrl(item.asset));
   return `<img src="${asset}" alt="${escapeHtml(item.label)}" loading="lazy" />`;
 }
 
+function isGeneratedSource(source) {
+  return source === "text-to-svg-production"
+    || source === "text-to-svg-base"
+    || source === "text-to-svg-v1"
+    || source === "text-to-svg-v2";
+}
+
+function isPrimaryGeneratedSource(source) {
+  return source === "text-to-svg-v2";
+}
+
+function badgeClass(source) {
+  if (source === "gt") return "gt";
+  if (isGeneratedSource(source)) return "generated";
+  return "ref";
+}
+
+function scoreLine(item) {
+  if (item?.lica_score == null) return "";
+  const label = `Lica ${Number(item.lica_score).toFixed(4)}${item.is_lica_winner ? " · winner" : ""}`;
+  return `<div class="score-pill ${item.is_lica_winner ? "winner" : ""}">${escapeHtml(label)}</div>`;
+}
+
 function resultMeta(source, item) {
-  if (source !== "text-to-svg-production") return "";
   const parts = [];
-  if (item?.output_tokens != null) parts.push(`${item.output_tokens} output tokens`);
-  if (item?.elapsed_seconds != null) parts.push(`${item.elapsed_seconds}s`);
+  if (isGeneratedSource(source) && item?.output_tokens != null) parts.push(`${item.output_tokens} output tokens`);
+  if (isGeneratedSource(source) && item?.elapsed_seconds != null) parts.push(`${item.elapsed_seconds}s`);
   if (item?.svg_parse_error) parts.push(`parse: ${item.svg_parse_error}`);
-  return parts.length ? `<div class="result-meta">${escapeHtml(parts.join(" · "))}</div>` : "";
+  if (itemStatus(item) !== "ok" && item?.error) parts.push(item.error);
+  if (itemStatus(item) === "pending") parts.push("generation pending");
+  const meta = parts.length ? `<div class="result-meta">${escapeHtml(parts.join(" · "))}</div>` : "";
+  return `${scoreLine(item)}${meta}`;
 }
 
 function sampleItems(sample) {
   const bySource = Object.fromEntries((sample.baselines || []).map((item) => [item.source, item]));
   bySource["text-to-svg-production"] = sample.generated || {};
+  Object.entries(sample.model_generations || {}).forEach(([source, item]) => {
+    bySource[source] = item || {};
+  });
   return ORDER.map((source) => ({
     source,
     label: LABELS[source] || source,
     ...bySource[source],
-  })).filter((item) => item.source === "text-to-svg-production" || item.asset);
+    lica_score: sample.lica_scores?.[source]?.score,
+    is_lica_winner: sample.lica_winner === source,
+  })).filter((item) => isGeneratedSource(item.source) || item.asset);
 }
 
 function renderSample(sample, index) {
   const items = sampleItems(sample);
-  const generated = sample.generated || {};
-  const generatedMeta = generated.status === "ok"
-    ? [
-      generated.input_tokens != null ? `Input ${generated.input_tokens}` : null,
-      generated.output_tokens != null ? `Output ${generated.output_tokens}` : null,
-      generated.elapsed_seconds != null ? `${generated.elapsed_seconds}s` : null,
-    ].filter(Boolean).join("<br>")
-    : "Generation pending";
+  const generatedMeta = [
+    sample.lica_winner ? `Lica winner: ${LABELS[sample.lica_winner] || sample.lica_winner}` : "Lica pending",
+    ...items
+      .filter((item) => isGeneratedSource(item.source))
+      .map((item) => `${LABELS[item.source] || item.source}: ${itemStatus(item)}`),
+  ].join("<br>");
 
   return `
     <article class="sample-card" data-bucket="${escapeHtml(sample.bucket)}">
@@ -85,12 +133,12 @@ function renderSample(sample, index) {
       </div>
       <div class="comparison-grid">
         ${items.map((item) => `
-          <div class="result-card ${item.source === "text-to-svg-production" ? "featured" : ""}">
+          <div class="result-card ${isPrimaryGeneratedSource(item.source) ? "featured" : ""}">
             <div class="image-wrap">${assetElement(item)}</div>
             <div class="result-body">
               <div class="result-label">
                 <span>${escapeHtml(item.label || LABELS[item.source] || item.source)}</span>
-                <span class="badge ${item.source === "gt" ? "gt" : item.source === "text-to-svg-production" ? "generated" : "ref"}">${escapeHtml(BADGES[item.source] || "Ref")}</span>
+                <span class="badge ${badgeClass(item.source)}">${escapeHtml(BADGES[item.source] || "Ref")}</span>
               </div>
               ${resultMeta(item.source, item)}
             </div>
@@ -115,12 +163,16 @@ function renderPromptPair(pair) {
 
   function modelCard(result, title) {
     const meta = metaLine(result);
+    const source = result?.source;
+    const score = pair.lica_scores?.[source]?.score;
+    const isWinner = pair.lica_winner === source;
 
     return `
       <div class="pair-output-card">
         <div class="pair-image-wrap">${assetElement(result)}</div>
         <div class="pair-output-meta">
           <strong>${escapeHtml(title)}</strong>
+          ${score == null ? "" : `<div class="score-pill ${isWinner ? "winner" : ""}">${escapeHtml(`Lica ${Number(score).toFixed(4)}${isWinner ? " · winner" : ""}`)}</div>`}
           <span>${escapeHtml(meta)}</span>
         </div>
       </div>
@@ -168,6 +220,8 @@ function renderPromptPair(pair) {
   const hfLocal = pair.hf_lora_local;
   const hasToggle = toggle && ((toggle.on || []).length || (toggle.off || []).length);
   const hasHfLocal = hfLocal && (hfLocal.runs || []).length;
+  const modelGenerations = pair.model_generations || {};
+  const hasModelGenerations = ORDER.some((source) => modelGenerations[source]);
 
   return `
     <article class="prompt-pair-card">
@@ -175,8 +229,22 @@ function renderPromptPair(pair) {
         <div class="pair-kicker">Prompt ${escapeHtml(pair.index)}</div>
         <p>${escapeHtml(pair.prompt)}</p>
       </div>
-      ${hasToggle ? `
-        <div class="lora-toggle-grid">
+      <div class="prompt-pair-results">
+        ${hasModelGenerations ? `
+          <section class="lora-mode-section">
+            <div class="lora-mode-head">
+              <h3>Base / V1 / V2</h3>
+              <span>${escapeHtml(pair.lica_winner ? `Lica winner: ${LABELS[pair.lica_winner] || pair.lica_winner}` : "Lica pending")}</span>
+            </div>
+            <div class="pair-outputs-grid model-comparison-grid">
+              ${MODEL_COMPARISON_ORDER.map((source) => modelCard(
+                modelGenerations[source] || { source, label: LABELS[source], status: "pending" },
+                LABELS[source] || source,
+              )).join("")}
+            </div>
+          </section>
+        ` : ""}
+        ${hasToggle ? `
           ${loraModeSection("LoRA ON", toggle.on || [])}
           ${loraModeSection("LoRA OFF", toggle.off || [])}
           ${hasHfLocal ? loraModeSection(
@@ -184,13 +252,13 @@ function renderPromptPair(pair) {
             hfLocal.runs || [],
             { runCount: 2, subtitle: "local PEFT · 2 runs" },
           ) : ""}
-        </div>
-      ` : `
-        <div class="pair-outputs-grid">
+        ` : !hasModelGenerations ? `
+          <div class="pair-outputs-grid">
           ${modelCard(pair.generated || {}, "SGLang Production")}
           ${modelCard(pair.hf_lora || {}, "HF LoRA local")}
-        </div>
-      `}
+          </div>
+        ` : ""}
+      </div>
     </article>
   `;
 }
@@ -212,7 +280,7 @@ async function main() {
   }).join("");
   document.getElementById("hero-strip").innerHTML = data.samples
     .slice(0, 5)
-    .map((sample) => sample.generated?.asset)
+    .map((sample) => sample.model_generations?.["text-to-svg-v2"]?.asset || sample.generated?.asset)
     .filter(Boolean)
     .map((asset) => `<div class="strip-tile"><img src="${escapeHtml(assetUrl(asset))}" alt="Generated preview" loading="lazy" /></div>`)
     .join("");

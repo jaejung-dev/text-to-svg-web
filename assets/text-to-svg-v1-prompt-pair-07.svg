@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#ffffff"/>
+  
+  <!-- Main diamond/book shape - Deep Navy -->
+  <g id="diamond-base">
+    <polygon points="100,30 170,100 100,170 30,100" fill="#1e3a5f"/>
+  </g>
+  
+  <!-- Book pages detail - Bright Teal -->
+  <g id="book-pages">
+    <rect x="100" y="65" width="40" height="10" fill="#00d4a9"/>
+    <rect x="100" y="80" width="38" height="10" fill="#00d4a9"/>
+    <rect x="100" y="95" width="36" height="10" fill="#00d4a9"/>
+    <rect x="100" y="110" width="34" height="10" fill="#00d4a9"/>
+    <rect x="100" y="125" width="32" height="10" fill="#00d4a9"/>
+  </g>
+  
+  <!-- Book spine - Deep Navy -->
+  <g id="book-spine">
+    <rect x="85" y="40" width="30" height="120" fill="#1e3a5f"/>
+  </g>
+  
+  <!-- Compression indicator - Bright Teal -->
+  <g id="compression-marks">
+    <line x1="100" y1="50" x2="100" y2="35" stroke="#00d4a9" stroke-width="4" stroke-linecap="round"/>
+    <line x1="100" y1="150" x2="100" y2="165" stroke="#00d4a9" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Corner accents for compressed effect - Bright Teal -->
+  <g id="corner-accents">
+    <polygon points="30,100 45,100 40,110" fill="#00d4a9"/>
+    <polygon points="170,100 155,100 160,110" fill="#00d4a9"/>
+    <polygon points="100,30 100,45 90,40" fill="#00d4a9"/>
+    <polygon points="100,170 100,155 110,160" fill="#00d4a9"/>
+  </g>
+</svg>
