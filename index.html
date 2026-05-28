@@ -23,8 +23,8 @@
           <p class="lede">
             Each sample starts from the same prompt. We compare the ground truth,
             Base, V1, V2, and three reference model outputs side by side with
-            LicaScore ranking. Missing Baseten generations are shown as pending
-            placeholders so the page can be reviewed immediately.
+            LicaScore ranking plus HPS, PickScore, CLIPScore, MPS, ImageReward,
+            and LAION aesthetic scores where available.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#gallery">View gallery</a>
@@ -81,8 +81,8 @@
           returns raw SVG using each model's deployed defaults. The results are
           displayed beside the original ground truth and existing Claude, Gemini,
           and GPT-5.2 outputs, then ranked by LicaScore for quick validation.
-          If a Baseten call is still pending or unavailable, the slot remains
-          visible as a placeholder instead of disappearing from the board.
+          Reference images also show the scorer values from the LicaScore report,
+          with Qwen-8B fine-tuned output labeled as LicaScore.
         </p>
       </section>
 
@@ -99,6 +99,6 @@
       </section>
     </main>
 
-    <script src="app.js?v=20260528-base-v1-v2-only"></script>
+    <script src="app.js?v=20260528-all-scores"></script>
   </body>
 </html>

@@ -24,6 +24,26 @@ const BADGES = {
 };
 
 let ASSET_CACHE_KEY = "";
+let REPORT_SCORE_ORDER = [
+  "qwen8b_epoch_3",
+  "imscore_hpsv21",
+  "imscore_hpsv3",
+  "imscore_pickscore",
+  "imscore_mpsv1",
+  "imscore_clipscore",
+  "imscore_imagereward",
+  "imscore_laion_aesthetic",
+];
+let REPORT_SCORE_LABELS = {
+  qwen8b_epoch_3: "LicaScore",
+  imscore_hpsv21: "HPSv2.1",
+  imscore_hpsv3: "HPSv3",
+  imscore_pickscore: "PickScore",
+  imscore_mpsv1: "MPSv1",
+  imscore_clipscore: "CLIPScore",
+  imscore_imagereward: "ImageReward",
+  imscore_laion_aesthetic: "LAION aesthetic",
+};
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, (char) => ({
@@ -84,6 +104,26 @@ function scoreLine(item) {
   return `<div class="score-pill ${item.is_lica_winner ? "winner" : ""}">${escapeHtml(label)}</div>`;
 }
 
+function formatScore(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return String(value);
+  return Math.abs(number) < 2 ? number.toFixed(3) : number.toFixed(2);
+}
+
+function reportScores(item) {
+  const scores = item?.report_scores || {};
+  const rows = REPORT_SCORE_ORDER
+    .filter((key) => scores[key] != null)
+    .map((key) => `
+      <div class="metric-score">
+        <span>${escapeHtml(REPORT_SCORE_LABELS[key] || key)}</span>
+        <strong>${escapeHtml(formatScore(scores[key]))}</strong>
+      </div>
+    `);
+  if (!rows.length) return "";
+  return `<div class="report-scores">${rows.join("")}</div>`;
+}
+
 function resultMeta(source, item) {
   const parts = [];
   if (isGeneratedSource(source) && item?.output_tokens != null) parts.push(`${item.output_tokens} output tokens`);
@@ -92,7 +132,7 @@ function resultMeta(source, item) {
   if (itemStatus(item) !== "ok" && item?.error) parts.push(item.error);
   if (itemStatus(item) === "pending") parts.push("generation pending");
   const meta = parts.length ? `<div class="result-meta">${escapeHtml(parts.join(" · "))}</div>` : "";
-  return `${scoreLine(item)}${meta}`;
+  return `${scoreLine(item)}${meta}${reportScores(item)}`;
 }
 
 function sampleItems(sample) {
@@ -211,6 +251,8 @@ async function main() {
     return response.json();
   });
   ASSET_CACHE_KEY = data.generated_at || String(Date.now());
+  REPORT_SCORE_ORDER = data.report_score_order || REPORT_SCORE_ORDER;
+  REPORT_SCORE_LABELS = data.report_score_labels || REPORT_SCORE_LABELS;
 
   const gallery = document.getElementById("gallery");
   const filter = document.getElementById("bucket-filter");

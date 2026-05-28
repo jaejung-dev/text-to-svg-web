@@ -22,22 +22,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/0e691069-3f66-497b-be66-6f04192be5b0-gt-95925a08d0.png"
+          "asset": "assets/0e691069-3f66-497b-be66-6f04192be5b0-gt-95925a08d0.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.973301887512207,
+            "imscore_hpsv21": 0.2117474377155304,
+            "imscore_hpsv3": 7.495031833648682,
+            "imscore_pickscore": 22.28013801574707,
+            "imscore_mpsv1": 11.88070011138916,
+            "imscore_clipscore": 24.241907119750977,
+            "imscore_imagereward": -0.5461624264717102,
+            "imscore_laion_aesthetic": 4.794168472290039
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/0e691069-3f66-497b-be66-6f04192be5b0-claude-5d655d721f.png"
+          "asset": "assets/0e691069-3f66-497b-be66-6f04192be5b0-claude-5d655d721f.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.692611038684845,
+            "imscore_hpsv21": 0.14551942050457,
+            "imscore_hpsv3": -3.9823524951934814,
+            "imscore_pickscore": 20.757070541381836,
+            "imscore_mpsv1": 6.58342981338501,
+            "imscore_clipscore": 22.095670700073242,
+            "imscore_imagereward": -1.2863401174545288,
+            "imscore_laion_aesthetic": 4.74201774597168
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/0e691069-3f66-497b-be66-6f04192be5b0-gemini-e24019d41f.png"
+          "asset": "assets/0e691069-3f66-497b-be66-6f04192be5b0-gemini-e24019d41f.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9428560733795166,
+            "imscore_hpsv21": 0.15772198140621185,
+            "imscore_hpsv3": 1.35272216796875,
+            "imscore_pickscore": 20.93315315246582,
+            "imscore_mpsv1": 6.648530006408691,
+            "imscore_clipscore": 20.928897857666016,
+            "imscore_imagereward": -0.6336275339126587,
+            "imscore_laion_aesthetic": 4.425525188446045
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/0e691069-3f66-497b-be66-6f04192be5b0-gpt-5-2-56b608a7e6.png"
+          "asset": "assets/0e691069-3f66-497b-be66-6f04192be5b0-gpt-5-2-56b608a7e6.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.8354259729385376,
+            "imscore_hpsv21": 0.19680854678153992,
+            "imscore_hpsv3": 4.058526039123535,
+            "imscore_pickscore": 22.09859275817871,
+            "imscore_mpsv1": 9.684853553771973,
+            "imscore_clipscore": 23.318706512451172,
+            "imscore_imagereward": 0.11580193042755127,
+            "imscore_laion_aesthetic": 4.929321765899658
+          }
         }
       ],
       "model_generations": {
@@ -162,22 +202,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/2bb28d9c-b0a1-40f3-8a86-96d232a28a80-gt-e643f25428.png"
+          "asset": "assets/2bb28d9c-b0a1-40f3-8a86-96d232a28a80-gt-e643f25428.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9673414826393127,
+            "imscore_hpsv21": 0.23421761393547058,
+            "imscore_hpsv3": 11.059805870056152,
+            "imscore_pickscore": 20.837627410888672,
+            "imscore_mpsv1": 10.08024787902832,
+            "imscore_clipscore": 33.85029983520508,
+            "imscore_imagereward": -0.17909444868564606,
+            "imscore_laion_aesthetic": 4.934990882873535
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/2bb28d9c-b0a1-40f3-8a86-96d232a28a80-claude-ba1b51612d.png"
+          "asset": "assets/2bb28d9c-b0a1-40f3-8a86-96d232a28a80-claude-ba1b51612d.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.8777083158493042,
+            "imscore_hpsv21": 0.21249574422836304,
+            "imscore_hpsv3": 5.056427001953125,
+            "imscore_pickscore": 21.458059310913086,
+            "imscore_mpsv1": 10.180991172790527,
+            "imscore_clipscore": 28.656705856323242,
+            "imscore_imagereward": 0.7763234376907349,
+            "imscore_laion_aesthetic": 5.116871356964111
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/2bb28d9c-b0a1-40f3-8a86-96d232a28a80-gemini-0e413fc292.png"
+          "asset": "assets/2bb28d9c-b0a1-40f3-8a86-96d232a28a80-gemini-0e413fc292.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.7309097051620483,
+            "imscore_hpsv21": 0.1802675873041153,
+            "imscore_hpsv3": 2.794567823410034,
+            "imscore_pickscore": 20.584230422973633,
+            "imscore_mpsv1": 8.559133529663086,
+            "imscore_clipscore": 26.82059097290039,
+            "imscore_imagereward": -0.5460395812988281,
+            "imscore_laion_aesthetic": 5.081571578979492
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/2bb28d9c-b0a1-40f3-8a86-96d232a28a80-gpt-5-2-cdf1e1b172.png"
+          "asset": "assets/2bb28d9c-b0a1-40f3-8a86-96d232a28a80-gpt-5-2-cdf1e1b172.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.8003342151641846,
+            "imscore_hpsv21": 0.17968760430812836,
+            "imscore_hpsv3": 0.8435045480728149,
+            "imscore_pickscore": 19.339706420898438,
+            "imscore_mpsv1": 7.047359466552734,
+            "imscore_clipscore": 27.984365463256836,
+            "imscore_imagereward": -1.1903526782989502,
+            "imscore_laion_aesthetic": 4.800177574157715
+          }
         }
       ],
       "model_generations": {
@@ -302,22 +382,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/375920f5-f42c-42d0-815d-45c5ff30baeb-gt-a132aad46c.png"
+          "asset": "assets/375920f5-f42c-42d0-815d-45c5ff30baeb-gt-a132aad46c.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.7997336387634277,
+            "imscore_hpsv21": 0.2703688442707062,
+            "imscore_hpsv3": 4.470303535461426,
+            "imscore_pickscore": 23.420528411865234,
+            "imscore_mpsv1": 11.417006492614746,
+            "imscore_clipscore": 28.223567962646484,
+            "imscore_imagereward": 1.143633246421814,
+            "imscore_laion_aesthetic": 5.0866241455078125
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/375920f5-f42c-42d0-815d-45c5ff30baeb-claude-9736049872.png"
+          "asset": "assets/375920f5-f42c-42d0-815d-45c5ff30baeb-claude-9736049872.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.593212366104126,
+            "imscore_hpsv21": 0.27132824063301086,
+            "imscore_hpsv3": 3.242187023162842,
+            "imscore_pickscore": 24.730100631713867,
+            "imscore_mpsv1": 11.442424774169922,
+            "imscore_clipscore": 28.16944694519043,
+            "imscore_imagereward": 0.9002858996391296,
+            "imscore_laion_aesthetic": 5.129638671875
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/375920f5-f42c-42d0-815d-45c5ff30baeb-gemini-9a3ed649b6.png"
+          "asset": "assets/375920f5-f42c-42d0-815d-45c5ff30baeb-gemini-9a3ed649b6.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.5855157375335693,
+            "imscore_hpsv21": 0.2720944583415985,
+            "imscore_hpsv3": 4.626302242279053,
+            "imscore_pickscore": 23.96346092224121,
+            "imscore_mpsv1": 11.305121421813965,
+            "imscore_clipscore": 27.775691986083984,
+            "imscore_imagereward": 1.0472604036331177,
+            "imscore_laion_aesthetic": 4.988245010375977
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/375920f5-f42c-42d0-815d-45c5ff30baeb-gpt-5-2-d58cf7add7.png"
+          "asset": "assets/375920f5-f42c-42d0-815d-45c5ff30baeb-gpt-5-2-d58cf7add7.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.5599991083145142,
+            "imscore_hpsv21": 0.27063456177711487,
+            "imscore_hpsv3": 3.8492016792297363,
+            "imscore_pickscore": 24.546098709106445,
+            "imscore_mpsv1": 10.40165901184082,
+            "imscore_clipscore": 26.51561737060547,
+            "imscore_imagereward": 0.6958684921264648,
+            "imscore_laion_aesthetic": 5.09678840637207
+          }
         }
       ],
       "model_generations": {
@@ -442,22 +562,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d-gt-dc919b1973.png"
+          "asset": "assets/475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d-gt-dc919b1973.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9554134607315063,
+            "imscore_hpsv21": 0.23690880835056305,
+            "imscore_hpsv3": 9.756690979003906,
+            "imscore_pickscore": 20.822856903076172,
+            "imscore_mpsv1": 7.91360330581665,
+            "imscore_clipscore": 37.62548065185547,
+            "imscore_imagereward": -0.17374975979328156,
+            "imscore_laion_aesthetic": 4.772418975830078
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d-claude-49a073f326.png"
+          "asset": "assets/475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d-claude-49a073f326.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6426799297332764,
+            "imscore_hpsv21": 0.1747514307498932,
+            "imscore_hpsv3": 0.022305762395262718,
+            "imscore_pickscore": 19.57098960876465,
+            "imscore_mpsv1": 6.224268436431885,
+            "imscore_clipscore": 30.575889587402344,
+            "imscore_imagereward": 0.5355427265167236,
+            "imscore_laion_aesthetic": 5.109593868255615
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d-gemini-0dca804cc1.png"
+          "asset": "assets/475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d-gemini-0dca804cc1.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6175850033760071,
+            "imscore_hpsv21": 0.16275635361671448,
+            "imscore_hpsv3": -0.05859879031777382,
+            "imscore_pickscore": 19.916969299316406,
+            "imscore_mpsv1": 3.354485273361206,
+            "imscore_clipscore": 30.18850326538086,
+            "imscore_imagereward": -0.20002491772174835,
+            "imscore_laion_aesthetic": 4.985335350036621
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d-gpt-5-2-071dfd12d6.png"
+          "asset": "assets/475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d-gpt-5-2-071dfd12d6.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6720679998397827,
+            "imscore_hpsv21": 0.18370619416236877,
+            "imscore_hpsv3": -1.1322778463363647,
+            "imscore_pickscore": 19.155147552490234,
+            "imscore_mpsv1": 5.175822734832764,
+            "imscore_clipscore": 28.69236183166504,
+            "imscore_imagereward": -1.0592913627624512,
+            "imscore_laion_aesthetic": 4.975994110107422
+          }
         }
       ],
       "model_generations": {
@@ -582,22 +742,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/48fb52e9-d309-4bec-8735-091663026e70-gt-fe73136950.png"
+          "asset": "assets/48fb52e9-d309-4bec-8735-091663026e70-gt-fe73136950.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9828745126724243,
+            "imscore_hpsv21": 0.24492263793945312,
+            "imscore_hpsv3": 5.974808692932129,
+            "imscore_pickscore": 23.48740577697754,
+            "imscore_mpsv1": 8.465310096740723,
+            "imscore_clipscore": 29.185020446777344,
+            "imscore_imagereward": 0.5665425062179565,
+            "imscore_laion_aesthetic": 4.367846488952637
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/48fb52e9-d309-4bec-8735-091663026e70-claude-59124b304c.png"
+          "asset": "assets/48fb52e9-d309-4bec-8735-091663026e70-claude-59124b304c.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6201249361038208,
+            "imscore_hpsv21": 0.24028398096561432,
+            "imscore_hpsv3": 4.858940601348877,
+            "imscore_pickscore": 23.768535614013672,
+            "imscore_mpsv1": 8.271713256835938,
+            "imscore_clipscore": 28.534334182739258,
+            "imscore_imagereward": 0.7952967286109924,
+            "imscore_laion_aesthetic": 4.190046787261963
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/48fb52e9-d309-4bec-8735-091663026e70-gemini-f0dd1e6fad.png"
+          "asset": "assets/48fb52e9-d309-4bec-8735-091663026e70-gemini-f0dd1e6fad.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6500979065895081,
+            "imscore_hpsv21": 0.2459670901298523,
+            "imscore_hpsv3": 3.427110433578491,
+            "imscore_pickscore": 24.098718643188477,
+            "imscore_mpsv1": 8.519079208374023,
+            "imscore_clipscore": 28.059772491455078,
+            "imscore_imagereward": 1.1817201375961304,
+            "imscore_laion_aesthetic": 4.5242919921875
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/48fb52e9-d309-4bec-8735-091663026e70-gpt-5-2-be1f49a8ef.png"
+          "asset": "assets/48fb52e9-d309-4bec-8735-091663026e70-gpt-5-2-be1f49a8ef.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6425610780715942,
+            "imscore_hpsv21": 0.22546909749507904,
+            "imscore_hpsv3": 5.987541675567627,
+            "imscore_pickscore": 24.21695899963379,
+            "imscore_mpsv1": 6.557625770568848,
+            "imscore_clipscore": 25.80805206298828,
+            "imscore_imagereward": 0.3406068980693817,
+            "imscore_laion_aesthetic": 4.411642074584961
+          }
         }
       ],
       "model_generations": {
@@ -722,22 +922,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/6b75002f-4553-4495-af73-69dff9260dd7-gt-ea84da1a04.png"
+          "asset": "assets/6b75002f-4553-4495-af73-69dff9260dd7-gt-ea84da1a04.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9652674198150635,
+            "imscore_hpsv21": 0.1439574956893921,
+            "imscore_hpsv3": -7.692708492279053,
+            "imscore_pickscore": 19.526472091674805,
+            "imscore_mpsv1": -7.234287261962891,
+            "imscore_clipscore": 18.479290008544922,
+            "imscore_imagereward": -1.2375481128692627,
+            "imscore_laion_aesthetic": 4.706677436828613
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/6b75002f-4553-4495-af73-69dff9260dd7-claude-f2dbbdc180.png"
+          "asset": "assets/6b75002f-4553-4495-af73-69dff9260dd7-claude-f2dbbdc180.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9442976117134094,
+            "imscore_hpsv21": 0.17398549616336823,
+            "imscore_hpsv3": -5.306346416473389,
+            "imscore_pickscore": 20.098390579223633,
+            "imscore_mpsv1": -8.18298053741455,
+            "imscore_clipscore": 22.032489776611328,
+            "imscore_imagereward": -0.49580326676368713,
+            "imscore_laion_aesthetic": 4.706822872161865
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/6b75002f-4553-4495-af73-69dff9260dd7-gemini-0cffd73435.png"
+          "asset": "assets/6b75002f-4553-4495-af73-69dff9260dd7-gemini-0cffd73435.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9577531218528748,
+            "imscore_hpsv21": 0.15434874594211578,
+            "imscore_hpsv3": -8.807663917541504,
+            "imscore_pickscore": 20.67763900756836,
+            "imscore_mpsv1": -8.644145965576172,
+            "imscore_clipscore": 25.775894165039062,
+            "imscore_imagereward": -0.5233380794525146,
+            "imscore_laion_aesthetic": 4.776340007781982
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/6b75002f-4553-4495-af73-69dff9260dd7-gpt-5-2-bbfcfa6ec6.png"
+          "asset": "assets/6b75002f-4553-4495-af73-69dff9260dd7-gpt-5-2-bbfcfa6ec6.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9577531218528748,
+            "imscore_hpsv21": 0.15434874594211578,
+            "imscore_hpsv3": -8.807663917541504,
+            "imscore_pickscore": 20.67763900756836,
+            "imscore_mpsv1": -8.644145965576172,
+            "imscore_clipscore": 25.775894165039062,
+            "imscore_imagereward": -0.5233380794525146,
+            "imscore_laion_aesthetic": 4.776340007781982
+          }
         }
       ],
       "model_generations": {
@@ -862,22 +1102,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/6effa7a8-4436-4915-9d93-bc871ea36dcc-gt-e16472e025.png"
+          "asset": "assets/6effa7a8-4436-4915-9d93-bc871ea36dcc-gt-e16472e025.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9786030054092407,
+            "imscore_hpsv21": 0.21916666626930237,
+            "imscore_hpsv3": 5.644033908843994,
+            "imscore_pickscore": 22.756559371948242,
+            "imscore_mpsv1": 12.415213584899902,
+            "imscore_clipscore": 29.316905975341797,
+            "imscore_imagereward": 0.793083131313324,
+            "imscore_laion_aesthetic": 5.084196090698242
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/6effa7a8-4436-4915-9d93-bc871ea36dcc-claude-7367e6ed75.png"
+          "asset": "assets/6effa7a8-4436-4915-9d93-bc871ea36dcc-claude-7367e6ed75.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.7088866829872131,
+            "imscore_hpsv21": 0.2207699865102768,
+            "imscore_hpsv3": 5.733204364776611,
+            "imscore_pickscore": 22.022050857543945,
+            "imscore_mpsv1": 12.539772033691406,
+            "imscore_clipscore": 27.419450759887695,
+            "imscore_imagereward": 0.6247801184654236,
+            "imscore_laion_aesthetic": 5.073136329650879
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/6effa7a8-4436-4915-9d93-bc871ea36dcc-gemini-5568cc4b0a.png"
+          "asset": "assets/6effa7a8-4436-4915-9d93-bc871ea36dcc-gemini-5568cc4b0a.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6176421642303467,
+            "imscore_hpsv21": 0.2044941782951355,
+            "imscore_hpsv3": 5.294535160064697,
+            "imscore_pickscore": 22.02581214904785,
+            "imscore_mpsv1": 11.445891380310059,
+            "imscore_clipscore": 26.66817283630371,
+            "imscore_imagereward": 0.08639078587293625,
+            "imscore_laion_aesthetic": 5.051109313964844
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/6effa7a8-4436-4915-9d93-bc871ea36dcc-gpt-5-2-b88a8356bb.png"
+          "asset": "assets/6effa7a8-4436-4915-9d93-bc871ea36dcc-gpt-5-2-b88a8356bb.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.5276107788085938,
+            "imscore_hpsv21": 0.1875343769788742,
+            "imscore_hpsv3": 3.346605062484741,
+            "imscore_pickscore": 21.861555099487305,
+            "imscore_mpsv1": 12.620895385742188,
+            "imscore_clipscore": 29.618194580078125,
+            "imscore_imagereward": 0.6683980226516724,
+            "imscore_laion_aesthetic": 4.39937686920166
+          }
         }
       ],
       "model_generations": {
@@ -1002,22 +1282,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/789455bd-a5a3-4611-837c-dcbd7aaac18d-gt-2ba5a54726.png"
+          "asset": "assets/789455bd-a5a3-4611-837c-dcbd7aaac18d-gt-2ba5a54726.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9613121747970581,
+            "imscore_hpsv21": 0.24144025146961212,
+            "imscore_hpsv3": 0.6169816255569458,
+            "imscore_pickscore": 22.614187240600586,
+            "imscore_mpsv1": 8.250163078308105,
+            "imscore_clipscore": 23.915729522705078,
+            "imscore_imagereward": 0.23579095304012299,
+            "imscore_laion_aesthetic": 4.817228317260742
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/789455bd-a5a3-4611-837c-dcbd7aaac18d-claude-d32eb32868.png"
+          "asset": "assets/789455bd-a5a3-4611-837c-dcbd7aaac18d-claude-d32eb32868.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.903194010257721,
+            "imscore_hpsv21": 0.24802500009536743,
+            "imscore_hpsv3": 2.111325979232788,
+            "imscore_pickscore": 22.207256317138672,
+            "imscore_mpsv1": 9.479277610778809,
+            "imscore_clipscore": 25.933277130126953,
+            "imscore_imagereward": 0.34457385540008545,
+            "imscore_laion_aesthetic": 4.627496242523193
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/789455bd-a5a3-4611-837c-dcbd7aaac18d-gemini-ea6210ae81.png"
+          "asset": "assets/789455bd-a5a3-4611-837c-dcbd7aaac18d-gemini-ea6210ae81.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9255155324935913,
+            "imscore_hpsv21": 0.24147719144821167,
+            "imscore_hpsv3": 0.8725152015686035,
+            "imscore_pickscore": 22.516653060913086,
+            "imscore_mpsv1": 8.14785385131836,
+            "imscore_clipscore": 24.341611862182617,
+            "imscore_imagereward": 0.45575085282325745,
+            "imscore_laion_aesthetic": 4.713105201721191
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/789455bd-a5a3-4611-837c-dcbd7aaac18d-gpt-5-2-f9df2d6ac9.png"
+          "asset": "assets/789455bd-a5a3-4611-837c-dcbd7aaac18d-gpt-5-2-f9df2d6ac9.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9030759334564209,
+            "imscore_hpsv21": 0.2445792853832245,
+            "imscore_hpsv3": 2.749124526977539,
+            "imscore_pickscore": 22.18658447265625,
+            "imscore_mpsv1": 8.697944641113281,
+            "imscore_clipscore": 25.515827178955078,
+            "imscore_imagereward": 0.2689262628555298,
+            "imscore_laion_aesthetic": 4.68469762802124
+          }
         }
       ],
       "model_generations": {
@@ -1142,22 +1462,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/7abdd104-8327-4c83-a550-a93ee4a97cf7-gt-e5dcc90894.png"
+          "asset": "assets/7abdd104-8327-4c83-a550-a93ee4a97cf7-gt-e5dcc90894.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9828574061393738,
+            "imscore_hpsv21": 0.18188266456127167,
+            "imscore_hpsv3": 5.943037033081055,
+            "imscore_pickscore": 21.22972297668457,
+            "imscore_mpsv1": 7.276177406311035,
+            "imscore_clipscore": 36.95626449584961,
+            "imscore_imagereward": -1.537693977355957,
+            "imscore_laion_aesthetic": 4.892749309539795
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/7abdd104-8327-4c83-a550-a93ee4a97cf7-claude-b321e5758d.png"
+          "asset": "assets/7abdd104-8327-4c83-a550-a93ee4a97cf7-claude-b321e5758d.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6870056390762329,
+            "imscore_hpsv21": 0.1860685646533966,
+            "imscore_hpsv3": 3.7385241985321045,
+            "imscore_pickscore": 21.40362548828125,
+            "imscore_mpsv1": 6.387202739715576,
+            "imscore_clipscore": 30.2037410736084,
+            "imscore_imagereward": -1.59698486328125,
+            "imscore_laion_aesthetic": 4.642917156219482
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/7abdd104-8327-4c83-a550-a93ee4a97cf7-gemini-0df4ed4ad6.png"
+          "asset": "assets/7abdd104-8327-4c83-a550-a93ee4a97cf7-gemini-0df4ed4ad6.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9741833806037903,
+            "imscore_hpsv21": 0.18463708460330963,
+            "imscore_hpsv3": 1.352768898010254,
+            "imscore_pickscore": 20.352083206176758,
+            "imscore_mpsv1": 4.469820499420166,
+            "imscore_clipscore": 26.79571533203125,
+            "imscore_imagereward": -2.0100839138031006,
+            "imscore_laion_aesthetic": 5.169146537780762
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/7abdd104-8327-4c83-a550-a93ee4a97cf7-gpt-5-2-34823c7d90.png"
+          "asset": "assets/7abdd104-8327-4c83-a550-a93ee4a97cf7-gpt-5-2-34823c7d90.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.7373175621032715,
+            "imscore_hpsv21": 0.17922407388687134,
+            "imscore_hpsv3": 0.037369344383478165,
+            "imscore_pickscore": 21.02489471435547,
+            "imscore_mpsv1": 5.16648006439209,
+            "imscore_clipscore": 28.74333953857422,
+            "imscore_imagereward": -1.820294976234436,
+            "imscore_laion_aesthetic": 5.051324367523193
+          }
         }
       ],
       "model_generations": {
@@ -1282,22 +1642,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/ad63e329-a034-4ba7-8b30-8cd06ff9611f-gt-5fd5c59e11.png"
+          "asset": "assets/ad63e329-a034-4ba7-8b30-8cd06ff9611f-gt-5fd5c59e11.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6672052145004272,
+            "imscore_hpsv21": 0.23568667471408844,
+            "imscore_hpsv3": 0.3058072328567505,
+            "imscore_pickscore": 22.600284576416016,
+            "imscore_mpsv1": 3.1306726932525635,
+            "imscore_clipscore": 23.88587760925293,
+            "imscore_imagereward": -0.23425590991973877,
+            "imscore_laion_aesthetic": 4.717197418212891
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/ad63e329-a034-4ba7-8b30-8cd06ff9611f-claude-92e75a176a.png"
+          "asset": "assets/ad63e329-a034-4ba7-8b30-8cd06ff9611f-claude-92e75a176a.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.553144097328186,
+            "imscore_hpsv21": 0.23015816509723663,
+            "imscore_hpsv3": 0.7666388154029846,
+            "imscore_pickscore": 22.297475814819336,
+            "imscore_mpsv1": 3.21728777885437,
+            "imscore_clipscore": 31.22638702392578,
+            "imscore_imagereward": -0.17815262079238892,
+            "imscore_laion_aesthetic": 4.617781162261963
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/ad63e329-a034-4ba7-8b30-8cd06ff9611f-gemini-158af5d5c6.png"
+          "asset": "assets/ad63e329-a034-4ba7-8b30-8cd06ff9611f-gemini-158af5d5c6.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.48078545928001404,
+            "imscore_hpsv21": 0.2420002818107605,
+            "imscore_hpsv3": 3.0063986778259277,
+            "imscore_pickscore": 22.427030563354492,
+            "imscore_mpsv1": 3.6038312911987305,
+            "imscore_clipscore": 30.269262313842773,
+            "imscore_imagereward": -0.2929378151893616,
+            "imscore_laion_aesthetic": 4.6541595458984375
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/ad63e329-a034-4ba7-8b30-8cd06ff9611f-gpt-5-2-c3f1113462.png"
+          "asset": "assets/ad63e329-a034-4ba7-8b30-8cd06ff9611f-gpt-5-2-c3f1113462.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.49819985032081604,
+            "imscore_hpsv21": 0.22508934140205383,
+            "imscore_hpsv3": 1.3543663024902344,
+            "imscore_pickscore": 22.608510971069336,
+            "imscore_mpsv1": 2.890432357788086,
+            "imscore_clipscore": 27.072038650512695,
+            "imscore_imagereward": -0.4087420701980591,
+            "imscore_laion_aesthetic": 4.637044429779053
+          }
         }
       ],
       "model_generations": {
@@ -1422,22 +1822,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/ba99ded2-01fe-4df0-9e81-da619c6a19a7-gt-be7b3682fa.png"
+          "asset": "assets/ba99ded2-01fe-4df0-9e81-da619c6a19a7-gt-be7b3682fa.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9305462837219238,
+            "imscore_hpsv21": 0.1851644068956375,
+            "imscore_hpsv3": 4.029749870300293,
+            "imscore_pickscore": 21.217037200927734,
+            "imscore_mpsv1": 3.9013731479644775,
+            "imscore_clipscore": 25.098102569580078,
+            "imscore_imagereward": 0.02054831013083458,
+            "imscore_laion_aesthetic": 4.701432704925537
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/ba99ded2-01fe-4df0-9e81-da619c6a19a7-claude-325336dcfd.png"
+          "asset": "assets/ba99ded2-01fe-4df0-9e81-da619c6a19a7-claude-325336dcfd.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.7801771759986877,
+            "imscore_hpsv21": 0.19089969992637634,
+            "imscore_hpsv3": 6.647583484649658,
+            "imscore_pickscore": 21.00564956665039,
+            "imscore_mpsv1": 4.664234638214111,
+            "imscore_clipscore": 29.422447204589844,
+            "imscore_imagereward": 0.5843703746795654,
+            "imscore_laion_aesthetic": 4.610554218292236
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/ba99ded2-01fe-4df0-9e81-da619c6a19a7-gemini-b68405e356.png"
+          "asset": "assets/ba99ded2-01fe-4df0-9e81-da619c6a19a7-gemini-b68405e356.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.66986483335495,
+            "imscore_hpsv21": 0.1908450424671173,
+            "imscore_hpsv3": 3.899413585662842,
+            "imscore_pickscore": 21.799001693725586,
+            "imscore_mpsv1": 4.740503787994385,
+            "imscore_clipscore": 26.392797470092773,
+            "imscore_imagereward": 0.20062804222106934,
+            "imscore_laion_aesthetic": 4.658141136169434
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/ba99ded2-01fe-4df0-9e81-da619c6a19a7-gpt-5-2-ef15a781a8.png"
+          "asset": "assets/ba99ded2-01fe-4df0-9e81-da619c6a19a7-gpt-5-2-ef15a781a8.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6625373363494873,
+            "imscore_hpsv21": 0.17120647430419922,
+            "imscore_hpsv3": 3.304734230041504,
+            "imscore_pickscore": 20.322124481201172,
+            "imscore_mpsv1": 3.756782054901123,
+            "imscore_clipscore": 25.192026138305664,
+            "imscore_imagereward": -0.8272606730461121,
+            "imscore_laion_aesthetic": 4.712242126464844
+          }
         }
       ],
       "model_generations": {
@@ -1562,22 +2002,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/c6747ea9-218b-4465-b89a-61a7c68fc5df-gt-c5b92f7498.png"
+          "asset": "assets/c6747ea9-218b-4465-b89a-61a7c68fc5df-gt-c5b92f7498.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9850442409515381,
+            "imscore_hpsv21": 0.23329561948776245,
+            "imscore_hpsv3": 4.46051549911499,
+            "imscore_pickscore": 21.878707885742188,
+            "imscore_mpsv1": 3.582923412322998,
+            "imscore_clipscore": 26.494503021240234,
+            "imscore_imagereward": -0.3282221555709839,
+            "imscore_laion_aesthetic": 4.662262916564941
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/c6747ea9-218b-4465-b89a-61a7c68fc5df-claude-b24d3911a5.png"
+          "asset": "assets/c6747ea9-218b-4465-b89a-61a7c68fc5df-claude-b24d3911a5.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6825791001319885,
+            "imscore_hpsv21": 0.22563692927360535,
+            "imscore_hpsv3": 5.837379455566406,
+            "imscore_pickscore": 21.80493927001953,
+            "imscore_mpsv1": 3.937113046646118,
+            "imscore_clipscore": 24.85785675048828,
+            "imscore_imagereward": -0.048545509576797485,
+            "imscore_laion_aesthetic": 4.631069183349609
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/c6747ea9-218b-4465-b89a-61a7c68fc5df-gemini-2d7b2d076d.png"
+          "asset": "assets/c6747ea9-218b-4465-b89a-61a7c68fc5df-gemini-2d7b2d076d.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9784857034683228,
+            "imscore_hpsv21": 0.1729765683412552,
+            "imscore_hpsv3": -1.5871686935424805,
+            "imscore_pickscore": 20.059526443481445,
+            "imscore_mpsv1": 1.2766979932785034,
+            "imscore_clipscore": 19.21245765686035,
+            "imscore_imagereward": -1.0686354637145996,
+            "imscore_laion_aesthetic": 5.026725769042969
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/c6747ea9-218b-4465-b89a-61a7c68fc5df-gpt-5-2-c5bbc9b475.png"
+          "asset": "assets/c6747ea9-218b-4465-b89a-61a7c68fc5df-gpt-5-2-c5bbc9b475.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9545420408248901,
+            "imscore_hpsv21": 0.1759873926639557,
+            "imscore_hpsv3": -7.069974899291992,
+            "imscore_pickscore": 20.230920791625977,
+            "imscore_mpsv1": -0.4484059512615204,
+            "imscore_clipscore": 21.746665954589844,
+            "imscore_imagereward": -0.26718655228614807,
+            "imscore_laion_aesthetic": 4.614632606506348
+          }
         }
       ],
       "model_generations": {
@@ -1702,22 +2182,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/cfa27aa4-7443-4ea4-bae7-c2bd746a2e23-gt-107a37ad2c.png"
+          "asset": "assets/cfa27aa4-7443-4ea4-bae7-c2bd746a2e23-gt-107a37ad2c.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9525043964385986,
+            "imscore_hpsv21": 0.21405509114265442,
+            "imscore_hpsv3": -0.09147954732179642,
+            "imscore_pickscore": 22.419801712036133,
+            "imscore_mpsv1": 8.51094913482666,
+            "imscore_clipscore": 30.134740829467773,
+            "imscore_imagereward": 0.40042391419410706,
+            "imscore_laion_aesthetic": 4.954267501831055
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/cfa27aa4-7443-4ea4-bae7-c2bd746a2e23-claude-5fdcd67ed1.png"
+          "asset": "assets/cfa27aa4-7443-4ea4-bae7-c2bd746a2e23-claude-5fdcd67ed1.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9768973588943481,
+            "imscore_hpsv21": 0.19702427089214325,
+            "imscore_hpsv3": 2.0228428840637207,
+            "imscore_pickscore": 21.65890121459961,
+            "imscore_mpsv1": 7.655079364776611,
+            "imscore_clipscore": 31.554067611694336,
+            "imscore_imagereward": 0.10207688808441162,
+            "imscore_laion_aesthetic": 4.578385353088379
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/cfa27aa4-7443-4ea4-bae7-c2bd746a2e23-gemini-58a21bff79.png"
+          "asset": "assets/cfa27aa4-7443-4ea4-bae7-c2bd746a2e23-gemini-58a21bff79.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.955838680267334,
+            "imscore_hpsv21": 0.2179783582687378,
+            "imscore_hpsv3": -2.8225505352020264,
+            "imscore_pickscore": 21.18006706237793,
+            "imscore_mpsv1": 6.708640098571777,
+            "imscore_clipscore": 30.248674392700195,
+            "imscore_imagereward": -1.2051016092300415,
+            "imscore_laion_aesthetic": 4.550721645355225
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/cfa27aa4-7443-4ea4-bae7-c2bd746a2e23-gpt-5-2-e607f85982.png"
+          "asset": "assets/cfa27aa4-7443-4ea4-bae7-c2bd746a2e23-gpt-5-2-e607f85982.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9359405040740967,
+            "imscore_hpsv21": 0.21370594203472137,
+            "imscore_hpsv3": 0.29107487201690674,
+            "imscore_pickscore": 20.538297653198242,
+            "imscore_mpsv1": 7.826289653778076,
+            "imscore_clipscore": 30.696170806884766,
+            "imscore_imagereward": -0.7574262619018555,
+            "imscore_laion_aesthetic": 4.525071144104004
+          }
         }
       ],
       "model_generations": {
@@ -1842,22 +2362,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/df15ae1c-d219-449f-b27b-c908c615af70-gt-0d0b4da76c.png"
+          "asset": "assets/df15ae1c-d219-449f-b27b-c908c615af70-gt-0d0b4da76c.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.8270598649978638,
+            "imscore_hpsv21": 0.2329505831003189,
+            "imscore_hpsv3": 5.87493371963501,
+            "imscore_pickscore": 23.25152587890625,
+            "imscore_mpsv1": 9.011129379272461,
+            "imscore_clipscore": 30.104450225830078,
+            "imscore_imagereward": 0.6988667845726013,
+            "imscore_laion_aesthetic": 4.846203804016113
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/df15ae1c-d219-449f-b27b-c908c615af70-claude-b5092ea5f1.png"
+          "asset": "assets/df15ae1c-d219-449f-b27b-c908c615af70-claude-b5092ea5f1.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.5473217368125916,
+            "imscore_hpsv21": 0.2407667636871338,
+            "imscore_hpsv3": 6.058112621307373,
+            "imscore_pickscore": 23.438371658325195,
+            "imscore_mpsv1": 9.998068809509277,
+            "imscore_clipscore": 30.50473976135254,
+            "imscore_imagereward": 1.0085197687149048,
+            "imscore_laion_aesthetic": 4.739003658294678
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/df15ae1c-d219-449f-b27b-c908c615af70-gemini-b93953366b.png"
+          "asset": "assets/df15ae1c-d219-449f-b27b-c908c615af70-gemini-b93953366b.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.5608029961585999,
+            "imscore_hpsv21": 0.23295867443084717,
+            "imscore_hpsv3": 6.0217061042785645,
+            "imscore_pickscore": 22.85141944885254,
+            "imscore_mpsv1": 9.523897171020508,
+            "imscore_clipscore": 28.013071060180664,
+            "imscore_imagereward": 0.8855279684066772,
+            "imscore_laion_aesthetic": 4.741064548492432
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/df15ae1c-d219-449f-b27b-c908c615af70-gpt-5-2-371ffe18b2.png"
+          "asset": "assets/df15ae1c-d219-449f-b27b-c908c615af70-gpt-5-2-371ffe18b2.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.7440794706344604,
+            "imscore_hpsv21": 0.1849563866853714,
+            "imscore_hpsv3": -5.008681774139404,
+            "imscore_pickscore": 21.513708114624023,
+            "imscore_mpsv1": 6.870639324188232,
+            "imscore_clipscore": 29.802751541137695,
+            "imscore_imagereward": -0.5187733173370361,
+            "imscore_laion_aesthetic": 4.521952152252197
+          }
         }
       ],
       "model_generations": {
@@ -1982,22 +2542,62 @@
         {
           "source": "gt",
           "label": "Ground Truth",
-          "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-gt-fff0020ca9.png"
+          "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-gt-fff0020ca9.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9546293616294861,
+            "imscore_hpsv21": 0.26323339343070984,
+            "imscore_hpsv3": 9.832934379577637,
+            "imscore_pickscore": 20.5404052734375,
+            "imscore_mpsv1": 8.132161140441895,
+            "imscore_clipscore": 31.71868324279785,
+            "imscore_imagereward": 1.8816038370132446,
+            "imscore_laion_aesthetic": 4.951361656188965
+          }
         },
         {
           "source": "claude",
           "label": "claude",
-          "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-claude-a44c238e5a.png"
+          "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-claude-a44c238e5a.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6616541743278503,
+            "imscore_hpsv21": 0.19686800241470337,
+            "imscore_hpsv3": 2.942413091659546,
+            "imscore_pickscore": 19.59988021850586,
+            "imscore_mpsv1": 7.861696720123291,
+            "imscore_clipscore": 31.74598503112793,
+            "imscore_imagereward": 0.22576241195201874,
+            "imscore_laion_aesthetic": 5.141693115234375
+          }
         },
         {
           "source": "gemini",
           "label": "gemini",
-          "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-gemini-26488e4abf.png"
+          "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-gemini-26488e4abf.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6128445267677307,
+            "imscore_hpsv21": 0.18661616742610931,
+            "imscore_hpsv3": 0.8058366179466248,
+            "imscore_pickscore": 18.989086151123047,
+            "imscore_mpsv1": 8.455318450927734,
+            "imscore_clipscore": 29.275577545166016,
+            "imscore_imagereward": -1.6132105588912964,
+            "imscore_laion_aesthetic": 4.923946380615234
+          }
         },
         {
           "source": "gpt-5.2",
           "label": "gpt-5.2",
-          "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-gpt-5-2-8bd9b4f67f.png"
+          "asset": "assets/eaa659f0-83cd-4be3-a1b4-551dcacad485-gpt-5-2-8bd9b4f67f.png",
+          "report_scores": {
+            "qwen8b_epoch_3": 0.6681708097457886,
+            "imscore_hpsv21": 0.20542003214359283,
+            "imscore_hpsv3": 4.141896724700928,
+            "imscore_pickscore": 19.839567184448242,
+            "imscore_mpsv1": 8.350708961486816,
+            "imscore_clipscore": 30.554441452026367,
+            "imscore_imagereward": 0.8727449178695679,
+            "imscore_laion_aesthetic": 4.912842750549316
+          }
         }
       ],
       "model_generations": {
@@ -4998,5 +5598,25 @@
     },
     "last_started_at": "2026-05-28 03:08 UTC",
     "last_completed_at": "2026-05-27 18:53 UTC"
+  },
+  "report_score_order": [
+    "qwen8b_epoch_3",
+    "imscore_hpsv21",
+    "imscore_hpsv3",
+    "imscore_pickscore",
+    "imscore_mpsv1",
+    "imscore_clipscore",
+    "imscore_imagereward",
+    "imscore_laion_aesthetic"
+  ],
+  "report_score_labels": {
+    "qwen8b_epoch_3": "LicaScore",
+    "imscore_hpsv21": "HPSv2.1",
+    "imscore_hpsv3": "HPSv3",
+    "imscore_pickscore": "PickScore",
+    "imscore_mpsv1": "MPSv1",
+    "imscore_clipscore": "CLIPScore",
+    "imscore_imagereward": "ImageReward",
+    "imscore_laion_aesthetic": "LAION aesthetic"
   }
 }

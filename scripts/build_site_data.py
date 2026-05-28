@@ -21,6 +21,26 @@ ASSETS_DIR = PROJECT_ROOT / "assets"
 DATA_PATH = PROJECT_ROOT / "data" / "site-data.json"
 DEFAULT_ENDPOINT = "https://model-qklg45d3.api.baseten.co/environments/production/predict"
 BASELINE_ORDER = ["gt", "claude", "gemini", "gpt-5.2"]
+REPORT_SCORE_ORDER = [
+    "qwen8b_epoch_3",
+    "imscore_hpsv21",
+    "imscore_hpsv3",
+    "imscore_pickscore",
+    "imscore_mpsv1",
+    "imscore_clipscore",
+    "imscore_imagereward",
+    "imscore_laion_aesthetic",
+]
+REPORT_SCORE_LABELS = {
+    "qwen8b_epoch_3": "LicaScore",
+    "imscore_hpsv21": "HPSv2.1",
+    "imscore_hpsv3": "HPSv3",
+    "imscore_pickscore": "PickScore",
+    "imscore_mpsv1": "MPSv1",
+    "imscore_clipscore": "CLIPScore",
+    "imscore_imagereward": "ImageReward",
+    "imscore_laion_aesthetic": "LAION aesthetic",
+}
 PROMPT_PAIR_TEXTS = [
     "Design a modern logo to illustrate the concept of SAP BASIS Support. You may include the shape of the SAP logo, but without the letters SAP.",
     "Create an icon for an sftp dlp feature",
@@ -187,6 +207,7 @@ def build_site_data(args: argparse.Namespace) -> dict[str, Any]:
                     "source": source,
                     "label": "Ground Truth" if source == "gt" else source,
                     "asset": copy_asset(group_id, entry),
+                    "report_scores": entry.get("scores", {}),
                 }
             )
 
@@ -251,6 +272,8 @@ def build_site_data(args: argparse.Namespace) -> dict[str, Any]:
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source_report": str(SOURCE_REPORT),
         "generation_endpoint": args.endpoint,
+        "report_score_order": REPORT_SCORE_ORDER,
+        "report_score_labels": REPORT_SCORE_LABELS,
         "samples": samples,
         "prompt_pairs": prompt_pairs,
     }
