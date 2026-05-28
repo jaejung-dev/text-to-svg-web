@@ -338,45 +338,6 @@ main {
   background-size: 20px 20px;
 }
 
-.theme-fall_leaves .image-frame {
-  background:
-    radial-gradient(circle at 18% 22%, rgba(202, 91, 38, 0.18), transparent 9rem),
-    radial-gradient(circle at 85% 18%, rgba(239, 177, 75, 0.22), transparent 8rem),
-    linear-gradient(180deg, #fff6e6 0%, #f7ead7 100%);
-}
-
-.theme-ocean_seashells .image-frame,
-.theme-classic_sailboat .image-frame {
-  background: linear-gradient(180deg, #eaf6fb 0%, #f5fbff 54%, #dfeff4 55%, #edf7f7 100%);
-}
-
-.theme-cute_ghost_pumpkin .image-frame {
-  background:
-    radial-gradient(circle at 75% 20%, rgba(255, 221, 128, 0.35), transparent 5rem),
-    linear-gradient(180deg, #2a2541 0%, #49365d 100%);
-}
-
-.theme-flower_roots .image-frame {
-  background: linear-gradient(180deg, #f6f2df 0%, #eef4dd 58%, #d8c3a5 100%);
-}
-
-.theme-bird_outline_yellow_blue .image-frame {
-  background: linear-gradient(180deg, #edf8ff 0%, #fff9d8 100%);
-}
-
-.theme-santa_christmas .image-frame {
-  background:
-    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.9) 0 4px, transparent 5px),
-    radial-gradient(circle at 72% 28%, rgba(255, 255, 255, 0.8) 0 3px, transparent 4px),
-    linear-gradient(180deg, #eef8ff 0%, #fff8f3 62%, #f5d8d8 100%);
-}
-
-.theme-compass_north_icon .image-frame {
-  background:
-    radial-gradient(circle at center, rgba(209, 180, 124, 0.2), transparent 9rem),
-    linear-gradient(180deg, #f9f1de 0%, #eef4ef 100%);
-}
-
 .image-frame img {
   width: 100%;
   max-height: 224px;
