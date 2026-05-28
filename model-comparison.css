@@ -338,13 +338,6 @@ main {
   background-size: 20px 20px;
 }
 
-.theme-sakura_tree .image-frame {
-  background:
-    radial-gradient(circle at 20% 18%, rgba(255, 183, 204, 0.55) 0 7px, transparent 8px),
-    radial-gradient(circle at 78% 24%, rgba(255, 204, 219, 0.5) 0 6px, transparent 7px),
-    linear-gradient(180deg, #fff5f8 0%, #f8fbff 58%, #eef7ec 100%);
-}
-
 .theme-fall_leaves .image-frame {
   background:
     radial-gradient(circle at 18% 22%, rgba(202, 91, 38, 0.18), transparent 9rem),
@@ -369,6 +362,19 @@ main {
 
 .theme-bird_outline_yellow_blue .image-frame {
   background: linear-gradient(180deg, #edf8ff 0%, #fff9d8 100%);
+}
+
+.theme-santa_christmas .image-frame {
+  background:
+    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.9) 0 4px, transparent 5px),
+    radial-gradient(circle at 72% 28%, rgba(255, 255, 255, 0.8) 0 3px, transparent 4px),
+    linear-gradient(180deg, #eef8ff 0%, #fff8f3 62%, #f5d8d8 100%);
+}
+
+.theme-compass_north_icon .image-frame {
+  background:
+    radial-gradient(circle at center, rgba(209, 180, 124, 0.2), transparent 9rem),
+    linear-gradient(180deg, #f9f1de 0%, #eef4ef 100%);
 }
 
 .image-frame img {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T17:05:48.587700+00:00",
+  "generated_at": "2026-05-28T17:29:30+00:00",
   "source": "data_for_demo/demo-data.json",
   "score_name": "LicaScore raw cosine",
   "score_order": [
@@ -23,42 +23,42 @@
       "id": "arrow",
       "label": "Arrow 1.1",
       "short_label": "Arrow",
-      "count": 13,
-      "wins": 8,
+      "count": 15,
+      "wins": 9,
       "metric_wins": {
-        "lica_score_v2": 8,
-        "hpsv21": 7,
+        "lica_score_v2": 9,
+        "hpsv21": 8,
         "pickscore": 7,
         "clipscore": 5,
         "imagereward": 8,
-        "laion_aesthetic": 3
+        "laion_aesthetic": 4
       }
     },
     {
       "id": "gpt",
       "label": "GPT-5.4",
       "short_label": "GPT",
-      "count": 13,
+      "count": 15,
       "wins": 0,
       "metric_wins": {
         "lica_score_v2": 0,
         "hpsv21": 1,
         "pickscore": 1,
-        "clipscore": 1,
+        "clipscore": 2,
         "imagereward": 1,
-        "laion_aesthetic": 3
+        "laion_aesthetic": 4
       }
     },
     {
       "id": "gemini",
       "label": "Gemini 3.1 Pro Preview",
       "short_label": "Gemini",
-      "count": 13,
+      "count": 15,
       "wins": 3,
       "metric_wins": {
         "lica_score_v2": 3,
         "hpsv21": 4,
-        "pickscore": 1,
+        "pickscore": 2,
         "clipscore": 3,
         "imagereward": 2,
         "laion_aesthetic": 5
@@ -68,22 +68,22 @@
       "id": "claude",
       "label": "Claude Opus 4.7",
       "short_label": "Claude",
-      "count": 13,
-      "wins": 2,
+      "count": 15,
+      "wins": 3,
       "metric_wins": {
-        "lica_score_v2": 2,
-        "hpsv21": 1,
-        "pickscore": 3,
-        "clipscore": 4,
-        "imagereward": 2,
+        "lica_score_v2": 3,
+        "hpsv21": 2,
+        "pickscore": 4,
+        "clipscore": 5,
+        "imagereward": 4,
         "laion_aesthetic": 2
       }
     },
     {
       "id": "qwen_lora",
-      "label": "Qwen3.5-VL 3.5B",
+      "label": "Qwen Base",
       "short_label": "Qwen",
-      "count": 13,
+      "count": 15,
       "wins": 0,
       "metric_wins": {
         "lica_score_v2": 0,
@@ -95,72 +95,6 @@
       }
     }
   ],
-  "summary": {
-    "prompts": 13,
-    "models": 5,
-    "candidates": 65,
-    "scored_candidates": 65,
-    "missing_candidates": 0,
-    "winner_counts": {
-      "arrow": 8,
-      "gpt": 0,
-      "gemini": 3,
-      "claude": 2,
-      "qwen_lora": 0
-    },
-    "scored_by_metric": {
-      "lica_score_v2": 65,
-      "hpsv21": 65,
-      "pickscore": 65,
-      "clipscore": 65,
-      "imagereward": 65,
-      "laion_aesthetic": 65
-    },
-    "metric_win_counts": {
-      "lica_score_v2": {
-        "arrow": 8,
-        "gpt": 0,
-        "gemini": 3,
-        "claude": 2,
-        "qwen_lora": 0
-      },
-      "hpsv21": {
-        "arrow": 7,
-        "gpt": 1,
-        "gemini": 4,
-        "claude": 1,
-        "qwen_lora": 0
-      },
-      "pickscore": {
-        "arrow": 7,
-        "gpt": 1,
-        "gemini": 1,
-        "claude": 3,
-        "qwen_lora": 1
-      },
-      "clipscore": {
-        "arrow": 5,
-        "gpt": 1,
-        "gemini": 3,
-        "claude": 4,
-        "qwen_lora": 0
-      },
-      "imagereward": {
-        "arrow": 8,
-        "gpt": 1,
-        "gemini": 2,
-        "claude": 2,
-        "qwen_lora": 0
-      },
-      "laion_aesthetic": {
-        "arrow": 3,
-        "gpt": 3,
-        "gemini": 5,
-        "claude": 2,
-        "qwen_lora": 0
-      }
-    }
-  },
   "prompts": [
     {
       "id": "dna_icon",
@@ -170,12 +104,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/dna_icon.svg",
-          "score": 0.263671875,
-          "raw_cosine": 0.263671875,
-          "logit": 26.3671875,
+          "status": "ok",
+          "elapsed_seconds": 0.002,
           "scores": {
             "lica_score_v2": 0.263671875,
             "hpsv21": 0.23332098126411438,
@@ -183,18 +114,14 @@
             "clipscore": 27.418258666992188,
             "imagereward": 1.227171540260315,
             "laion_aesthetic": 5.048516750335693
-          },
-          "elapsed_seconds": 0.001
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/dna_icon.svg",
-          "score": 0.2138671875,
-          "raw_cosine": 0.2138671875,
-          "logit": 21.38671875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.2138671875,
             "hpsv21": 0.21543100476264954,
@@ -202,18 +129,14 @@
             "clipscore": 30.29477882385254,
             "imagereward": 0.8041583895683289,
             "laion_aesthetic": 5.291385650634766
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/dna_icon.svg",
-          "score": 0.2041015625,
-          "raw_cosine": 0.2041015625,
-          "logit": 20.41015625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.2041015625,
             "hpsv21": 0.18143165111541748,
@@ -221,18 +144,14 @@
             "clipscore": 22.382278442382812,
             "imagereward": -2.017115592956543,
             "laion_aesthetic": 4.7762322425842285
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/dna_icon.svg",
-          "score": 0.2255859375,
-          "raw_cosine": 0.2255859375,
-          "logit": 22.55859375,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.2255859375,
             "hpsv21": 0.22028948366641998,
@@ -240,18 +159,14 @@
             "clipscore": 29.41232681274414,
             "imagereward": 0.1697348952293396,
             "laion_aesthetic": 5.145008087158203
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/dna_icon.svg",
-          "score": 0.1904296875,
-          "raw_cosine": 0.1904296875,
-          "logit": 19.04296875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1904296875,
             "hpsv21": 0.17775565385818481,
@@ -259,15 +174,9 @@
             "clipscore": 25.120681762695312,
             "imagereward": -2.1190173625946045,
             "laion_aesthetic": 5.2509846687316895
-          },
-          "elapsed_seconds": 0.0
+          }
         }
       ],
-      "best": {
-        "id": "arrow",
-        "label": "Arrow 1.1",
-        "score": 0.263671875
-      },
       "winners": {
         "lica_score_v2": {
           "id": "arrow",
@@ -299,6 +208,11 @@
           "label": "GPT-5.4",
           "score": 5.291385650634766
         }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.263671875
       }
     },
     {
@@ -309,12 +223,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/baby_bicycle.svg",
-          "score": 0.2353515625,
-          "raw_cosine": 0.2353515625,
-          "logit": 23.53515625,
+          "status": "ok",
+          "elapsed_seconds": 0.002,
           "scores": {
             "lica_score_v2": 0.2353515625,
             "hpsv21": 0.24015642702579498,
@@ -322,18 +233,14 @@
             "clipscore": 29.300086975097656,
             "imagereward": 1.7057864665985107,
             "laion_aesthetic": 5.263230323791504
-          },
-          "elapsed_seconds": 0.002
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/baby_bicycle.svg",
-          "score": 0.216796875,
-          "raw_cosine": 0.216796875,
-          "logit": 21.6796875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.216796875,
             "hpsv21": 0.21953220665454865,
@@ -341,18 +248,14 @@
             "clipscore": 25.581562042236328,
             "imagereward": 1.2635270357131958,
             "laion_aesthetic": 5.301290512084961
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/baby_bicycle.svg",
-          "score": 0.2138671875,
-          "raw_cosine": 0.2138671875,
-          "logit": 21.38671875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.2138671875,
             "hpsv21": 0.21423330903053284,
@@ -360,18 +263,14 @@
             "clipscore": 23.265609741210938,
             "imagereward": -0.06366857886314392,
             "laion_aesthetic": 5.22479248046875
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/baby_bicycle.svg",
-          "score": 0.193359375,
-          "raw_cosine": 0.193359375,
-          "logit": 19.3359375,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.193359375,
             "hpsv21": 0.19833961129188538,
@@ -379,18 +278,14 @@
             "clipscore": 22.07400894165039,
             "imagereward": -0.6696297526359558,
             "laion_aesthetic": 5.274505615234375
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/baby_bicycle.svg",
-          "score": 0.1728515625,
-          "raw_cosine": 0.1728515625,
-          "logit": 17.28515625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1728515625,
             "hpsv21": 0.177748441696167,
@@ -398,15 +293,9 @@
             "clipscore": 21.363862991333008,
             "imagereward": -1.5458407402038574,
             "laion_aesthetic": 4.899626731872559
-          },
-          "elapsed_seconds": 0.0
+          }
         }
       ],
-      "best": {
-        "id": "arrow",
-        "label": "Arrow 1.1",
-        "score": 0.2353515625
-      },
       "winners": {
         "lica_score_v2": {
           "id": "arrow",
@@ -438,6 +327,11 @@
           "label": "GPT-5.4",
           "score": 5.301290512084961
         }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.2353515625
       }
     },
     {
@@ -448,12 +342,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/frog_facing_camera.svg",
-          "score": 0.259765625,
-          "raw_cosine": 0.259765625,
-          "logit": 25.9765625,
+          "status": "ok",
+          "elapsed_seconds": 0.003,
           "scores": {
             "lica_score_v2": 0.259765625,
             "hpsv21": 0.2668977379798889,
@@ -461,18 +352,14 @@
             "clipscore": 22.112958908081055,
             "imagereward": 1.0987859964370728,
             "laion_aesthetic": 5.372664451599121
-          },
-          "elapsed_seconds": 0.003
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/frog_facing_camera.svg",
-          "score": 0.22265625,
-          "raw_cosine": 0.22265625,
-          "logit": 22.265625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.22265625,
             "hpsv21": 0.24137923121452332,
@@ -480,18 +367,14 @@
             "clipscore": 19.622343063354492,
             "imagereward": 0.1691378802061081,
             "laion_aesthetic": 5.275139808654785
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/frog_facing_camera.svg",
-          "score": 0.2373046875,
-          "raw_cosine": 0.2373046875,
-          "logit": 23.73046875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.2373046875,
             "hpsv21": 0.24752160906791687,
@@ -499,18 +382,14 @@
             "clipscore": 21.943744659423828,
             "imagereward": 0.05774003267288208,
             "laion_aesthetic": 5.353766441345215
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/frog_facing_camera.svg",
-          "score": 0.2431640625,
-          "raw_cosine": 0.2431640625,
-          "logit": 24.31640625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.2431640625,
             "hpsv21": 0.2522301971912384,
@@ -518,18 +397,14 @@
             "clipscore": 22.77446937561035,
             "imagereward": 0.21304959058761597,
             "laion_aesthetic": 5.257102012634277
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/frog_facing_camera.svg",
-          "score": 0.2001953125,
-          "raw_cosine": 0.2001953125,
-          "logit": 20.01953125,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.2001953125,
             "hpsv21": 0.20507486164569855,
@@ -537,15 +412,9 @@
             "clipscore": 20.65593719482422,
             "imagereward": -1.4826384782791138,
             "laion_aesthetic": 5.188604354858398
-          },
-          "elapsed_seconds": 0.0
+          }
         }
       ],
-      "best": {
-        "id": "arrow",
-        "label": "Arrow 1.1",
-        "score": 0.259765625
-      },
       "winners": {
         "lica_score_v2": {
           "id": "arrow",
@@ -577,6 +446,11 @@
           "label": "Arrow 1.1",
           "score": 5.372664451599121
         }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.259765625
       }
     },
     {
@@ -587,12 +461,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/ocean_seashells.svg",
-          "score": 0.1416015625,
-          "raw_cosine": 0.1416015625,
-          "logit": 14.16015625,
+          "status": "ok",
+          "elapsed_seconds": 0.004,
           "scores": {
             "lica_score_v2": 0.1416015625,
             "hpsv21": 0.18894125521183014,
@@ -600,18 +471,14 @@
             "clipscore": 28.109508514404297,
             "imagereward": 0.6450571417808533,
             "laion_aesthetic": 5.1457319259643555
-          },
-          "elapsed_seconds": 0.003
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/ocean_seashells.svg",
-          "score": 0.17578125,
-          "raw_cosine": 0.17578125,
-          "logit": 17.578125,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.17578125,
             "hpsv21": 0.18331576883792877,
@@ -619,18 +486,14 @@
             "clipscore": 26.514122009277344,
             "imagereward": 0.1896674484014511,
             "laion_aesthetic": 4.703846454620361
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/ocean_seashells.svg",
-          "score": 0.1826171875,
-          "raw_cosine": 0.1826171875,
-          "logit": 18.26171875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1826171875,
             "hpsv21": 0.1918138861656189,
@@ -638,18 +501,14 @@
             "clipscore": 29.872079849243164,
             "imagereward": 0.24572576582431793,
             "laion_aesthetic": 4.730635166168213
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/ocean_seashells.svg",
-          "score": 0.1904296875,
-          "raw_cosine": 0.1904296875,
-          "logit": 19.04296875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1904296875,
             "hpsv21": 0.18966972827911377,
@@ -657,18 +516,14 @@
             "clipscore": 29.878551483154297,
             "imagereward": -0.18774846196174622,
             "laion_aesthetic": 4.674785614013672
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/ocean_seashells.svg",
-          "score": 0.15234375,
-          "raw_cosine": 0.15234375,
-          "logit": 15.234375,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.15234375,
             "hpsv21": 0.1565822958946228,
@@ -676,15 +531,9 @@
             "clipscore": 26.012983322143555,
             "imagereward": -1.1784571409225464,
             "laion_aesthetic": 4.833192825317383
-          },
-          "elapsed_seconds": 0.0
+          }
         }
       ],
-      "best": {
-        "id": "claude",
-        "label": "Claude Opus 4.7",
-        "score": 0.1904296875
-      },
       "winners": {
         "lica_score_v2": {
           "id": "claude",
@@ -716,6 +565,11 @@
           "label": "Arrow 1.1",
           "score": 5.1457319259643555
         }
+      },
+      "best": {
+        "id": "claude",
+        "label": "Claude Opus 4.7",
+        "score": 0.1904296875
       }
     },
     {
@@ -726,31 +580,24 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
+          "asset": "assets/model-comparison/arrow/sakura_tree_with_bg.svg",
           "status": "ok",
-          "asset": "assets/model-comparison/arrow/sakura_tree.svg",
-          "score": 0.15234375,
-          "raw_cosine": 0.15234375,
-          "logit": 15.234375,
+          "elapsed_seconds": 0.001,
           "scores": {
-            "lica_score_v2": 0.15234375,
-            "hpsv21": 0.14425265789031982,
-            "pickscore": 18.687950134277344,
-            "clipscore": 10.619400978088379,
-            "imagereward": -1.5538722276687622,
-            "laion_aesthetic": 4.564087867736816
-          },
-          "elapsed_seconds": 0.004
+            "lica_score_v2": 0.1552734375,
+            "hpsv21": 0.1482030153274536,
+            "pickscore": 18.770793914794922,
+            "clipscore": 10.886899948120117,
+            "imagereward": -1.8555684089660645,
+            "laion_aesthetic": 4.778088092803955
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/sakura_tree.svg",
-          "score": 0.1494140625,
-          "raw_cosine": 0.1494140625,
-          "logit": 14.94140625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1494140625,
             "hpsv21": 0.15234141051769257,
@@ -758,18 +605,14 @@
             "clipscore": 13.611608505249023,
             "imagereward": -0.9031341671943665,
             "laion_aesthetic": 4.858687400817871
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/sakura_tree.svg",
-          "score": 0.181640625,
-          "raw_cosine": 0.181640625,
-          "logit": 18.1640625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.181640625,
             "hpsv21": 0.18890388309955597,
@@ -777,18 +620,14 @@
             "clipscore": 13.803757667541504,
             "imagereward": -0.3940335512161255,
             "laion_aesthetic": 5.251208305358887
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/sakura_tree.svg",
-          "score": 0.1796875,
-          "raw_cosine": 0.1796875,
-          "logit": 17.96875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1796875,
             "hpsv21": 0.17549028992652893,
@@ -796,18 +635,14 @@
             "clipscore": 19.691635131835938,
             "imagereward": -0.19794794917106628,
             "laion_aesthetic": 5.334355354309082
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/sakura_tree.svg",
-          "score": 0.1572265625,
-          "raw_cosine": 0.1572265625,
-          "logit": 15.72265625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1572265625,
             "hpsv21": 0.15996554493904114,
@@ -815,15 +650,9 @@
             "clipscore": 14.735095024108887,
             "imagereward": -0.6779689788818359,
             "laion_aesthetic": 4.967916965484619
-          },
-          "elapsed_seconds": 0.0
+          }
         }
       ],
-      "best": {
-        "id": "gemini",
-        "label": "Gemini 3.1 Pro Preview",
-        "score": 0.181640625
-      },
       "winners": {
         "lica_score_v2": {
           "id": "gemini",
@@ -855,6 +684,11 @@
           "label": "Claude Opus 4.7",
           "score": 5.334355354309082
         }
+      },
+      "best": {
+        "id": "gemini",
+        "label": "Gemini 3.1 Pro Preview",
+        "score": 0.181640625
       }
     },
     {
@@ -865,12 +699,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/smiling_person.svg",
-          "score": 0.1904296875,
-          "raw_cosine": 0.1904296875,
-          "logit": 19.04296875,
+          "status": "ok",
+          "elapsed_seconds": 0.002,
           "scores": {
             "lica_score_v2": 0.1904296875,
             "hpsv21": 0.1908678114414215,
@@ -878,18 +709,14 @@
             "clipscore": 16.987266540527344,
             "imagereward": -0.6434318423271179,
             "laion_aesthetic": 4.935025215148926
-          },
-          "elapsed_seconds": 0.003
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/smiling_person.svg",
-          "score": 0.1904296875,
-          "raw_cosine": 0.1904296875,
-          "logit": 19.04296875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1904296875,
             "hpsv21": 0.1884884089231491,
@@ -897,18 +724,14 @@
             "clipscore": 14.630288124084473,
             "imagereward": -0.3849620521068573,
             "laion_aesthetic": 4.716252326965332
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/smiling_person.svg",
-          "score": 0.20703125,
-          "raw_cosine": 0.20703125,
-          "logit": 20.703125,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.20703125,
             "hpsv21": 0.20275279879570007,
@@ -916,18 +739,14 @@
             "clipscore": 16.76892852783203,
             "imagereward": 0.12516595423221588,
             "laion_aesthetic": 5.129584312438965
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/smiling_person.svg",
-          "score": 0.197265625,
-          "raw_cosine": 0.197265625,
-          "logit": 19.7265625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.197265625,
             "hpsv21": 0.1874419003725052,
@@ -935,18 +754,14 @@
             "clipscore": 16.756061553955078,
             "imagereward": -0.397964745759964,
             "laion_aesthetic": 4.895938873291016
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/smiling_person.svg",
-          "score": 0.1962890625,
-          "raw_cosine": 0.1962890625,
-          "logit": 19.62890625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1962890625,
             "hpsv21": 0.19185960292816162,
@@ -954,15 +769,9 @@
             "clipscore": 16.251771926879883,
             "imagereward": -0.5083508491516113,
             "laion_aesthetic": 4.7589850425720215
-          },
-          "elapsed_seconds": 0.0
+          }
         }
       ],
-      "best": {
-        "id": "gemini",
-        "label": "Gemini 3.1 Pro Preview",
-        "score": 0.20703125
-      },
       "winners": {
         "lica_score_v2": {
           "id": "gemini",
@@ -994,6 +803,11 @@
           "label": "Gemini 3.1 Pro Preview",
           "score": 5.129584312438965
         }
+      },
+      "best": {
+        "id": "gemini",
+        "label": "Gemini 3.1 Pro Preview",
+        "score": 0.20703125
       }
     },
     {
@@ -1004,12 +818,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/horse_logo_ar.svg",
-          "score": 0.185546875,
-          "raw_cosine": 0.185546875,
-          "logit": 18.5546875,
+          "status": "ok",
+          "elapsed_seconds": 0.004,
           "scores": {
             "lica_score_v2": 0.185546875,
             "hpsv21": 0.19881106913089752,
@@ -1017,18 +828,14 @@
             "clipscore": 16.949377059936523,
             "imagereward": -0.8768954277038574,
             "laion_aesthetic": 5.448575973510742
-          },
-          "elapsed_seconds": 0.004
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/horse_logo_ar.svg",
-          "score": 0.125,
-          "raw_cosine": 0.125,
-          "logit": 12.5,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.125,
             "hpsv21": 0.13217699527740479,
@@ -1036,18 +843,14 @@
             "clipscore": 15.678766250610352,
             "imagereward": -2.213646411895752,
             "laion_aesthetic": 4.809986114501953
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/horse_logo_ar.svg",
-          "score": 0.15625,
-          "raw_cosine": 0.15625,
-          "logit": 15.625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.15625,
             "hpsv21": 0.1733650267124176,
@@ -1055,18 +858,14 @@
             "clipscore": 11.470370292663574,
             "imagereward": -1.7855297327041626,
             "laion_aesthetic": 5.121222496032715
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/horse_logo_ar.svg",
-          "score": 0.1708984375,
-          "raw_cosine": 0.1708984375,
-          "logit": 17.08984375,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1708984375,
             "hpsv21": 0.1697222888469696,
@@ -1074,18 +873,14 @@
             "clipscore": 9.861791610717773,
             "imagereward": -1.2859904766082764,
             "laion_aesthetic": 5.070831298828125
-          },
-          "elapsed_seconds": 0.0
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/horse_logo_ar.svg",
-          "score": 0.16796875,
-          "raw_cosine": 0.16796875,
-          "logit": 16.796875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.16796875,
             "hpsv21": 0.18036946654319763,
@@ -1093,15 +888,9 @@
             "clipscore": 15.54600715637207,
             "imagereward": -1.5957030057907104,
             "laion_aesthetic": 4.975090503692627
-          },
-          "elapsed_seconds": 0.0
+          }
         }
       ],
-      "best": {
-        "id": "arrow",
-        "label": "Arrow 1.1",
-        "score": 0.185546875
-      },
       "winners": {
         "lica_score_v2": {
           "id": "arrow",
@@ -1133,6 +922,11 @@
           "label": "Arrow 1.1",
           "score": 5.448575973510742
         }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.185546875
       }
     },
     {
@@ -1143,12 +937,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/black_scorpion_logistics.svg",
-          "score": 0.28125,
-          "raw_cosine": 0.28125,
-          "logit": 28.125,
+          "status": "ok",
+          "elapsed_seconds": 0.005,
           "scores": {
             "lica_score_v2": 0.28125,
             "hpsv21": 0.213473379611969,
@@ -1156,18 +947,14 @@
             "clipscore": 43.78971862792969,
             "imagereward": 0.5879728198051453,
             "laion_aesthetic": 5.202723503112793
-          },
-          "elapsed_seconds": 0.003
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/black_scorpion_logistics.svg",
-          "score": 0.26953125,
-          "raw_cosine": 0.26953125,
-          "logit": 26.953125,
+          "status": "ok",
+          "elapsed_seconds": 16.144,
           "scores": {
             "lica_score_v2": 0.26953125,
             "hpsv21": 0.2717728018760681,
@@ -1175,18 +962,14 @@
             "clipscore": 41.860443115234375,
             "imagereward": -0.006556664127856493,
             "laion_aesthetic": 5.334750175476074
-          },
-          "elapsed_seconds": 16.144
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/black_scorpion_logistics.svg",
-          "score": 0.25,
-          "raw_cosine": 0.25,
-          "logit": 25.0,
+          "status": "ok",
+          "elapsed_seconds": 17.405,
           "scores": {
             "lica_score_v2": 0.25,
             "hpsv21": 0.26251909136772156,
@@ -1194,18 +977,14 @@
             "clipscore": 43.33780288696289,
             "imagereward": 0.42465898394584656,
             "laion_aesthetic": 5.400110721588135
-          },
-          "elapsed_seconds": 17.405
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/black_scorpion_logistics.svg",
-          "score": 0.2060546875,
-          "raw_cosine": 0.2060546875,
-          "logit": 20.60546875,
+          "status": "ok",
+          "elapsed_seconds": 20.943,
           "scores": {
             "lica_score_v2": 0.2060546875,
             "hpsv21": 0.242306649684906,
@@ -1213,18 +992,14 @@
             "clipscore": 43.45472717285156,
             "imagereward": 0.24209383130073547,
             "laion_aesthetic": 5.359679222106934
-          },
-          "elapsed_seconds": 20.943
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/black_scorpion_logistics.svg",
-          "score": 0.212890625,
-          "raw_cosine": 0.212890625,
-          "logit": 21.2890625,
+          "status": "ok",
+          "elapsed_seconds": 13.843,
           "scores": {
             "lica_score_v2": 0.212890625,
             "hpsv21": 0.20098164677619934,
@@ -1232,15 +1007,9 @@
             "clipscore": 43.122093200683594,
             "imagereward": -0.16143468022346497,
             "laion_aesthetic": 4.993422508239746
-          },
-          "elapsed_seconds": 13.843
+          }
         }
       ],
-      "best": {
-        "id": "arrow",
-        "label": "Arrow 1.1",
-        "score": 0.28125
-      },
       "winners": {
         "lica_score_v2": {
           "id": "arrow",
@@ -1272,6 +1041,11 @@
           "label": "Gemini 3.1 Pro Preview",
           "score": 5.400110721588135
         }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.28125
       }
     },
     {
@@ -1282,12 +1056,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/pelican_bike.svg",
-          "score": 0.29296875,
-          "raw_cosine": 0.29296875,
-          "logit": 29.296875,
+          "status": "ok",
+          "elapsed_seconds": 0.004,
           "scores": {
             "lica_score_v2": 0.29296875,
             "hpsv21": 0.27714288234710693,
@@ -1295,18 +1066,14 @@
             "clipscore": 30.59404182434082,
             "imagereward": 1.9427053928375244,
             "laion_aesthetic": 5.5001325607299805
-          },
-          "elapsed_seconds": 0.004
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/pelican_bike.svg",
-          "score": 0.2197265625,
-          "raw_cosine": 0.2197265625,
-          "logit": 21.97265625,
+          "status": "ok",
+          "elapsed_seconds": 33.854,
           "scores": {
             "lica_score_v2": 0.2197265625,
             "hpsv21": 0.2263174057006836,
@@ -1314,18 +1081,14 @@
             "clipscore": 29.20379638671875,
             "imagereward": -1.3607438802719116,
             "laion_aesthetic": 5.188201904296875
-          },
-          "elapsed_seconds": 33.854
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/pelican_bike.svg",
-          "score": 0.26171875,
-          "raw_cosine": 0.26171875,
-          "logit": 26.171875,
+          "status": "ok",
+          "elapsed_seconds": 42.312,
           "scores": {
             "lica_score_v2": 0.26171875,
             "hpsv21": 0.26595520973205566,
@@ -1333,18 +1096,14 @@
             "clipscore": 31.433734893798828,
             "imagereward": 1.9154529571533203,
             "laion_aesthetic": 5.558126449584961
-          },
-          "elapsed_seconds": 42.312
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/pelican_bike.svg",
-          "score": 0.267578125,
-          "raw_cosine": 0.267578125,
-          "logit": 26.7578125,
+          "status": "ok",
+          "elapsed_seconds": 14.705,
           "scores": {
             "lica_score_v2": 0.267578125,
             "hpsv21": 0.2669133245944977,
@@ -1352,18 +1111,14 @@
             "clipscore": 26.641672134399414,
             "imagereward": 1.8752728700637817,
             "laion_aesthetic": 5.502528190612793
-          },
-          "elapsed_seconds": 14.705
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/pelican_bike.svg",
-          "score": 0.23046875,
-          "raw_cosine": 0.23046875,
-          "logit": 23.046875,
+          "status": "ok",
+          "elapsed_seconds": 43.303,
           "scores": {
             "lica_score_v2": 0.23046875,
             "hpsv21": 0.23389403522014618,
@@ -1371,15 +1126,9 @@
             "clipscore": 31.18932342529297,
             "imagereward": 1.2753480672836304,
             "laion_aesthetic": 5.465627670288086
-          },
-          "elapsed_seconds": 43.303
+          }
         }
       ],
-      "best": {
-        "id": "arrow",
-        "label": "Arrow 1.1",
-        "score": 0.29296875
-      },
       "winners": {
         "lica_score_v2": {
           "id": "arrow",
@@ -1411,6 +1160,11 @@
           "label": "Gemini 3.1 Pro Preview",
           "score": 5.558126449584961
         }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.29296875
       }
     },
     {
@@ -1421,12 +1175,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/surety_bond_helper_logo.svg",
-          "score": 0.2119140625,
-          "raw_cosine": 0.2119140625,
-          "logit": 21.19140625,
+          "status": "ok",
+          "elapsed_seconds": 0.004,
           "scores": {
             "lica_score_v2": 0.2119140625,
             "hpsv21": 0.2152855098247528,
@@ -1434,18 +1185,14 @@
             "clipscore": 33.69369888305664,
             "imagereward": 0.6722611784934998,
             "laion_aesthetic": 5.616293907165527
-          },
-          "elapsed_seconds": 0.003
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/surety_bond_helper_logo.svg",
-          "score": 0.134765625,
-          "raw_cosine": 0.134765625,
-          "logit": 13.4765625,
+          "status": "ok",
+          "elapsed_seconds": 14.412,
           "scores": {
             "lica_score_v2": 0.134765625,
             "hpsv21": 0.1526353657245636,
@@ -1453,18 +1200,14 @@
             "clipscore": 18.632389068603516,
             "imagereward": -0.7514048218727112,
             "laion_aesthetic": 5.4792351722717285
-          },
-          "elapsed_seconds": 14.412
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/surety_bond_helper_logo.svg",
-          "score": 0.1484375,
-          "raw_cosine": 0.1484375,
-          "logit": 14.84375,
+          "status": "ok",
+          "elapsed_seconds": 11.511,
           "scores": {
             "lica_score_v2": 0.1484375,
             "hpsv21": 0.16427528858184814,
@@ -1472,18 +1215,14 @@
             "clipscore": 18.441951751708984,
             "imagereward": -0.567086398601532,
             "laion_aesthetic": 5.475336074829102
-          },
-          "elapsed_seconds": 11.511
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/surety_bond_helper_logo.svg",
-          "score": 0.2421875,
-          "raw_cosine": 0.2421875,
-          "logit": 24.21875,
+          "status": "ok",
+          "elapsed_seconds": 9.448,
           "scores": {
             "lica_score_v2": 0.2421875,
             "hpsv21": 0.2416660040616989,
@@ -1491,18 +1230,14 @@
             "clipscore": 37.3028564453125,
             "imagereward": 1.0609352588653564,
             "laion_aesthetic": 5.942889213562012
-          },
-          "elapsed_seconds": 9.448
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/surety_bond_helper_logo.svg",
-          "score": 0.1416015625,
-          "raw_cosine": 0.1416015625,
-          "logit": 14.16015625,
+          "status": "ok",
+          "elapsed_seconds": 40.134,
           "scores": {
             "lica_score_v2": 0.1416015625,
             "hpsv21": 0.14780613780021667,
@@ -1510,15 +1245,9 @@
             "clipscore": 24.97801399230957,
             "imagereward": -0.8582794666290283,
             "laion_aesthetic": 5.611639976501465
-          },
-          "elapsed_seconds": 40.134
+          }
         }
       ],
-      "best": {
-        "id": "claude",
-        "label": "Claude Opus 4.7",
-        "score": 0.2421875
-      },
       "winners": {
         "lica_score_v2": {
           "id": "claude",
@@ -1550,6 +1279,11 @@
           "label": "Claude Opus 4.7",
           "score": 5.942889213562012
         }
+      },
+      "best": {
+        "id": "claude",
+        "label": "Claude Opus 4.7",
+        "score": 0.2421875
       }
     },
     {
@@ -1560,12 +1294,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/smithson_express_phrames.svg",
-          "score": 0.228515625,
-          "raw_cosine": 0.228515625,
-          "logit": 22.8515625,
+          "status": "ok",
+          "elapsed_seconds": 0.002,
           "scores": {
             "lica_score_v2": 0.228515625,
             "hpsv21": 0.21540804207324982,
@@ -1573,18 +1304,14 @@
             "clipscore": 42.08010482788086,
             "imagereward": 1.14437997341156,
             "laion_aesthetic": 5.188300132751465
-          },
-          "elapsed_seconds": 0.002
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/smithson_express_phrames.svg",
-          "score": 0.2294921875,
-          "raw_cosine": 0.2294921875,
-          "logit": 22.94921875,
+          "status": "ok",
+          "elapsed_seconds": 15.006,
           "scores": {
             "lica_score_v2": 0.2294921875,
             "hpsv21": 0.23442278802394867,
@@ -1592,18 +1319,14 @@
             "clipscore": 41.43101119995117,
             "imagereward": 1.3607560396194458,
             "laion_aesthetic": 5.332409858703613
-          },
-          "elapsed_seconds": 15.006
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/smithson_express_phrames.svg",
-          "score": 0.2392578125,
-          "raw_cosine": 0.2392578125,
-          "logit": 23.92578125,
+          "status": "ok",
+          "elapsed_seconds": 21.082,
           "scores": {
             "lica_score_v2": 0.2392578125,
             "hpsv21": 0.25054508447647095,
@@ -1611,18 +1334,14 @@
             "clipscore": 43.82500076293945,
             "imagereward": 1.528449296951294,
             "laion_aesthetic": 5.55156946182251
-          },
-          "elapsed_seconds": 21.082
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/smithson_express_phrames.svg",
-          "score": 0.22265625,
-          "raw_cosine": 0.22265625,
-          "logit": 22.265625,
+          "status": "ok",
+          "elapsed_seconds": 9.307,
           "scores": {
             "lica_score_v2": 0.22265625,
             "hpsv21": 0.23178443312644958,
@@ -1630,18 +1349,14 @@
             "clipscore": 40.929813385009766,
             "imagereward": 1.5042515993118286,
             "laion_aesthetic": 5.224478244781494
-          },
-          "elapsed_seconds": 9.307
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/smithson_express_phrames.svg",
-          "score": 0.232421875,
-          "raw_cosine": 0.232421875,
-          "logit": 23.2421875,
+          "status": "ok",
+          "elapsed_seconds": 37.721,
           "scores": {
             "lica_score_v2": 0.232421875,
             "hpsv21": 0.2346888929605484,
@@ -1649,15 +1364,9 @@
             "clipscore": 42.04957962036133,
             "imagereward": 1.0696661472320557,
             "laion_aesthetic": 5.337508201599121
-          },
-          "elapsed_seconds": 37.721
+          }
         }
       ],
-      "best": {
-        "id": "gemini",
-        "label": "Gemini 3.1 Pro Preview",
-        "score": 0.2392578125
-      },
       "winners": {
         "lica_score_v2": {
           "id": "gemini",
@@ -1671,7 +1380,7 @@
         },
         "pickscore": {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
+          "label": "Qwen Base",
           "score": 21.758996963500977
         },
         "clipscore": {
@@ -1689,6 +1398,11 @@
           "label": "Gemini 3.1 Pro Preview",
           "score": 5.55156946182251
         }
+      },
+      "best": {
+        "id": "gemini",
+        "label": "Gemini 3.1 Pro Preview",
+        "score": 0.2392578125
       }
     },
     {
@@ -1699,12 +1413,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/cartoon_girl_waving.svg",
-          "score": 0.26171875,
-          "raw_cosine": 0.26171875,
-          "logit": 26.171875,
+          "status": "ok",
+          "elapsed_seconds": 0.003,
           "scores": {
             "lica_score_v2": 0.26171875,
             "hpsv21": 0.2731112837791443,
@@ -1712,18 +1423,14 @@
             "clipscore": 34.32160186767578,
             "imagereward": 0.4393810033798218,
             "laion_aesthetic": 5.052298545837402
-          },
-          "elapsed_seconds": 0.003
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/cartoon_girl_waving.svg",
-          "score": 0.23828125,
-          "raw_cosine": 0.23828125,
-          "logit": 23.828125,
+          "status": "ok",
+          "elapsed_seconds": 21.838,
           "scores": {
             "lica_score_v2": 0.23828125,
             "hpsv21": 0.2456229031085968,
@@ -1731,18 +1438,14 @@
             "clipscore": 31.33409309387207,
             "imagereward": 0.7531651854515076,
             "laion_aesthetic": 5.271045684814453
-          },
-          "elapsed_seconds": 21.838
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/cartoon_girl_waving.svg",
-          "score": 0.181640625,
-          "raw_cosine": 0.181640625,
-          "logit": 18.1640625,
+          "status": "ok",
+          "elapsed_seconds": 10.977,
           "scores": {
             "lica_score_v2": 0.181640625,
             "hpsv21": 0.19501687586307526,
@@ -1750,18 +1453,14 @@
             "clipscore": 29.491535186767578,
             "imagereward": -0.6971486806869507,
             "laion_aesthetic": 4.425297260284424
-          },
-          "elapsed_seconds": 10.977
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/cartoon_girl_waving.svg",
-          "score": 0.2294921875,
-          "raw_cosine": 0.2294921875,
-          "logit": 22.94921875,
+          "status": "ok",
+          "elapsed_seconds": 17.916,
           "scores": {
             "lica_score_v2": 0.2294921875,
             "hpsv21": 0.23108486831188202,
@@ -1769,18 +1468,14 @@
             "clipscore": 28.183048248291016,
             "imagereward": -0.2483375370502472,
             "laion_aesthetic": 5.054470062255859
-          },
-          "elapsed_seconds": 17.916
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/cartoon_girl_waving.svg",
-          "score": 0.1572265625,
-          "raw_cosine": 0.1572265625,
-          "logit": 15.72265625,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1572265625,
             "hpsv21": 0.1617499738931656,
@@ -1788,15 +1483,9 @@
             "clipscore": 22.102079391479492,
             "imagereward": -2.275996446609497,
             "laion_aesthetic": 4.697992324829102
-          },
-          "elapsed_seconds": 0.0
+          }
         }
       ],
-      "best": {
-        "id": "arrow",
-        "label": "Arrow 1.1",
-        "score": 0.26171875
-      },
       "winners": {
         "lica_score_v2": {
           "id": "arrow",
@@ -1828,6 +1517,11 @@
           "label": "GPT-5.4",
           "score": 5.271045684814453
         }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.26171875
       }
     },
     {
@@ -1838,12 +1532,9 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "short_label": "Arrow",
-          "status": "ok",
           "asset": "assets/model-comparison/arrow/fall_leaves.svg",
-          "score": 0.2255859375,
-          "raw_cosine": 0.2255859375,
-          "logit": 22.55859375,
+          "status": "ok",
+          "elapsed_seconds": 0.003,
           "scores": {
             "lica_score_v2": 0.2255859375,
             "hpsv21": 0.2242998629808426,
@@ -1851,18 +1542,14 @@
             "clipscore": 24.353517532348633,
             "imagereward": 0.4141230583190918,
             "laion_aesthetic": 5.278505802154541
-          },
-          "elapsed_seconds": 0.002
+          }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "short_label": "GPT",
-          "status": "ok",
           "asset": "assets/model-comparison/gpt/fall_leaves.svg",
-          "score": 0.2119140625,
-          "raw_cosine": 0.2119140625,
-          "logit": 21.19140625,
+          "status": "ok",
+          "elapsed_seconds": 30.222,
           "scores": {
             "lica_score_v2": 0.2119140625,
             "hpsv21": 0.21592754125595093,
@@ -1870,18 +1557,14 @@
             "clipscore": 25.935129165649414,
             "imagereward": -0.7514880299568176,
             "laion_aesthetic": 5.147875785827637
-          },
-          "elapsed_seconds": 30.222
+          }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "short_label": "Gemini",
-          "status": "ok",
           "asset": "assets/model-comparison/gemini/fall_leaves.svg",
-          "score": 0.1865234375,
-          "raw_cosine": 0.1865234375,
-          "logit": 18.65234375,
+          "status": "ok",
+          "elapsed_seconds": 28.398,
           "scores": {
             "lica_score_v2": 0.1865234375,
             "hpsv21": 0.189264714717865,
@@ -1889,18 +1572,14 @@
             "clipscore": 27.968204498291016,
             "imagereward": -0.7322876453399658,
             "laion_aesthetic": 5.382859230041504
-          },
-          "elapsed_seconds": 28.398
+          }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "short_label": "Claude",
-          "status": "ok",
           "asset": "assets/model-comparison/claude/fall_leaves.svg",
-          "score": 0.1884765625,
-          "raw_cosine": 0.1884765625,
-          "logit": 18.84765625,
+          "status": "ok",
+          "elapsed_seconds": 16.445,
           "scores": {
             "lica_score_v2": 0.1884765625,
             "hpsv21": 0.19223277270793915,
@@ -1908,18 +1587,14 @@
             "clipscore": 23.98102378845215,
             "imagereward": -0.3105512261390686,
             "laion_aesthetic": 4.967879295349121
-          },
-          "elapsed_seconds": 16.445
+          }
         },
         {
           "id": "qwen_lora",
-          "label": "Qwen3.5-VL 3.5B",
-          "short_label": "Qwen",
-          "status": "ok",
+          "label": "Qwen Base",
           "asset": "assets/model-comparison/qwen_lora/fall_leaves.svg",
-          "score": 0.169921875,
-          "raw_cosine": 0.169921875,
-          "logit": 16.9921875,
+          "status": "ok",
+          "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.169921875,
             "hpsv21": 0.1691417098045349,
@@ -1927,15 +1602,9 @@
             "clipscore": 24.769466400146484,
             "imagereward": -1.8315513134002686,
             "laion_aesthetic": 4.784610748291016
-          },
-          "elapsed_seconds": 0.0
+          }
         }
       ],
-      "best": {
-        "id": "arrow",
-        "label": "Arrow 1.1",
-        "score": 0.2255859375
-      },
       "winners": {
         "lica_score_v2": {
           "id": "arrow",
@@ -1967,7 +1636,316 @@
           "label": "Gemini 3.1 Pro Preview",
           "score": 5.382859230041504
         }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.2255859375
+      }
+    },
+    {
+      "id": "santa_christmas",
+      "prompt": "Cute smiling Santa Claus standing with gift bag, clean flat vector illustration, red and white festive outfit, soft snowy background, elegant “Merry Christmas” typography below, premium SVG style, modern holiday branding aesthetic",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "asset": "assets/model-comparison/arrow/santa_christmas.svg",
+          "status": "ok",
+          "elapsed_seconds": 0.003,
+          "scores": {
+            "lica_score_v2": 0.259765625,
+            "hpsv21": 0.25107720494270325,
+            "pickscore": 20.05703353881836,
+            "clipscore": 25.282352447509766,
+            "imagereward": 1.363481044769287,
+            "laion_aesthetic": 5.2210283279418945
+          }
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "asset": "assets/model-comparison/gpt/santa_christmas.svg",
+          "status": "ok",
+          "elapsed_seconds": 35.525,
+          "scores": {
+            "lica_score_v2": 0.208984375,
+            "hpsv21": 0.21748656034469604,
+            "pickscore": 20.016050338745117,
+            "clipscore": 29.652690887451172,
+            "imagereward": 0.8354548215866089,
+            "laion_aesthetic": 5.64604377746582
+          }
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "asset": "assets/model-comparison/gemini/santa_christmas.svg",
+          "status": "ok",
+          "elapsed_seconds": 132.09,
+          "scores": {
+            "lica_score_v2": 0.2265625,
+            "hpsv21": 0.2403268814086914,
+            "pickscore": 21.397056579589844,
+            "clipscore": 28.342679977416992,
+            "imagereward": 1.4322189092636108,
+            "laion_aesthetic": 5.476154804229736
+          }
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "asset": "assets/model-comparison/claude/santa_christmas.svg",
+          "status": "ok",
+          "elapsed_seconds": 33.817,
+          "scores": {
+            "lica_score_v2": 0.234375,
+            "hpsv21": 0.23571032285690308,
+            "pickscore": 20.55127716064453,
+            "clipscore": 27.930307388305664,
+            "imagereward": 1.6042144298553467,
+            "laion_aesthetic": 5.477710723876953
+          }
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen Base",
+          "asset": "assets/model-comparison/qwen_lora/santa_christmas.svg",
+          "status": "ok",
+          "elapsed_seconds": 24.526,
+          "scores": {
+            "lica_score_v2": 0.1923828125,
+            "hpsv21": 0.20222115516662598,
+            "pickscore": 19.54715919494629,
+            "clipscore": 27.629613876342773,
+            "imagereward": 0.014041900634765625,
+            "laion_aesthetic": 5.2577805519104
+          }
+        }
+      ],
+      "winners": {
+        "lica_score_v2": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.259765625
+        },
+        "hpsv21": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.25107720494270325
+        },
+        "pickscore": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 21.397056579589844
+        },
+        "clipscore": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 29.652690887451172
+        },
+        "imagereward": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 1.6042144298553467
+        },
+        "laion_aesthetic": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 5.64604377746582
+        }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.259765625
+      }
+    },
+    {
+      "id": "compass_north_icon",
+      "prompt": "minimalist compass pointing north. a circle icon that shows direction.",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "asset": "assets/model-comparison/arrow/compass_north_icon.svg",
+          "status": "ok",
+          "elapsed_seconds": 0.002,
+          "scores": {
+            "lica_score_v2": 0.2314453125,
+            "hpsv21": 0.2109072059392929,
+            "pickscore": 21.345773696899414,
+            "clipscore": 30.41912078857422,
+            "imagereward": 0.07282519340515137,
+            "laion_aesthetic": 5.016161918640137
+          }
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "asset": "assets/model-comparison/gpt/compass_north_icon.svg",
+          "status": "ok",
+          "elapsed_seconds": 7.055,
+          "scores": {
+            "lica_score_v2": 0.203125,
+            "hpsv21": 0.18674111366271973,
+            "pickscore": 21.01728057861328,
+            "clipscore": 30.269939422607422,
+            "imagereward": -0.5450175404548645,
+            "laion_aesthetic": 4.735112190246582
+          }
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "asset": "assets/model-comparison/gemini/compass_north_icon.svg",
+          "status": "ok",
+          "elapsed_seconds": 5.317,
+          "scores": {
+            "lica_score_v2": 0.2109375,
+            "hpsv21": 0.16130831837654114,
+            "pickscore": 19.529146194458008,
+            "clipscore": 24.191062927246094,
+            "imagereward": -1.9420818090438843,
+            "laion_aesthetic": 4.7762322425842285
+          }
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "asset": "assets/model-comparison/claude/compass_north_icon.svg",
+          "status": "ok",
+          "elapsed_seconds": 7.567,
+          "scores": {
+            "lica_score_v2": 0.25,
+            "hpsv21": 0.2573815584182739,
+            "pickscore": 21.937400817871094,
+            "clipscore": 33.02845764160156,
+            "imagereward": 1.049668788909912,
+            "laion_aesthetic": 4.890522003173828
+          }
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen Base",
+          "asset": "assets/model-comparison/qwen_lora/compass_north_icon.svg",
+          "status": "ok",
+          "elapsed_seconds": 31.732,
+          "scores": {
+            "lica_score_v2": 0.2265625,
+            "hpsv21": 0.2098538875579834,
+            "pickscore": 20.56056785583496,
+            "clipscore": 31.376632690429688,
+            "imagereward": 0.20585061609745026,
+            "laion_aesthetic": 4.36429500579834
+          }
+        }
+      ],
+      "winners": {
+        "lica_score_v2": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.25
+        },
+        "hpsv21": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.2573815584182739
+        },
+        "pickscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 21.937400817871094
+        },
+        "clipscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 33.02845764160156
+        },
+        "imagereward": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 1.049668788909912
+        },
+        "laion_aesthetic": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 5.016161918640137
+        }
+      },
+      "best": {
+        "id": "claude",
+        "label": "Claude Opus 4.7",
+        "score": 0.25
       }
     }
-  ]
+  ],
+  "summary": {
+    "prompts": 15,
+    "models": 5,
+    "candidates": 75,
+    "scored_candidates": 75,
+    "missing_candidates": 0,
+    "winner_counts": {
+      "arrow": 9,
+      "gpt": 0,
+      "gemini": 3,
+      "claude": 3,
+      "qwen_lora": 0
+    },
+    "scored_by_metric": {
+      "lica_score_v2": 75,
+      "hpsv21": 75,
+      "pickscore": 75,
+      "clipscore": 75,
+      "imagereward": 75,
+      "laion_aesthetic": 75
+    },
+    "metric_win_counts": {
+      "lica_score_v2": {
+        "arrow": 9,
+        "gpt": 0,
+        "gemini": 3,
+        "claude": 3,
+        "qwen_lora": 0
+      },
+      "hpsv21": {
+        "arrow": 8,
+        "gpt": 1,
+        "gemini": 4,
+        "claude": 2,
+        "qwen_lora": 0
+      },
+      "pickscore": {
+        "arrow": 7,
+        "gpt": 1,
+        "gemini": 2,
+        "claude": 4,
+        "qwen_lora": 1
+      },
+      "clipscore": {
+        "arrow": 5,
+        "gpt": 2,
+        "gemini": 3,
+        "claude": 5,
+        "qwen_lora": 0
+      },
+      "imagereward": {
+        "arrow": 8,
+        "gpt": 1,
+        "gemini": 2,
+        "claude": 4,
+        "qwen_lora": 0
+      },
+      "laion_aesthetic": {
+        "arrow": 4,
+        "gpt": 4,
+        "gemini": 5,
+        "claude": 2,
+        "qwen_lora": 0
+      }
+    }
+  }
 }

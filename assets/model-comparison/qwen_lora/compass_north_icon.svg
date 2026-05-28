@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Compass outer circle -->
+  <circle id="compass-circle" cx="100" cy="100" r="90" fill="none" stroke="#333333" stroke-width="2"/>
+  
+  <!-- Cardinal points text -->
+  <text id="n-marker" x="100" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D32F2F" text-anchor="middle">N</text>
+  <text id="e-marker" x="175" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333" text-anchor="middle">E</text>
+  <text id="s-marker" x="100" y="175" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333" text-anchor="middle">S</text>
+  <text id="w-marker" x="25" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333" text-anchor="middle">W</text>
+  
+  <!-- Needle shaft (neutral part) -->
+  <line id="needle-south" x1="100" y1="100" x2="100" y2="180" stroke="#333333" stroke-width="3" opacity="0.4"/>
+  
+  <!-- Needle north pointer (pointing up to North) -->
+  <path id="needle-north" d="M 100 20 L 100 100 L 92 90 L 108 90 Z" fill="#D32F2F"/>
+  
+  <!-- Center pivot point -->
+  <circle id="center-pivot" cx="100" cy="100" r="5" fill="#333333"/>
+  
+  <!-- Tick marks for degrees -->
+  <g id="tick-marks" stroke="#333333" stroke-width="1" opacity="0.3">
+    <line x1="100" y1="10" x2="100" y2="20"/>
+    <line x1="180" y1="100" x2="190" y2="100"/>
+    <line x1="100" y1="190" x2="100" y2="180"/>
+    <line x1="10" y1="100" x2="20" y2="100"/>
+  </g>
+</svg>

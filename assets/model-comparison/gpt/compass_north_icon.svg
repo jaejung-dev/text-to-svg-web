@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Minimalist compass pointing north">
+  <circle cx="128" cy="128" r="92" fill="none" stroke="#111111" stroke-width="12"/>
+  <circle cx="128" cy="128" r="8" fill="#111111"/>
+  <path d="M128 54 L152 128 L128 112 L104 128 Z" fill="#111111"/>
+  <path d="M128 202 L104 128 L128 144 L152 128 Z" fill="none" stroke="#111111" stroke-width="10" stroke-linejoin="round"/>
+  <line x1="128" y1="36" x2="128" y2="18" stroke="#111111" stroke-width="12" stroke-linecap="round"/>
+</svg>

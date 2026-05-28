@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 154.6">
+<!-- SVG created with Arrow, by QuiverAI (https://quiver.ai); background added for scoring sensitivity check. -->
+  <defs>
+    <linearGradient id="sakuraBg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff5f8"/>
+      <stop offset="58%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eef7ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="154.6" fill="url(#sakuraBg)"/>
+  <circle cx="22" cy="18" r="3" fill="#ffc7d6" opacity="0.58"/>
+  <circle cx="98" cy="26" r="2.6" fill="#ffd4df" opacity="0.52"/>
+  <style type="text/css">.cls-0 {fill:#FFEBEE;}
+.cls-1 {fill:#FD9FB0;}
+.cls-2 {fill:#282828;}</style>
+  <path class="cls-1" d="m117.1 57c-0.7-26.9-21.7-48.1-43.2-53.3-13.3-3.1-27.4-2.1-39.3 4.1-12.5 6.1-22.7 17.6-27.4 30.2-2.1 5.3-3.6 12.4-3.8 19.5-0.2 12.9 4.2 26.2 12.5 36.5 8.4 10.4 20.6 18.3 36.1 21.5 12.3 2.2 26.7-0.4 38.6-7.6 14.5-8.6 23.7-23.3 26-39.7 0.4-3.7 0.7-7.4 0.5-11.2z"/>
+  <path class="cls-2" d="m52.7 104.3-3.9 48.6h22.6l-4.3-48.6c-2.8 1-9.6 2-14.4 0z"/>
+</svg>
