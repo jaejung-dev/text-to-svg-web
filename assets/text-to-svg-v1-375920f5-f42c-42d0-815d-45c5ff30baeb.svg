@@ -1,0 +1,21 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- White background -->
+  <rect width="400" height="400" fill="#FFFFFF"/>
+  
+  <!-- Hexagon with rounded corners -->
+  <path 
+    id="hexagon-outline" 
+    d="M 200 40 
+       L 320 110 
+       L 320 250 
+       L 200 320 
+       L 80 250 
+       L 80 110 
+       Z"
+    fill="none" 
+    stroke="#2D3748" 
+    stroke-width="4" 
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+</svg>

@@ -1,0 +1,38 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define blue color stroke with uniform thickness -->
+  <defs>
+    <style>
+      .arc {
+        fill: none;
+        stroke: #2563eb;
+        stroke-width: 3;
+        stroke-linecap: round;
+        opacity: 0.85;
+      }
+    </style>
+  </defs>
+  
+  <!-- Concentric curved arcs from upper left to lower right -->
+  <g id="concentric-arcs" stroke="url(#gradient-blue)" stroke-width="3" fill="none" stroke-linecap="round">
+    <!-- Outermost arc -->
+    <path class="arc" d="M 50 60 Q 200 50 350 120 Q 370 180 340 240" />
+    
+    <!-- Second arc -->
+    <path class="arc" d="M 60 75 Q 200 70 340 135 Q 360 195 330 255" />
+    
+    <!-- Third arc -->
+    <path class="arc" d="M 70 90 Q 195 90 330 150 Q 350 210 320 270" />
+    
+    <!-- Fourth arc -->
+    <path class="arc" d="M 80 105 Q 190 110 320 165 Q 340 225 310 285" />
+    
+    <!-- Fifth arc -->
+    <path class="arc" d="M 90 120 Q 185 130 310 180 Q 330 240 300 300" />
+    
+    <!-- Sixth arc (innermost) -->
+    <path class="arc" d="M 100 135 Q 180 150 300 195 Q 320 255 290 315" />
+    
+    <!-- Seventh arc (center) -->
+    <path class="arc" d="M 110 150 Q 175 170 290 210 Q 310 270 280 330" />
+  </g>
+</svg>

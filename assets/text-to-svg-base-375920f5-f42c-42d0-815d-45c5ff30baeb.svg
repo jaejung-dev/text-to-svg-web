@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect id="background" x="0" y="0" width="200" height="200" fill="#FFFFFF"/>
+  
+  <!-- Hexagon Outline -->
+  <g id="hexagon-shape">
+    <polygon id="hexagon-outline" 
+             points="100,20 169,60 169,140 100,180 31,140 31,60" 
+             fill="none" 
+             stroke="#3D4C5C" 
+             stroke-width="6" 
+             stroke-linejoin="round" 
+             stroke-linecap="round"/>
+  </g>
+</svg>

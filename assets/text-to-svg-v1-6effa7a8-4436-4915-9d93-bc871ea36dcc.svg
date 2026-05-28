@@ -1,0 +1,38 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="barGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B0D890;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#90C880;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Bar Chart Container -->
+  <g id="barChart" transform="translate(40, 100)">
+    <!-- First Bar (shortest) -->
+    <rect id="bar1" x="0" y="80" width="25" height="40" fill="url(#barGradient)" rx="2" />
+    
+    <!-- Second Bar (medium height) -->
+    <rect id="bar2" x="35" y="60" width="25" height="60" fill="url(#barGradient)" rx="2" />
+    
+    <!-- Third Bar (tallest) -->
+    <rect id="bar3" x="70" y="30" width="25" height="90" fill="url(#barGradient)" rx="2" />
+    
+    <!-- X-axis line -->
+    <line id="xAxis" x1="-5" y1="120" x2="100" y2="120" stroke="#666" stroke-width="2" stroke-dasharray="4" />
+  </g>
+  
+  <!-- Upward Trend Arrow -->
+  <g id="upwardArrow" transform="translate(120, 140) rotate(45)">
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#B0D890" />
+      </marker>
+    </defs>
+    
+    <!-- Arrow line with arrowhead -->
+    <line id="arrowLine" x1="0" y1="0" x2="40" y2="-50" stroke="#B0D890" stroke-width="3" marker-end="url(#arrowhead)" />
+    
+    <!-- Arrow tip (extra visual) -->
+    <polygon id="arrowTip" points="40,-50 35,-42 45,-42" fill="#B0D890" />
+  </g>
+</svg>

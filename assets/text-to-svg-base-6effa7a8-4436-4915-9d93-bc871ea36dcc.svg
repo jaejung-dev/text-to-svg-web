@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrowhead Marker Definition -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#C5E1A5" />
+    </marker>
+  </defs>
+
+  <!-- Bars Group -->
+  <g id="bars-group" stroke="none">
+    <!-- Bar 1: Shortest -->
+    <rect id="bar-1" x="20" y="130" width="40" height="30" fill="#C5E1A5" rx="2" ry="2" />
+    
+    <!-- Bar 2: Medium -->
+    <rect id="bar-2" x="80" y="100" width="40" height="60" fill="#C5E1A5" rx="2" ry="2" />
+    
+    <!-- Bar 3: Tallest -->
+    <rect id="bar-3" x="140" y="70" width="40" height="90" fill="#C5E1A5" rx="2" ry="2" />
+  </g>
+
+  <!-- Trend Arrow Group -->
+  <g id="trend-arrow-group">
+    <!-- Diagonal Arrow Line -->
+    <path id="arrow-path" d="M 15 175 L 185 25" stroke="#C5E1A5" stroke-width="5" stroke-linecap="round" marker-end="url(#arrowhead)" />
+  </g>
+</svg>

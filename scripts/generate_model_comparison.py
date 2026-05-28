@@ -43,6 +43,17 @@ MODEL_SPECS = [
 BASELINE_ORDER = ["gt", "claude", "gemini", "gpt-5.2"]
 MODEL_ORDER = [spec["id"] for spec in MODEL_SPECS]
 SVG_SOURCES = set(MODEL_ORDER)
+MIN_SVG_CHARS = 80
+GENERATION_PAYLOAD_OVERRIDES = {
+    # Do not set stop="</svg>" for the base model: Qwen can mention the literal
+    # tag pair during thinking, causing SGLang to stop before the final SVG.
+    "text-to-svg-base": {
+        "max_new_tokens": 8192,
+        "temperature": 0.9,
+        "top_p": 0.95,
+        "top_k": 50,
+    }
+}
 
 
 def utc_now() -> str:
@@ -121,12 +132,14 @@ def complete_generation(item: dict[str, Any] | None) -> bool:
     return bool(item and item.get("status") == "ok" and item.get("asset") and (PROJECT / item["asset"]).exists())
 
 
-def call_generation(endpoint: str, api_key: str, prompt: str, timeout: int) -> dict[str, Any]:
+def call_generation(spec: dict[str, Any], api_key: str, prompt: str, timeout: int) -> dict[str, Any]:
+    payload = {"description": prompt}
+    payload.update(GENERATION_PAYLOAD_OVERRIDES.get(spec["id"], {}))
     started = time.time()
     response = requests.post(
-        endpoint,
+        spec["endpoint"],
         headers={"Authorization": f"Api-Key {api_key}"},
-        json={"description": prompt},
+        json=payload,
         timeout=timeout,
     )
     elapsed = time.time() - started
@@ -145,13 +158,23 @@ def generation_item(
     svg = result.get("svg") or ""
     if svg:
         (PROJECT / asset).write_text(svg, encoding="utf-8")
+    parse_error = result.get("svg_parse_error") or (svg_parse_error(svg) if svg else "No SVG returned.")
+    if not svg:
+        status = "no_svg"
+    elif parse_error:
+        status = "invalid_svg"
+    elif len(svg) < MIN_SVG_CHARS:
+        status = "invalid_svg"
+        parse_error = f"SVG too short ({len(svg)} chars)."
+    else:
+        status = "ok"
     return {
         "source": spec["id"],
         "label": spec["label"],
         "asset": asset if svg else None,
-        "status": "ok" if svg else "no_svg",
+        "status": status,
         "endpoint": spec["endpoint"],
-        "svg_parse_error": result.get("svg_parse_error") or (svg_parse_error(svg) if svg else "No SVG returned."),
+        "svg_parse_error": parse_error,
         "input_tokens": result.get("input_tokens"),
         "output_tokens": result.get("output_tokens"),
         "elapsed_seconds": round(float(result.get("elapsed_seconds", 0.0)), 3),
@@ -195,7 +218,7 @@ def run_model_generation(
             continue
         print(f"[{spec['id']}] {index}/{total} generating {target['id']}", flush=True)
         try:
-            result = call_generation(spec["endpoint"], api_key, target["prompt"], timeout)
+            result = call_generation(spec, api_key, target["prompt"], timeout)
             item = generation_item(spec=spec, asset=asset, result=result)
         except Exception as exc:
             item = {

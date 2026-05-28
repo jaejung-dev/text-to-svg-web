@@ -1,0 +1,29 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define light coral/peach color -->
+  <defs>
+    <style>
+      .starburst-stroke {
+        fill: none;
+        stroke: #F8B49D;
+        stroke-width: 8;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  
+  <!-- Main starburst seal shape -->
+  <g id="starburst-seal">
+    <!-- Outer jagged points -->
+    <path id="outer-points" class="starburst-stroke" 
+          d="M 200 40 L 220 100 L 280 100 L 240 160 L 300 220 L 240 280 L 280 340 L 200 320 L 120 340 L 160 280 L 100 220 L 160 160 L 120 100 L 180 100 Z" />
+    
+    <!-- Inner decorative circle -->
+    <circle id="inner-circle" cx="200" cy="200" r="140" 
+            class="starburst-stroke" />
+    
+    <!-- Middle circular path -->
+    <circle id="middle-circle" cx="200" cy="200" r="100" 
+            class="starburst-stroke" 
+            opacity="0.7" />
+  </g>
+</svg>

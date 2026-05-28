@@ -1,0 +1,7 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Brown outer frame -->
+  <rect id="outer-frame" x="0" y="0" width="400" height="300" fill="#8B4513"/>
+  
+  <!-- White central area -->
+  <rect id="center-content" x="40" y="30" width="320" height="240" fill="#FFFFFF"/>
+</svg>

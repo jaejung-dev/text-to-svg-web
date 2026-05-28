@@ -1,0 +1,35 @@
+<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Flower Petals Group -->
+  <g id="flower-petals">
+    <!-- Petal 1 (Top) -->
+    <ellipse id="petal-1" cx="100" cy="65" rx="28" ry="32" fill="#E6CFF8" stroke="#FFC0CB" stroke-width="2" transform="rotate(0 100 65)" />
+    <!-- Petal 2 (Top Right) -->
+    <ellipse id="petal-2" cx="136" cy="75" rx="28" ry="32" fill="#E6CFF8" stroke="#FFC0CB" stroke-width="2" transform="rotate(72 136 75)" />
+    <!-- Petal 3 (Bottom Right) -->
+    <ellipse id="petal-3" cx="124" cy="124" rx="28" ry="32" fill="#E6CFF8" stroke="#FFC0CB" stroke-width="2" transform="rotate(144 124 124)" />
+    <!-- Petal 4 (Bottom Left) -->
+    <ellipse id="petal-4" cx="76" cy="124" rx="28" ry="32" fill="#E6CFF8" stroke="#FFC0CB" stroke-width="2" transform="rotate(216 76 124)" />
+    <!-- Petal 5 (Top Left) -->
+    <ellipse id="petal-5" cx="64" cy="75" rx="28" ry="32" fill="#E6CFF8" stroke="#FFC0CB" stroke-width="2" transform="rotate(288 64 75)" />
+  </g>
+
+  <!-- Flower Center Group -->
+  <g id="flower-center">
+    <!-- Central Yellow Disk -->
+    <circle id="center-circle" cx="100" cy="110" r="18" fill="#FFFACD" stroke="#FFF8DC" stroke-width="1" />
+  </g>
+
+  <!-- Stem Group -->
+  <g id="stem-group">
+    <!-- Main Stem -->
+    <path id="stem-path" d="M 100 128 Q 105 180 108 220" fill="none" stroke="#98D96C" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- Leaves Group -->
+    <g id="leaves-group">
+      <!-- Left Leaf -->
+      <ellipse id="leaf-left" cx="92" cy="160" rx="12" ry="28" fill="#98D96C" stroke="#7AB85A" stroke-width="1.5" transform="rotate(-35 92 160)" />
+      <!-- Right Leaf -->
+      <ellipse id="leaf-right" cx="108" cy="195" rx="12" ry="28" fill="#98D96C" stroke="#7AB85A" stroke-width="1.5" transform="rotate(35 108 195)" />
+    </g>
+  </g>
+</svg>
