@@ -1,0 +1,83 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="500" fill="#E8F4F8"/>
+  
+  <!-- Ground/Shadows -->
+  <ellipse cx="200" cy="450" rx="150" ry="15" fill="#C8D8E0" opacity="0.6"/>
+  
+  <!-- Bicycle Group -->
+  <g id="bicycle">
+    <!-- Back Wheel -->
+    <circle cx="120" cy="380" r="45" fill="none" stroke="#333333" stroke-width="5"/>
+    <circle cx="120" cy="380" r="40" fill="none" stroke="#CCCCCC" stroke-width="2"/>
+    <circle cx="120" cy="380" r="5" fill="#333333"/>
+    
+    <!-- Front Wheel -->
+    <circle cx="280" cy="380" r="45" fill="none" stroke="#333333" stroke-width="5"/>
+    <circle cx="280" cy="380" r="40" fill="none" stroke="#CCCCCC" stroke-width="2"/>
+    <circle cx="280" cy="380" r="5" fill="#333333"/>
+    
+    <!-- Frame -->
+    <path d="M120 380 L200 300 L280 380 L220 300 Z" fill="none" stroke="#FF6B9D" stroke-width="6" stroke-linejoin="round"/>
+    <line x1="120" y1="380" x2="200" y2="300" stroke="#FF6B9D" stroke-width="6"/>
+    <line x1="200" y1="300" x2="280" y2="380" stroke="#FF6B9D" stroke-width="6"/>
+    
+    <!-- Handlebars -->
+    <path d="M270 280 Q280 260 290 280" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Seat Post & Seat -->
+    <line x1="190" y1="320" x2="180" y2="300" stroke="#666666" stroke-width="4"/>
+    <ellipse cx="180" cy="295" rx="20" ry="8" fill="#FF6B9D"/>
+    
+    <!-- Pedals -->
+    <circle cx="200" cy="330" r="8" fill="#333333"/>
+    <circle cx="165" cy="350" r="8" fill="#333333"/>
+  </g>
+  
+  <!-- Baby Character -->
+  <g id="baby">
+    <!-- Head -->
+    <circle cx="200" cy="200" r="40" fill="#FFE4C4"/>
+    
+    <!-- Face Details -->
+    <circle cx="185" cy="195" r="5" fill="#333333"/>
+    <circle cx="215" cy="195" r="5" fill="#333333"/>
+    <ellipse cx="200" cy="205" rx="4" ry="3" fill="#FFB6C1"/>
+    
+    <!-- Smile -->
+    <path d="M190 210 Q200 220 210 210" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Hair -->
+    <path d="M165 200 Q200 175 235 200 L240 185 Q200 160 160 185 Z" fill="#8B7355"/>
+    <circle cx="180" cy="185" r="3" fill="#D2B48C"/>
+    <circle cx="200" cy="180" r="3" fill="#D2B48C"/>
+    <circle cx="220" cy="185" r="3" fill="#D2B48C"/>
+    
+    <!-- Body/Torso -->
+    <path d="M170 240 Q200 240 230 240 L235 280 Q200 290 165 280 Z" fill="#FFA07A"/>
+    
+    <!-- Arms -->
+    <path d="M170 250 Q150 270 140 260" fill="none" stroke="#FFE4C4" stroke-width="12" stroke-linecap="round"/>
+    <path d="M230 250 Q250 270 260 260" fill="none" stroke="#FFE4C4" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Hands on Handlebars -->
+    <ellipse cx="145" cy="265" rx="8" ry="8" fill="#FFE4C4"/>
+    <ellipse cx="255" cy="265" rx="8" ry="8" fill="#FFE4C4"/>
+    
+    <!-- Legs -->
+    <path d="M200 280 L180 330 L165 340" fill="none" stroke="#FFE4C4" stroke-width="12" stroke-linecap="round"/>
+    <path d="M200 280 L220 330 L235 340" fill="none" stroke="#FFE4C4" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Feet on Pedals -->
+    <ellipse cx="165" cy="340" rx="10" ry="6" fill="#FFE4C4"/>
+    <ellipse cx="235" cy="340" rx="10" ry="6" fill="#FFE4C4"/>
+    
+    <!-- Overall -->
+    <ellipse cx="200" cy="280" rx="35" ry="25" fill="#87CEEB" opacity="0.8"/>
+    
+    <!-- Hat -->
+    <path d="M170 185 Q200 155 230 185 L225 200 Q200 195 175 200 Z" fill="#FF6B9D"/>
+    <circle cx="200" cy="165" r="8" fill="#FFFFFF"/>
+    <circle cx="200" cy="165" r="3" fill="#FF6B9D"/>
+  </g>
+</svg>

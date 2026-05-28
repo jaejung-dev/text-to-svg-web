@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <g id="background">
+    <circle cx="100" cy="100" r="95" fill="#FFD93D"/>
+  </g>
+  
+  <!-- Face contour -->
+  <g id="face-contour">
+    <circle cx="100" cy="100" r="85" fill="#FFCC66" stroke="#E6A000" stroke-width="3"/>
+  </g>
+  
+  <!-- Eyes group -->
+  <g id="eyes">
+    <!-- Left eye -->
+    <circle cx="75" cy="85" r="8" fill="#333333"/>
+    <circle cx="73" cy="83" r="3" fill="#FFFFFF"/>
+    
+    <!-- Right eye -->
+    <circle cx="125" cy="85" r="8" fill="#333333"/>
+    <circle cx="123" cy="83" r="3" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Mouth group -->
+  <g id="mouth">
+    <path d="M 65 125 Q 100 155 135 125" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Cheeks group -->
+  <g id="cheeks">
+    <ellipse cx="60" cy="115" rx="10" ry="6" fill="#FFB3B3" opacity="0.6"/>
+    <ellipse cx="140" cy="115" rx="10" ry="6" fill="#FFB3B3" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="horseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main Horse Head Silhouette -->
+  <g id="horseHead" filter="url(#glow)">
+    <!-- Ear -->
+    <path d="M 70 60 L 75 40 L 90 55 Z" fill="url(#horseGradient)" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Forehead -->
+    <path d="M 90 55 L 95 35 L 110 38 L 105 58 Z" fill="url(#horseGradient)"/>
+    
+    <!-- Face Profile -->
+    <path d="M 70 60 
+             Q 85 65 90 80
+             Q 95 100 85 120
+             Q 75 140 70 150
+             Q 65 160 50 155
+             Q 40 150 45 135
+             Q 50 120 60 110
+             Q 65 95 70 85
+             Q 75 70 70 60 Z" 
+          fill="url(#horseGradient)"/>
+    
+    <!-- Eye -->
+    <ellipse cx="88" cy="88" rx="6" ry="4" fill="#ffffff" opacity="0.3"/>
+    
+    <!-- Mane Details -->
+    <path d="M 65 75 Q 50 80 48 90" fill="none" stroke="#1a252f" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 68 100 Q 55 105 52 115" fill="none" stroke="#1a252f" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 72 125 Q 58 130 55 140" fill="none" stroke="#1a252f" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Nose/Mouth Line -->
+    <path d="M 50 155 Q 55 158 60 152" fill="none" stroke="#2c3e50" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Decorative Circle Background -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#ecf0f1" stroke-width="1" opacity="0.3"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#bdc3c7" stroke-width="0.5" opacity="0.5"/>
+  
+  <!-- Brand Mark -->
+  <path d="M 55 165 L 60 160 M 145 165 L 140 160" fill="none" stroke="#2c3e50" stroke-width="1.5" opacity="0.6"/>
+</svg>

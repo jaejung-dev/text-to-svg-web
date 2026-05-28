@@ -1,0 +1,37 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tree Trunk -->
+  <g id="tree-trunk">
+    <path d="M95 150 L95 170 Q95 185 100 185 Q105 185 105 170 L105 150 Z" fill="#6d4c41"/>
+  </g>
+  
+  <!-- Branches -->
+  <g id="branches">
+    <path d="M100 150 Q85 130 75 115 Q65 100 60 90" stroke="#5d4037" stroke-width="3" fill="none"/>
+    <path d="M100 145 Q115 125 125 110 Q135 95 140 85" stroke="#5d4037" stroke-width="3" fill="none"/>
+    <path d="M100 140 Q100 120 100 100" stroke="#5d4037" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Tree Canopy/Silhouette -->
+  <g id="canopy-silhouette">
+    <ellipse cx="100" cy="85" rx="45" ry="35" fill="#f8bbd0" opacity="0.3"/>
+  </g>
+  
+  <!-- Sakura Petals -->
+  <g id="petals">
+    <circle cx="85" cy="70" r="5" fill="#ffcce6"/>
+    <circle cx="100" cy="60" r="6" fill="#ffb3e0"/>
+    <circle cx="115" cy="65" r="5" fill="#ffe0f0"/>
+    <circle cx="90" cy="85" r="5" fill="#ffccd9"/>
+    <circle cx="110" cy="80" r="5" fill="#ffcce6"/>
+    <circle cx="100" cy="95" r="5" fill="#ffdde6"/>
+    <circle cx="75" cy="80" r="4" fill="#ffe4f0"/>
+    <circle cx="125" cy="75" r="4" fill="#ffcce6"/>
+    <circle cx="95" cy="55" r="4" fill="#ffdde6"/>
+    <circle cx="105" cy="75" r="4" fill="#ffe0f0"/>
+    <circle cx="80" cy="75" r="4" fill="#ffcce6"/>
+    <circle cx="120" cy="90" r="4" fill="#ffdde6"/>
+    <circle cx="100" cy="50" r="4" fill="#ffe4f0"/>
+    <circle cx="90" cy="95" r="4" fill="#ffdde6"/>
+    <circle cx="115" cy="55" r="4" fill="#ffe0f0"/>
+  </g>
+</svg>

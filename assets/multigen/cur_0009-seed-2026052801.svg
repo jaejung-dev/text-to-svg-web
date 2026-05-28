@@ -1,0 +1,58 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tree Trunk -->
+  <g id="trunk">
+    <path d="M95 140 L105 140 L108 180 C108 180 107 190 95 190 C83 190 82 180 82 180 Z" fill="#6B5B4E"/>
+  </g>
+  
+  <!-- Main Branches -->
+  <g id="branches">
+    <path d="M100 140 Q90 120 80 100" stroke="#6B5B4E" stroke-width="3" fill="none" opacity="0.9"/>
+    <path d="M100 140 Q110 120 120 100" stroke="#6B5B4E" stroke-width="3" fill="none" opacity="0.9"/>
+    <path d="M100 135 Q95 110 90 85" stroke="#6B5B4E" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <path d="M100 135 Q105 110 110 85" stroke="#6B5B4E" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <path d="M100 130 Q85 105 80 75" stroke="#6B5B4E" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M100 130 Q115 105 120 75" stroke="#6B5B4E" stroke-width="2" fill="none" opacity="0.8"/>
+  </g>
+  
+  <!-- Cherry Blossom Flowers -->
+  <g id="flowers">
+    <!-- Petal groups scattered across branches -->
+    
+    <!-- Top cluster -->
+    <ellipse cx="90" cy="70" rx="4" ry="3" fill="#FFB7C5" opacity="0.9"/>
+    <ellipse cx="100" cy="65" rx="4" ry="3" fill="#FFB7C5" opacity="0.9"/>
+    <ellipse cx="110" cy="70" rx="4" ry="3" fill="#FFB7C5" opacity="0.9"/>
+    <ellipse cx="95" cy="58" rx="3.5" ry="2.5" fill="#FFC4D1" opacity="0.85"/>
+    
+    <!-- Left cluster -->
+    <ellipse cx="75" cy="95" rx="4" ry="3" fill="#FFB7C5" opacity="0.9"/>
+    <ellipse cx="82" cy="88" rx="4" ry="3" fill="#FFB7C5" opacity="0.9"/>
+    <ellipse cx="78" cy="80" rx="3.5" ry="2.5" fill="#FFC4D1" opacity="0.85"/>
+    <ellipse cx="68" cy="100" rx="3" ry="2.5" fill="#FFB7C5" opacity="0.8"/>
+    
+    <!-- Right cluster -->
+    <ellipse cx="125" cy="95" rx="4" ry="3" fill="#FFB7C5" opacity="0.9"/>
+    <ellipse cx="118" cy="88" rx="4" ry="3" fill="#FFB7C5" opacity="0.9"/>
+    <ellipse cx="122" cy="80" rx="3.5" ry="2.5" fill="#FFC4D1" opacity="0.85"/>
+    <ellipse cx="132" cy="100" rx="3" ry="2.5" fill="#FFB7C5" opacity="0.8"/>
+    
+    <!-- Lower left -->
+    <ellipse cx="72" cy="115" rx="3.5" ry="2.5" fill="#FFB7C5" opacity="0.9"/>
+    <ellipse cx="85" cy="120" rx="3.5" ry="2.5" fill="#FFB7C5" opacity="0.9"/>
+    
+    <!-- Lower right -->
+    <ellipse cx="128" cy="115" rx="3.5" ry="2.5" fill="#FFB7C5" opacity="0.9"/>
+    <ellipse cx="115" cy="120" rx="3.5" ry="2.5" fill="#FFB7C5" opacity="0.9"/>
+    
+    <!-- Floating petals -->
+    <ellipse cx="60" cy="65" rx="3" ry="2" fill="#FFC4D1" opacity="0.7"/>
+    <ellipse cx="145" cy="75" rx="3" ry="2" fill="#FFC4D1" opacity="0.7"/>
+    <ellipse cx="55" cy="125" rx="2.5" ry="2" fill="#FFB7C5" opacity="0.6"/>
+    <ellipse cx="150" cy="120" rx="2.5" ry="2" fill="#FFB7C5" opacity="0.6"/>
+    
+    <!-- Central flower blooms -->
+    <circle cx="100" cy="85" r="5" fill="#FF9AB5" opacity="0.8"/>
+    <circle cx="85" cy="95" r="4" fill="#FF9AB5" opacity="0.7"/>
+    <circle cx="115" cy="95" r="4" fill="#FF9AB5" opacity="0.7"/>
+  </g>
+</svg>

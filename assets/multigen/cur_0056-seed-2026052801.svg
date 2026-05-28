@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular background -->
+  <circle id="head-circle" cx="50" cy="50" r="45" fill="#FFE0B2"/>
+  
+  <!-- Facial features container -->
+  <g id="face-features">
+    <!-- Left eye -->
+    <ellipse id="left-eye" cx="35" cy="40" rx="6" ry="8" fill="#5D4037"/>
+    
+    <!-- Right eye -->
+    <ellipse id="right-eye" cx="65" cy="40" rx="6" ry="8" fill="#5D4037"/>
+    
+    <!-- Smiling mouth -->
+    <path id="smile" d="M 30 60 Q 50 80 70 60" stroke="#5D4037" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

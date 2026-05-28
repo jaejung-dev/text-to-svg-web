@@ -1,0 +1,23 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 원형 -->
+  <circle id="background-circle" cx="32" cy="32" r="30" fill="#E3F2FD" stroke="#BBDEFB" stroke-width="3"/>
+  
+  <!-- 머리 모양 -->
+  <circle id="head-face" cx="32" cy="32" r="18" fill="#FFCCBC"/>
+  
+  <!--facial features group -->
+  <g id="facial-features">
+    <!-- 왼쪽 눈 -->
+    <circle id="eye-left" cx="26" cy="29" r="2.5" fill="#5D4037"/>
+    
+    <!-- 오른쪽 눈 -->
+    <circle id="eye-right" cx="38" cy="29" r="2.5" fill="#5D4037"/>
+    
+    <!-- 입 (친근한 미소) -->
+    <path id="smile-mouth" d="M 23 37 Q 32 45 41 37" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    
+    <!-- 볼에 추가적인 하이라이트/분위기 -->
+    <circle id="cheek-left" cx="24" cy="34" r="1.5" fill="#FFAB91" opacity="0.6"/>
+    <circle id="cheek-right" cx="40" cy="34" r="1.5" fill="#FFAB91" opacity="0.6"/>
+  </g>
+</svg>

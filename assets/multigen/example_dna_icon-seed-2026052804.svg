@@ -1,0 +1,63 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="none"/>
+  
+  <!-- Left DNA Strand -->
+  <g id="dna-strand-left">
+    <path d="M70 30 Q50 60 50 100 Q50 140 70 170" 
+          stroke="#4A90E2" 
+          stroke-width="4" 
+          fill="none" 
+          stroke-linecap="round"/>
+  </g>
+  
+  <!-- Right DNA Strand -->
+  <g id="dna-strand-right">
+    <path d="M130 30 Q150 60 150 100 Q150 140 130 170" 
+          stroke="#5B3F8C" 
+          stroke-width="4" 
+          fill="none" 
+          stroke-linecap="round"/>
+  </g>
+  
+  <!-- Base Pair Connections (Rungs) -->
+  <g id="dna-rungs">
+    <!-- Top rung -->
+    <line x1="62" y1="48" x2="138" y2="48" stroke="#6C8ECF" stroke-width="3"/>
+    
+    <!-- Second rung -->
+    <line x1="68" y1="75" x2="132" y2="75" stroke="#6C8ECF" stroke-width="3"/>
+    
+    <!-- Third rung -->
+    <line x1="72" y1="100" x2="128" y2="100" stroke="#6C8ECF" stroke-width="3"/>
+    
+    <!-- Fourth rung -->
+    <line x1="68" y1="125" x2="132" y2="125" stroke="#6C8ECF" stroke-width="3"/>
+    
+    <!-- Bottom rung -->
+    <line x1="62" y1="152" x2="138" y2="152" stroke="#6C8ECF" stroke-width="3"/>
+  </g>
+  
+  <!-- Nucleotide Dots (Base Pairs) -->
+  <g id="nucleotides">
+    <!-- Top pair -->
+    <circle cx="62" cy="48" r="5" fill="#4A90E2"/>
+    <circle cx="138" cy="48" r="5" fill="#5B3F8C"/>
+    
+    <!-- Second pair -->
+    <circle cx="68" cy="75" r="5" fill="#4A90E2"/>
+    <circle cx="132" cy="75" r="5" fill="#5B3F8C"/>
+    
+    <!-- Third pair -->
+    <circle cx="72" cy="100" r="5" fill="#4A90E2"/>
+    <circle cx="128" cy="100" r="5" fill="#5B3F8C"/>
+    
+    <!-- Fourth pair -->
+    <circle cx="68" cy="125" r="5" fill="#4A90E2"/>
+    <circle cx="132" cy="125" r="5" fill="#5B3F8C"/>
+    
+    <!-- Bottom pair -->
+    <circle cx="62" cy="152" r="5" fill="#4A90E2"/>
+    <circle cx="138" cy="152" r="5" fill="#5B3F8C"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-to-SVG Multi-Generation Score Compare</title>
+    <link rel="stylesheet" href="multigen.css?v=20260528-multigen" />
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <p class="eyebrow">Text-to-SVG V2 · fixed-seed multi-generation</p>
+        <h1>Four candidates per prompt, ranked by LicaScore and LicaScore v2.</h1>
+        <p>
+          Each prompt from the curated DesignArena list is generated four times with fixed
+          seeds. The cards show which candidate each scorer selects as best.
+        </p>
+      </header>
+
+      <section id="summary" class="summary"></section>
+      <section id="prompts" class="prompt-list"></section>
+    </main>
+
+    <script src="multigen.js?v=20260528-multigen"></script>
+  </body>
+</html>

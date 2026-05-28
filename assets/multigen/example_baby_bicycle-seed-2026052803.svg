@@ -1,0 +1,93 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (grass/sky hint) -->
+  <g id="background">
+    <rect width="400" height="300" fill="#87CEEB"/>
+    <rect y="250" width="400" height="50" fill="#90EE90"/>
+  </g>
+  
+  <!-- Back Wheel -->
+  <g id="back-wheel">
+    <circle cx="150" cy="220" r="50" fill="none" stroke="#34495E" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="150" cy="220" r="45" fill="none" stroke="#BDC3C7" stroke-width="4"/>
+    <circle cx="150" cy="220" r="5" fill="#34495E"/>
+    <!-- Spokes -->
+    <line x1="150" y1="170" x2="150" y2="270" stroke="#BDC3C7" stroke-width="2"/>
+    <line x1="100" y1="220" x2="200" y2="220" stroke="#BDC3C7" stroke-width="2"/>
+    <line x1="115" y1="185" x2="185" y2="255" stroke="#BDC3C7" stroke-width="2"/>
+    <line x1="185" y1="185" x2="115" y2="255" stroke="#BDC3C7" stroke-width="2"/>
+  </g>
+  
+  <!-- Front Wheel -->
+  <g id="front-wheel">
+    <circle cx="280" cy="220" r="50" fill="none" stroke="#34495E" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="280" cy="220" r="45" fill="none" stroke="#BDC3C7" stroke-width="4"/>
+    <circle cx="280" cy="220" r="5" fill="#34495E"/>
+    <!-- Spokes -->
+    <line x1="280" y1="170" x2="280" y2="270" stroke="#BDC3C7" stroke-width="2"/>
+    <line x1="230" y1="220" x2="330" y2="220" stroke="#BDC3C7" stroke-width="2"/>
+    <line x1="245" y1="185" x2="315" y2="255" stroke="#BDC3C7" stroke-width="2"/>
+    <line x1="315" y1="185" x2="245" y2="255" stroke="#BDC3C7" stroke-width="2"/>
+  </g>
+  
+  <!-- Bicycle Frame -->
+  <g id="bicycle-frame">
+    <!-- Main triangle -->
+    <line x1="150" y1="220" x2="230" y2="150" stroke="#E74C3C" stroke-width="7" stroke-linecap="round"/>
+    <line x1="230" y1="150" x2="280" y2="220" stroke="#E74C3C" stroke-width="7" stroke-linecap="round"/>
+    <line x1="150" y1="220" x2="280" y2="220" stroke="#E74C3C" stroke-width="7" stroke-linecap="round"/>
+    <!-- Seat post -->
+    <line x1="220" y1="150" x2="220" y2="120" stroke="#2C3E50" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Seat -->
+  <ellipse cx="220" cy="120" rx="22" ry="10" fill="#34495E"/>
+  
+  <!-- Handlebars -->
+  <g id="handlebars">
+    <line x1="230" y1="150" x2="250" y2="130" stroke="#34495E" stroke-width="6" stroke-linecap="round"/>
+    <line x1="250" y1="130" x2="300" y2="135" stroke="#34495E" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="300" cy="135" r="8" fill="#7F8C8D"/>
+    <circle cx="300" cy="135" r="4" fill="#34495E"/>
+  </g>
+  
+  <!-- Baby -->
+  <g id="baby">
+    <!-- Head -->
+    <circle cx="190" cy="100" r="32" fill="#FFE4C4"/>
+    <!-- Hair -->
+    <path d="M 158 95 Q 190 65 222 95" fill="none" stroke="#8B4513" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 175 85 Q 190 70 205 85" fill="none" stroke="#8B4513" stroke-width="5" stroke-linecap="round"/>
+    <!-- Eyes -->
+    <circle cx="180" cy="105" r="5" fill="#333"/>
+    <circle cx="200" cy="105" r="5" fill="#333"/>
+    <circle cx="182" cy="103" r="2" fill="#FFF"/>
+    <circle cx="202" cy="103" r="2" fill="#FFF"/>
+    <!-- Cheeks -->
+    <circle cx="172" cy="118" r="6" fill="#FFB6C1" opacity="0.5"/>
+    <circle cx="208" cy="118" r="6" fill="#FFB6C1" opacity="0.5"/>
+    <!-- Mouth -->
+    <path d="M 187 120 Q 190 123 193 120" fill="none" stroke="#C0392B" stroke-width="2" stroke-linecap="round"/>
+    <!-- Body/Torso -->
+    <ellipse cx="190" cy="160" rx="28" ry="30" fill="#FFE4C4"/>
+    <!-- Shirt -->
+    <path d="M 162 160 L 218 160 L 205 200 L 175 200 Z" fill="#3498DB"/>
+    <!-- Neck -->
+    <rect x="184" y="132" width="12" height="10" fill="#FFE4C4"/>
+    <!-- Arm left (holding handlebar) -->
+    <path d="M 180 165 Q 200 145 240 140" fill="none" stroke="#FFE4C4" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="240" cy="140" r="10" fill="#FFE4C4"/>
+    <!-- Arm right -->
+    <path d="M 200 165 Q 220 145 250 140" fill="none" stroke="#FFE4C4" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="250" cy="140" r="10" fill="#FFE4C4"/>
+    <!-- Leg left -->
+    <ellipse cx="160" cy="220" rx="12" ry="35" fill="#3498DB" rx-foreground="2"/>
+    <!-- Leg right -->
+    <ellipse cx="220" cy="220" rx="12" ry="35" fill="#3498DB"/>
+    <!-- Feet -->
+    <ellipse cx="158" cy="250" rx="12" ry="8" fill="#E74C3C"/>
+    <ellipse cx="222" cy="250" rx="12" ry="8" fill="#E74C3C"/>
+  </g>
+  
+  <!-- Ground shadow -->
+  <ellipse cx="215" cy="265" rx="100" ry="8" fill="rgba(0,0,0,0.15)"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background defined by viewbox transparency -->
+  
+  <!-- Main Body Group -->
+  <g id="frog-body">
+    <!-- Main Torso/Legs Base -->
+    <path id="body-mass" d="M 50 100 
+               C 20 100 20 140 30 170 
+               C 50 200 100 200 100 200 
+               C 100 200 150 200 170 170 
+               C 180 140 180 100 150 100 
+               Z" 
+          fill="#76c84e" stroke="#388e3c" stroke-width="3" />
+            
+    <!-- Forearms -->
+    <circle id="forearm-left" cx="45" cy="165" r="15" fill="#76c84e" stroke="#388e3c" stroke-width="3"/>
+    <circle id="forearm-right" cx="155" cy="165" r="15" fill="#76c84e" stroke="#388e3c" stroke-width="3"/>
+    
+    <!-- Belly Patches -->
+    <path id="belly-left" d="M 55 140 Q 65 160 50 165" fill="#aadd7b" opacity="0.6"/>
+    <path id="belly-right" d="M 145 140 Q 135 160 150 165" fill="#aadd7b" opacity="0.6"/>
+  </g>
+  
+  <!-- Facial Features Group -->
+  <g id="frog-face">
+    <!-- Nostril -->
+    <circle id="nose-left" cx="85" cy="95" r="1.5" fill="#2e7d32" />
+    <circle id="nose-right" cx="115" cy="95" r="1.5" fill="#2e7d32" />
+    
+    <!-- Eyes Group -->
+    <g id="eyes-container">
+      <!-- Left Eye (White) -->
+      <ellipse id="eye-ball-left" cx="70" cy="70" rx="20" ry="25" fill="#ffffff" stroke="#2e7d32" stroke-width="2" />
+      <!-- Right Eye (White) -->
+      <ellipse id="eye-ball-right" cx="130" cy="70" rx="20" ry="25" fill="#ffffff" stroke="#2e7d32" stroke-width="2" />
+      
+      <!-- Left Iris/Pupil -->
+      <circle id="pupil-left" cx="70" cy="72" r="8" fill="#333333" />
+      <!-- Right Iris/Pupil -->
+      <circle id="pupil-right" cx="130" cy="72" r="8" fill="#333333" />
+      
+      <!-- Eye Highlights -->
+      <circle id="shine-left" cx="73" cy="68" r="3" fill="#ffffff" />
+      <circle id="shine-right" cx="133" cy="68" r="3" fill="#ffffff" />
+    </g>
+    
+    <!-- Mouth Line -->
+    <path id="mouth-smile" d="M 90 115 Q 100 125 110 115" fill="none" stroke="#333333" stroke-width="3" stroke-linecap="round" />
+  </g>
+  
+  <!-- Texture/Details -->
+  <g id="skin-details">
+    <circle id="spot-top-left" cx="90" cy="110" r="3" fill="#4caf50" opacity="0.5"/>
+    <circle id="spot-bottom-center" cx="100" cy="175" r="4" fill="#4caf50" opacity="0.5"/>
+  </g>
+</svg>

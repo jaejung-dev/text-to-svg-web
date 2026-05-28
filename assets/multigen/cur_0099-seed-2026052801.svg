@@ -1,0 +1,128 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft wave pattern for decorative touch -->
+    <pattern id="wavePattern" x="0" y="0" width="10" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 5 Q2.5 2.5 5 5 T10 5 V5 H0 Z" fill="#4a9bc7" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Optional soft blue denim background (comment out for transparent) -->
+  <rect width="800" height="300" fill="none"/>
+  
+  <!-- Shell Group Container -->
+  <g id="seashell-collection" transform="translate(400, 150)">
+    
+    <!-- Scallop Shell (Left) -->
+    <g id="scallop-shell" transform="translate(-280, 0)">
+      <path 
+        d="M 0 -60 
+           C -40 -60, -60 -30, -60 0 
+           C -60 30, -40 60, 0 60
+           C 40 60, 60 30, 60 0
+           C 60 -30, 40 -60, 0 -60
+           Z" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+      />
+      <path 
+        d="M 0 -60 L 0 60 M -30 -50 Q 0 -40, 30 -50 M -45 -30 Q 0 -20, 45 -30 M -30 -10 Q 0 0, 30 -10 M 0 30" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="1.5"
+        opacity="0.8"
+      />
+    </g>
+    
+    <!-- Starfish (Center-Left) -->
+    <g id="starfish" transform="translate(-140, 15)">
+      <circle cx="0" cy="0" r="12" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <line x1="0" y1="-35" x2="0" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="0" y1="35" x2="0" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="-35" y1="0" x2="0" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="35" y1="0" x2="0" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <path 
+        d="M 0 -35 L -10 -55 L 0 -35 L 10 -55 Z
+           M 0 35 L -10 55 L 0 35 L 10 55 Z
+           M -35 0 L -55 -10 L -35 0 L -55 10 Z
+           M 35 0 L 55 -10 L 35 0 L 55 10 Z" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="2"
+      />
+      <circle cx="0" cy="0" r="5" fill="#ffffff" opacity="0.9"/>
+    </g>
+    
+    <!-- Spiral Conch Shell (Center-Right) -->
+    <g id="conch-shell" transform="translate(140, 5)">
+      <path 
+        d="M 0 -80 
+           C 30 -80, 60 -50, 60 0
+           C 60 50, 30 80, 0 80
+           C -30 80, -60 50, -60 0
+           C -60 -40, -30 -70, 0 -80
+           Z" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="2" 
+        stroke-linecap="round"
+      />
+      <path 
+        d="M 0 -80 
+           C 20 -60, 25 -30, 10 -10
+           C 0 10, -10 25, -5 40
+           C 5 55, 20 60, 35 50
+           C 45 40, 40 20, 35 10
+           C 30 -5, 20 -25, 15 -40
+           C 10 -55, 10 -70, 0 -80" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="1.5"
+      />
+      <ellipse cx="0" cy="0" rx="15" ry="10" fill="none" stroke="#ffffff" stroke-width="1"/>
+    </g>
+    
+    <!-- Whelk Shell (Right) -->
+    <g id="whelk-shell" transform="translate(280, 10)">
+      <path 
+        d="M 0 -90 
+           Q -15 -90, -25 -75
+           Q -30 -60, -20 -45
+           Q -10 -30, 5 -20
+           Q 20 -10, 25 5
+           Q 30 20, 25 35
+           Q 20 50, 10 60
+           Q 0 70, -15 65
+           Q -30 60, -40 45
+           Q -45 30, -40 15
+           Q -35 0, -25 -15
+           Q -15 -30, 0 -40
+           Q 15 -50, 20 -65
+           Q 20 -80, 15 -90
+           Q 0 -90, 0 -90" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="2" 
+        stroke-linecap="round"
+      />
+      <path 
+        d="M 0 -90 Q 10 -70, 5 -50 Q 0 -30, -5 -15 Q -10 0, 5 15 Q 20 30, 15 50 Q 10 70, 0 75" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="1"
+        opacity="0.7"
+      />
+    </g>
+    
+    <!-- Decorative Water Line Elements -->
+    <g id="water-decoration" opacity="0.6">
+      <path d="M -400 160 Q -380 150, -360 160" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,2"/>
+      <path d="M 360 160 Q 380 170, 400 160" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="3,2"/>
+      <circle cx="-420" cy="150" r="1.5" fill="#ffffff"/>
+      <circle cx="420" cy="170" r="1.5" fill="#ffffff"/>
+    </g>
+    
+  </g>
+</svg>

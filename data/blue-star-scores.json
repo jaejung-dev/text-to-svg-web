@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-28 11:40 UTC",
+  "prompt": "a blue star icon",
+  "score_order": [
+    "lica_score_v1",
+    "lica_score_v2",
+    "hpsv21",
+    "pickscore",
+    "clipscore",
+    "imagereward",
+    "laion_aesthetic"
+  ],
+  "score_labels": {
+    "lica_score_v1": "LicaScore",
+    "lica_score_v2": "LicaScore v2",
+    "hpsv21": "HPS v2.1",
+    "pickscore": "PickScore",
+    "clipscore": "CLIPScore",
+    "imagereward": "ImageReward",
+    "laion_aesthetic": "LAION aesthetic"
+  },
+  "elapsed_seconds": 117.453,
+  "winners": {
+    "lica_score_v1": {
+      "id": "candidate_u379",
+      "label": "Candidate u379",
+      "score": 0.98046875
+    },
+    "lica_score_v2": {
+      "id": "candidate_hhAv",
+      "label": "Candidate hhAv",
+      "score": 24.625
+    },
+    "hpsv21": {
+      "id": "candidate_hhAv",
+      "label": "Candidate hhAv",
+      "score": 0.25675514340400696
+    },
+    "pickscore": {
+      "id": "candidate_hhAv",
+      "label": "Candidate hhAv",
+      "score": 20.937110900878906
+    },
+    "clipscore": {
+      "id": "candidate_hhAv",
+      "label": "Candidate hhAv",
+      "score": 28.674274444580078
+    },
+    "imagereward": {
+      "id": "candidate_hhAv",
+      "label": "Candidate hhAv",
+      "score": 1.6451029777526855
+    },
+    "laion_aesthetic": {
+      "id": "candidate_qz4y",
+      "label": "Candidate qz4y",
+      "score": 5.058225631713867
+    }
+  },
+  "candidates": [
+    {
+      "id": "candidate_qz4y",
+      "label": "Candidate qz4y",
+      "filename": "qz4yZIiumouV6qffbdhC.svg",
+      "source_path": "/home/ubuntu/qz4yZIiumouV6qffbdhC.svg",
+      "asset": "assets/blue-star-scores/qz4yZIiumouV6qffbdhC.svg",
+      "svg_chars": 91913,
+      "scores": {
+        "lica_score_v1": 0.95703125,
+        "lica_score_v2": 13.75,
+        "hpsv21": 0.13681408762931824,
+        "pickscore": 17.803775787353516,
+        "clipscore": 15.171133041381836,
+        "imagereward": -2.2807998657226562,
+        "laion_aesthetic": 5.058225631713867
+      }
+    },
+    {
+      "id": "candidate_hhAv",
+      "label": "Candidate hhAv",
+      "filename": "hhAvzKdYHszN3VqUm79S.svg",
+      "source_path": "/home/ubuntu/hhAvzKdYHszN3VqUm79S.svg",
+      "asset": "assets/blue-star-scores/hhAvzKdYHszN3VqUm79S.svg",
+      "svg_chars": 234,
+      "scores": {
+        "lica_score_v1": 0.9765625,
+        "lica_score_v2": 24.625,
+        "hpsv21": 0.25675514340400696,
+        "pickscore": 20.937110900878906,
+        "clipscore": 28.674274444580078,
+        "imagereward": 1.6451029777526855,
+        "laion_aesthetic": 4.696583271026611
+      }
+    },
+    {
+      "id": "candidate_u379",
+      "label": "Candidate u379",
+      "filename": "u3793uzasWyNaupF36H7.svg",
+      "source_path": "/home/ubuntu/u3793uzasWyNaupF36H7.svg",
+      "asset": "assets/blue-star-scores/u3793uzasWyNaupF36H7.svg",
+      "svg_chars": 817,
+      "scores": {
+        "lica_score_v1": 0.98046875,
+        "lica_score_v2": 13.1875,
+        "hpsv21": 0.14219695329666138,
+        "pickscore": 18.867446899414062,
+        "clipscore": 20.41266632080078,
+        "imagereward": -2.279742479324341,
+        "laion_aesthetic": 4.578840255737305
+      }
+    }
+  ]
+}

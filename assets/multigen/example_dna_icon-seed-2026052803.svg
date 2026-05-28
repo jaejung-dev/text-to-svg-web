@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Group for DNA backbone left -->
+  <g id="dna-backbone-left" stroke="#4CAF50" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M80 20 C 80 20, 96 128, 80 236" />
+    <path d="M80 236 C 96 128, 80 20, 80 20" />
+  </g>
+  
+  <!-- Group for DNA backbone right -->
+  <g id="dna-backbone-right" stroke="#4CAF50" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M176 20 C 176 20, 160 128, 176 236" />
+    <path d="M176 236 C 160 128, 176 20, 176 20" />
+  </g>
+  
+  <!-- Group for DNA base pairs -->
+  <g id="dna-base-pairs" stroke="#4CAF50" stroke-width="4" stroke-linecap="round">
+    <line x1="80" y1="40" x2="176" y2="40" />
+    <line x1="88" y1="64" x2="168" y2="64" />
+    <line x1="84" y1="90" x2="172" y2="90" />
+    <line x1="92" y1="114" x2="164" y2="114" />
+    <line x1="88" y1="140" x2="168" y2="140" />
+    <line x1="96" y1="164" x2="160" y2="164" />
+    <line x1="92" y1="190" x2="164" y2="190" />
+    <line x1="100" y1="214" x2="156" y2="214" />
+  </g>
+</svg>

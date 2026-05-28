@@ -1,0 +1,89 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .bike-frame { fill: #FF6B6B; stroke: #C44569; stroke-width: 3; }
+      .wheel { fill: none; stroke: #4ECDC4; stroke-width: 4; }
+      .spoke { stroke: #95A5A6; stroke-width: 1; opacity: 0.7; }
+      .baby-skin { fill: #FFEFD1; }
+      .baby-clothes { fill: #A8D8EA; }
+      .hair { fill: #F4A460; }
+      .ground { fill: #90EE90; }
+    </style>
+  </defs>
+  
+  <!-- Ground/grass -->
+  <rect id="ground-area" x="0" y="250" width="400" height="50" class="ground"/>
+  
+  <!-- Back wheel -->
+  <g id="back-wheel">
+    <circle cx="120" cy="220" r="45" class="wheel"/>
+    <circle cx="120" cy="220" r="10" fill="#E0E0E0" stroke="none"/>
+    <!-- Spokes -->
+    <line x1="120" y1="175" x2="120" y2="265" class="spoke"/>
+    <line x1="75" y1="220" x2="165" y2="220" class="spoke"/>
+    <line x1="87" y1="187" x2="153" y2="253" class="spoke"/>
+    <line x1="87" y1="253" x2="153" y2="187" class="spoke"/>
+  </g>
+  
+  <!-- Front wheel -->
+  <g id="front-wheel">
+    <circle cx="280" cy="220" r="45" class="wheel"/>
+    <circle cx="280" cy="220" r="10" fill="#E0E0E0" stroke="none"/>
+    <!-- Spokes -->
+    <line x1="280" y1="175" x2="280" y2="265" class="spoke"/>
+    <line x1="235" y1="220" x2="325" y2="220" class="spoke"/>
+    <line x1="247" y1="187" x2="313" y2="253" class="spoke"/>
+    <line x1="247" y1="253" x2="313" y2="187" class="spoke"/>
+  </g>
+  
+  <!-- Bike frame -->
+  <g id="bike-frame">
+    <path d="M120 220 L180 150 L280 150" class="bike-frame" fill="none"/>
+    <line x1="180" y1="150" x2="180" y2="220" class="bike-frame"/>
+    <line x1="180" y1="150" x2="240" y2="150" class="bike-frame"/>
+  </g>
+  
+  <!-- Handlebars -->
+  <line x1="280" y1="150" x2="280" y2="120" stroke="#666" stroke-width="3" stroke-linecap="round"/>
+  <line x1="275" y1="120" x2="285" y2="120" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Seat post -->
+  <line x1="165" y1="220" x2="165" y2="145" stroke="#666" stroke-width="3"/>
+  
+  <!-- Seat -->
+  <ellipse cx="165" cy="140" rx="12" ry="5" fill="#333"/>
+  
+  <!-- Baby body group -->
+  <g id="baby-rider">
+    <!-- Legs (pedaling) -->
+    <path d="M175 160 Q170 200 160 220" class="baby-clothes" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M190 160 Q195 200 200 220" class="baby-clothes" stroke-width="6" stroke-linecap="round" fill="none"/>
+    
+    <!-- Torso/dress -->
+    <ellipse cx="185" cy="145" rx="20" ry="25" class="baby-clothes"/>
+    
+    <!-- Head -->
+    <circle cx="185" cy="105" r="22" class="baby-skin"/>
+    
+    <!-- Hair -->
+    <path d="M163 105 Q185 85 207 105" class="hair" fill="none" stroke="#F4A460" stroke-width="4" stroke-linecap="round"/>
+    <path d="M158 115 Q165 105 170 110" class="hair" fill="none" stroke="#F4A460" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Face details -->
+    <circle cx="178" cy="108" r="3" fill="#333"/>
+    <circle cx="192" cy="108" r="3" fill="#333"/>
+    <path d="M178 118 Q185 125 192 118" fill="none" stroke="#E63946" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Arms holding handlebars -->
+    <path d="M190 155 Q210 145 280 130" class="baby-skin" fill="none" stroke="#FFEFD1" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="278" cy="125" r="6" class="baby-skin"/>
+  </g>
+  
+  <!-- Pedals -->
+  <ellipse cx="160" cy="220" rx="8" ry="4" fill="#333"/>
+  <ellipse cx="200" cy="220" rx="8" ry="4" fill="#333"/>
+  
+  <!-- Chain guard decorative -->
+  <ellipse cx="180" cy="195" rx="25" ry="10" fill="#E0E0E0" stroke="#C0C0C0" stroke-width="2" opacity="0.8"/>
+</svg>

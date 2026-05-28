@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 assets/generated-score-renders/
 assets/hps-lora-v2-renders/
+assets/multigen-renders/
+assets/blue-star-score-renders/
+logs/

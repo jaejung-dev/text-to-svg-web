@@ -1,0 +1,42 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle id="background-circle" cx="100" cy="100" r="90" fill="#f5f5f5" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Horse silhouette group -->
+  <g id="horse-silhouette">
+    <!-- Main body curve -->
+    <path id="body" d="M 40,120 Q 50,100 70,90 Q 90,85 110,90 Q 130,95 145,110 L 150,120" 
+          fill="#2c3e50"/>
+    
+    <!-- Neck and head shape -->
+    <path id="neck-head" d="M 110,90 Q 120,75 130,60 Q 135,55 140,50 Q 145,45 145,40 
+                            Q 145,38 142,38 Q 140,38 138,40 L 135,45 
+                            Q 132,50 130,55 Q 128,60 128,65 L 125,80 L 120,90 Z" 
+          fill="#2c3e50"/>
+    
+    <!-- Mane flow -->
+    <path id="mane" d="M 130,60 Q 132,50 135,42 Q 138,38 140,36 
+                       M 125,80 Q 122,75 120,70 
+                       M 118,92 Q 115,90 112,90" 
+          stroke="#2c3e50" stroke-width="2" fill="none"/>
+    
+    <!-- Legs (simplified) -->
+    <line id="front-legs" x1="60" y1="120" x2="65" y2="145" stroke="#2c3e50" stroke-width="4"/>
+    <line id="back-legs" x1="90" y1="125" x2="85" y2="150" stroke="#2c3e50" stroke-width="4"/>
+    <line id="hind-legs-left" x1="140" y1="120" x2="145" y2="145" stroke="#2c3e50" stroke-width="4"/>
+    <line id="hind-legs-right" x1="142" y1="122" x2="137" y2="147" stroke="#2c3e50" stroke-width="4"/>
+    
+    <!-- Tail -->
+    <path id="tail" d="M 40,120 Q 35,130 32,140 Q 30,148 28,152" 
+          stroke="#2c3e50" stroke-width="3" fill="none"/>
+    
+    <!-- Eye detail -->
+    <circle id="eye" cx="138" cy="48" r="2" fill="#ffffff"/>
+    
+    <!-- Chest movement line -->
+    <path id="chest-detail" d="M 70,95 Q 80,98 90,95" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Branding text element -->
+  <text id="brand-text" x="100" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">HORSE</text>
+</svg>

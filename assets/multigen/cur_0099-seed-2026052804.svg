@@ -1,0 +1,45 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Denim texture pattern -->
+    <pattern id="denimTexture" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0h8v0.5H0V0zM4 4h4v0.5H4V4z" fill="#6a8bb0"/>
+      <rect x="0" y="0" width="8" height="8" fill="#5b7c99"/>
+    </pattern>
+  </defs>
+  
+  <!-- Denim background -->
+  <rect width="800" height="400" fill="url(#denimTexture)"/>
+  
+  <!-- Shell Group Container -->
+  <g id="seashell-collection" transform="translate(400, 200)" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Scallop Shell (Left) -->
+    <g id="scallop-shell">
+      <path d="M-180,-80 Q-210,-40 -180,0 L-180,80 Q-210,120 -180,160 Q-150,200 -120,160 Q-150,120 -120,80 Q-90,40 -120,0 Q-90,-40 -120,-80 Q-150,-120 -180,-80 Z"/>
+      <path d="M-150,-60 Q-140,-40 -150,-20 M-145,-40 Q-135,-20 -145,-0 M-150,-20 Q-140,0 -150,20 M-145,0 Q-135,20 -145,40 M-140,20 Q-130,40 -140,60 M-140,40 Q-130,60 -140,80 M-140,60 Q-130,80 -140,100"/>
+      <path d="M-155,0 L-145,0 M-155,20 L-145,20 M-155,40 L-145,40 M-155,60 L-145,60 M-155,80 L-145,80"/>
+    </g>
+    
+    <!-- Starfish (Second from Left) -->
+    <g id="starfish">
+      <path d="M-80,-60 L-60,-90 L-40,-70 L-20,-85 L0,-60 L30,-85 L50,-70 L70,-90 L90,-60 L70,-30 L90,-10 L70,20 L90,50 L70,80 L50,70 L30,85 L10,60 L0,85 L-20,70 L-40,90 L-60,70 L-80,60 L-60,30 L-80,10 L-60,-20 L-80,-30 Z"/>
+      <circle cx="0" cy="0" r="8"/>
+    </g>
+    
+    <!-- Spiral Conch Shell (Third from Left) -->
+    <g id="conch-shell">
+      <path d="M40,-90 C60,-90 80,-70 80,-40 C80,-10 60,10 30,10 C0,10 -20,-10 -20,-40 C-20,-70 0,-90 30,-90 Z"/>
+      <path d="M50,-70 Q70,-70 75,-50 Q80,-30 60,-25 Q40,-20 35,-40 Q30,-60 50,-70 Z"/>
+      <path d="M55,-85 Q75,-85 78,-65 Q80,-45 60,-42 Q40,-38 38,-58 Q35,-78 55,-85 Z"/>
+    </g>
+    
+    <!-- Whelk Shell (Right) -->
+    <g id="whelk-shell">
+      <path d="M100,-90 C130,-90 145,-60 145,-30 C145,5 125,25 95,25 C65,25 45,5 45,-30 C45,-60 65,-90 95,-90 Z"/>
+      <path d="M115,-70 Q130,-70 135,-50 Q140,-30 120,-25 Q100,-20 95,-40 Q90,-60 115,-70 Z"/>
+      <path d="M120,-85 Q135,-85 140,-65 Q145,-45 125,-42 Q105,-38 100,-58 Q95,-78 120,-85 Z"/>
+      <path d="M105,-10 L105,30 M110,5 L110,40"/>
+    </g>
+    
+  </g>
+</svg>

@@ -1,0 +1,109 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .horse-body { fill: #2c3e50; }
+      .horse-manes { fill: #1a252f; }
+      .horse-outline { stroke: none; }
+    </style>
+  </defs>
+  
+  <!-- Main Horse Body Group -->
+  <g id="horse-body" class="horse-body">
+    <!-- Head and Neck -->
+    <path class="horse-body" d="M 80 70 
+       C 75 65 70 60 70 55 
+       L 70 45 
+       Q 70 40 75 38 
+       L 85 38 
+       Q 90 40 90 45 
+       L 90 55 
+       C 90 60 85 65 80 70 Z"/>
+    
+    <!-- Neck Connection -->
+    <path class="horse-body" d="M 75 75 
+       C 72 85 72 95 75 105 
+       L 75 110 
+       L 85 110 
+       L 85 105 
+       C 88 95 88 85 85 75 
+       Z"/>
+    
+    <!-- Shoulder and Back -->
+    <path class="horse-body" d="M 85 110 
+       Q 95 105 105 100 
+       L 115 105 
+       Q 125 110 135 115 
+       L 140 115 
+       L 140 125 
+       L 135 125 
+       C 125 120 115 115 105 110 
+       C 95 108 85 110 85 110 Z"/>
+    
+    <!-- Body -->
+    <path class="horse-body" d="M 105 110 
+       Q 120 110 135 115 
+       Q 150 120 160 130 
+       Q 165 140 165 150 
+       L 165 160 
+       Q 165 170 160 175 
+       Q 155 180 145 180 
+       L 145 175 
+       C 155 175 160 170 160 160 
+       L 160 150 
+       C 160 140 155 130 150 125 
+       L 135 118 
+       C 125 114 115 111 105 110 Z"/>
+    
+    <!-- Legs (Front Left) -->
+    <path class="horse-body" d="M 105 110 
+       L 105 130 
+       C 105 135 105 140 108 145 
+       L 108 175 
+       C 108 180 105 180 103 180 
+       L 103 178 
+       C 105 178 108 178 108 175 
+       L 108 145 
+       C 105 140 105 135 105 130 
+       L 105 110 Z"/>
+    
+    <!-- Legs (Back Left) -->
+    <path class="horse-body" d="M 145 115 
+       L 145 135 
+       C 145 140 145 145 148 150 
+       L 148 175 
+       C 148 180 145 180 143 180 
+       L 143 178 
+       C 145 178 148 178 148 175 
+       L 148 150 
+       C 145 145 145 140 145 135 
+       L 145 115 Z"/>
+    
+    <!-- Tail -->
+    <path class="horse-body" d="M 160 130 
+       Q 165 135 165 140 
+       L 168 150 
+       C 170 155 170 160 168 165 
+       L 165 170 
+       L 163 168 
+       C 165 163 165 158 163 153 
+       L 160 145 
+       Q 160 140 160 135 Z"/>
+    
+    <!-- Mane -->
+    <path class="horse-manes" d="M 85 45 
+       Q 88 50 88 55 
+       L 88 65 
+       Q 88 70 90 75 
+       L 90 80 
+       Q 90 85 88 90 
+       L 85 90 
+       L 85 75 
+       Q 85 70 85 65 Z"/>
+  </g>
+  
+  <!-- Simple Circles for Elegance -->
+  <g id="decorative-circles" opacity="0.2">
+    <circle cx="100" cy="100" r="40" stroke="#2c3e50" stroke-width="1" fill="none"/>
+    <circle cx="100" cy="100" r="55" stroke="#2c3e50" stroke-width="1" fill="none"/>
+  </g>
+</svg>

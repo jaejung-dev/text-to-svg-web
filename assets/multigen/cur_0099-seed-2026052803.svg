@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background - Denim Blue Texture -->
+  <defs>
+    <pattern id="denimTexture" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#5B7C99"/>
+      <line x1="0" y1="10" x2="20" y2="10" stroke="#4A6A87" stroke-width="0.5"/>
+      <line x1="10" y1="0" x2="10" y2="20" stroke="#4A6A87" stroke-width="0.5"/>
+    </pattern>
+    <style>
+      .shell-line {
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect width="800" height="400" fill="url(#denimTexture)"/>
+  
+  <!-- Container Group for Shells -->
+  <g id="seashell-collection" transform="translate(100, 100)">
+    
+    <!-- Scallop Shell (Left) -->
+    <g id="scallop-shell" transform="translate(50, 50)">
+      <!-- Outer curved outline -->
+      <path class="shell-line" d="M 0,0 
+                                 Q 20,-30 50,-20 
+                                 Q 80,-30 100,0 
+                                 Q 80,30 50,20 
+                                 Q 20,30 0,0 Z"/>
+      <!-- Internal ridges -->
+      <path class="shell-line" d="M 25,0 Q 50,-15 75,0"/>
+      <path class="shell-line" d="M 15,5 Q 50,-10 85,5"/>
+      <path class="shell-line" d="M 5,15 Q 50,5 95,15"/>
+    </g>
+    
+    <!-- Starfish (Middle Left) -->
+    <g id="starfish" transform="translate(200, 60)">
+      <!-- Five-pointed star outline -->
+      <path class="shell-line" d="M 50,0 
+                                  L 65,35 
+                                  L 100,30 
+                                  L 75,60 
+                                  L 95,95 
+                                  L 50,80 
+                                  L 5,95 
+                                  L 25,60 
+                                  L 0,30 
+                                  L 35,35 
+                                  Z"/>
+      <!-- Inner decorative lines -->
+      <path class="shell-line" d="M 50,30 L 50,50"/>
+      <path class="shell-line" d="M 35,50 L 50,50 L 65,50"/>
+    </g>
+    
+    <!-- Spiral Conch Shell (Middle Right) -->
+    <g id="conch-shell" transform="translate(350, 40)">
+      <!-- Outer spiral body -->
+      <path class="shell-line" d="M 50,0 C 70,10 90,30 85,60 
+                                 S 100,90 60,100 
+                                 S -20,120 30,90 
+                                 Q 20,80 35,70"/>
+      <!-- Spiral center -->
+      <circle class="shell-line" cx="60" cy="70" r="8"/>
+      <!-- Ridges around body -->
+      <path class="shell-line" d="M 40,40 Q 60,50 80,55"/>
+      <path class="shell-line" d="M 35,55 Q 55,65 75,70"/>
+      <path class="shell-line" d="M 30,70 Q 50,80 70,85"/>
+    </g>
+    
+    <!-- Whelk Shell (Right) -->
+    <g id="whelk-shell" transform="translate(500, 55)">
+      <!-- Elongated spiral shape -->
+      <path class="shell-line" d="M 40,0 
+                                 Q 60,20 65,50 
+                                 Q 70,80 45,100 
+                                 Q 20,120 15,95 
+                                 Q 10,70 25,40 
+                                 Q 35,20 40,0 Z"/>
+      <!-- Opening mouth -->
+      <path class="shell-line" d="M 45,85 Q 50,90 55,85"/>
+      <!-- Body ridges -->
+      <path class="shell-line" d="M 30,50 Q 50,60 70,65"/>
+      <path class="shell-line" d="M 25,70 Q 45,75 65,80"/>
+    </g>
+    
+  </g>
+</svg>

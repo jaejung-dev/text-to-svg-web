@@ -1,0 +1,53 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Frog Body -->
+  <g id="frog-body">
+    <ellipse cx="100" cy="140" rx="65" ry="55" fill="#7CB342"/>
+    <ellipse cx="100" cy="145" rx="45" ry="35" fill="#9CCC65"/>
+  </g>
+  
+  <!-- Left Leg -->
+  <g id="left-leg">
+    <path d="M45 145 Q 30 160, 35 180 L 55 175" stroke="#66BB6A" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <circle cx="35" cy="180" r="6" fill="#4CAF50"/>
+  </g>
+  
+  <!-- Right Leg -->
+  <g id="right-leg">
+    <path d="M155 145 Q 170 160, 165 180 L 145 175" stroke="#66BB6A" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <circle cx="165" cy="180" r="6" fill="#4CAF50"/>
+  </g>
+  
+  <!-- Left Foreleg -->
+  <path d="M60 120 L 55 135" stroke="#66BB6A" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Right Foreleg -->
+  <path d="M140 120 L 145 135" stroke="#66BB6A" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Eyes Base -->
+  <g id="eyes-base">
+    <ellipse cx="70" cy="65" rx="22" ry="28" fill="#558B2F"/>
+    <ellipse cx="130" cy="65" rx="22" ry="28" fill="#558B2F"/>
+  </g>
+  
+  <!-- Left Eye -->
+  <g id="left-eye">
+    <ellipse cx="70" cy="55" rx="18" ry="22" fill="#4CAF50"/>
+    <circle cx="70" cy="58" r="12" fill="white"/>
+    <circle cx="70" cy="58" r="6" fill="#1A237E"/>
+    <circle cx="73" cy="55" r="2" fill="white" opacity="0.6"/>
+  </g>
+  
+  <!-- Right Eye -->
+  <g id="right-eye">
+    <ellipse cx="130" cy="55" rx="18" ry="22" fill="#4CAF50"/>
+    <circle cx="130" cy="58" r="12" fill="white"/>
+    <circle cx="130" cy="58" r="6" fill="#1A237E"/>
+    <circle cx="133" cy="55" r="2" fill="white" opacity="0.6"/>
+  </g>
+  
+  <!-- Mouth -->
+  <path d="M85 115 Q 100 128, 115 115" stroke="#33691E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Belly marking -->
+  <path d="M75 140 Q 100 160, 125 140" fill="none" stroke="#8BC34A" stroke-width="2" opacity="0.5"/>
+</svg>

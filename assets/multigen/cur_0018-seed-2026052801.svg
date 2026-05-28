@@ -1,0 +1,103 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="potGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0522D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stemGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#90EE90;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      @keyframes growPlant {
+        0% { transform: scaleY(0); opacity: 0; }
+        100% { transform: scaleY(1); opacity: 1; }
+      }
+      .plant-grow {
+        animation: growPlant 4s ease-out forwards;
+      }
+      .leaf-anim-1 {
+        animation: leafGrow 4s ease-out 0.5s forwards;
+        transform-origin: center 100%;
+        transform: scaleY(0);
+        opacity: 0;
+      }
+      .leaf-anim-2 {
+        animation: leafGrow 4s ease-out 0.7s forwards;
+        transform-origin: center 100%;
+        transform: scaleY(0);
+        opacity: 0;
+      }
+      .flower-anim {
+        animation: flowerGrow 3s ease-out 2s forwards;
+        transform-origin: center 50%;
+        transform: scale(0);
+        opacity: 0;
+      }
+      @keyframes leafGrow {
+        0% { transform: scaleX(0); scaleY(0); opacity: 0; }
+        100% { transform: scaleX(1); scaleY(1); opacity: 1; }
+      }
+      @keyframes flowerGrow {
+        0% { transform: scale(0); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="600" fill="#E8F4F8"/>
+  
+  <!-- Soil in pot -->
+  <ellipse cx="200" cy="380" rx="90" ry="35" fill="#5C4033"/>
+  
+  <!-- Pot base -->
+  <g id="potted-plant">
+    <path d="M110 380 L290 380 L280 520 Q200 540 120 520 Z" fill="url(#potGrad)" stroke="#654321" stroke-width="2"/>
+    
+    <!-- Stem group -->
+    <g class="plant-grow" transform-origin="200 380">
+      <!-- Main stem -->
+      <line x1="200" y1="380" x2="200" y2="200" stroke="url(#stemGrad)" stroke-width="8" stroke-linecap="round"/>
+      
+      <!-- Leaf left side -->
+      <g class="leaf-anim-1">
+        <ellipse cx="175" cy="280" rx="35" ry="18" fill="url(#leafGrad)" transform="rotate(-25 175 280)"/>
+      </g>
+      
+      <!-- Leaf right side -->
+      <g class="leaf-anim-2">
+        <ellipse cx="225" cy="260" rx="35" ry="18" fill="url(#leafGrad)" transform="rotate(25 225 260)"/>
+      </g>
+      
+      <!-- Leaf top small -->
+      <g class="leaf-anim-1" style="animation-delay: 1.2s">
+        <ellipse cx="185" cy="220" rx="25" ry="12" fill="url(#leafGrad)" transform="rotate(-20 185 220)"/>
+      </g>
+      
+      <!-- Flower petals -->
+      <g class="flower-anim">
+        <!-- Petal 1 -->
+        <ellipse cx="200" cy="190" rx="12" ry="18" fill="#FF69B4" transform="rotate(0 200 190)"/>
+        <!-- Petal 2 -->
+        <ellipse cx="200" cy="190" rx="12" ry="18" fill="#FF69B4" transform="rotate(72 200 190)"/>
+        <!-- Petal 3 -->
+        <ellipse cx="200" cy="190" rx="12" ry="18" fill="#FF69B4" transform="rotate(144 200 190)"/>
+        <!-- Petal 4 -->
+        <ellipse cx="200" cy="190" rx="12" ry="18" fill="#FF69B4" transform="rotate(216 200 190)"/>
+        <!-- Petal 5 -->
+        <ellipse cx="200" cy="190" rx="12" ry="18" fill="#FF69B4" transform="rotate(288 200 190)"/>
+        <!-- Flower center -->
+        <circle cx="200" cy="190" r="8" fill="#FFD700"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Shadow under pot -->
+  <ellipse cx="200" cy="540" rx="100" ry="15" fill="rgba(0,0,0,0.15)"/>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <!-- Gradients for depth -->
+    <radialGradient id="potGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#d2691e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#b8860b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b4513;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4caf50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2e7d32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background shadow -->
+  <ellipse cx="200" cy="490" rx="120" ry="15" fill="#cccccc" opacity="0.3"/>
+
+  <!-- Pot Group -->
+  <g id="pot" transform="translate(200, 450)">
+    <!-- Main pot body -->
+    <path d="M -50 0 L -40 60 L 40 60 L 50 0 Z" fill="url(#potGradient)" stroke="#8b4513" stroke-width="2"/>
+    <!-- Pot rim -->
+    <ellipse cx="0" cy="0" rx="50" ry="8" fill="#a0522d"/>
+    <!-- Soil inside pot -->
+    <ellipse cx="0" cy="-5" rx="42" ry="5" fill="#5d4037"/>
+  </g>
+
+  <!-- Plant Growing Animation Group -->
+  <g id="plant">
+    <!-- Stem (grows from bottom up) -->
+    <line id="stem" x1="200" y1="390" x2="200" y2="100" 
+          stroke="#4caf50" stroke-width="6" 
+          stroke-linecap="round"/>
+    
+    <!-- Stem growth animation -->
+    <animate attributeName="y1" values="390;390;350" dur="5s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="390;350;100" dur="5s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="6;8;10" dur="5s" begin="0s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0 0.5 1"/>
+    <animate attributeName="opacity" values="0.3;1;0.7" dur="5s" begin="0s" repeatCount="indefinite"/>
+
+    <!-- Left Leaf 1 (appears mid-stem) -->
+    <path id="leafLeft1" d="M 200 350 Q 160 340 170 320 Q 190 335 200 350" 
+          fill="url(#leafGradient)" stroke="#2e7d32" stroke-width="1"/>
+    <animate attributeName="transform" type="scale" values="0.1 0.1;1 1" dur="2s" begin="1s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="1s" fill="freeze"/>
+
+    <!-- Right Leaf 1 -->
+    <path id="leafRight1" d="M 200 330 Q 240 320 230 300 Q 210 315 200 330" 
+          fill="url(#leafGradient)" stroke="#2e7d32" stroke-width="1"/>
+    <animate attributeName="transform" type="scale" values="0.1 0.1;1 1" dur="2s" begin="1.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="1.5s" fill="freeze"/>
+
+    <!-- Left Leaf 2 -->
+    <path id="leafLeft2" d="M 200 300 Q 150 280 165 260 Q 185 275 200 300" 
+          fill="url(#leafGradient)" stroke="#2e7d32" stroke-width="1"/>
+    <animate attributeName="transform" type="scale" values="0.1 0.1;1 1" dur="2s" begin="2.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="2.5s" fill="freeze"/>
+
+    <!-- Right Leaf 2 -->
+    <path id="leafRight2" d="M 200 280 Q 250 260 235 240 Q 215 255 200 280" 
+          fill="url(#leafGradient)" stroke="#2e7d32" stroke-width="1"/>
+    <animate attributeName="transform" type="scale" values="0.1 0.1;1 1" dur="2s" begin="3s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="3s" fill="freeze"/>
+
+    <!-- Top Flower Bloom -->
+    <circle id="flowerCenter" cx="200" cy="220" r="8" fill="#ffeb3b"/>
+    <animate attributeName="r" values="0;8" dur="1.5s" begin="4s" fill="freeze"/>
+    
+    <g id="petals">
+      <ellipse id="petal1" cx="200" cy="200" rx="12" ry="20" fill="#f48fb1" transform="rotate(-45 200 220)"/>
+      <ellipse id="petal2" cx="200" cy="200" rx="12" ry="20" fill="#f48fb1" transform="rotate(45 200 220)"/>
+      <ellipse id="petal3" cx="200" cy="200" rx="12" ry="20" fill="#f48fb1" transform="rotate(180 200 220)"/>
+      <ellipse id="petal4" cx="200" cy="200" rx="12" ry="20" fill="#f48fb1" transform="rotate(0 200 220)"/>
+      <animate attributeName="display" values="none;block" begin="4s" dur="0.1s" fill="freeze"/>
+    </g>
+  </g>
+
+  <!-- Sun/Moon decoration -->
+  <circle cx="350" cy="50" r="40" fill="#ffd54f" opacity="0.8"/>
+  
+  <!-- Growth progress indicator -->
+  <rect x="30" y="40" width="100" height="8" rx="4" fill="#eeeeee" opacity="0.5"/>
+  <rect id="progressBar" x="30" y="40" width="0" height="8" rx="4" fill="#4caf50"/>
+  <animate attributeName="width" values="0;100" begin="0s" dur="5s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0.1 0.25 1" keyTimes="0 1"/>
+</svg>

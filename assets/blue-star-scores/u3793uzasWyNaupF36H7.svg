@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sun Icon -->
+  <g id="sun-icon" fill="#333333">
+    <!-- Central circle -->
+    <circle id="sun-center" cx="100" cy="100" r="40"/>
+    
+    <!-- Five rays extending outward -->
+    <g id="rays">
+      <!-- Ray 1 (top) -->
+      <path id="ray-1" d="M100 40 L100 60 L115 25 L85 25 Z"/>
+      
+      <!-- Ray 2 (top-right) -->
+      <path id="ray-2" d="M145 65 L130 75 L160 55 L145 45 Z"/>
+      
+      <!-- Ray 3 (bottom-right) -->
+      <path id="ray-3" d="M135 145 L135 125 L155 140 L165 140 Z"/>
+      
+      <!-- Ray 4 (bottom-left) -->
+      <path id="ray-4" d="M65 145 L65 125 L45 140 L35 140 Z"/>
+      
+      <!-- Ray 5 (top-left) -->
+      <path id="ray-5" d="M55 65 L70 75 L40 55 L55 45 Z"/>
+    </g>
+  </g>
+</svg>

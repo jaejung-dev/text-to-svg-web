@@ -1,0 +1,747 @@
+{
+  "generated_at": "2026-05-28 11:34 UTC",
+  "source_file": "/home/ubuntu/designarena_curated (1).jsonl",
+  "model": {
+    "id": "text-to-svg-v2",
+    "label": "Text-to-SVG V2",
+    "endpoint": "https://model-qklg45d3.api.baseten.co/environments/production/predict"
+  },
+  "seeds": [
+    2026052801,
+    2026052802,
+    2026052803,
+    2026052804,
+    2026052805
+  ],
+  "score_labels": {
+    "lica_score_v1": "LicaScore",
+    "lica_score_v2": "LicaScore v2"
+  },
+  "summary": {
+    "prompts": 8,
+    "candidates": 32,
+    "agreements": 2
+  },
+  "prompts": [
+    {
+      "id": "example_dna_icon",
+      "prompt": "DNA Icon",
+      "lang": "en",
+      "length_tier": "short",
+      "train_sim": 0.7874,
+      "source": "provided_examples",
+      "nearest_curated_id": "cur_0022",
+      "candidates": [
+        {
+          "id": "example_dna_icon-seed-2026052801",
+          "seed": 2026052801,
+          "asset": "assets/multigen/example_dna_icon-seed-2026052801.svg",
+          "status": "ok",
+          "svg_chars": 2085,
+          "sha256": "81de7224cca3f15ae38dcdb6aa1fe40d127d859b1084a36c0e7d5b12dcb12c5e",
+          "elapsed_seconds": 16.113,
+          "output_tokens": 1020,
+          "input_tokens": 77,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.98046875,
+            "lica_score_v2": 22.875
+          }
+        },
+        {
+          "id": "example_dna_icon-seed-2026052802",
+          "seed": 2026052802,
+          "asset": "assets/multigen/example_dna_icon-seed-2026052802.svg",
+          "status": "ok",
+          "svg_chars": 2233,
+          "sha256": "6efc7fefc20d70bf81d4a77881865097ed690d323fcd994561b2b56e52165792",
+          "elapsed_seconds": 25.147,
+          "output_tokens": 1000,
+          "input_tokens": 77,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.984375,
+            "lica_score_v2": 19.125
+          }
+        },
+        {
+          "id": "example_dna_icon-seed-2026052803",
+          "seed": 2026052803,
+          "asset": "assets/multigen/example_dna_icon-seed-2026052803.svg",
+          "status": "ok",
+          "svg_chars": 1070,
+          "sha256": "c6c323083182dc620c697346d8734b06757ee216b51aa19fe352bffccb0544a7",
+          "elapsed_seconds": 6.898,
+          "output_tokens": 691,
+          "input_tokens": 77,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.9609375,
+            "lica_score_v2": 18.75
+          }
+        },
+        {
+          "id": "example_dna_icon-seed-2026052804",
+          "seed": 2026052804,
+          "asset": "assets/multigen/example_dna_icon-seed-2026052804.svg",
+          "status": "ok",
+          "svg_chars": 1952,
+          "sha256": "91c0d80eb1acfcbcc909f00738b370bf089b0f001a37dd56b5d1f4799c09bead",
+          "elapsed_seconds": 34.527,
+          "output_tokens": 1040,
+          "input_tokens": 77,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.984375,
+            "lica_score_v2": 20.25
+          }
+        }
+      ],
+      "candidate_count": 4,
+      "winners": {
+        "lica_score_v1": {
+          "candidate_id": "example_dna_icon-seed-2026052802",
+          "seed": 2026052802,
+          "score": 0.984375
+        },
+        "lica_score_v2": {
+          "candidate_id": "example_dna_icon-seed-2026052801",
+          "seed": 2026052801,
+          "score": 22.875
+        }
+      },
+      "winner_agreement": false
+    },
+    {
+      "id": "example_baby_bicycle",
+      "prompt": "a cute baby riding a bicycle",
+      "lang": "en",
+      "length_tier": "short",
+      "train_sim": null,
+      "source": "provided_examples",
+      "nearest_curated_id": null,
+      "candidates": [
+        {
+          "id": "example_baby_bicycle-seed-2026052801",
+          "seed": 2026052801,
+          "asset": "assets/multigen/example_baby_bicycle-seed-2026052801.svg",
+          "status": "ok",
+          "svg_chars": 3180,
+          "sha256": "6f4e88aaf92a2614ea078ba90d5214a49cd8caeae361e5ab5380ca31c5c2a355",
+          "elapsed_seconds": 42.867,
+          "output_tokens": 1622,
+          "input_tokens": 81,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.96875,
+            "lica_score_v2": 17.0
+          }
+        },
+        {
+          "id": "example_baby_bicycle-seed-2026052802",
+          "seed": 2026052802,
+          "asset": "assets/multigen/example_baby_bicycle-seed-2026052802.svg",
+          "status": "ok",
+          "svg_chars": 3537,
+          "sha256": "4783ef9ff11c9ec3cdffadbf2255a555bd3af80223fc099885ebe39fd0c2e73d",
+          "elapsed_seconds": 49.923,
+          "output_tokens": 1798,
+          "input_tokens": 81,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.90234375,
+            "lica_score_v2": 20.0
+          }
+        },
+        {
+          "id": "example_baby_bicycle-seed-2026052803",
+          "seed": 2026052803,
+          "asset": "assets/multigen/example_baby_bicycle-seed-2026052803.svg",
+          "status": "ok",
+          "svg_chars": 4484,
+          "sha256": "30b1475d8c39dc94ea8c1401290363c9d0b23944acf47484bb3db0dc1f5c1546",
+          "elapsed_seconds": 72.341,
+          "output_tokens": 3448,
+          "input_tokens": 81,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.9375,
+            "lica_score_v2": 20.875
+          }
+        },
+        {
+          "id": "example_baby_bicycle-seed-2026052804",
+          "seed": 2026052804,
+          "asset": "assets/multigen/example_baby_bicycle-seed-2026052804.svg",
+          "status": "ok",
+          "svg_chars": 3652,
+          "sha256": "65052415e85fdcb6606e1a085caa8715244922e1a9eca322d9c7e851f5a3d61a",
+          "elapsed_seconds": 79.76,
+          "output_tokens": 1859,
+          "input_tokens": 81,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.94140625,
+            "lica_score_v2": 18.5
+          }
+        }
+      ],
+      "candidate_count": 4,
+      "winners": {
+        "lica_score_v1": {
+          "candidate_id": "example_baby_bicycle-seed-2026052801",
+          "seed": 2026052801,
+          "score": 0.96875
+        },
+        "lica_score_v2": {
+          "candidate_id": "example_baby_bicycle-seed-2026052803",
+          "seed": 2026052803,
+          "score": 20.875
+        }
+      },
+      "winner_agreement": false
+    },
+    {
+      "id": "cur_0008",
+      "prompt": "Frog facing the camera",
+      "lang": "en",
+      "length_tier": "short",
+      "train_sim": 0.815,
+      "source": "designarena/svg/union",
+      "nearest_curated_id": null,
+      "candidates": [
+        {
+          "id": "cur_0008-seed-2026052801",
+          "seed": 2026052801,
+          "asset": "assets/multigen/cur_0008-seed-2026052801.svg",
+          "status": "ok",
+          "svg_chars": 2334,
+          "sha256": "6f0f91c1943b32bf14402c51877942bc9680d3f2948fd1daa49098ccf9cd1497",
+          "elapsed_seconds": 113.3,
+          "output_tokens": 5263,
+          "input_tokens": 79,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.97265625,
+            "lica_score_v2": 19.75
+          }
+        },
+        {
+          "id": "cur_0008-seed-2026052802",
+          "seed": 2026052802,
+          "asset": "assets/multigen/cur_0008-seed-2026052802.svg",
+          "status": "ok",
+          "svg_chars": 2728,
+          "sha256": "1aa781a3333856b9cca8e6791d15b7387911c51eb3970737457132feacc96e4f",
+          "elapsed_seconds": 108.933,
+          "output_tokens": 1318,
+          "input_tokens": 79,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.96875,
+            "lica_score_v2": 17.75
+          }
+        },
+        {
+          "id": "cur_0008-seed-2026052803",
+          "seed": 2026052803,
+          "asset": "assets/multigen/cur_0008-seed-2026052803.svg",
+          "status": "ok",
+          "svg_chars": 1924,
+          "sha256": "096c6f068344ef33c41ab4fec2a63d11ef288a6f885d91e64314c4898057db04",
+          "elapsed_seconds": 86.565,
+          "output_tokens": 1006,
+          "input_tokens": 79,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.96484375,
+            "lica_score_v2": 21.25
+          }
+        },
+        {
+          "id": "cur_0008-seed-2026052804",
+          "seed": 2026052804,
+          "asset": "assets/multigen/cur_0008-seed-2026052804.svg",
+          "status": "ok",
+          "svg_chars": 2929,
+          "sha256": "d64e848edd786ecda634f20681dfe8fc944050e530ce031e88ce6f991f5a753c",
+          "elapsed_seconds": 82.15,
+          "output_tokens": 1372,
+          "input_tokens": 79,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.96484375,
+            "lica_score_v2": 19.625
+          }
+        }
+      ],
+      "candidate_count": 4,
+      "winners": {
+        "lica_score_v1": {
+          "candidate_id": "cur_0008-seed-2026052801",
+          "seed": 2026052801,
+          "score": 0.97265625
+        },
+        "lica_score_v2": {
+          "candidate_id": "cur_0008-seed-2026052803",
+          "seed": 2026052803,
+          "score": 21.25
+        }
+      },
+      "winner_agreement": false
+    },
+    {
+      "id": "cur_0099",
+      "prompt": "Minimalist white line art illustration of ocean seashells arranged in a horizontal row, including a scallop shell, starfish, spiral conch shell, and whelk shell, clean continuous outline drawing, thin smooth strokes, simple modern coastal aesthetic, evenly spaced layout, high contrast white ink on soft denim-textured blue background, minimal detail, crisp cutout edges, print-ready t-shirt graphic, transparent background version included, high resolution PNG, no watermark, no mockup",
+      "lang": "en",
+      "length_tier": "long",
+      "train_sim": 0.738,
+      "source": "designarena/svg/union",
+      "nearest_curated_id": null,
+      "candidates": [
+        {
+          "id": "cur_0099-seed-2026052801",
+          "seed": 2026052801,
+          "asset": "assets/multigen/cur_0099-seed-2026052801.svg",
+          "status": "ok",
+          "svg_chars": 4233,
+          "sha256": "783b21cca322514f98e7e10b5a8b19253b4a553cd3de1fd74b83f2ecc77ae569",
+          "elapsed_seconds": 52.504,
+          "output_tokens": 2104,
+          "input_tokens": 171,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.953125,
+            "lica_score_v2": 13.75
+          }
+        },
+        {
+          "id": "cur_0099-seed-2026052802",
+          "seed": 2026052802,
+          "asset": "assets/multigen/cur_0099-seed-2026052802.svg",
+          "status": "ok",
+          "svg_chars": 3755,
+          "sha256": "e45202eedc31d91bc47b6042eed5eb1a7055f196febb79881f411ddcaabeb0be",
+          "elapsed_seconds": 71.407,
+          "output_tokens": 3365,
+          "input_tokens": 171,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.94140625,
+            "lica_score_v2": 13.25
+          }
+        },
+        {
+          "id": "cur_0099-seed-2026052803",
+          "seed": 2026052803,
+          "asset": "assets/multigen/cur_0099-seed-2026052803.svg",
+          "status": "ok",
+          "svg_chars": 3516,
+          "sha256": "1b4e8fc93f7aabdb29bafcdf2394af8da28abe767eb152ce87d8fc870d3b59fe",
+          "elapsed_seconds": 75.339,
+          "output_tokens": 1444,
+          "input_tokens": 171,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.95703125,
+            "lica_score_v2": 15.0
+          }
+        },
+        {
+          "id": "cur_0099-seed-2026052804",
+          "seed": 2026052804,
+          "asset": "assets/multigen/cur_0099-seed-2026052804.svg",
+          "status": "ok",
+          "svg_chars": 2351,
+          "sha256": "1593935197e39aa7fb262b3d154475001caa26dee9705bcd6887103c72e067e0",
+          "elapsed_seconds": 77.854,
+          "output_tokens": 1652,
+          "input_tokens": 171,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.94921875,
+            "lica_score_v2": 14.875
+          }
+        }
+      ],
+      "candidate_count": 4,
+      "winners": {
+        "lica_score_v1": {
+          "candidate_id": "cur_0099-seed-2026052803",
+          "seed": 2026052803,
+          "score": 0.95703125
+        },
+        "lica_score_v2": {
+          "candidate_id": "cur_0099-seed-2026052803",
+          "seed": 2026052803,
+          "score": 15.0
+        }
+      },
+      "winner_agreement": true
+    },
+    {
+      "id": "cur_0009",
+      "prompt": "美しい桜の木のアイコン、繊細なピンク色の花びらとシンプルなシルエット",
+      "lang": "zh",
+      "length_tier": "short",
+      "train_sim": 0.8079,
+      "source": "designarena/svg/union",
+      "nearest_curated_id": null,
+      "candidates": [
+        {
+          "id": "cur_0009-seed-2026052801",
+          "seed": 2026052801,
+          "asset": "assets/multigen/cur_0009-seed-2026052801.svg",
+          "status": "ok",
+          "svg_chars": 2956,
+          "sha256": "8b30323792347b8613c484af7a8fe9acb396d8ffe2ebb5e6e68f4a22be662a32",
+          "elapsed_seconds": 72.631,
+          "output_tokens": 1527,
+          "input_tokens": 93,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.97265625,
+            "lica_score_v2": 14.9375
+          }
+        },
+        {
+          "id": "cur_0009-seed-2026052802",
+          "seed": 2026052802,
+          "asset": "assets/multigen/cur_0009-seed-2026052802.svg",
+          "status": "ok",
+          "svg_chars": 2450,
+          "sha256": "452583f8b7707a2754ad76163fc6da1adc7f8832178382bf2c12499344cc0a47",
+          "elapsed_seconds": 52.417,
+          "output_tokens": 1171,
+          "input_tokens": 93,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.97265625,
+            "lica_score_v2": 15.75
+          }
+        },
+        {
+          "id": "cur_0009-seed-2026052803",
+          "seed": 2026052803,
+          "asset": "assets/multigen/cur_0009-seed-2026052803.svg",
+          "status": "ok",
+          "svg_chars": 3555,
+          "sha256": "990698dd5927964c849436fb9c7e65eaaba40daf1fd72f083f11c05a240edda3",
+          "elapsed_seconds": 55.205,
+          "output_tokens": 1750,
+          "input_tokens": 93,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.9765625,
+            "lica_score_v2": 14.75
+          }
+        },
+        {
+          "id": "cur_0009-seed-2026052804",
+          "seed": 2026052804,
+          "asset": "assets/multigen/cur_0009-seed-2026052804.svg",
+          "status": "ok",
+          "svg_chars": 1529,
+          "sha256": "5c0cb18aa3ea9b510f504ca19c36b42c565167afd4222061d59b43019d4d8f33",
+          "elapsed_seconds": 48.509,
+          "output_tokens": 905,
+          "input_tokens": 93,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.97265625,
+            "lica_score_v2": 15.75
+          }
+        }
+      ],
+      "candidate_count": 4,
+      "winners": {
+        "lica_score_v1": {
+          "candidate_id": "cur_0009-seed-2026052803",
+          "seed": 2026052803,
+          "score": 0.9765625
+        },
+        "lica_score_v2": {
+          "candidate_id": "cur_0009-seed-2026052802",
+          "seed": 2026052802,
+          "score": 15.75
+        }
+      },
+      "winner_agreement": false
+    },
+    {
+      "id": "cur_0056",
+      "prompt": "웃는 사람 아이콘, 원형, 심플하고 친근한 얼굴",
+      "lang": "ko",
+      "length_tier": "short",
+      "train_sim": 0.7628,
+      "source": "designarena/svg/union",
+      "nearest_curated_id": null,
+      "candidates": [
+        {
+          "id": "cur_0056-seed-2026052801",
+          "seed": 2026052801,
+          "asset": "assets/multigen/cur_0056-seed-2026052801.svg",
+          "status": "ok",
+          "svg_chars": 588,
+          "sha256": "7ed575a3c20bcea508e662b4f14955106cdfd82826413a4304e3aa374e535ddb",
+          "elapsed_seconds": 37.831,
+          "output_tokens": 333,
+          "input_tokens": 90,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.98046875,
+            "lica_score_v2": 16.125
+          }
+        },
+        {
+          "id": "cur_0056-seed-2026052802",
+          "seed": 2026052802,
+          "asset": "assets/multigen/cur_0056-seed-2026052802.svg",
+          "status": "ok",
+          "svg_chars": 936,
+          "sha256": "19495259498a5f10eca3f9bdd08a2490d4cc69b784e732eec6a8aa416ac2d80f",
+          "elapsed_seconds": 32.002,
+          "output_tokens": 518,
+          "input_tokens": 90,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.98046875,
+            "lica_score_v2": 19.25
+          }
+        },
+        {
+          "id": "cur_0056-seed-2026052803",
+          "seed": 2026052803,
+          "asset": "assets/multigen/cur_0056-seed-2026052803.svg",
+          "status": "ok",
+          "svg_chars": 915,
+          "sha256": "a32de20e399f8897d503027e87c5ab5e3b1eeb2e9eab1c505ab7a8a829b93e70",
+          "elapsed_seconds": 31.321,
+          "output_tokens": 1674,
+          "input_tokens": 90,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.98046875,
+            "lica_score_v2": 18.125
+          }
+        },
+        {
+          "id": "cur_0056-seed-2026052804",
+          "seed": 2026052804,
+          "asset": "assets/multigen/cur_0056-seed-2026052804.svg",
+          "status": "ok",
+          "svg_chars": 1023,
+          "sha256": "d7a1c2a437d4ce3a2064b5b0bc807b4675865253d0ced50aeccbf0317ed6d1f3",
+          "elapsed_seconds": 28.402,
+          "output_tokens": 578,
+          "input_tokens": 90,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.97265625,
+            "lica_score_v2": 17.5
+          }
+        }
+      ],
+      "candidate_count": 4,
+      "winners": {
+        "lica_score_v1": {
+          "candidate_id": "cur_0056-seed-2026052801",
+          "seed": 2026052801,
+          "score": 0.98046875
+        },
+        "lica_score_v2": {
+          "candidate_id": "cur_0056-seed-2026052802",
+          "seed": 2026052802,
+          "score": 19.25
+        }
+      },
+      "winner_agreement": false
+    },
+    {
+      "id": "cur_0192",
+      "prompt": "شعار حصان أنيق وبسيط",
+      "lang": "ar",
+      "length_tier": "short",
+      "train_sim": 0.7039,
+      "source": "designarena/svg/union",
+      "nearest_curated_id": null,
+      "candidates": [
+        {
+          "id": "cur_0192-seed-2026052801",
+          "seed": 2026052801,
+          "asset": "assets/multigen/cur_0192-seed-2026052801.svg",
+          "status": "ok",
+          "svg_chars": 2733,
+          "sha256": "fc478ee39fd258549308c6889a4a281d3ad4a1f2e574b8611eddfa8303fb7ed2",
+          "elapsed_seconds": 40.559,
+          "output_tokens": 1693,
+          "input_tokens": 82,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.9765625,
+            "lica_score_v2": 11.0625
+          }
+        },
+        {
+          "id": "cur_0192-seed-2026052802",
+          "seed": 2026052802,
+          "asset": "assets/multigen/cur_0192-seed-2026052802.svg",
+          "status": "ok",
+          "svg_chars": 1960,
+          "sha256": "b2de843d6b0eb8347de546e4c4ca9e6d749b2c3e39e0ea43411504068e7e6a8b",
+          "elapsed_seconds": 45.389,
+          "output_tokens": 1061,
+          "input_tokens": 82,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.9765625,
+            "lica_score_v2": 14.6875
+          }
+        },
+        {
+          "id": "cur_0192-seed-2026052803",
+          "seed": 2026052803,
+          "asset": "assets/multigen/cur_0192-seed-2026052803.svg",
+          "status": "ok",
+          "svg_chars": 1848,
+          "sha256": "a35944bd58020be5f3a4998d5d4fc8f595fdbbf1733ed8b8943db9e716949b4d",
+          "elapsed_seconds": 38.656,
+          "output_tokens": 928,
+          "input_tokens": 82,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.96875,
+            "lica_score_v2": 11.0
+          }
+        },
+        {
+          "id": "cur_0192-seed-2026052804",
+          "seed": 2026052804,
+          "asset": "assets/multigen/cur_0192-seed-2026052804.svg",
+          "status": "ok",
+          "svg_chars": 2132,
+          "sha256": "c9d98b05734bd0227352ab00868bd0eff8a2831da96584bbf0fc4633ca8dcc0e",
+          "elapsed_seconds": 42.816,
+          "output_tokens": 1046,
+          "input_tokens": 82,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.96875,
+            "lica_score_v2": 12.25
+          }
+        }
+      ],
+      "candidate_count": 4,
+      "winners": {
+        "lica_score_v1": {
+          "candidate_id": "cur_0192-seed-2026052801",
+          "seed": 2026052801,
+          "score": 0.9765625
+        },
+        "lica_score_v2": {
+          "candidate_id": "cur_0192-seed-2026052802",
+          "seed": 2026052802,
+          "score": 14.6875
+        }
+      },
+      "winner_agreement": false
+    },
+    {
+      "id": "cur_0018",
+      "prompt": "Animation of a potted plant growing",
+      "lang": "en",
+      "length_tier": "short",
+      "train_sim": 0.7907,
+      "source": "designarena/svg/union",
+      "nearest_curated_id": null,
+      "candidates": [
+        {
+          "id": "cur_0018-seed-2026052801",
+          "seed": 2026052801,
+          "asset": "assets/multigen/cur_0018-seed-2026052801.svg",
+          "status": "ok",
+          "svg_chars": 3944,
+          "sha256": "3213e7e88ccf17dde85259b023e641500a4d2fc3e525f74aa0ef95a0c2065fe7",
+          "elapsed_seconds": 42.898,
+          "output_tokens": 1714,
+          "input_tokens": 82,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.87890625,
+            "lica_score_v2": 15.1875
+          }
+        },
+        {
+          "id": "cur_0018-seed-2026052802",
+          "seed": 2026052802,
+          "asset": "assets/multigen/cur_0018-seed-2026052802.svg",
+          "status": "ok",
+          "svg_chars": 4643,
+          "sha256": "52f1b5fef10c8b767afc68701a3d678fb9358a10fb6816c83856f409f706d6d6",
+          "elapsed_seconds": 52.365,
+          "output_tokens": 2107,
+          "input_tokens": 82,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.96875,
+            "lica_score_v2": 21.375
+          }
+        },
+        {
+          "id": "cur_0018-seed-2026052804",
+          "seed": 2026052804,
+          "asset": "assets/multigen/cur_0018-seed-2026052804.svg",
+          "status": "ok",
+          "svg_chars": 6195,
+          "sha256": "86af939f99d3bd34e0e7da3a757bc39b6020ea040ad3a5654ea126e830a54b86",
+          "elapsed_seconds": 89.843,
+          "output_tokens": 2318,
+          "input_tokens": 82,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.9609375,
+            "lica_score_v2": 17.125
+          }
+        },
+        {
+          "id": "cur_0018-seed-2026052805",
+          "seed": 2026052805,
+          "asset": "assets/multigen/cur_0018-seed-2026052805.svg",
+          "status": "ok",
+          "svg_chars": 6179,
+          "sha256": "46441da72b690be3cc09ad1140a05e66d455c94b11700e83a15464e98865b7f3",
+          "elapsed_seconds": 24.254,
+          "output_tokens": 2658,
+          "input_tokens": 82,
+          "svg_parse_error": null,
+          "scores": {
+            "lica_score_v1": 0.96484375,
+            "lica_score_v2": 18.25
+          },
+          "replacement_for": 2026052803
+        }
+      ],
+      "candidate_count": 4,
+      "winners": {
+        "lica_score_v1": {
+          "candidate_id": "cur_0018-seed-2026052802",
+          "seed": 2026052802,
+          "score": 0.96875
+        },
+        "lica_score_v2": {
+          "candidate_id": "cur_0018-seed-2026052802",
+          "seed": 2026052802,
+          "score": 21.375
+        }
+      },
+      "winner_agreement": true
+    }
+  ],
+  "primary_seeds": [
+    2026052801,
+    2026052802,
+    2026052803,
+    2026052804
+  ],
+  "notes": "cur_0018 seed 2026052803 returned malformed SVG, so seed 2026052805 is used as a replacement candidate for that prompt."
+}
