@@ -201,10 +201,40 @@
           "logit": 14.1875
         }
       },
-      "lica_winner": "gt",
+      "lica_winner": "text-to-svg-v1",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-28 03:13 UTC",
-      "lica_score_elapsed_seconds": 5.12
+      "lica_score_elapsed_seconds": 5.12,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v1",
+          "score": 0.98046875
+        },
+        "imscore_hpsv21": {
+          "source": "gpt-5.2",
+          "score": 0.19680854678153992
+        },
+        "imscore_pickscore": {
+          "source": "gpt-5.2",
+          "score": 22.09859275817871
+        },
+        "imscore_mpsv1": {
+          "source": "gpt-5.2",
+          "score": 9.684853553771973
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v2",
+          "score": 27.05472183227539
+        },
+        "imscore_imagereward": {
+          "source": "gpt-5.2",
+          "score": 0.11580193042755127
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-base",
+          "score": 5.227631092071533
+        }
+      }
     },
     {
       "id": "2bb28d9c-b0a1-40f3-8a86-96d232a28a80",
@@ -407,7 +437,37 @@
       "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 2.923
+      "lica_score_elapsed_seconds": 2.923,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.98046875
+        },
+        "imscore_hpsv21": {
+          "source": "claude",
+          "score": 0.21249574422836304
+        },
+        "imscore_pickscore": {
+          "source": "claude",
+          "score": 21.458059310913086
+        },
+        "imscore_mpsv1": {
+          "source": "claude",
+          "score": 10.180991172790527
+        },
+        "imscore_clipscore": {
+          "source": "claude",
+          "score": 28.656705856323242
+        },
+        "imscore_imagereward": {
+          "source": "claude",
+          "score": 0.7763234376907349
+        },
+        "imscore_laion_aesthetic": {
+          "source": "claude",
+          "score": 5.116871356964111
+        }
+      }
     },
     {
       "id": "375920f5-f42c-42d0-815d-45c5ff30baeb",
@@ -610,7 +670,37 @@
       "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-28 03:13 UTC",
-      "lica_score_elapsed_seconds": 4.916
+      "lica_score_elapsed_seconds": 4.916,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.96484375
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-base",
+          "score": 0.27667340636253357
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-v2",
+          "score": 25.19942283630371
+        },
+        "imscore_mpsv1": {
+          "source": "claude",
+          "score": 11.442424774169922
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v1",
+          "score": 29.36505889892578
+        },
+        "imscore_imagereward": {
+          "source": "gemini",
+          "score": 1.0472604036331177
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-base",
+          "score": 5.150730133056641
+        }
+      }
     },
     {
       "id": "475f8fb3-23a3-4a4b-9f0f-daa935f0bd5d",
@@ -813,7 +903,37 @@
       "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 2.674
+      "lica_score_elapsed_seconds": 2.674,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.984375
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-v2",
+          "score": 0.2013738602399826
+        },
+        "imscore_pickscore": {
+          "source": "gemini",
+          "score": 19.916969299316406
+        },
+        "imscore_mpsv1": {
+          "source": "claude",
+          "score": 6.224268436431885
+        },
+        "imscore_clipscore": {
+          "source": "claude",
+          "score": 30.575889587402344
+        },
+        "imscore_imagereward": {
+          "source": "claude",
+          "score": 0.5355427265167236
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v2",
+          "score": 5.352075099945068
+        }
+      }
     },
     {
       "id": "48fb52e9-d309-4bec-8735-091663026e70",
@@ -1015,8 +1135,38 @@
           "logit": 13.8125
         }
       },
-      "lica_winner": "gt",
-      "lica_score_errors": []
+      "lica_winner": "text-to-svg-base",
+      "lica_score_errors": [],
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.984375
+        },
+        "imscore_hpsv21": {
+          "source": "gemini",
+          "score": 0.2459670901298523
+        },
+        "imscore_pickscore": {
+          "source": "gpt-5.2",
+          "score": 24.21695899963379
+        },
+        "imscore_mpsv1": {
+          "source": "gemini",
+          "score": 8.519079208374023
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-base",
+          "score": 30.544063568115234
+        },
+        "imscore_imagereward": {
+          "source": "gemini",
+          "score": 1.1817201375961304
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v2",
+          "score": 4.860825538635254
+        }
+      }
     },
     {
       "id": "6b75002f-4553-4495-af73-69dff9260dd7",
@@ -1216,10 +1366,40 @@
           "logit": 13.875
         }
       },
-      "lica_winner": "gt",
+      "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-28 03:13 UTC",
-      "lica_score_elapsed_seconds": 2.732
+      "lica_score_elapsed_seconds": 2.732,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.9765625
+        },
+        "imscore_hpsv21": {
+          "source": "claude",
+          "score": 0.17398549616336823
+        },
+        "imscore_pickscore": {
+          "source": "gemini",
+          "score": 20.67763900756836
+        },
+        "imscore_mpsv1": {
+          "source": "claude",
+          "score": -8.18298053741455
+        },
+        "imscore_clipscore": {
+          "source": "gemini",
+          "score": 25.775894165039062
+        },
+        "imscore_imagereward": {
+          "source": "claude",
+          "score": -0.49580326676368713
+        },
+        "imscore_laion_aesthetic": {
+          "source": "gemini",
+          "score": 4.776340007781982
+        }
+      }
     },
     {
       "id": "6effa7a8-4436-4915-9d93-bc871ea36dcc",
@@ -1419,10 +1599,40 @@
           "logit": 14.1875
         }
       },
-      "lica_winner": "gt",
+      "lica_winner": "text-to-svg-v1",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-28 03:13 UTC",
-      "lica_score_elapsed_seconds": 2.718
+      "lica_score_elapsed_seconds": 2.718,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v1",
+          "score": 0.98046875
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-base",
+          "score": 0.2210678905248642
+        },
+        "imscore_pickscore": {
+          "source": "gemini",
+          "score": 22.02581214904785
+        },
+        "imscore_mpsv1": {
+          "source": "gpt-5.2",
+          "score": 12.620895385742188
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v1",
+          "score": 30.34755516052246
+        },
+        "imscore_imagereward": {
+          "source": "gpt-5.2",
+          "score": 0.6683980226516724
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v1",
+          "score": 5.151843070983887
+        }
+      }
     },
     {
       "id": "789455bd-a5a3-4611-837c-dcbd7aaac18d",
@@ -1625,7 +1835,37 @@
       "lica_winner": "text-to-svg-v2",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-28 03:14 UTC",
-      "lica_score_elapsed_seconds": 2.862
+      "lica_score_elapsed_seconds": 2.862,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v2",
+          "score": 0.9765625
+        },
+        "imscore_hpsv21": {
+          "source": "claude",
+          "score": 0.24802500009536743
+        },
+        "imscore_pickscore": {
+          "source": "gemini",
+          "score": 22.516653060913086
+        },
+        "imscore_mpsv1": {
+          "source": "claude",
+          "score": 9.479277610778809
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v2",
+          "score": 28.310626983642578
+        },
+        "imscore_imagereward": {
+          "source": "gemini",
+          "score": 0.45575085282325745
+        },
+        "imscore_laion_aesthetic": {
+          "source": "gemini",
+          "score": 4.713105201721191
+        }
+      }
     },
     {
       "id": "7abdd104-8327-4c83-a550-a93ee4a97cf7",
@@ -1825,10 +2065,40 @@
           "logit": 14.25
         }
       },
-      "lica_winner": "gt",
+      "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 2.127
+      "lica_score_elapsed_seconds": 2.127,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.98828125
+        },
+        "imscore_hpsv21": {
+          "source": "claude",
+          "score": 0.1860685646533966
+        },
+        "imscore_pickscore": {
+          "source": "claude",
+          "score": 21.40362548828125
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-v1",
+          "score": 8.960866928100586
+        },
+        "imscore_clipscore": {
+          "source": "claude",
+          "score": 30.2037410736084
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-base",
+          "score": -1.3585108518600464
+        },
+        "imscore_laion_aesthetic": {
+          "source": "gemini",
+          "score": 5.169146537780762
+        }
+      }
     },
     {
       "id": "ad63e329-a034-4ba7-8b30-8cd06ff9611f",
@@ -2031,7 +2301,37 @@
       "lica_winner": "text-to-svg-v1",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-28 03:14 UTC",
-      "lica_score_elapsed_seconds": 2.968
+      "lica_score_elapsed_seconds": 2.968,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v1",
+          "score": 0.98046875
+        },
+        "imscore_hpsv21": {
+          "source": "gemini",
+          "score": 0.2420002818107605
+        },
+        "imscore_pickscore": {
+          "source": "gpt-5.2",
+          "score": 22.608510971069336
+        },
+        "imscore_mpsv1": {
+          "source": "gemini",
+          "score": 3.6038312911987305
+        },
+        "imscore_clipscore": {
+          "source": "claude",
+          "score": 31.22638702392578
+        },
+        "imscore_imagereward": {
+          "source": "claude",
+          "score": -0.17815262079238892
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v2",
+          "score": 4.997766494750977
+        }
+      }
     },
     {
       "id": "ba99ded2-01fe-4df0-9e81-da619c6a19a7",
@@ -2231,10 +2531,40 @@
           "logit": 14.0625
         }
       },
-      "lica_winner": "gt",
+      "lica_winner": "text-to-svg-v2",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 2.811
+      "lica_score_elapsed_seconds": 2.811,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v2",
+          "score": 0.96875
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-base",
+          "score": 0.21012553572654724
+        },
+        "imscore_pickscore": {
+          "source": "gemini",
+          "score": 21.799001693725586
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-base",
+          "score": 4.8555827140808105
+        },
+        "imscore_clipscore": {
+          "source": "claude",
+          "score": 29.422447204589844
+        },
+        "imscore_imagereward": {
+          "source": "claude",
+          "score": 0.5843703746795654
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-base",
+          "score": 4.875774383544922
+        }
+      }
     },
     {
       "id": "c6747ea9-218b-4465-b89a-61a7c68fc5df",
@@ -2434,10 +2764,40 @@
           "logit": 14.25
         }
       },
-      "lica_winner": "gt",
+      "lica_winner": "text-to-svg-v2",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-28 03:14 UTC",
-      "lica_score_elapsed_seconds": 2.495
+      "lica_score_elapsed_seconds": 2.495,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v2",
+          "score": 0.984375
+        },
+        "imscore_hpsv21": {
+          "source": "claude",
+          "score": 0.22563692927360535
+        },
+        "imscore_pickscore": {
+          "source": "claude",
+          "score": 21.80493927001953
+        },
+        "imscore_mpsv1": {
+          "source": "claude",
+          "score": 3.937113046646118
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v1",
+          "score": 25.794553756713867
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-v1",
+          "score": 0.8342753052711487
+        },
+        "imscore_laion_aesthetic": {
+          "source": "gemini",
+          "score": 5.026725769042969
+        }
+      }
     },
     {
       "id": "cfa27aa4-7443-4ea4-bae7-c2bd746a2e23",
@@ -2640,7 +3000,37 @@
       "lica_winner": "claude",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-28 03:14 UTC",
-      "lica_score_elapsed_seconds": 2.454
+      "lica_score_elapsed_seconds": 2.454,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "claude",
+          "score": 0.9768973588943481
+        },
+        "imscore_hpsv21": {
+          "source": "gemini",
+          "score": 0.2179783582687378
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-base",
+          "score": 21.883487701416016
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-base",
+          "score": 9.349841117858887
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v2",
+          "score": 32.677406311035156
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-base",
+          "score": 0.398555189371109
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v2",
+          "score": 4.849573612213135
+        }
+      }
     },
     {
       "id": "df15ae1c-d219-449f-b27b-c908c615af70",
@@ -2843,7 +3233,37 @@
       "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-28 03:14 UTC",
-      "lica_score_elapsed_seconds": 1.866
+      "lica_score_elapsed_seconds": 1.866,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.98828125
+        },
+        "imscore_hpsv21": {
+          "source": "claude",
+          "score": 0.2407667636871338
+        },
+        "imscore_pickscore": {
+          "source": "claude",
+          "score": 23.438371658325195
+        },
+        "imscore_mpsv1": {
+          "source": "claude",
+          "score": 9.998068809509277
+        },
+        "imscore_clipscore": {
+          "source": "claude",
+          "score": 30.50473976135254
+        },
+        "imscore_imagereward": {
+          "source": "claude",
+          "score": 1.0085197687149048
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v1",
+          "score": 4.749988555908203
+        }
+      }
     },
     {
       "id": "eaa659f0-83cd-4be3-a1b4-551dcacad485",
@@ -3046,7 +3466,37 @@
       "lica_winner": "text-to-svg-v2",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 2.833
+      "lica_score_elapsed_seconds": 2.833,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v2",
+          "score": 0.98046875
+        },
+        "imscore_hpsv21": {
+          "source": "gpt-5.2",
+          "score": 0.20542003214359283
+        },
+        "imscore_pickscore": {
+          "source": "gpt-5.2",
+          "score": 19.839567184448242
+        },
+        "imscore_mpsv1": {
+          "source": "gemini",
+          "score": 8.455318450927734
+        },
+        "imscore_clipscore": {
+          "source": "claude",
+          "score": 31.74598503112793
+        },
+        "imscore_imagereward": {
+          "source": "gpt-5.2",
+          "score": 0.8727449178695679
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v1",
+          "score": 5.296669960021973
+        }
+      }
     }
   ],
   "prompt_pairs": [
@@ -3361,7 +3811,37 @@
       "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 0.85
+      "lica_score_elapsed_seconds": 0.85,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.984375
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-base",
+          "score": 0.17931686341762543
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-base",
+          "score": 19.407541275024414
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-base",
+          "score": 10.67953872680664
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-base",
+          "score": 24.392780303955078
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-base",
+          "score": -0.9012519717216492
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v2",
+          "score": 5.432353496551514
+        }
+      }
     },
     {
       "id": "prompt-pair-02",
@@ -3674,7 +4154,37 @@
       "lica_winner": "text-to-svg-v1",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 0.834
+      "lica_score_elapsed_seconds": 0.834,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v1",
+          "score": 0.9765625
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-v1",
+          "score": 0.20467142760753632
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-v1",
+          "score": 20.11710548400879
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-v1",
+          "score": 3.16808819770813
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v1",
+          "score": 27.309972763061523
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-v1",
+          "score": -0.10459574311971664
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v1",
+          "score": 5.112431526184082
+        }
+      }
     },
     {
       "id": "prompt-pair-03",
@@ -3987,7 +4497,37 @@
       "lica_winner": "text-to-svg-v1",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 2.054
+      "lica_score_elapsed_seconds": 2.054,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v1",
+          "score": 0.9609375
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-base",
+          "score": 0.20638017356395721
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-v1",
+          "score": 20.09385871887207
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-v2",
+          "score": 10.174101829528809
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v1",
+          "score": 26.162450790405273
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-v1",
+          "score": 0.1485406905412674
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v1",
+          "score": 5.424777030944824
+        }
+      }
     },
     {
       "id": "prompt-pair-04",
@@ -4300,7 +4840,37 @@
       "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 2.086
+      "lica_score_elapsed_seconds": 2.086,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.95703125
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-v2",
+          "score": 0.21270745992660522
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-base",
+          "score": 20.561885833740234
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-base",
+          "score": 1.0030872821807861
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v1",
+          "score": 21.917951583862305
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-v1",
+          "score": -0.5785145163536072
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v1",
+          "score": 5.444843292236328
+        }
+      }
     },
     {
       "id": "prompt-pair-05",
@@ -4613,7 +5183,37 @@
       "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 0.965
+      "lica_score_elapsed_seconds": 0.965,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.98046875
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-v1",
+          "score": 0.226469948887825
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-v1",
+          "score": 19.42688751220703
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-v1",
+          "score": 10.53697681427002
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-base",
+          "score": 28.346452713012695
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-base",
+          "score": -0.17127442359924316
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-v2",
+          "score": 4.989520072937012
+        }
+      }
     },
     {
       "id": "prompt-pair-06",
@@ -4926,7 +5526,37 @@
       "lica_winner": "text-to-svg-v1",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 0.937
+      "lica_score_elapsed_seconds": 0.937,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v1",
+          "score": 0.9765625
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-base",
+          "score": 0.22779777646064758
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-base",
+          "score": 21.08517074584961
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-base",
+          "score": 1.2866990566253662
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-base",
+          "score": 34.12419891357422
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-base",
+          "score": 0.6648867130279541
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-base",
+          "score": 5.389984130859375
+        }
+      }
     },
     {
       "id": "prompt-pair-07",
@@ -5239,7 +5869,37 @@
       "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 0.808
+      "lica_score_elapsed_seconds": 0.808,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.98046875
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-v1",
+          "score": 0.18814116716384888
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-base",
+          "score": 20.193950653076172
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-base",
+          "score": 14.88575267791748
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-base",
+          "score": 27.263399124145508
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-base",
+          "score": -1.2638860940933228
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-base",
+          "score": 5.003847122192383
+        }
+      }
     },
     {
       "id": "prompt-pair-08",
@@ -5552,7 +6212,37 @@
       "lica_winner": "text-to-svg-v1",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 0.796
+      "lica_score_elapsed_seconds": 0.796,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v1",
+          "score": 0.97265625
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-base",
+          "score": 0.2314482480287552
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-base",
+          "score": 22.17072868347168
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-base",
+          "score": 9.559465408325195
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v2",
+          "score": 34.847572326660156
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-base",
+          "score": 0.913580596446991
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-base",
+          "score": 5.495102882385254
+        }
+      }
     },
     {
       "id": "prompt-pair-09",
@@ -5865,7 +6555,37 @@
       "lica_winner": "text-to-svg-base",
       "lica_score_errors": [],
       "lica_scored_at": "2026-05-27 18:32 UTC",
-      "lica_score_elapsed_seconds": 1.153
+      "lica_score_elapsed_seconds": 1.153,
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-base",
+          "score": 0.9765625
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-v2",
+          "score": 0.2031642347574234
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-v2",
+          "score": 20.603084564208984
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-v2",
+          "score": 12.202397346496582
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-v2",
+          "score": 27.33678436279297
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-v2",
+          "score": -0.8102407455444336
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-base",
+          "score": 5.381329536437988
+        }
+      }
     },
     {
       "id": "prompt-pair-10",
@@ -6178,7 +6898,37 @@
         }
       },
       "lica_winner": "text-to-svg-v2",
-      "lica_score_errors": []
+      "lica_score_errors": [],
+      "report_score_winners": {
+        "qwen8b_epoch_3": {
+          "source": "text-to-svg-v2",
+          "score": 0.9765625
+        },
+        "imscore_hpsv21": {
+          "source": "text-to-svg-base",
+          "score": 0.21538421511650085
+        },
+        "imscore_pickscore": {
+          "source": "text-to-svg-base",
+          "score": 21.083072662353516
+        },
+        "imscore_mpsv1": {
+          "source": "text-to-svg-base",
+          "score": 9.670943260192871
+        },
+        "imscore_clipscore": {
+          "source": "text-to-svg-base",
+          "score": 30.81244468688965
+        },
+        "imscore_imagereward": {
+          "source": "text-to-svg-base",
+          "score": -0.14497919380664825
+        },
+        "imscore_laion_aesthetic": {
+          "source": "text-to-svg-base",
+          "score": 5.09421443939209
+        }
+      }
     }
   ],
   "lora_toggle_endpoint": "https://model-wl1pmo0q.api.baseten.co/environments/production/predict",

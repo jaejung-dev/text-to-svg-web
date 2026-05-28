@@ -1,5 +1,6 @@
 const ORDER = ["gt", "text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2", "claude", "gemini", "gpt-5.2"];
 const MODEL_COMPARISON_ORDER = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2"];
+const VALIDATION_WINNER_ORDER = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2", "claude", "gemini", "gpt-5.2"];
 
 const LABELS = {
   gt: "Ground Truth",
@@ -112,12 +113,15 @@ function reportScores(item) {
   const scores = item?.report_scores || {};
   const rows = REPORT_SCORE_ORDER
     .filter((key) => scores[key] != null)
-    .map((key) => `
-      <div class="metric-score">
+    .map((key) => {
+      const isWinner = item?.metric_winners?.[key]?.source === item.source;
+      return `
+      <div class="metric-score ${isWinner ? "winner" : ""}">
         <span>${escapeHtml(REPORT_SCORE_LABELS[key] || key)}</span>
-        <strong>${escapeHtml(formatScore(scores[key]))}</strong>
+        <strong>${escapeHtml(formatScore(scores[key]))}${isWinner ? " ★" : ""}</strong>
       </div>
-    `);
+    `;
+    });
   if (!rows.length) return "";
   return `<div class="report-scores">${rows.join("")}</div>`;
 }
@@ -133,25 +137,128 @@ function resultMeta(source, item) {
   return `${scoreLine(item)}${meta}${reportScores(item)}`;
 }
 
-function sampleItems(sample) {
-  const bySource = Object.fromEntries((sample.baselines || []).map((item) => [item.source, item]));
-  bySource["text-to-svg-production"] = sample.generated || {};
-  Object.entries(sample.model_generations || {}).forEach(([source, item]) => {
+function sourceMap(payload) {
+  const bySource = Object.fromEntries((payload.baselines || []).map((item) => [item.source, item]));
+  bySource["text-to-svg-production"] = payload.generated || {};
+  Object.entries(payload.model_generations || {}).forEach(([source, item]) => {
     bySource[source] = item || {};
   });
-  return ORDER.map((source) => ({
-    source,
-    label: LABELS[source] || source,
-    ...bySource[source],
-    lica_score: sample.lica_scores?.[source]?.score,
-    is_lica_winner: sample.lica_winner === source,
-  })).filter((item) => isGeneratedSource(item.source) || item.asset);
+  return bySource;
+}
+
+function metricWinners(payload, sources) {
+  const bySource = sourceMap(payload);
+  const winners = {};
+  REPORT_SCORE_ORDER.forEach((metric) => {
+    let best = null;
+    sources.forEach((source) => {
+      const item = bySource[source];
+      const value = item?.report_scores?.[metric];
+      const score = Number(value);
+      if (!item || !Number.isFinite(score)) return;
+      if (itemStatus(item) !== "ok" && !item.asset) return;
+      if (!best || score > best.score) {
+        best = { source, score };
+      }
+    });
+    if (best) winners[metric] = best;
+  });
+  return winners;
+}
+
+function licaScoreFor(item, payload, source) {
+  const reportValue = item?.report_scores?.qwen8b_epoch_3;
+  if (reportValue != null) return reportValue;
+  return payload?.lica_scores?.[source]?.score;
+}
+
+function sampleItems(sample) {
+  const bySource = sourceMap(sample);
+  const winners = metricWinners(sample, VALIDATION_WINNER_ORDER);
+  return ORDER.map((source) => {
+    const item = {
+      source,
+      label: LABELS[source] || source,
+      ...bySource[source],
+      metric_winners: winners,
+    };
+    item.lica_score = licaScoreFor(item, sample, source);
+    item.is_lica_winner = winners.qwen8b_epoch_3?.source === source;
+    return item;
+  }).filter((item) => isGeneratedSource(item.source) || item.asset);
+}
+
+function summarizeMetricWinners(items, sources) {
+  const summary = {};
+  REPORT_SCORE_ORDER.forEach((metric) => {
+    summary[metric] = { total: 0, counts: Object.fromEntries(sources.map((source) => [source, 0])) };
+  });
+  items.forEach((payload) => {
+    const winners = metricWinners(payload, sources);
+    REPORT_SCORE_ORDER.forEach((metric) => {
+      const winner = winners[metric]?.source;
+      if (!winner) return;
+      summary[metric].total += 1;
+      summary[metric].counts[winner] = (summary[metric].counts[winner] || 0) + 1;
+    });
+  });
+  return summary;
+}
+
+function topWinner(summary, sources) {
+  const ranked = sources
+    .map((source) => ({ source, count: summary.counts[source] || 0 }))
+    .sort((a, b) => b.count - a.count);
+  const top = ranked[0];
+  if (!top || top.count === 0) return "No scores";
+  return `${LABELS[top.source] || top.source} ${top.count}/${summary.total}`;
+}
+
+function breakdown(summary, sources) {
+  return sources
+    .filter((source) => summary.counts[source])
+    .map((source) => `${LABELS[source] || source}: ${summary.counts[source]}`)
+    .join(" · ") || "No wins";
+}
+
+function renderScoreSummary(data) {
+  const validation = summarizeMetricWinners(data.samples || [], VALIDATION_WINNER_ORDER);
+  const promptPairs = summarizeMetricWinners(data.prompt_pairs || [], MODEL_COMPARISON_ORDER);
+  const rows = REPORT_SCORE_ORDER.map((metric) => `
+    <tr>
+      <th>${escapeHtml(REPORT_SCORE_LABELS[metric] || metric)}</th>
+      <td><strong>${escapeHtml(topWinner(validation[metric], VALIDATION_WINNER_ORDER))}</strong><span>${escapeHtml(breakdown(validation[metric], VALIDATION_WINNER_ORDER))}</span></td>
+      <td><strong>${escapeHtml(topWinner(promptPairs[metric], MODEL_COMPARISON_ORDER))}</strong><span>${escapeHtml(breakdown(promptPairs[metric], MODEL_COMPARISON_ORDER))}</span></td>
+    </tr>
+  `);
+  return `
+    <div class="score-summary-head">
+      <div>
+        <p class="eyebrow">Score Winners</p>
+        <h2>Best scores are counted without GT.</h2>
+      </div>
+      <p>Validation excludes Ground Truth from winner counts. Prompt pairs compare Base, V1, and V2 only. A star marks the metric winner inside each card.</p>
+    </div>
+    <div class="score-summary-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Validation gallery</th>
+            <th>Prompt pairs</th>
+          </tr>
+        </thead>
+        <tbody>${rows.join("")}</tbody>
+      </table>
+    </div>
+  `;
 }
 
 function renderSample(sample, index) {
   const items = sampleItems(sample);
+  const licaWinner = metricWinners(sample, VALIDATION_WINNER_ORDER).qwen8b_epoch_3?.source;
   const generatedMeta = [
-    sample.lica_winner ? `Lica winner: ${LABELS[sample.lica_winner] || sample.lica_winner}` : "Lica pending",
+    licaWinner ? `Lica winner: ${LABELS[licaWinner] || licaWinner}` : "Lica pending",
     ...items
       .filter((item) => isGeneratedSource(item.source))
       .map((item) => `${LABELS[item.source] || item.source}: ${itemStatus(item)}`),
@@ -188,30 +295,23 @@ function renderSample(sample, index) {
 }
 
 function renderPromptPair(pair) {
-  function metaLine(result) {
-    if (result?.status !== "ok") {
-      return result?.error || result?.svg_parse_error || "Generation pending";
-    }
-    return [
-      result.output_tokens != null ? `${result.output_tokens} tok` : null,
-      result.elapsed_seconds != null ? `${result.elapsed_seconds}s` : null,
-      result.svg_parse_error ? `parse: ${result.svg_parse_error}` : "valid SVG",
-    ].filter(Boolean).join(" · ");
-  }
+  const winners = metricWinners(pair, MODEL_COMPARISON_ORDER);
 
   function modelCard(result, title) {
-    const meta = metaLine(result);
     const source = result?.source;
-    const score = pair.lica_scores?.[source]?.score;
-    const isWinner = pair.lica_winner === source;
+    const enriched = {
+      ...result,
+      metric_winners: winners,
+    };
+    enriched.lica_score = licaScoreFor(enriched, pair, source);
+    enriched.is_lica_winner = winners.qwen8b_epoch_3?.source === source;
 
     return `
       <div class="pair-output-card">
-        <div class="pair-image-wrap">${assetElement(result)}</div>
+        <div class="pair-image-wrap">${assetElement(enriched)}</div>
         <div class="pair-output-meta">
           <strong>${escapeHtml(title)}</strong>
-          ${score == null ? "" : `<div class="score-pill ${isWinner ? "winner" : ""}">${escapeHtml(`Lica ${Number(score).toFixed(4)}${isWinner ? " · winner" : ""}`)}</div>`}
-          <span>${escapeHtml(meta)}</span>
+          ${resultMeta(source, enriched)}
         </div>
       </div>
     `;
@@ -229,7 +329,7 @@ function renderPromptPair(pair) {
         <section class="lora-mode-section">
           <div class="lora-mode-head">
             <h3>Base / V1 / V2</h3>
-            <span>${escapeHtml(pair.lica_winner ? `Lica winner: ${LABELS[pair.lica_winner] || pair.lica_winner}` : "Lica pending")}</span>
+            <span>${escapeHtml(winners.qwen8b_epoch_3 ? `Lica winner: ${LABELS[winners.qwen8b_epoch_3.source] || winners.qwen8b_epoch_3.source}` : "Lica pending")}</span>
           </div>
           <div class="pair-outputs-grid model-comparison-grid">
             ${MODEL_COMPARISON_ORDER.map((source) => modelCard(
@@ -254,6 +354,7 @@ async function main() {
 
   const gallery = document.getElementById("gallery");
   const filter = document.getElementById("bucket-filter");
+  document.getElementById("score-summary").innerHTML = renderScoreSummary(data);
   document.getElementById("sample-count").textContent = data.samples.length;
   document.getElementById("updated-at").textContent = `Generated ${data.generated_at || "unknown"}`;
   document.getElementById("bucket-summary").innerHTML = ["simple", "medium", "complex"].map((bucket) => {

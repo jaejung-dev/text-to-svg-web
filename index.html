@@ -58,6 +58,8 @@
         <div id="bucket-summary" class="bucket-summary"></div>
       </section>
 
+      <section id="score-summary" class="score-summary-card"></section>
+
       <section class="toolbar">
         <div>
           <label for="bucket-filter">Filter</label>
@@ -92,13 +94,15 @@
           <h2>Fresh prompts, compared across Base, V1, and V2.</h2>
           <p>
             Each prompt shows Base, V1, and V2 generations using deployed
-            defaults, with LicaScore ranking for quick visual review.
+            defaults, with LicaScore plus HPS, PickScore, CLIPScore,
+            ImageReward, MPS, and LAION aesthetic winners computed directly
+            from each prompt.
           </p>
         </div>
         <div id="prompt-pairs-grid" class="prompt-pairs-grid"></div>
       </section>
     </main>
 
-    <script src="app.js?v=20260528-all-scores"></script>
+    <script src="app.js?v=20260528-score-winners"></script>
   </body>
 </html>

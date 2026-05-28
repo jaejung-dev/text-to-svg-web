@@ -18,6 +18,8 @@ RENDER_DIR = PROJECT / "assets" / "generated-score-renders"
 SCORE_CACHE_PATH = RENDER_DIR / "score-cache.json"
 LICA_SCORE_VARIANT = "qwen8b_epoch_3"
 GENERATED_SOURCES = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2"]
+VALIDATION_WINNER_SOURCES = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2", "claude", "gemini", "gpt-5.2"]
+PROMPT_PAIR_WINNER_SOURCES = GENERATED_SOURCES
 IMSCORE_IDS = [
     "imscore_hpsv21",
     "imscore_pickscore",
@@ -179,6 +181,34 @@ def apply_scores_to_payload(payload: dict[str, Any], group_id: str, all_scores: 
         }
 
 
+def source_map(payload: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    items = {item["source"]: item for item in payload.get("baselines", []) if item.get("source")}
+    if payload.get("generated"):
+        items["text-to-svg-production"] = payload["generated"]
+    items.update(payload.get("model_generations") or {})
+    return items
+
+
+def update_report_score_winners(payload: dict[str, Any], sources: list[str], score_order: list[str]) -> None:
+    items = source_map(payload)
+    winners = {}
+    for score_id in score_order:
+        best = None
+        for source in sources:
+            item = items.get(source) or {}
+            value = (item.get("report_scores") or {}).get(score_id)
+            if value is None:
+                continue
+            score = float(value)
+            if best is None or score > best["score"]:
+                best = {"source": source, "score": score}
+        if best is not None:
+            winners[score_id] = best
+    payload["report_score_winners"] = winners
+    if LICA_SCORE_VARIANT in winners:
+        payload["lica_winner"] = winners[LICA_SCORE_VARIANT]["source"]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -231,10 +261,12 @@ def main() -> int:
         sample["report_score_order"] = data.get("report_score_order", [])
         apply_scores_to_payload(sample, sample["id"], all_scores)
         sample.pop("report_score_order", None)
+        update_report_score_winners(sample, VALIDATION_WINNER_SOURCES, data.get("report_score_order", []))
     for pair in data.get("prompt_pairs", []):
         pair["report_score_order"] = data.get("report_score_order", [])
         apply_scores_to_payload(pair, pair["id"], all_scores)
         pair.pop("report_score_order", None)
+        update_report_score_winners(pair, PROMPT_PAIR_WINNER_SOURCES, data.get("report_score_order", []))
 
     DATA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("updated", DATA_PATH)

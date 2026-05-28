@@ -317,7 +317,8 @@ def score_one(
             errors.append(repr(exc))
     winner = None
     if scores:
-        winner = max(scores.items(), key=lambda pair: pair[1]["score"])[0]
+        winner_scores = {source: row for source, row in scores.items() if source != "gt"}
+        winner = max(winner_scores.items(), key=lambda pair: pair[1]["score"])[0] if winner_scores else None
     return {
         "scores": scores,
         "winner": winner,
