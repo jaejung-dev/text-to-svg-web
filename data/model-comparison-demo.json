@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T17:32:21.472945+00:00",
+  "generated_at": "2026-05-28T17:49:04.800671+00:00",
   "source": "data_for_demo/demo-data.json",
   "score_name": "LicaScore raw cosine",
   "score_order": [
@@ -24,12 +24,12 @@
       "label": "Arrow 1.1",
       "short_label": "Arrow",
       "count": 14,
-      "wins": 8,
+      "wins": 9,
       "metric_wins": {
-        "lica_score_v2": 8,
-        "hpsv21": 7,
-        "pickscore": 6,
-        "clipscore": 4,
+        "lica_score_v2": 9,
+        "hpsv21": 8,
+        "pickscore": 5,
+        "clipscore": 5,
         "imagereward": 8,
         "laion_aesthetic": 4
       }
@@ -57,9 +57,9 @@
       "wins": 3,
       "metric_wins": {
         "lica_score_v2": 3,
-        "hpsv21": 4,
+        "hpsv21": 3,
         "pickscore": 2,
-        "clipscore": 3,
+        "clipscore": 2,
         "imagereward": 2,
         "laion_aesthetic": 5
       }
@@ -69,12 +69,12 @@
       "label": "Claude Opus 4.7",
       "short_label": "Claude",
       "count": 14,
-      "wins": 3,
+      "wins": 2,
       "metric_wins": {
-        "lica_score_v2": 3,
+        "lica_score_v2": 2,
         "hpsv21": 2,
-        "pickscore": 4,
-        "clipscore": 5,
+        "pickscore": 5,
+        "clipscore": 4,
         "imagereward": 4,
         "laion_aesthetic": 2
       }
@@ -89,7 +89,7 @@
         "lica_score_v2": 0,
         "hpsv21": 0,
         "pickscore": 1,
-        "clipscore": 0,
+        "clipscore": 1,
         "imagereward": 0,
         "laion_aesthetic": 0
       }
@@ -461,115 +461,115 @@
         {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "asset": "assets/model-comparison/arrow/ocean_seashells.svg",
+          "asset": "assets/model-comparison/arrow/ocean_seashells_with_bg.svg",
           "status": "ok",
           "elapsed_seconds": 0.004,
           "scores": {
-            "lica_score_v2": 0.1416015625,
-            "hpsv21": 0.18894125521183014,
-            "pickscore": 19.96551513671875,
-            "clipscore": 28.109508514404297,
-            "imagereward": 0.6450571417808533,
-            "laion_aesthetic": 5.1457319259643555
+            "lica_score_v2": 0.2177734375,
+            "hpsv21": 0.2089029997587204,
+            "pickscore": 19.552858352661133,
+            "clipscore": 31.021326065063477,
+            "imagereward": 1.2282456159591675,
+            "laion_aesthetic": 4.984477519989014
           }
         },
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "asset": "assets/model-comparison/gpt/ocean_seashells.svg",
+          "asset": "assets/model-comparison/gpt/ocean_seashells_with_bg.svg",
           "status": "ok",
           "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.17578125,
-            "hpsv21": 0.18331576883792877,
-            "pickscore": 19.179615020751953,
-            "clipscore": 26.514122009277344,
-            "imagereward": 0.1896674484014511,
-            "laion_aesthetic": 4.703846454620361
+            "hpsv21": 0.17387910187244415,
+            "pickscore": 19.041229248046875,
+            "clipscore": 25.827226638793945,
+            "imagereward": -0.034814316779375076,
+            "laion_aesthetic": 4.6870927810668945
           }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "asset": "assets/model-comparison/gemini/ocean_seashells.svg",
+          "asset": "assets/model-comparison/gemini/ocean_seashells_with_bg.svg",
           "status": "ok",
           "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1826171875,
-            "hpsv21": 0.1918138861656189,
-            "pickscore": 19.402467727661133,
-            "clipscore": 29.872079849243164,
-            "imagereward": 0.24572576582431793,
-            "laion_aesthetic": 4.730635166168213
+            "hpsv21": 0.18354783952236176,
+            "pickscore": 18.98903465270996,
+            "clipscore": 26.019304275512695,
+            "imagereward": -0.40928927063941956,
+            "laion_aesthetic": 4.609762191772461
           }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "asset": "assets/model-comparison/claude/ocean_seashells.svg",
+          "asset": "assets/model-comparison/claude/ocean_seashells_with_bg.svg",
           "status": "ok",
           "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.1904296875,
-            "hpsv21": 0.18966972827911377,
-            "pickscore": 18.887950897216797,
-            "clipscore": 29.878551483154297,
-            "imagereward": -0.18774846196174622,
-            "laion_aesthetic": 4.674785614013672
+            "hpsv21": 0.17998123168945312,
+            "pickscore": 18.29886817932129,
+            "clipscore": 28.778955459594727,
+            "imagereward": -0.32853248715400696,
+            "laion_aesthetic": 4.807924270629883
           }
         },
         {
           "id": "qwen_lora",
           "label": "Qwen Base",
-          "asset": "assets/model-comparison/qwen_lora/ocean_seashells.svg",
+          "asset": "assets/model-comparison/qwen_lora/ocean_seashells_with_bg.svg",
           "status": "ok",
           "elapsed_seconds": 0.0,
           "scores": {
             "lica_score_v2": 0.15234375,
-            "hpsv21": 0.1565822958946228,
-            "pickscore": 18.840635299682617,
-            "clipscore": 26.012983322143555,
-            "imagereward": -1.1784571409225464,
-            "laion_aesthetic": 4.833192825317383
+            "hpsv21": 0.15438392758369446,
+            "pickscore": 18.422311782836914,
+            "clipscore": 21.15886878967285,
+            "imagereward": -1.3935719728469849,
+            "laion_aesthetic": 4.752846717834473
           }
         }
       ],
       "winners": {
         "lica_score_v2": {
-          "id": "claude",
-          "label": "Claude Opus 4.7",
-          "score": 0.1904296875
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.2177734375
         },
         "hpsv21": {
-          "id": "gemini",
-          "label": "Gemini 3.1 Pro Preview",
-          "score": 0.1918138861656189
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.2089029997587204
         },
         "pickscore": {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "score": 19.96551513671875
+          "score": 19.552858352661133
         },
         "clipscore": {
-          "id": "claude",
-          "label": "Claude Opus 4.7",
-          "score": 29.878551483154297
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 31.021326065063477
         },
         "imagereward": {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "score": 0.6450571417808533
+          "score": 1.2282456159591675
         },
         "laion_aesthetic": {
           "id": "arrow",
           "label": "Arrow 1.1",
-          "score": 5.1457319259643555
+          "score": 4.984477519989014
         }
       },
       "best": {
-        "id": "claude",
-        "label": "Claude Opus 4.7",
-        "score": 0.1904296875
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.2177734375
       }
     },
     {
@@ -585,11 +585,11 @@
           "elapsed_seconds": 0.001,
           "scores": {
             "lica_score_v2": 0.1552734375,
-            "hpsv21": 0.1482030153274536,
-            "pickscore": 18.770793914794922,
-            "clipscore": 10.886899948120117,
-            "imagereward": -1.8555684089660645,
-            "laion_aesthetic": 4.778088092803955
+            "hpsv21": 0.14358976483345032,
+            "pickscore": 18.812637329101562,
+            "clipscore": 4.162923812866211,
+            "imagereward": -1.7316429615020752,
+            "laion_aesthetic": 4.385939121246338
           }
         },
         {
@@ -1428,61 +1428,61 @@
         {
           "id": "gpt",
           "label": "GPT-5.4",
-          "asset": "assets/model-comparison/gpt/fall_leaves.svg",
+          "asset": "assets/model-comparison/gpt/fall_leaves_with_bg.svg",
           "status": "ok",
           "elapsed_seconds": 30.222,
           "scores": {
-            "lica_score_v2": 0.2119140625,
-            "hpsv21": 0.21592754125595093,
-            "pickscore": 20.609664916992188,
-            "clipscore": 25.935129165649414,
-            "imagereward": -0.7514880299568176,
-            "laion_aesthetic": 5.147875785827637
+            "lica_score_v2": 0.220703125,
+            "hpsv21": 0.21799176931381226,
+            "pickscore": 20.9012451171875,
+            "clipscore": 26.891820907592773,
+            "imagereward": -0.04102025553584099,
+            "laion_aesthetic": 5.329805850982666
           }
         },
         {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "asset": "assets/model-comparison/gemini/fall_leaves.svg",
+          "asset": "assets/model-comparison/gemini/fall_leaves_with_bg.svg",
           "status": "ok",
           "elapsed_seconds": 28.398,
           "scores": {
-            "lica_score_v2": 0.1865234375,
-            "hpsv21": 0.189264714717865,
-            "pickscore": 20.271148681640625,
-            "clipscore": 27.968204498291016,
-            "imagereward": -0.7322876453399658,
-            "laion_aesthetic": 5.382859230041504
+            "lica_score_v2": 0.2001953125,
+            "hpsv21": 0.2069924920797348,
+            "pickscore": 20.50295639038086,
+            "clipscore": 27.879928588867188,
+            "imagereward": -0.3255920112133026,
+            "laion_aesthetic": 5.406494617462158
           }
         },
         {
           "id": "claude",
           "label": "Claude Opus 4.7",
-          "asset": "assets/model-comparison/claude/fall_leaves.svg",
+          "asset": "assets/model-comparison/claude/fall_leaves_with_bg.svg",
           "status": "ok",
           "elapsed_seconds": 16.445,
           "scores": {
-            "lica_score_v2": 0.1884765625,
-            "hpsv21": 0.19223277270793915,
-            "pickscore": 20.78922462463379,
-            "clipscore": 23.98102378845215,
-            "imagereward": -0.3105512261390686,
-            "laion_aesthetic": 4.967879295349121
+            "lica_score_v2": 0.2109375,
+            "hpsv21": 0.21386389434337616,
+            "pickscore": 21.455570220947266,
+            "clipscore": 26.584550857543945,
+            "imagereward": 0.0529426708817482,
+            "laion_aesthetic": 5.0993499755859375
           }
         },
         {
           "id": "qwen_lora",
           "label": "Qwen Base",
-          "asset": "assets/model-comparison/qwen_lora/fall_leaves.svg",
+          "asset": "assets/model-comparison/qwen_lora/fall_leaves_with_bg.svg",
           "status": "ok",
           "elapsed_seconds": 0.0,
           "scores": {
-            "lica_score_v2": 0.169921875,
-            "hpsv21": 0.1691417098045349,
-            "pickscore": 19.858125686645508,
-            "clipscore": 24.769466400146484,
-            "imagereward": -1.8315513134002686,
-            "laion_aesthetic": 4.784610748291016
+            "lica_score_v2": 0.18359375,
+            "hpsv21": 0.17080853879451752,
+            "pickscore": 19.74491310119629,
+            "clipscore": 28.96927833557129,
+            "imagereward": -1.2774423360824585,
+            "laion_aesthetic": 5.29179573059082
           }
         }
       ],
@@ -1498,14 +1498,14 @@
           "score": 0.2242998629808426
         },
         "pickscore": {
-          "id": "arrow",
-          "label": "Arrow 1.1",
-          "score": 21.329421997070312
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 21.455570220947266
         },
         "clipscore": {
-          "id": "gemini",
-          "label": "Gemini 3.1 Pro Preview",
-          "score": 27.968204498291016
+          "id": "qwen_lora",
+          "label": "Qwen Base",
+          "score": 28.96927833557129
         },
         "imagereward": {
           "id": "arrow",
@@ -1515,7 +1515,7 @@
         "laion_aesthetic": {
           "id": "gemini",
           "label": "Gemini 3.1 Pro Preview",
-          "score": 5.382859230041504
+          "score": 5.406494617462158
         }
       },
       "best": {
@@ -1770,10 +1770,10 @@
     "scored_candidates": 70,
     "missing_candidates": 0,
     "winner_counts": {
-      "arrow": 8,
+      "arrow": 9,
       "gpt": 0,
       "gemini": 3,
-      "claude": 3,
+      "claude": 2,
       "qwen_lora": 0
     },
     "scored_by_metric": {
@@ -1786,32 +1786,32 @@
     },
     "metric_win_counts": {
       "lica_score_v2": {
-        "arrow": 8,
+        "arrow": 9,
         "gpt": 0,
         "gemini": 3,
-        "claude": 3,
+        "claude": 2,
         "qwen_lora": 0
       },
       "hpsv21": {
-        "arrow": 7,
+        "arrow": 8,
         "gpt": 1,
-        "gemini": 4,
+        "gemini": 3,
         "claude": 2,
         "qwen_lora": 0
       },
       "pickscore": {
-        "arrow": 6,
+        "arrow": 5,
         "gpt": 1,
         "gemini": 2,
-        "claude": 4,
+        "claude": 5,
         "qwen_lora": 1
       },
       "clipscore": {
-        "arrow": 4,
+        "arrow": 5,
         "gpt": 2,
-        "gemini": 3,
-        "claude": 5,
-        "qwen_lora": 0
+        "gemini": 2,
+        "claude": 4,
+        "qwen_lora": 1
       },
       "imagereward": {
         "arrow": 8,

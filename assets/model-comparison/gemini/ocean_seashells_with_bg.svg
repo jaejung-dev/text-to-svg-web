@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <!-- score-background-experiment: ocean_seashells -->
+  <defs>
+    <pattern id="score-denim-bg" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#5f7f99"/>
+      <path d="M0 4H16M0 12H16" stroke="#6f8fa7" stroke-width="1" opacity="0.32"/>
+      <path d="M4 0V16M12 0V16" stroke="#496b86" stroke-width="1" opacity="0.22"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#score-denim-bg)"/>
+
+  <defs>
+    <style>
+      .shell-line {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="#4a6b8c" />
+
+  <!-- Scallop Shell -->
+  <g transform="translate(100, 100)">
+    <path class="shell-line" d="M-40,20 C-50,-10 -30,-40 0,-50 C30,-40 50,-10 40,20 C30,30 10,40 0,40 C-10,40 -30,30 -40,20 Z" />
+    <path class="shell-line" d="M-20,40 L-30,50 L-10,50 L0,40 L10,50 L30,50 L20,40" />
+    <path class="shell-line" d="M0,-50 L0,40" />
+    <path class="shell-line" d="M-15,-45 L-10,40" />
+    <path class="shell-line" d="M15,-45 L10,40" />
+    <path class="shell-line" d="M-30,-30 L-20,35" />
+    <path class="shell-line" d="M30,-30 L20,35" />
+  </g>
+
+  <!-- Starfish -->
+  <g transform="translate(300, 100)">
+    <path class="shell-line" d="M0,-50 L10,-15 L45,-15 L20,5 L30,40 L0,20 L-30,40 L-20,5 L-45,-15 L-10,-15 Z" />
+    <path class="shell-line" d="M0,-50 L0,0" />
+    <path class="shell-line" d="M45,-15 L0,0" />
+    <path class="shell-line" d="M30,40 L0,0" />
+    <path class="shell-line" d="M-30,40 L0,0" />
+    <path class="shell-line" d="M-45,-15 L0,0" />
+    <circle cx="0" cy="0" r="2" fill="#ffffff" />
+    <circle cx="0" cy="-20" r="1.5" fill="#ffffff" />
+    <circle cx="20" cy="-5" r="1.5" fill="#ffffff" />
+    <circle cx="12" cy="15" r="1.5" fill="#ffffff" />
+    <circle cx="-12" cy="15" r="1.5" fill="#ffffff" />
+    <circle cx="-20" cy="-5" r="1.5" fill="#ffffff" />
+  </g>
+
+  <!-- Spiral Conch Shell -->
+  <g transform="translate(500, 100)">
+    <path class="shell-line" d="M-30,30 C-40,10 -20,-20 0,-40 C20,-20 40,10 30,30 C20,50 -20,50 -30,30 Z" />
+    <path class="shell-line" d="M0,-40 C10,-30 20,-10 15,10 C10,30 -10,40 -20,20 C-30,0 -10,-20 0,-30 C10,-20 15,-5 10,10 C5,20 -5,25 -10,15 C-15,5 -5,-5 0,-10 C5,-5 5,5 0,10" />
+    <path class="shell-line" d="M-30,30 L-40,40 L-20,45 L-10,35" />
+  </g>
+
+  <!-- Whelk Shell -->
+  <g transform="translate(700, 100)">
+    <path class="shell-line" d="M-20,-40 C-10,-50 10,-50 20,-40 C30,-30 30,-10 20,0 C10,10 0,30 -10,50 C-20,30 -30,10 -20,0 C-30,-10 -30,-30 -20,-40 Z" />
+    <path class="shell-line" d="M-25,-20 C-10,-30 10,-30 25,-20" />
+    <path class="shell-line" d="M-20,0 C-5,-10 5,-10 20,0" />
+    <path class="shell-line" d="M-15,20 C-5,10 5,10 15,20" />
+    <path class="shell-line" d="M-10,40 C-5,30 5,30 10,40" />
+    <path class="shell-line" d="M-20,-40 L-25,-45 L-15,-50 L-10,-45" />
+    <path class="shell-line" d="M20,-40 L25,-45 L15,-50 L10,-45" />
+  </g>
+
+</svg>

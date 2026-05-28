@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- score-background-experiment: fall_leaves -->
+  <defs>
+    <linearGradient id="score-fall-bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff3df"/>
+      <stop offset="56%" stop-color="#f4d39d"/>
+      <stop offset="100%" stop-color="#c95f32"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#score-fall-bg)"/>
+
+  <defs>
+    <linearGradient id="leafRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d94b3d"/>
+      <stop offset="100%" stop-color="#a8261f"/>
+    </linearGradient>
+    <linearGradient id="leafOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6a13a"/>
+      <stop offset="100%" stop-color="#de6a18"/>
+    </linearGradient>
+    <linearGradient id="leafYellow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7d85a"/>
+      <stop offset="100%" stop-color="#e8b928"/>
+    </linearGradient>
+    <linearGradient id="leafGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2b24d"/>
+      <stop offset="100%" stop-color="#c97a1d"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7a3d12" flood-opacity="0.18"/>
+    </filter>
+
+    <g id="mapleLeaf">
+      <path d="M0,-46
+               L10,-24
+               L28,-34
+               L24,-12
+               L46,-8
+               L28,6
+               L38,26
+               L14,18
+               L8,44
+               L0,26
+               L-8,44
+               L-14,18
+               L-38,26
+               L-28,6
+               L-46,-8
+               L-24,-12
+               L-28,-34
+               L-10,-24 Z"/>
+      <path d="M0,-44 L0,30" fill="none" stroke="#8a4a1c" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M0,-18 L15,-4 M0,-6 L18,10 M0,-12 L-15,-2 M0,0 L-18,12" fill="none" stroke="#8a4a1c" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+      <path d="M0,30 C2,42 6,56 14,68" fill="none" stroke="#8a4a1c" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <g id="oakLeaf">
+      <path d="M0,-44
+               C12,-44 20,-36 21,-25
+               C34,-26 42,-18 42,-6
+               C42,5 35,13 24,14
+               C32,23 31,36 20,42
+               C11,47 3,44 0,36
+               C-3,44 -11,47 -20,42
+               C-31,36 -32,23 -24,14
+               C-35,13 -42,5 -42,-6
+               C-42,-18 -34,-26 -21,-25
+               C-20,-36 -12,-44 0,-44 Z"/>
+      <path d="M0,-40 L0,32" fill="none" stroke="#8a4a1c" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M0,-16 L14,-12 M0,-2 L16,4 M0,-16 L-14,-12 M0,-2 L-16,4" fill="none" stroke="#8a4a1c" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+      <path d="M0,32 C4,46 8,58 14,70" fill="none" stroke="#8a4a1c" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <g id="birchLeaf">
+      <path d="M0,-42
+               C26,-38 42,-18 40,6
+               C38,28 20,42 0,46
+               C-20,42 -38,28 -40,6
+               C-42,-18 -26,-38 0,-42 Z"/>
+      <path d="M0,-38 L0,34" fill="none" stroke="#8a4a1c" stroke-width="3" stroke-linecap="round"/>
+      <path d="M0,-14 L14,-2 M0,2 L16,12 M0,-14 L-14,-2 M0,2 L-16,12" fill="none" stroke="#8a4a1c" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+      <path d="M0,34 C3,48 8,58 14,68" fill="none" stroke="#8a4a1c" stroke-width="2.8" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <g opacity="0.9" filter="url(#softShadow)">
+    <g transform="translate(118 88) rotate(-12) scale(1.05)">
+      <use href="#mapleLeaf" fill="url(#leafOrange)"/>
+    </g>
+    <g transform="translate(280 72) rotate(18) scale(0.9)">
+      <use href="#oakLeaf" fill="url(#leafYellow)"/>
+    </g>
+    <g transform="translate(448 94) rotate(-28) scale(1)">
+      <use href="#birchLeaf" fill="url(#leafRed)"/>
+    </g>
+    <g transform="translate(648 82) rotate(22) scale(0.92)">
+      <use href="#mapleLeaf" fill="url(#leafGold)"/>
+    </g>
+  </g>
+
+  <g opacity="0.96" filter="url(#softShadow)">
+    <g transform="translate(194 214) rotate(-32) scale(1.18)">
+      <use href="#oakLeaf" fill="url(#leafRed)"/>
+    </g>
+    <g transform="translate(378 188) rotate(10) scale(0.96)">
+      <use href="#mapleLeaf" fill="url(#leafYellow)"/>
+    </g>
+    <g transform="translate(566 220) rotate(34) scale(1.1)">
+      <use href="#birchLeaf" fill="url(#leafOrange)"/>
+    </g>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <g transform="translate(96 356) rotate(14) scale(1.28)">
+      <use href="#birchLeaf" fill="url(#leafGold)"/>
+    </g>
+    <g transform="translate(256 314) rotate(-18) scale(1.4)">
+      <use href="#mapleLeaf" fill="url(#leafRed)"/>
+    </g>
+    <g transform="translate(434 368) rotate(26) scale(1.22)">
+      <use href="#oakLeaf" fill="url(#leafOrange)"/>
+    </g>
+    <g transform="translate(650 330) rotate(-10) scale(1.34)">
+      <use href="#mapleLeaf" fill="url(#leafYellow)"/>
+    </g>
+  </g>
+
+  <g opacity="0.97" filter="url(#softShadow)">
+    <g transform="translate(170 512) rotate(-8) scale(1.48)">
+      <use href="#oakLeaf" fill="url(#leafOrange)"/>
+    </g>
+    <g transform="translate(382 494) rotate(20) scale(1.62)">
+      <use href="#birchLeaf" fill="url(#leafRed)"/>
+    </g>
+    <g transform="translate(608 520) rotate(-24) scale(1.52)">
+      <use href="#mapleLeaf" fill="url(#leafGold)"/>
+    </g>
+  </g>
+
+  <g opacity="0.4">
+    <path d="M140 120 C160 180 130 230 170 290" fill="none" stroke="#c96a2b" stroke-width="2" stroke-linecap="round"/>
+    <path d="M520 90 C500 150 550 220 500 300" fill="none" stroke="#d18434" stroke-width="2" stroke-linecap="round"/>
+    <path d="M300 40 C340 110 310 170 350 250" fill="none" stroke="#e0a13a" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+</svg>
