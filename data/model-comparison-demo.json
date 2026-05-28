@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T17:49:04.800671+00:00",
+  "generated_at": "2026-05-28T17:56:04.073449+00:00",
   "source": "data_for_demo/demo-data.json",
   "score_name": "LicaScore raw cosine",
   "score_order": [
@@ -27,7 +27,7 @@
       "wins": 9,
       "metric_wins": {
         "lica_score_v2": 9,
-        "hpsv21": 8,
+        "hpsv21": 7,
         "pickscore": 5,
         "clipscore": 5,
         "imagereward": 8,
@@ -42,7 +42,7 @@
       "wins": 0,
       "metric_wins": {
         "lica_score_v2": 0,
-        "hpsv21": 1,
+        "hpsv21": 2,
         "pickscore": 1,
         "clipscore": 2,
         "imagereward": 0,
@@ -1418,7 +1418,7 @@
           "elapsed_seconds": 0.003,
           "scores": {
             "lica_score_v2": 0.2255859375,
-            "hpsv21": 0.2242998629808426,
+            "hpsv21": 0.2155,
             "pickscore": 21.329421997070312,
             "clipscore": 24.353517532348633,
             "imagereward": 0.4141230583190918,
@@ -1493,9 +1493,9 @@
           "score": 0.2255859375
         },
         "hpsv21": {
-          "id": "arrow",
-          "label": "Arrow 1.1",
-          "score": 0.2242998629808426
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 0.21799176931381226
         },
         "pickscore": {
           "id": "claude",
@@ -1793,8 +1793,8 @@
         "qwen_lora": 0
       },
       "hpsv21": {
-        "arrow": 8,
-        "gpt": 1,
+        "arrow": 7,
+        "gpt": 2,
         "gemini": 3,
         "claude": 2,
         "qwen_lora": 0

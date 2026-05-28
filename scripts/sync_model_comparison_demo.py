@@ -106,6 +106,14 @@ SCORE_OVERRIDES = {
         "imagereward": -1.7316429615020752,
         "laion_aesthetic": 4.385939121246338,
     },
+    ("fall_leaves", "arrow"): {
+        "lica_score_v2": 0.2255859375,
+        "hpsv21": 0.2155,
+        "pickscore": 21.329421997070312,
+        "clipscore": 24.353517532348633,
+        "imagereward": 0.4141230583190918,
+        "laion_aesthetic": 5.278505802154541,
+    },
     ("fall_leaves", "gpt"): {
         "lica_score_v2": 0.220703125,
         "hpsv21": 0.21799176931381226,
