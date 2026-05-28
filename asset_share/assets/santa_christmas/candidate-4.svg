@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#eaf4fb"/>
+      <stop offset="100%" stop-color="#b9d6ea"/>
+    </radialGradient>
+    <linearGradient id="suit" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e23b3b"/>
+      <stop offset="100%" stop-color="#b81f1f"/>
+    </linearGradient>
+    <linearGradient id="bag" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8b5a2b"/>
+      <stop offset="100%" stop-color="#5e3a17"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+
+  <!-- Snowflakes -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="40" cy="60" r="3"/>
+    <circle cx="360" cy="80" r="2.5"/>
+    <circle cx="80" cy="160" r="2"/>
+    <circle cx="330" cy="200" r="3"/>
+    <circle cx="60" cy="280" r="2.5"/>
+    <circle cx="370" cy="320" r="2"/>
+    <circle cx="20" cy="380" r="3"/>
+    <circle cx="380" cy="420" r="2.5"/>
+    <circle cx="150" cy="40" r="2"/>
+    <circle cx="250" cy="30" r="2.5"/>
+  </g>
+
+  <!-- Snow ground -->
+  <ellipse cx="200" cy="395" rx="180" ry="20" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Gift bag behind -->
+  <g>
+    <path d="M270 280 Q310 290 305 380 L235 380 Q230 300 270 280 Z" fill="url(#bag)"/>
+    <ellipse cx="270" cy="282" rx="35" ry="8" fill="#6b4220"/>
+    <!-- gift peeking -->
+    <rect x="255" y="255" width="30" height="30" fill="#2ea36b" rx="3"/>
+    <rect x="267" y="255" width="6" height="30" fill="#f4d03f"/>
+    <rect x="255" y="267" width="30" height="6" fill="#f4d03f"/>
+  </g>
+
+  <!-- Santa body -->
+  <!-- Legs / boots -->
+  <rect x="170" y="340" width="22" height="50" fill="#2a2a2a" rx="6"/>
+  <rect x="208" y="340" width="22" height="50" fill="#2a2a2a" rx="6"/>
+  <ellipse cx="181" cy="392" rx="16" ry="6" fill="#1a1a1a"/>
+  <ellipse cx="219" cy="392" rx="16" ry="6" fill="#1a1a1a"/>
+
+  <!-- Coat body -->
+  <path d="M150 230 Q150 200 200 200 Q250 200 250 230 L255 355 Q200 370 145 355 Z" fill="url(#suit)"/>
+  
+  <!-- Belt -->
+  <rect x="143" y="320" width="115" height="20" fill="#1f1f1f"/>
+  <rect x="193" y="322" width="16" height="16" fill="#f4d03f" rx="2"/>
+  <rect x="196" y="325" width="10" height="10" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+
+  <!-- Coat white trim bottom -->
+  <path d="M145 350 Q200 365 255 350 L255 360 Q200 375 145 360 Z" fill="#ffffff"/>
+
+  <!-- Arms -->
+  <path d="M150 235 Q130 270 140 310 L160 305 Q155 270 170 245 Z" fill="url(#suit)"/>
+  <path d="M250 235 Q270 260 265 290 L245 295 Q245 270 230 245 Z" fill="url(#suit)"/>
+  
+  <!-- White cuffs -->
+  <ellipse cx="148" cy="307" rx="14" ry="6" fill="#ffffff"/>
+  <ellipse cx="255" cy="292" rx="13" ry="6" fill="#ffffff"/>
+  
+  <!-- Hands -->
+  <circle cx="148" cy="312" r="9" fill="#fcd9b6"/>
+  <circle cx="256" cy="297" r="9" fill="#fcd9b6"/>
+
+  <!-- Head -->
+  <circle cx="200" cy="170" r="42" fill="#fcd9b6"/>
+  
+  <!-- Beard -->
+  <path d="M165 175 Q160 230 200 240 Q240 230 235 175 Q230 200 215 200 Q200 215 185 200 Q170 200 165 175 Z" fill="#ffffff"/>
+  <ellipse cx="200" cy="178" r="6" fill="#fcd9b6"/>
+
+  <!-- Mustache -->
+  <path d="M180 180 Q190 188 200 184 Q210 188 220 180 Q215 192 200 190 Q185 192 180 180 Z" fill="#ffffff"/>
+
+  <!-- Eyes -->
+  <circle cx="188" cy="168" r="2.5" fill="#1a1a1a"/>
+  <circle cx="212" cy="168" r="2.5" fill="#1a1a1a"/>
+  
+  <!-- Cheeks -->
+  <circle cx="178" cy="180" r="5" fill="#ffb3b3" opacity="0.7"/>
+  <circle cx="222" cy="180" r="5" fill="#ffb3b3" opacity="0.7"/>
+
+  <!-- Smile -->
+  <path d="M193 184 Q200 188 207 184" stroke="#7a3b1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Hat -->
+  <path d="M160 145 Q160 110 200 108 Q245 110 245 145 Q220 138 200 138 Q180 138 160 145 Z" fill="url(#suit)"/>
+  <path d="M245 145 Q260 105 270 90 Q260 100 245 130 Z" fill="url(#suit)"/>
+  <ellipse cx="270" cy="90" rx="9" ry="9" fill="#ffffff"/>
+  <!-- Hat trim -->
+  <ellipse cx="200" cy="146" rx="45" ry="8" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="200" y="445" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-style="italic" font-weight="bold" fill="#b81f1f">Merry Christmas</text>
+  <text x="200" y="470" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" letter-spacing="6" fill="#5a5a5a">HAPPY HOLIDAYS</text>
+</svg>

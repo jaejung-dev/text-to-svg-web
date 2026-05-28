@@ -1,0 +1,274 @@
+{
+  "title": "SVG Score Samples",
+  "score_order": [
+    "lica_score_v2",
+    "hpsv21",
+    "pickscore",
+    "clipscore",
+    "imagereward",
+    "laion_aesthetic"
+  ],
+  "score_labels": {
+    "lica_score_v2": "LicaScore",
+    "hpsv21": "HPS v2.1",
+    "pickscore": "PickScore",
+    "clipscore": "CLIPScore",
+    "imagereward": "ImageReward",
+    "laion_aesthetic": "LAION aesthetic"
+  },
+  "summary": {
+    "prompts": 2,
+    "candidates": 10,
+    "metrics": 6
+  },
+  "prompts": [
+    {
+      "id": "fall_leaves",
+      "prompt": "fall leaves falling, simple layered vector art, warm reds, oranges, and yellows, transparent background.",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "status": "ok",
+          "elapsed_seconds": 0.003,
+          "scores": {
+            "lica_score_v2": 0.2255859375,
+            "hpsv21": 0.2155,
+            "pickscore": 21.329421997070312,
+            "clipscore": 24.353517532348633,
+            "imagereward": 0.4141230583190918,
+            "laion_aesthetic": 5.278505802154541
+          },
+          "asset": "assets/fall_leaves/candidate-1.svg",
+          "display_label": "Candidate 1"
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "status": "ok",
+          "elapsed_seconds": 30.222,
+          "scores": {
+            "lica_score_v2": 0.220703125,
+            "hpsv21": 0.21799176931381226,
+            "pickscore": 20.9012451171875,
+            "clipscore": 26.891820907592773,
+            "imagereward": -0.04102025553584099,
+            "laion_aesthetic": 5.329805850982666
+          },
+          "asset": "assets/fall_leaves/candidate-2.svg",
+          "display_label": "Candidate 2"
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "status": "ok",
+          "elapsed_seconds": 28.398,
+          "scores": {
+            "lica_score_v2": 0.2001953125,
+            "hpsv21": 0.2069924920797348,
+            "pickscore": 20.50295639038086,
+            "clipscore": 27.879928588867188,
+            "imagereward": -0.3255920112133026,
+            "laion_aesthetic": 5.406494617462158
+          },
+          "asset": "assets/fall_leaves/candidate-3.svg",
+          "display_label": "Candidate 3"
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "status": "ok",
+          "elapsed_seconds": 16.445,
+          "scores": {
+            "lica_score_v2": 0.2109375,
+            "hpsv21": 0.21386389434337616,
+            "pickscore": 21.455570220947266,
+            "clipscore": 26.584550857543945,
+            "imagereward": 0.0529426708817482,
+            "laion_aesthetic": 5.0993499755859375
+          },
+          "asset": "assets/fall_leaves/candidate-4.svg",
+          "display_label": "Candidate 4"
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen Base",
+          "status": "ok",
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.18359375,
+            "hpsv21": 0.17080853879451752,
+            "pickscore": 19.74491310119629,
+            "clipscore": 28.96927833557129,
+            "imagereward": -1.2774423360824585,
+            "laion_aesthetic": 5.29179573059082
+          },
+          "asset": "assets/fall_leaves/candidate-5.svg",
+          "display_label": "Candidate 5"
+        }
+      ],
+      "winners": {
+        "lica_score_v2": {
+          "id": "arrow",
+          "label": "Candidate 1",
+          "score": 0.2255859375
+        },
+        "hpsv21": {
+          "id": "gpt",
+          "label": "Candidate 2",
+          "score": 0.21799176931381226
+        },
+        "pickscore": {
+          "id": "claude",
+          "label": "Candidate 4",
+          "score": 21.455570220947266
+        },
+        "clipscore": {
+          "id": "qwen_lora",
+          "label": "Candidate 5",
+          "score": 28.96927833557129
+        },
+        "imagereward": {
+          "id": "arrow",
+          "label": "Candidate 1",
+          "score": 0.4141230583190918
+        },
+        "laion_aesthetic": {
+          "id": "gemini",
+          "label": "Candidate 3",
+          "score": 5.406494617462158
+        }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Candidate 1",
+        "score": 0.2255859375
+      }
+    },
+    {
+      "id": "santa_christmas",
+      "prompt": "Cute smiling Santa Claus standing with gift bag, clean flat vector illustration, red and white festive outfit, soft snowy background, elegant “Merry Christmas” typography below, premium SVG style, modern holiday branding aesthetic",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "status": "ok",
+          "elapsed_seconds": 0.003,
+          "scores": {
+            "lica_score_v2": 0.259765625,
+            "hpsv21": 0.25107720494270325,
+            "pickscore": 20.05703353881836,
+            "clipscore": 25.282352447509766,
+            "imagereward": 1.363481044769287,
+            "laion_aesthetic": 5.2210283279418945
+          },
+          "asset": "assets/santa_christmas/candidate-1.svg",
+          "display_label": "Candidate 1"
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "status": "ok",
+          "elapsed_seconds": 35.525,
+          "scores": {
+            "lica_score_v2": 0.208984375,
+            "hpsv21": 0.21748656034469604,
+            "pickscore": 20.016050338745117,
+            "clipscore": 29.652690887451172,
+            "imagereward": 0.8354548215866089,
+            "laion_aesthetic": 5.64604377746582
+          },
+          "asset": "assets/santa_christmas/candidate-2.svg",
+          "display_label": "Candidate 2"
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "status": "ok",
+          "elapsed_seconds": 132.09,
+          "scores": {
+            "lica_score_v2": 0.2265625,
+            "hpsv21": 0.2403268814086914,
+            "pickscore": 21.397056579589844,
+            "clipscore": 28.342679977416992,
+            "imagereward": 1.4322189092636108,
+            "laion_aesthetic": 5.476154804229736
+          },
+          "asset": "assets/santa_christmas/candidate-3.svg",
+          "display_label": "Candidate 3"
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "status": "ok",
+          "elapsed_seconds": 33.817,
+          "scores": {
+            "lica_score_v2": 0.234375,
+            "hpsv21": 0.23571032285690308,
+            "pickscore": 20.55127716064453,
+            "clipscore": 27.930307388305664,
+            "imagereward": 1.6042144298553467,
+            "laion_aesthetic": 5.477710723876953
+          },
+          "asset": "assets/santa_christmas/candidate-4.svg",
+          "display_label": "Candidate 4"
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen Base",
+          "status": "ok",
+          "elapsed_seconds": 24.526,
+          "scores": {
+            "lica_score_v2": 0.1923828125,
+            "hpsv21": 0.20222115516662598,
+            "pickscore": 19.54715919494629,
+            "clipscore": 27.629613876342773,
+            "imagereward": 0.014041900634765625,
+            "laion_aesthetic": 5.2577805519104
+          },
+          "asset": "assets/santa_christmas/candidate-5.svg",
+          "display_label": "Candidate 5"
+        }
+      ],
+      "winners": {
+        "lica_score_v2": {
+          "id": "arrow",
+          "label": "Candidate 1",
+          "score": 0.259765625
+        },
+        "hpsv21": {
+          "id": "arrow",
+          "label": "Candidate 1",
+          "score": 0.25107720494270325
+        },
+        "pickscore": {
+          "id": "gemini",
+          "label": "Candidate 3",
+          "score": 21.397056579589844
+        },
+        "clipscore": {
+          "id": "gpt",
+          "label": "Candidate 2",
+          "score": 29.652690887451172
+        },
+        "imagereward": {
+          "id": "claude",
+          "label": "Candidate 4",
+          "score": 1.6042144298553467
+        },
+        "laion_aesthetic": {
+          "id": "gpt",
+          "label": "Candidate 2",
+          "score": 5.64604377746582
+        }
+      },
+      "best": {
+        "id": "arrow",
+        "label": "Candidate 1",
+        "score": 0.259765625
+      }
+    }
+  ]
+}

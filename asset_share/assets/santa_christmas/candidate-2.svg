@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Cute smiling Santa Claus standing with gift bag, Merry Christmas">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8FCFF"/>
+      <stop offset="1" stop-color="#EEF5FB"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F04D4D"/>
+      <stop offset="1" stop-color="#D83333"/>
+    </linearGradient>
+    <linearGradient id="bagGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D8B078"/>
+      <stop offset="1" stop-color="#B98547"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#A9B9C8" flood-opacity="0.18"/>
+    </filter>
+    <filter id="tinyBlur">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <style>
+      .red{fill:url(#redGrad)}
+      .white{fill:#FFFFFF}
+      .skin{fill:#FFD9BE}
+      .dark{fill:#2F3A4A}
+      .ink{fill:#364152}
+      .gold{fill:#F2C94C}
+      .snow{fill:#FFFFFF;opacity:.88}
+      .outline{stroke:#DCE7F0;stroke-width:2}
+      .script{
+        font-family: "Brush Script MT","Segoe Script","Snell Roundhand",cursive;
+        font-size: 56px;
+        fill: #C83333;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      .sub{
+        font-family: "Avenir Next","Segoe UI",Arial,sans-serif;
+        font-size: 15px;
+        fill:#8C98A8;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bgGrad)"/>
+
+  <g opacity="0.9">
+    <circle class="snow" cx="88" cy="110" r="5"/>
+    <circle class="snow" cx="140" cy="75" r="8"/>
+    <circle class="snow" cx="232" cy="120" r="4"/>
+    <circle class="snow" cx="320" cy="82" r="6"/>
+    <circle class="snow" cx="388" cy="130" r="5"/>
+    <circle class="snow" cx="474" cy="92" r="7"/>
+    <circle class="snow" cx="562" cy="120" r="4"/>
+    <circle class="snow" cx="646" cy="78" r="6"/>
+    <circle class="snow" cx="718" cy="118" r="5"/>
+    <circle class="snow" cx="104" cy="204" r="4"/>
+    <circle class="snow" cx="196" cy="184" r="6"/>
+    <circle class="snow" cx="284" cy="220" r="4"/>
+    <circle class="snow" cx="624" cy="194" r="6"/>
+    <circle class="snow" cx="704" cy="226" r="4"/>
+  </g>
+
+  <ellipse cx="400" cy="825" rx="220" ry="34" fill="#D9E6F0" opacity="0.55" filter="url(#tinyBlur)"/>
+
+  <g filter="url(#softShadow)">
+    <g transform="translate(0,10)">
+      <path d="M250 465c-26 17-43 41-50 74l-17 81c-5 24 13 46 38 46h56c18 0 33-12 37-29l27-117c8-37-10-63-49-69-16-3-30 1-42 14z" fill="url(#bagGrad)"/>
+      <path d="M231 453c12 16 35 26 66 28 31 2 57-4 77-18" fill="none" stroke="#A77439" stroke-width="10" stroke-linecap="round"/>
+      <path d="M211 621c27-6 58-4 86 5" fill="none" stroke="#A77439" stroke-width="7" stroke-linecap="round" opacity=".4"/>
+      <circle cx="280" cy="553" r="9" fill="#EAC58C" opacity=".55"/>
+      <circle cx="247" cy="594" r="7" fill="#EAC58C" opacity=".55"/>
+      <g>
+        <rect x="245" y="515" width="70" height="58" rx="10" fill="#3FBF7F"/>
+        <path d="M280 515v58M245 544h70" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+        <path d="M266 512c0-10 7-18 14-18s14 8 14 18M280 512c0-10 7-18 14-18s14 8 14 18" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <g transform="translate(400 490)">
+      <g transform="translate(0,-185)">
+        <path class="red" d="M-64 -70c14-40 54-71 99-71 31 0 58 15 76 40-25 10-46 31-56 61z"/>
+        <path class="white" d="M30 -145c22 2 45 14 58 30-29 11-49 35-55 64h-23c5-32 1-63-13-94 10 0 21-1 33 0z"/>
+        <ellipse cx="87" cy="-128" rx="18" ry="18" class="white"/>
+        <path class="skin" d="M-68 -16c0-57 46-103 103-103S138-73 138-16c0 27-10 51-26 69-19 21-47 34-77 34S-23 74-42 53C-58 35-68 11-68-16z"/>
+        <ellipse cx="-16" cy="-5" rx="9" ry="12" class="white" opacity=".2"/>
+        <ellipse cx="-5" cy="-8" rx="8" ry="10" fill="#FFC2B1" opacity=".45"/>
+        <ellipse cx="75" cy="-8" rx="8" ry="10" fill="#FFC2B1" opacity=".45"/>
+        <circle cx="-2" cy="-12" r="4.5" class="dark"/>
+        <circle cx="52" cy="-12" r="4.5" class="dark"/>
+        <path d="M-18 -33c10-8 23-9 34-1M36 -34c10-7 23-7 34 1" fill="none" stroke="#56414A" stroke-width="5" stroke-linecap="round"/>
+        <ellipse cx="25" cy="8" rx="10" ry="7" fill="#F6B29E"/>
+        <path d="M18 18c8 9 24 9 32 0" fill="none" stroke="#C65B5B" stroke-width="4.5" stroke-linecap="round"/>
+        <path class="white" d="M-50 22c5 45 38 79 85 83 47-4 80-38 85-83-16 7-36 11-57 11h-56c-21 0-41-4-57-11z"/>
+        <path class="white" d="M-46 12c14 13 42 23 71 23s57-10 71-23c-12-8-30-12-44-12H-2c-14 0-32 4-44 12z"/>
+        <ellipse cx="25" cy="97" rx="72" ry="16" class="white"/>
+      </g>
+
+      <g transform="translate(0,0)">
+        <rect x="-92" y="-65" width="184" height="235" rx="70" class="red"/>
+        <rect x="-102" y="-88" width="204" height="36" rx="18" class="white"/>
+        <ellipse cx="0" cy="170" rx="88" ry="22" class="white"/>
+        <rect x="-18" y="20" width="36" height="70" rx="12" class="gold"/>
+        <circle cx="0" cy="55" r="5" fill="#D5A62A"/>
+        <path d="M-92 -25c-28 10-46 31-57 65l-15 49c-8 26 11 53 38 53h18c19 0 35-13 39-31l19-76" class="red"/>
+        <rect x="-170" y="126" width="62" height="24" rx="12" class="white"/>
+        <path d="M92 -25c28 10 46 31 57 65l15 49c8 26-11 53-38 53h-18c-19 0-35-13-39-31l-19-76" class="red"/>
+        <rect x="108" y="126" width="62" height="24" rx="12" class="white"/>
+      </g>
+
+      <g transform="translate(0,190)">
+        <path class="red" d="M-72 0h52c8 0 14 6 14 14v116h-80V14c0-8 6-14 14-14z"/>
+        <path class="red" d="M20 0h52c8 0 14 6 14 14v116H6V14C6 6 12 0 20 0z"/>
+        <rect x="-92" y="-6" width="92" height="24" rx="12" class="white"/>
+        <rect x="0" y="-6" width="92" height="24" rx="12" class="white"/>
+        <rect x="-96" y="124" width="100" height="26" rx="13" class="dark"/>
+        <rect x="-4" y="124" width="100" height="26" rx="13" class="dark"/>
+      </g>
+    </g>
+  </g>
+
+  <g opacity=".65">
+    <circle cx="600" cy="325" r="44" fill="#FFFFFF"/>
+    <circle cx="636" cy="333" r="28" fill="#FFFFFF"/>
+    <circle cx="572" cy="336" r="26" fill="#FFFFFF"/>
+    <circle cx="184" cy="294" r="38" fill="#FFFFFF"/>
+    <circle cx="215" cy="304" r="24" fill="#FFFFFF"/>
+    <circle cx="155" cy="308" r="22" fill="#FFFFFF"/>
+  </g>
+
+  <g transform="translate(400 920)">
+    <text text-anchor="middle" class="script">Merry Christmas</text>
+    <text y="34" text-anchor="middle" class="sub">Holiday Wishes</text>
+  </g>
+</svg>
