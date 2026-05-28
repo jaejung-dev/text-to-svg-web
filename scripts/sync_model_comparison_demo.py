@@ -13,7 +13,7 @@ SOURCE_DATA_PATH = SOURCE_ROOT / "demo-data.json"
 DATA_PATH = PROJECT / "data" / "model-comparison-demo.json"
 ASSET_ROOT = PROJECT / "assets" / "model-comparison"
 
-EXCLUDED_PROMPTS = {"potted_plant_growing", "classic_sailboat"}
+EXCLUDED_PROMPTS = {"potted_plant_growing", "classic_sailboat", "cartoon_girl_waving"}
 MODEL_ORDER = ["arrow", "gpt", "gemini", "claude", "qwen_lora"]
 MODEL_LABELS = {
     "arrow": "Arrow 1.1",
@@ -44,6 +44,19 @@ SCORE_LABELS = {
     "clipscore": "CLIPScore",
     "imagereward": "ImageReward",
     "laion_aesthetic": "LAION aesthetic",
+}
+ASSET_OVERRIDES = {
+    ("sakura_tree", "arrow"): "assets/model-comparison/arrow/sakura_tree_with_bg.svg",
+}
+SCORE_OVERRIDES = {
+    ("sakura_tree", "arrow"): {
+        "lica_score_v2": 0.1552734375,
+        "hpsv21": 0.1482030153274536,
+        "pickscore": 18.770793914794922,
+        "clipscore": 10.886899948120117,
+        "imagereward": -1.8555684089660645,
+        "laion_aesthetic": 4.778088092803955,
+    },
 }
 
 
@@ -79,6 +92,8 @@ def candidate_scores(
     candidate: dict[str, Any],
     previous_scores: dict[tuple[str, str], dict[str, Any]],
 ) -> dict[str, Any]:
+    if (prompt_id, candidate["id"]) in SCORE_OVERRIDES:
+        return dict(SCORE_OVERRIDES[(prompt_id, candidate["id"])])
     scores = dict(previous_scores.get((prompt_id, candidate["id"]), {}))
     if candidate.get("score") is not None:
         score = candidate["score"]
@@ -167,7 +182,11 @@ def build_data() -> dict[str, Any]:
             candidate = by_model.get(model_id)
             if not candidate:
                 continue
-            copied_asset = copy_asset(candidate.get("asset", ""), model_id, row["id"])
+            copied_asset = ASSET_OVERRIDES.get((row["id"], model_id)) or copy_asset(
+                candidate.get("asset", ""),
+                model_id,
+                row["id"],
+            )
             output = {
                 "id": model_id,
                 "label": MODEL_LABELS[model_id],

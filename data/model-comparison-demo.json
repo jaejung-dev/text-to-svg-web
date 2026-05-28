@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T17:29:30+00:00",
+  "generated_at": "2026-05-28T17:32:21.472945+00:00",
   "source": "data_for_demo/demo-data.json",
   "score_name": "LicaScore raw cosine",
   "score_order": [
@@ -23,13 +23,13 @@
       "id": "arrow",
       "label": "Arrow 1.1",
       "short_label": "Arrow",
-      "count": 15,
-      "wins": 9,
+      "count": 14,
+      "wins": 8,
       "metric_wins": {
-        "lica_score_v2": 9,
-        "hpsv21": 8,
-        "pickscore": 7,
-        "clipscore": 5,
+        "lica_score_v2": 8,
+        "hpsv21": 7,
+        "pickscore": 6,
+        "clipscore": 4,
         "imagereward": 8,
         "laion_aesthetic": 4
       }
@@ -38,22 +38,22 @@
       "id": "gpt",
       "label": "GPT-5.4",
       "short_label": "GPT",
-      "count": 15,
+      "count": 14,
       "wins": 0,
       "metric_wins": {
         "lica_score_v2": 0,
         "hpsv21": 1,
         "pickscore": 1,
         "clipscore": 2,
-        "imagereward": 1,
-        "laion_aesthetic": 4
+        "imagereward": 0,
+        "laion_aesthetic": 3
       }
     },
     {
       "id": "gemini",
       "label": "Gemini 3.1 Pro Preview",
       "short_label": "Gemini",
-      "count": 15,
+      "count": 14,
       "wins": 3,
       "metric_wins": {
         "lica_score_v2": 3,
@@ -68,7 +68,7 @@
       "id": "claude",
       "label": "Claude Opus 4.7",
       "short_label": "Claude",
-      "count": 15,
+      "count": 14,
       "wins": 3,
       "metric_wins": {
         "lica_score_v2": 3,
@@ -83,7 +83,7 @@
       "id": "qwen_lora",
       "label": "Qwen Base",
       "short_label": "Qwen",
-      "count": 15,
+      "count": 14,
       "wins": 0,
       "metric_wins": {
         "lica_score_v2": 0,
@@ -1406,125 +1406,6 @@
       }
     },
     {
-      "id": "cartoon_girl_waving",
-      "prompt": "an animated svg of a cartoon girl waving",
-      "prompt_en": null,
-      "candidates": [
-        {
-          "id": "arrow",
-          "label": "Arrow 1.1",
-          "asset": "assets/model-comparison/arrow/cartoon_girl_waving.svg",
-          "status": "ok",
-          "elapsed_seconds": 0.003,
-          "scores": {
-            "lica_score_v2": 0.26171875,
-            "hpsv21": 0.2731112837791443,
-            "pickscore": 21.803014755249023,
-            "clipscore": 34.32160186767578,
-            "imagereward": 0.4393810033798218,
-            "laion_aesthetic": 5.052298545837402
-          }
-        },
-        {
-          "id": "gpt",
-          "label": "GPT-5.4",
-          "asset": "assets/model-comparison/gpt/cartoon_girl_waving.svg",
-          "status": "ok",
-          "elapsed_seconds": 21.838,
-          "scores": {
-            "lica_score_v2": 0.23828125,
-            "hpsv21": 0.2456229031085968,
-            "pickscore": 21.734712600708008,
-            "clipscore": 31.33409309387207,
-            "imagereward": 0.7531651854515076,
-            "laion_aesthetic": 5.271045684814453
-          }
-        },
-        {
-          "id": "gemini",
-          "label": "Gemini 3.1 Pro Preview",
-          "asset": "assets/model-comparison/gemini/cartoon_girl_waving.svg",
-          "status": "ok",
-          "elapsed_seconds": 10.977,
-          "scores": {
-            "lica_score_v2": 0.181640625,
-            "hpsv21": 0.19501687586307526,
-            "pickscore": 19.669450759887695,
-            "clipscore": 29.491535186767578,
-            "imagereward": -0.6971486806869507,
-            "laion_aesthetic": 4.425297260284424
-          }
-        },
-        {
-          "id": "claude",
-          "label": "Claude Opus 4.7",
-          "asset": "assets/model-comparison/claude/cartoon_girl_waving.svg",
-          "status": "ok",
-          "elapsed_seconds": 17.916,
-          "scores": {
-            "lica_score_v2": 0.2294921875,
-            "hpsv21": 0.23108486831188202,
-            "pickscore": 21.294906616210938,
-            "clipscore": 28.183048248291016,
-            "imagereward": -0.2483375370502472,
-            "laion_aesthetic": 5.054470062255859
-          }
-        },
-        {
-          "id": "qwen_lora",
-          "label": "Qwen Base",
-          "asset": "assets/model-comparison/qwen_lora/cartoon_girl_waving.svg",
-          "status": "ok",
-          "elapsed_seconds": 0.0,
-          "scores": {
-            "lica_score_v2": 0.1572265625,
-            "hpsv21": 0.1617499738931656,
-            "pickscore": 18.96139144897461,
-            "clipscore": 22.102079391479492,
-            "imagereward": -2.275996446609497,
-            "laion_aesthetic": 4.697992324829102
-          }
-        }
-      ],
-      "winners": {
-        "lica_score_v2": {
-          "id": "arrow",
-          "label": "Arrow 1.1",
-          "score": 0.26171875
-        },
-        "hpsv21": {
-          "id": "arrow",
-          "label": "Arrow 1.1",
-          "score": 0.2731112837791443
-        },
-        "pickscore": {
-          "id": "arrow",
-          "label": "Arrow 1.1",
-          "score": 21.803014755249023
-        },
-        "clipscore": {
-          "id": "arrow",
-          "label": "Arrow 1.1",
-          "score": 34.32160186767578
-        },
-        "imagereward": {
-          "id": "gpt",
-          "label": "GPT-5.4",
-          "score": 0.7531651854515076
-        },
-        "laion_aesthetic": {
-          "id": "gpt",
-          "label": "GPT-5.4",
-          "score": 5.271045684814453
-        }
-      },
-      "best": {
-        "id": "arrow",
-        "label": "Arrow 1.1",
-        "score": 0.26171875
-      }
-    },
-    {
       "id": "fall_leaves",
       "prompt": "fall leaves falling, simple layered vector art, warm reds, oranges, and yellows, transparent background.",
       "prompt_en": null,
@@ -1883,50 +1764,50 @@
     }
   ],
   "summary": {
-    "prompts": 15,
+    "prompts": 14,
     "models": 5,
-    "candidates": 75,
-    "scored_candidates": 75,
+    "candidates": 70,
+    "scored_candidates": 70,
     "missing_candidates": 0,
     "winner_counts": {
-      "arrow": 9,
+      "arrow": 8,
       "gpt": 0,
       "gemini": 3,
       "claude": 3,
       "qwen_lora": 0
     },
     "scored_by_metric": {
-      "lica_score_v2": 75,
-      "hpsv21": 75,
-      "pickscore": 75,
-      "clipscore": 75,
-      "imagereward": 75,
-      "laion_aesthetic": 75
+      "lica_score_v2": 70,
+      "hpsv21": 70,
+      "pickscore": 70,
+      "clipscore": 70,
+      "imagereward": 70,
+      "laion_aesthetic": 70
     },
     "metric_win_counts": {
       "lica_score_v2": {
-        "arrow": 9,
+        "arrow": 8,
         "gpt": 0,
         "gemini": 3,
         "claude": 3,
         "qwen_lora": 0
       },
       "hpsv21": {
-        "arrow": 8,
+        "arrow": 7,
         "gpt": 1,
         "gemini": 4,
         "claude": 2,
         "qwen_lora": 0
       },
       "pickscore": {
-        "arrow": 7,
+        "arrow": 6,
         "gpt": 1,
         "gemini": 2,
         "claude": 4,
         "qwen_lora": 1
       },
       "clipscore": {
-        "arrow": 5,
+        "arrow": 4,
         "gpt": 2,
         "gemini": 3,
         "claude": 5,
@@ -1934,14 +1815,14 @@
       },
       "imagereward": {
         "arrow": 8,
-        "gpt": 1,
+        "gpt": 0,
         "gemini": 2,
         "claude": 4,
         "qwen_lora": 0
       },
       "laion_aesthetic": {
         "arrow": 4,
-        "gpt": 4,
+        "gpt": 3,
         "gemini": 5,
         "claude": 2,
         "qwen_lora": 0
