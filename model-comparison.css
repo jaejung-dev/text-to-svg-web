@@ -108,7 +108,6 @@ h1 {
 
 .summary span,
 .rank-card span,
-.winner-box span,
 .score-pill span,
 .prompt-translation span {
   display: block;
@@ -210,9 +209,6 @@ main {
 }
 
 .prompt-head {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 260px;
-  gap: 24px;
   padding: 26px;
   border-bottom: 1px solid var(--line);
 }
@@ -246,61 +242,6 @@ main {
 
 .prompt-translation span {
   margin-bottom: 4px;
-}
-
-.winner-box {
-  align-self: stretch;
-  display: grid;
-  align-content: center;
-  gap: 7px;
-  border-radius: 24px;
-  padding: 18px;
-  background: linear-gradient(135deg, var(--accent-soft), #fff4e7);
-}
-
-.winner-box strong {
-  color: var(--accent);
-  font-size: 26px;
-  line-height: 1.05;
-  letter-spacing: -0.04em;
-}
-
-.winner-box small {
-  color: var(--muted);
-  font-size: 18px;
-  font-weight: 900;
-}
-
-.winner-metrics {
-  display: grid;
-  gap: 7px;
-  margin-top: 10px;
-}
-
-.winner-metric {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 10px;
-  align-items: center;
-  border-radius: 12px;
-  padding: 8px 10px;
-  background: rgba(255, 255, 255, 0.58);
-}
-
-.winner-metric span {
-  overflow: hidden;
-  color: var(--muted);
-  font-size: 10px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.winner-metric strong {
-  overflow: hidden;
-  color: var(--ink);
-  font-size: 12px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .candidate-grid {
@@ -427,8 +368,7 @@ main {
 }
 
 @media (max-width: 1280px) {
-  .hero-grid,
-  .prompt-head {
+  .hero-grid {
     grid-template-columns: 1fr;
   }
 

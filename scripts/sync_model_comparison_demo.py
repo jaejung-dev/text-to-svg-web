@@ -171,7 +171,7 @@ def old_score_lookup() -> dict[tuple[str, str], dict[str, Any]]:
 
 
 def prompt_text(row: dict[str, Any]) -> tuple[str, str | None]:
-    if row["id"] == "horse_logo_ar" and row.get("prompt_en"):
+    if row.get("prompt_en"):
         return row["prompt_en"], None
     return row["prompt"], row.get("prompt_en")
 

@@ -110,32 +110,11 @@ function renderCandidate(prompt, candidate) {
   `;
 }
 
-function renderWinnerMetrics(prompt) {
-  const labels = window.MODEL_COMPARISON_SCORE_LABELS || {};
-  const scoreOrder = window.MODEL_COMPARISON_SCORE_ORDER || ["lica_score_v2"];
-  return scoreOrder.map((metric) => {
-    const winner = prompt.winners?.[metric];
-    return `
-      <div class="winner-metric">
-        <span>${escapeHtml(labels[metric] || metric)}</span>
-        <strong>${escapeHtml(winner?.label || "pending")}</strong>
-      </div>
-    `;
-  }).join("");
-}
-
 function renderPrompt(prompt) {
-  const best = prompt.best;
   return `
     <article class="prompt-card">
       <header class="prompt-head">
         ${renderPromptText(prompt)}
-        <aside class="winner-box">
-          <span>Best selection</span>
-          <strong>${escapeHtml(best?.label || "pending")}</strong>
-          <small>${escapeHtml(formatScore(best?.score))}</small>
-          <div class="winner-metrics">${renderWinnerMetrics(prompt)}</div>
-        </aside>
       </header>
       <div class="candidate-grid">
         ${(prompt.candidates || []).map((candidate) => renderCandidate(prompt, candidate)).join("")}

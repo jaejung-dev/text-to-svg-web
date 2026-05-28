@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T17:56:04.073449+00:00",
+  "generated_at": "2026-05-28T18:11:32.819394+00:00",
   "source": "data_for_demo/demo-data.json",
   "score_name": "LicaScore raw cosine",
   "score_order": [
@@ -574,8 +574,8 @@
     },
     {
       "id": "sakura_tree",
-      "prompt": "美しい桜の木のアイコン、繊細なピンク色の花びらとシンプルなシルエット",
-      "prompt_en": "A beautiful cherry blossom tree icon, featuring delicate pink petals and a simple silhouette.",
+      "prompt": "A beautiful cherry blossom tree icon, featuring delicate pink petals and a simple silhouette.",
+      "prompt_en": null,
       "candidates": [
         {
           "id": "arrow",
@@ -693,8 +693,8 @@
     },
     {
       "id": "smiling_person",
-      "prompt": "웃는 사람 아이콘, 원형, 심플하고 친근한 얼굴",
-      "prompt_en": "Smiling Person Icon — Circular, Simple, and Friendly Face",
+      "prompt": "Smiling Person Icon — Circular, Simple, and Friendly Face",
+      "prompt_en": null,
       "candidates": [
         {
           "id": "arrow",

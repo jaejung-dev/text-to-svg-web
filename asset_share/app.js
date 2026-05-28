@@ -31,18 +31,6 @@ function renderSummary(data) {
   `;
 }
 
-function renderWinnerMetrics(prompt, data) {
-  return (data.score_order || []).map((metric) => {
-    const winner = prompt.winners?.[metric];
-    return `
-      <div class="winner-metric">
-        <span>${escapeHtml(data.score_labels?.[metric] || metric)}</span>
-        <strong>${escapeHtml(winner?.label || "pending")}</strong>
-      </div>
-    `;
-  }).join("");
-}
-
 function renderMetricRows(prompt, candidate, data) {
   return (data.score_order || []).map((metric) => {
     const isWinner = prompt.winners?.[metric]?.id === candidate.id;
@@ -75,7 +63,6 @@ function renderCandidate(prompt, candidate, data) {
 }
 
 function renderPrompt(prompt, data) {
-  const best = prompt.best;
   return `
     <article class="prompt-card">
       <header class="prompt-head">
@@ -83,12 +70,6 @@ function renderPrompt(prompt, data) {
           <div class="prompt-id">${escapeHtml(prompt.id.replaceAll("_", " "))}</div>
           <h2>${escapeHtml(prompt.prompt)}</h2>
         </div>
-        <aside class="winner-box">
-          <span>Best selection</span>
-          <strong>${escapeHtml(best?.label || "pending")}</strong>
-          <small>${escapeHtml(formatScore(best?.score))}</small>
-          <div class="winner-metrics">${renderWinnerMetrics(prompt, data)}</div>
-        </aside>
       </header>
       <div class="candidate-grid">
         ${(prompt.candidates || []).map((candidate) => renderCandidate(prompt, candidate, data)).join("")}
