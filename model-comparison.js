@@ -47,7 +47,7 @@ function renderRankings(data) {
       return `
         <article class="rank-card">
           <span>${escapeHtml(model.label)}</span>
-          <strong>${escapeHtml(model.wins || 0)} LicaScore v2 wins</strong>
+          <strong>${escapeHtml(model.wins || 0)} LicaScore wins</strong>
           <small>${escapeHtml(model.count || 0)} generated SVGs</small>
           <div class="rank-metrics">${metricWins}</div>
         </article>
@@ -100,12 +100,8 @@ function renderCandidate(prompt, candidate) {
     <article class="candidate-card ${isWinner ? "winner" : ""} ${candidate.asset ? "" : "missing"}">
       <div class="image-frame">${image}</div>
       <div class="candidate-meta">
-        <div>
-          <h3>${escapeHtml(candidate.label)}</h3>
-          <p>${escapeHtml(candidate.asset || "No Arrow SVG available for this prompt")}</p>
-        </div>
         <div class="score-pill ${isWinner ? "winner" : ""}">
-          <span>${escapeHtml(isWinner ? "LicaScore v2 winner" : "LicaScore v2")}</span>
+          <span>${escapeHtml(isWinner ? "LicaScore winner" : "LicaScore")}</span>
           <strong>${escapeHtml(formatScore(candidate.scores?.lica_score_v2 ?? candidate.score))}</strong>
         </div>
         <div class="metric-list">${renderMetricRows(prompt, candidate)}</div>
@@ -154,7 +150,7 @@ async function main() {
   const data = await response.json();
   CACHE_KEY = data.generated_at || String(Date.now());
   window.MODEL_COMPARISON_SCORE_ORDER = data.score_order || ["lica_score_v2"];
-  window.MODEL_COMPARISON_SCORE_LABELS = data.score_labels || { lica_score_v2: "LicaScore v2" };
+  window.MODEL_COMPARISON_SCORE_LABELS = data.score_labels || { lica_score_v2: "LicaScore" };
   document.getElementById("summary").innerHTML = renderSummary(data);
   document.getElementById("model-rankings").innerHTML = renderRankings(data);
   document.getElementById("prompts").innerHTML = (data.prompts || []).map(renderPrompt).join("");

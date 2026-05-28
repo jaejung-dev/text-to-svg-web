@@ -322,7 +322,7 @@ main {
 .image-frame {
   display: grid;
   place-items: center;
-  height: 300px;
+  height: 260px;
   padding: 18px;
   background:
     linear-gradient(45deg, rgba(0, 0, 0, 0.035) 25%, transparent 25%),
@@ -340,7 +340,7 @@ main {
 
 .image-frame img {
   width: 100%;
-  max-height: 264px;
+  max-height: 224px;
   object-fit: contain;
   filter: drop-shadow(0 12px 26px rgba(24, 18, 12, 0.1));
 }
@@ -358,23 +358,8 @@ main {
 
 .candidate-meta {
   display: grid;
-  gap: 16px;
-  padding: 16px;
-}
-
-.candidate-meta h3 {
-  font-size: 18px;
-  letter-spacing: -0.035em;
-}
-
-.candidate-meta p {
-  overflow: hidden;
-  margin-top: 5px;
-  color: var(--muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 11px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  gap: 12px;
+  padding: 14px;
 }
 
 .score-pill {
@@ -383,7 +368,7 @@ main {
   gap: 10px;
   align-items: center;
   border-radius: 18px;
-  padding: 12px;
+  padding: 10px 12px;
   background: #f5eadf;
 }
 
@@ -397,13 +382,13 @@ main {
 }
 
 .score-pill strong {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: -0.04em;
 }
 
 .metric-list {
   display: grid;
-  gap: 7px;
+  gap: 6px;
 }
 
 .metric-row {
@@ -412,9 +397,10 @@ main {
   gap: 10px;
   align-items: center;
   border-radius: 13px;
-  padding: 8px 10px;
+  min-width: 0;
+  padding: 7px 9px;
   background: #f8efe5;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .metric-row span {
@@ -426,6 +412,8 @@ main {
 }
 
 .metric-row strong {
+  min-width: 54px;
+  text-align: right;
   font-variant-numeric: tabular-nums;
 }
 

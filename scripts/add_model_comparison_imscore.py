@@ -25,7 +25,7 @@ SCORE_ORDER = [
 ]
 IMSCORE_IDS = ["hpsv21", "pickscore", "clipscore", "imagereward", "laion_aesthetic"]
 SCORE_LABELS = {
-    "lica_score_v2": "LicaScore v2",
+    "lica_score_v2": "LicaScore",
     "hpsv21": "HPS v2.1",
     "pickscore": "PickScore",
     "clipscore": "CLIPScore",
