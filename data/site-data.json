@@ -26,7 +26,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.973301887512207,
             "imscore_hpsv21": 0.2117474377155304,
-            "imscore_hpsv3": 7.495031833648682,
             "imscore_pickscore": 22.28013801574707,
             "imscore_mpsv1": 11.88070011138916,
             "imscore_clipscore": 24.241907119750977,
@@ -41,7 +40,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.692611038684845,
             "imscore_hpsv21": 0.14551942050457,
-            "imscore_hpsv3": -3.9823524951934814,
             "imscore_pickscore": 20.757070541381836,
             "imscore_mpsv1": 6.58342981338501,
             "imscore_clipscore": 22.095670700073242,
@@ -56,7 +54,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9428560733795166,
             "imscore_hpsv21": 0.15772198140621185,
-            "imscore_hpsv3": 1.35272216796875,
             "imscore_pickscore": 20.93315315246582,
             "imscore_mpsv1": 6.648530006408691,
             "imscore_clipscore": 20.928897857666016,
@@ -71,7 +68,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.8354259729385376,
             "imscore_hpsv21": 0.19680854678153992,
-            "imscore_hpsv3": 4.058526039123535,
             "imscore_pickscore": 22.09859275817871,
             "imscore_mpsv1": 9.684853553771973,
             "imscore_clipscore": 23.318706512451172,
@@ -94,7 +90,16 @@
           "svg_chars": 1356,
           "sha256": "2f582833d4b51160bd4c6a455050e8591185c13ce2290f4bb9eda0e35e5a411f",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.16064192354679108,
+            "imscore_pickscore": 20.223289489746094,
+            "imscore_mpsv1": 8.52885627746582,
+            "imscore_clipscore": 27.05472183227539,
+            "imscore_imagereward": -1.235089659690857,
+            "imscore_laion_aesthetic": 5.221441268920898
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -109,7 +114,16 @@
           "svg_chars": 1259,
           "sha256": "984da1941cb6fc1d5c8a8dd8514136fd23a07d2310b9fb4b5d5b18e190748428",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.1725035160779953,
+            "imscore_pickscore": 21.0236759185791,
+            "imscore_mpsv1": 9.575139999389648,
+            "imscore_clipscore": 24.587051391601562,
+            "imscore_imagereward": -0.8312376737594604,
+            "imscore_laion_aesthetic": 5.009934425354004
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -124,7 +138,16 @@
           "svg_chars": 1271,
           "sha256": "2c35a9fbdca0a5601b3a256a0f5ae38693502428b5a770fab13f0e52a600f364",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.16408374905586243,
+            "imscore_pickscore": 20.684616088867188,
+            "imscore_mpsv1": 8.437029838562012,
+            "imscore_clipscore": 24.285184860229492,
+            "imscore_imagereward": -0.7788937091827393,
+            "imscore_laion_aesthetic": 5.227631092071533
+          }
         }
       },
       "lica_scores": {
@@ -206,7 +229,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9673414826393127,
             "imscore_hpsv21": 0.23421761393547058,
-            "imscore_hpsv3": 11.059805870056152,
             "imscore_pickscore": 20.837627410888672,
             "imscore_mpsv1": 10.08024787902832,
             "imscore_clipscore": 33.85029983520508,
@@ -221,7 +243,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.8777083158493042,
             "imscore_hpsv21": 0.21249574422836304,
-            "imscore_hpsv3": 5.056427001953125,
             "imscore_pickscore": 21.458059310913086,
             "imscore_mpsv1": 10.180991172790527,
             "imscore_clipscore": 28.656705856323242,
@@ -236,7 +257,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.7309097051620483,
             "imscore_hpsv21": 0.1802675873041153,
-            "imscore_hpsv3": 2.794567823410034,
             "imscore_pickscore": 20.584230422973633,
             "imscore_mpsv1": 8.559133529663086,
             "imscore_clipscore": 26.82059097290039,
@@ -251,7 +271,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.8003342151641846,
             "imscore_hpsv21": 0.17968760430812836,
-            "imscore_hpsv3": 0.8435045480728149,
             "imscore_pickscore": 19.339706420898438,
             "imscore_mpsv1": 7.047359466552734,
             "imscore_clipscore": 27.984365463256836,
@@ -274,7 +293,16 @@
           "svg_chars": 3560,
           "sha256": "687e293d0f266279d360d42c3a06155377716412463639df6457b840f2d2601d",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.15227729082107544,
+            "imscore_pickscore": 18.85120391845703,
+            "imscore_mpsv1": 6.981253147125244,
+            "imscore_clipscore": 22.539257049560547,
+            "imscore_imagereward": -1.7469990253448486,
+            "imscore_laion_aesthetic": 4.868740081787109
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -289,7 +317,16 @@
           "svg_chars": 2686,
           "sha256": "2716ceada90a8805454e38e794eef7f5eae4e769de55bda45f1b39cedc6e8e2b",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.15275420248508453,
+            "imscore_pickscore": 18.783716201782227,
+            "imscore_mpsv1": 7.039790153503418,
+            "imscore_clipscore": 23.152097702026367,
+            "imscore_imagereward": -0.6166793704032898,
+            "imscore_laion_aesthetic": 4.882571220397949
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -304,7 +341,16 @@
           "svg_chars": 3130,
           "sha256": "b985f3422e489e816dc05afdc9b400887e9406a34d1bc7d0a4795a885f740c28",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.14568011462688446,
+            "imscore_pickscore": 18.70697021484375,
+            "imscore_mpsv1": 5.973033905029297,
+            "imscore_clipscore": 24.228239059448242,
+            "imscore_imagereward": -1.2979910373687744,
+            "imscore_laion_aesthetic": 4.750358581542969
+          }
         }
       },
       "lica_scores": {
@@ -386,7 +432,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.7997336387634277,
             "imscore_hpsv21": 0.2703688442707062,
-            "imscore_hpsv3": 4.470303535461426,
             "imscore_pickscore": 23.420528411865234,
             "imscore_mpsv1": 11.417006492614746,
             "imscore_clipscore": 28.223567962646484,
@@ -401,7 +446,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.593212366104126,
             "imscore_hpsv21": 0.27132824063301086,
-            "imscore_hpsv3": 3.242187023162842,
             "imscore_pickscore": 24.730100631713867,
             "imscore_mpsv1": 11.442424774169922,
             "imscore_clipscore": 28.16944694519043,
@@ -416,7 +460,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.5855157375335693,
             "imscore_hpsv21": 0.2720944583415985,
-            "imscore_hpsv3": 4.626302242279053,
             "imscore_pickscore": 23.96346092224121,
             "imscore_mpsv1": 11.305121421813965,
             "imscore_clipscore": 27.775691986083984,
@@ -431,7 +474,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.5599991083145142,
             "imscore_hpsv21": 0.27063456177711487,
-            "imscore_hpsv3": 3.8492016792297363,
             "imscore_pickscore": 24.546098709106445,
             "imscore_mpsv1": 10.40165901184082,
             "imscore_clipscore": 26.51561737060547,
@@ -454,7 +496,16 @@
           "svg_chars": 651,
           "sha256": "2e1b9fbd640be303c1c932975013bc35b93ac4ac06ff65226d95a036d8836082",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9453125,
+            "imscore_hpsv21": 0.27624788880348206,
+            "imscore_pickscore": 25.19942283630371,
+            "imscore_mpsv1": 9.903369903564453,
+            "imscore_clipscore": 29.081804275512695,
+            "imscore_imagereward": 0.7725099921226501,
+            "imscore_laion_aesthetic": 5.068051338195801
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -469,7 +520,16 @@
           "svg_chars": 486,
           "sha256": "323a7657345c2f26b0e31b3f4ce726e6edb48f1d02fc7cb2e134b82978d2764b",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.5546875,
+            "imscore_hpsv21": 0.2688765227794647,
+            "imscore_pickscore": 24.81266212463379,
+            "imscore_mpsv1": 11.02115249633789,
+            "imscore_clipscore": 29.36505889892578,
+            "imscore_imagereward": 0.3239811062812805,
+            "imscore_laion_aesthetic": 4.906325340270996
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -484,7 +544,16 @@
           "svg_chars": 496,
           "sha256": "6e5bc69c07c790441ce5908037dd9e3b55b1f1788b4e44684ddf08b81d71f8b5",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96484375,
+            "imscore_hpsv21": 0.27667340636253357,
+            "imscore_pickscore": 24.64942169189453,
+            "imscore_mpsv1": 11.416969299316406,
+            "imscore_clipscore": 27.73856544494629,
+            "imscore_imagereward": 0.8099038600921631,
+            "imscore_laion_aesthetic": 5.150730133056641
+          }
         }
       },
       "lica_scores": {
@@ -566,7 +635,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9554134607315063,
             "imscore_hpsv21": 0.23690880835056305,
-            "imscore_hpsv3": 9.756690979003906,
             "imscore_pickscore": 20.822856903076172,
             "imscore_mpsv1": 7.91360330581665,
             "imscore_clipscore": 37.62548065185547,
@@ -581,7 +649,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6426799297332764,
             "imscore_hpsv21": 0.1747514307498932,
-            "imscore_hpsv3": 0.022305762395262718,
             "imscore_pickscore": 19.57098960876465,
             "imscore_mpsv1": 6.224268436431885,
             "imscore_clipscore": 30.575889587402344,
@@ -596,7 +663,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6175850033760071,
             "imscore_hpsv21": 0.16275635361671448,
-            "imscore_hpsv3": -0.05859879031777382,
             "imscore_pickscore": 19.916969299316406,
             "imscore_mpsv1": 3.354485273361206,
             "imscore_clipscore": 30.18850326538086,
@@ -611,7 +677,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6720679998397827,
             "imscore_hpsv21": 0.18370619416236877,
-            "imscore_hpsv3": -1.1322778463363647,
             "imscore_pickscore": 19.155147552490234,
             "imscore_mpsv1": 5.175822734832764,
             "imscore_clipscore": 28.69236183166504,
@@ -634,7 +699,16 @@
           "svg_chars": 1980,
           "sha256": "3cc83e45033930fbfd555dea98c6c4fa0782b85d1e58c882f7b91c1afb452631",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.984375,
+            "imscore_hpsv21": 0.16926300525665283,
+            "imscore_pickscore": 18.604127883911133,
+            "imscore_mpsv1": 4.720448970794678,
+            "imscore_clipscore": 25.028121948242188,
+            "imscore_imagereward": -0.2041114866733551,
+            "imscore_laion_aesthetic": 4.882014274597168
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -649,7 +723,16 @@
           "svg_chars": 2501,
           "sha256": "48f07ebf9e95c4604b3d631bfcfea7199e3fe3f2d5e8007790e8b2670d431d5c",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96875,
+            "imscore_hpsv21": 0.2013738602399826,
+            "imscore_pickscore": 18.936487197875977,
+            "imscore_mpsv1": 5.609735012054443,
+            "imscore_clipscore": 26.676898956298828,
+            "imscore_imagereward": -0.783045768737793,
+            "imscore_laion_aesthetic": 5.352075099945068
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -664,7 +747,16 @@
           "svg_chars": 2976,
           "sha256": "1515db6dd7b28969c19ec7d505b448a1afd72bae882c8c3749d52936e3dfb9dc",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.16286510229110718,
+            "imscore_pickscore": 18.905099868774414,
+            "imscore_mpsv1": 4.89171838760376,
+            "imscore_clipscore": 24.665563583374023,
+            "imscore_imagereward": -0.077349953353405,
+            "imscore_laion_aesthetic": 5.121356010437012
+          }
         }
       },
       "lica_scores": {
@@ -746,7 +838,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9828745126724243,
             "imscore_hpsv21": 0.24492263793945312,
-            "imscore_hpsv3": 5.974808692932129,
             "imscore_pickscore": 23.48740577697754,
             "imscore_mpsv1": 8.465310096740723,
             "imscore_clipscore": 29.185020446777344,
@@ -761,7 +852,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6201249361038208,
             "imscore_hpsv21": 0.24028398096561432,
-            "imscore_hpsv3": 4.858940601348877,
             "imscore_pickscore": 23.768535614013672,
             "imscore_mpsv1": 8.271713256835938,
             "imscore_clipscore": 28.534334182739258,
@@ -776,7 +866,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6500979065895081,
             "imscore_hpsv21": 0.2459670901298523,
-            "imscore_hpsv3": 3.427110433578491,
             "imscore_pickscore": 24.098718643188477,
             "imscore_mpsv1": 8.519079208374023,
             "imscore_clipscore": 28.059772491455078,
@@ -791,7 +880,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6425610780715942,
             "imscore_hpsv21": 0.22546909749507904,
-            "imscore_hpsv3": 5.987541675567627,
             "imscore_pickscore": 24.21695899963379,
             "imscore_mpsv1": 6.557625770568848,
             "imscore_clipscore": 25.80805206298828,
@@ -814,7 +902,16 @@
           "svg_chars": 2835,
           "sha256": "536dd82be457fa8fbaffad31ac014273d63070982e3679f1e368eb89b4858a2a",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.953125,
+            "imscore_hpsv21": 0.20481088757514954,
+            "imscore_pickscore": 22.891712188720703,
+            "imscore_mpsv1": 3.6326558589935303,
+            "imscore_clipscore": 27.409639358520508,
+            "imscore_imagereward": 0.5028717517852783,
+            "imscore_laion_aesthetic": 4.860825538635254
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -829,7 +926,16 @@
           "svg_chars": 4413,
           "sha256": "41b38834d944128c5944d8054a8b3a93145edc7d25c0a4d84014c0f0aff7cd40",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.88671875,
+            "imscore_hpsv21": 0.22048914432525635,
+            "imscore_pickscore": 22.695270538330078,
+            "imscore_mpsv1": 6.758960723876953,
+            "imscore_clipscore": 26.753082275390625,
+            "imscore_imagereward": 0.22240287065505981,
+            "imscore_laion_aesthetic": 4.764453411102295
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -844,7 +950,16 @@
           "svg_chars": 2446,
           "sha256": "9446d7d5791731b9536106c86af1f937d74e52eb6d5cc27dba46e3852823bdfc",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.984375,
+            "imscore_hpsv21": 0.22231817245483398,
+            "imscore_pickscore": 22.54088592529297,
+            "imscore_mpsv1": 6.16306209564209,
+            "imscore_clipscore": 30.544063568115234,
+            "imscore_imagereward": -0.22746846079826355,
+            "imscore_laion_aesthetic": 4.686540603637695
+          }
         }
       },
       "lica_scored_at": "2026-05-27 18:53 UTC",
@@ -926,7 +1041,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9652674198150635,
             "imscore_hpsv21": 0.1439574956893921,
-            "imscore_hpsv3": -7.692708492279053,
             "imscore_pickscore": 19.526472091674805,
             "imscore_mpsv1": -7.234287261962891,
             "imscore_clipscore": 18.479290008544922,
@@ -941,7 +1055,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9442976117134094,
             "imscore_hpsv21": 0.17398549616336823,
-            "imscore_hpsv3": -5.306346416473389,
             "imscore_pickscore": 20.098390579223633,
             "imscore_mpsv1": -8.18298053741455,
             "imscore_clipscore": 22.032489776611328,
@@ -956,7 +1069,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9577531218528748,
             "imscore_hpsv21": 0.15434874594211578,
-            "imscore_hpsv3": -8.807663917541504,
             "imscore_pickscore": 20.67763900756836,
             "imscore_mpsv1": -8.644145965576172,
             "imscore_clipscore": 25.775894165039062,
@@ -971,7 +1083,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9577531218528748,
             "imscore_hpsv21": 0.15434874594211578,
-            "imscore_hpsv3": -8.807663917541504,
             "imscore_pickscore": 20.67763900756836,
             "imscore_mpsv1": -8.644145965576172,
             "imscore_clipscore": 25.775894165039062,
@@ -994,7 +1105,16 @@
           "svg_chars": 225,
           "sha256": "b8f6db3fb50ab1894c09f764379a6c5321808f851be724386ee3c0e0874635e4",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.95703125,
+            "imscore_hpsv21": 0.15434865653514862,
+            "imscore_pickscore": 20.677637100219727,
+            "imscore_mpsv1": -8.644134521484375,
+            "imscore_clipscore": 25.77589225769043,
+            "imscore_imagereward": -0.5233317017555237,
+            "imscore_laion_aesthetic": 4.776339054107666
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -1009,7 +1129,16 @@
           "svg_chars": 220,
           "sha256": "4e9606e87e38accc4b5a957da30d352267e859568ba46fe853a67643041687f1",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.15434865653514862,
+            "imscore_pickscore": 20.677637100219727,
+            "imscore_mpsv1": -8.644134521484375,
+            "imscore_clipscore": 25.77589225769043,
+            "imscore_imagereward": -0.5233317017555237,
+            "imscore_laion_aesthetic": 4.776339054107666
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -1024,7 +1153,16 @@
           "svg_chars": 144,
           "sha256": "7cf00903026eb72824c5b75624ee1d9e244a90b909eadd4d685875e4bb3cbc09",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.95703125,
+            "imscore_hpsv21": 0.15434865653514862,
+            "imscore_pickscore": 20.677637100219727,
+            "imscore_mpsv1": -8.644134521484375,
+            "imscore_clipscore": 25.77589225769043,
+            "imscore_imagereward": -0.5233317017555237,
+            "imscore_laion_aesthetic": 4.776339054107666
+          }
         }
       },
       "lica_scores": {
@@ -1106,7 +1244,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9786030054092407,
             "imscore_hpsv21": 0.21916666626930237,
-            "imscore_hpsv3": 5.644033908843994,
             "imscore_pickscore": 22.756559371948242,
             "imscore_mpsv1": 12.415213584899902,
             "imscore_clipscore": 29.316905975341797,
@@ -1121,7 +1258,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.7088866829872131,
             "imscore_hpsv21": 0.2207699865102768,
-            "imscore_hpsv3": 5.733204364776611,
             "imscore_pickscore": 22.022050857543945,
             "imscore_mpsv1": 12.539772033691406,
             "imscore_clipscore": 27.419450759887695,
@@ -1136,7 +1272,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6176421642303467,
             "imscore_hpsv21": 0.2044941782951355,
-            "imscore_hpsv3": 5.294535160064697,
             "imscore_pickscore": 22.02581214904785,
             "imscore_mpsv1": 11.445891380310059,
             "imscore_clipscore": 26.66817283630371,
@@ -1151,7 +1286,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.5276107788085938,
             "imscore_hpsv21": 0.1875343769788742,
-            "imscore_hpsv3": 3.346605062484741,
             "imscore_pickscore": 21.861555099487305,
             "imscore_mpsv1": 12.620895385742188,
             "imscore_clipscore": 29.618194580078125,
@@ -1174,7 +1308,16 @@
           "svg_chars": 1147,
           "sha256": "e044d8852ed795e17ad03c2f402e5405e239d88905fdf1d0e5fd9133d7b4aa9d",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.18400946259498596,
+            "imscore_pickscore": 20.539854049682617,
+            "imscore_mpsv1": 9.332661628723145,
+            "imscore_clipscore": 27.811405181884766,
+            "imscore_imagereward": 0.202574223279953,
+            "imscore_laion_aesthetic": 4.7404584884643555
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -1189,7 +1332,16 @@
           "svg_chars": 1535,
           "sha256": "fd5585eb3d196256ae9b3bd5917473ffb09e14e73b82f2cb56d294b4f649a0b3",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.18100783228874207,
+            "imscore_pickscore": 20.780941009521484,
+            "imscore_mpsv1": 11.162732124328613,
+            "imscore_clipscore": 30.34755516052246,
+            "imscore_imagereward": 0.03246304392814636,
+            "imscore_laion_aesthetic": 5.151843070983887
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -1204,7 +1356,16 @@
           "svg_chars": 984,
           "sha256": "b99c7ace22f85844abed0772b488dd95dd27c259332d1e88311c8c4b233fb1de",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.97265625,
+            "imscore_hpsv21": 0.2210678905248642,
+            "imscore_pickscore": 21.752317428588867,
+            "imscore_mpsv1": 11.9865140914917,
+            "imscore_clipscore": 29.7819766998291,
+            "imscore_imagereward": 0.4015812873840332,
+            "imscore_laion_aesthetic": 5.080483436584473
+          }
         }
       },
       "lica_scores": {
@@ -1286,7 +1447,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9613121747970581,
             "imscore_hpsv21": 0.24144025146961212,
-            "imscore_hpsv3": 0.6169816255569458,
             "imscore_pickscore": 22.614187240600586,
             "imscore_mpsv1": 8.250163078308105,
             "imscore_clipscore": 23.915729522705078,
@@ -1301,7 +1461,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.903194010257721,
             "imscore_hpsv21": 0.24802500009536743,
-            "imscore_hpsv3": 2.111325979232788,
             "imscore_pickscore": 22.207256317138672,
             "imscore_mpsv1": 9.479277610778809,
             "imscore_clipscore": 25.933277130126953,
@@ -1316,7 +1475,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9255155324935913,
             "imscore_hpsv21": 0.24147719144821167,
-            "imscore_hpsv3": 0.8725152015686035,
             "imscore_pickscore": 22.516653060913086,
             "imscore_mpsv1": 8.14785385131836,
             "imscore_clipscore": 24.341611862182617,
@@ -1331,7 +1489,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9030759334564209,
             "imscore_hpsv21": 0.2445792853832245,
-            "imscore_hpsv3": 2.749124526977539,
             "imscore_pickscore": 22.18658447265625,
             "imscore_mpsv1": 8.697944641113281,
             "imscore_clipscore": 25.515827178955078,
@@ -1354,7 +1511,16 @@
           "svg_chars": 534,
           "sha256": "544d5bf1693fb5edfd091881a7495d5babc443d3946f2eb80c80699f6432c958",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.23127023875713348,
+            "imscore_pickscore": 21.297056198120117,
+            "imscore_mpsv1": 8.906338691711426,
+            "imscore_clipscore": 28.310626983642578,
+            "imscore_imagereward": 0.20261627435684204,
+            "imscore_laion_aesthetic": 4.6278886795043945
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -1369,7 +1535,16 @@
           "svg_chars": 319,
           "sha256": "a5e90efea8e72acea8302acfd65efeebf3bef335d71e2af0ee18126ce1cb89e3",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96875,
+            "imscore_hpsv21": 0.23641955852508545,
+            "imscore_pickscore": 21.246803283691406,
+            "imscore_mpsv1": 9.387194633483887,
+            "imscore_clipscore": 28.276134490966797,
+            "imscore_imagereward": 0.2870028614997864,
+            "imscore_laion_aesthetic": 4.518106460571289
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -1384,7 +1559,16 @@
           "svg_chars": 340,
           "sha256": "eea6b961316229067771a0a58acda701d1a26e17eba0bdc1fcd03e32fd77063d",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96484375,
+            "imscore_hpsv21": 0.2319900393486023,
+            "imscore_pickscore": 21.77621841430664,
+            "imscore_mpsv1": 8.205021858215332,
+            "imscore_clipscore": 26.126140594482422,
+            "imscore_imagereward": 0.04607466980814934,
+            "imscore_laion_aesthetic": 4.086574077606201
+          }
         }
       },
       "lica_scores": {
@@ -1466,7 +1650,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9828574061393738,
             "imscore_hpsv21": 0.18188266456127167,
-            "imscore_hpsv3": 5.943037033081055,
             "imscore_pickscore": 21.22972297668457,
             "imscore_mpsv1": 7.276177406311035,
             "imscore_clipscore": 36.95626449584961,
@@ -1481,7 +1664,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6870056390762329,
             "imscore_hpsv21": 0.1860685646533966,
-            "imscore_hpsv3": 3.7385241985321045,
             "imscore_pickscore": 21.40362548828125,
             "imscore_mpsv1": 6.387202739715576,
             "imscore_clipscore": 30.2037410736084,
@@ -1496,7 +1678,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9741833806037903,
             "imscore_hpsv21": 0.18463708460330963,
-            "imscore_hpsv3": 1.352768898010254,
             "imscore_pickscore": 20.352083206176758,
             "imscore_mpsv1": 4.469820499420166,
             "imscore_clipscore": 26.79571533203125,
@@ -1511,7 +1692,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.7373175621032715,
             "imscore_hpsv21": 0.17922407388687134,
-            "imscore_hpsv3": 0.037369344383478165,
             "imscore_pickscore": 21.02489471435547,
             "imscore_mpsv1": 5.16648006439209,
             "imscore_clipscore": 28.74333953857422,
@@ -1534,7 +1714,16 @@
           "svg_chars": 2101,
           "sha256": "7a3ff83266a24a87c73af50371ee27d55f65bff359c552410a3786acea43ec09",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.984375,
+            "imscore_hpsv21": 0.149553120136261,
+            "imscore_pickscore": 18.957921981811523,
+            "imscore_mpsv1": 5.342021465301514,
+            "imscore_clipscore": 24.33074378967285,
+            "imscore_imagereward": -1.9245396852493286,
+            "imscore_laion_aesthetic": 4.892526626586914
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -1549,7 +1738,16 @@
           "svg_chars": 3002,
           "sha256": "41bad449e5531509f2be46eaf048fa5d369345916d4f2e435d0cc25edd2b1b32",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.984375,
+            "imscore_hpsv21": 0.18331095576286316,
+            "imscore_pickscore": 19.5875186920166,
+            "imscore_mpsv1": 8.960866928100586,
+            "imscore_clipscore": 29.546911239624023,
+            "imscore_imagereward": -1.4430615901947021,
+            "imscore_laion_aesthetic": 4.8555216789245605
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -1564,7 +1762,16 @@
           "svg_chars": 1732,
           "sha256": "7540725b0e2c017cf74c534263e39e74cb874e501952fc02e8182835611e7d79",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98828125,
+            "imscore_hpsv21": 0.16134600341320038,
+            "imscore_pickscore": 19.148698806762695,
+            "imscore_mpsv1": 6.029590129852295,
+            "imscore_clipscore": 23.644315719604492,
+            "imscore_imagereward": -1.3585108518600464,
+            "imscore_laion_aesthetic": 4.916899681091309
+          }
         }
       },
       "lica_scores": {
@@ -1646,7 +1853,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6672052145004272,
             "imscore_hpsv21": 0.23568667471408844,
-            "imscore_hpsv3": 0.3058072328567505,
             "imscore_pickscore": 22.600284576416016,
             "imscore_mpsv1": 3.1306726932525635,
             "imscore_clipscore": 23.88587760925293,
@@ -1661,7 +1867,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.553144097328186,
             "imscore_hpsv21": 0.23015816509723663,
-            "imscore_hpsv3": 0.7666388154029846,
             "imscore_pickscore": 22.297475814819336,
             "imscore_mpsv1": 3.21728777885437,
             "imscore_clipscore": 31.22638702392578,
@@ -1676,7 +1881,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.48078545928001404,
             "imscore_hpsv21": 0.2420002818107605,
-            "imscore_hpsv3": 3.0063986778259277,
             "imscore_pickscore": 22.427030563354492,
             "imscore_mpsv1": 3.6038312911987305,
             "imscore_clipscore": 30.269262313842773,
@@ -1691,7 +1895,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.49819985032081604,
             "imscore_hpsv21": 0.22508934140205383,
-            "imscore_hpsv3": 1.3543663024902344,
             "imscore_pickscore": 22.608510971069336,
             "imscore_mpsv1": 2.890432357788086,
             "imscore_clipscore": 27.072038650512695,
@@ -1714,7 +1917,16 @@
           "svg_chars": 457,
           "sha256": "6f53653537bf84200d585715e1b0fe5e6280345ce86ccb833db2a6a3fcd5ad75",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.21521703898906708,
+            "imscore_pickscore": 21.348421096801758,
+            "imscore_mpsv1": 2.433814764022827,
+            "imscore_clipscore": 26.254364013671875,
+            "imscore_imagereward": -0.425253301858902,
+            "imscore_laion_aesthetic": 4.997766494750977
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -1729,7 +1941,16 @@
           "svg_chars": 374,
           "sha256": "dfdd3fa34974e234864936313d3b4543e0a80d7a9b65aa7a8b5bc964e7c01bd6",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.22923551499843597,
+            "imscore_pickscore": 21.949989318847656,
+            "imscore_mpsv1": 3.185396194458008,
+            "imscore_clipscore": 26.756671905517578,
+            "imscore_imagereward": -0.18602828681468964,
+            "imscore_laion_aesthetic": 4.968122959136963
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -1744,7 +1965,16 @@
           "svg_chars": 260,
           "sha256": "c6c4532311bcecf2e1c44a41b8bab385fecd4b0b761e02b5428412c5a840d4fa",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.97265625,
+            "imscore_hpsv21": 0.223825141787529,
+            "imscore_pickscore": 21.780752182006836,
+            "imscore_mpsv1": 3.462184429168701,
+            "imscore_clipscore": 27.087106704711914,
+            "imscore_imagereward": -0.6562460064888,
+            "imscore_laion_aesthetic": 4.995870590209961
+          }
         }
       },
       "lica_scores": {
@@ -1826,7 +2056,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9305462837219238,
             "imscore_hpsv21": 0.1851644068956375,
-            "imscore_hpsv3": 4.029749870300293,
             "imscore_pickscore": 21.217037200927734,
             "imscore_mpsv1": 3.9013731479644775,
             "imscore_clipscore": 25.098102569580078,
@@ -1841,7 +2070,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.7801771759986877,
             "imscore_hpsv21": 0.19089969992637634,
-            "imscore_hpsv3": 6.647583484649658,
             "imscore_pickscore": 21.00564956665039,
             "imscore_mpsv1": 4.664234638214111,
             "imscore_clipscore": 29.422447204589844,
@@ -1856,7 +2084,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.66986483335495,
             "imscore_hpsv21": 0.1908450424671173,
-            "imscore_hpsv3": 3.899413585662842,
             "imscore_pickscore": 21.799001693725586,
             "imscore_mpsv1": 4.740503787994385,
             "imscore_clipscore": 26.392797470092773,
@@ -1871,7 +2098,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6625373363494873,
             "imscore_hpsv21": 0.17120647430419922,
-            "imscore_hpsv3": 3.304734230041504,
             "imscore_pickscore": 20.322124481201172,
             "imscore_mpsv1": 3.756782054901123,
             "imscore_clipscore": 25.192026138305664,
@@ -1894,7 +2120,16 @@
           "svg_chars": 2824,
           "sha256": "cdb48d1e1c1daaedcfd9ad37614be4a7531e441760558ab0de66008b40adab54",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96875,
+            "imscore_hpsv21": 0.1764523833990097,
+            "imscore_pickscore": 20.7805118560791,
+            "imscore_mpsv1": 4.254796981811523,
+            "imscore_clipscore": 23.901853561401367,
+            "imscore_imagereward": -0.22912827134132385,
+            "imscore_laion_aesthetic": 4.813910484313965
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -1909,7 +2144,16 @@
           "svg_chars": 3340,
           "sha256": "6b3e9b5cb8bbd8a6d54e53bf44d6248ae97cfa859ad34bee70f107652487e84c",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.91796875,
+            "imscore_hpsv21": 0.21012553572654724,
+            "imscore_pickscore": 21.135482788085938,
+            "imscore_mpsv1": 4.8555827140808105,
+            "imscore_clipscore": 27.058115005493164,
+            "imscore_imagereward": -0.006249423138797283,
+            "imscore_laion_aesthetic": 4.875774383544922
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -1924,7 +2168,16 @@
           "svg_chars": 3415,
           "sha256": "7f8d8cdc52b7f4ad1608bdd01c5b00c25a09f7579a925aad1d611959e98f1bb2",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.94140625,
+            "imscore_hpsv21": 0.1683715581893921,
+            "imscore_pickscore": 20.21029281616211,
+            "imscore_mpsv1": 2.4361722469329834,
+            "imscore_clipscore": 21.456981658935547,
+            "imscore_imagereward": -0.6466407179832458,
+            "imscore_laion_aesthetic": 4.835546493530273
+          }
         }
       },
       "lica_scores": {
@@ -2006,7 +2259,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9850442409515381,
             "imscore_hpsv21": 0.23329561948776245,
-            "imscore_hpsv3": 4.46051549911499,
             "imscore_pickscore": 21.878707885742188,
             "imscore_mpsv1": 3.582923412322998,
             "imscore_clipscore": 26.494503021240234,
@@ -2021,7 +2273,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6825791001319885,
             "imscore_hpsv21": 0.22563692927360535,
-            "imscore_hpsv3": 5.837379455566406,
             "imscore_pickscore": 21.80493927001953,
             "imscore_mpsv1": 3.937113046646118,
             "imscore_clipscore": 24.85785675048828,
@@ -2036,7 +2287,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9784857034683228,
             "imscore_hpsv21": 0.1729765683412552,
-            "imscore_hpsv3": -1.5871686935424805,
             "imscore_pickscore": 20.059526443481445,
             "imscore_mpsv1": 1.2766979932785034,
             "imscore_clipscore": 19.21245765686035,
@@ -2051,7 +2301,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9545420408248901,
             "imscore_hpsv21": 0.1759873926639557,
-            "imscore_hpsv3": -7.069974899291992,
             "imscore_pickscore": 20.230920791625977,
             "imscore_mpsv1": -0.4484059512615204,
             "imscore_clipscore": 21.746665954589844,
@@ -2074,7 +2323,16 @@
           "svg_chars": 522,
           "sha256": "ad44d00d0e2eb99eceb894eb2afa657b6b2688d0608d6c61bb27f38206f48efa",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.984375,
+            "imscore_hpsv21": 0.15946172177791595,
+            "imscore_pickscore": 19.326784133911133,
+            "imscore_mpsv1": -1.5160382986068726,
+            "imscore_clipscore": 22.125455856323242,
+            "imscore_imagereward": -0.7480596303939819,
+            "imscore_laion_aesthetic": 4.697117328643799
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -2089,7 +2347,16 @@
           "svg_chars": 937,
           "sha256": "941f1568406bade56b41657585fde3b7efcbddf312537e8835cf58fbb8327035",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.97265625,
+            "imscore_hpsv21": 0.20941264927387238,
+            "imscore_pickscore": 20.94615364074707,
+            "imscore_mpsv1": 1.7486693859100342,
+            "imscore_clipscore": 25.794553756713867,
+            "imscore_imagereward": 0.8342753052711487,
+            "imscore_laion_aesthetic": 4.879693984985352
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -2104,7 +2371,16 @@
           "svg_chars": 1186,
           "sha256": "3a6f369a14b6bb79fa4481b76f6d71964082cbd598e1551b27a6ba36f90b3daf",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.13305792212486267,
+            "imscore_pickscore": 18.88578987121582,
+            "imscore_mpsv1": 0.69536292552948,
+            "imscore_clipscore": 19.466880798339844,
+            "imscore_imagereward": -1.0208886861801147,
+            "imscore_laion_aesthetic": 4.802847862243652
+          }
         }
       },
       "lica_scores": {
@@ -2186,7 +2462,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9525043964385986,
             "imscore_hpsv21": 0.21405509114265442,
-            "imscore_hpsv3": -0.09147954732179642,
             "imscore_pickscore": 22.419801712036133,
             "imscore_mpsv1": 8.51094913482666,
             "imscore_clipscore": 30.134740829467773,
@@ -2201,7 +2476,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9768973588943481,
             "imscore_hpsv21": 0.19702427089214325,
-            "imscore_hpsv3": 2.0228428840637207,
             "imscore_pickscore": 21.65890121459961,
             "imscore_mpsv1": 7.655079364776611,
             "imscore_clipscore": 31.554067611694336,
@@ -2216,7 +2490,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.955838680267334,
             "imscore_hpsv21": 0.2179783582687378,
-            "imscore_hpsv3": -2.8225505352020264,
             "imscore_pickscore": 21.18006706237793,
             "imscore_mpsv1": 6.708640098571777,
             "imscore_clipscore": 30.248674392700195,
@@ -2231,7 +2504,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9359405040740967,
             "imscore_hpsv21": 0.21370594203472137,
-            "imscore_hpsv3": 0.29107487201690674,
             "imscore_pickscore": 20.538297653198242,
             "imscore_mpsv1": 7.826289653778076,
             "imscore_clipscore": 30.696170806884766,
@@ -2254,7 +2526,16 @@
           "svg_chars": 2336,
           "sha256": "ca3253cc9f28f6e2fcf7805812dd6408611fa86c20e437689f7b47104564b88d",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.20573773980140686,
+            "imscore_pickscore": 21.81072425842285,
+            "imscore_mpsv1": 8.744043350219727,
+            "imscore_clipscore": 32.677406311035156,
+            "imscore_imagereward": 0.03889429569244385,
+            "imscore_laion_aesthetic": 4.849573612213135
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -2269,7 +2550,16 @@
           "svg_chars": 2139,
           "sha256": "7185f41d58a32d404a4e8f33e2b2dcb267f7b0bfeaadbc503a777ab227ddac5d",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96875,
+            "imscore_hpsv21": 0.19572347402572632,
+            "imscore_pickscore": 20.744911193847656,
+            "imscore_mpsv1": 6.005590438842773,
+            "imscore_clipscore": 31.26327133178711,
+            "imscore_imagereward": -0.7652093768119812,
+            "imscore_laion_aesthetic": 4.823180675506592
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -2284,7 +2574,16 @@
           "svg_chars": 2019,
           "sha256": "c9fe1353d717118050c16367d3d8dc9a7ac319954c87853be0460189f89940b6",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9609375,
+            "imscore_hpsv21": 0.2159271389245987,
+            "imscore_pickscore": 21.883487701416016,
+            "imscore_mpsv1": 9.349841117858887,
+            "imscore_clipscore": 32.578636169433594,
+            "imscore_imagereward": 0.398555189371109,
+            "imscore_laion_aesthetic": 4.751708984375
+          }
         }
       },
       "lica_scores": {
@@ -2366,7 +2665,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.8270598649978638,
             "imscore_hpsv21": 0.2329505831003189,
-            "imscore_hpsv3": 5.87493371963501,
             "imscore_pickscore": 23.25152587890625,
             "imscore_mpsv1": 9.011129379272461,
             "imscore_clipscore": 30.104450225830078,
@@ -2381,7 +2679,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.5473217368125916,
             "imscore_hpsv21": 0.2407667636871338,
-            "imscore_hpsv3": 6.058112621307373,
             "imscore_pickscore": 23.438371658325195,
             "imscore_mpsv1": 9.998068809509277,
             "imscore_clipscore": 30.50473976135254,
@@ -2396,7 +2693,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.5608029961585999,
             "imscore_hpsv21": 0.23295867443084717,
-            "imscore_hpsv3": 6.0217061042785645,
             "imscore_pickscore": 22.85141944885254,
             "imscore_mpsv1": 9.523897171020508,
             "imscore_clipscore": 28.013071060180664,
@@ -2411,7 +2707,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.7440794706344604,
             "imscore_hpsv21": 0.1849563866853714,
-            "imscore_hpsv3": -5.008681774139404,
             "imscore_pickscore": 21.513708114624023,
             "imscore_mpsv1": 6.870639324188232,
             "imscore_clipscore": 29.802751541137695,
@@ -2434,7 +2729,16 @@
           "svg_chars": 1767,
           "sha256": "4a94ba76b1c2a26e550c75e9bfd43b9798a34b6c15ebd9c20fa101bfe6964c2c",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.984375,
+            "imscore_hpsv21": 0.19686280190944672,
+            "imscore_pickscore": 21.154647827148438,
+            "imscore_mpsv1": 7.9319305419921875,
+            "imscore_clipscore": 27.484193801879883,
+            "imscore_imagereward": 0.3073965013027191,
+            "imscore_laion_aesthetic": 4.736187934875488
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -2449,7 +2753,16 @@
           "svg_chars": 1476,
           "sha256": "d7499ed2f3975253af13519ea4859618352655d64f46526e101e416d0759bc5a",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98828125,
+            "imscore_hpsv21": 0.2006217986345291,
+            "imscore_pickscore": 21.27315330505371,
+            "imscore_mpsv1": 7.46832799911499,
+            "imscore_clipscore": 28.71367645263672,
+            "imscore_imagereward": 0.740302562713623,
+            "imscore_laion_aesthetic": 4.749988555908203
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -2464,7 +2777,16 @@
           "svg_chars": 1826,
           "sha256": "a1723030116e981be3154d55c1e13d02949f647514b09bd65e5a5063c207fa07",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98828125,
+            "imscore_hpsv21": 0.2035132497549057,
+            "imscore_pickscore": 21.133190155029297,
+            "imscore_mpsv1": 8.166804313659668,
+            "imscore_clipscore": 29.80890655517578,
+            "imscore_imagereward": 0.47340235114097595,
+            "imscore_laion_aesthetic": 4.597711563110352
+          }
         }
       },
       "lica_scores": {
@@ -2546,7 +2868,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.9546293616294861,
             "imscore_hpsv21": 0.26323339343070984,
-            "imscore_hpsv3": 9.832934379577637,
             "imscore_pickscore": 20.5404052734375,
             "imscore_mpsv1": 8.132161140441895,
             "imscore_clipscore": 31.71868324279785,
@@ -2561,7 +2882,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6616541743278503,
             "imscore_hpsv21": 0.19686800241470337,
-            "imscore_hpsv3": 2.942413091659546,
             "imscore_pickscore": 19.59988021850586,
             "imscore_mpsv1": 7.861696720123291,
             "imscore_clipscore": 31.74598503112793,
@@ -2576,7 +2896,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6128445267677307,
             "imscore_hpsv21": 0.18661616742610931,
-            "imscore_hpsv3": 0.8058366179466248,
             "imscore_pickscore": 18.989086151123047,
             "imscore_mpsv1": 8.455318450927734,
             "imscore_clipscore": 29.275577545166016,
@@ -2591,7 +2910,6 @@
           "report_scores": {
             "qwen8b_epoch_3": 0.6681708097457886,
             "imscore_hpsv21": 0.20542003214359283,
-            "imscore_hpsv3": 4.141896724700928,
             "imscore_pickscore": 19.839567184448242,
             "imscore_mpsv1": 8.350708961486816,
             "imscore_clipscore": 30.554441452026367,
@@ -2614,7 +2932,16 @@
           "svg_chars": 3816,
           "sha256": "2dd65e88807b55153d4a4315393ec5b0eb34ec5f1a24e8d7d65d2d89fd125d1d",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.16766415536403656,
+            "imscore_pickscore": 17.341859817504883,
+            "imscore_mpsv1": 4.140475749969482,
+            "imscore_clipscore": 26.592084884643555,
+            "imscore_imagereward": -1.088819146156311,
+            "imscore_laion_aesthetic": 5.034389019012451
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -2629,7 +2956,16 @@
           "svg_chars": 3017,
           "sha256": "80e8b1dad13bf8cf446df5d99b2335800ef877a960834f675450eebac654cabd",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96484375,
+            "imscore_hpsv21": 0.17100322246551514,
+            "imscore_pickscore": 18.160188674926758,
+            "imscore_mpsv1": 5.702868938446045,
+            "imscore_clipscore": 28.25693130493164,
+            "imscore_imagereward": -1.2264541387557983,
+            "imscore_laion_aesthetic": 5.046935081481934
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -2644,7 +2980,16 @@
           "svg_chars": 3968,
           "sha256": "e348bd4d72ec9799aeed3308f579eeb534ed72d26472ede54d8feee1ae3fd70f",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9453125,
+            "imscore_hpsv21": 0.18630057573318481,
+            "imscore_pickscore": 18.8104248046875,
+            "imscore_mpsv1": 6.818976879119873,
+            "imscore_clipscore": 28.17963409423828,
+            "imscore_imagereward": -0.29951372742652893,
+            "imscore_laion_aesthetic": 5.296669960021973
+          }
         }
       },
       "lica_scores": {
@@ -2930,7 +3275,16 @@
           "svg_chars": 4023,
           "sha256": "48d1a6ecf7921794096c7a5b31485ea2e64397e56739287247915185170e753d",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.8671875,
+            "imscore_hpsv21": 0.14411766827106476,
+            "imscore_pickscore": 19.004531860351562,
+            "imscore_mpsv1": 9.730290412902832,
+            "imscore_clipscore": 20.693256378173828,
+            "imscore_imagereward": -2.251516580581665,
+            "imscore_laion_aesthetic": 5.432353496551514
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -2945,7 +3299,16 @@
           "svg_chars": 1771,
           "sha256": "1e896bf75b3affaf52c7db33e3fb5fab668fe49c32e4411c341ee5464f1a4902",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.984375,
+            "imscore_hpsv21": 0.17931686341762543,
+            "imscore_pickscore": 19.407541275024414,
+            "imscore_mpsv1": 10.67953872680664,
+            "imscore_clipscore": 24.392780303955078,
+            "imscore_imagereward": -0.9012519717216492,
+            "imscore_laion_aesthetic": 5.108742713928223
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -2960,7 +3323,16 @@
           "svg_chars": 2583,
           "sha256": "c2308c2225602f1f29bb90355859cccd8f028eadbb24ec01b10ffa24b0652ba5",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.97265625,
+            "imscore_hpsv21": 0.15419256687164307,
+            "imscore_pickscore": 19.1215763092041,
+            "imscore_mpsv1": 9.513826370239258,
+            "imscore_clipscore": 16.683391571044922,
+            "imscore_imagereward": -1.2985917329788208,
+            "imscore_laion_aesthetic": 5.096949577331543
+          }
         }
       },
       "lica_scores": {
@@ -3216,7 +3588,16 @@
           "svg_chars": 1417,
           "sha256": "61c473fb50dfed4e613d6984fd3845d8dfe80f548bf17b8592e427829960c876",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.94921875,
+            "imscore_hpsv21": 0.18606968224048615,
+            "imscore_pickscore": 18.993587493896484,
+            "imscore_mpsv1": 0.7442598342895508,
+            "imscore_clipscore": 22.280620574951172,
+            "imscore_imagereward": -0.2971569001674652,
+            "imscore_laion_aesthetic": 5.082038879394531
+          }
         },
         "text-to-svg-base": {
           "source": "text-to-svg-base",
@@ -3231,7 +3612,16 @@
           "svg_chars": 1922,
           "sha256": "4e6c7186574b4839950bb0a6aedd99e32818cfc7c9007d4cabb22dc0fedc5336",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96484375,
+            "imscore_hpsv21": 0.1696719229221344,
+            "imscore_pickscore": 19.66767692565918,
+            "imscore_mpsv1": 1.774417757987976,
+            "imscore_clipscore": 24.462507247924805,
+            "imscore_imagereward": -0.375338077545166,
+            "imscore_laion_aesthetic": 4.4217939376831055
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -3246,7 +3636,16 @@
           "svg_chars": 2008,
           "sha256": "d22fcd690d32db524163222aa4aebd9642df3eb50c3572f6efbb965e9a47e31a",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.20467142760753632,
+            "imscore_pickscore": 20.11710548400879,
+            "imscore_mpsv1": 3.16808819770813,
+            "imscore_clipscore": 27.309972763061523,
+            "imscore_imagereward": -0.10459574311971664,
+            "imscore_laion_aesthetic": 5.112431526184082
+          }
         }
       },
       "lica_scores": {
@@ -3502,7 +3901,16 @@
           "svg_chars": 3169,
           "sha256": "927e0b7552c2ae24bfb44e3aca513388bfcdb403213f95c72493355818c08a22",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.953125,
+            "imscore_hpsv21": 0.20638017356395721,
+            "imscore_pickscore": 20.042348861694336,
+            "imscore_mpsv1": 9.718960762023926,
+            "imscore_clipscore": 21.718891143798828,
+            "imscore_imagereward": -0.8696016669273376,
+            "imscore_laion_aesthetic": 5.385350227355957
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -3517,7 +3925,16 @@
           "svg_chars": 3793,
           "sha256": "b883569be2062466dab17bd642ec4b4e3029781ec1a08be011b739cba1911040",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.953125,
+            "imscore_hpsv21": 0.1901719868183136,
+            "imscore_pickscore": 19.632694244384766,
+            "imscore_mpsv1": 10.174101829528809,
+            "imscore_clipscore": 23.225055694580078,
+            "imscore_imagereward": -0.21166057884693146,
+            "imscore_laion_aesthetic": 5.100407123565674
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -3532,7 +3949,16 @@
           "svg_chars": 3257,
           "sha256": "b453807a54dea519c4748647704361f4366ea4b3535d7974ef173da3b95cede7",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9609375,
+            "imscore_hpsv21": 0.18995356559753418,
+            "imscore_pickscore": 20.09385871887207,
+            "imscore_mpsv1": 9.665984153747559,
+            "imscore_clipscore": 26.162450790405273,
+            "imscore_imagereward": 0.1485406905412674,
+            "imscore_laion_aesthetic": 5.424777030944824
+          }
         }
       },
       "lica_scores": {
@@ -3788,7 +4214,16 @@
           "svg_chars": 2852,
           "sha256": "6f35d96ad9d03ca6e1cc6b81b14a226d93900e59e76762d08e36842faf131c68",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.95703125,
+            "imscore_hpsv21": 0.1952868551015854,
+            "imscore_pickscore": 20.561885833740234,
+            "imscore_mpsv1": 1.0030872821807861,
+            "imscore_clipscore": 18.41802215576172,
+            "imscore_imagereward": -1.5202385187149048,
+            "imscore_laion_aesthetic": 5.1630659103393555
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -3803,7 +4238,16 @@
           "svg_chars": 3193,
           "sha256": "33c72e08205b7ffbc25ee8ec515d84ab76c0ce96a430b72ebc14ed279b29df52",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9453125,
+            "imscore_hpsv21": 0.21270745992660522,
+            "imscore_pickscore": 20.216215133666992,
+            "imscore_mpsv1": 0.4768044650554657,
+            "imscore_clipscore": 17.653392791748047,
+            "imscore_imagereward": -1.2736371755599976,
+            "imscore_laion_aesthetic": 5.4027276039123535
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -3818,7 +4262,16 @@
           "svg_chars": 2271,
           "sha256": "9da714b7ead77aa4177691b522d43ec7b8c38920a2f4332bc93a4789ea21a47b",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.94140625,
+            "imscore_hpsv21": 0.20695579051971436,
+            "imscore_pickscore": 20.53622817993164,
+            "imscore_mpsv1": 0.12022092193365097,
+            "imscore_clipscore": 21.917951583862305,
+            "imscore_imagereward": -0.5785145163536072,
+            "imscore_laion_aesthetic": 5.444843292236328
+          }
         }
       },
       "lica_scores": {
@@ -4074,7 +4527,16 @@
           "svg_chars": 4950,
           "sha256": "4f66fbd4d126e97b01a3364f34a3c76782a577659c762992a1bd24df00458e30",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.17192710936069489,
+            "imscore_pickscore": 18.731740951538086,
+            "imscore_mpsv1": 9.11008358001709,
+            "imscore_clipscore": 28.346452713012695,
+            "imscore_imagereward": -0.17127442359924316,
+            "imscore_laion_aesthetic": 4.465981960296631
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -4089,7 +4551,16 @@
           "svg_chars": 8184,
           "sha256": "c67557bbc2e4c2b00e6a3e1623a1c69ea0dc44c8fab8c54ffe9629806f3199ef",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.97265625,
+            "imscore_hpsv21": 0.19405794143676758,
+            "imscore_pickscore": 19.294918060302734,
+            "imscore_mpsv1": 8.812623977661133,
+            "imscore_clipscore": 24.542682647705078,
+            "imscore_imagereward": -0.5725350379943848,
+            "imscore_laion_aesthetic": 4.989520072937012
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -4104,7 +4575,16 @@
           "svg_chars": 5771,
           "sha256": "ec9fd7bb920281abc769a65474883c37db01172006442904a711076d6d1f083a",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.226469948887825,
+            "imscore_pickscore": 19.42688751220703,
+            "imscore_mpsv1": 10.53697681427002,
+            "imscore_clipscore": 26.877439498901367,
+            "imscore_imagereward": -0.27873533964157104,
+            "imscore_laion_aesthetic": 4.902084827423096
+          }
         }
       },
       "lica_scores": {
@@ -4360,7 +4840,16 @@
           "svg_chars": 2799,
           "sha256": "88cb4ad4e1587890b5618d7cce6d89d04f6d9499b1d96da4a1cc024bf00c1c98",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9609375,
+            "imscore_hpsv21": 0.22779777646064758,
+            "imscore_pickscore": 21.08517074584961,
+            "imscore_mpsv1": 1.2866990566253662,
+            "imscore_clipscore": 34.12419891357422,
+            "imscore_imagereward": 0.6648867130279541,
+            "imscore_laion_aesthetic": 5.389984130859375
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -4375,7 +4864,16 @@
           "svg_chars": 2380,
           "sha256": "7dca3c944e5093db34bc94a624cf98ba03f23b43643a656615c0a31e12d2be90",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96484375,
+            "imscore_hpsv21": 0.21186530590057373,
+            "imscore_pickscore": 19.86964988708496,
+            "imscore_mpsv1": 0.9220519661903381,
+            "imscore_clipscore": 27.891122817993164,
+            "imscore_imagereward": -0.7746133208274841,
+            "imscore_laion_aesthetic": 5.190958023071289
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -4390,7 +4888,16 @@
           "svg_chars": 1885,
           "sha256": "2a32b1ac28f13f4b9658ead88719cd5418b7766c74e70ae9562eb0a4ed788a0e",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.1804494857788086,
+            "imscore_pickscore": 19.63547134399414,
+            "imscore_mpsv1": -2.2195653915405273,
+            "imscore_clipscore": 27.369022369384766,
+            "imscore_imagereward": -1.4775302410125732,
+            "imscore_laion_aesthetic": 5.080562591552734
+          }
         }
       },
       "lica_scores": {
@@ -4646,7 +5153,16 @@
           "svg_chars": 1058,
           "sha256": "344dcba54ddac339e83686977a095a80b1fb15d539e0c2cf06be63ad9dc08636",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.18811513483524323,
+            "imscore_pickscore": 20.193950653076172,
+            "imscore_mpsv1": 14.88575267791748,
+            "imscore_clipscore": 27.263399124145508,
+            "imscore_imagereward": -1.2638860940933228,
+            "imscore_laion_aesthetic": 5.003847122192383
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -4661,7 +5177,16 @@
           "svg_chars": 1122,
           "sha256": "67312ceb952556b76e63ba16de077d1481e99ad98388578508db208b65dbdd24",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96875,
+            "imscore_hpsv21": 0.18405765295028687,
+            "imscore_pickscore": 19.686098098754883,
+            "imscore_mpsv1": 14.328466415405273,
+            "imscore_clipscore": 23.14464569091797,
+            "imscore_imagereward": -1.3542873859405518,
+            "imscore_laion_aesthetic": 4.651042938232422
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -4676,7 +5201,16 @@
           "svg_chars": 1461,
           "sha256": "b330eac8a66c4375292b31e2656d9a81b8369f9a07813953e1dffd8333f52e0a",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.98046875,
+            "imscore_hpsv21": 0.18814116716384888,
+            "imscore_pickscore": 19.30567741394043,
+            "imscore_mpsv1": 14.25110149383545,
+            "imscore_clipscore": 25.520971298217773,
+            "imscore_imagereward": -1.300173044204712,
+            "imscore_laion_aesthetic": 4.895740509033203
+          }
         }
       },
       "lica_scores": {
@@ -4932,7 +5466,16 @@
           "svg_chars": 1753,
           "sha256": "fecacd525c9233872ce92ff9a2db1b92c974b10f729bed321387d21faab04ce6",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.96875,
+            "imscore_hpsv21": 0.2314482480287552,
+            "imscore_pickscore": 22.17072868347168,
+            "imscore_mpsv1": 9.559465408325195,
+            "imscore_clipscore": 33.48094940185547,
+            "imscore_imagereward": 0.913580596446991,
+            "imscore_laion_aesthetic": 5.495102882385254
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -4947,7 +5490,16 @@
           "svg_chars": 3371,
           "sha256": "e3cde36f8074b4665287f64ad0f6bd2f464ee95c315d4584c908751c09c21ce2",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.97265625,
+            "imscore_hpsv21": 0.22994130849838257,
+            "imscore_pickscore": 21.80217933654785,
+            "imscore_mpsv1": 9.25239086151123,
+            "imscore_clipscore": 34.847572326660156,
+            "imscore_imagereward": 0.8313047289848328,
+            "imscore_laion_aesthetic": 5.309808731079102
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -4962,7 +5514,16 @@
           "svg_chars": 2002,
           "sha256": "0d145b661a4ce773711471fb3b56fdad0238efd029984566bd107dcd06e76d8a",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.97265625,
+            "imscore_hpsv21": 0.1988537758588791,
+            "imscore_pickscore": 20.611854553222656,
+            "imscore_mpsv1": 8.422673225402832,
+            "imscore_clipscore": 32.90864181518555,
+            "imscore_imagereward": 0.6353248357772827,
+            "imscore_laion_aesthetic": 5.266685485839844
+          }
         }
       },
       "lica_scores": {
@@ -5218,7 +5779,16 @@
           "svg_chars": 2289,
           "sha256": "623352ae09c3e7367805dbda674343c035d1c3e88c9656caa8539820f97af28a",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.17833355069160461,
+            "imscore_pickscore": 19.555736541748047,
+            "imscore_mpsv1": 10.656354904174805,
+            "imscore_clipscore": 19.0301513671875,
+            "imscore_imagereward": -1.3021836280822754,
+            "imscore_laion_aesthetic": 5.381329536437988
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -5233,7 +5803,16 @@
           "svg_chars": 3639,
           "sha256": "730cf3f0639ae280bcf4f4076db9a36b96a1d7f9a2f71f08a171ae168423b8d3",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.95703125,
+            "imscore_hpsv21": 0.2031642347574234,
+            "imscore_pickscore": 20.603084564208984,
+            "imscore_mpsv1": 12.202397346496582,
+            "imscore_clipscore": 27.33678436279297,
+            "imscore_imagereward": -0.8102407455444336,
+            "imscore_laion_aesthetic": 5.316318035125732
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -5248,7 +5827,16 @@
           "svg_chars": 3464,
           "sha256": "7dcbcbc87bc3fc5940dc625f4bacd8bb5653bf30d45e83bc786df2c35fd04e31",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.7578125,
+            "imscore_hpsv21": 0.1425265669822693,
+            "imscore_pickscore": 18.457550048828125,
+            "imscore_mpsv1": 9.144502639770508,
+            "imscore_clipscore": 18.89286994934082,
+            "imscore_imagereward": -1.0876765251159668,
+            "imscore_laion_aesthetic": 5.170837879180908
+          }
         }
       },
       "lica_scores": {
@@ -5504,7 +6092,16 @@
           "svg_chars": 1083,
           "sha256": "984cb1c705c39b9443df4bd12ca476b725162c952c54732422a12bca8bcf903b",
           "engine": "sglang",
-          "lora_enabled": false
+          "lora_enabled": false,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9609375,
+            "imscore_hpsv21": 0.21538421511650085,
+            "imscore_pickscore": 21.083072662353516,
+            "imscore_mpsv1": 9.670943260192871,
+            "imscore_clipscore": 30.81244468688965,
+            "imscore_imagereward": -0.14497919380664825,
+            "imscore_laion_aesthetic": 5.09421443939209
+          }
         },
         "text-to-svg-v2": {
           "source": "text-to-svg-v2",
@@ -5519,7 +6116,16 @@
           "svg_chars": 1909,
           "sha256": "585a5db958d99568cc57731d60300ae99a9fa5d0f0b36e6a2b8c5b5527143b20",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.9765625,
+            "imscore_hpsv21": 0.14282850921154022,
+            "imscore_pickscore": 17.66368293762207,
+            "imscore_mpsv1": 5.9622883796691895,
+            "imscore_clipscore": 19.877479553222656,
+            "imscore_imagereward": -1.6900497674942017,
+            "imscore_laion_aesthetic": 4.798501968383789
+          }
         },
         "text-to-svg-v1": {
           "source": "text-to-svg-v1",
@@ -5534,7 +6140,16 @@
           "svg_chars": 5877,
           "sha256": "01d403342abeb3312b560079738f326a482837163d0e1b99916162b15af14e0e",
           "engine": "sglang",
-          "lora_enabled": true
+          "lora_enabled": true,
+          "report_scores": {
+            "qwen8b_epoch_3": 0.97265625,
+            "imscore_hpsv21": 0.14672254025936127,
+            "imscore_pickscore": 17.36552619934082,
+            "imscore_mpsv1": 2.761242628097534,
+            "imscore_clipscore": 22.416913986206055,
+            "imscore_imagereward": -2.269569158554077,
+            "imscore_laion_aesthetic": 4.587625026702881
+          }
         }
       },
       "lica_scored_at": "2026-05-27 18:52 UTC",
@@ -5602,7 +6217,6 @@
   "report_score_order": [
     "qwen8b_epoch_3",
     "imscore_hpsv21",
-    "imscore_hpsv3",
     "imscore_pickscore",
     "imscore_mpsv1",
     "imscore_clipscore",
@@ -5612,7 +6226,6 @@
   "report_score_labels": {
     "qwen8b_epoch_3": "LicaScore",
     "imscore_hpsv21": "HPSv2.1",
-    "imscore_hpsv3": "HPSv3",
     "imscore_pickscore": "PickScore",
     "imscore_mpsv1": "MPSv1",
     "imscore_clipscore": "CLIPScore",

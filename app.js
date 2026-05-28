@@ -27,7 +27,6 @@ let ASSET_CACHE_KEY = "";
 let REPORT_SCORE_ORDER = [
   "qwen8b_epoch_3",
   "imscore_hpsv21",
-  "imscore_hpsv3",
   "imscore_pickscore",
   "imscore_mpsv1",
   "imscore_clipscore",
@@ -37,7 +36,6 @@ let REPORT_SCORE_ORDER = [
 let REPORT_SCORE_LABELS = {
   qwen8b_epoch_3: "LicaScore",
   imscore_hpsv21: "HPSv2.1",
-  imscore_hpsv3: "HPSv3",
   imscore_pickscore: "PickScore",
   imscore_mpsv1: "MPSv1",
   imscore_clipscore: "CLIPScore",
