@@ -23,6 +23,7 @@ DEFAULT_ENDPOINT = "https://model-qklg45d3.api.baseten.co/environments/productio
 BASELINE_ORDER = ["gt", "claude", "gemini", "gpt-5.2"]
 REPORT_SCORE_ORDER = [
     "qwen8b_epoch_3",
+    "lica_hps_lora_caption_epoch_2",
     "imscore_hpsv21",
     "imscore_pickscore",
     "imscore_mpsv1",
@@ -32,6 +33,7 @@ REPORT_SCORE_ORDER = [
 ]
 REPORT_SCORE_LABELS = {
     "qwen8b_epoch_3": "LicaScore",
+    "lica_hps_lora_caption_epoch_2": "LicaScore v2",
     "imscore_hpsv21": "HPSv2.1",
     "imscore_pickscore": "PickScore",
     "imscore_mpsv1": "MPSv1",

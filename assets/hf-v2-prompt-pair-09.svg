@@ -1,0 +1,73 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for a modern, glossy look -->
+    <linearGradient id="sap-yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0AB00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6A500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sap-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#005580;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sap-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0049A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003380;stop-opacity:1" />
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="1" dy="1" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Container -->
+  <circle cx="150" cy="150" r="140" fill="#f5f5f5" />
+
+  <!-- Group: Support Structure (The "Base" concept) -->
+  <g id="support-base" filter="url(#dropShadow)">
+    <!-- Central Pillar / Backbone -->
+    <rect x="145" y="100" width="10" height="140" rx="2" fill="#0049A0" opacity="0.9"/>
+    
+    <!-- Base Plate -->
+    <rect x="100" y="220" width="100" height="10" rx="5" fill="#003380"/>
+  </g>
+
+  <!-- Group: SAP Quadrants (The Shape) -->
+  <g id="sap-shape" filter="url(#dropShadow)">
+    
+    <!-- Top Left Quadrant (Yellow) -->
+    <!-- Coordinates mapped from a 100x100 bounding box centered at 150,150 -->
+    <!-- Top Point: 150,90 | Inner Top: 150,115 | Inner Left: 130,130 | Left Point: 110,130 -->
+    <path d="M150,90 L190,115 L150,130 L110,115 Z" fill="url(#sap-yellow)" />
+
+    <!-- Top Right Quadrant (Teal) -->
+    <!-- Top Point: 150,90 | Right Point: 190,115 | Inner Right: 170,130 | Inner Top: 150,115 -->
+    <path d="M150,90 L190,115 L170,130 L150,115 Z" fill="url(#sap-teal)" />
+
+    <!-- Bottom Left Quadrant (Blue) -->
+    <!-- Bottom Point: 150,210 | Left Point: 110,130 | Inner Left: 130,170 | Inner Bottom: 150,185 -->
+    <path d="M150,210 L110,130 L130,170 L150,185 Z" fill="url(#sap-blue)" />
+
+    <!-- Bottom Right Quadrant (Yellow) -->
+    <!-- Bottom Point: 150,210 | Right Point: 190,115 | Inner Right: 170,170 | Inner Bottom: 150,185 -->
+    <!-- Note: Adjusting BR to be Yellow for contrast and SAP identity -->
+    <path d="M150,210 L190,115 L170,170 L150,185 Z" fill="url(#sap-yellow)" />
+  </g>
+
+  <!-- Center Core: Represents the "Active System" or "Database" -->
+  <circle cx="150" cy="150" r="12" fill="#fff" opacity="0.9">
+    <animate attributeName="r" values="12;14;12" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Connection Lines (The "Integration" aspect) -->
+  <line x1="150" y1="90" x2="150" y2="210" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+  <line x1="110" y1="130" x2="190" y2="130" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+
+</svg>

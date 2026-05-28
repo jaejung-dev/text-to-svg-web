@@ -1,0 +1,131 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles and gradients -->
+  <defs>
+    <linearGradient id="carpetBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#660000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A0000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C41E3A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A0000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C9A227;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+    <filter id="textureNoise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.15"/>
+      </feComponentTransfer>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <!-- Group: Complete carpet tile -->
+  <g id="carpet-tile">
+    
+    <!-- Base carpet layer -->
+    <rect id="carpet-base" x="0" y="0" width="64" height="64" fill="url(#carpetBase)" rx="1" ry="1"/>
+    
+    <!-- Texture overlay for depth -->
+    <rect id="carpet-texture" x="0" y="0" width="64" height="64" fill="url(#textureNoise)" opacity="0.4"/>
+    
+    <!-- Group: Outer border pattern -->
+    <g id="border-pattern">
+      <!-- Main border frame -->
+      <rect id="border-main" x="2" y="2" width="60" height="60" fill="none" stroke="url(#goldAccent)" stroke-width="1.5" opacity="0.8"/>
+      <rect id="border-secondary" x="5" y="5" width="54" height="54" fill="none" stroke="#8B0000" stroke-width="0.5" opacity="0.6"/>
+      
+      <!-- Corner decorations -->
+      <g id="corner-decorations">
+        <!-- Top-left corner -->
+        <path d="M6,8 L6,16 C6,18 8,20 10,20 L12,18 L12,12 L8,8 Z" fill="url(#goldAccent)" opacity="0.7"/>
+        <!-- Top-right corner -->
+        <path d="M58,8 L58,16 C58,18 56,20 54,20 L52,18 L52,12 L56,8 Z" fill="url(#goldAccent)" opacity="0.7"/>
+        <!-- Bottom-left corner -->
+        <path d="M6,56 L6,48 C6,46 8,44 10,44 L12,46 L12,52 L8,56 Z" fill="url(#goldAccent)" opacity="0.7"/>
+        <!-- Bottom-right corner -->
+        <path d="M58,56 L58,48 C58,46 56,44 54,44 L52,46 L52,52 L56,56 Z" fill="url(#goldAccent)" opacity="0.7"/>
+      </g>
+      
+      <!-- Border geometric accents (cyberpunk inspired) -->
+      <g id="border-accent">
+        <circle cx="32" cy="4" r="2" fill="url(#goldAccent)" opacity="0.6"/>
+        <circle cx="32" cy="60" r="2" fill="url(#goldAccent)" opacity="0.6"/>
+        <circle cx="4" cy="32" r="2" fill="url(#goldAccent)" opacity="0.6"/>
+        <circle cx="60" cy="32" r="2" fill="url(#goldAccent)" opacity="0.6"/>
+        
+        <!-- Additional border details -->
+        <path d="M8,6 L8,10 L6,8 Z" fill="#4A0000"/>
+        <path d="M56,6 L56,10 L58,8 Z" fill="#4A0000"/>
+        <path d="M8,58 L8,54 L6,56 Z" fill="#4A0000"/>
+        <path d="M56,58 L56,54 L58,56 Z" fill="#4A0000"/>
+      </g>
+    </g>
+    
+    <!-- Group: Central medallion (Persian rug style) -->
+    <g id="central-medallion">
+      <!-- Main medallion shape -->
+      <ellipse id="medallion-outer" cx="32" cy="32" rx="18" ry="14" fill="none" stroke="url(#goldAccent)" stroke-width="1.5"/>
+      <ellipse id="medallion-inner" cx="32" cy="32" rx="14" ry="10" fill="url(#accentGradient)" stroke="#B8860B" stroke-width="1"/>
+      
+      <!-- Inner ornate pattern -->
+      <circle id="medallion-center" cx="32" cy="32" r="6" fill="url(#goldAccent)" opacity="0.4"/>
+      <circle id="medallion-center-inner" cx="32" cy="32" r="3" fill="#8B0000" opacity="0.8"/>
+      
+      <!-- Decorative elements radiating from center -->
+      <g id="medallion-radial">
+        <line x1="32" y1="18" x2="32" y2="22" stroke="url(#goldAccent)" stroke-width="1.5" opacity="0.6"/>
+        <line x1="32" y1="42" x2="32" y2="38" stroke="url(#goldAccent)" stroke-width="1.5" opacity="0.6"/>
+        <line x1="18" y1="32" x2="22" y2="32" stroke="url(#goldAccent)" stroke-width="1.5" opacity="0.6"/>
+        <line x1="42" y1="32" x2="38" y2="32" stroke="url(#goldAccent)" stroke-width="1.5" opacity="0.6"/>
+      </g>
+      
+      <!-- Persian-style corner flourishes -->
+      <path d="M20,20 Q18,22 20,24 Q22,22 20,20" fill="none" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.5"/>
+      <path d="M44,20 Q46,22 44,24 Q42,22 44,20" fill="none" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.5"/>
+      <path d="M20,44 Q18,42 20,40 Q22,42 20,44" fill="none" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.5"/>
+      <path d="M44,44 Q46,42 44,40 Q42,42 44,44" fill="none" stroke="url(#goldAccent)" stroke-width="0.8" opacity="0.5"/>
+    </g>
+    
+    <!-- Group: Secondary ornate patterns -->
+    <g id="secondary-patterns">
+      <!-- Four corner floral motifs -->
+      <g id="corner-floral">
+        <circle cx="16" cy="16" r="6" fill="none" stroke="url(#goldAccent)" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="48" cy="16" r="6" fill="none" stroke="url(#goldAccent)" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="16" cy="48" r="6" fill="none" stroke="url(#goldAccent)" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="48" cy="48" r="6" fill="none" stroke="url(#goldAccent)" stroke-width="0.5" opacity="0.3"/>
+      </g>
+      
+      <!-- Geometric cyberpunk accents -->
+      <g id="cyber-accent">
+        <rect x="12" y="12" width="8" height="8" fill="none" stroke="#4A0000" stroke-width="0.3" opacity="0.4"/>
+        <rect x="44" y="12" width="8" height="8" fill="none" stroke="#4A0000" stroke-width="0.3" opacity="0.4"/>
+        <rect x="12" y="44" width="8" height="8" fill="none" stroke="#4A0000" stroke-width="0.3" opacity="0.4"/>
+        <rect x="44" y="44" width="8" height="8" fill="none" stroke="#4A0000" stroke-width="0.3" opacity="0.4"/>
+        
+        <!-- Tech-inspired lines -->
+        <line x1="24" y1="24" x2="28" y2="24" stroke="#660000" stroke-width="0.5" opacity="0.5"/>
+        <line x1="36" y1="24" x2="40" y2="24" stroke="#660000" stroke-width="0.5" opacity="0.5"/>
+        <line x1="24" y1="40" x2="28" y2="40" stroke="#660000" stroke-width="0.5" opacity="0.5"/>
+        <line x1="36" y1="40" x2="40" y2="40" stroke="#660000" stroke-width="0.5" opacity="0.5"/>
+      </g>
+    </g>
+    
+    <!-- Group: Subtle sheen/reflection (luxury feel) -->
+    <g id="luxury-sheen" opacity="0.15">
+      <ellipse cx="32" cy="32" rx="20" ry="16" fill="white" fill-opacity="0.1"/>
+      <ellipse cx="32" cy="32" rx="15" ry="12" fill="white" fill-opacity="0.05"/>
+    </g>
+    
+    <!-- Edge wear/shadow for depth -->
+    <rect id="edge-shadow" x="0" y="0" width="64" height="64" fill="none" stroke="#200000" stroke-width="0.5" opacity="0.5"/>
+    
+  </g>
+</svg>

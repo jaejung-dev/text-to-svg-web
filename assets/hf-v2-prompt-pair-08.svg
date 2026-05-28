@@ -1,0 +1,48 @@
+<svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="150" fill="#ffffff" rx="8"/>
+  
+  <!-- Signal Waves (Communication Element) -->
+  <g id="signal-waves" opacity="0.6">
+    <path d="M 40 75 Q 55 60, 70 75 T 100 75" fill="none" stroke="url(#waveGradient)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 40 85 Q 55 70, 70 85 T 100 85" fill="none" stroke="url(#waveGradient)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 40 95 Q 55 80, 70 95 T 100 95" fill="none" stroke="url(#waveGradient)" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Bell Icon -->
+  <g id="bell-icon" transform="translate(50, 50)">
+    <path d="M 25 80 L 25 50 C 25 20, 5 10, 5 10 L 5 10 C 5 10, 15 10, 15 40 L 15 55 C 15 65, 25 75, 25 75 Z" 
+          fill="url(#bellGradient)" stroke="#1e40af" stroke-width="1"/>
+    <circle cx="25" cy="85" r="4" fill="#1d4ed8"/>
+    <path d="M 18 75 L 32 75" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  </g>
+  
+  <!-- Company Name -->
+  <g id="company-name" transform="translate(110, 95)">
+    <text font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#1e3a8a" letter-spacing="2">
+      <tspan x="0" y="0">Bell</tspan>
+    </text>
+    <text font-family="Arial, sans-serif" font-size="12" fill="#64748b" letter-spacing="8" font-weight="500">
+      <tspan x="0" y="32">COMMUNICATIONS</tspan>
+    </text>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g id="decorative-dots" opacity="0.4">
+    <circle cx="200" cy="75" r="1.5" fill="#3b82f6"/>
+    <circle cx="220" cy="65" r="1.5" fill="#3b82f6"/>
+    <circle cx="220" cy="85" r="1.5" fill="#3b82f6"/>
+    <circle cx="200" cy="85" r="1.5" fill="#3b82f6"/>
+  </g>
+</svg>

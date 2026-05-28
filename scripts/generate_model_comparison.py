@@ -42,7 +42,9 @@ MODEL_SPECS = [
 ]
 BASELINE_ORDER = ["gt", "claude", "gemini", "gpt-5.2"]
 MODEL_ORDER = [spec["id"] for spec in MODEL_SPECS]
-SVG_SOURCES = set(MODEL_ORDER)
+EXTRA_MODEL_ORDER = ["hf-v2"]
+SCORE_MODEL_ORDER = [*MODEL_ORDER, *EXTRA_MODEL_ORDER]
+SVG_SOURCES = set(SCORE_MODEL_ORDER)
 MIN_SVG_CHARS = 80
 GENERATION_PAYLOAD_OVERRIDES = {
     # Do not set stop="</svg>" for the base model: Qwen can mention the literal
@@ -262,7 +264,7 @@ def sample_candidates(sample: dict[str, Any]) -> list[dict[str, Any]]:
     for item in sample.get("baselines", []):
         if item.get("asset"):
             rows.append({"source": item["source"], "asset": item["asset"]})
-    for model_id in MODEL_ORDER:
+    for model_id in SCORE_MODEL_ORDER:
         item = sample.get("model_generations", {}).get(model_id, {})
         if item.get("status") == "ok" and item.get("asset"):
             rows.append({"source": model_id, "asset": item["asset"]})
@@ -271,7 +273,7 @@ def sample_candidates(sample: dict[str, Any]) -> list[dict[str, Any]]:
 
 def prompt_pair_candidates(pair: dict[str, Any]) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
-    for model_id in MODEL_ORDER:
+    for model_id in SCORE_MODEL_ORDER:
         item = pair.get("model_generations", {}).get(model_id, {})
         if item.get("status") == "ok" and item.get("asset"):
             rows.append({"source": model_id, "asset": item["asset"]})

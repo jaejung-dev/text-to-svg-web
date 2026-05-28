@@ -1,0 +1,37 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="28" fill="#4A90E2" opacity="0.15"/>
+  
+  <!-- Shield Background -->
+  <path d="M32 12C32 12 14 18 14 28V38C14 44 20 50 32 52C32 52 46 48 46 38V28C46 18 32 12 32 12Z" 
+        fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  
+  <!-- Lock Body -->
+  <rect x="26" y="28" width="12" height="14" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Lock Shackle -->
+  <path d="M28 28V22C28 18 31 15 34 15C37 15 40 18 40 22V28" 
+        fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Keyhole -->
+  <circle cx="32" cy="35" r="2" fill="#424242"/>
+  <rect x="31.2" y="37" width="1.6" height="4" fill="#424242"/>
+  
+  <!-- Transfer Arrows -->
+  <g stroke="#4A90E2" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <!-- Incoming Arrow (Left) -->
+    <path d="M12 30H16M16 30L14 26M16 30L14 34"/>
+    <!-- Outgoing Arrow (Right) -->
+    <path d="M52 30H48M48 30L50 26M48 30L50 34"/>
+  </g>
+  
+  <!-- DLP Protection Badge -->
+  <circle cx="42" cy="20" r="6" fill="#FF9800" stroke="#E65100" stroke-width="1.5"/>
+  <path d="M42 18V22M40 20H44" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Security Checkmark on Shield -->
+  <path d="M28 34L31 37L36 32" stroke="#2E7D32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- DLP Text Badge -->
+  <text x="32" y="57" font-family="Arial, sans-serif" font-size="5" font-weight="bold" fill="#2E7D32" text-anchor="middle">DLP</text>
+</svg>

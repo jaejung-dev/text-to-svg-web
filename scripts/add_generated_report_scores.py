@@ -17,7 +17,7 @@ DATA_PATH = PROJECT / "data" / "site-data.json"
 RENDER_DIR = PROJECT / "assets" / "generated-score-renders"
 SCORE_CACHE_PATH = RENDER_DIR / "score-cache.json"
 LICA_SCORE_VARIANT = "qwen8b_epoch_3"
-GENERATED_SOURCES = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2"]
+GENERATED_SOURCES = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2", "hf-v2"]
 VALIDATION_WINNER_SOURCES = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2", "claude", "gemini", "gpt-5.2"]
 PROMPT_PAIR_WINNER_SOURCES = GENERATED_SOURCES
 IMSCORE_IDS = [
@@ -83,6 +83,20 @@ def build_groups(data: dict[str, Any]) -> dict[str, dict[str, Any]]:
         if candidates:
             groups[pair["id"]] = {"prompt": pair["prompt"], "candidates": candidates}
     return groups
+
+
+def cached_metric_complete(
+    metric_scores: dict[str, dict[str, float]] | None,
+    groups: dict[str, dict[str, Any]],
+) -> bool:
+    if not metric_scores:
+        return False
+    for group_id, group in groups.items():
+        cached_group = metric_scores.get(group_id) or {}
+        for source in group["candidates"]:
+            if source not in cached_group:
+                return False
+    return True
 
 
 def patch_imscore_compat(add_baselines: Any) -> None:
@@ -243,7 +257,7 @@ def main() -> int:
 
     if not args.merge_cache_only:
         for spec in imscore_specs:
-            if spec["id"] in all_scores:
+            if cached_metric_complete(all_scores.get(spec["id"]), groups):
                 print(f"[score] {spec['id']} cached", flush=True)
                 continue
             gc.collect()

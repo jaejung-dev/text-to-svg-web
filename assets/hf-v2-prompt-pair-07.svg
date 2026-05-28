@@ -1,0 +1,39 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- White Background -->
+  <rect width="200" height="200" fill="#FFFFFF"/>
+  
+  <!-- Diamond/Book Compression Shape - Deep Navy -->
+  <g id="book-diamond-compression" fill="#1A237E">
+    <!-- Outer Diamond Shape (compressed book outline) -->
+    <polygon points="100,30 170,100 100,170 30,100" opacity="0.9"/>
+    
+    <!-- Inner Diamond (compressed core) -->
+    <polygon points="100,55 145,100 100,145 55,100"/>
+  </g>
+  
+  <!-- Book Pages Effect - Bright Teal -->
+  <g id="book-pages" fill="#14B8A6">
+    <!-- Left page strip -->
+    <rect x="35" y="100" width="25" height="40" rx="2"/>
+    
+    <!-- Right page strip -->
+    <rect x="140" y="100" width="25" height="40" rx="2"/>
+    
+    <!-- Book spine indicator -->
+    <rect x="95" y="100" width="10" height="40" opacity="0.8"/>
+    
+    <!-- Compressed paper lines -->
+    <rect x="55" y="80" width="90" height="4" opacity="0.6"/>
+    <rect x="55" y="90" width="90" height="4" opacity="0.6"/>
+    <rect x="55" y="110" width="90" height="4" opacity="0.6"/>
+    <rect x="55" y="120" width="90" height="4" opacity="0.6"/>
+  </g>
+  
+  <!-- Word/Refinement Accent - Deep Navy -->
+  <g id="word-accent" fill="#1A237E" opacity="0.8">
+    <circle cx="100" cy="100" r="3"/>
+    <circle cx="100" cy="75" r="2"/>
+    <circle cx="125" cy="100" r="2"/>
+    <circle cx="75" cy="100" r="2"/>
+  </g>
+</svg>

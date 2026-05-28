@@ -1,5 +1,5 @@
 const ORDER = ["gt", "text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2", "claude", "gemini", "gpt-5.2"];
-const MODEL_COMPARISON_ORDER = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2"];
+const MODEL_COMPARISON_ORDER = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2", "hf-v2"];
 const VALIDATION_WINNER_ORDER = ["text-to-svg-base", "text-to-svg-v1", "text-to-svg-v2", "claude", "gemini", "gpt-5.2"];
 
 const LABELS = {
@@ -8,6 +8,7 @@ const LABELS = {
   "text-to-svg-base": "Base",
   "text-to-svg-v1": "V1",
   "text-to-svg-v2": "V2",
+  "hf-v2": "HF-v2",
   claude: "Claude",
   gemini: "Gemini",
   "gpt-5.2": "GPT-5.2",
@@ -19,6 +20,7 @@ const BADGES = {
   "text-to-svg-base": "Base",
   "text-to-svg-v1": "V1",
   "text-to-svg-v2": "V2",
+  "hf-v2": "HF",
   claude: "Ref",
   gemini: "Ref",
   "gpt-5.2": "Ref",
@@ -27,6 +29,7 @@ const BADGES = {
 let ASSET_CACHE_KEY = "";
 let REPORT_SCORE_ORDER = [
   "qwen8b_epoch_3",
+  "lica_hps_lora_caption_epoch_2",
   "imscore_hpsv21",
   "imscore_pickscore",
   "imscore_mpsv1",
@@ -36,6 +39,7 @@ let REPORT_SCORE_ORDER = [
 ];
 let REPORT_SCORE_LABELS = {
   qwen8b_epoch_3: "LicaScore",
+  lica_hps_lora_caption_epoch_2: "LicaScore v2",
   imscore_hpsv21: "HPSv2.1",
   imscore_pickscore: "PickScore",
   imscore_mpsv1: "MPSv1",
@@ -84,11 +88,12 @@ function isGeneratedSource(source) {
   return source === "text-to-svg-production"
     || source === "text-to-svg-base"
     || source === "text-to-svg-v1"
-    || source === "text-to-svg-v2";
+    || source === "text-to-svg-v2"
+    || source === "hf-v2";
 }
 
 function isPrimaryGeneratedSource(source) {
-  return source === "text-to-svg-v2";
+  return source === "text-to-svg-v2" || source === "hf-v2";
 }
 
 function badgeClass(source) {
@@ -328,7 +333,7 @@ function renderPromptPair(pair) {
       <div class="prompt-pair-results">
         <section class="lora-mode-section">
           <div class="lora-mode-head">
-            <h3>Base / V1 / V2</h3>
+            <h3>Base / V1 / V2 / HF-v2</h3>
             <span>${escapeHtml(winners.qwen8b_epoch_3 ? `Lica winner: ${LABELS[winners.qwen8b_epoch_3.source] || winners.qwen8b_epoch_3.source}` : "Lica pending")}</span>
           </div>
           <div class="pair-outputs-grid model-comparison-grid">
