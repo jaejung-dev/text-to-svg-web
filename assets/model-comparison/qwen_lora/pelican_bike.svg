@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+  <!-- Definition of gradients -->
+  <defs>
+    <linearGradient id="bike-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#555"/>
+      <stop offset="100%" stop-color="#ccc"/>
+    </linearGradient>
+    <radialGradient id="wheel-gloss" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ground Line -->
+  <path d="M 0 300 H 500" stroke="#999" stroke-width="4" fill="none"/>
+
+  <!-- ============ THE BICYCLE ============ -->
+  <g id="bicycle">
+    <!-- Wheels -->
+    <g id="wheels">
+      <!-- Rear Wheel -->
+      <circle cx="150" cy="250" r="45" fill="#333" stroke="#222" stroke-width="8"/>
+      <circle cx="150" cy="250" r="38" fill="none" stroke="#ccc" stroke-width="3"/> <!-- Rim -->
+      <line x1="150" y1="250" x2="150" y2="205" stroke="#888" stroke-width="2"/>
+      <line x1="150" y1="250" x2="105" y2="250" stroke="#888" stroke-width="2"/>
+      <line x1="150" y1="250" x2="180" y2="250" stroke="#888" stroke-width="2"/>
+      <line x1="150" y1="250" x2="150" y2="295" stroke="#888" stroke-width="2"/>
+      
+      <!-- Front Wheel -->
+      <circle cx="350" cy="250" r="45" fill="#333" stroke="#222" stroke-width="8"/>
+      <circle cx="350" cy="250" r="38" fill="none" stroke="#ccc" stroke-width="3"/>
+      <line x1="350" y1="250" x2="350" y2="205" stroke="#888" stroke-width="2"/>
+      <line x1="350" y1="250" x2="305" y2="250" stroke="#888" stroke-width="2"/>
+      <line x1="350" y1="250" x2="395" y2="250" stroke="#888" stroke-width="2"/>
+      <line x1="350" y1="250" x2="350" y2="295" stroke="#888" stroke-width="2"/>
+    </g>
+
+    <!-- Pedal System -->
+    <circle cx="180" cy="220" r="12" fill="#333"/> <!-- Bottom Bracket -->
+    <rect x="175" y="215" width="10" height="10" fill="#555"/> <!-- Pedal Arm -->
+    
+    <!-- Frame -->
+    <path d="M 150 250 L 180 220 L 130 220 Z" fill="none" stroke="url(#bike-gradient)" stroke-width="6"/> <!-- Triangle Base -->
+    <path d="M 130 220 L 150 150 L 200 130" fill="none" stroke="url(#bike-gradient)" stroke-width="6"/> <!-- Seat Post & Back -->
+    <path d="M 200 130 L 310 130" fill="none" stroke="url(#bike-gradient)" stroke-width="6"/> <!-- Top Tube -->
+    <path d="M 310 130 L 350 250" fill="none" stroke="url(#bike-gradient)" stroke-width="6"/> <!-- Fork Head -->
+    
+    <!-- Seat -->
+    <ellipse cx="135" cy="150" rx="20" ry="6" transform="rotate(-20 135 150)" fill="#333"/>
+    <circle cx="310" cy="130" r="3" fill="#222"/> <!-- Stem Bolt -->
+
+    <!-- Handlebars -->
+    <path d="M 310 130 L 310 110 L 340 110" fill="none" stroke="#222" stroke-width="5"/>
+    <rect x="340" y="105" width="20" height="10" rx="5" fill="#222"/>
+  </g>
+
+  <!-- ============ THE PELICAN ============ -->
+  <g id="pelican" transform="translate(20, -10)">
+    
+    <!-- Right Leg (Pedaling Down) -->
+    <path d="M 140 180 L 160 220" stroke="#FFF" stroke-width="12" stroke-linecap="round"/>
+    <ellipse cx="160" cy="220" rx="15" ry="6" transform="rotate(45 160 220)" fill="#FFA500" stroke="#333" stroke-width="2"/>
+    
+    <!-- Body -->
+    <ellipse cx="130" cy="160" rx="50" ry="35" fill="#F0F8FF" stroke="#ddd" stroke-width="2"/>
+    <circle cx="135" cy="155" r="10" fill="#EAF2F8"/> <!-- Wing highlight -->
+
+    <!-- Left Wing (Tucked/Front) -->
+    <path d="M 160 150 Q 200 140 200 170 Q 180 180 160 170 Z" fill="#eee" stroke="#ddd"/>
+
+    <!-- Neck -->
+    <path d="M 160 140 Q 180 120 210 100 Q 230 80 230 95" fill="none" stroke="#F0F8FF" stroke-width="25"/>
+    <path d="M 160 140 Q 180 120 210 100 Q 230 80 230 95" fill="none" stroke="#ddd" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <circle cx="230" cy="95" r="25" fill="#F0F8FF" stroke="#ddd" stroke-width="2"/>
+    <circle cx="245" cy="90" r="3" fill="#000"/> <!-- Eye -->
+    <path d="M 240 85 L 250 95 L 240 105 Z" fill="#F0F8FF" opacity="0.6"/> <!-- Cheek shine -->
+
+    <!-- Beak & Pouch -->
+    <!-- Upper Jaw -->
+    <path d="M 230 95 L 280 95 L 280 100 L 240 100 Z" fill="#FFB347" stroke="#D98E1D" stroke-width="1"/>
+    <!-- Pouch -->
+    <path d="M 240 100 L 285 100 L 285 140 C 285 140 235 150 235 100 Z" fill="#FFD98F" stroke="#D98E1D" stroke-width="1"/>
+    <!-- Mouth line -->
+    <path d="M 280 98 L 282 138" stroke="#D98E1D" stroke-width="2" fill="none"/>
+
+    <!-- Feet (Left - hidden/back) -->
+    <path d="M 130 180 L 120 200" stroke="#FFF" stroke-width="10" stroke-linecap="round"/>
+    <ellipse cx="120" cy="200" rx="12" ry="5" transform="rotate(45 120 200)" fill="#FFA500" stroke="#333" stroke-width="2"/>
+
+    <!-- Motion Speed Lines -->
+    <g id="speed-lines" stroke="#ccc" stroke-width="3" stroke-linecap="round">
+      <line x1="50" y1="220" x2="100" y2="220" />
+      <line x1="60" y1="240" x2="110" y2="240" />
+      <line x1="50" y1="260" x2="100" y2="260" />
+    </g>
+  </g>
+</svg>

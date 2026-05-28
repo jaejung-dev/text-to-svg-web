@@ -1,0 +1,69 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+    <linearGradient id="scorp" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#3a3a3a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Circular background -->
+  <circle cx="200" cy="180" r="150" fill="url(#bg)" stroke="#c41e1e" stroke-width="4"/>
+  <circle cx="200" cy="180" r="138" fill="none" stroke="#c41e1e" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Road/highway element -->
+  <path d="M 70 250 Q 200 230 330 250" fill="none" stroke="#c41e1e" stroke-width="2" opacity="0.6"/>
+  <path d="M 110 248 L 140 246 M 180 244 L 210 243 M 250 244 L 280 246" stroke="#ffcc00" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- Scorpion body -->
+  <g fill="url(#scorp)" stroke="#000" stroke-width="1">
+    <!-- Main body segments -->
+    <ellipse cx="200" cy="195" rx="28" ry="20"/>
+    <ellipse cx="200" cy="170" rx="22" ry="15"/>
+    
+    <!-- Head -->
+    <ellipse cx="200" cy="152" rx="16" ry="11"/>
+    
+    <!-- Eyes -->
+    <circle cx="195" cy="150" r="1.8" fill="#ff0000"/>
+    <circle cx="205" cy="150" r="1.8" fill="#ff0000"/>
+    
+    <!-- Left pincer arm -->
+    <path d="M 184 152 Q 160 140 145 125 Q 140 120 142 115"/>
+    <path d="M 142 115 Q 132 105 128 95 L 135 92 Q 140 100 145 108 Z"/>
+    <path d="M 142 115 Q 148 108 156 110 L 152 118 Q 146 120 142 115 Z"/>
+    
+    <!-- Right pincer arm -->
+    <path d="M 216 152 Q 240 140 255 125 Q 260 120 258 115"/>
+    <path d="M 258 115 Q 268 105 272 95 L 265 92 Q 260 100 255 108 Z"/>
+    <path d="M 258 115 Q 252 108 244 110 L 248 118 Q 254 120 258 115 Z"/>
+    
+    <!-- Legs left -->
+    <path d="M 180 185 Q 160 195 150 210" stroke-width="2.5" fill="none"/>
+    <path d="M 178 195 Q 155 208 145 225" stroke-width="2.5" fill="none"/>
+    <path d="M 180 205 Q 160 220 155 235" stroke-width="2.5" fill="none"/>
+    
+    <!-- Legs right -->
+    <path d="M 220 185 Q 240 195 250 210" stroke-width="2.5" fill="none"/>
+    <path d="M 222 195 Q 245 208 255 225" stroke-width="2.5" fill="none"/>
+    <path d="M 220 205 Q 240 220 245 235" stroke-width="2.5" fill="none"/>
+    
+    <!-- Tail segments -->
+    <ellipse cx="200" cy="218" rx="10" ry="7"/>
+    <ellipse cx="215" cy="228" rx="8" ry="6" transform="rotate(25 215 228)"/>
+    <ellipse cx="230" cy="232" rx="7" ry="5" transform="rotate(45 230 232)"/>
+    <ellipse cx="244" cy="228" rx="6" ry="4.5" transform="rotate(70 244 228)"/>
+    <ellipse cx="254" cy="218" rx="5.5" ry="4" transform="rotate(100 254 218)"/>
+    <ellipse cx="258" cy="206" rx="5" ry="3.5" transform="rotate(125 258 206)"/>
+    
+    <!-- Stinger -->
+    <path d="M 257 200 Q 252 192 248 188 L 254 196 Z" fill="#c41e1e"/>
+  </g>
+  
+  <!-- Company name -->
+  <text x="200" y="355" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#c41e1e" letter-spacing="2">BLACK SCORPION</text>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ddd" letter-spacing="6">LOGISTICS</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cdeaff"/>
+      <stop offset="100%" stop-color="#fef6e0"/>
+    </linearGradient>
+    <linearGradient id="pot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c1633f"/>
+      <stop offset="100%" stop-color="#7a3a1f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="200" height="200" fill="url(#sky)"/>
+  <rect y="170" width="200" height="30" fill="#d9b382"/>
+
+  <!-- pot -->
+  <path d="M55 150 L65 195 L135 195 L145 150 Z" fill="url(#pot)"/>
+  <ellipse cx="100" cy="150" rx="45" ry="7" fill="#8a4523"/>
+  <ellipse cx="100" cy="150" rx="40" ry="5" fill="#3b2414"/>
+
+  <!-- plant growth group -->
+  <g transform="translate(100 150)">
+    <g style="transform-origin: 0 0;">
+      <animateTransform attributeName="transform" type="scale" 
+        values="0 0; 0 0; 1 1; 1 1; 0 0" 
+        keyTimes="0; 0.05; 0.5; 0.9; 1" 
+        dur="6s" repeatCount="indefinite"/>
+
+      <!-- main stem -->
+      <path d="M0 0 Q -2 -30 0 -60 Q 2 -90 0 -110" 
+        stroke="#3d8b3d" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- leaves -->
+      <ellipse cx="-15" cy="-40" rx="14" ry="6" fill="#4caf50" transform="rotate(-30 -15 -40)"/>
+      <ellipse cx="15" cy="-55" rx="14" ry="6" fill="#5fbf5f" transform="rotate(30 15 -55)"/>
+      <ellipse cx="-17" cy="-75" rx="15" ry="7" fill="#4caf50" transform="rotate(-25 -17 -75)"/>
+      <ellipse cx="17" cy="-90" rx="15" ry="7" fill="#5fbf5f" transform="rotate(25 17 -90)"/>
+
+      <!-- flower -->
+      <g transform="translate(0 -110)">
+        <circle cx="0" cy="-8" r="6" fill="#ff7eb9"/>
+        <circle cx="7" cy="-2" r="6" fill="#ff7eb9"/>
+        <circle cx="-7" cy="-2" r="6" fill="#ff7eb9"/>
+        <circle cx="5" cy="6" r="6" fill="#ff7eb9"/>
+        <circle cx="-5" cy="6" r="6" fill="#ff7eb9"/>
+        <circle cx="0" cy="0" r="4" fill="#ffd93d"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- sun -->
+  <circle cx="170" cy="30" r="15" fill="#ffd93d" opacity="0.85"/>
+</svg>

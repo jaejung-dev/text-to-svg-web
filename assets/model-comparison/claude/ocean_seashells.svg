@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<rect width="800" height="300" fill="#6b8caf" stroke="none"/>
+
+<!-- Scallop Shell -->
+<g transform="translate(120,150)">
+  <path d="M -70,30 Q -75,-30 0,-55 Q 75,-30 70,30 Z"/>
+  <path d="M -60,20 Q -55,-25 0,-50"/>
+  <path d="M -40,28 Q -38,-20 0,-52"/>
+  <path d="M -20,32 Q -20,-18 0,-54"/>
+  <path d="M 0,32 L 0,-54"/>
+  <path d="M 20,32 Q 20,-18 0,-54"/>
+  <path d="M 40,28 Q 38,-20 0,-52"/>
+  <path d="M 60,20 Q 55,-25 0,-50"/>
+  <path d="M -15,-50 Q 0,-62 15,-50"/>
+</g>
+
+<!-- Starfish -->
+<g transform="translate(310,150)">
+  <path d="M 0,-65 L 18,-20 L 62,-15 L 28,15 L 38,58 L 0,35 L -38,58 L -28,15 L -62,-15 L -18,-20 Z"/>
+  <circle cx="-10" cy="-5" r="2"/>
+  <circle cx="10" cy="-5" r="2"/>
+  <circle cx="0" cy="10" r="2"/>
+  <circle cx="-15" cy="20" r="2"/>
+  <circle cx="15" cy="20" r="2"/>
+  <circle cx="0" cy="-30" r="2"/>
+</g>
+
+<!-- Spiral Conch Shell -->
+<g transform="translate(500,150)">
+  <path d="M -55,40 Q -60,-20 -10,-55 Q 55,-55 60,5 Q 60,50 0,55 Q -55,55 -55,40 Z"/>
+  <path d="M -40,30 Q -45,-15 0,-42 Q 45,-40 48,5 Q 45,42 -5,42"/>
+  <path d="M -25,22 Q -30,-10 5,-30 Q 35,-25 35,5 Q 32,30 0,30"/>
+  <path d="M -12,15 Q -15,-5 8,-18 Q 22,-12 22,5 Q 20,18 5,18"/>
+  <path d="M 0,8 Q 0,-2 8,-5 Q 14,0 12,8 Q 8,10 5,8"/>
+  <path d="M -55,40 Q -45,55 -20,58 Q 10,60 30,55"/>
+</g>
+
+<!-- Whelk Shell -->
+<g transform="translate(690,150)">
+  <path d="M -40,55 Q -55,30 -45,0 Q -35,-30 -10,-50 Q 15,-60 30,-45 Q 45,-25 40,5 Q 35,35 15,55 Q -10,65 -40,55 Z"/>
+  <path d="M -30,45 Q -42,20 -32,-5 Q -22,-30 -2,-42 Q 18,-45 28,-28 Q 35,-8 30,15"/>
+  <path d="M -18,35 Q -28,15 -18,-8 Q -8,-25 8,-32 Q 20,-30 22,-15"/>
+  <path d="M -8,22 Q -15,10 -8,-5 Q 0,-15 10,-15"/>
+  <path d="M -40,55 Q -25,62 -5,60"/>
+  <path d="M -45,20 Q -52,35 -45,50"/>
+</g>
+
+</svg>

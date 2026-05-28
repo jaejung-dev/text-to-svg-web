@@ -1,0 +1,129 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="500" fill="#f0f8ff"/>
+  
+  <!-- Pot Group -->
+  <g id="pot-group">
+    <!-- Pot body -->
+    <ellipse cx="200" cy="460" rx="80" ry="20" fill="#8B4513"/>
+    <path d="M 120 460 L 130 400 L 270 400 L 280 460 Z" fill="#A0522D"/>
+    <path d="M 120 460 L 130 400 L 140 405 L 150 460 Z" fill="#8B4513"/>
+    <!-- Rim -->
+    <ellipse cx="200" cy="400" rx="80" ry="15" fill="#CD853F"/>
+    
+    <!-- Soil -->
+    <ellipse cx="200" cy="400" rx="70" ry="8" fill="#654321"/>
+  </g>
+  
+  <!-- Plant Group -->
+  <g id="plant-group" transform-origin="200 400">
+    <!-- Main Stem -->
+    <g id="stem-group">
+      <line x1="200" y1="400" x2="200" y2="400" stroke="#228B22" stroke-width="8" stroke-linecap="round">
+        <animate attributeName="y2" values="400;400;400;300;250;200;180;180" dur="8s" begin="0s" repeatCount="1"/>
+        <animate attributeName="stroke-opacity" values="0.3;0.6;1;1;1;1;1;1" dur="8s" begin="0s" repeatCount="1" additive="sum"/>
+      </line>
+    </g>
+    
+    <!-- Left Leaf - First -->
+    <g id="leaf1-left" opacity="0">
+      <ellipse cx="160" cy="420" rx="12" ry="25" fill="#228B22">
+        <animate attributeName="opacity" values="0;1;1" dur="1s" begin="1s" fill="freeze"/>
+        <animate attributeName="cy" values="420;415" dur="0.5s" begin="0.8s"/>
+      </ellipse>
+    </g>
+    
+    <!-- Right Leaf - First -->
+    <g id="leaf1-right" opacity="0">
+      <ellipse cx="240" cy="430" rx="12" ry="25" fill="#228B22" transform="scale(-1,1)">
+        <animate attributeName="opacity" values="0;1;1" dur="1s" begin="1.5s" fill="freeze"/>
+        <animate attributeName="cy" values="430;425" dur="0.5s" begin="1.3s"/>
+      </ellipse>
+    </g>
+    
+    <!-- Left Leaf - Second -->
+    <g id="leaf2-left" opacity="0">
+      <ellipse cx="170" cy="370" rx="14" ry="30" fill="#2E8B57">
+        <animate attributeName="opacity" values="0;1;1" dur="1s" begin="3s" fill="freeze"/>
+        <animate attributeName="cy" values="370;365" dur="0.5s" begin="2.8s"/>
+      </ellipse>
+    </g>
+    
+    <!-- Right Leaf - Second -->
+    <g id="leaf2-right" opacity="0">
+      <ellipse cx="230" cy="375" rx="14" ry="30" fill="#2E8B57" transform="scale(-1,1)">
+        <animate attributeName="opacity" values="0;1;1" dur="1s" begin="3.5s" fill="freeze"/>
+        <animate attributeName="cy" values="375;370" dur="0.5s" begin="3.3s"/>
+      </ellipse>
+    </g>
+    
+    <!-- Left Leaf - Third -->
+    <g id="leaf3-left" opacity="0">
+      <ellipse cx="165" cy="310" rx="16" ry="35" fill="#3CB371">
+        <animate attributeName="opacity" values="0;1;1" dur="1s" begin="5s" fill="freeze"/>
+        <animate attributeName="cy" values="310;305" dur="0.5s" begin="4.8s"/>
+      </ellipse>
+    </g>
+    
+    <!-- Right Leaf - Third -->
+    <g id="leaf3-right" opacity="0">
+      <ellipse cx="235" cy="315" rx="16" ry="35" fill="#3CB371" transform="scale(-1,1)">
+        <animate attributeName="opacity" values="0;1;1" dur="1s" begin="5.5s" fill="freeze"/>
+        <animate attributeName="cy" values="315;310" dur="0.5s" begin="5.3s"/>
+      </ellipse>
+    </g>
+    
+    <!-- Left Leaf - Fourth (smaller) -->
+    <g id="leaf4-left" opacity="0">
+      <ellipse cx="180" cy="250" rx="10" ry="22" fill="#90EE90">
+        <animate attributeName="opacity" values="0;1;1" dur="0.8s" begin="6.5s" fill="freeze"/>
+        <animate attributeName="cy" values="250;248" dur="0.4s" begin="6.3s"/>
+      </ellipse>
+    </g>
+    
+    <!-- Right Leaf - Fourth (smaller) -->
+    <g id="leaf4-right" opacity="0">
+      <ellipse cx="220" cy="252" rx="10" ry="22" fill="#90EE90" transform="scale(-1,1)">
+        <animate attributeName="opacity" values="0;1;1" dur="0.8s" begin="7s" fill="freeze"/>
+        <animate attributeName="cy" values="252;250" dur="0.4s" begin="6.8s"/>
+      </ellipse>
+    </g>
+    
+    <!-- Flower Petals -->
+    <g id="flower-group" opacity="0">
+      <!-- Center of flower -->
+      <circle cx="200" cy="180" r="12" fill="#FFD700">
+        <animate attributeName="opacity" values="0;1;1" dur="0.5s" begin="7.5s" fill="freeze"/>
+        <animate attributeName="r" values="0;12" dur="1s" begin="7.5s" fill="freeze"/>
+      </circle>
+      
+      <!-- Petal 1 -->
+      <ellipse cx="200" cy="155" rx="10" ry="20" fill="#FF69B4">
+        <animate attributeName="opacity" values="0;1;1" dur="0.5s" begin="7.7s" fill="freeze"/>
+      </ellipse>
+      
+      <!-- Petal 2 -->
+      <ellipse cx="200" cy="205" rx="10" ry="20" fill="#FF69B4">
+        <animate attributeName="opacity" values="0;1;1" dur="0.5s" begin="7.8s" fill="freeze"/>
+      </ellipse>
+      
+      <!-- Petal 3 -->
+      <ellipse cx="175" cy="180" rx="20" ry="10" fill="#FF69B4">
+        <animate attributeName="opacity" values="0;1;1" dur="0.5s" begin="7.9s" fill="freeze"/>
+      </ellipse>
+      
+      <!-- Petal 4 -->
+      <ellipse cx="225" cy="180" rx="20" ry="10" fill="#FF69B4">
+        <animate attributeName="opacity" values="0;1;1" dur="0.5s" begin="8s" fill="freeze"/>
+      </ellipse>
+    </g>
+    
+    <!-- Vines/Curls on stem -->
+    <g id="vines" opacity="0">
+      <path d="M 200 440 Q 185 450 195 460" stroke="#228B22" stroke-width="3" fill="none">
+        <animate attributeName="d" values="M 200 440 Q 185 450 195 460; M 200 400 Q 185 410 195 420" dur="8s" begin="0s"/>
+        <animate attributeName="opacity" values="0;1;1" dur="1s" begin="2s" fill="freeze"/>
+      </path>
+    </g>
+  </g>
+</svg>

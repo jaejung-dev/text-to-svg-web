@@ -1,0 +1,20 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle id="background" cx="100" cy="100" r="90" fill="#FFD54F"/>
+  
+  <!-- Face outline -->
+  <circle id="face-outline" cx="100" cy="90" r="65" fill="#FFE082"/>
+  
+  <!-- Left eye -->
+  <circle id="eye-left" cx="78" cy="80" r="8" fill="#5D4037"/>
+  
+  <!-- Right eye -->
+  <circle id="eye-right" cx="122" cy="80" r="8" fill="#5D4037"/>
+  
+  <!-- Mouth (smiling curve) -->
+  <path id="mouth" d="M 70 110 Q 100 140 130 110" stroke="#5D4037" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Eyebrows -->
+  <path id="eyebrow-left" d="M 68 68 Q 78 62 88 68" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path id="eyebrow-right" d="M 112 68 Q 122 62 132 68" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

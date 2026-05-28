@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- DNA Background Circle -->
+  <circle id="dna-background" cx="100" cy="100" r="90" fill="#f5f7fa" stroke="#e1e8ed" stroke-width="2"/>
+  
+  <!-- Left DNA Strand -->
+  <g id="dna-strand-left">
+    <path d="M65 20 Q45 40 50 60 Q55 80 65 100 Q75 120 65 140 Q55 160 70 180" 
+          fill="none" 
+          stroke="#4A90E2" 
+          stroke-width="4" 
+          stroke-linecap="round"
+          opacity="0.9"/>
+  </g>
+  
+  <!-- Right DNA Strand -->
+  <g id="dna-strand-right">
+    <path d="M135 20 Q155 40 150 60 Q145 80 135 100 Q125 120 135 140 Q145 160 130 180" 
+          fill="none" 
+          stroke="#50C878" 
+          stroke-width="4" 
+          stroke-linecap="round"
+          opacity="0.9"/>
+  </g>
+  
+  <!-- Base Pairs (Runners) -->
+  <g id="dna-base-pairs">
+    <!-- Pair 1 -->
+    <line x1="65" y1="20" x2="135" y2="20" stroke="#4A90E2" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Pair 2 -->
+    <line x1="50" y1="60" x2="150" y2="60" stroke="#50C878" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Pair 3 -->
+    <line x1="65" y1="100" x2="135" y2="100" stroke="#4A90E2" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Pair 4 -->
+    <line x1="50" y1="140" x2="150" y2="140" stroke="#50C878" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Pair 5 -->
+    <line x1="70" y1="180" x2="130" y2="180" stroke="#4A90E2" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Highlight Glow Effect -->
+  <g id="dna-glow" opacity="0.3">
+    <circle cx="65" cy="100" r="8" fill="#4A90E2"/>
+    <circle cx="135" cy="100" r="8" fill="#50C878"/>
+  </g>
+</svg>

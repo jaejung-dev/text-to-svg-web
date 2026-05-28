@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+  <defs>
+    <filter id="denim" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 .08 0" result="softNoise"/>
+      <feBlend in="SourceGraphic" in2="softNoise" mode="overlay"/>
+    </filter>
+    <style>
+      .bg { fill:#5f7fa0; }
+      .tex { fill:#6a89a8; opacity:.18; }
+      .line {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 5.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+      }
+      .thin { stroke-width: 4.2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="500"/>
+  <g filter="url(#denim)" opacity=".5">
+    <rect class="tex" width="1600" height="500"/>
+  </g>
+
+  <g class="line">
+    <!-- Scallop shell -->
+    <g transform="translate(210 255)">
+      <path d="M-95 70
+               Q-85 5 -40 -42
+               Q0 -84 0 -90
+               Q0 -84 40 -42
+               Q85 5 95 70" />
+      <path class="thin" d="M0 -88 Q-8 -12 -12 68" transform="scale(-1 1)"/>
+      <path class="thin" d="M0 -88 Q-8 -12 -12 68"/>
+      <path class="thin" d="M0 -88 Q-28 -8 -42 69"/>
+      <path class="thin" d="M0 -88 Q28 -8 42 69"/>
+      <path class="thin" d="M0 -88 Q-48 4 -68 68"/>
+      <path class="thin" d="M0 -88 Q48 4 68 68"/>
+      <path class="thin" d="M0 -88 Q-66 16 -88 68"/>
+      <path class="thin" d="M0 -88 Q66 16 88 68"/>
+      <path class="thin" d="M-18 -92 Q0 -102 18 -92"/>
+    </g>
+
+    <!-- Starfish -->
+    <g transform="translate(580 250)">
+      <path d="M0 -105
+               Q16 -62 36 -34
+               Q65 -50 102 -42
+               Q71 -18 52 8
+               Q76 34 84 74
+               Q43 56 12 46
+               Q0 78 -20 104
+               Q-28 68 -48 46
+               Q-82 58 -118 72
+               Q-93 33 -66 6
+               Q-95 -18 -112 -52
+               Q-69 -48 -36 -34
+               Q-16 -60 0 -105 Z"/>
+      <path class="thin" d="M0 -84 Q6 -48 16 -18"/>
+      <path class="thin" d="M-74 -40 Q-38 -34 -14 -24"/>
+      <path class="thin" d="M74 -30 Q40 -24 16 -10"/>
+      <path class="thin" d="M-72 46 Q-34 38 -8 28"/>
+      <path class="thin" d="M56 52 Q26 38 8 26"/>
+    </g>
+
+    <!-- Spiral conch shell -->
+    <g transform="translate(980 255)">
+      <path d="M-102 42
+               Q-72 -32 2 -60
+               Q68 -84 124 -28
+               Q154 2 142 42
+               Q130 86 76 88
+               Q36 90 16 68
+               Q0 50 8 28
+               Q18 0 50 0
+               Q70 2 78 18
+               Q86 34 78 48
+               Q70 60 54 60
+               Q36 60 24 46
+               Q12 34 14 16
+               Q20 -26 64 -54" />
+      <path class="thin" d="M-92 48 Q-36 26 6 42 Q46 58 74 88"/>
+      <path class="thin" d="M22 68 Q-8 88 -52 92"/>
+      <path class="thin" d="M54 58 Q94 44 126 16"/>
+      <path class="thin" d="M42 18
+                             Q34 6 42 -8
+                             Q52 -24 70 -18
+                             Q84 -12 88 2
+                             Q92 20 78 34
+                             Q66 46 50 42
+                             Q32 38 26 22" />
+    </g>
+
+    <!-- Whelk shell -->
+    <g transform="translate(1370 255)">
+      <path d="M-82 82
+               Q-64 22 -44 -16
+               Q-24 -54 8 -82
+               Q34 -106 62 -92
+               Q84 -82 82 -56
+               Q80 -36 60 -22
+               Q86 -8 92 22
+               Q100 62 72 92
+               Q42 122 -8 122
+               Q-46 122 -68 104
+               Q-92 86 -82 82 Z"/>
+      <path class="thin" d="M-54 102 Q-28 54 6 20 Q38 -12 60 -22"/>
+      <path class="thin" d="M-26 118 Q-2 74 28 42 Q54 14 74 6"/>
+      <path class="thin" d="M-2 120 Q16 86 40 60 Q60 40 78 34"/>
+      <path class="thin" d="M18 -62
+                             Q28 -86 50 -82
+                             Q66 -78 66 -60
+                             Q66 -44 50 -36
+                             Q32 -28 18 -38
+                             Q4 -46 10 -60
+                             Q12 -64 18 -62 Z"/>
+      <path class="thin" d="M72 92 Q44 82 16 82 Q-8 82 -28 92"/>
+    </g>
+  </g>
+</svg>

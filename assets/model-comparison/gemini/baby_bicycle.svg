@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB" />
+      <stop offset="100%" stop-color="#E0F6FF" />
+    </linearGradient>
+    <linearGradient id="grassGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#90EE90" />
+      <stop offset="100%" stop-color="#3CB371" />
+    </linearGradient>
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFA500" />
+    </radialGradient>
+    <linearGradient id="bikeFrameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4500" />
+      <stop offset="100%" stop-color="#8B0000" />
+    </linearGradient>
+    <linearGradient id="tireGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#333" />
+      <stop offset="100%" stop-color="#111" />
+    </linearGradient>
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE4C4" />
+      <stop offset="100%" stop-color="#FFDAB9" />
+    </linearGradient>
+    <linearGradient id="shirtGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#0000CD" />
+    </linearGradient>
+    <linearGradient id="pantsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF69B4" />
+      <stop offset="100%" stop-color="#C71585" />
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="5" dy="5" stdDeviation="5" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#skyGradient)" />
+  <rect y="500" width="800" height="300" fill="url(#grassGradient)" />
+
+  <!-- Sun -->
+  <circle cx="100" cy="100" r="60" fill="url(#sunGradient)" filter="url(#dropShadow)" />
+
+  <!-- Clouds -->
+  <g fill="#FFF" opacity="0.8" filter="url(#dropShadow)">
+    <path d="M 200 150 Q 220 120 250 150 Q 280 130 300 160 Q 320 150 330 180 Q 300 200 250 190 Q 200 200 180 180 Q 170 160 200 150 Z" />
+    <path d="M 500 100 Q 520 70 550 100 Q 580 80 600 110 Q 620 100 630 130 Q 600 150 550 140 Q 500 150 480 130 Q 470 110 500 100 Z" />
+    <path d="M 650 200 Q 670 170 700 200 Q 730 180 750 210 Q 770 200 780 230 Q 750 250 700 240 Q 650 250 630 230 Q 620 210 650 200 Z" />
+  </g>
+
+  <!-- Trees -->
+  <g filter="url(#dropShadow)">
+    <rect x="50" y="400" width="20" height="100" fill="#8B4513" />
+    <circle cx="60" cy="380" r="50" fill="#228B22" />
+    <circle cx="40" cy="420" r="40" fill="#006400" />
+    <circle cx="80" cy="420" r="40" fill="#32CD32" />
+
+    <rect x="700" y="350" width="30" height="150" fill="#8B4513" />
+    <circle cx="715" cy="320" r="70" fill="#228B22" />
+    <circle cx="680" cy="370" r="60" fill="#006400" />
+    <circle cx="750" cy="370" r="60" fill="#32CD32" />
+  </g>
+
+  <!-- Bicycle -->
+  <g transform="translate(200, 350)" filter="url(#dropShadow)">
+    <!-- Wheels -->
+    <circle cx="100" cy="200" r="60" fill="none" stroke="url(#tireGradient)" stroke-width="15" />
+    <circle cx="300" cy="200" r="60" fill="none" stroke="url(#tireGradient)" stroke-width="15" />
+    
+    <!-- Spokes -->
+    <g stroke="#CCC" stroke-width="2">
+      <line x1="100" y1="140" x2="100" y2="260" />
+      <line x1="40" y1="200" x2="160" y2="200" />
+      <line x1="58" y1="158" x2="142" y2="242" />
+      <line x1="142" y1="158" x2="58" y2="242" />
+
+      <line x1="300" y1="140" x2="300" y2="260" />
+      <line x1="240" y1="200" x2="360" y2="200" />
+      <line x1="258" y1="158" x2="342" y2="242" />
+      <line x1="342" y1="158" x2="258" y2="242" />
+    </g>
+
+    <!-- Frame -->
+    <path d="M 100 200 L 150 100 L 250 100 L 300 200 L 200 200 Z" fill="none" stroke="url(#bikeFrameGradient)" stroke-width="12" stroke-linejoin="round" />
+    <line x1="150" y1="100" x2="200" y2="200" stroke="url(#bikeFrameGradient)" stroke-width="12" />
+
+    <!-- Handlebars -->
+    <path d="M 250 100 L 240 50 L 280 30" fill="none" stroke="#CCC" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="280" cy="30" r="8" fill="#333" />
+
+    <!-- Seat -->
+    <path d="M 130 90 L 170 90 L 160 100 L 140 100 Z" fill="#333" />
+    <line x1="150" y1="100" x2="150" y2="120" stroke="#CCC" stroke-width="8" />
+
+    <!-- Pedals -->
+    <circle cx="200" cy="200" r="15" fill="#CCC" />
+    <line x1="200" y1="200" x2="180" y2="230" stroke="#333" stroke-width="6" stroke-linecap="round" />
+    <rect x="170" y="225" width="20" height="10" fill="#555" rx="3" />
+    <line x1="200" y1="200" x2="220" y2="170" stroke="#333" stroke-width="6" stroke-linecap="round" />
+    <rect x="210" y="165" width="20" height="10" fill="#555" rx="3" />
+  </g>
+
+  <!-- Baby -->
+  <g transform="translate(320, 300)" filter="url(#dropShadow)">
+    <!-- Body -->
+    <ellipse cx="50" cy="120" rx="35" ry="45" fill="url(#shirtGradient)" />
+    
+    <!-- Legs -->
+    <path d="M 30 150 Q 20 180 40 210" fill="none" stroke="url(#pantsGradient)" stroke-width="20" stroke-linecap="round" />
+    <path d="M 70 150 Q 80 180 60 210" fill="none" stroke="url(#pantsGradient)" stroke-width="20" stroke-linecap="round" />
+    
+    <!-- Shoes -->
+    <ellipse cx="40" cy="215" rx="15" ry="10" fill="#FFF" />
+    <ellipse cx="60" cy="215" rx="15" ry="10" fill="#FFF" />
+
+    <!-- Arms -->
+    <path d="M 20 100 Q -10 120 10 150" fill="none" stroke="url(#skinGradient)" stroke-width="15" stroke-linecap="round" />
+    <path d="M 80 100 Q 110 120 90 150" fill="none" stroke="url(#skinGradient)" stroke-width="15" stroke-linecap="round" />
+
+    <!-- Hands -->
+    <circle cx="10" cy="150" r="10" fill="url(#skinGradient)" />
+    <circle cx="90" cy="150" r="10" fill="url(#skinGradient)" />
+
+    <!-- Head -->
+    <circle cx="50" cy="50" r="45" fill="url(#skinGradient)" />
+
+    <!-- Hair -->
+    <path d="M 15 30 Q 50 -10 85 30 Q 70 10 50 10 Q 30 10 15 30 Z" fill="#8B4513" />
+    <path d="M 40 10 Q 50 -5 60 10" fill="none" stroke="#8B4513" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Eyes -->
+    <circle cx="35" cy="45" r="6" fill="#FFF" />
+    <circle cx="35" cy="45" r="3" fill="#000" />
+    <circle cx="65" cy="45" r="6" fill="#FFF" />
+    <circle cx="65" cy="45" r="3" fill="#000" />
+
+    <!-- Cheeks -->
+    <circle cx="25" cy="60" r="8" fill="#FF69B4" opacity="0.5" />
+    <circle cx="75" cy="60" r="8" fill="#FF69B4" opacity="0.5" />
+
+    <!-- Mouth -->
+    <path d="M 40 65 Q 50 75 60 65" fill="none" stroke="#FF1493" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Helmet -->
+    <path d="M 5 40 Q 50 -20 95 40 L 90 50 Q 50 10 10 50 Z" fill="#FFD700" />
+    <path d="M 10 50 Q 50 10 90 50" fill="none" stroke="#FFA500" stroke-width="4" />
+    <circle cx="50" cy="15" r="8" fill="#FF4500" />
+    
+    <!-- Helmet Strap -->
+    <path d="M 15 45 Q 50 100 85 45" fill="none" stroke="#333" stroke-width="3" />
+  </g>
+
+  <!-- Butterflies -->
+  <g fill="#FF69B4" opacity="0.8">
+    <path d="M 150 300 Q 160 290 170 300 Q 160 310 150 300 Z" />
+    <path d="M 150 300 Q 140 290 130 300 Q 140 310 150 300 Z" />
+    <path d="M 150 300 Q 160 310 170 300 Q 160 290 150 300 Z" transform="rotate(45 150 300)" />
+    <path d="M 150 300 Q 140 310 130 300 Q 140 290 150 300 Z" transform="rotate(45 150 300)" />
+  </g>
+  <g fill="#00BFFF" opacity="0.8" transform="translate(400, -100) scale(0.8)">
+    <path d="M 150 300 Q 160 290 170 300 Q 160 310 150 300 Z" />
+    <path d="M 150 300 Q 140 290 130 300 Q 140 310 150 300 Z" />
+    <path d="M 150 300 Q 160 310 170 300 Q 160 290 150 300 Z" transform="rotate(45 150 300)" />
+    <path d="M 150 300 Q 140 310 130 300 Q 140 290 150 300 Z" transform="rotate(45 150 300)" />
+  </g>
+
+  <!-- Flowers -->
+  <g transform="translate(100, 600)">
+    <line x1="0" y1="0" x2="0" y2="30" stroke="#228B22" stroke-width="3" />
+    <circle cx="0" cy="0" r="10" fill="#FFD700" />
+    <circle cx="-10" cy="-10" r="8" fill="#FFF" />
+    <circle cx="10" cy="-10" r="8" fill="#FFF" />
+    <circle cx="-10" cy="10" r="8" fill="#FFF" />
+    <circle cx="10" cy="10" r="8" fill="#FFF" />
+    <circle cx="0" cy="-15" r="8" fill="#FFF" />
+    <circle cx="0" cy="15" r="8" fill="#FFF" />
+    <circle cx="-15" cy="0" r="8" fill="#FFF" />
+    <circle cx="15" cy="0" r="8" fill="#FFF" />
+  </g>
+  <g transform="translate(650, 550) scale(0.8)">
+    <line x1="0" y1="0" x2="0" y2="30" stroke="#228B22" stroke-width="3" />
+    <circle cx="0" cy="0" r="10" fill="#FFD700" />
+    <circle cx="-10" cy="-10" r="8" fill="#FF69B4" />
+    <circle cx="10" cy="-10" r="8" fill="#FF69B4" />
+    <circle cx="-10" cy="10" r="8" fill="#FF69B4" />
+    <circle cx="10" cy="10" r="8" fill="#FF69B4" />
+    <circle cx="0" cy="-15" r="8" fill="#FF69B4" />
+    <circle cx="0" cy="15" r="8" fill="#FF69B4" />
+    <circle cx="-15" cy="0" r="8" fill="#FF69B4" />
+    <circle cx="15" cy="0" r="8" fill="#FF69B4" />
+  </g>
+  <g transform="translate(400, 650) scale(1.2)">
+    <line x1="0" y1="0" x2="0" y2="30" stroke="#228B22" stroke-width="3" />
+    <circle cx="0" cy="0" r="10" fill="#FFD700" />
+    <circle cx="-10" cy="-10" r="8" fill="#8A2BE2" />
+    <circle cx="10" cy="-10" r="8" fill="#8A2BE2" />
+    <circle cx="-10" cy="10" r="8" fill="#8A2BE2" />
+    <circle cx="10" cy="10" r="8" fill="#8A2BE2" />
+    <circle cx="0" cy="-15" r="8" fill="#8A2BE2" />
+    <circle cx="0" cy="15" r="8" fill="#8A2BE2" />
+    <circle cx="-15" cy="0" r="8" fill="#8A2BE2" />
+    <circle cx="15" cy="0" r="8" fill="#8A2BE2" />
+  </g>
+</svg>

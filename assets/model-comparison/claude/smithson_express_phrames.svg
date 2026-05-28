@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a3a6e"/>
+      <stop offset="100%" stop-color="#2d6cdf"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f7f9fc"/>
+  <g transform="translate(40,60)">
+    <rect x="0" y="10" width="70" height="50" rx="4" fill="url(#g1)"/>
+    <rect x="60" y="20" width="35" height="40" rx="3" fill="url(#g1)"/>
+    <polygon points="95,30 115,30 125,45 125,60 95,60" fill="url(#g1)"/>
+    <circle cx="25" cy="65" r="9" fill="#1a3a6e" stroke="#fff" stroke-width="2"/>
+    <circle cx="105" cy="65" r="9" fill="#1a3a6e" stroke="#fff" stroke-width="2"/>
+    <path d="M -10 40 L 50 40" stroke="#2d6cdf" stroke-width="3" stroke-linecap="round"/>
+    <path d="M -15 50 L 35 50" stroke="#2d6cdf" stroke-width="3" stroke-linecap="round"/>
+    <path d="M -5 30 L 40 30" stroke="#2d6cdf" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="115" font-family="Arial Black, sans-serif" font-size="26" font-weight="900" fill="#1a3a6e" letter-spacing="1">SMITHSON</text>
+  <text x="200" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#2d6cdf" letter-spacing="4">EXPRESS PHRAMES</text>
+  <line x1="200" y1="148" x2="385" y2="148" stroke="#2d6cdf" stroke-width="1.5"/>
+</svg>

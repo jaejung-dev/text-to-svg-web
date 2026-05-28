@@ -1,0 +1,89 @@
+<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes wave {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(-25deg); }
+        100% { transform: rotate(0deg); }
+      }
+      .waving-arm {
+        animation: wave 1s ease-in-out infinite;
+        transform-origin: 130px 90px;
+      }
+      @keyframes blink {
+        0%, 90%, 100% { transform: scaleY(1); }
+        95% { transform: scaleY(0.1); }
+      }
+      .eye {
+        animation: blink 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="150" r="80" fill="#E8F4F8"/>
+  
+  <!-- Left Arm (fixed) -->
+  <g id="left-arm">
+    <ellipse cx="70" cy="110" rx="12" ry="30" fill="#FFD4C2"/>
+    <circle cx="70" cy="140" r="10" fill="#FFD4C2"/>
+  </g>
+  
+  <!-- Body/Dress -->
+  <g id="body">
+    <ellipse cx="100" cy="160" rx="35" ry="40" fill="#4A90D9"/>
+    <path d="M 65 160 Q 100 220 135 160" fill="#4A90D9"/>
+  </g>
+  
+  <!-- Right Arm (waving) -->
+  <g class="waving-arm" id="right-arm">
+    <ellipse cx="130" cy="90" rx="12" ry="30" fill="#FFD4C2"/>
+    <circle cx="130" cy="120" r="10" fill="#FFD4C2"/>
+  </g>
+  
+  <!-- Neck -->
+  <rect x="92" y="110" width="16" height="20" fill="#FFD4C2"/>
+  
+  <!-- Head -->
+  <g id="head">
+    <!-- Face -->
+    <ellipse cx="100" cy="90" rx="35" ry="40" fill="#FFD4C2"/>
+    
+    <!-- Hair Back -->
+    <path d="M 65 80 Q 60 120 70 140 L 130 140 Q 140 120 135 80" fill="#6B4423"/>
+    
+    <!-- Hair Front -->
+    <path d="M 60 70 Q 100 40 140 70 L 140 90 Q 100 60 60 90 Z" fill="#6B4423"/>
+    
+    <!-- Ears -->
+    <ellipse cx="65" cy="95" rx="8" ry="12" fill="#FFD4C2"/>
+    <ellipse cx="135" cy="95" rx="8" ry="12" fill="#FFD4C2"/>
+  </g>
+  
+  <!-- Face Features -->
+  <g id="face">
+    <!-- Eyes -->
+    <g class="eye">
+      <circle cx="85" cy="85" r="7" fill="#333"/>
+      <circle cx="87" cy="83" r="2.5" fill="#FFF"/>
+    </g>
+    <g class="eye">
+      <circle cx="115" cy="85" r="7" fill="#333"/>
+      <circle cx="117" cy="83" r="2.5" fill="#FFF"/>
+    </g>
+    
+    <!-- Eyebrows -->
+    <path d="M 78 75 Q 85 72 92 75" stroke="#6B4423" stroke-width="2" fill="none"/>
+    <path d="M 108 75 Q 115 72 122 75" stroke="#6B4423" stroke-width="2" fill="none"/>
+    
+    <!-- Nose -->
+    <ellipse cx="100" cy="92" rx="3" ry="5" fill="#E8B49C"/>
+    
+    <!-- Mouth (smile) -->
+    <path d="M 85 110 Q 100 125 115 110" stroke="#B85C5C" stroke-width="3" fill="none"/>
+    
+    <!-- Blush -->
+    <ellipse cx="75" cy="100" rx="5" ry="3" fill="#FFAAA0" opacity="0.7"/>
+    <ellipse cx="125" cy="100" rx="5" ry="3" fill="#FFAAA0" opacity="0.7"/>
+  </g>
+</svg>

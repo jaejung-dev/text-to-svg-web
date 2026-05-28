@@ -1,0 +1,44 @@
+<svg width="200" height="250" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tree Trunk -->
+  <g id="trunk">
+    <path d="M95 220 L95 160 L100 160 L100 220 Z" fill="#8B7355"/>
+    <rect x="96" y="160" width="8" height="90" fill="#6B5744"/>
+  </g>
+  
+  <!-- Main Branches -->
+  <g id="branches">
+    <path d="M99 160 Q85 145 75 130" stroke="#6B5744" stroke-width="4" fill="none"/>
+    <path d="M101 160 Q115 145 125 130" stroke="#6B5744" stroke-width="4" fill="none"/>
+    <path d="M100 150 Q88 135 82 120" stroke="#7D6A53" stroke-width="3" fill="none"/>
+    <path d="M100 150 Q112 135 118 120" stroke="#7D6A53" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Cherry Blossom Clusters -->
+  <g id="blossoms">
+    <!-- Left side flowers -->
+    <circle cx="70" cy="125" r="8" fill="#FFB7C5"/>
+    <circle cx="78" cy="135" r="7" fill="#FFC2D2"/>
+    <circle cx="65" cy="140" r="6" fill="#FFCEDF"/>
+    
+    <!-- Top flowers -->
+    <circle cx="100" cy="115" r="9" fill="#FFB7C5"/>
+    <circle cx="92" cy="105" r="7" fill="#FFC2D2"/>
+    <circle cx="108" cy="105" r="7" fill="#FFCEDF"/>
+    
+    <!-- Right side flowers -->
+    <circle cx="130" cy="125" r="8" fill="#FFB7C5"/>
+    <circle cx="122" cy="135" r="7" fill="#FFC2D2"/>
+    <circle cx="135" cy="140" r="6" fill="#FFCEDF"/>
+    
+    <!-- Additional scattered petals -->
+    <circle cx="85" cy="155" r="5" fill="#FFB7C5"/>
+    <circle cx="115" cy="155" r="5" fill="#FFB7C5"/>
+    <circle cx="95" cy="165" r="4" fill="#FFC2D2"/>
+    <circle cx="105" cy="165" r="4" fill="#FFCEDF"/>
+    
+    <!-- Floating petals -->
+    <ellipse cx="75" cy="175" rx="3" ry="4" fill="#FFE5EC" opacity="0.7"/>
+    <ellipse cx="125" cy="170" rx="3" ry="4" fill="#FFE5EC" opacity="0.7"/>
+    <ellipse cx="98" cy="185" rx="2" ry="3" fill="#FFF0F5" opacity="0.5"/>
+  </g>
+</svg>

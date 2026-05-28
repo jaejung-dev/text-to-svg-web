@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SVG Model Scoreboard</title>
+    <link rel="stylesheet" href="model-comparison.css?v=20260529-model-comparison" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <a href="index.html">Text-to-SVG Review</a>
+        <a href="multigen.html">Multi-generation</a>
+        <a href="blue-star-scores.html">Blue star scores</a>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Prompt × Model Evaluation</p>
+          <h1>Five SVG model tracks scored with LicaScore v2.</h1>
+          <p class="lede">
+            Each prompt is shown with the generated SVG from Arrow, GPT, Gemini,
+            Claude, and Qwen, then ranked by the deployed LicaScore v2 raw cosine
+            score. Non-English prompts include the English meaning under the
+            original prompt.
+          </p>
+        </div>
+        <section id="summary" class="summary"></section>
+      </div>
+    </header>
+
+    <main>
+      <section id="model-rankings" class="model-rankings"></section>
+      <section id="prompts" class="prompt-list"></section>
+    </main>
+
+    <script src="model-comparison.js?v=20260529-model-comparison"></script>
+  </body>
+</html>

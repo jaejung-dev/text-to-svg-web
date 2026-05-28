@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#87CEEB" />
+      <stop offset="100%" stop-color="#E0F6FF" />
+    </linearGradient>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4682B4" />
+      <stop offset="100%" stop-color="#000080" />
+    </linearGradient>
+    <linearGradient id="hullGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#D3D3D3" />
+    </linearGradient>
+    <linearGradient id="sailGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F8FF" />
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="5" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#skyGradient)" />
+
+  <!-- Sun -->
+  <circle cx="650" cy="150" r="60" fill="#FFD700" filter="url(#dropShadow)" />
+
+  <!-- Clouds -->
+  <path d="M 100 100 Q 120 80 150 100 Q 180 80 200 100 Q 220 120 200 140 Q 180 160 150 140 Q 120 160 100 140 Q 80 120 100 100 Z" fill="#FFFFFF" opacity="0.8" filter="url(#dropShadow)" />
+  <path d="M 500 80 Q 520 60 550 80 Q 580 60 600 80 Q 620 100 600 120 Q 580 140 550 120 Q 520 140 500 120 Q 480 100 500 80 Z" fill="#FFFFFF" opacity="0.6" filter="url(#dropShadow)" />
+
+  <!-- Water -->
+  <rect y="400" width="800" height="200" fill="url(#waterGradient)" />
+
+  <!-- Water Ripples -->
+  <path d="M 0 420 Q 100 410 200 420 T 400 420 T 600 420 T 800 420" fill="none" stroke="#87CEEB" stroke-width="2" opacity="0.5" />
+  <path d="M 0 450 Q 150 440 300 450 T 600 450 T 800 450" fill="none" stroke="#87CEEB" stroke-width="2" opacity="0.4" />
+  <path d="M 0 480 Q 200 470 400 480 T 800 480" fill="none" stroke="#87CEEB" stroke-width="2" opacity="0.3" />
+  <path d="M 0 510 Q 250 500 500 510 T 800 510" fill="none" stroke="#87CEEB" stroke-width="2" opacity="0.2" />
+  <path d="M 0 540 Q 300 530 600 540 T 800 540" fill="none" stroke="#87CEEB" stroke-width="2" opacity="0.1" />
+
+  <!-- Sailboat -->
+  <g transform="translate(400, 380) scale(1.2)" filter="url(#dropShadow)">
+    <!-- Hull -->
+    <path d="M -150 0 L 150 0 L 100 40 L -100 40 Z" fill="url(#hullGradient)" stroke="#A9A9A9" stroke-width="2" />
+    <path d="M -150 0 L 150 0 L 100 40 L -100 40 Z" fill="none" stroke="#000000" stroke-width="1" opacity="0.2" />
+
+    <!-- Mast -->
+    <rect x="-5" y="-250" width="10" height="250" fill="#8B4513" stroke="#5C3A21" stroke-width="1" />
+
+    <!-- Main Sail -->
+    <path d="M 5 -240 L 120 -20 L 5 -20 Z" fill="url(#sailGradient)" stroke="#D3D3D3" stroke-width="1" />
+    <path d="M 5 -240 Q 60 -130 120 -20 L 5 -20 Z" fill="none" stroke="#A9A9A9" stroke-width="1" opacity="0.5" />
+
+    <!-- Jib Sail -->
+    <path d="M -5 -220 L -130 -20 L -5 -20 Z" fill="url(#sailGradient)" stroke="#D3D3D3" stroke-width="1" />
+    <path d="M -5 -220 Q -70 -120 -130 -20 L -5 -20 Z" fill="none" stroke="#A9A9A9" stroke-width="1" opacity="0.5" />
+
+    <!-- Rigging -->
+    <line x1="-5" y1="-240" x2="-140" y2="0" stroke="#A9A9A9" stroke-width="1" />
+    <line x1="5" y1="-240" x2="140" y2="0" stroke="#A9A9A9" stroke-width="1" />
+    <line x1="-5" y1="-150" x2="-100" y2="0" stroke="#A9A9A9" stroke-width="0.5" />
+    <line x1="5" y1="-150" x2="100" y2="0" stroke="#A9A9A9" stroke-width="0.5" />
+
+    <!-- Cabin -->
+    <rect x="-40" y="-20" width="80" height="20" fill="#FFFFFF" stroke="#A9A9A9" stroke-width="1" />
+    <rect x="-30" y="-15" width="15" height="10" fill="#87CEEB" stroke="#A9A9A9" stroke-width="0.5" />
+    <rect x="-5" y="-15" width="15" height="10" fill="#87CEEB" stroke="#A9A9A9" stroke-width="0.5" />
+    <rect x="20" y="-15" width="15" height="10" fill="#87CEEB" stroke="#A9A9A9" stroke-width="0.5" />
+
+    <!-- Flag -->
+    <path d="M -5 -250 L -30 -240 L -5 -230 Z" fill="#FF0000" />
+  </g>
+
+  <!-- Birds -->
+  <path d="M 200 200 Q 210 190 220 200 Q 230 190 240 200 Q 220 210 200 200 Z" fill="#000000" opacity="0.6" />
+  <path d="M 250 180 Q 260 170 270 180 Q 280 170 290 180 Q 270 190 250 180 Z" fill="#000000" opacity="0.5" />
+  <path d="M 150 220 Q 160 210 170 220 Q 180 210 190 220 Q 170 230 150 220 Z" fill="#000000" opacity="0.7" />
+
+</svg>

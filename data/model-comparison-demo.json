@@ -1,0 +1,1056 @@
+{
+  "generated_at": "2026-05-28T16:27:48.264889+00:00",
+  "source": "data_for_demo/demo-data.json",
+  "score_name": "LicaScore v2 raw cosine",
+  "models": [
+    {
+      "id": "arrow",
+      "label": "Arrow 1.1",
+      "short_label": "Arrow",
+      "count": 8,
+      "wins": 5
+    },
+    {
+      "id": "gpt",
+      "label": "GPT-5.4",
+      "short_label": "GPT",
+      "count": 15,
+      "wins": 3
+    },
+    {
+      "id": "gemini",
+      "label": "Gemini 3.1 Pro Preview",
+      "short_label": "Gemini",
+      "count": 15,
+      "wins": 3
+    },
+    {
+      "id": "claude",
+      "label": "Claude Opus 4.7",
+      "short_label": "Claude",
+      "count": 15,
+      "wins": 4
+    },
+    {
+      "id": "qwen_lora",
+      "label": "Qwen3.5-VL 3.5B",
+      "short_label": "Qwen",
+      "count": 15,
+      "wins": 0
+    }
+  ],
+  "summary": {
+    "prompts": 15,
+    "models": 5,
+    "candidates": 68,
+    "scored_candidates": 68,
+    "missing_candidates": 7,
+    "winner_counts": {
+      "arrow": 5,
+      "gpt": 3,
+      "gemini": 3,
+      "claude": 4,
+      "qwen_lora": 0
+    }
+  },
+  "prompts": [
+    {
+      "id": "dna_icon",
+      "prompt": "DNA Icon",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "ok",
+          "asset": "assets/model-comparison/arrow/dna_icon.svg",
+          "score": 0.263671875,
+          "raw_cosine": 0.263671875,
+          "logit": 26.3671875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/dna_icon.svg",
+          "score": 0.2138671875,
+          "raw_cosine": 0.2138671875,
+          "logit": 21.38671875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/dna_icon.svg",
+          "score": 0.2041015625,
+          "raw_cosine": 0.2041015625,
+          "logit": 20.41015625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/dna_icon.svg",
+          "score": 0.2255859375,
+          "raw_cosine": 0.2255859375,
+          "logit": 22.55859375,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/dna_icon.svg",
+          "score": 0.1904296875,
+          "raw_cosine": 0.1904296875,
+          "logit": 19.04296875,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.263671875
+      }
+    },
+    {
+      "id": "baby_bicycle",
+      "prompt": "a cute baby riding a bicycle",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "ok",
+          "asset": "assets/model-comparison/arrow/baby_bicycle.svg",
+          "score": 0.2353515625,
+          "raw_cosine": 0.2353515625,
+          "logit": 23.53515625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/baby_bicycle.svg",
+          "score": 0.216796875,
+          "raw_cosine": 0.216796875,
+          "logit": 21.6796875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/baby_bicycle.svg",
+          "score": 0.2138671875,
+          "raw_cosine": 0.2138671875,
+          "logit": 21.38671875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/baby_bicycle.svg",
+          "score": 0.193359375,
+          "raw_cosine": 0.193359375,
+          "logit": 19.3359375,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/baby_bicycle.svg",
+          "score": 0.1728515625,
+          "raw_cosine": 0.1728515625,
+          "logit": 17.28515625,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.2353515625
+      }
+    },
+    {
+      "id": "frog_facing_camera",
+      "prompt": "Frog facing the camera",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "ok",
+          "asset": "assets/model-comparison/arrow/frog_facing_camera.svg",
+          "score": 0.259765625,
+          "raw_cosine": 0.259765625,
+          "logit": 25.9765625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/frog_facing_camera.svg",
+          "score": 0.22265625,
+          "raw_cosine": 0.22265625,
+          "logit": 22.265625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/frog_facing_camera.svg",
+          "score": 0.2373046875,
+          "raw_cosine": 0.2373046875,
+          "logit": 23.73046875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/frog_facing_camera.svg",
+          "score": 0.2431640625,
+          "raw_cosine": 0.2431640625,
+          "logit": 24.31640625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/frog_facing_camera.svg",
+          "score": 0.2001953125,
+          "raw_cosine": 0.2001953125,
+          "logit": 20.01953125,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.259765625
+      }
+    },
+    {
+      "id": "ocean_seashells",
+      "prompt": "Minimalist white line art illustration of ocean seashells arranged in a horizontal row, including a scallop shell, starfish, spiral conch shell, and whelk shell, clean continuous outline drawing, thin smooth strokes, simple modern coastal aesthetic, evenly spaced layout, high contrast white ink on soft denim-textured blue background, minimal detail, crisp cutout edges, print-ready t-shirt graphic, transparent background version included, high resolution PNG, no watermark, no mockup",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "ok",
+          "asset": "assets/model-comparison/arrow/ocean_seashells.svg",
+          "score": 0.1416015625,
+          "raw_cosine": 0.1416015625,
+          "logit": 14.16015625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/ocean_seashells.svg",
+          "score": 0.17578125,
+          "raw_cosine": 0.17578125,
+          "logit": 17.578125,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/ocean_seashells.svg",
+          "score": 0.1826171875,
+          "raw_cosine": 0.1826171875,
+          "logit": 18.26171875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/ocean_seashells.svg",
+          "score": 0.1904296875,
+          "raw_cosine": 0.1904296875,
+          "logit": 19.04296875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/ocean_seashells.svg",
+          "score": 0.15234375,
+          "raw_cosine": 0.15234375,
+          "logit": 15.234375,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "claude",
+        "label": "Claude Opus 4.7",
+        "score": 0.1904296875
+      }
+    },
+    {
+      "id": "sakura_tree",
+      "prompt": "美しい桜の木のアイコン、繊細なピンク色の花びらとシンプルなシルエット",
+      "prompt_en": "A beautiful cherry blossom tree icon, featuring delicate pink petals and a simple silhouette.",
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "ok",
+          "asset": "assets/model-comparison/arrow/sakura_tree.svg",
+          "score": 0.15234375,
+          "raw_cosine": 0.15234375,
+          "logit": 15.234375,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/sakura_tree.svg",
+          "score": 0.1494140625,
+          "raw_cosine": 0.1494140625,
+          "logit": 14.94140625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/sakura_tree.svg",
+          "score": 0.181640625,
+          "raw_cosine": 0.181640625,
+          "logit": 18.1640625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/sakura_tree.svg",
+          "score": 0.1796875,
+          "raw_cosine": 0.1796875,
+          "logit": 17.96875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/sakura_tree.svg",
+          "score": 0.1572265625,
+          "raw_cosine": 0.1572265625,
+          "logit": 15.72265625,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "gemini",
+        "label": "Gemini 3.1 Pro Preview",
+        "score": 0.181640625
+      }
+    },
+    {
+      "id": "smiling_person",
+      "prompt": "웃는 사람 아이콘, 원형, 심플하고 친근한 얼굴",
+      "prompt_en": "Smiling Person Icon — Circular, Simple, and Friendly Face",
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "ok",
+          "asset": "assets/model-comparison/arrow/smiling_person.svg",
+          "score": 0.1904296875,
+          "raw_cosine": 0.1904296875,
+          "logit": 19.04296875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/smiling_person.svg",
+          "score": 0.1904296875,
+          "raw_cosine": 0.1904296875,
+          "logit": 19.04296875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/smiling_person.svg",
+          "score": 0.20703125,
+          "raw_cosine": 0.20703125,
+          "logit": 20.703125,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/smiling_person.svg",
+          "score": 0.197265625,
+          "raw_cosine": 0.197265625,
+          "logit": 19.7265625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/smiling_person.svg",
+          "score": 0.1962890625,
+          "raw_cosine": 0.1962890625,
+          "logit": 19.62890625,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "gemini",
+        "label": "Gemini 3.1 Pro Preview",
+        "score": 0.20703125
+      }
+    },
+    {
+      "id": "horse_logo_ar",
+      "prompt": "شعار حصان أنيق",
+      "prompt_en": "An Elegant Horse Logo",
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "ok",
+          "asset": "assets/model-comparison/arrow/horse_logo_ar.svg",
+          "score": 0.185546875,
+          "raw_cosine": 0.185546875,
+          "logit": 18.5546875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/horse_logo_ar.svg",
+          "score": 0.125,
+          "raw_cosine": 0.125,
+          "logit": 12.5,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/horse_logo_ar.svg",
+          "score": 0.15625,
+          "raw_cosine": 0.15625,
+          "logit": 15.625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/horse_logo_ar.svg",
+          "score": 0.1708984375,
+          "raw_cosine": 0.1708984375,
+          "logit": 17.08984375,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/horse_logo_ar.svg",
+          "score": 0.16796875,
+          "raw_cosine": 0.16796875,
+          "logit": 16.796875,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.185546875
+      }
+    },
+    {
+      "id": "potted_plant_growing",
+      "prompt": "Animation of a potted plant growing",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "ok",
+          "asset": "assets/model-comparison/arrow/potted_plant_growing.svg",
+          "score": 0.28125,
+          "raw_cosine": 0.28125,
+          "logit": 28.125,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/potted_plant_growing.svg",
+          "score": 0.197265625,
+          "raw_cosine": 0.197265625,
+          "logit": 19.7265625,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/potted_plant_growing.svg",
+          "score": 0.2060546875,
+          "raw_cosine": 0.2060546875,
+          "logit": 20.60546875,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/potted_plant_growing.svg",
+          "score": 0.27734375,
+          "raw_cosine": 0.27734375,
+          "logit": 27.734375,
+          "elapsed_seconds": 0.0
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/potted_plant_growing.svg",
+          "score": 0.1767578125,
+          "raw_cosine": 0.1767578125,
+          "logit": 17.67578125,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "arrow",
+        "label": "Arrow 1.1",
+        "score": 0.28125
+      }
+    },
+    {
+      "id": "black_scorpion_logistics",
+      "prompt": "I would like to design a logo for a land transport company named Black Scorpion Logistics.",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "missing",
+          "asset": null,
+          "score": null,
+          "raw_cosine": null,
+          "logit": null
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/black_scorpion_logistics.svg",
+          "score": 0.26953125,
+          "raw_cosine": 0.26953125,
+          "logit": 26.953125,
+          "elapsed_seconds": 16.144
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/black_scorpion_logistics.svg",
+          "score": 0.25,
+          "raw_cosine": 0.25,
+          "logit": 25.0,
+          "elapsed_seconds": 17.405
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/black_scorpion_logistics.svg",
+          "score": 0.2060546875,
+          "raw_cosine": 0.2060546875,
+          "logit": 20.60546875,
+          "elapsed_seconds": 20.943
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/black_scorpion_logistics.svg",
+          "score": 0.212890625,
+          "raw_cosine": 0.212890625,
+          "logit": 21.2890625,
+          "elapsed_seconds": 13.843
+        }
+      ],
+      "best": {
+        "id": "gpt",
+        "label": "GPT-5.4",
+        "score": 0.26953125
+      }
+    },
+    {
+      "id": "pelican_bike",
+      "prompt": "Draw a pelican riding a bike",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "missing",
+          "asset": null,
+          "score": null,
+          "raw_cosine": null,
+          "logit": null
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/pelican_bike.svg",
+          "score": 0.2197265625,
+          "raw_cosine": 0.2197265625,
+          "logit": 21.97265625,
+          "elapsed_seconds": 33.854
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/pelican_bike.svg",
+          "score": 0.26171875,
+          "raw_cosine": 0.26171875,
+          "logit": 26.171875,
+          "elapsed_seconds": 42.312
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/pelican_bike.svg",
+          "score": 0.267578125,
+          "raw_cosine": 0.267578125,
+          "logit": 26.7578125,
+          "elapsed_seconds": 14.705
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/pelican_bike.svg",
+          "score": 0.23046875,
+          "raw_cosine": 0.23046875,
+          "logit": 23.046875,
+          "elapsed_seconds": 43.303
+        }
+      ],
+      "best": {
+        "id": "claude",
+        "label": "Claude Opus 4.7",
+        "score": 0.267578125
+      }
+    },
+    {
+      "id": "surety_bond_helper_logo",
+      "prompt": "Create a logo for a helper platform for surety bond insurance industry.",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "missing",
+          "asset": null,
+          "score": null,
+          "raw_cosine": null,
+          "logit": null
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/surety_bond_helper_logo.svg",
+          "score": 0.134765625,
+          "raw_cosine": 0.134765625,
+          "logit": 13.4765625,
+          "elapsed_seconds": 14.412
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/surety_bond_helper_logo.svg",
+          "score": 0.1484375,
+          "raw_cosine": 0.1484375,
+          "logit": 14.84375,
+          "elapsed_seconds": 11.511
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/surety_bond_helper_logo.svg",
+          "score": 0.2421875,
+          "raw_cosine": 0.2421875,
+          "logit": 24.21875,
+          "elapsed_seconds": 9.448
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/surety_bond_helper_logo.svg",
+          "score": 0.1416015625,
+          "raw_cosine": 0.1416015625,
+          "logit": 14.16015625,
+          "elapsed_seconds": 40.134
+        }
+      ],
+      "best": {
+        "id": "claude",
+        "label": "Claude Opus 4.7",
+        "score": 0.2421875
+      }
+    },
+    {
+      "id": "smithson_express_phrames",
+      "prompt": "Create a professional logo for SMITHSON EXPRESS PHRAMES",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "missing",
+          "asset": null,
+          "score": null,
+          "raw_cosine": null,
+          "logit": null
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/smithson_express_phrames.svg",
+          "score": 0.2294921875,
+          "raw_cosine": 0.2294921875,
+          "logit": 22.94921875,
+          "elapsed_seconds": 15.006
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/smithson_express_phrames.svg",
+          "score": 0.2392578125,
+          "raw_cosine": 0.2392578125,
+          "logit": 23.92578125,
+          "elapsed_seconds": 21.082
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/smithson_express_phrames.svg",
+          "score": 0.22265625,
+          "raw_cosine": 0.22265625,
+          "logit": 22.265625,
+          "elapsed_seconds": 9.307
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/smithson_express_phrames.svg",
+          "score": 0.232421875,
+          "raw_cosine": 0.232421875,
+          "logit": 23.2421875,
+          "elapsed_seconds": 37.721
+        }
+      ],
+      "best": {
+        "id": "gemini",
+        "label": "Gemini 3.1 Pro Preview",
+        "score": 0.2392578125
+      }
+    },
+    {
+      "id": "classic_sailboat",
+      "prompt": "a classic sailboat on calm waters, clean lines.",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "missing",
+          "asset": null,
+          "score": null,
+          "raw_cosine": null,
+          "logit": null
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/classic_sailboat.svg",
+          "score": 0.177734375,
+          "raw_cosine": 0.177734375,
+          "logit": 17.7734375,
+          "elapsed_seconds": 14.778
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/classic_sailboat.svg",
+          "score": 0.2392578125,
+          "raw_cosine": 0.2392578125,
+          "logit": 23.92578125,
+          "elapsed_seconds": 21.409
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/classic_sailboat.svg",
+          "score": 0.251953125,
+          "raw_cosine": 0.251953125,
+          "logit": 25.1953125,
+          "elapsed_seconds": 17.062
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/classic_sailboat.svg",
+          "score": 0.1806640625,
+          "raw_cosine": 0.1806640625,
+          "logit": 18.06640625,
+          "elapsed_seconds": 47.16
+        }
+      ],
+      "best": {
+        "id": "claude",
+        "label": "Claude Opus 4.7",
+        "score": 0.251953125
+      }
+    },
+    {
+      "id": "cartoon_girl_waving",
+      "prompt": "an animated svg of a cartoon girl waving",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "missing",
+          "asset": null,
+          "score": null,
+          "raw_cosine": null,
+          "logit": null
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/cartoon_girl_waving.svg",
+          "score": 0.23828125,
+          "raw_cosine": 0.23828125,
+          "logit": 23.828125,
+          "elapsed_seconds": 21.838
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/cartoon_girl_waving.svg",
+          "score": 0.181640625,
+          "raw_cosine": 0.181640625,
+          "logit": 18.1640625,
+          "elapsed_seconds": 10.977
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/cartoon_girl_waving.svg",
+          "score": 0.2294921875,
+          "raw_cosine": 0.2294921875,
+          "logit": 22.94921875,
+          "elapsed_seconds": 17.916
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/cartoon_girl_waving.svg",
+          "score": 0.1572265625,
+          "raw_cosine": 0.1572265625,
+          "logit": 15.72265625,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "gpt",
+        "label": "GPT-5.4",
+        "score": 0.23828125
+      }
+    },
+    {
+      "id": "fall_leaves",
+      "prompt": "fall leaves falling, simple layered vector art, warm reds, oranges, and yellows, transparent background.",
+      "prompt_en": null,
+      "candidates": [
+        {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "short_label": "Arrow",
+          "status": "missing",
+          "asset": null,
+          "score": null,
+          "raw_cosine": null,
+          "logit": null
+        },
+        {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "short_label": "GPT",
+          "status": "ok",
+          "asset": "assets/model-comparison/gpt/fall_leaves.svg",
+          "score": 0.2119140625,
+          "raw_cosine": 0.2119140625,
+          "logit": 21.19140625,
+          "elapsed_seconds": 30.222
+        },
+        {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "short_label": "Gemini",
+          "status": "ok",
+          "asset": "assets/model-comparison/gemini/fall_leaves.svg",
+          "score": 0.1865234375,
+          "raw_cosine": 0.1865234375,
+          "logit": 18.65234375,
+          "elapsed_seconds": 28.398
+        },
+        {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "short_label": "Claude",
+          "status": "ok",
+          "asset": "assets/model-comparison/claude/fall_leaves.svg",
+          "score": 0.1884765625,
+          "raw_cosine": 0.1884765625,
+          "logit": 18.84765625,
+          "elapsed_seconds": 16.445
+        },
+        {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "short_label": "Qwen",
+          "status": "ok",
+          "asset": "assets/model-comparison/qwen_lora/fall_leaves.svg",
+          "score": 0.169921875,
+          "raw_cosine": 0.169921875,
+          "logit": 16.9921875,
+          "elapsed_seconds": 0.0
+        }
+      ],
+      "best": {
+        "id": "gpt",
+        "label": "GPT-5.4",
+        "score": 0.2119140625
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a6fb5"/>
+      <stop offset="1" stop-color="#1a3d6b"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(20,15)">
+    <path d="M40 5 L70 18 V45 C70 65 55 80 40 88 C25 80 10 65 10 45 V18 Z" fill="url(#g)" stroke="#0f2647" stroke-width="1.5"/>
+    <path d="M40 14 L62 23 V45 C62 60 52 72 40 78 C28 72 18 60 18 45 V23 Z" fill="none" stroke="#f4c14d" stroke-width="1.2" opacity="0.8"/>
+    <path d="M27 46 L36 55 L54 35" fill="none" stroke="#f4c14d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="40" cy="46" r="2" fill="none"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#1a3d6b">
+    <text x="110" y="60" font-size="28" font-weight="700" letter-spacing="0.5">SureBond</text>
+    <text x="110" y="82" font-size="11" font-weight="500" fill="#5a7796" letter-spacing="2">HELPER PLATFORM</text>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .company-name { font-family: 'Arial', sans-serif; font-weight: 700; }
+      .accent-color { fill: #2563eb; }
+      .primary-color { fill: #1e293b; }
+      .line { stroke: #2563eb; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+  
+  <!-- Background container -->
+  <g id="logo-background">
+    <rect width="400" height="200" fill="#ffffff"/>
+  </g>
+  
+  <!-- Icon element - Geometric frame symbol -->
+  <g id="logo-icon" transform="translate(40, 30)">
+    <!-- Outer square frame -->
+    <rect class="line" x="0" y="0" width="80" height="80" rx="4"/>
+    
+    <!-- Inner diagonal cross for express/dynamic feel -->
+    <line class="line" x1="0" y1="0" x2="80" y2="80" stroke="#ef4444" stroke-width="3"/>
+    <line class="line" x1="80" y1="0" x2="0" y2="80" stroke="#ef4444" stroke-width="3"/>
+    
+    <!-- Corner accent dots -->
+    <circle cx="4" cy="4" r="3" fill="#2563eb"/>
+    <circle cx="76" cy="4" r="3" fill="#2563eb"/>
+    <circle cx="4" cy="76" r="3" fill="#2563eb"/>
+    <circle cx="76" cy="76" r="3" fill="#2563eb"/>
+  </g>
+  
+  <!-- Company text section -->
+  <g id="logo-text">
+    <!-- SMITHSON (main brand name) -->
+    <text class="company-name primary-color" x="140" y="70" font-size="24">
+      SMITHSON
+    </text>
+    
+    <!-- EXPRESS (service type) -->
+    <text class="company-name accent-color" x="140" y="100" font-size="16" letter-spacing="1.5">
+      EXPRESS
+    </text>
+    
+    <!-- PHRAMES (specialty) -->
+    <text class="company-name primary-color" x="140" y="125" font-size="14" letter-spacing="2">
+      PHRAMES
+    </text>
+    
+    <!-- Decorative underline -->
+    <line class="line" x1="135" y1="135" x2="295" y2="135" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Tagline element (optional detail) -->
+  <g id="logo-tagline" opacity="0.7">
+    <text x="140" y="160" font-family="Arial" font-size="9" fill="#64748b">
+      Precision Frame Solutions
+    </text>
+  </g>
+</svg>

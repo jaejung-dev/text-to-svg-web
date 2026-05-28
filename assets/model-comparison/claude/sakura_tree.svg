@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="canopy" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffd9e7"/>
+      <stop offset="60%" stop-color="#ffb6cf"/>
+      <stop offset="100%" stop-color="#f48fb1"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Ground shadow -->
+  <ellipse cx="100" cy="185" rx="55" ry="5" fill="#e0bcd0" opacity="0.5"/>
+  
+  <!-- Trunk -->
+  <path d="M97 185 Q95 160 92 140 Q88 120 95 100 Q98 90 100 85 Q102 90 105 100 Q112 120 108 140 Q105 160 103 185 Z" fill="#5d4037"/>
+  
+  <!-- Branches -->
+  <path d="M95 110 Q80 100 70 85" stroke="#5d4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M105 110 Q120 100 130 85" stroke="#5d4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M100 95 Q95 80 90 70" stroke="#5d4037" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M100 95 Q108 82 115 72" stroke="#5d4037" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Blossom canopy clusters -->
+  <circle cx="100" cy="70" r="32" fill="url(#canopy)"/>
+  <circle cx="70" cy="80" r="22" fill="url(#canopy)"/>
+  <circle cx="130" cy="80" r="22" fill="url(#canopy)"/>
+  <circle cx="85" cy="55" r="20" fill="url(#canopy)"/>
+  <circle cx="118" cy="55" r="20" fill="url(#canopy)"/>
+  <circle cx="100" cy="45" r="18" fill="url(#canopy)"/>
+  <circle cx="60" cy="65" r="15" fill="url(#canopy)"/>
+  <circle cx="140" cy="65" r="15" fill="url(#canopy)"/>
+  
+  <!-- Individual flower petals detail -->
+  <g fill="#fff0f5" opacity="0.9">
+    <circle cx="75" cy="60" r="2"/>
+    <circle cx="95" cy="50" r="2"/>
+    <circle cx="115" cy="48" r="2"/>
+    <circle cx="125" cy="70" r="2"/>
+    <circle cx="68" cy="78" r="2"/>
+    <circle cx="105" cy="75" r="2"/>
+    <circle cx="88" cy="80" r="2"/>
+    <circle cx="135" cy="85" r="2"/>
+  </g>
+  
+  <g fill="#ec407a" opacity="0.6">
+    <circle cx="82" cy="65" r="1"/>
+    <circle cx="100" cy="60" r="1"/>
+    <circle cx="120" cy="65" r="1"/>
+    <circle cx="92" cy="75" r="1"/>
+    <circle cx="110" cy="80" r="1"/>
+  </g>
+  
+  <!-- Falling petals -->
+  <ellipse cx="45" cy="120" rx="3" ry="2" fill="#f8bbd0" transform="rotate(30 45 120)"/>
+  <ellipse cx="155" cy="130" rx="3" ry="2" fill="#f8bbd0" transform="rotate(-20 155 130)"/>
+  <ellipse cx="50" cy="155" rx="2.5" ry="1.5" fill="#f48fb1" transform="rotate(45 50 155)"/>
+  <ellipse cx="160" cy="160" rx="2.5" ry="1.5" fill="#f48fb1" transform="rotate(-40 160 160)"/>
+  <ellipse cx="35" cy="145" rx="2" ry="1.2" fill="#f8bbd0" transform="rotate(15 35 145)"/>
+  <ellipse cx="170" cy="105" rx="2" ry="1.2" fill="#f8bbd0" transform="rotate(-30 170 105)"/>
+</svg>

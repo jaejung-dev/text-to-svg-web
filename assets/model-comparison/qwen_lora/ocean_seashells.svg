@@ -1,0 +1,74 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .shell-outline { 
+        fill: none; 
+        stroke: white; 
+        stroke-width: 2; 
+        stroke-linecap: round; 
+        stroke-linejoin: round;
+      }
+      .denim-bg {
+        fill: #6B8CBE;
+      }
+    </style>
+  </defs>
+  
+  <!-- Denim textured background -->
+  <g id="background">
+    <rect class="denim-bg" x="0" y="0" width="800" height="300"/>
+    <!-- Subtle diagonal weave pattern for denim texture -->
+    <pattern id="diagonal-weave" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#5A7BAE" stroke-width="1" opacity="0.1"/>
+    </pattern>
+    <rect x="0" y="0" width="800" height="300" fill="url(#diagonal-weave)"/>
+  </g>
+  
+  <!-- Main content group with padding -->
+  <g id="shell-illustration" transform="translate(100, 50)">
+    
+    <!-- Scallop Shell (leftmost) -->
+    <g id="scallop-shell" transform="translate(0, 40)">
+      <ellipse class="shell-outline" cx="0" cy="0" rx="50" ry="35"/>
+      <!-- Radiating lines for scallop detail -->
+      <line class="shell-outline" x1="-45" y1="0" x2="-45" y2="35" opacity="0.6"/>
+      <line class="shell-outline" x1="-30" y1="-30" x2="-30" y2="35" opacity="0.6"/>
+      <line class="shell-outline" x1="-15" y1="-25" x2="-15" y2="35" opacity="0.6"/>
+      <line class="shell-outline" x1="0" y1="-30" x2="0" y2="35" opacity="0.6"/>
+      <line class="shell-outline" x1="15" y1="-25" x2="15" y2="35" opacity="0.6"/>
+      <line class="shell-outline" x1="30" y1="-30" x2="30" y2="35" opacity="0.6"/>
+      <line class="shell-outline" x1="45" y1="0" x2="45" y2="35" opacity="0.6"/>
+    </g>
+    
+    <!-- Starfish (second from left) -->
+    <g id="starfish" transform="translate(180, 40)">
+      <polygon class="shell-outline" points="0,-45 25,-25 45,-35 35,-10 55,10 45,25 55,45 35,35 25,55 0,45 -25,55 -35,35 -55,45 -45,25 -55,10 -35,-10 -25,-25 0,-45"/>
+      <!-- Inner details -->
+      <circle class="shell-outline" cx="0" cy="0" r="8" opacity="0.6"/>
+    </g>
+    
+    <!-- Spiral Conch Shell (third from left) -->
+    <g id="conch-shell" transform="translate(350, 30)">
+      <!-- Main spiral body -->
+      <path class="shell-outline" d="M -15,10 c -15,-25 0,-55 25,-55 s 35,25 35,45 c 0,25 -20,45 -35,45 c -10,0 -20,-5 -25,-15"/>
+      <!-- Spiral layers -->
+      <path class="shell-outline" d="M -20,15 c -10,-15 0,-30 15,-30 c 15,0 20,15 20,25 c 0,15 -12,25 -20,25 c -5,0 -10,-2 -15,-10"/>
+      <path class="shell-outline" d="M -25,20 c -5,-10 5,-15 15,-15 c 10,0 12,10 12,15 c 0,8 -8,12 -12,12 c -3,0 -5,-3 -8,-7"/>
+      <!-- Opening -->
+      <ellipse class="shell-outline" cx="15" cy="5" rx="10" ry="8" opacity="0.6"/>
+    </g>
+    
+    <!-- Whelk Shell (rightmost) -->
+    <g id="whelk-shell" transform="translate(530, 25)">
+      <!-- Elongated spiral shape -->
+      <path class="shell-outline" d="M -12,50 c -20,0 -30,-30 -25,-50 5,-20 25,-25 35,-15 10,10 12,25 8,40 -4,15 -12,25 -22,25 z"/>
+      <!-- Spiral ridges -->
+      <path class="shell-outline" d="M -15,45 c -12,0 -18,-18 -15,-30 3,-12 15,-15 20,-8 5,7 6,15 4,25 -2,10 -8,15 -9,15 z" opacity="0.5"/>
+      <path class="shell-outline" d="M -10,38 c -8,0 -12,-12 -10,-20 2,-8 10,-10 13,-5 3,5 4,10 3,16 -1,6 -5,9 -6,9 z" opacity="0.4"/>
+      <!-- Apex -->
+      <path class="shell-outline" d="M -5,-5 c -5,-10 5,-15 10,-8 5,7 5,15 0,18 -2,1 -5,0 -10,-3"/>
+    </g>
+    
+  </g>
+</svg>

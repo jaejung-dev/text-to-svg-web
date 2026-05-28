@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="50" cy="50" r="50" />
+    </clipPath>
+  </defs>
+
+  <circle cx="50" cy="50" r="50" fill="#4ECDC4" />
+
+  <g clip-path="url(#circleClip)">
+    <path d="M 10 100 C 10 70, 30 60, 50 60 C 70 60, 90 70, 90 100 Z" fill="#FF6B6B" />
+    
+    <path d="M 35 61 Q 50 73 65 61" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+
+    <circle cx="50" cy="45" r="19" fill="#FAD6A5" />
+
+    <path d="M 31 50 C 25 30, 40 22, 50 22 C 60 22, 75 30, 69 50 Q 60 35 50 42 Q 40 35 31 50 Z" fill="#292F36" />
+    
+    <path d="M 50 22 Q 54 14 60 16 Q 55 19 52 23 Z" fill="#292F36" />
+
+    <path d="M 39 38 Q 42 35 45 38" fill="none" stroke="#292F36" stroke-width="2" stroke-linecap="round" />
+    <path d="M 55 38 Q 58 35 61 38" fill="none" stroke="#292F36" stroke-width="2" stroke-linecap="round" />
+
+    <circle cx="37" cy="49" r="3.5" fill="#FF8C61" opacity="0.5" />
+    <circle cx="63" cy="49" r="3.5" fill="#FF8C61" opacity="0.5" />
+
+    <circle cx="42" cy="44" r="3.5" fill="#292F36" />
+    <circle cx="41" cy="43" r="1" fill="#FFFFFF" />
+    
+    <circle cx="58" cy="44" r="3.5" fill="#292F36" />
+    <circle cx="57" cy="43" r="1" fill="#FFFFFF" />
+
+    <path d="M 43 51 Q 50 58 57 51" fill="none" stroke="#292F36" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>

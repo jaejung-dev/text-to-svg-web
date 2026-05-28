@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-label="Black Scorpion Logistics logo">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6d36a"/>
+      <stop offset="100%" stop-color="#c99210"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2f2f2"/>
+      <stop offset="100%" stop-color="#9da3aa"/>
+    </linearGradient>
+    <style>
+      .bg{fill:#0b0b0d}
+      .primary{fill:url(#gold)}
+      .secondary{fill:url(#silver)}
+      .text-main{fill:#f5f5f5;font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:2px}
+      .text-sub{fill:#c9a23a;font-family:Arial,Helvetica,sans-serif;font-weight:600;letter-spacing:5px}
+      .stroke-gold{stroke:url(#gold);stroke-width:8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .stroke-silver{stroke:url(#silver);stroke-width:8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="300" rx="24"/>
+
+  <!-- Icon -->
+  <g transform="translate(70,40)">
+    <!-- speed lines / transport -->
+    <path class="stroke-silver" d="M10 115 H95"/>
+    <path class="stroke-silver" d="M0 145 H82"/>
+    <path class="stroke-silver" d="M18 175 H90"/>
+
+    <!-- scorpion body -->
+    <ellipse class="primary" cx="150" cy="145" rx="40" ry="54"/>
+    <ellipse class="primary" cx="150" cy="88" rx="28" ry="34"/>
+
+    <!-- pincers -->
+    <path class="stroke-gold" d="M127 78 C92 52,72 62,64 85 C79 80,92 86,104 101"/>
+    <path class="stroke-gold" d="M173 78 C208 52,228 62,236 85 C221 80,208 86,196 101"/>
+
+    <!-- legs -->
+    <path class="stroke-gold" d="M118 116 C92 105,72 104,50 112"/>
+    <path class="stroke-gold" d="M118 136 C90 134,66 137,42 150"/>
+    <path class="stroke-gold" d="M118 158 C90 168,66 176,44 192"/>
+
+    <path class="stroke-gold" d="M182 116 C208 105,228 104,250 112"/>
+    <path class="stroke-gold" d="M182 136 C210 134,234 137,258 150"/>
+    <path class="stroke-gold" d="M182 158 C210 168,234 176,256 192"/>
+
+    <!-- tail -->
+    <path class="stroke-gold" d="M150 194 C150 220,168 230,188 222 C209 214,218 193,210 175 C203 159,187 151,176 161 C167 170,171 183,183 186"/>
+    <path class="primary" d="M205 170 L224 160 L216 181 Z"/>
+
+    <!-- road shield -->
+    <path class="secondary" opacity="0.18" d="M150 30 L205 55 L205 130 C205 170 184 205 150 225 C116 205 95 170 95 130 L95 55 Z"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(320,92)">
+    <text class="text-main" x="0" y="44" font-size="44">BLACK SCORPION</text>
+    <text class="text-sub" x="2" y="92" font-size="26">LOGISTICS</text>
+    <rect x="0" y="108" width="360" height="6" rx="3" fill="url(#gold)"/>
+    <path class="stroke-silver" d="M0 140 H250"/>
+    <path class="stroke-silver" d="M270 140 H360"/>
+  </g>
+</svg>

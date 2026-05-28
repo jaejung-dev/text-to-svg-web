@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Logo for a helper platform for the surety bond insurance industry">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F4C81"/>
+      <stop offset="100%" stop-color="#1E88E5"/>
+    </linearGradient>
+    <linearGradient id="bondGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17A2B8"/>
+      <stop offset="100%" stop-color="#34C759"/>
+    </linearGradient>
+    <linearGradient id="helperGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4B400"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0B1F33" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="#FFFFFF"/>
+
+  <g filter="url(#shadow)">
+    <path d="M400 110
+             C500 110 596 145 660 205
+             L660 390
+             C660 540 556 650 400 706
+             C244 650 140 540 140 390
+             L140 205
+             C204 145 300 110 400 110Z"
+          fill="url(#shieldGrad)"/>
+  </g>
+
+  <path d="M400 170
+           C480 170 553 197 606 244
+           L606 386
+           C606 503 526 592 400 640
+           C274 592 194 503 194 386
+           L194 244
+           C247 197 320 170 400 170Z"
+        fill="#FFFFFF" opacity="0.96"/>
+
+  <g transform="translate(400 410)">
+    <circle cx="0" cy="0" r="150" fill="#F7FBFF"/>
+    <path d="M-78 -20
+             C-52 -74 9 -102 66 -86
+             C109 -74 139 -37 144 7
+             C149 55 122 99 81 119
+             C23 147 -46 133 -89 86
+             C-118 54 -124 12 -108 -25
+             C-93 -59 -65 -82 -35 -92"
+          fill="none"
+          stroke="url(#bondGrad)"
+          stroke-width="30"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <path d="M-36 16
+             L-4 48
+             L70 -34"
+          fill="none"
+          stroke="#0F4C81"
+          stroke-width="28"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <circle cx="-92" cy="-82" r="30" fill="url(#helperGrad)"/>
+    <path d="M-111 -82 H-73 M-92 -101 V-63"
+          stroke="#FFFFFF"
+          stroke-width="10"
+          stroke-linecap="round"/>
+
+    <path d="M-127 -11
+             C-131 57 -86 116 -22 132"
+          fill="none"
+          stroke="#C8D8E8"
+          stroke-width="10"
+          stroke-linecap="round"
+          opacity="0.8"/>
+  </g>
+
+  <path d="M255 182
+           C300 162 350 151 400 151
+           C447 151 493 161 536 180"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="12"
+        stroke-linecap="round"
+        opacity="0.45"/>
+</svg>

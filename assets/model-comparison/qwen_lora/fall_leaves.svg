@@ -1,0 +1,83 @@
+<svg width="400" height="600" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Leaf group - top left -->
+  <g id="leaf-1" transform="translate(80, 100)">
+    <defs>
+      <linearGradient id="grad-red-1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ff6b35"/>
+        <stop offset="100%" stop-color="#c73e1d"/>
+      </linearGradient>
+    </defs>
+    <path fill="url(#grad-red-1)" d="M20,-5 C35,-25 55,-10 65,10 C75,35 45,55 20,60 C-5,55 -25,35 -10,10 C0,-10 20,-15 20,-5 Z" opacity="0.9"/>
+    <path stroke="#8b3a10" d="M20,-5 L20,60 M20,10 L50,5 M20,30 L-5,25" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Leaf group - center right -->
+  <g id="leaf-2" transform="translate(280, 180)">
+    <defs>
+      <linearGradient id="grad-orange-2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffb347"/>
+        <stop offset="100%" stop-color="#f39c12"/>
+      </linearGradient>
+    </defs>
+    <path fill="url(#grad-orange-2)" d="M20,-5 C35,-20 55,-5 60,15 C65,40 35,55 15,58 C-5,55 -20,40 -15,15 C-10,-5 10,-20 20,-5 Z" opacity="0.9"/>
+    <path stroke="#995200" d="M20,-5 L20,58 M20,8 L45,5 M20,28 L-8,22" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Leaf group - bottom left -->
+  <g id="leaf-3" transform="translate(120, 280) rotate(25)">
+    <defs>
+      <linearGradient id="grad-yellow-3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffd700"/>
+        <stop offset="100%" stop-color="#ffa500"/>
+      </linearGradient>
+    </defs>
+    <path fill="url(#grad-yellow-3)" d="M20,-8 C40,-30 65,-15 70,10 C75,45 40,65 15,70 C-10,65 -30,45 -20,10 C-15,-15 10,-30 20,-8 Z" opacity="0.9"/>
+    <path stroke="#b8860b" d="M20,-8 L20,70 M20,12 L55,8 M20,35 L-5,30" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Leaf group - middle left -->
+  <g id="leaf-4" transform="translate(180, 320)">
+    <defs>
+      <linearGradient id="grad-deep-red-4" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#e74c3c"/>
+        <stop offset="100%" stop-color="#922b21"/>
+      </linearGradient>
+    </defs>
+    <path fill="url(#grad-deep-red-4)" d="M20,-3 C32,-22 52,-8 58,12 C62,35 38,52 15,56 C-8,52 -25,35 -15,12 C-12,-8 12,-20 20,-3 Z" opacity="0.9"/>
+    <path stroke="#8b0000" d="M20,-3 L20,56 M20,10 L45,7 M20,28 L-8,24" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Leaf group - upper right -->
+  <g id="leaf-5" transform="translate(320, 40)">
+    <defs>
+      <linearGradient id="grad-warm-5" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffc300"/>
+        <stop offset="100%" stop-color="#ff6347"/>
+      </linearGradient>
+    </defs>
+    <path fill="url(#grad-warm-5)" d="M20,-6 C38,-28 60,-12 68,10 C72,42 42,62 20,68 C-2,62 -20,42 -10,10 C-5,-12 15,-28 20,-6 Z" opacity="0.9"/>
+    <path stroke="#cd5c00" d="M20,-6 L20,68 M20,10 L52,5 M20,32 L-6,28" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Leaf group - lower right -->
+  <g id="leaf-6" transform="translate(260, 480) scale(-1, 1)">
+    <defs>
+      <linearGradient id="grad-apricot-6" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ff8c42"/>
+        <stop offset="100%" stop-color="#d35400"/>
+      </linearGradient>
+    </defs>
+    <path fill="url(#grad-apricot-6)" d="M20,-4 C36,-24 56,-10 62,12 C66,40 40,58 18,62 C-4,58 -22,40 -12,12 C-8,-10 14,-24 20,-4 Z" opacity="0.9"/>
+    <path stroke="#8b5a00" d="M20,-4 L20,62 M20,8 L48,4 M20,26 L-6,22" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Leaf group - floating small leaf -->
+  <g id="leaf-7" transform="translate(40, 380)">
+    <path fill="#e67e22" d="M12,-3 C20,-15 32,-5 35,5 C38,25 20,38 12,40 C4,38 -5,25 0,5 C3,-5 12,-8 12,-3 Z" opacity="0.8"/>
+  </g>
+  
+  <!-- Small accent leaf -->
+  <g id="leaf-8" transform="translate(350, 520) rotate(-15)">
+    <path fill="#ef6c00" d="M8,-2 C14,-12 24,-4 26,4 C28,20 14,30 8,32 C2,30 -6,20 0,4 C2,-4 8,-6 8,-2 Z" opacity="0.8"/>
+  </g>
+</svg>

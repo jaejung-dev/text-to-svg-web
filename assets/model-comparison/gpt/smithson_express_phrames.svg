@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">SMITHSON EXPRESS PHRAMES logo</title>
+  <desc id="desc">Professional wordmark logo for SMITHSON EXPRESS PHRAMES with a modern monogram icon and clean typography.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="420" fill="#FFFFFF"/>
+
+  <!-- Icon -->
+  <g transform="translate(70 70)">
+    <rect x="0" y="0" width="230" height="230" rx="36" fill="url(#g1)"/>
+    <rect x="22" y="22" width="186" height="186" rx="24" fill="none" stroke="#93C5FD" stroke-width="6" opacity="0.35"/>
+    
+    <!-- Stylized S -->
+    <path d="M62 78
+             C62 55, 84 42, 118 42
+             C149 42, 171 53, 181 68
+             L160 84
+             C150 73, 135 67, 117 67
+             C100 67, 91 72, 91 80
+             C91 88, 99 92, 121 96
+             C157 103, 184 115, 184 145
+             C184 174, 158 190, 119 190
+             C83 190, 56 177, 45 158
+             L68 143
+             C78 156, 96 165, 120 165
+             C141 165, 154 158, 154 148
+             C154 138, 143 133, 116 127
+             C81 120, 62 107, 62 78 Z"
+          fill="#FFFFFF"/>
+    
+    <!-- Dynamic express slash -->
+    <path d="M152 36 L191 36 L114 194 L75 194 Z" fill="url(#g2)" opacity="0.95"/>
+    
+    <!-- Frame corners -->
+    <path d="M38 54 V28 H86" fill="none" stroke="#E0F2FE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M192 176 V202 H144" fill="none" stroke="#E0F2FE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(345 118)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="800" letter-spacing="3" fill="#0F172A">SMITHSON</text>
+    <text x="0" y="68" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="8" fill="#2563EB">EXPRESS</text>
+    <text x="0" y="128" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="2" fill="#1F2937">PHRAMES</text>
+    
+    <line x1="0" y1="86" x2="410" y2="86" stroke="#BFDBFE" stroke-width="3"/>
+    
+    <text x="0" y="174" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="500" letter-spacing="2.2" fill="#64748B">MODERN • FAST • PRECISION FRAMING</text>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Smiling person icon">
+  <circle cx="64" cy="64" r="56" fill="#F4C542"/>
+  <circle cx="64" cy="50" r="22" fill="#FFF3D6"/>
+  <path d="M32 104c4-16 18-26 32-26s28 10 32 26" fill="#FFF3D6"/>
+  <circle cx="56" cy="48" r="3.5" fill="#3B2F2F"/>
+  <circle cx="72" cy="48" r="3.5" fill="#3B2F2F"/>
+  <path d="M54 58c3 4 7 6 10 6s7-2 10-6" fill="none" stroke="#3B2F2F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 36c5-4 11-6 18-6s13 2 18 6" fill="none" stroke="#D89B2B" stroke-width="6" stroke-linecap="round"/>
+</svg>

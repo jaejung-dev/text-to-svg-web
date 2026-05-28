@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Frog facing the camera">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fd35a"/>
+      <stop offset="1" stop-color="#4ea63d"/>
+    </linearGradient>
+    <linearGradient id="bellyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9f2a3"/>
+      <stop offset="1" stop-color="#b9de73"/>
+    </linearGradient>
+    <radialGradient id="eyeShine" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g stroke="#2d6b28" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Back legs -->
+    <path fill="#5cb447" d="M120 320c-34 18-54 53-50 88 3 24 25 35 49 24 22-10 35-35 40-61 5-24 0-42-13-51-8-5-17-5-26 0z"/>
+    <path fill="#5cb447" d="M392 320c34 18 54 53 50 88-3 24-25 35-49 24-22-10-35-35-40-61-5-24 0-42 13-51 8-5 17-5 26 0z"/>
+
+    <!-- Feet -->
+    <path fill="#7fd35a" d="M97 424c-20 5-35 17-40 31 23 8 44 4 61-7 10-7 19-15 28-16-11-12-28-15-49-8z"/>
+    <path fill="#7fd35a" d="M415 424c20 5 35 17 40 31-23 8-44 4-61-7-10-7-19-15-28-16 11-12 28-15 49-8z"/>
+
+    <!-- Body -->
+    <ellipse cx="256" cy="290" rx="142" ry="128" fill="url(#bodyGrad)"/>
+    <ellipse cx="256" cy="318" rx="84" ry="82" fill="url(#bellyGrad)"/>
+
+    <!-- Arms -->
+    <path fill="#6bc14f" d="M150 276c-31 8-52 29-57 56-5 26 13 43 36 37 22-6 36-27 44-48 7-18 16-31 30-42-17-8-34-9-53-3z"/>
+    <path fill="#6bc14f" d="M362 276c31 8 52 29 57 56 5 26-13 43-36 37-22-6-36-27-44-48-7-18-16-31-30-42 17-8 34-9 53-3z"/>
+
+    <!-- Hands -->
+    <path fill="#88db65" d="M102 336c-12 4-23 13-30 24 13 8 27 10 39 7 10-3 17-10 24-18-9-10-20-15-33-13z"/>
+    <path fill="#88db65" d="M410 336c12 4 23 13 30 24-13 8-27 10-39 7-10-3-17-10-24-18 9-10 20-15 33-13z"/>
+
+    <!-- Head -->
+    <ellipse cx="256" cy="210" rx="128" ry="102" fill="url(#bodyGrad)"/>
+
+    <!-- Eyes -->
+    <g>
+      <ellipse cx="188" cy="148" rx="42" ry="48" fill="#7fd35a"/>
+      <ellipse cx="324" cy="148" rx="42" ry="48" fill="#7fd35a"/>
+      <ellipse cx="188" cy="158" rx="28" ry="34" fill="#ffffff"/>
+      <ellipse cx="324" cy="158" rx="28" ry="34" fill="#ffffff"/>
+      <ellipse cx="188" cy="166" rx="12" ry="18" fill="#121212"/>
+      <ellipse cx="324" cy="166" rx="12" ry="18" fill="#121212"/>
+      <ellipse cx="183" cy="158" rx="10" ry="10" fill="url(#eyeShine)" stroke="none"/>
+      <ellipse cx="319" cy="158" rx="10" ry="10" fill="url(#eyeShine)" stroke="none"/>
+    </g>
+
+    <!-- Cheeks -->
+    <ellipse cx="170" cy="236" rx="22" ry="16" fill="#78cb59" opacity="0.75"/>
+    <ellipse cx="342" cy="236" rx="22" ry="16" fill="#78cb59" opacity="0.75"/>
+
+    <!-- Nostrils -->
+    <ellipse cx="234" cy="220" rx="4" ry="6" fill="#2d6b28" stroke="none"/>
+    <ellipse cx="278" cy="220" rx="4" ry="6" fill="#2d6b28" stroke="none"/>
+
+    <!-- Mouth -->
+    <path d="M198 252c16 18 42 28 58 28s42-10 58-28" fill="none"/>
+    <path d="M228 272c8 7 18 11 28 11s20-4 28-11" fill="none" stroke-width="4"/>
+
+    <!-- Belly folds -->
+    <path d="M210 274c-10 12-16 28-16 45" fill="none" stroke="#8fbf56" stroke-width="4"/>
+    <path d="M302 274c10 12 16 28 16 45" fill="none" stroke="#8fbf56" stroke-width="4"/>
+  </g>
+</svg>
