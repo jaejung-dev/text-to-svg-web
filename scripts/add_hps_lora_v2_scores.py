@@ -24,6 +24,13 @@ DEFAULT_CHECKPOINT = Path(
 LICA_SCORE_SRC = Path("/home/ubuntu/ml-platform/other-projects/lica-score/src")
 
 
+def hps_lora_logit_scale(model: Any) -> float:
+    logit_scale = getattr(getattr(model, "model", None), "logit_scale", None)
+    if logit_scale is None:
+        return 1.0
+    return float(logit_scale.detach().float().exp().cpu().item())
+
+
 def force_local_caches() -> None:
     cache_root = Path("/mnt/local")
     cache_env = {
@@ -168,7 +175,10 @@ def score_rows(
             prompts,
             device=device,
             precision=precision,
-        ).tolist()
+        )
+        # score_candidate_batch returns HPS/OpenCLIP raw logits. Store the
+        # unscaled embedding dot product so the displayed score matches HPSv2.
+        scores = (scores / hps_lora_logit_scale(model)).tolist()
         for (item, _prompt, _path), score in zip(chunk, scores):
             report_scores = dict(item.get("report_scores") or {})
             report_scores[LICA_SCORE_V2_ID] = float(score)

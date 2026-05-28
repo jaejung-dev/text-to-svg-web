@@ -209,6 +209,13 @@ def load_lica_score_v2_model(checkpoint: Path, device: torch.device) -> tuple[An
     return load_hps_lora_model(checkpoint, device)
 
 
+def hps_lora_logit_scale(model: Any) -> float:
+    logit_scale = getattr(getattr(model, "model", None), "logit_scale", None)
+    if logit_scale is None:
+        return 1.0
+    return float(logit_scale.detach().float().exp().cpu().item())
+
+
 @torch.no_grad()
 def score_lica_v2(
     checkpoint: Path,
@@ -248,7 +255,8 @@ def score_lica_v2(
             batch_prompts,
             device=device,
             precision=precision,
-        ).tolist()
+        )
+        values = (values / hps_lora_logit_scale(model)).tolist()
         for (candidate_id, _prompt, _path), value in zip(chunk, values):
             scores[candidate_id] = float(value)
     return scores

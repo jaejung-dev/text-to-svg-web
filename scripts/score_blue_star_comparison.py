@@ -152,6 +152,13 @@ def load_lica_v2_model(checkpoint: Path, device: torch.device) -> tuple[Any, str
     return load_hps_lora_model(checkpoint, device)
 
 
+def hps_lora_logit_scale(model: Any) -> float:
+    logit_scale = getattr(getattr(model, "model", None), "logit_scale", None)
+    if logit_scale is None:
+        return 1.0
+    return float(logit_scale.detach().float().exp().cpu().item())
+
+
 @torch.no_grad()
 def score_lica_v2(candidates: list[dict[str, Any]], checkpoint: Path) -> dict[str, float]:
     sys.path.insert(0, "/home/ubuntu/ml-platform/other-projects/lica-score/src")
@@ -176,7 +183,8 @@ def score_lica_v2(candidates: list[dict[str, Any]], checkpoint: Path) -> dict[st
         [PROMPT] * len(candidates),
         device=device,
         precision=precision,
-    ).tolist()
+    )
+    values = (values / hps_lora_logit_scale(model)).tolist()
     return {candidate["id"]: float(value) for candidate, value in zip(candidates, values)}
 
 

@@ -31,7 +31,7 @@
             "imscore_clipscore": 24.241907119750977,
             "imscore_imagereward": -0.5461624264717102,
             "imscore_laion_aesthetic": 4.794168472290039,
-            "lica_hps_lora_caption_epoch_2": 24.5
+            "lica_hps_lora_caption_epoch_2": 0.24499998433203649
           }
         },
         {
@@ -46,7 +46,7 @@
             "imscore_clipscore": 22.095670700073242,
             "imscore_imagereward": -1.2863401174545288,
             "imscore_laion_aesthetic": 4.74201774597168,
-            "lica_hps_lora_caption_epoch_2": 15.0625
+            "lica_hps_lora_caption_epoch_2": 0.15062499036739999
           }
         },
         {
@@ -61,7 +61,7 @@
             "imscore_clipscore": 20.928897857666016,
             "imscore_imagereward": -0.6336275339126587,
             "imscore_laion_aesthetic": 4.425525188446045,
-            "lica_hps_lora_caption_epoch_2": 17.5
+            "lica_hps_lora_caption_epoch_2": 0.1749999888085975
           }
         },
         {
@@ -76,7 +76,7 @@
             "imscore_clipscore": 23.318706512451172,
             "imscore_imagereward": 0.11580193042755127,
             "imscore_laion_aesthetic": 4.929321765899658,
-            "lica_hps_lora_caption_epoch_2": 20.75
+            "lica_hps_lora_caption_epoch_2": 0.20749998673019418
           }
         }
       ],
@@ -103,7 +103,7 @@
             "imscore_clipscore": 27.05472183227539,
             "imscore_imagereward": -1.235089659690857,
             "imscore_laion_aesthetic": 5.221441268920898,
-            "lica_hps_lora_caption_epoch_2": 13.0625
+            "lica_hps_lora_caption_epoch_2": 0.13062499164641742
           }
         },
         "text-to-svg-v1": {
@@ -128,7 +128,7 @@
             "imscore_clipscore": 24.587051391601562,
             "imscore_imagereward": -0.8312376737594604,
             "imscore_laion_aesthetic": 5.009934425354004,
-            "lica_hps_lora_caption_epoch_2": 15.5625
+            "lica_hps_lora_caption_epoch_2": 0.15562499004764563
           }
         },
         "text-to-svg-base": {
@@ -153,7 +153,7 @@
             "imscore_clipscore": 24.285184860229492,
             "imscore_imagereward": -0.7788937091827393,
             "imscore_laion_aesthetic": 5.227631092071533,
-            "lica_hps_lora_caption_epoch_2": 14.5625
+            "lica_hps_lora_caption_epoch_2": 0.14562499068715434
           }
         }
       },
@@ -219,7 +219,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "gpt-5.2",
-          "score": 20.75
+          "score": 0.20749998673019418
         },
         "imscore_hpsv21": {
           "source": "gpt-5.2",
@@ -275,7 +275,7 @@
             "imscore_clipscore": 33.85029983520508,
             "imscore_imagereward": -0.17909444868564606,
             "imscore_laion_aesthetic": 4.934990882873535,
-            "lica_hps_lora_caption_epoch_2": 24.625
+            "lica_hps_lora_caption_epoch_2": 0.2462499842520979
           }
         },
         {
@@ -290,7 +290,7 @@
             "imscore_clipscore": 28.656705856323242,
             "imscore_imagereward": 0.7763234376907349,
             "imscore_laion_aesthetic": 5.116871356964111,
-            "lica_hps_lora_caption_epoch_2": 21.125
+            "lica_hps_lora_caption_epoch_2": 0.2112499864903784
           }
         },
         {
@@ -305,7 +305,7 @@
             "imscore_clipscore": 26.82059097290039,
             "imscore_imagereward": -0.5460395812988281,
             "imscore_laion_aesthetic": 5.081571578979492,
-            "lica_hps_lora_caption_epoch_2": 17.375
+            "lica_hps_lora_caption_epoch_2": 0.1737499888885361
           }
         },
         {
@@ -320,7 +320,7 @@
             "imscore_clipscore": 27.984365463256836,
             "imscore_imagereward": -1.1903526782989502,
             "imscore_laion_aesthetic": 4.800177574157715,
-            "lica_hps_lora_caption_epoch_2": 17.375
+            "lica_hps_lora_caption_epoch_2": 0.1737499888885361
           }
         }
       ],
@@ -347,7 +347,7 @@
             "imscore_clipscore": 22.539257049560547,
             "imscore_imagereward": -1.7469990253448486,
             "imscore_laion_aesthetic": 4.868740081787109,
-            "lica_hps_lora_caption_epoch_2": 12.8125
+            "lica_hps_lora_caption_epoch_2": 0.1281249918062946
           }
         },
         "text-to-svg-v1": {
@@ -372,7 +372,7 @@
             "imscore_clipscore": 23.152097702026367,
             "imscore_imagereward": -0.6166793704032898,
             "imscore_laion_aesthetic": 4.882571220397949,
-            "lica_hps_lora_caption_epoch_2": 14.3125
+            "lica_hps_lora_caption_epoch_2": 0.14312499084703154
           }
         },
         "text-to-svg-v2": {
@@ -397,7 +397,7 @@
             "imscore_clipscore": 24.228239059448242,
             "imscore_imagereward": -1.2979910373687744,
             "imscore_laion_aesthetic": 4.750358581542969,
-            "lica_hps_lora_caption_epoch_2": 14.0
+            "lica_hps_lora_caption_epoch_2": 0.139999991046878
           }
         }
       },
@@ -463,7 +463,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "claude",
-          "score": 21.125
+          "score": 0.2112499864903784
         },
         "imscore_hpsv21": {
           "source": "claude",
@@ -519,7 +519,7 @@
             "imscore_clipscore": 28.223567962646484,
             "imscore_imagereward": 1.143633246421814,
             "imscore_laion_aesthetic": 5.0866241455078125,
-            "lica_hps_lora_caption_epoch_2": 29.0
+            "lica_hps_lora_caption_epoch_2": 0.28999998145424727
           }
         },
         {
@@ -534,7 +534,7 @@
             "imscore_clipscore": 28.16944694519043,
             "imscore_imagereward": 0.9002858996391296,
             "imscore_laion_aesthetic": 5.129638671875,
-            "lica_hps_lora_caption_epoch_2": 25.625
+            "lica_hps_lora_caption_epoch_2": 0.2562499836125892
           }
         },
         {
@@ -549,7 +549,7 @@
             "imscore_clipscore": 27.775691986083984,
             "imscore_imagereward": 1.0472604036331177,
             "imscore_laion_aesthetic": 4.988245010375977,
-            "lica_hps_lora_caption_epoch_2": 25.75
+            "lica_hps_lora_caption_epoch_2": 0.2574999835326506
           }
         },
         {
@@ -564,7 +564,7 @@
             "imscore_clipscore": 26.51561737060547,
             "imscore_imagereward": 0.6958684921264648,
             "imscore_laion_aesthetic": 5.09678840637207,
-            "lica_hps_lora_caption_epoch_2": 24.875
+            "lica_hps_lora_caption_epoch_2": 0.24874998409222074
           }
         }
       ],
@@ -591,7 +591,7 @@
             "imscore_clipscore": 29.081804275512695,
             "imscore_imagereward": 0.7725099921226501,
             "imscore_laion_aesthetic": 5.068051338195801,
-            "lica_hps_lora_caption_epoch_2": 24.375
+            "lica_hps_lora_caption_epoch_2": 0.2437499844119751
           }
         },
         "text-to-svg-v1": {
@@ -616,7 +616,7 @@
             "imscore_clipscore": 29.36505889892578,
             "imscore_imagereward": 0.3239811062812805,
             "imscore_laion_aesthetic": 4.906325340270996,
-            "lica_hps_lora_caption_epoch_2": 24.25
+            "lica_hps_lora_caption_epoch_2": 0.24249998449191368
           }
         },
         "text-to-svg-base": {
@@ -641,7 +641,7 @@
             "imscore_clipscore": 27.73856544494629,
             "imscore_imagereward": 0.8099038600921631,
             "imscore_laion_aesthetic": 5.150730133056641,
-            "lica_hps_lora_caption_epoch_2": 25.0
+            "lica_hps_lora_caption_epoch_2": 0.24999998401228213
           }
         }
       },
@@ -707,7 +707,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "gemini",
-          "score": 25.75
+          "score": 0.2574999835326506
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-base",
@@ -763,7 +763,7 @@
             "imscore_clipscore": 37.62548065185547,
             "imscore_imagereward": -0.17374975979328156,
             "imscore_laion_aesthetic": 4.772418975830078,
-            "lica_hps_lora_caption_epoch_2": 25.0
+            "lica_hps_lora_caption_epoch_2": 0.24999998401228213
           }
         },
         {
@@ -778,7 +778,7 @@
             "imscore_clipscore": 30.575889587402344,
             "imscore_imagereward": 0.5355427265167236,
             "imscore_laion_aesthetic": 5.109593868255615,
-            "lica_hps_lora_caption_epoch_2": 17.0
+            "lica_hps_lora_caption_epoch_2": 0.16999998912835185
           }
         },
         {
@@ -793,7 +793,7 @@
             "imscore_clipscore": 30.18850326538086,
             "imscore_imagereward": -0.20002491772174835,
             "imscore_laion_aesthetic": 4.985335350036621,
-            "lica_hps_lora_caption_epoch_2": 15.5
+            "lica_hps_lora_caption_epoch_2": 0.15499999008761492
           }
         },
         {
@@ -808,7 +808,7 @@
             "imscore_clipscore": 28.69236183166504,
             "imscore_imagereward": -1.0592913627624512,
             "imscore_laion_aesthetic": 4.975994110107422,
-            "lica_hps_lora_caption_epoch_2": 17.5
+            "lica_hps_lora_caption_epoch_2": 0.1749999888085975
           }
         }
       ],
@@ -835,7 +835,7 @@
             "imscore_clipscore": 25.028121948242188,
             "imscore_imagereward": -0.2041114866733551,
             "imscore_laion_aesthetic": 4.882014274597168,
-            "lica_hps_lora_caption_epoch_2": 14.4375
+            "lica_hps_lora_caption_epoch_2": 0.14437499076709293
           }
         },
         "text-to-svg-v2": {
@@ -860,7 +860,7 @@
             "imscore_clipscore": 26.676898956298828,
             "imscore_imagereward": -0.783045768737793,
             "imscore_laion_aesthetic": 5.352075099945068,
-            "lica_hps_lora_caption_epoch_2": 16.25
+            "lica_hps_lora_caption_epoch_2": 0.1624999896079834
           }
         },
         "text-to-svg-v1": {
@@ -885,7 +885,7 @@
             "imscore_clipscore": 24.665563583374023,
             "imscore_imagereward": -0.077349953353405,
             "imscore_laion_aesthetic": 5.121356010437012,
-            "lica_hps_lora_caption_epoch_2": 11.75
+            "lica_hps_lora_caption_epoch_2": 0.1174999924857726
           }
         }
       },
@@ -951,7 +951,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "gpt-5.2",
-          "score": 17.5
+          "score": 0.1749999888085975
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-v2",
@@ -1007,7 +1007,7 @@
             "imscore_clipscore": 29.185020446777344,
             "imscore_imagereward": 0.5665425062179565,
             "imscore_laion_aesthetic": 4.367846488952637,
-            "lica_hps_lora_caption_epoch_2": 27.25
+            "lica_hps_lora_caption_epoch_2": 0.27249998257338753
           }
         },
         {
@@ -1022,7 +1022,7 @@
             "imscore_clipscore": 28.534334182739258,
             "imscore_imagereward": 0.7952967286109924,
             "imscore_laion_aesthetic": 4.190046787261963,
-            "lica_hps_lora_caption_epoch_2": 22.25
+            "lica_hps_lora_caption_epoch_2": 0.2224999857709311
           }
         },
         {
@@ -1037,7 +1037,7 @@
             "imscore_clipscore": 28.059772491455078,
             "imscore_imagereward": 1.1817201375961304,
             "imscore_laion_aesthetic": 4.5242919921875,
-            "lica_hps_lora_caption_epoch_2": 22.125
+            "lica_hps_lora_caption_epoch_2": 0.2212499858508697
           }
         },
         {
@@ -1052,7 +1052,7 @@
             "imscore_clipscore": 25.80805206298828,
             "imscore_imagereward": 0.3406068980693817,
             "imscore_laion_aesthetic": 4.411642074584961,
-            "lica_hps_lora_caption_epoch_2": 20.875
+            "lica_hps_lora_caption_epoch_2": 0.2087499866502556
           }
         }
       ],
@@ -1079,7 +1079,7 @@
             "imscore_clipscore": 27.409639358520508,
             "imscore_imagereward": 0.5028717517852783,
             "imscore_laion_aesthetic": 4.860825538635254,
-            "lica_hps_lora_caption_epoch_2": 19.875
+            "lica_hps_lora_caption_epoch_2": 0.1987499872897643
           }
         },
         "text-to-svg-v1": {
@@ -1104,7 +1104,7 @@
             "imscore_clipscore": 26.753082275390625,
             "imscore_imagereward": 0.22240287065505981,
             "imscore_laion_aesthetic": 4.764453411102295,
-            "lica_hps_lora_caption_epoch_2": 20.875
+            "lica_hps_lora_caption_epoch_2": 0.2087499866502556
           }
         },
         "text-to-svg-base": {
@@ -1129,7 +1129,7 @@
             "imscore_clipscore": 30.544063568115234,
             "imscore_imagereward": -0.22746846079826355,
             "imscore_laion_aesthetic": 4.686540603637695,
-            "lica_hps_lora_caption_epoch_2": 21.125
+            "lica_hps_lora_caption_epoch_2": 0.2112499864903784
           }
         }
       },
@@ -1195,7 +1195,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "claude",
-          "score": 22.25
+          "score": 0.2224999857709311
         },
         "imscore_hpsv21": {
           "source": "gemini",
@@ -1251,7 +1251,7 @@
             "imscore_clipscore": 18.479290008544922,
             "imscore_imagereward": -1.2375481128692627,
             "imscore_laion_aesthetic": 4.706677436828613,
-            "lica_hps_lora_caption_epoch_2": 15.1875
+            "lica_hps_lora_caption_epoch_2": 0.1518749902874614
           }
         },
         {
@@ -1266,7 +1266,7 @@
             "imscore_clipscore": 22.032489776611328,
             "imscore_imagereward": -0.49580326676368713,
             "imscore_laion_aesthetic": 4.706822872161865,
-            "lica_hps_lora_caption_epoch_2": 16.75
+            "lica_hps_lora_caption_epoch_2": 0.16749998928822904
           }
         },
         {
@@ -1281,7 +1281,7 @@
             "imscore_clipscore": 25.775894165039062,
             "imscore_imagereward": -0.5233380794525146,
             "imscore_laion_aesthetic": 4.776340007781982,
-            "lica_hps_lora_caption_epoch_2": 15.5625
+            "lica_hps_lora_caption_epoch_2": 0.15562499004764563
           }
         },
         {
@@ -1296,7 +1296,7 @@
             "imscore_clipscore": 25.775894165039062,
             "imscore_imagereward": -0.5233380794525146,
             "imscore_laion_aesthetic": 4.776340007781982,
-            "lica_hps_lora_caption_epoch_2": 15.5625
+            "lica_hps_lora_caption_epoch_2": 0.15562499004764563
           }
         }
       ],
@@ -1323,7 +1323,7 @@
             "imscore_clipscore": 25.77589225769043,
             "imscore_imagereward": -0.5233317017555237,
             "imscore_laion_aesthetic": 4.776339054107666,
-            "lica_hps_lora_caption_epoch_2": 17.75
+            "lica_hps_lora_caption_epoch_2": 0.17749998864872032
           }
         },
         "text-to-svg-base": {
@@ -1348,7 +1348,7 @@
             "imscore_clipscore": 25.77589225769043,
             "imscore_imagereward": -0.5233317017555237,
             "imscore_laion_aesthetic": 4.776339054107666,
-            "lica_hps_lora_caption_epoch_2": 15.5625
+            "lica_hps_lora_caption_epoch_2": 0.15562499004764563
           }
         },
         "text-to-svg-v1": {
@@ -1373,7 +1373,7 @@
             "imscore_clipscore": 25.77589225769043,
             "imscore_imagereward": -0.5233317017555237,
             "imscore_laion_aesthetic": 4.776339054107666,
-            "lica_hps_lora_caption_epoch_2": 16.75
+            "lica_hps_lora_caption_epoch_2": 0.16749998928822904
           }
         }
       },
@@ -1439,7 +1439,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-v2",
-          "score": 17.75
+          "score": 0.17749998864872032
         },
         "imscore_hpsv21": {
           "source": "claude",
@@ -1495,7 +1495,7 @@
             "imscore_clipscore": 29.316905975341797,
             "imscore_imagereward": 0.793083131313324,
             "imscore_laion_aesthetic": 5.084196090698242,
-            "lica_hps_lora_caption_epoch_2": 25.625
+            "lica_hps_lora_caption_epoch_2": 0.2562499836125892
           }
         },
         {
@@ -1510,7 +1510,7 @@
             "imscore_clipscore": 27.419450759887695,
             "imscore_imagereward": 0.6247801184654236,
             "imscore_laion_aesthetic": 5.073136329650879,
-            "lica_hps_lora_caption_epoch_2": 21.0
+            "lica_hps_lora_caption_epoch_2": 0.209999986570317
           }
         },
         {
@@ -1525,7 +1525,7 @@
             "imscore_clipscore": 26.66817283630371,
             "imscore_imagereward": 0.08639078587293625,
             "imscore_laion_aesthetic": 5.051109313964844,
-            "lica_hps_lora_caption_epoch_2": 19.0
+            "lica_hps_lora_caption_epoch_2": 0.18999998784933442
           }
         },
         {
@@ -1540,7 +1540,7 @@
             "imscore_clipscore": 29.618194580078125,
             "imscore_imagereward": 0.6683980226516724,
             "imscore_laion_aesthetic": 4.39937686920166,
-            "lica_hps_lora_caption_epoch_2": 16.625
+            "lica_hps_lora_caption_epoch_2": 0.16624998936816762
           }
         }
       ],
@@ -1567,7 +1567,7 @@
             "imscore_clipscore": 27.811405181884766,
             "imscore_imagereward": 0.202574223279953,
             "imscore_laion_aesthetic": 4.7404584884643555,
-            "lica_hps_lora_caption_epoch_2": 18.625
+            "lica_hps_lora_caption_epoch_2": 0.1862499880891502
           }
         },
         "text-to-svg-v1": {
@@ -1592,7 +1592,7 @@
             "imscore_clipscore": 30.34755516052246,
             "imscore_imagereward": 0.03246304392814636,
             "imscore_laion_aesthetic": 5.151843070983887,
-            "lica_hps_lora_caption_epoch_2": 17.125
+            "lica_hps_lora_caption_epoch_2": 0.17124998904841326
           }
         },
         "text-to-svg-base": {
@@ -1617,7 +1617,7 @@
             "imscore_clipscore": 29.7819766998291,
             "imscore_imagereward": 0.4015812873840332,
             "imscore_laion_aesthetic": 5.080483436584473,
-            "lica_hps_lora_caption_epoch_2": 21.125
+            "lica_hps_lora_caption_epoch_2": 0.2112499864903784
           }
         }
       },
@@ -1683,7 +1683,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-base",
-          "score": 21.125
+          "score": 0.2112499864903784
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-base",
@@ -1739,7 +1739,7 @@
             "imscore_clipscore": 23.915729522705078,
             "imscore_imagereward": 0.23579095304012299,
             "imscore_laion_aesthetic": 4.817228317260742,
-            "lica_hps_lora_caption_epoch_2": 23.125
+            "lica_hps_lora_caption_epoch_2": 0.23124998521136098
           }
         },
         {
@@ -1754,7 +1754,7 @@
             "imscore_clipscore": 25.933277130126953,
             "imscore_imagereward": 0.34457385540008545,
             "imscore_laion_aesthetic": 4.627496242523193,
-            "lica_hps_lora_caption_epoch_2": 23.875
+            "lica_hps_lora_caption_epoch_2": 0.23874998473172945
           }
         },
         {
@@ -1769,7 +1769,7 @@
             "imscore_clipscore": 24.341611862182617,
             "imscore_imagereward": 0.45575085282325745,
             "imscore_laion_aesthetic": 4.713105201721191,
-            "lica_hps_lora_caption_epoch_2": 23.75
+            "lica_hps_lora_caption_epoch_2": 0.23749998481166804
           }
         },
         {
@@ -1784,7 +1784,7 @@
             "imscore_clipscore": 25.515827178955078,
             "imscore_imagereward": 0.2689262628555298,
             "imscore_laion_aesthetic": 4.68469762802124,
-            "lica_hps_lora_caption_epoch_2": 23.5
+            "lica_hps_lora_caption_epoch_2": 0.2349999849715452
           }
         }
       ],
@@ -1811,7 +1811,7 @@
             "imscore_clipscore": 28.310626983642578,
             "imscore_imagereward": 0.20261627435684204,
             "imscore_laion_aesthetic": 4.6278886795043945,
-            "lica_hps_lora_caption_epoch_2": 23.75
+            "lica_hps_lora_caption_epoch_2": 0.23749998481166804
           }
         },
         "text-to-svg-v1": {
@@ -1836,7 +1836,7 @@
             "imscore_clipscore": 28.276134490966797,
             "imscore_imagereward": 0.2870028614997864,
             "imscore_laion_aesthetic": 4.518106460571289,
-            "lica_hps_lora_caption_epoch_2": 22.875
+            "lica_hps_lora_caption_epoch_2": 0.22874998537123817
           }
         },
         "text-to-svg-base": {
@@ -1861,7 +1861,7 @@
             "imscore_clipscore": 26.126140594482422,
             "imscore_imagereward": 0.04607466980814934,
             "imscore_laion_aesthetic": 4.086574077606201,
-            "lica_hps_lora_caption_epoch_2": 24.125
+            "lica_hps_lora_caption_epoch_2": 0.24124998457185226
           }
         }
       },
@@ -1927,7 +1927,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-base",
-          "score": 24.125
+          "score": 0.24124998457185226
         },
         "imscore_hpsv21": {
           "source": "claude",
@@ -1983,7 +1983,7 @@
             "imscore_clipscore": 36.95626449584961,
             "imscore_imagereward": -1.537693977355957,
             "imscore_laion_aesthetic": 4.892749309539795,
-            "lica_hps_lora_caption_epoch_2": 18.25
+            "lica_hps_lora_caption_epoch_2": 0.18249998832896597
           }
         },
         {
@@ -1998,7 +1998,7 @@
             "imscore_clipscore": 30.2037410736084,
             "imscore_imagereward": -1.59698486328125,
             "imscore_laion_aesthetic": 4.642917156219482,
-            "lica_hps_lora_caption_epoch_2": 15.75
+            "lica_hps_lora_caption_epoch_2": 0.15749998992773775
           }
         },
         {
@@ -2013,7 +2013,7 @@
             "imscore_clipscore": 26.79571533203125,
             "imscore_imagereward": -2.0100839138031006,
             "imscore_laion_aesthetic": 5.169146537780762,
-            "lica_hps_lora_caption_epoch_2": 17.25
+            "lica_hps_lora_caption_epoch_2": 0.17249998896847468
           }
         },
         {
@@ -2028,7 +2028,7 @@
             "imscore_clipscore": 28.74333953857422,
             "imscore_imagereward": -1.820294976234436,
             "imscore_laion_aesthetic": 5.051324367523193,
-            "lica_hps_lora_caption_epoch_2": 15.0625
+            "lica_hps_lora_caption_epoch_2": 0.15062499036739999
           }
         }
       ],
@@ -2055,7 +2055,7 @@
             "imscore_clipscore": 24.33074378967285,
             "imscore_imagereward": -1.9245396852493286,
             "imscore_laion_aesthetic": 4.892526626586914,
-            "lica_hps_lora_caption_epoch_2": 15.25
+            "lica_hps_lora_caption_epoch_2": 0.1524999902474921
           }
         },
         "text-to-svg-v1": {
@@ -2080,7 +2080,7 @@
             "imscore_clipscore": 29.546911239624023,
             "imscore_imagereward": -1.4430615901947021,
             "imscore_laion_aesthetic": 4.8555216789245605,
-            "lica_hps_lora_caption_epoch_2": 16.875
+            "lica_hps_lora_caption_epoch_2": 0.16874998920829046
           }
         },
         "text-to-svg-base": {
@@ -2105,7 +2105,7 @@
             "imscore_clipscore": 23.644315719604492,
             "imscore_imagereward": -1.3585108518600464,
             "imscore_laion_aesthetic": 4.916899681091309,
-            "lica_hps_lora_caption_epoch_2": 14.4375
+            "lica_hps_lora_caption_epoch_2": 0.14437499076709293
           }
         }
       },
@@ -2171,7 +2171,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "gemini",
-          "score": 17.25
+          "score": 0.17249998896847468
         },
         "imscore_hpsv21": {
           "source": "claude",
@@ -2227,7 +2227,7 @@
             "imscore_clipscore": 23.88587760925293,
             "imscore_imagereward": -0.23425590991973877,
             "imscore_laion_aesthetic": 4.717197418212891,
-            "lica_hps_lora_caption_epoch_2": 23.0
+            "lica_hps_lora_caption_epoch_2": 0.22999998529129956
           }
         },
         {
@@ -2242,7 +2242,7 @@
             "imscore_clipscore": 31.22638702392578,
             "imscore_imagereward": -0.17815262079238892,
             "imscore_laion_aesthetic": 4.617781162261963,
-            "lica_hps_lora_caption_epoch_2": 22.0
+            "lica_hps_lora_caption_epoch_2": 0.21999998593080827
           }
         },
         {
@@ -2257,7 +2257,7 @@
             "imscore_clipscore": 30.269262313842773,
             "imscore_imagereward": -0.2929378151893616,
             "imscore_laion_aesthetic": 4.6541595458984375,
-            "lica_hps_lora_caption_epoch_2": 19.625
+            "lica_hps_lora_caption_epoch_2": 0.19624998744964148
           }
         },
         {
@@ -2272,7 +2272,7 @@
             "imscore_clipscore": 27.072038650512695,
             "imscore_imagereward": -0.4087420701980591,
             "imscore_laion_aesthetic": 4.637044429779053,
-            "lica_hps_lora_caption_epoch_2": 19.625
+            "lica_hps_lora_caption_epoch_2": 0.19624998744964148
           }
         }
       ],
@@ -2299,7 +2299,7 @@
             "imscore_clipscore": 26.254364013671875,
             "imscore_imagereward": -0.425253301858902,
             "imscore_laion_aesthetic": 4.997766494750977,
-            "lica_hps_lora_caption_epoch_2": 20.125
+            "lica_hps_lora_caption_epoch_2": 0.20124998712988712
           }
         },
         "text-to-svg-v1": {
@@ -2324,7 +2324,7 @@
             "imscore_clipscore": 26.756671905517578,
             "imscore_imagereward": -0.18602828681468964,
             "imscore_laion_aesthetic": 4.968122959136963,
-            "lica_hps_lora_caption_epoch_2": 21.375
+            "lica_hps_lora_caption_epoch_2": 0.21374998633050124
           }
         },
         "text-to-svg-base": {
@@ -2349,7 +2349,7 @@
             "imscore_clipscore": 27.087106704711914,
             "imscore_imagereward": -0.6562460064888,
             "imscore_laion_aesthetic": 4.995870590209961,
-            "lica_hps_lora_caption_epoch_2": 19.75
+            "lica_hps_lora_caption_epoch_2": 0.1974999873697029
           }
         }
       },
@@ -2415,7 +2415,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "claude",
-          "score": 22.0
+          "score": 0.21999998593080827
         },
         "imscore_hpsv21": {
           "source": "gemini",
@@ -2471,7 +2471,7 @@
             "imscore_clipscore": 25.098102569580078,
             "imscore_imagereward": 0.02054831013083458,
             "imscore_laion_aesthetic": 4.701432704925537,
-            "lica_hps_lora_caption_epoch_2": 19.75
+            "lica_hps_lora_caption_epoch_2": 0.1974999873697029
           }
         },
         {
@@ -2486,7 +2486,7 @@
             "imscore_clipscore": 29.422447204589844,
             "imscore_imagereward": 0.5843703746795654,
             "imscore_laion_aesthetic": 4.610554218292236,
-            "lica_hps_lora_caption_epoch_2": 18.25
+            "lica_hps_lora_caption_epoch_2": 0.18249998832896597
           }
         },
         {
@@ -2501,7 +2501,7 @@
             "imscore_clipscore": 26.392797470092773,
             "imscore_imagereward": 0.20062804222106934,
             "imscore_laion_aesthetic": 4.658141136169434,
-            "lica_hps_lora_caption_epoch_2": 19.125
+            "lica_hps_lora_caption_epoch_2": 0.19124998776939584
           }
         },
         {
@@ -2516,7 +2516,7 @@
             "imscore_clipscore": 25.192026138305664,
             "imscore_imagereward": -0.8272606730461121,
             "imscore_laion_aesthetic": 4.712242126464844,
-            "lica_hps_lora_caption_epoch_2": 17.875
+            "lica_hps_lora_caption_epoch_2": 0.17874998856878174
           }
         }
       ],
@@ -2543,7 +2543,7 @@
             "imscore_clipscore": 23.901853561401367,
             "imscore_imagereward": -0.22912827134132385,
             "imscore_laion_aesthetic": 4.813910484313965,
-            "lica_hps_lora_caption_epoch_2": 17.5
+            "lica_hps_lora_caption_epoch_2": 0.1749999888085975
           }
         },
         "text-to-svg-base": {
@@ -2568,7 +2568,7 @@
             "imscore_clipscore": 27.058115005493164,
             "imscore_imagereward": -0.006249423138797283,
             "imscore_laion_aesthetic": 4.875774383544922,
-            "lica_hps_lora_caption_epoch_2": 19.625
+            "lica_hps_lora_caption_epoch_2": 0.19624998744964148
           }
         },
         "text-to-svg-v1": {
@@ -2593,7 +2593,7 @@
             "imscore_clipscore": 21.456981658935547,
             "imscore_imagereward": -0.6466407179832458,
             "imscore_laion_aesthetic": 4.835546493530273,
-            "lica_hps_lora_caption_epoch_2": 15.5625
+            "lica_hps_lora_caption_epoch_2": 0.15562499004764563
           }
         }
       },
@@ -2659,7 +2659,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-base",
-          "score": 19.625
+          "score": 0.19624998744964148
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-base",
@@ -2715,7 +2715,7 @@
             "imscore_clipscore": 26.494503021240234,
             "imscore_imagereward": -0.3282221555709839,
             "imscore_laion_aesthetic": 4.662262916564941,
-            "lica_hps_lora_caption_epoch_2": 27.25
+            "lica_hps_lora_caption_epoch_2": 0.27249998257338753
           }
         },
         {
@@ -2730,7 +2730,7 @@
             "imscore_clipscore": 24.85785675048828,
             "imscore_imagereward": -0.048545509576797485,
             "imscore_laion_aesthetic": 4.631069183349609,
-            "lica_hps_lora_caption_epoch_2": 23.625
+            "lica_hps_lora_caption_epoch_2": 0.23624998489160662
           }
         },
         {
@@ -2745,7 +2745,7 @@
             "imscore_clipscore": 19.21245765686035,
             "imscore_imagereward": -1.0686354637145996,
             "imscore_laion_aesthetic": 5.026725769042969,
-            "lica_hps_lora_caption_epoch_2": 19.0
+            "lica_hps_lora_caption_epoch_2": 0.18999998784933442
           }
         },
         {
@@ -2760,7 +2760,7 @@
             "imscore_clipscore": 21.746665954589844,
             "imscore_imagereward": -0.26718655228614807,
             "imscore_laion_aesthetic": 4.614632606506348,
-            "lica_hps_lora_caption_epoch_2": 22.125
+            "lica_hps_lora_caption_epoch_2": 0.2212499858508697
           }
         }
       ],
@@ -2787,7 +2787,7 @@
             "imscore_clipscore": 22.125455856323242,
             "imscore_imagereward": -0.7480596303939819,
             "imscore_laion_aesthetic": 4.697117328643799,
-            "lica_hps_lora_caption_epoch_2": 15.4375
+            "lica_hps_lora_caption_epoch_2": 0.1543749901275842
           }
         },
         "text-to-svg-v1": {
@@ -2812,7 +2812,7 @@
             "imscore_clipscore": 25.794553756713867,
             "imscore_imagereward": 0.8342753052711487,
             "imscore_laion_aesthetic": 4.879693984985352,
-            "lica_hps_lora_caption_epoch_2": 17.375
+            "lica_hps_lora_caption_epoch_2": 0.1737499888885361
           }
         },
         "text-to-svg-base": {
@@ -2837,7 +2837,7 @@
             "imscore_clipscore": 19.466880798339844,
             "imscore_imagereward": -1.0208886861801147,
             "imscore_laion_aesthetic": 4.802847862243652,
-            "lica_hps_lora_caption_epoch_2": 15.75
+            "lica_hps_lora_caption_epoch_2": 0.15749998992773775
           }
         }
       },
@@ -2903,7 +2903,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "claude",
-          "score": 23.625
+          "score": 0.23624998489160662
         },
         "imscore_hpsv21": {
           "source": "claude",
@@ -2959,7 +2959,7 @@
             "imscore_clipscore": 30.134740829467773,
             "imscore_imagereward": 0.40042391419410706,
             "imscore_laion_aesthetic": 4.954267501831055,
-            "lica_hps_lora_caption_epoch_2": 22.5
+            "lica_hps_lora_caption_epoch_2": 0.22499998561105392
           }
         },
         {
@@ -2974,7 +2974,7 @@
             "imscore_clipscore": 31.554067611694336,
             "imscore_imagereward": 0.10207688808441162,
             "imscore_laion_aesthetic": 4.578385353088379,
-            "lica_hps_lora_caption_epoch_2": 19.375
+            "lica_hps_lora_caption_epoch_2": 0.19374998760951867
           }
         },
         {
@@ -2989,7 +2989,7 @@
             "imscore_clipscore": 30.248674392700195,
             "imscore_imagereward": -1.2051016092300415,
             "imscore_laion_aesthetic": 4.550721645355225,
-            "lica_hps_lora_caption_epoch_2": 20.875
+            "lica_hps_lora_caption_epoch_2": 0.2087499866502556
           }
         },
         {
@@ -3004,7 +3004,7 @@
             "imscore_clipscore": 30.696170806884766,
             "imscore_imagereward": -0.7574262619018555,
             "imscore_laion_aesthetic": 4.525071144104004,
-            "lica_hps_lora_caption_epoch_2": 20.625
+            "lica_hps_lora_caption_epoch_2": 0.20624998681013276
           }
         }
       ],
@@ -3031,7 +3031,7 @@
             "imscore_clipscore": 32.677406311035156,
             "imscore_imagereward": 0.03889429569244385,
             "imscore_laion_aesthetic": 4.849573612213135,
-            "lica_hps_lora_caption_epoch_2": 19.0
+            "lica_hps_lora_caption_epoch_2": 0.18999998784933442
           }
         },
         "text-to-svg-v1": {
@@ -3056,7 +3056,7 @@
             "imscore_clipscore": 31.26327133178711,
             "imscore_imagereward": -0.7652093768119812,
             "imscore_laion_aesthetic": 4.823180675506592,
-            "lica_hps_lora_caption_epoch_2": 17.5
+            "lica_hps_lora_caption_epoch_2": 0.1749999888085975
           }
         },
         "text-to-svg-base": {
@@ -3081,7 +3081,7 @@
             "imscore_clipscore": 32.578636169433594,
             "imscore_imagereward": 0.398555189371109,
             "imscore_laion_aesthetic": 4.751708984375,
-            "lica_hps_lora_caption_epoch_2": 21.375
+            "lica_hps_lora_caption_epoch_2": 0.21374998633050124
           }
         }
       },
@@ -3147,7 +3147,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-base",
-          "score": 21.375
+          "score": 0.21374998633050124
         },
         "imscore_hpsv21": {
           "source": "gemini",
@@ -3203,7 +3203,7 @@
             "imscore_clipscore": 30.104450225830078,
             "imscore_imagereward": 0.6988667845726013,
             "imscore_laion_aesthetic": 4.846203804016113,
-            "lica_hps_lora_caption_epoch_2": 26.75
+            "lica_hps_lora_caption_epoch_2": 0.26749998289314186
           }
         },
         {
@@ -3218,7 +3218,7 @@
             "imscore_clipscore": 30.50473976135254,
             "imscore_imagereward": 1.0085197687149048,
             "imscore_laion_aesthetic": 4.739003658294678,
-            "lica_hps_lora_caption_epoch_2": 22.375
+            "lica_hps_lora_caption_epoch_2": 0.22374998569099253
           }
         },
         {
@@ -3233,7 +3233,7 @@
             "imscore_clipscore": 28.013071060180664,
             "imscore_imagereward": 0.8855279684066772,
             "imscore_laion_aesthetic": 4.741064548492432,
-            "lica_hps_lora_caption_epoch_2": 21.75
+            "lica_hps_lora_caption_epoch_2": 0.21749998609068547
           }
         },
         {
@@ -3248,7 +3248,7 @@
             "imscore_clipscore": 29.802751541137695,
             "imscore_imagereward": -0.5187733173370361,
             "imscore_laion_aesthetic": 4.521952152252197,
-            "lica_hps_lora_caption_epoch_2": 17.375
+            "lica_hps_lora_caption_epoch_2": 0.1737499888885361
           }
         }
       ],
@@ -3275,7 +3275,7 @@
             "imscore_clipscore": 27.484193801879883,
             "imscore_imagereward": 0.3073965013027191,
             "imscore_laion_aesthetic": 4.736187934875488,
-            "lica_hps_lora_caption_epoch_2": 18.375
+            "lica_hps_lora_caption_epoch_2": 0.18374998824902739
           }
         },
         "text-to-svg-v1": {
@@ -3300,7 +3300,7 @@
             "imscore_clipscore": 28.71367645263672,
             "imscore_imagereward": 0.740302562713623,
             "imscore_laion_aesthetic": 4.749988555908203,
-            "lica_hps_lora_caption_epoch_2": 18.875
+            "lica_hps_lora_caption_epoch_2": 0.18874998792927303
           }
         },
         "text-to-svg-base": {
@@ -3325,7 +3325,7 @@
             "imscore_clipscore": 29.80890655517578,
             "imscore_imagereward": 0.47340235114097595,
             "imscore_laion_aesthetic": 4.597711563110352,
-            "lica_hps_lora_caption_epoch_2": 19.25
+            "lica_hps_lora_caption_epoch_2": 0.19249998768945725
           }
         }
       },
@@ -3391,7 +3391,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "claude",
-          "score": 22.375
+          "score": 0.22374998569099253
         },
         "imscore_hpsv21": {
           "source": "claude",
@@ -3447,7 +3447,7 @@
             "imscore_clipscore": 31.71868324279785,
             "imscore_imagereward": 1.8816038370132446,
             "imscore_laion_aesthetic": 4.951361656188965,
-            "lica_hps_lora_caption_epoch_2": 27.25
+            "lica_hps_lora_caption_epoch_2": 0.27249998257338753
           }
         },
         {
@@ -3462,7 +3462,7 @@
             "imscore_clipscore": 31.74598503112793,
             "imscore_imagereward": 0.22576241195201874,
             "imscore_laion_aesthetic": 5.141693115234375,
-            "lica_hps_lora_caption_epoch_2": 19.25
+            "lica_hps_lora_caption_epoch_2": 0.19249998768945725
           }
         },
         {
@@ -3477,7 +3477,7 @@
             "imscore_clipscore": 29.275577545166016,
             "imscore_imagereward": -1.6132105588912964,
             "imscore_laion_aesthetic": 4.923946380615234,
-            "lica_hps_lora_caption_epoch_2": 18.125
+            "lica_hps_lora_caption_epoch_2": 0.18124998840890455
           }
         },
         {
@@ -3492,7 +3492,7 @@
             "imscore_clipscore": 30.554441452026367,
             "imscore_imagereward": 0.8727449178695679,
             "imscore_laion_aesthetic": 4.912842750549316,
-            "lica_hps_lora_caption_epoch_2": 20.375
+            "lica_hps_lora_caption_epoch_2": 0.20374998697000996
           }
         }
       ],
@@ -3519,7 +3519,7 @@
             "imscore_clipscore": 26.592084884643555,
             "imscore_imagereward": -1.088819146156311,
             "imscore_laion_aesthetic": 5.034389019012451,
-            "lica_hps_lora_caption_epoch_2": 16.375
+            "lica_hps_lora_caption_epoch_2": 0.16374998952804481
           }
         },
         "text-to-svg-base": {
@@ -3544,7 +3544,7 @@
             "imscore_clipscore": 28.25693130493164,
             "imscore_imagereward": -1.2264541387557983,
             "imscore_laion_aesthetic": 5.046935081481934,
-            "lica_hps_lora_caption_epoch_2": 16.375
+            "lica_hps_lora_caption_epoch_2": 0.16374998952804481
           }
         },
         "text-to-svg-v1": {
@@ -3569,7 +3569,7 @@
             "imscore_clipscore": 28.17963409423828,
             "imscore_imagereward": -0.29951372742652893,
             "imscore_laion_aesthetic": 5.296669960021973,
-            "lica_hps_lora_caption_epoch_2": 18.125
+            "lica_hps_lora_caption_epoch_2": 0.18124998840890455
           }
         }
       },
@@ -3635,7 +3635,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "gpt-5.2",
-          "score": 20.375
+          "score": 0.20374998697000996
         },
         "imscore_hpsv21": {
           "source": "gpt-5.2",
@@ -3899,7 +3899,7 @@
             "imscore_clipscore": 20.69325065612793,
             "imscore_imagereward": -2.251516580581665,
             "imscore_laion_aesthetic": 5.432351589202881,
-            "lica_hps_lora_caption_epoch_2": 13.625
+            "lica_hps_lora_caption_epoch_2": 0.13624999128669377
           }
         },
         "text-to-svg-base": {
@@ -3924,7 +3924,7 @@
             "imscore_clipscore": 24.392765045166016,
             "imscore_imagereward": -0.9012528657913208,
             "imscore_laion_aesthetic": 5.108743667602539,
-            "lica_hps_lora_caption_epoch_2": 15.0625
+            "lica_hps_lora_caption_epoch_2": 0.15062499036739999
           }
         },
         "text-to-svg-v1": {
@@ -3949,7 +3949,7 @@
             "imscore_clipscore": 16.683378219604492,
             "imscore_imagereward": -1.2985920906066895,
             "imscore_laion_aesthetic": 5.096948623657227,
-            "lica_hps_lora_caption_epoch_2": 14.3125
+            "lica_hps_lora_caption_epoch_2": 0.14312499084703154
           }
         },
         "hf-v2": {
@@ -3977,7 +3977,7 @@
             "imscore_clipscore": 29.4561767578125,
             "imscore_imagereward": -0.48865842819213867,
             "imscore_laion_aesthetic": 5.3479905128479,
-            "lica_hps_lora_caption_epoch_2": 16.875
+            "lica_hps_lora_caption_epoch_2": 0.16874998920829046
           }
         }
       },
@@ -4022,7 +4022,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "hf-v2",
-          "score": 16.875
+          "score": 0.16874998920829046
         },
         "imscore_hpsv21": {
           "source": "hf-v2",
@@ -4284,7 +4284,7 @@
             "imscore_clipscore": 22.28061866760254,
             "imscore_imagereward": -0.2971549928188324,
             "imscore_laion_aesthetic": 5.082040786743164,
-            "lica_hps_lora_caption_epoch_2": 15.8125
+            "lica_hps_lora_caption_epoch_2": 0.15812498988776846
           }
         },
         "text-to-svg-base": {
@@ -4309,7 +4309,7 @@
             "imscore_clipscore": 24.46253776550293,
             "imscore_imagereward": -0.3753393590450287,
             "imscore_laion_aesthetic": 4.421795845031738,
-            "lica_hps_lora_caption_epoch_2": 16.0
+            "lica_hps_lora_caption_epoch_2": 0.15999998976786056
           }
         },
         "text-to-svg-v1": {
@@ -4334,7 +4334,7 @@
             "imscore_clipscore": 27.30996322631836,
             "imscore_imagereward": -0.10459352284669876,
             "imscore_laion_aesthetic": 5.112431049346924,
-            "lica_hps_lora_caption_epoch_2": 18.125
+            "lica_hps_lora_caption_epoch_2": 0.18124998840890455
           }
         },
         "hf-v2": {
@@ -4362,7 +4362,7 @@
             "imscore_clipscore": 29.16947364807129,
             "imscore_imagereward": 0.09754816442728043,
             "imscore_laion_aesthetic": 4.880568504333496,
-            "lica_hps_lora_caption_epoch_2": 17.125
+            "lica_hps_lora_caption_epoch_2": 0.17124998904841326
           }
         }
       },
@@ -4407,7 +4407,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-v1",
-          "score": 18.125
+          "score": 0.18124998840890455
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-v1",
@@ -4669,7 +4669,7 @@
             "imscore_clipscore": 21.718900680541992,
             "imscore_imagereward": -0.869602382183075,
             "imscore_laion_aesthetic": 5.385351181030273,
-            "lica_hps_lora_caption_epoch_2": 20.75
+            "lica_hps_lora_caption_epoch_2": 0.20749998673019418
           }
         },
         "text-to-svg-v2": {
@@ -4694,7 +4694,7 @@
             "imscore_clipscore": 23.225065231323242,
             "imscore_imagereward": -0.21165910363197327,
             "imscore_laion_aesthetic": 5.100407600402832,
-            "lica_hps_lora_caption_epoch_2": 19.0
+            "lica_hps_lora_caption_epoch_2": 0.18999998784933442
           }
         },
         "text-to-svg-v1": {
@@ -4719,7 +4719,7 @@
             "imscore_clipscore": 26.162437438964844,
             "imscore_imagereward": 0.14854313433170319,
             "imscore_laion_aesthetic": 5.424777984619141,
-            "lica_hps_lora_caption_epoch_2": 19.0
+            "lica_hps_lora_caption_epoch_2": 0.18999998784933442
           }
         },
         "hf-v2": {
@@ -4747,7 +4747,7 @@
             "imscore_clipscore": 26.33806800842285,
             "imscore_imagereward": -0.8472114205360413,
             "imscore_laion_aesthetic": 4.996633529663086,
-            "lica_hps_lora_caption_epoch_2": 19.625
+            "lica_hps_lora_caption_epoch_2": 0.19624998744964148
           }
         }
       },
@@ -4792,7 +4792,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-base",
-          "score": 20.75
+          "score": 0.20749998673019418
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-base",
@@ -5054,7 +5054,7 @@
             "imscore_clipscore": 18.41801643371582,
             "imscore_imagereward": -1.520237922668457,
             "imscore_laion_aesthetic": 5.163064956665039,
-            "lica_hps_lora_caption_epoch_2": 19.75
+            "lica_hps_lora_caption_epoch_2": 0.1974999873697029
           }
         },
         "text-to-svg-v2": {
@@ -5079,7 +5079,7 @@
             "imscore_clipscore": 17.653404235839844,
             "imscore_imagereward": -1.2736352682113647,
             "imscore_laion_aesthetic": 5.402729034423828,
-            "lica_hps_lora_caption_epoch_2": 19.25
+            "lica_hps_lora_caption_epoch_2": 0.19249998768945725
           }
         },
         "text-to-svg-v1": {
@@ -5104,7 +5104,7 @@
             "imscore_clipscore": 21.917945861816406,
             "imscore_imagereward": -0.5785133838653564,
             "imscore_laion_aesthetic": 5.444846153259277,
-            "lica_hps_lora_caption_epoch_2": 19.375
+            "lica_hps_lora_caption_epoch_2": 0.19374998760951867
           }
         },
         "hf-v2": {
@@ -5132,7 +5132,7 @@
             "imscore_clipscore": 19.49237823486328,
             "imscore_imagereward": -0.45030128955841064,
             "imscore_laion_aesthetic": 5.674787998199463,
-            "lica_hps_lora_caption_epoch_2": 20.875
+            "lica_hps_lora_caption_epoch_2": 0.2087499866502556
           }
         }
       },
@@ -5177,7 +5177,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "hf-v2",
-          "score": 20.875
+          "score": 0.2087499866502556
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-v2",
@@ -5439,7 +5439,7 @@
             "imscore_clipscore": 28.346452713012695,
             "imscore_imagereward": -0.17127840220928192,
             "imscore_laion_aesthetic": 4.4659833908081055,
-            "lica_hps_lora_caption_epoch_2": 15.75
+            "lica_hps_lora_caption_epoch_2": 0.15749998992773775
           }
         },
         "text-to-svg-v2": {
@@ -5464,7 +5464,7 @@
             "imscore_clipscore": 24.542659759521484,
             "imscore_imagereward": -0.572540819644928,
             "imscore_laion_aesthetic": 4.989516735076904,
-            "lica_hps_lora_caption_epoch_2": 19.0
+            "lica_hps_lora_caption_epoch_2": 0.18999998784933442
           }
         },
         "text-to-svg-v1": {
@@ -5489,7 +5489,7 @@
             "imscore_clipscore": 26.877412796020508,
             "imscore_imagereward": -0.278734415769577,
             "imscore_laion_aesthetic": 4.902085304260254,
-            "lica_hps_lora_caption_epoch_2": 21.5
+            "lica_hps_lora_caption_epoch_2": 0.21499998625056263
           }
         },
         "hf-v2": {
@@ -5517,7 +5517,7 @@
             "imscore_clipscore": 27.58689308166504,
             "imscore_imagereward": -0.1560765653848648,
             "imscore_laion_aesthetic": 4.890974044799805,
-            "lica_hps_lora_caption_epoch_2": 20.25
+            "lica_hps_lora_caption_epoch_2": 0.20249998704994854
           }
         }
       },
@@ -5562,7 +5562,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-v1",
-          "score": 21.5
+          "score": 0.21499998625056263
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-v1",
@@ -5824,7 +5824,7 @@
             "imscore_clipscore": 34.124168395996094,
             "imscore_imagereward": 0.6648871898651123,
             "imscore_laion_aesthetic": 5.389984607696533,
-            "lica_hps_lora_caption_epoch_2": 22.375
+            "lica_hps_lora_caption_epoch_2": 0.22374998569099253
           }
         },
         "text-to-svg-v2": {
@@ -5849,7 +5849,7 @@
             "imscore_clipscore": 27.891117095947266,
             "imscore_imagereward": -0.7746129631996155,
             "imscore_laion_aesthetic": 5.190957546234131,
-            "lica_hps_lora_caption_epoch_2": 23.125
+            "lica_hps_lora_caption_epoch_2": 0.23124998521136098
           }
         },
         "text-to-svg-v1": {
@@ -5874,7 +5874,7 @@
             "imscore_clipscore": 27.369007110595703,
             "imscore_imagereward": -1.477532148361206,
             "imscore_laion_aesthetic": 5.080564498901367,
-            "lica_hps_lora_caption_epoch_2": 17.75
+            "lica_hps_lora_caption_epoch_2": 0.17749998864872032
           }
         },
         "hf-v2": {
@@ -5902,7 +5902,7 @@
             "imscore_clipscore": 31.73552703857422,
             "imscore_imagereward": 0.5624499320983887,
             "imscore_laion_aesthetic": 5.377077102661133,
-            "lica_hps_lora_caption_epoch_2": 22.5
+            "lica_hps_lora_caption_epoch_2": 0.22499998561105392
           }
         }
       },
@@ -5947,7 +5947,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-v2",
-          "score": 23.125
+          "score": 0.23124998521136098
         },
         "imscore_hpsv21": {
           "source": "hf-v2",
@@ -6209,7 +6209,7 @@
             "imscore_clipscore": 27.263399124145508,
             "imscore_imagereward": -1.26388418674469,
             "imscore_laion_aesthetic": 5.003848075866699,
-            "lica_hps_lora_caption_epoch_2": 17.125
+            "lica_hps_lora_caption_epoch_2": 0.17124998904841326
           }
         },
         "text-to-svg-v2": {
@@ -6234,7 +6234,7 @@
             "imscore_clipscore": 23.144664764404297,
             "imscore_imagereward": -1.3542720079421997,
             "imscore_laion_aesthetic": 4.651042938232422,
-            "lica_hps_lora_caption_epoch_2": 16.25
+            "lica_hps_lora_caption_epoch_2": 0.1624999896079834
           }
         },
         "text-to-svg-v1": {
@@ -6259,7 +6259,7 @@
             "imscore_clipscore": 25.521007537841797,
             "imscore_imagereward": -1.3001741170883179,
             "imscore_laion_aesthetic": 4.895740509033203,
-            "lica_hps_lora_caption_epoch_2": 16.25
+            "lica_hps_lora_caption_epoch_2": 0.1624999896079834
           }
         },
         "hf-v2": {
@@ -6287,7 +6287,7 @@
             "imscore_clipscore": 24.278778076171875,
             "imscore_imagereward": -1.1539809703826904,
             "imscore_laion_aesthetic": 4.576404571533203,
-            "lica_hps_lora_caption_epoch_2": 15.9375
+            "lica_hps_lora_caption_epoch_2": 0.15937498980782985
           }
         }
       },
@@ -6332,7 +6332,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-base",
-          "score": 17.125
+          "score": 0.17124998904841326
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-v1",
@@ -6594,7 +6594,7 @@
             "imscore_clipscore": 33.480960845947266,
             "imscore_imagereward": 0.9135794043540955,
             "imscore_laion_aesthetic": 5.4951043128967285,
-            "lica_hps_lora_caption_epoch_2": 24.0
+            "lica_hps_lora_caption_epoch_2": 0.23999998465179084
           }
         },
         "text-to-svg-v2": {
@@ -6619,7 +6619,7 @@
             "imscore_clipscore": 34.84758377075195,
             "imscore_imagereward": 0.831305742263794,
             "imscore_laion_aesthetic": 5.309808254241943,
-            "lica_hps_lora_caption_epoch_2": 22.75
+            "lica_hps_lora_caption_epoch_2": 0.22749998545117675
           }
         },
         "text-to-svg-v1": {
@@ -6644,7 +6644,7 @@
             "imscore_clipscore": 32.90864181518555,
             "imscore_imagereward": 0.6353221535682678,
             "imscore_laion_aesthetic": 5.26668643951416,
-            "lica_hps_lora_caption_epoch_2": 20.125
+            "lica_hps_lora_caption_epoch_2": 0.20124998712988712
           }
         },
         "hf-v2": {
@@ -6672,7 +6672,7 @@
             "imscore_clipscore": 32.802955627441406,
             "imscore_imagereward": 0.6097429990768433,
             "imscore_laion_aesthetic": 5.285508632659912,
-            "lica_hps_lora_caption_epoch_2": 20.875
+            "lica_hps_lora_caption_epoch_2": 0.2087499866502556
           }
         }
       },
@@ -6717,7 +6717,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-base",
-          "score": 24.0
+          "score": 0.23999998465179084
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-base",
@@ -6979,7 +6979,7 @@
             "imscore_clipscore": 19.030155181884766,
             "imscore_imagereward": -1.302183985710144,
             "imscore_laion_aesthetic": 5.381328582763672,
-            "lica_hps_lora_caption_epoch_2": 15.75
+            "lica_hps_lora_caption_epoch_2": 0.15749998992773775
           }
         },
         "text-to-svg-v2": {
@@ -7004,7 +7004,7 @@
             "imscore_clipscore": 27.336761474609375,
             "imscore_imagereward": -0.8102388381958008,
             "imscore_laion_aesthetic": 5.316318035125732,
-            "lica_hps_lora_caption_epoch_2": 18.375
+            "lica_hps_lora_caption_epoch_2": 0.18374998824902739
           }
         },
         "text-to-svg-v1": {
@@ -7029,7 +7029,7 @@
             "imscore_clipscore": 18.892860412597656,
             "imscore_imagereward": -1.0876845121383667,
             "imscore_laion_aesthetic": 5.170839786529541,
-            "lica_hps_lora_caption_epoch_2": 13.625
+            "lica_hps_lora_caption_epoch_2": 0.13624999128669377
           }
         },
         "hf-v2": {
@@ -7057,7 +7057,7 @@
             "imscore_clipscore": 23.132545471191406,
             "imscore_imagereward": -1.1813359260559082,
             "imscore_laion_aesthetic": 5.166121482849121,
-            "lica_hps_lora_caption_epoch_2": 14.125
+            "lica_hps_lora_caption_epoch_2": 0.1412499909669394
           }
         }
       },
@@ -7102,7 +7102,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-v2",
-          "score": 18.375
+          "score": 0.18374998824902739
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-v2",
@@ -7364,7 +7364,7 @@
             "imscore_clipscore": 30.812471389770508,
             "imscore_imagereward": -0.1449824571609497,
             "imscore_laion_aesthetic": 5.094213008880615,
-            "lica_hps_lora_caption_epoch_2": 19.25
+            "lica_hps_lora_caption_epoch_2": 0.19249998768945725
           }
         },
         "text-to-svg-v2": {
@@ -7389,7 +7389,7 @@
             "imscore_clipscore": 19.877473831176758,
             "imscore_imagereward": -1.6900492906570435,
             "imscore_laion_aesthetic": 4.7985005378723145,
-            "lica_hps_lora_caption_epoch_2": 11.1875
+            "lica_hps_lora_caption_epoch_2": 0.11187499284549626
           }
         },
         "text-to-svg-v1": {
@@ -7414,7 +7414,7 @@
             "imscore_clipscore": 22.41690444946289,
             "imscore_imagereward": -2.2695698738098145,
             "imscore_laion_aesthetic": 4.5876264572143555,
-            "lica_hps_lora_caption_epoch_2": 13.4375
+            "lica_hps_lora_caption_epoch_2": 0.13437499140660164
           }
         },
         "hf-v2": {
@@ -7442,7 +7442,7 @@
             "imscore_clipscore": 23.50012969970703,
             "imscore_imagereward": -1.4827749729156494,
             "imscore_laion_aesthetic": 4.888113021850586,
-            "lica_hps_lora_caption_epoch_2": 11.75
+            "lica_hps_lora_caption_epoch_2": 0.1174999924857726
           }
         }
       },
@@ -7487,7 +7487,7 @@
         },
         "lica_hps_lora_caption_epoch_2": {
           "source": "text-to-svg-base",
-          "score": 19.25
+          "score": 0.19249998768945725
         },
         "imscore_hpsv21": {
           "source": "text-to-svg-base",
@@ -7575,5 +7575,12 @@
     "base_model": "Qwen/Qwen3.5-35B-A3B",
     "lora_path": "/mnt/local/lora-only-20260527-150651",
     "settings": "HF PEFT v2 local defaults (temperature 0.9, top_p 0.95, top_k 50)"
+  },
+  "score_metadata": {
+    "lica_hps_lora_caption_epoch_2": {
+      "label": "LicaScore v2",
+      "scale": "unscaled_hps_lora_cosine",
+      "converted_from_raw_logit_by_dividing_exp_logit_scale": 100.00000639508755
+    }
   }
 }

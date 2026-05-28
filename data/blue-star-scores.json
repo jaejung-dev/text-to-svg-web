@@ -29,7 +29,7 @@
     "lica_score_v2": {
       "id": "candidate_hhAv",
       "label": "Candidate hhAv",
-      "score": 24.625
+      "score": 0.2462499842520979
     },
     "hpsv21": {
       "id": "candidate_hhAv",
@@ -67,7 +67,7 @@
       "svg_chars": 91913,
       "scores": {
         "lica_score_v1": 0.95703125,
-        "lica_score_v2": 13.75,
+        "lica_score_v2": 0.13749999120675518,
         "hpsv21": 0.13681408762931824,
         "pickscore": 17.803775787353516,
         "clipscore": 15.171133041381836,
@@ -84,7 +84,7 @@
       "svg_chars": 234,
       "scores": {
         "lica_score_v1": 0.9765625,
-        "lica_score_v2": 24.625,
+        "lica_score_v2": 0.2462499842520979,
         "hpsv21": 0.25675514340400696,
         "pickscore": 20.937110900878906,
         "clipscore": 28.674274444580078,
@@ -101,7 +101,7 @@
       "svg_chars": 817,
       "scores": {
         "lica_score_v1": 0.98046875,
-        "lica_score_v2": 13.1875,
+        "lica_score_v2": 0.13187499156647883,
         "hpsv21": 0.14219695329666138,
         "pickscore": 18.867446899414062,
         "clipscore": 20.41266632080078,
@@ -109,5 +109,12 @@
         "laion_aesthetic": 4.578840255737305
       }
     }
-  ]
+  ],
+  "score_metadata": {
+    "lica_score_v2": {
+      "label": "LicaScore v2",
+      "scale": "unscaled_hps_lora_cosine",
+      "converted_from_raw_logit_by_dividing_exp_logit_scale": 100.00000639508755
+    }
+  }
 }

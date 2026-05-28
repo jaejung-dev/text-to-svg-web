@@ -45,7 +45,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.98046875,
-            "lica_score_v2": 22.875
+            "lica_score_v2": 0.22874998537123817
           }
         },
         {
@@ -61,7 +61,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.984375,
-            "lica_score_v2": 19.125
+            "lica_score_v2": 0.19124998776939584
           }
         },
         {
@@ -77,7 +77,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.9609375,
-            "lica_score_v2": 18.75
+            "lica_score_v2": 0.1874999880092116
           }
         },
         {
@@ -93,7 +93,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.984375,
-            "lica_score_v2": 20.25
+            "lica_score_v2": 0.20249998704994854
           }
         }
       ],
@@ -107,7 +107,7 @@
         "lica_score_v2": {
           "candidate_id": "example_dna_icon-seed-2026052801",
           "seed": 2026052801,
-          "score": 22.875
+          "score": 0.22874998537123817
         }
       },
       "winner_agreement": false
@@ -134,7 +134,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.96875,
-            "lica_score_v2": 17.0
+            "lica_score_v2": 0.16999998912835185
           }
         },
         {
@@ -150,7 +150,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.90234375,
-            "lica_score_v2": 20.0
+            "lica_score_v2": 0.1999999872098257
           }
         },
         {
@@ -166,7 +166,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.9375,
-            "lica_score_v2": 20.875
+            "lica_score_v2": 0.2087499866502556
           }
         },
         {
@@ -182,7 +182,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.94140625,
-            "lica_score_v2": 18.5
+            "lica_score_v2": 0.18499998816908877
           }
         }
       ],
@@ -196,7 +196,7 @@
         "lica_score_v2": {
           "candidate_id": "example_baby_bicycle-seed-2026052803",
           "seed": 2026052803,
-          "score": 20.875
+          "score": 0.2087499866502556
         }
       },
       "winner_agreement": false
@@ -223,7 +223,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.97265625,
-            "lica_score_v2": 19.75
+            "lica_score_v2": 0.1974999873697029
           }
         },
         {
@@ -239,7 +239,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.96875,
-            "lica_score_v2": 17.75
+            "lica_score_v2": 0.17749998864872032
           }
         },
         {
@@ -255,7 +255,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.96484375,
-            "lica_score_v2": 21.25
+            "lica_score_v2": 0.21249998641043982
           }
         },
         {
@@ -271,7 +271,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.96484375,
-            "lica_score_v2": 19.625
+            "lica_score_v2": 0.19624998744964148
           }
         }
       ],
@@ -285,7 +285,7 @@
         "lica_score_v2": {
           "candidate_id": "cur_0008-seed-2026052803",
           "seed": 2026052803,
-          "score": 21.25
+          "score": 0.21249998641043982
         }
       },
       "winner_agreement": false
@@ -312,7 +312,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.953125,
-            "lica_score_v2": 13.75
+            "lica_score_v2": 0.13749999120675518
           }
         },
         {
@@ -328,7 +328,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.94140625,
-            "lica_score_v2": 13.25
+            "lica_score_v2": 0.13249999152650954
           }
         },
         {
@@ -344,7 +344,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.95703125,
-            "lica_score_v2": 15.0
+            "lica_score_v2": 0.14999999040736928
           }
         },
         {
@@ -360,7 +360,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.94921875,
-            "lica_score_v2": 14.875
+            "lica_score_v2": 0.1487499904873079
           }
         }
       ],
@@ -374,7 +374,7 @@
         "lica_score_v2": {
           "candidate_id": "cur_0099-seed-2026052803",
           "seed": 2026052803,
-          "score": 15.0
+          "score": 0.14999999040736928
         }
       },
       "winner_agreement": true
@@ -401,7 +401,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.97265625,
-            "lica_score_v2": 14.9375
+            "lica_score_v2": 0.14937499044733857
           }
         },
         {
@@ -417,7 +417,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.97265625,
-            "lica_score_v2": 15.75
+            "lica_score_v2": 0.15749998992773775
           }
         },
         {
@@ -433,7 +433,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.9765625,
-            "lica_score_v2": 14.75
+            "lica_score_v2": 0.14749999056724647
           }
         },
         {
@@ -449,7 +449,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.97265625,
-            "lica_score_v2": 15.75
+            "lica_score_v2": 0.15749998992773775
           }
         }
       ],
@@ -463,7 +463,7 @@
         "lica_score_v2": {
           "candidate_id": "cur_0009-seed-2026052802",
           "seed": 2026052802,
-          "score": 15.75
+          "score": 0.15749998992773775
         }
       },
       "winner_agreement": false
@@ -490,7 +490,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.98046875,
-            "lica_score_v2": 16.125
+            "lica_score_v2": 0.16124998968792198
           }
         },
         {
@@ -506,7 +506,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.98046875,
-            "lica_score_v2": 19.25
+            "lica_score_v2": 0.19249998768945725
           }
         },
         {
@@ -522,7 +522,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.98046875,
-            "lica_score_v2": 18.125
+            "lica_score_v2": 0.18124998840890455
           }
         },
         {
@@ -538,7 +538,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.97265625,
-            "lica_score_v2": 17.5
+            "lica_score_v2": 0.1749999888085975
           }
         }
       ],
@@ -552,7 +552,7 @@
         "lica_score_v2": {
           "candidate_id": "cur_0056-seed-2026052802",
           "seed": 2026052802,
-          "score": 19.25
+          "score": 0.19249998768945725
         }
       },
       "winner_agreement": false
@@ -579,7 +579,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.9765625,
-            "lica_score_v2": 11.0625
+            "lica_score_v2": 0.11062499292543485
           }
         },
         {
@@ -595,7 +595,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.9765625,
-            "lica_score_v2": 14.6875
+            "lica_score_v2": 0.14687499060721576
           }
         },
         {
@@ -611,7 +611,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.96875,
-            "lica_score_v2": 11.0
+            "lica_score_v2": 0.10999999296540414
           }
         },
         {
@@ -627,7 +627,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.96875,
-            "lica_score_v2": 12.25
+            "lica_score_v2": 0.12249999216601824
           }
         }
       ],
@@ -641,7 +641,7 @@
         "lica_score_v2": {
           "candidate_id": "cur_0192-seed-2026052802",
           "seed": 2026052802,
-          "score": 14.6875
+          "score": 0.14687499060721576
         }
       },
       "winner_agreement": false
@@ -668,7 +668,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.87890625,
-            "lica_score_v2": 15.1875
+            "lica_score_v2": 0.1518749902874614
           }
         },
         {
@@ -684,7 +684,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.96875,
-            "lica_score_v2": 21.375
+            "lica_score_v2": 0.21374998633050124
           }
         },
         {
@@ -700,7 +700,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.9609375,
-            "lica_score_v2": 17.125
+            "lica_score_v2": 0.17124998904841326
           }
         },
         {
@@ -716,7 +716,7 @@
           "svg_parse_error": null,
           "scores": {
             "lica_score_v1": 0.96484375,
-            "lica_score_v2": 18.25
+            "lica_score_v2": 0.18249998832896597
           },
           "replacement_for": 2026052803
         }
@@ -731,7 +731,7 @@
         "lica_score_v2": {
           "candidate_id": "cur_0018-seed-2026052802",
           "seed": 2026052802,
-          "score": 21.375
+          "score": 0.21374998633050124
         }
       },
       "winner_agreement": true
@@ -743,5 +743,12 @@
     2026052803,
     2026052804
   ],
-  "notes": "cur_0018 seed 2026052803 returned malformed SVG, so seed 2026052805 is used as a replacement candidate for that prompt."
+  "notes": "cur_0018 seed 2026052803 returned malformed SVG, so seed 2026052805 is used as a replacement candidate for that prompt.",
+  "score_metadata": {
+    "lica_score_v2": {
+      "label": "LicaScore v2",
+      "scale": "unscaled_hps_lora_cosine",
+      "converted_from_raw_logit_by_dividing_exp_logit_scale": 100.00000639508755
+    }
+  }
 }
