@@ -97,7 +97,7 @@ function renderCandidate(prompt, candidate) {
     ? `<img src="${escapeHtml(assetUrl(candidate.asset))}" alt="${escapeHtml(`${candidate.label} output for ${prompt.id}`)}" loading="lazy" />`
     : `<div class="missing-box">Not provided</div>`;
   return `
-    <article class="candidate-card ${isWinner ? "winner" : ""} ${candidate.asset ? "" : "missing"}">
+    <article class="candidate-card theme-${escapeHtml(prompt.id)} ${isWinner ? "winner" : ""} ${candidate.asset ? "" : "missing"}">
       <div class="image-frame">${image}</div>
       <div class="candidate-meta">
         <div class="score-pill ${isWinner ? "winner" : ""}">

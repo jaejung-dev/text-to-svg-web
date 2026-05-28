@@ -338,6 +338,39 @@ main {
   background-size: 20px 20px;
 }
 
+.theme-sakura_tree .image-frame {
+  background:
+    radial-gradient(circle at 20% 18%, rgba(255, 183, 204, 0.55) 0 7px, transparent 8px),
+    radial-gradient(circle at 78% 24%, rgba(255, 204, 219, 0.5) 0 6px, transparent 7px),
+    linear-gradient(180deg, #fff5f8 0%, #f8fbff 58%, #eef7ec 100%);
+}
+
+.theme-fall_leaves .image-frame {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(202, 91, 38, 0.18), transparent 9rem),
+    radial-gradient(circle at 85% 18%, rgba(239, 177, 75, 0.22), transparent 8rem),
+    linear-gradient(180deg, #fff6e6 0%, #f7ead7 100%);
+}
+
+.theme-ocean_seashells .image-frame,
+.theme-classic_sailboat .image-frame {
+  background: linear-gradient(180deg, #eaf6fb 0%, #f5fbff 54%, #dfeff4 55%, #edf7f7 100%);
+}
+
+.theme-cute_ghost_pumpkin .image-frame {
+  background:
+    radial-gradient(circle at 75% 20%, rgba(255, 221, 128, 0.35), transparent 5rem),
+    linear-gradient(180deg, #2a2541 0%, #49365d 100%);
+}
+
+.theme-flower_roots .image-frame {
+  background: linear-gradient(180deg, #f6f2df 0%, #eef4dd 58%, #d8c3a5 100%);
+}
+
+.theme-bird_outline_yellow_blue .image-frame {
+  background: linear-gradient(180deg, #edf8ff 0%, #fff9d8 100%);
+}
+
 .image-frame img {
   width: 100%;
   max-height: 224px;
