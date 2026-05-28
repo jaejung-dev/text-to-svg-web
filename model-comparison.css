@@ -171,6 +171,34 @@ main {
   color: var(--muted);
 }
 
+.rank-metrics {
+  display: grid;
+  gap: 7px;
+  margin-top: 16px;
+}
+
+.rank-metric {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  border-radius: 12px;
+  padding: 8px 10px;
+  background: #f6ede2;
+}
+
+.rank-metric span {
+  overflow: hidden;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rank-metric strong {
+  margin: 0;
+  font-size: 15px;
+}
+
 .prompt-list {
   display: grid;
   gap: 30px;
@@ -241,6 +269,38 @@ main {
   color: var(--muted);
   font-size: 18px;
   font-weight: 900;
+}
+
+.winner-metrics {
+  display: grid;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.winner-metric {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  border-radius: 12px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.winner-metric span {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.winner-metric strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .candidate-grid {
@@ -339,6 +399,43 @@ main {
 .score-pill strong {
   font-size: 20px;
   letter-spacing: -0.04em;
+}
+
+.metric-list {
+  display: grid;
+  gap: 7px;
+}
+
+.metric-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  border-radius: 13px;
+  padding: 8px 10px;
+  background: #f8efe5;
+  font-size: 12px;
+}
+
+.metric-row span {
+  overflow: hidden;
+  color: var(--muted);
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.metric-row strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.metric-row.winner {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.metric-row.winner span {
+  color: var(--accent);
 }
 
 @media (max-width: 1280px) {

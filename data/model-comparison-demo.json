@@ -8,35 +8,75 @@
       "label": "Arrow 1.1",
       "short_label": "Arrow",
       "count": 8,
-      "wins": 5
+      "wins": 5,
+      "metric_wins": {
+        "lica_score_v2": 5,
+        "hpsv21": 4,
+        "pickscore": 5,
+        "clipscore": 3,
+        "imagereward": 5,
+        "laion_aesthetic": 3
+      }
     },
     {
       "id": "gpt",
       "label": "GPT-5.4",
       "short_label": "GPT",
       "count": 15,
-      "wins": 3
+      "wins": 3,
+      "metric_wins": {
+        "lica_score_v2": 3,
+        "hpsv21": 3,
+        "pickscore": 2,
+        "clipscore": 2,
+        "imagereward": 1,
+        "laion_aesthetic": 3
+      }
     },
     {
       "id": "gemini",
       "label": "Gemini 3.1 Pro Preview",
       "short_label": "Gemini",
       "count": 15,
-      "wins": 3
+      "wins": 3,
+      "metric_wins": {
+        "lica_score_v2": 3,
+        "hpsv21": 4,
+        "pickscore": 1,
+        "clipscore": 4,
+        "imagereward": 4,
+        "laion_aesthetic": 5
+      }
     },
     {
       "id": "claude",
       "label": "Claude Opus 4.7",
       "short_label": "Claude",
       "count": 15,
-      "wins": 4
+      "wins": 4,
+      "metric_wins": {
+        "lica_score_v2": 4,
+        "hpsv21": 4,
+        "pickscore": 6,
+        "clipscore": 6,
+        "imagereward": 5,
+        "laion_aesthetic": 3
+      }
     },
     {
       "id": "qwen_lora",
       "label": "Qwen3.5-VL 3.5B",
       "short_label": "Qwen",
       "count": 15,
-      "wins": 0
+      "wins": 0,
+      "metric_wins": {
+        "lica_score_v2": 0,
+        "hpsv21": 0,
+        "pickscore": 1,
+        "clipscore": 0,
+        "imagereward": 0,
+        "laion_aesthetic": 1
+      }
     }
   ],
   "summary": {
@@ -51,6 +91,58 @@
       "gemini": 3,
       "claude": 4,
       "qwen_lora": 0
+    },
+    "scored_by_metric": {
+      "lica_score_v2": 68,
+      "hpsv21": 68,
+      "pickscore": 68,
+      "clipscore": 68,
+      "imagereward": 68,
+      "laion_aesthetic": 68
+    },
+    "metric_win_counts": {
+      "lica_score_v2": {
+        "arrow": 5,
+        "gpt": 3,
+        "gemini": 3,
+        "claude": 4,
+        "qwen_lora": 0
+      },
+      "hpsv21": {
+        "arrow": 4,
+        "gpt": 3,
+        "gemini": 4,
+        "claude": 4,
+        "qwen_lora": 0
+      },
+      "pickscore": {
+        "arrow": 5,
+        "gpt": 2,
+        "gemini": 1,
+        "claude": 6,
+        "qwen_lora": 1
+      },
+      "clipscore": {
+        "arrow": 3,
+        "gpt": 2,
+        "gemini": 4,
+        "claude": 6,
+        "qwen_lora": 0
+      },
+      "imagereward": {
+        "arrow": 5,
+        "gpt": 1,
+        "gemini": 4,
+        "claude": 5,
+        "qwen_lora": 0
+      },
+      "laion_aesthetic": {
+        "arrow": 3,
+        "gpt": 3,
+        "gemini": 5,
+        "claude": 3,
+        "qwen_lora": 1
+      }
     }
   },
   "prompts": [
@@ -68,7 +160,15 @@
           "score": 0.263671875,
           "raw_cosine": 0.263671875,
           "logit": 26.3671875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.263671875,
+            "hpsv21": 0.23332098126411438,
+            "pickscore": 20.614049911499023,
+            "clipscore": 27.418258666992188,
+            "imagereward": 1.227171540260315,
+            "laion_aesthetic": 5.048516750335693
+          }
         },
         {
           "id": "gpt",
@@ -79,7 +179,15 @@
           "score": 0.2138671875,
           "raw_cosine": 0.2138671875,
           "logit": 21.38671875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.2138671875,
+            "hpsv21": 0.21543100476264954,
+            "pickscore": 20.255657196044922,
+            "clipscore": 30.29477882385254,
+            "imagereward": 0.8041583895683289,
+            "laion_aesthetic": 5.291385650634766
+          }
         },
         {
           "id": "gemini",
@@ -90,7 +198,15 @@
           "score": 0.2041015625,
           "raw_cosine": 0.2041015625,
           "logit": 20.41015625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.2041015625,
+            "hpsv21": 0.18143165111541748,
+            "pickscore": 19.057323455810547,
+            "clipscore": 22.382278442382812,
+            "imagereward": -2.017115592956543,
+            "laion_aesthetic": 4.7762322425842285
+          }
         },
         {
           "id": "claude",
@@ -101,7 +217,15 @@
           "score": 0.2255859375,
           "raw_cosine": 0.2255859375,
           "logit": 22.55859375,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.2255859375,
+            "hpsv21": 0.22028948366641998,
+            "pickscore": 20.149581909179688,
+            "clipscore": 29.41232681274414,
+            "imagereward": 0.1697348952293396,
+            "laion_aesthetic": 5.145008087158203
+          }
         },
         {
           "id": "qwen_lora",
@@ -112,13 +236,53 @@
           "score": 0.1904296875,
           "raw_cosine": 0.1904296875,
           "logit": 19.04296875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1904296875,
+            "hpsv21": 0.17775565385818481,
+            "pickscore": 18.435958862304688,
+            "clipscore": 25.120681762695312,
+            "imagereward": -2.1190173625946045,
+            "laion_aesthetic": 5.2509846687316895
+          }
         }
       ],
       "best": {
         "id": "arrow",
         "label": "Arrow 1.1",
         "score": 0.263671875
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.263671875
+        },
+        "hpsv21": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.23332098126411438
+        },
+        "pickscore": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 20.614049911499023
+        },
+        "clipscore": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 30.29477882385254
+        },
+        "imagereward": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 1.227171540260315
+        },
+        "laion_aesthetic": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 5.291385650634766
+        }
       }
     },
     {
@@ -135,7 +299,15 @@
           "score": 0.2353515625,
           "raw_cosine": 0.2353515625,
           "logit": 23.53515625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.2353515625,
+            "hpsv21": 0.24015642702579498,
+            "pickscore": 21.736900329589844,
+            "clipscore": 29.300086975097656,
+            "imagereward": 1.7057864665985107,
+            "laion_aesthetic": 5.263230323791504
+          }
         },
         {
           "id": "gpt",
@@ -146,7 +318,15 @@
           "score": 0.216796875,
           "raw_cosine": 0.216796875,
           "logit": 21.6796875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.216796875,
+            "hpsv21": 0.21953220665454865,
+            "pickscore": 21.185861587524414,
+            "clipscore": 25.581562042236328,
+            "imagereward": 1.2635270357131958,
+            "laion_aesthetic": 5.301290512084961
+          }
         },
         {
           "id": "gemini",
@@ -157,7 +337,15 @@
           "score": 0.2138671875,
           "raw_cosine": 0.2138671875,
           "logit": 21.38671875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.2138671875,
+            "hpsv21": 0.21423330903053284,
+            "pickscore": 20.58837890625,
+            "clipscore": 23.265609741210938,
+            "imagereward": -0.06366857886314392,
+            "laion_aesthetic": 5.22479248046875
+          }
         },
         {
           "id": "claude",
@@ -168,7 +356,15 @@
           "score": 0.193359375,
           "raw_cosine": 0.193359375,
           "logit": 19.3359375,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.193359375,
+            "hpsv21": 0.19833961129188538,
+            "pickscore": 20.543228149414062,
+            "clipscore": 22.07400894165039,
+            "imagereward": -0.6696297526359558,
+            "laion_aesthetic": 5.274505615234375
+          }
         },
         {
           "id": "qwen_lora",
@@ -179,13 +375,53 @@
           "score": 0.1728515625,
           "raw_cosine": 0.1728515625,
           "logit": 17.28515625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1728515625,
+            "hpsv21": 0.177748441696167,
+            "pickscore": 19.304445266723633,
+            "clipscore": 21.363862991333008,
+            "imagereward": -1.5458407402038574,
+            "laion_aesthetic": 4.899626731872559
+          }
         }
       ],
       "best": {
         "id": "arrow",
         "label": "Arrow 1.1",
         "score": 0.2353515625
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.2353515625
+        },
+        "hpsv21": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.24015642702579498
+        },
+        "pickscore": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 21.736900329589844
+        },
+        "clipscore": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 29.300086975097656
+        },
+        "imagereward": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 1.7057864665985107
+        },
+        "laion_aesthetic": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 5.301290512084961
+        }
       }
     },
     {
@@ -202,7 +438,15 @@
           "score": 0.259765625,
           "raw_cosine": 0.259765625,
           "logit": 25.9765625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.259765625,
+            "hpsv21": 0.2668977379798889,
+            "pickscore": 20.894393920898438,
+            "clipscore": 22.112958908081055,
+            "imagereward": 1.0987859964370728,
+            "laion_aesthetic": 5.372664451599121
+          }
         },
         {
           "id": "gpt",
@@ -213,7 +457,15 @@
           "score": 0.22265625,
           "raw_cosine": 0.22265625,
           "logit": 22.265625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.22265625,
+            "hpsv21": 0.24137923121452332,
+            "pickscore": 20.460485458374023,
+            "clipscore": 19.622343063354492,
+            "imagereward": 0.1691378802061081,
+            "laion_aesthetic": 5.275139808654785
+          }
         },
         {
           "id": "gemini",
@@ -224,7 +476,15 @@
           "score": 0.2373046875,
           "raw_cosine": 0.2373046875,
           "logit": 23.73046875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.2373046875,
+            "hpsv21": 0.24752160906791687,
+            "pickscore": 19.968124389648438,
+            "clipscore": 21.943744659423828,
+            "imagereward": 0.05774003267288208,
+            "laion_aesthetic": 5.353766441345215
+          }
         },
         {
           "id": "claude",
@@ -235,7 +495,15 @@
           "score": 0.2431640625,
           "raw_cosine": 0.2431640625,
           "logit": 24.31640625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.2431640625,
+            "hpsv21": 0.2522301971912384,
+            "pickscore": 21.07293701171875,
+            "clipscore": 22.77446937561035,
+            "imagereward": 0.21304959058761597,
+            "laion_aesthetic": 5.257102012634277
+          }
         },
         {
           "id": "qwen_lora",
@@ -246,13 +514,53 @@
           "score": 0.2001953125,
           "raw_cosine": 0.2001953125,
           "logit": 20.01953125,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.2001953125,
+            "hpsv21": 0.20507486164569855,
+            "pickscore": 19.786027908325195,
+            "clipscore": 20.65593719482422,
+            "imagereward": -1.4826384782791138,
+            "laion_aesthetic": 5.188604354858398
+          }
         }
       ],
       "best": {
         "id": "arrow",
         "label": "Arrow 1.1",
         "score": 0.259765625
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.259765625
+        },
+        "hpsv21": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.2668977379798889
+        },
+        "pickscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 21.07293701171875
+        },
+        "clipscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 22.77446937561035
+        },
+        "imagereward": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 1.0987859964370728
+        },
+        "laion_aesthetic": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 5.372664451599121
+        }
       }
     },
     {
@@ -269,7 +577,15 @@
           "score": 0.1416015625,
           "raw_cosine": 0.1416015625,
           "logit": 14.16015625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1416015625,
+            "hpsv21": 0.18894125521183014,
+            "pickscore": 19.96551513671875,
+            "clipscore": 28.109508514404297,
+            "imagereward": 0.6450571417808533,
+            "laion_aesthetic": 5.1457319259643555
+          }
         },
         {
           "id": "gpt",
@@ -280,7 +596,15 @@
           "score": 0.17578125,
           "raw_cosine": 0.17578125,
           "logit": 17.578125,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.17578125,
+            "hpsv21": 0.18331576883792877,
+            "pickscore": 19.179615020751953,
+            "clipscore": 26.514122009277344,
+            "imagereward": 0.1896674484014511,
+            "laion_aesthetic": 4.703846454620361
+          }
         },
         {
           "id": "gemini",
@@ -291,7 +615,15 @@
           "score": 0.1826171875,
           "raw_cosine": 0.1826171875,
           "logit": 18.26171875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1826171875,
+            "hpsv21": 0.1918138861656189,
+            "pickscore": 19.402467727661133,
+            "clipscore": 29.872079849243164,
+            "imagereward": 0.24572576582431793,
+            "laion_aesthetic": 4.730635166168213
+          }
         },
         {
           "id": "claude",
@@ -302,7 +634,15 @@
           "score": 0.1904296875,
           "raw_cosine": 0.1904296875,
           "logit": 19.04296875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1904296875,
+            "hpsv21": 0.18966972827911377,
+            "pickscore": 18.887950897216797,
+            "clipscore": 29.878551483154297,
+            "imagereward": -0.18774846196174622,
+            "laion_aesthetic": 4.674785614013672
+          }
         },
         {
           "id": "qwen_lora",
@@ -313,13 +653,53 @@
           "score": 0.15234375,
           "raw_cosine": 0.15234375,
           "logit": 15.234375,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.15234375,
+            "hpsv21": 0.1565822958946228,
+            "pickscore": 18.840635299682617,
+            "clipscore": 26.012983322143555,
+            "imagereward": -1.1784571409225464,
+            "laion_aesthetic": 4.833192825317383
+          }
         }
       ],
       "best": {
         "id": "claude",
         "label": "Claude Opus 4.7",
         "score": 0.1904296875
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.1904296875
+        },
+        "hpsv21": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 0.1918138861656189
+        },
+        "pickscore": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 19.96551513671875
+        },
+        "clipscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 29.878551483154297
+        },
+        "imagereward": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.6450571417808533
+        },
+        "laion_aesthetic": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 5.1457319259643555
+        }
       }
     },
     {
@@ -336,7 +716,15 @@
           "score": 0.15234375,
           "raw_cosine": 0.15234375,
           "logit": 15.234375,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.15234375,
+            "hpsv21": 0.14425265789031982,
+            "pickscore": 18.687950134277344,
+            "clipscore": 10.619400978088379,
+            "imagereward": -1.5538722276687622,
+            "laion_aesthetic": 4.564087867736816
+          }
         },
         {
           "id": "gpt",
@@ -347,7 +735,15 @@
           "score": 0.1494140625,
           "raw_cosine": 0.1494140625,
           "logit": 14.94140625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1494140625,
+            "hpsv21": 0.15234141051769257,
+            "pickscore": 18.650306701660156,
+            "clipscore": 13.611608505249023,
+            "imagereward": -0.9031341671943665,
+            "laion_aesthetic": 4.858687400817871
+          }
         },
         {
           "id": "gemini",
@@ -358,7 +754,15 @@
           "score": 0.181640625,
           "raw_cosine": 0.181640625,
           "logit": 18.1640625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.181640625,
+            "hpsv21": 0.18890388309955597,
+            "pickscore": 19.61463165283203,
+            "clipscore": 13.803757667541504,
+            "imagereward": -0.3940335512161255,
+            "laion_aesthetic": 5.251208305358887
+          }
         },
         {
           "id": "claude",
@@ -369,7 +773,15 @@
           "score": 0.1796875,
           "raw_cosine": 0.1796875,
           "logit": 17.96875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1796875,
+            "hpsv21": 0.17549028992652893,
+            "pickscore": 19.49015235900879,
+            "clipscore": 19.691635131835938,
+            "imagereward": -0.19794794917106628,
+            "laion_aesthetic": 5.334355354309082
+          }
         },
         {
           "id": "qwen_lora",
@@ -380,13 +792,53 @@
           "score": 0.1572265625,
           "raw_cosine": 0.1572265625,
           "logit": 15.72265625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1572265625,
+            "hpsv21": 0.15996554493904114,
+            "pickscore": 19.192310333251953,
+            "clipscore": 14.735095024108887,
+            "imagereward": -0.6779689788818359,
+            "laion_aesthetic": 4.967916965484619
+          }
         }
       ],
       "best": {
         "id": "gemini",
         "label": "Gemini 3.1 Pro Preview",
         "score": 0.181640625
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 0.181640625
+        },
+        "hpsv21": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 0.18890388309955597
+        },
+        "pickscore": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 19.61463165283203
+        },
+        "clipscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 19.691635131835938
+        },
+        "imagereward": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": -0.19794794917106628
+        },
+        "laion_aesthetic": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 5.334355354309082
+        }
       }
     },
     {
@@ -403,7 +855,15 @@
           "score": 0.1904296875,
           "raw_cosine": 0.1904296875,
           "logit": 19.04296875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1904296875,
+            "hpsv21": 0.1908678114414215,
+            "pickscore": 19.20766830444336,
+            "clipscore": 16.987266540527344,
+            "imagereward": -0.6434318423271179,
+            "laion_aesthetic": 4.935025215148926
+          }
         },
         {
           "id": "gpt",
@@ -414,7 +874,15 @@
           "score": 0.1904296875,
           "raw_cosine": 0.1904296875,
           "logit": 19.04296875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1904296875,
+            "hpsv21": 0.1884884089231491,
+            "pickscore": 18.947071075439453,
+            "clipscore": 14.630288124084473,
+            "imagereward": -0.3849620521068573,
+            "laion_aesthetic": 4.716252326965332
+          }
         },
         {
           "id": "gemini",
@@ -425,7 +893,15 @@
           "score": 0.20703125,
           "raw_cosine": 0.20703125,
           "logit": 20.703125,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.20703125,
+            "hpsv21": 0.20275279879570007,
+            "pickscore": 18.933555603027344,
+            "clipscore": 16.76892852783203,
+            "imagereward": 0.12516595423221588,
+            "laion_aesthetic": 5.129584312438965
+          }
         },
         {
           "id": "claude",
@@ -436,7 +912,15 @@
           "score": 0.197265625,
           "raw_cosine": 0.197265625,
           "logit": 19.7265625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.197265625,
+            "hpsv21": 0.1874419003725052,
+            "pickscore": 18.46784019470215,
+            "clipscore": 16.756061553955078,
+            "imagereward": -0.397964745759964,
+            "laion_aesthetic": 4.895938873291016
+          }
         },
         {
           "id": "qwen_lora",
@@ -447,13 +931,53 @@
           "score": 0.1962890625,
           "raw_cosine": 0.1962890625,
           "logit": 19.62890625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1962890625,
+            "hpsv21": 0.19185960292816162,
+            "pickscore": 18.76930046081543,
+            "clipscore": 16.251771926879883,
+            "imagereward": -0.5083508491516113,
+            "laion_aesthetic": 4.7589850425720215
+          }
         }
       ],
       "best": {
         "id": "gemini",
         "label": "Gemini 3.1 Pro Preview",
         "score": 0.20703125
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 0.20703125
+        },
+        "hpsv21": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 0.20275279879570007
+        },
+        "pickscore": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 19.20766830444336
+        },
+        "clipscore": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 16.987266540527344
+        },
+        "imagereward": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 0.12516595423221588
+        },
+        "laion_aesthetic": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 5.129584312438965
+        }
       }
     },
     {
@@ -470,7 +994,15 @@
           "score": 0.185546875,
           "raw_cosine": 0.185546875,
           "logit": 18.5546875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.185546875,
+            "hpsv21": 0.19881106913089752,
+            "pickscore": 19.56751823425293,
+            "clipscore": 16.949377059936523,
+            "imagereward": -0.8768954277038574,
+            "laion_aesthetic": 5.448575973510742
+          }
         },
         {
           "id": "gpt",
@@ -481,7 +1013,15 @@
           "score": 0.125,
           "raw_cosine": 0.125,
           "logit": 12.5,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.125,
+            "hpsv21": 0.13217699527740479,
+            "pickscore": 18.983732223510742,
+            "clipscore": 15.678766250610352,
+            "imagereward": -2.213646411895752,
+            "laion_aesthetic": 4.809986114501953
+          }
         },
         {
           "id": "gemini",
@@ -492,7 +1032,15 @@
           "score": 0.15625,
           "raw_cosine": 0.15625,
           "logit": 15.625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.15625,
+            "hpsv21": 0.1733650267124176,
+            "pickscore": 19.179832458496094,
+            "clipscore": 11.470370292663574,
+            "imagereward": -1.7855297327041626,
+            "laion_aesthetic": 5.121222496032715
+          }
         },
         {
           "id": "claude",
@@ -503,7 +1051,15 @@
           "score": 0.1708984375,
           "raw_cosine": 0.1708984375,
           "logit": 17.08984375,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1708984375,
+            "hpsv21": 0.1697222888469696,
+            "pickscore": 19.059612274169922,
+            "clipscore": 9.861791610717773,
+            "imagereward": -1.2859904766082764,
+            "laion_aesthetic": 5.070831298828125
+          }
         },
         {
           "id": "qwen_lora",
@@ -514,13 +1070,53 @@
           "score": 0.16796875,
           "raw_cosine": 0.16796875,
           "logit": 16.796875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.16796875,
+            "hpsv21": 0.18036946654319763,
+            "pickscore": 19.036157608032227,
+            "clipscore": 15.54600715637207,
+            "imagereward": -1.5957030057907104,
+            "laion_aesthetic": 4.975090503692627
+          }
         }
       ],
       "best": {
         "id": "arrow",
         "label": "Arrow 1.1",
         "score": 0.185546875
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.185546875
+        },
+        "hpsv21": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.19881106913089752
+        },
+        "pickscore": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 19.56751823425293
+        },
+        "clipscore": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 16.949377059936523
+        },
+        "imagereward": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": -0.8768954277038574
+        },
+        "laion_aesthetic": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 5.448575973510742
+        }
       }
     },
     {
@@ -537,7 +1133,15 @@
           "score": 0.28125,
           "raw_cosine": 0.28125,
           "logit": 28.125,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.28125,
+            "hpsv21": 0.2644031047821045,
+            "pickscore": 22.768157958984375,
+            "clipscore": 28.4243221282959,
+            "imagereward": 1.0871914625167847,
+            "laion_aesthetic": 4.936592102050781
+          }
         },
         {
           "id": "gpt",
@@ -548,7 +1152,15 @@
           "score": 0.197265625,
           "raw_cosine": 0.197265625,
           "logit": 19.7265625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.197265625,
+            "hpsv21": 0.20340867340564728,
+            "pickscore": 22.53277587890625,
+            "clipscore": 31.13853645324707,
+            "imagereward": -0.3261931538581848,
+            "laion_aesthetic": 4.781730651855469
+          }
         },
         {
           "id": "gemini",
@@ -559,7 +1171,15 @@
           "score": 0.2060546875,
           "raw_cosine": 0.2060546875,
           "logit": 20.60546875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.2060546875,
+            "hpsv21": 0.19774959981441498,
+            "pickscore": 22.06354331970215,
+            "clipscore": 32.03498840332031,
+            "imagereward": -1.0719176530838013,
+            "laion_aesthetic": 4.739519119262695
+          }
         },
         {
           "id": "claude",
@@ -570,7 +1190,15 @@
           "score": 0.27734375,
           "raw_cosine": 0.27734375,
           "logit": 27.734375,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.27734375,
+            "hpsv21": 0.2698284387588501,
+            "pickscore": 22.86876678466797,
+            "clipscore": 30.52215576171875,
+            "imagereward": 1.236619472503662,
+            "laion_aesthetic": 4.941417694091797
+          }
         },
         {
           "id": "qwen_lora",
@@ -581,13 +1209,53 @@
           "score": 0.1767578125,
           "raw_cosine": 0.1767578125,
           "logit": 17.67578125,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1767578125,
+            "hpsv21": 0.1804882138967514,
+            "pickscore": 20.689905166625977,
+            "clipscore": 30.159107208251953,
+            "imagereward": -2.275904417037964,
+            "laion_aesthetic": 4.953279495239258
+          }
         }
       ],
       "best": {
         "id": "arrow",
         "label": "Arrow 1.1",
         "score": 0.28125
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "arrow",
+          "label": "Arrow 1.1",
+          "score": 0.28125
+        },
+        "hpsv21": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.2698284387588501
+        },
+        "pickscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 22.86876678466797
+        },
+        "clipscore": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 32.03498840332031
+        },
+        "imagereward": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 1.236619472503662
+        },
+        "laion_aesthetic": {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "score": 4.953279495239258
+        }
       }
     },
     {
@@ -603,7 +1271,8 @@
           "asset": null,
           "score": null,
           "raw_cosine": null,
-          "logit": null
+          "logit": null,
+          "scores": {}
         },
         {
           "id": "gpt",
@@ -614,7 +1283,15 @@
           "score": 0.26953125,
           "raw_cosine": 0.26953125,
           "logit": 26.953125,
-          "elapsed_seconds": 16.144
+          "elapsed_seconds": 16.144,
+          "scores": {
+            "lica_score_v2": 0.26953125,
+            "hpsv21": 0.27177271246910095,
+            "pickscore": 21.449810028076172,
+            "clipscore": 41.860435485839844,
+            "imagereward": -0.006559173576533794,
+            "laion_aesthetic": 5.334750175476074
+          }
         },
         {
           "id": "gemini",
@@ -625,7 +1302,15 @@
           "score": 0.25,
           "raw_cosine": 0.25,
           "logit": 25.0,
-          "elapsed_seconds": 17.405
+          "elapsed_seconds": 17.405,
+          "scores": {
+            "lica_score_v2": 0.25,
+            "hpsv21": 0.2625191807746887,
+            "pickscore": 20.775527954101562,
+            "clipscore": 43.33780288696289,
+            "imagereward": 0.42466026544570923,
+            "laion_aesthetic": 5.400110721588135
+          }
         },
         {
           "id": "claude",
@@ -636,7 +1321,15 @@
           "score": 0.2060546875,
           "raw_cosine": 0.2060546875,
           "logit": 20.60546875,
-          "elapsed_seconds": 20.943
+          "elapsed_seconds": 20.943,
+          "scores": {
+            "lica_score_v2": 0.2060546875,
+            "hpsv21": 0.24230670928955078,
+            "pickscore": 20.702930450439453,
+            "clipscore": 43.454742431640625,
+            "imagereward": 0.24209347367286682,
+            "laion_aesthetic": 5.359678745269775
+          }
         },
         {
           "id": "qwen_lora",
@@ -647,13 +1340,53 @@
           "score": 0.212890625,
           "raw_cosine": 0.212890625,
           "logit": 21.2890625,
-          "elapsed_seconds": 13.843
+          "elapsed_seconds": 13.843,
+          "scores": {
+            "lica_score_v2": 0.212890625,
+            "hpsv21": 0.20098161697387695,
+            "pickscore": 19.865140914916992,
+            "clipscore": 43.122093200683594,
+            "imagereward": -0.16143356263637543,
+            "laion_aesthetic": 4.9934234619140625
+          }
         }
       ],
       "best": {
         "id": "gpt",
         "label": "GPT-5.4",
         "score": 0.26953125
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 0.26953125
+        },
+        "hpsv21": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 0.27177271246910095
+        },
+        "pickscore": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 21.449810028076172
+        },
+        "clipscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 43.454742431640625
+        },
+        "imagereward": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 0.42466026544570923
+        },
+        "laion_aesthetic": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 5.400110721588135
+        }
       }
     },
     {
@@ -669,7 +1402,8 @@
           "asset": null,
           "score": null,
           "raw_cosine": null,
-          "logit": null
+          "logit": null,
+          "scores": {}
         },
         {
           "id": "gpt",
@@ -680,7 +1414,15 @@
           "score": 0.2197265625,
           "raw_cosine": 0.2197265625,
           "logit": 21.97265625,
-          "elapsed_seconds": 33.854
+          "elapsed_seconds": 33.854,
+          "scores": {
+            "lica_score_v2": 0.2197265625,
+            "hpsv21": 0.22631745040416718,
+            "pickscore": 20.995622634887695,
+            "clipscore": 29.20379066467285,
+            "imagereward": -1.3607438802719116,
+            "laion_aesthetic": 5.188200950622559
+          }
         },
         {
           "id": "gemini",
@@ -691,7 +1433,15 @@
           "score": 0.26171875,
           "raw_cosine": 0.26171875,
           "logit": 26.171875,
-          "elapsed_seconds": 42.312
+          "elapsed_seconds": 42.312,
+          "scores": {
+            "lica_score_v2": 0.26171875,
+            "hpsv21": 0.2659551799297333,
+            "pickscore": 21.951011657714844,
+            "clipscore": 31.43373680114746,
+            "imagereward": 1.9154534339904785,
+            "laion_aesthetic": 5.5581254959106445
+          }
         },
         {
           "id": "claude",
@@ -702,7 +1452,15 @@
           "score": 0.267578125,
           "raw_cosine": 0.267578125,
           "logit": 26.7578125,
-          "elapsed_seconds": 14.705
+          "elapsed_seconds": 14.705,
+          "scores": {
+            "lica_score_v2": 0.267578125,
+            "hpsv21": 0.2669133245944977,
+            "pickscore": 22.654315948486328,
+            "clipscore": 26.641677856445312,
+            "imagereward": 1.8752728700637817,
+            "laion_aesthetic": 5.502528667449951
+          }
         },
         {
           "id": "qwen_lora",
@@ -713,13 +1471,53 @@
           "score": 0.23046875,
           "raw_cosine": 0.23046875,
           "logit": 23.046875,
-          "elapsed_seconds": 43.303
+          "elapsed_seconds": 43.303,
+          "scores": {
+            "lica_score_v2": 0.23046875,
+            "hpsv21": 0.23389403522014618,
+            "pickscore": 21.166812896728516,
+            "clipscore": 31.1893253326416,
+            "imagereward": 1.2753475904464722,
+            "laion_aesthetic": 5.465628623962402
+          }
         }
       ],
       "best": {
         "id": "claude",
         "label": "Claude Opus 4.7",
         "score": 0.267578125
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.267578125
+        },
+        "hpsv21": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.2669133245944977
+        },
+        "pickscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 22.654315948486328
+        },
+        "clipscore": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 31.43373680114746
+        },
+        "imagereward": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 1.9154534339904785
+        },
+        "laion_aesthetic": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 5.5581254959106445
+        }
       }
     },
     {
@@ -735,7 +1533,8 @@
           "asset": null,
           "score": null,
           "raw_cosine": null,
-          "logit": null
+          "logit": null,
+          "scores": {}
         },
         {
           "id": "gpt",
@@ -746,7 +1545,15 @@
           "score": 0.134765625,
           "raw_cosine": 0.134765625,
           "logit": 13.4765625,
-          "elapsed_seconds": 14.412
+          "elapsed_seconds": 14.412,
+          "scores": {
+            "lica_score_v2": 0.134765625,
+            "hpsv21": 0.15263530611991882,
+            "pickscore": 18.858095169067383,
+            "clipscore": 18.63239288330078,
+            "imagereward": -0.7514045834541321,
+            "laion_aesthetic": 5.479235649108887
+          }
         },
         {
           "id": "gemini",
@@ -757,7 +1564,15 @@
           "score": 0.1484375,
           "raw_cosine": 0.1484375,
           "logit": 14.84375,
-          "elapsed_seconds": 11.511
+          "elapsed_seconds": 11.511,
+          "scores": {
+            "lica_score_v2": 0.1484375,
+            "hpsv21": 0.16427528858184814,
+            "pickscore": 19.26171112060547,
+            "clipscore": 18.44196128845215,
+            "imagereward": -0.5670799612998962,
+            "laion_aesthetic": 5.475336074829102
+          }
         },
         {
           "id": "claude",
@@ -768,7 +1583,15 @@
           "score": 0.2421875,
           "raw_cosine": 0.2421875,
           "logit": 24.21875,
-          "elapsed_seconds": 9.448
+          "elapsed_seconds": 9.448,
+          "scores": {
+            "lica_score_v2": 0.2421875,
+            "hpsv21": 0.24166595935821533,
+            "pickscore": 20.687210083007812,
+            "clipscore": 37.302860260009766,
+            "imagereward": 1.0609363317489624,
+            "laion_aesthetic": 5.942888259887695
+          }
         },
         {
           "id": "qwen_lora",
@@ -779,13 +1602,53 @@
           "score": 0.1416015625,
           "raw_cosine": 0.1416015625,
           "logit": 14.16015625,
-          "elapsed_seconds": 40.134
+          "elapsed_seconds": 40.134,
+          "scores": {
+            "lica_score_v2": 0.1416015625,
+            "hpsv21": 0.1478061079978943,
+            "pickscore": 18.7030029296875,
+            "clipscore": 24.977998733520508,
+            "imagereward": -0.8582801222801208,
+            "laion_aesthetic": 5.611640930175781
+          }
         }
       ],
       "best": {
         "id": "claude",
         "label": "Claude Opus 4.7",
         "score": 0.2421875
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.2421875
+        },
+        "hpsv21": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.24166595935821533
+        },
+        "pickscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 20.687210083007812
+        },
+        "clipscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 37.302860260009766
+        },
+        "imagereward": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 1.0609363317489624
+        },
+        "laion_aesthetic": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 5.942888259887695
+        }
       }
     },
     {
@@ -801,7 +1664,8 @@
           "asset": null,
           "score": null,
           "raw_cosine": null,
-          "logit": null
+          "logit": null,
+          "scores": {}
         },
         {
           "id": "gpt",
@@ -812,7 +1676,15 @@
           "score": 0.2294921875,
           "raw_cosine": 0.2294921875,
           "logit": 22.94921875,
-          "elapsed_seconds": 15.006
+          "elapsed_seconds": 15.006,
+          "scores": {
+            "lica_score_v2": 0.2294921875,
+            "hpsv21": 0.2344227284193039,
+            "pickscore": 21.52910804748535,
+            "clipscore": 41.431007385253906,
+            "imagereward": 1.3607521057128906,
+            "laion_aesthetic": 5.332409858703613
+          }
         },
         {
           "id": "gemini",
@@ -823,7 +1695,15 @@
           "score": 0.2392578125,
           "raw_cosine": 0.2392578125,
           "logit": 23.92578125,
-          "elapsed_seconds": 21.082
+          "elapsed_seconds": 21.082,
+          "scores": {
+            "lica_score_v2": 0.2392578125,
+            "hpsv21": 0.2505449652671814,
+            "pickscore": 21.513134002685547,
+            "clipscore": 43.82500076293945,
+            "imagereward": 1.528449535369873,
+            "laion_aesthetic": 5.551570415496826
+          }
         },
         {
           "id": "claude",
@@ -834,7 +1714,15 @@
           "score": 0.22265625,
           "raw_cosine": 0.22265625,
           "logit": 22.265625,
-          "elapsed_seconds": 9.307
+          "elapsed_seconds": 9.307,
+          "scores": {
+            "lica_score_v2": 0.22265625,
+            "hpsv21": 0.23178444802761078,
+            "pickscore": 21.430213928222656,
+            "clipscore": 40.9298210144043,
+            "imagereward": 1.5042518377304077,
+            "laion_aesthetic": 5.224477767944336
+          }
         },
         {
           "id": "qwen_lora",
@@ -845,13 +1733,53 @@
           "score": 0.232421875,
           "raw_cosine": 0.232421875,
           "logit": 23.2421875,
-          "elapsed_seconds": 37.721
+          "elapsed_seconds": 37.721,
+          "scores": {
+            "lica_score_v2": 0.232421875,
+            "hpsv21": 0.234688863158226,
+            "pickscore": 21.75899887084961,
+            "clipscore": 42.04957962036133,
+            "imagereward": 1.069666862487793,
+            "laion_aesthetic": 5.337507724761963
+          }
         }
       ],
       "best": {
         "id": "gemini",
         "label": "Gemini 3.1 Pro Preview",
         "score": 0.2392578125
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 0.2392578125
+        },
+        "hpsv21": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 0.2505449652671814
+        },
+        "pickscore": {
+          "id": "qwen_lora",
+          "label": "Qwen3.5-VL 3.5B",
+          "score": 21.75899887084961
+        },
+        "clipscore": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 43.82500076293945
+        },
+        "imagereward": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 1.528449535369873
+        },
+        "laion_aesthetic": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 5.551570415496826
+        }
       }
     },
     {
@@ -867,7 +1795,8 @@
           "asset": null,
           "score": null,
           "raw_cosine": null,
-          "logit": null
+          "logit": null,
+          "scores": {}
         },
         {
           "id": "gpt",
@@ -878,7 +1807,15 @@
           "score": 0.177734375,
           "raw_cosine": 0.177734375,
           "logit": 17.7734375,
-          "elapsed_seconds": 14.778
+          "elapsed_seconds": 14.778,
+          "scores": {
+            "lica_score_v2": 0.177734375,
+            "hpsv21": 0.1906658262014389,
+            "pickscore": 21.197486877441406,
+            "clipscore": 23.913660049438477,
+            "imagereward": -1.3428478240966797,
+            "laion_aesthetic": 4.949434280395508
+          }
         },
         {
           "id": "gemini",
@@ -889,7 +1826,15 @@
           "score": 0.2392578125,
           "raw_cosine": 0.2392578125,
           "logit": 23.92578125,
-          "elapsed_seconds": 21.409
+          "elapsed_seconds": 21.409,
+          "scores": {
+            "lica_score_v2": 0.2392578125,
+            "hpsv21": 0.24465994536876678,
+            "pickscore": 21.841716766357422,
+            "clipscore": 23.821380615234375,
+            "imagereward": -0.613339900970459,
+            "laion_aesthetic": 5.37293815612793
+          }
         },
         {
           "id": "claude",
@@ -900,7 +1845,15 @@
           "score": 0.251953125,
           "raw_cosine": 0.251953125,
           "logit": 25.1953125,
-          "elapsed_seconds": 17.062
+          "elapsed_seconds": 17.062,
+          "scores": {
+            "lica_score_v2": 0.251953125,
+            "hpsv21": 0.25867244601249695,
+            "pickscore": 22.70411491394043,
+            "clipscore": 26.04252052307129,
+            "imagereward": -0.4774898886680603,
+            "laion_aesthetic": 5.608905792236328
+          }
         },
         {
           "id": "qwen_lora",
@@ -911,13 +1864,53 @@
           "score": 0.1806640625,
           "raw_cosine": 0.1806640625,
           "logit": 18.06640625,
-          "elapsed_seconds": 47.16
+          "elapsed_seconds": 47.16,
+          "scores": {
+            "lica_score_v2": 0.1806640625,
+            "hpsv21": 0.18848541378974915,
+            "pickscore": 20.531978607177734,
+            "clipscore": 23.127490997314453,
+            "imagereward": -1.0640538930892944,
+            "laion_aesthetic": 5.010163307189941
+          }
         }
       ],
       "best": {
         "id": "claude",
         "label": "Claude Opus 4.7",
         "score": 0.251953125
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.251953125
+        },
+        "hpsv21": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 0.25867244601249695
+        },
+        "pickscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 22.70411491394043
+        },
+        "clipscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 26.04252052307129
+        },
+        "imagereward": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": -0.4774898886680603
+        },
+        "laion_aesthetic": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 5.608905792236328
+        }
       }
     },
     {
@@ -933,7 +1926,8 @@
           "asset": null,
           "score": null,
           "raw_cosine": null,
-          "logit": null
+          "logit": null,
+          "scores": {}
         },
         {
           "id": "gpt",
@@ -944,7 +1938,15 @@
           "score": 0.23828125,
           "raw_cosine": 0.23828125,
           "logit": 23.828125,
-          "elapsed_seconds": 21.838
+          "elapsed_seconds": 21.838,
+          "scores": {
+            "lica_score_v2": 0.23828125,
+            "hpsv21": 0.245622918009758,
+            "pickscore": 21.734708786010742,
+            "clipscore": 31.334075927734375,
+            "imagereward": 0.7531653642654419,
+            "laion_aesthetic": 5.271045207977295
+          }
         },
         {
           "id": "gemini",
@@ -955,7 +1957,15 @@
           "score": 0.181640625,
           "raw_cosine": 0.181640625,
           "logit": 18.1640625,
-          "elapsed_seconds": 10.977
+          "elapsed_seconds": 10.977,
+          "scores": {
+            "lica_score_v2": 0.181640625,
+            "hpsv21": 0.19501684606075287,
+            "pickscore": 19.669450759887695,
+            "clipscore": 29.491531372070312,
+            "imagereward": -0.6971431374549866,
+            "laion_aesthetic": 4.425297260284424
+          }
         },
         {
           "id": "claude",
@@ -966,7 +1976,15 @@
           "score": 0.2294921875,
           "raw_cosine": 0.2294921875,
           "logit": 22.94921875,
-          "elapsed_seconds": 17.916
+          "elapsed_seconds": 17.916,
+          "scores": {
+            "lica_score_v2": 0.2294921875,
+            "hpsv21": 0.23108486831188202,
+            "pickscore": 21.294904708862305,
+            "clipscore": 28.183046340942383,
+            "imagereward": -0.24833747744560242,
+            "laion_aesthetic": 5.054470539093018
+          }
         },
         {
           "id": "qwen_lora",
@@ -977,13 +1995,53 @@
           "score": 0.1572265625,
           "raw_cosine": 0.1572265625,
           "logit": 15.72265625,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.1572265625,
+            "hpsv21": 0.16174998879432678,
+            "pickscore": 18.961389541625977,
+            "clipscore": 22.102081298828125,
+            "imagereward": -2.275996685028076,
+            "laion_aesthetic": 4.69799280166626
+          }
         }
       ],
       "best": {
         "id": "gpt",
         "label": "GPT-5.4",
         "score": 0.23828125
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 0.23828125
+        },
+        "hpsv21": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 0.245622918009758
+        },
+        "pickscore": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 21.734708786010742
+        },
+        "clipscore": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 31.334075927734375
+        },
+        "imagereward": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 0.7531653642654419
+        },
+        "laion_aesthetic": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 5.271045207977295
+        }
       }
     },
     {
@@ -999,7 +2057,8 @@
           "asset": null,
           "score": null,
           "raw_cosine": null,
-          "logit": null
+          "logit": null,
+          "scores": {}
         },
         {
           "id": "gpt",
@@ -1010,7 +2069,15 @@
           "score": 0.2119140625,
           "raw_cosine": 0.2119140625,
           "logit": 21.19140625,
-          "elapsed_seconds": 30.222
+          "elapsed_seconds": 30.222,
+          "scores": {
+            "lica_score_v2": 0.2119140625,
+            "hpsv21": 0.21592755615711212,
+            "pickscore": 20.609663009643555,
+            "clipscore": 25.935131072998047,
+            "imagereward": -0.7514927983283997,
+            "laion_aesthetic": 5.147875785827637
+          }
         },
         {
           "id": "gemini",
@@ -1021,7 +2088,15 @@
           "score": 0.1865234375,
           "raw_cosine": 0.1865234375,
           "logit": 18.65234375,
-          "elapsed_seconds": 28.398
+          "elapsed_seconds": 28.398,
+          "scores": {
+            "lica_score_v2": 0.1865234375,
+            "hpsv21": 0.1892646849155426,
+            "pickscore": 20.271148681640625,
+            "clipscore": 27.968210220336914,
+            "imagereward": -0.7322877049446106,
+            "laion_aesthetic": 5.382857799530029
+          }
         },
         {
           "id": "claude",
@@ -1032,7 +2107,15 @@
           "score": 0.1884765625,
           "raw_cosine": 0.1884765625,
           "logit": 18.84765625,
-          "elapsed_seconds": 16.445
+          "elapsed_seconds": 16.445,
+          "scores": {
+            "lica_score_v2": 0.1884765625,
+            "hpsv21": 0.19223275780677795,
+            "pickscore": 20.78922462463379,
+            "clipscore": 23.981033325195312,
+            "imagereward": -0.3105523884296417,
+            "laion_aesthetic": 4.967879295349121
+          }
         },
         {
           "id": "qwen_lora",
@@ -1043,14 +2126,70 @@
           "score": 0.169921875,
           "raw_cosine": 0.169921875,
           "logit": 16.9921875,
-          "elapsed_seconds": 0.0
+          "elapsed_seconds": 0.0,
+          "scores": {
+            "lica_score_v2": 0.169921875,
+            "hpsv21": 0.16914166510105133,
+            "pickscore": 19.85812759399414,
+            "clipscore": 24.76947593688965,
+            "imagereward": -1.8315491676330566,
+            "laion_aesthetic": 4.784610748291016
+          }
         }
       ],
       "best": {
         "id": "gpt",
         "label": "GPT-5.4",
         "score": 0.2119140625
+      },
+      "winners": {
+        "lica_score_v2": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 0.2119140625
+        },
+        "hpsv21": {
+          "id": "gpt",
+          "label": "GPT-5.4",
+          "score": 0.21592755615711212
+        },
+        "pickscore": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": 20.78922462463379
+        },
+        "clipscore": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 27.968210220336914
+        },
+        "imagereward": {
+          "id": "claude",
+          "label": "Claude Opus 4.7",
+          "score": -0.3105523884296417
+        },
+        "laion_aesthetic": {
+          "id": "gemini",
+          "label": "Gemini 3.1 Pro Preview",
+          "score": 5.382857799530029
+        }
       }
     }
-  ]
+  ],
+  "score_order": [
+    "lica_score_v2",
+    "hpsv21",
+    "pickscore",
+    "clipscore",
+    "imagereward",
+    "laion_aesthetic"
+  ],
+  "score_labels": {
+    "lica_score_v2": "LicaScore v2",
+    "hpsv21": "HPS v2.1",
+    "pickscore": "PickScore",
+    "clipscore": "CLIPScore",
+    "imagereward": "ImageReward",
+    "laion_aesthetic": "LAION aesthetic"
+  }
 }
