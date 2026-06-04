@@ -4,15 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HPS Fine-tune · OmniSVG Probe</title>
-    <link rel="stylesheet" href="hps-omnisvg.css?v=20260604-1" />
+    <link rel="stylesheet" href="hps-omnisvg.css?v=20260604-2" />
   </head>
   <body>
     <header class="hero">
       <nav class="topbar">
         <a href="index.html">Text-to-SVG Review</a>
+        <a href="#metrics">5-model comparison</a>
+        <a href="#raw-data">Raw scores</a>
         <a href="model-comparison.html">Model scoreboard</a>
         <a href="multigen.html">Multi-generation</a>
-        <a href="blue-star-scores.html">Blue star scores</a>
       </nav>
       <div class="hero-head">
         <p class="eyebrow">Reward-model probe</p>
@@ -31,8 +32,22 @@
     <main>
       <section class="band">
         <p class="eyebrow">Takeaway</p>
-        <h2>It reliably ranks ground-truth above generated — but it is a coarse, biased signal.</h2>
+        <h2>It reliably ranks ground-truth above generated — with a few verified biases.</h2>
         <div id="takeaways" class="takeaways"></div>
+      </section>
+
+      <section class="band" id="metrics">
+        <div class="section-head">
+          <p class="eyebrow">Multi-model comparison</p>
+          <h2>All 5 deployed scorers, side by side</h2>
+          <p class="muted">
+            We re-scored every prompt's ground-truth and generated SVG with the
+            deployed <code>lica-svg-imscore</code> stack — HPSv2.1, PickScore,
+            CLIPScore, ImageReward, and LAION aesthetic — to see whether the
+            biases are HPS-specific or shared.
+          </p>
+        </div>
+        <div id="multimetric" class="slices"></div>
       </section>
 
       <section class="band">
@@ -60,10 +75,13 @@
           <p class="eyebrow">Raw scores · for data matching</p>
           <h2>Download the full per-SVG scores (all 1,000)</h2>
           <p class="muted">
-            Every prompt's ground-truth and generated HPS score, joinable by
-            <code>id</code> (the OmniSVG example id =
-            <code>examples/&lt;id&gt;/</code> folder). Use this to match results
-            back onto the source dataset — independent of the visualisation above.
+            Every prompt's ground-truth and generated scores for all models —
+            our fine-tuned HPS (<code>licascore_hps_*</code>) plus the 5 deployed
+            metrics (<code>hpsv21, pickscore, clipscore, imagereward,
+            laion_aesthetic</code>), each with <code>_gt</code> / <code>_gen</code>
+            columns. Joinable by <code>id</code> (the OmniSVG example id =
+            <code>examples/&lt;id&gt;/</code> folder), independent of the
+            visualisation above.
           </p>
         </div>
         <div id="downloads" class="downloads"></div>
@@ -104,6 +122,6 @@
       </section>
     </main>
 
-    <script src="hps-omnisvg.js?v=20260604-1"></script>
+    <script src="hps-omnisvg.js?v=20260604-2"></script>
   </body>
 </html>

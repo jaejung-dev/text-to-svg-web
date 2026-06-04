@@ -31,14 +31,24 @@ function renderHeadline(d) {
   `).join("");
 }
 
-function renderTakeaways() {
+function renderTakeaways(d) {
+  const bias = d.bias?.correlations_generated_score_vs_image_features || {};
+  const miss = d.bias?.miss_vs_win_render_traits || {};
   const items = [
-    { warn: false, h: "Direction is correct", p: "Ranks the human ground-truth above the generated SVG 96.4% of the time, so it is not broken." },
-    { warn: true, h: "Coarse, not fine-grained", p: "All scores sit in ~0.06–0.32 with a ~0.06 median margin — weak for separating close Best-of-N candidates." },
-    { warn: true, h: "Aesthetic over fidelity", p: "Its misses reward clean, bright, decorated vector art over prompt-faithfulness." },
-    { warn: true, h: "Saturation / brightness bias", p: "Muted, pastel and beige palettes get systematically low absolute scores." },
+    { warn: false, h: "Direction is correct", p: "Our fine-tuned HPS ranks the human ground-truth above the generated SVG 96.4% of the time, so it is not broken." },
+    {
+      warn: true, h: "Mild colorfulness preference (verified)",
+      p: `No brightness bias (corr ${fmt(bias.gen_score_vs_brightness, 2)}), but a weak preference for more saturated / colorful renders (saturation ${fmt(bias.gen_score_vs_saturation, 2)}, colorfulness ${fmt(bias.gen_score_vs_colorfulness, 2)}).`,
+    },
+    {
+      warn: true, h: "Aesthetic over fidelity (verified)",
+      p: `When the model wrongly prefers the generated SVG, that render is on average MORE saturated than the ground truth (+${fmt(miss["mean_gen_minus_gt_saturation_on_miss"], 3)}); when it is right, the generated render is less saturated (${fmt(miss["mean_gen_minus_gt_saturation_on_win"], 3)}). So extra saturation can flip its judgment.`,
+    },
     { warn: true, h: "Out-of-distribution prompts", p: "Trained on short captions; OmniSVG prompts are nearly all long (>50 words)." },
-    { warn: false, h: "Complementary signal", p: "Only 0.22 correlation with the existing reward — potentially useful as an extra, not a replacement." },
+    {
+      warn: false, h: "Complementary, not redundant",
+      p: `\"Complementary\" = it does NOT just echo the existing V19 reward: the generated HPS score correlates only ~${fmt(d.headline.hps_vs_bon_reward_pearson, 2)} with bon_reward. Useful as an extra signal, not a drop-in replacement.`,
+    },
   ];
   return items.map((i) => `
     <div class="takeaway ${i.warn ? "warn" : ""}">
@@ -106,6 +116,25 @@ function sliceTable(title, obj, colKey) {
   `;
 }
 
+const METRIC_LABELS = {
+  hpsv21: "HPS", pickscore: "Pick", clipscore: "CLIP", imagereward: "ImgRwd", laion_aesthetic: "LAION",
+};
+
+function renderMetricWinners(c) {
+  const ms = c.metric_scores || {};
+  const ids = Object.keys(ms);
+  if (!ids.length) return "";
+  const chips = ["hpsv21", "pickscore", "clipscore", "imagereward", "laion_aesthetic"]
+    .filter((id) => ms[id])
+    .map((id) => {
+      const w = ms[id].winner;
+      return `<span class="mw ${w}" title="${escapeHtml(METRIC_LABELS[id])}: GT ${fmt(ms[id].gt, 2)} vs GEN ${fmt(ms[id].gen, 2)} → ${w.toUpperCase()} wins">
+        ${escapeHtml(METRIC_LABELS[id])}<b>${w.toUpperCase()}</b>
+      </span>`;
+    }).join("");
+  return `<div class="metric-winners"><span class="mw-title">per-metric winner</span>${chips}</div>`;
+}
+
 function renderCase(c) {
   const gtWin = c.margin > 0;
   return `
@@ -122,10 +151,11 @@ function renderCase(c) {
       </div>
       <div class="case-body">
         <div class="score-row">
-          <span class="pill gt">GT ${fmt(c.gt_score)}</span>
+          <span class="pill gt">our-HPS GT ${fmt(c.gt_score)}</span>
           <span class="pill gen">GEN ${fmt(c.gen_score)}</span>
           <span class="pill margin ${gtWin ? "pos" : "neg"}">${gtWin ? "+" : ""}${fmt(c.margin)}</span>
         </div>
+        ${renderMetricWinners(c)}
         <p class="case-prompt">${escapeHtml(c.prompt)}</p>
         <div class="tags">
           ${c.tags.map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
@@ -133,6 +163,51 @@ function renderCase(c) {
         </div>
       </div>
     </article>
+  `;
+}
+
+function renderMultimetric(mm) {
+  if (!mm) return "";
+  const order = ["hpsv21", "pickscore", "clipscore", "imagereward", "laion_aesthetic"];
+  const rows = order.map((id) => {
+    const m = mm.per_metric[id];
+    const rate = m.gt_preferred_rate;
+    return `
+      <tr>
+        <td>${escapeHtml(m.label)}</td>
+        <td class="bar-cell">
+          ${pct(rate)}
+          <span class="fill" style="width:${(rate * 100).toFixed(0)}%"></span>
+        </td>
+        <td>${pct(1 - rate)}</td>
+        <td>${fmt(m.gen_score_vs_bon_reward_pearson, 2)}</td>
+      </tr>
+    `;
+  }).join("");
+  const c = mm.gt_consensus;
+  return `
+    <div class="slice-card wide">
+      <h3>Who wins per metric — ground-truth vs V19-generated (n=${mm.n})</h3>
+      <p class="muted small">Each of the 5 deployed scorers decides, per prompt, whether the human SVG or the generated SVG scores higher. Higher "GT wins" = the metric trusts the human reference more.</p>
+      <table>
+        <thead>
+          <tr><th>metric</th><th>GT wins</th><th>GEN wins</th><th>corr. w/ V19 reward</th></tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    <div class="slice-card">
+      <h3>Cross-metric consensus on the winner</h3>
+      <p class="muted small">Out of 5 metrics, how many pick the ground-truth?</p>
+      <table>
+        <tbody>
+          <tr><td>All 5 prefer ground-truth</td><td>${c.all5_prefer_gt}</td></tr>
+          <tr><td>Majority (≥3) prefer ground-truth</td><td>${c["majority_prefer_gt(>=3)"]}</td></tr>
+          <tr><td>All 5 prefer the generated SVG</td><td class="neg">${c.all5_prefer_generated}</td></tr>
+        </tbody>
+      </table>
+      <p class="muted small">The ${c.all5_prefer_generated} cases where every metric prefers the generated SVG are the strongest "generation actually beat the reference" candidates.</p>
+    </div>
   `;
 }
 
@@ -227,7 +302,8 @@ async function main() {
   const d = await res.json();
 
   document.getElementById("headline").innerHTML = renderHeadline(d);
-  document.getElementById("takeaways").innerHTML = renderTakeaways();
+  document.getElementById("takeaways").innerHTML = renderTakeaways(d);
+  document.getElementById("multimetric").innerHTML = renderMultimetric(d.multimetric);
   document.getElementById("charts").innerHTML = renderCharts(d);
   document.getElementById("slices").innerHTML =
     sliceTable("By color-word count in prompt", d.by_color_word_count, "colors") +

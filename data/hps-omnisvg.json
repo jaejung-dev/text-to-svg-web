@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T09:39:42.787305Z",
+  "generated_at": "2026-06-04T10:11:25.679492Z",
   "checkpoint": "hps_lora_caption_epoch_002.pt (HPSv2.1 + LoRA, lica-score)",
   "dataset": "omnisvg_1k_v19_examples (1000 prompts; ground-truth SVG vs V19 Best-of-8 generated SVG)",
   "headline": {
@@ -482,19 +482,217 @@
       }
     }
   },
+  "multimetric": {
+    "n": 1000,
+    "metrics": [
+      {
+        "id": "hpsv21",
+        "label": "HPSv2.1"
+      },
+      {
+        "id": "pickscore",
+        "label": "PickScore"
+      },
+      {
+        "id": "clipscore",
+        "label": "CLIPScore"
+      },
+      {
+        "id": "imagereward",
+        "label": "ImageReward"
+      },
+      {
+        "id": "laion_aesthetic",
+        "label": "LAION aesthetic"
+      }
+    ],
+    "per_metric": {
+      "hpsv21": {
+        "label": "HPSv2.1",
+        "gt_preferred_rate": 0.911,
+        "gen_preferred_rate": 0.089,
+        "gt_dist": {
+          "mean": 0.2324,
+          "std": 0.0305,
+          "min": 0.1068,
+          "median": 0.2356,
+          "max": 0.3136
+        },
+        "gen_dist": {
+          "mean": 0.1905,
+          "std": 0.0244,
+          "min": 0.0737,
+          "median": 0.19,
+          "max": 0.2743
+        },
+        "gen_score_vs_bon_reward_pearson": 0.2098
+      },
+      "pickscore": {
+        "label": "PickScore",
+        "gt_preferred_rate": 0.839,
+        "gen_preferred_rate": 0.161,
+        "gt_dist": {
+          "mean": 21.5994,
+          "std": 1.1571,
+          "min": 17.7214,
+          "median": 21.6309,
+          "max": 25.189
+        },
+        "gen_dist": {
+          "mean": 20.619,
+          "std": 1.1431,
+          "min": 17.2246,
+          "median": 20.6351,
+          "max": 24.4503
+        },
+        "gen_score_vs_bon_reward_pearson": 0.0685
+      },
+      "clipscore": {
+        "label": "CLIPScore",
+        "gt_preferred_rate": 0.494,
+        "gen_preferred_rate": 0.506,
+        "gt_dist": {
+          "mean": 28.0318,
+          "std": 3.8643,
+          "min": 15.0195,
+          "median": 28.2227,
+          "max": 39.8684
+        },
+        "gen_dist": {
+          "mean": 28.0239,
+          "std": 3.9558,
+          "min": 15.3367,
+          "median": 27.9938,
+          "max": 39.8343
+        },
+        "gen_score_vs_bon_reward_pearson": 0.0642
+      },
+      "imagereward": {
+        "label": "ImageReward",
+        "gt_preferred_rate": 0.731,
+        "gen_preferred_rate": 0.269,
+        "gt_dist": {
+          "mean": -0.0065,
+          "std": 0.8913,
+          "min": -2.2758,
+          "median": -0.0017,
+          "max": 1.8808
+        },
+        "gen_dist": {
+          "mean": -0.5724,
+          "std": 0.9042,
+          "min": -2.2809,
+          "median": -0.5785,
+          "max": 1.6978
+        },
+        "gen_score_vs_bon_reward_pearson": 0.1489
+      },
+      "laion_aesthetic": {
+        "label": "LAION aesthetic",
+        "gt_preferred_rate": 0.677,
+        "gen_preferred_rate": 0.323,
+        "gt_dist": {
+          "mean": 5.0646,
+          "std": 0.2385,
+          "min": 4.0912,
+          "median": 5.0695,
+          "max": 6.1293
+        },
+        "gen_dist": {
+          "mean": 4.9295,
+          "std": 0.2306,
+          "min": 4.053,
+          "median": 4.937,
+          "max": 5.5671
+        },
+        "gen_score_vs_bon_reward_pearson": 0.096
+      }
+    },
+    "winner_agreement_rate": {
+      "hpsv21__pickscore": 0.896,
+      "hpsv21__clipscore": 0.533,
+      "hpsv21__imagereward": 0.778,
+      "hpsv21__laion_aesthetic": 0.686,
+      "pickscore__clipscore": 0.555,
+      "pickscore__imagereward": 0.784,
+      "pickscore__laion_aesthetic": 0.666,
+      "clipscore__imagereward": 0.553,
+      "clipscore__laion_aesthetic": 0.481,
+      "imagereward__laion_aesthetic": 0.598
+    },
+    "gt_consensus": {
+      "all5_prefer_gt": 252,
+      "majority_prefer_gt(>=3)": 844,
+      "split": 725,
+      "all5_prefer_generated": 23,
+      "vote_histogram": {
+        "0": 23,
+        "1": 45,
+        "2": 88,
+        "3": 197,
+        "4": 395,
+        "5": 252
+      }
+    }
+  },
+  "bias": {
+    "n": 1000,
+    "correlations_generated_score_vs_image_features": {
+      "gen_score_vs_brightness": -0.0305,
+      "gen_score_vs_saturation": 0.193,
+      "gen_score_vs_colorfulness": 0.204,
+      "gen_score_vs_white_frac": -0.1253,
+      "gen_score_vs_distinct_colors": -0.0466
+    },
+    "interpretation_hint": {
+      "positive_strong_brightness_or_saturation": "score rewards bright/saturated renders -> bias confirmed"
+    },
+    "miss_vs_win_render_traits": {
+      "n_miss(GEN>GT)": 34,
+      "n_win(GT>GEN)": 964,
+      "mean_gen_minus_gt_brightness_on_miss": 0.3625,
+      "mean_gen_minus_gt_brightness_on_win": 0.2987,
+      "mean_gen_minus_gt_saturation_on_miss": 0.0253,
+      "mean_gen_minus_gt_saturation_on_win": -0.107
+    },
+    "feature_means": {
+      "brightness": 0.612,
+      "saturation": 0.1242,
+      "colorfulness": 0.2099,
+      "white_frac": 0.459,
+      "distinct_colors": 71.087
+    }
+  },
   "raw_scores": {
     "jsonl": "data/hps-omnisvg-scores/scores.jsonl",
     "csv": "data/hps-omnisvg-scores/scores.csv",
     "rows": 1000,
     "columns": [
       "id",
-      "gt_score",
-      "gen_score",
-      "margin_gt_minus_gen",
+      "licascore_hps_gt",
+      "licascore_hps_gen",
+      "hpsv21_gt",
+      "pickscore_gt",
+      "clipscore_gt",
+      "imagereward_gt",
+      "laion_aesthetic_gt",
+      "hpsv21_gen",
+      "pickscore_gen",
+      "clipscore_gen",
+      "imagereward_gen",
+      "laion_aesthetic_gen",
       "bon_reward",
       "prompt"
     ],
-    "join_key": "id (OmniSVG example id = examples/<id>/ folder name)"
+    "join_key": "id (OmniSVG example id = examples/<id>/ folder name)",
+    "metrics_included": [
+      "licascore_hps (fine-tuned)",
+      "hpsv21",
+      "pickscore",
+      "clipscore",
+      "imagereward",
+      "laion_aesthetic"
+    ]
   },
   "examples": [
     {
@@ -510,7 +708,34 @@
       "tags": [
         "miss"
       ],
-      "model_prefers": "generated"
+      "model_prefers": "generated",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.1624,
+          "gen": 0.218,
+          "winner": "gen"
+        },
+        "pickscore": {
+          "gt": 20.3411,
+          "gen": 22.4451,
+          "winner": "gen"
+        },
+        "clipscore": {
+          "gt": 28.5945,
+          "gen": 29.2761,
+          "winner": "gen"
+        },
+        "imagereward": {
+          "gt": -1.8212,
+          "gen": -1.1855,
+          "winner": "gen"
+        },
+        "laion_aesthetic": {
+          "gt": 4.916,
+          "gen": 5.0647,
+          "winner": "gen"
+        }
+      }
     },
     {
       "id": "5e12d5fe371d51bddf19bebcf185b7c8",
@@ -525,7 +750,34 @@
       "tags": [
         "miss"
       ],
-      "model_prefers": "generated"
+      "model_prefers": "generated",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.1695,
+          "gen": 0.1961,
+          "winner": "gen"
+        },
+        "pickscore": {
+          "gt": 21.2261,
+          "gen": 21.8822,
+          "winner": "gen"
+        },
+        "clipscore": {
+          "gt": 25.6024,
+          "gen": 28.1436,
+          "winner": "gen"
+        },
+        "imagereward": {
+          "gt": -2.091,
+          "gen": 0.7075,
+          "winner": "gen"
+        },
+        "laion_aesthetic": {
+          "gt": 4.6893,
+          "gen": 4.758,
+          "winner": "gen"
+        }
+      }
     },
     {
       "id": "355f7e9678697f32493fa9ca1ceb3474",
@@ -540,7 +792,34 @@
       "tags": [
         "miss"
       ],
-      "model_prefers": "generated"
+      "model_prefers": "generated",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.171,
+          "gen": 0.2219,
+          "winner": "gen"
+        },
+        "pickscore": {
+          "gt": 20.5457,
+          "gen": 23.4904,
+          "winner": "gen"
+        },
+        "clipscore": {
+          "gt": 27.3696,
+          "gen": 25.7656,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": 0.0003,
+          "gen": 1.2908,
+          "winner": "gen"
+        },
+        "laion_aesthetic": {
+          "gt": 4.1618,
+          "gen": 4.8895,
+          "winner": "gen"
+        }
+      }
     },
     {
       "id": "be5f92c7acf71df99445cc337189ec84",
@@ -555,7 +834,34 @@
       "tags": [
         "miss"
       ],
-      "model_prefers": "generated"
+      "model_prefers": "generated",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.1825,
+          "gen": 0.1962,
+          "winner": "gen"
+        },
+        "pickscore": {
+          "gt": 20.1533,
+          "gen": 21.3019,
+          "winner": "gen"
+        },
+        "clipscore": {
+          "gt": 25.5748,
+          "gen": 29.6389,
+          "winner": "gen"
+        },
+        "imagereward": {
+          "gt": -0.4272,
+          "gen": -0.2253,
+          "winner": "gen"
+        },
+        "laion_aesthetic": {
+          "gt": 5.0827,
+          "gen": 5.0508,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "718c79036d6ab49199675edb69ad4ee5",
@@ -570,7 +876,34 @@
       "tags": [
         "miss"
       ],
-      "model_prefers": "generated"
+      "model_prefers": "generated",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.1239,
+          "gen": 0.1716,
+          "winner": "gen"
+        },
+        "pickscore": {
+          "gt": 18.5161,
+          "gen": 19.5341,
+          "winner": "gen"
+        },
+        "clipscore": {
+          "gt": 20.7425,
+          "gen": 25.1276,
+          "winner": "gen"
+        },
+        "imagereward": {
+          "gt": -2.2723,
+          "gen": -1.4016,
+          "winner": "gen"
+        },
+        "laion_aesthetic": {
+          "gt": 4.6989,
+          "gen": 5.0493,
+          "winner": "gen"
+        }
+      }
     },
     {
       "id": "62ac0d1b771dca880e9ffde84f54687b",
@@ -585,7 +918,34 @@
       "tags": [
         "miss"
       ],
-      "model_prefers": "generated"
+      "model_prefers": "generated",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.1579,
+          "gen": 0.189,
+          "winner": "gen"
+        },
+        "pickscore": {
+          "gt": 20.9824,
+          "gen": 22.9829,
+          "winner": "gen"
+        },
+        "clipscore": {
+          "gt": 22.2549,
+          "gen": 30.0058,
+          "winner": "gen"
+        },
+        "imagereward": {
+          "gt": -1.2487,
+          "gen": -0.5465,
+          "winner": "gen"
+        },
+        "laion_aesthetic": {
+          "gt": 4.6017,
+          "gen": 4.053,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "0b9efef587f0a863179b7dc9fc9fbda2",
@@ -600,7 +960,34 @@
       "tags": [
         "high_score"
       ],
-      "model_prefers": "generated"
+      "model_prefers": "generated",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2656,
+          "gen": 0.2743,
+          "winner": "gen"
+        },
+        "pickscore": {
+          "gt": 21.0661,
+          "gen": 21.9871,
+          "winner": "gen"
+        },
+        "clipscore": {
+          "gt": 28.4218,
+          "gen": 31.0176,
+          "winner": "gen"
+        },
+        "imagereward": {
+          "gt": -0.0074,
+          "gen": 1.4629,
+          "winner": "gen"
+        },
+        "laion_aesthetic": {
+          "gt": 5.318,
+          "gen": 4.8022,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "5df43aea7e33f4497fd5a6cd84e1d409",
@@ -615,7 +1002,34 @@
       "tags": [
         "high_score"
       ],
-      "model_prefers": "generated"
+      "model_prefers": "generated",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2406,
+          "gen": 0.2393,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 21.3395,
+          "gen": 21.4295,
+          "winner": "gen"
+        },
+        "clipscore": {
+          "gt": 31.0885,
+          "gen": 29.9757,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": 0.4123,
+          "gen": -0.5787,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 4.9575,
+          "gen": 5.1593,
+          "winner": "gen"
+        }
+      }
     },
     {
       "id": "6e57ee8f3196ac3bc1ec3924ff9aa12d",
@@ -630,7 +1044,34 @@
       "tags": [
         "high_score"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2545,
+          "gen": 0.2502,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 21.2149,
+          "gen": 20.7151,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 29.9787,
+          "gen": 37.6827,
+          "winner": "gen"
+        },
+        "imagereward": {
+          "gt": 1.3325,
+          "gen": 1.3029,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 5.0501,
+          "gen": 4.8216,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "5106de00e851ce164659bcd83a8f554b",
@@ -645,7 +1086,34 @@
       "tags": [
         "high_score"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2577,
+          "gen": 0.25,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 21.3862,
+          "gen": 21.2858,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 28.8535,
+          "gen": 39.6086,
+          "winner": "gen"
+        },
+        "imagereward": {
+          "gt": 0.7621,
+          "gen": 1.502,
+          "winner": "gen"
+        },
+        "laion_aesthetic": {
+          "gt": 5.0801,
+          "gen": 4.9077,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "713f9744e09ac2b44215979214c84351",
@@ -660,7 +1128,34 @@
       "tags": [
         "low_score"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2297,
+          "gen": 0.121,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 21.7664,
+          "gen": 19.3769,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 32.8244,
+          "gen": 22.8088,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": 0.1195,
+          "gen": -1.6373,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 4.9212,
+          "gen": 4.3853,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "a71bc8902659171c23fab149d8f4ae4b",
@@ -675,7 +1170,34 @@
       "tags": [
         "low_score"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2275,
+          "gen": 0.1076,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 21.9474,
+          "gen": 18.8771,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 17.0493,
+          "gen": 16.3562,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": -0.9429,
+          "gen": -2.2776,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 5.5053,
+          "gen": 4.8239,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "1c134adc7ae0e4846f18b2c2956ad986",
@@ -690,7 +1212,34 @@
       "tags": [
         "low_score"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2247,
+          "gen": 0.1072,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 21.8874,
+          "gen": 18.9219,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 30.4208,
+          "gen": 24.8457,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": -0.2131,
+          "gen": -1.5018,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 5.1714,
+          "gen": 4.9381,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "160a9b61f79f313b1862f54f215fb42b",
@@ -705,7 +1254,34 @@
       "tags": [
         "low_score"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2633,
+          "gen": 0.124,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 21.8321,
+          "gen": 19.357,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 26.1555,
+          "gen": 17.9048,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": -0.0184,
+          "gen": -2.2741,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 5.3323,
+          "gen": 4.6792,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "07d583331f611f965ef9d5cb13baa5c8",
@@ -720,7 +1296,34 @@
       "tags": [
         "gt_win"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2713,
+          "gen": 0.1788,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 22.7593,
+          "gen": 20.3279,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 31.4351,
+          "gen": 25.8435,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": -0.1889,
+          "gen": -1.7947,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 5.0699,
+          "gen": 4.9782,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "9e6f8526b5fcb3449c7ca5a0c1348b9c",
@@ -735,7 +1338,34 @@
       "tags": [
         "gt_win"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.3136,
+          "gen": 0.1949,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 23.3962,
+          "gen": 20.582,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 28.7527,
+          "gen": 27.3613,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": 1.7445,
+          "gen": -0.8415,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 5.3337,
+          "gen": 4.878,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "82b98051d6357c1ee85194a8d23856bf",
@@ -750,7 +1380,34 @@
       "tags": [
         "gt_win"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2313,
+          "gen": 0.1325,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 20.8379,
+          "gen": 19.128,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 29.1851,
+          "gen": 27.0751,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": 0.8242,
+          "gen": -1.8741,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 5.468,
+          "gen": 5.0608,
+          "winner": "gt"
+        }
+      }
     },
     {
       "id": "9130cd63b5262a5cf447bf21419d76aa",
@@ -766,7 +1423,34 @@
         "gt_win",
         "low_score"
       ],
-      "model_prefers": "ground_truth"
+      "model_prefers": "ground_truth",
+      "metric_scores": {
+        "hpsv21": {
+          "gt": 0.2142,
+          "gen": 0.0737,
+          "winner": "gt"
+        },
+        "pickscore": {
+          "gt": 21.0637,
+          "gen": 19.6079,
+          "winner": "gt"
+        },
+        "clipscore": {
+          "gt": 33.8754,
+          "gen": 15.3367,
+          "winner": "gt"
+        },
+        "imagereward": {
+          "gt": 0.1535,
+          "gen": -2.2084,
+          "winner": "gt"
+        },
+        "laion_aesthetic": {
+          "gt": 4.7096,
+          "gen": 4.5774,
+          "winner": "gt"
+        }
+      }
     }
   ]
 }

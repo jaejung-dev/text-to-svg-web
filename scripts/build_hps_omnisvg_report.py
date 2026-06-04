@@ -27,10 +27,22 @@ DATA_OUT = WEB / "data" / "hps-omnisvg.json"
 SCORES_DIR = WEB / "data" / "hps-omnisvg-scores"
 THUMB_PX = 320
 
+MULTIMETRIC_IN = RESULTS / "multimetric.jsonl"
+MULTIMETRIC_REPORT = RESULTS / "multimetric_report.json"
+BIAS_REPORT = RESULTS / "bias.json"
+METRIC_IDS = ["hpsv21", "pickscore", "clipscore", "imagereward", "laion_aesthetic"]
+
 # Columns published in the downloadable raw-score files. `id` matches the
 # OmniSVG example id (folder name in omnisvg_1k_v19_examples/examples/<id>/),
-# so teammates can join these scores back onto the source dataset.
-SCORE_COLUMNS = ["id", "gt_score", "gen_score", "margin_gt_minus_gen", "bon_reward", "prompt"]
+# so teammates can join these scores back onto the source dataset. The licascore_*
+# columns are our fine-tuned HPS; the rest are the deployed lica-svg-imscore stack.
+SCORE_COLUMNS = (
+    ["id"]
+    + ["licascore_hps_gt", "licascore_hps_gen"]
+    + [f"{m}_gt" for m in METRIC_IDS]
+    + [f"{m}_gen" for m in METRIC_IDS]
+    + ["bon_reward", "prompt"]
+)
 
 COLOR_WORDS = {
     "red", "blue", "green", "yellow", "orange", "purple", "pink", "black",
@@ -81,7 +93,7 @@ def histogram(values: np.ndarray, lo: float, hi: float, bins: int = 24) -> list[
     ]
 
 
-def curate(results: list[dict]) -> list[dict]:
+def curate(results: list[dict], multimetric: dict[str, dict]) -> list[dict]:
     """Pick the important cases: model misses + saturation-bias evidence + extremes."""
     res = [r for r in results if not (np.isnan(r["gt_score"]) or np.isnan(r["gen_score"]))]
     by_margin = sorted(res, key=lambda r: r["margin_gt_minus_gen"])
@@ -109,6 +121,17 @@ def curate(results: list[dict]) -> list[dict]:
         gen_thumb = make_thumb(rec["id"], "generated")
         if not gt_thumb or not gen_thumb:
             continue
+        mm = multimetric.get(rec["id"], {})
+        metric_scores = {}
+        for m in METRIC_IDS:
+            if mm.get("gt") and mm.get("gen"):
+                gt_v = mm["gt"][m]
+                gen_v = mm["gen"][m]
+                metric_scores[m] = {
+                    "gt": round(gt_v, 4),
+                    "gen": round(gen_v, 4),
+                    "winner": "gt" if gt_v > gen_v else "gen",
+                }
         cards.append({
             "id": rec["id"],
             "prompt": rec["prompt"],
@@ -121,18 +144,50 @@ def curate(results: list[dict]) -> list[dict]:
             "gen_thumb": gen_thumb,
             "tags": rec["tags"],
             "model_prefers": "generated" if rec["margin_gt_minus_gen"] < 0 else "ground_truth",
+            "metric_scores": metric_scores,
         })
     cards.sort(key=lambda c: c["margin"])
     return cards
 
 
-def export_raw_scores(results: list[dict]) -> dict:
+def load_multimetric() -> dict[str, dict]:
+    """id -> {gt: {metric: score}, gen: {...}, bon_reward}. Empty if not run yet."""
+    if not MULTIMETRIC_IN.exists():
+        return {}
+    out = {}
+    for line in MULTIMETRIC_IN.read_text().splitlines():
+        if line.strip():
+            r = json.loads(line)
+            out[r["id"]] = r
+    return out
+
+
+def export_raw_scores(results: list[dict], multimetric: dict[str, dict]) -> dict:
     """Publish the full per-SVG scores for downstream data-matching (JSONL + CSV).
 
-    `id` is the OmniSVG example id, so teammates can join on it directly.
+    `id` is the OmniSVG example id, so teammates can join on it directly. Includes
+    our fine-tuned HPS (licascore_hps_*) plus all 5 deployed imscore metrics.
     """
     SCORES_DIR.mkdir(parents=True, exist_ok=True)
-    rows = sorted(results, key=lambda r: r["id"])
+    base = sorted(results, key=lambda r: r["id"])
+
+    def flat_row(r: dict) -> dict:
+        mm = multimetric.get(r["id"], {})
+        gt = mm.get("gt", {})
+        gen = mm.get("gen", {})
+        row = {
+            "id": r["id"],
+            "licascore_hps_gt": r["gt_score"],
+            "licascore_hps_gen": r["gen_score"],
+            "bon_reward": r.get("bon_reward"),
+            "prompt": r["prompt"],
+        }
+        for m in METRIC_IDS:
+            row[f"{m}_gt"] = gt.get(m)
+            row[f"{m}_gen"] = gen.get(m)
+        return row
+
+    rows = [flat_row(r) for r in base]
 
     jsonl_path = SCORES_DIR / "scores.jsonl"
     with jsonl_path.open("w", encoding="utf-8") as fh:
@@ -152,12 +207,16 @@ def export_raw_scores(results: list[dict]) -> dict:
         "rows": len(rows),
         "columns": SCORE_COLUMNS,
         "join_key": "id (OmniSVG example id = examples/<id>/ folder name)",
+        "metrics_included": ["licascore_hps (fine-tuned)"] + METRIC_IDS,
     }
 
 
 def main() -> int:
     report = json.loads((RESULTS / "report.json").read_text())
     results = load_scores()
+    multimetric = load_multimetric()
+    multimetric_report = json.loads(MULTIMETRIC_REPORT.read_text()) if MULTIMETRIC_REPORT.exists() else None
+    bias = json.loads(BIAS_REPORT.read_text()) if BIAS_REPORT.exists() else None
     res = [r for r in results if not (np.isnan(r["gt_score"]) or np.isnan(r["gen_score"]))]
 
     gt = np.array([r["gt_score"] for r in res])
@@ -189,8 +248,10 @@ def main() -> int:
         "by_color_word_count": report["analysis"]["by_color_word_count"],
         "by_prompt_length": report["analysis"]["by_prompt_length"],
         "checkpoint_train_eval": report["checkpoint_train_eval"],
-        "raw_scores": export_raw_scores(results),
-        "examples": curate(results),
+        "multimetric": multimetric_report,
+        "bias": bias,
+        "raw_scores": export_raw_scores(results, multimetric),
+        "examples": curate(results, multimetric),
     }
 
     DATA_OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

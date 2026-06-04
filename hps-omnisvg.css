@@ -239,6 +239,15 @@ main {
   gap: 18px;
 }
 
+.slice-card.wide {
+  grid-column: 1 / -1;
+}
+
+.muted.small {
+  font-size: 12.5px;
+  margin: 0 0 12px;
+}
+
 .slice-card {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -495,6 +504,61 @@ a.dl:hover {
   color: #45403a;
   max-height: 4.6em;
   overflow: hidden;
+}
+
+/* per-metric winner badges */
+.metric-winners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mw-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-right: 2px;
+}
+
+.mw {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.mw b {
+  font-weight: 800;
+}
+
+.mw.gt {
+  background: rgba(57, 87, 255, 0.10);
+  border-color: rgba(57, 87, 255, 0.30);
+}
+
+.mw.gt b {
+  color: var(--accent);
+}
+
+.mw.gen {
+  background: rgba(194, 59, 34, 0.10);
+  border-color: rgba(194, 59, 34, 0.30);
+}
+
+.mw.gen b {
+  color: var(--bad);
+}
+
+td.neg {
+  color: var(--bad);
+  font-weight: 700;
 }
 
 .tags {
