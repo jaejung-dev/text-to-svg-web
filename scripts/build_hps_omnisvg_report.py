@@ -63,9 +63,17 @@ def make_thumb(example_id: str, kind: str) -> str | None:
     THUMB_DIR.mkdir(parents=True, exist_ok=True)
     out = THUMB_DIR / f"{example_id}-{kind}.png"
     if not out.exists():
-        img = Image.open(src).convert("RGB")
+        # composite transparency onto white FIRST (RGBA -> RGB makes transparent
+        # pixels black otherwise), then thumbnail and center on a white canvas.
+        src_img = Image.open(src)
+        if src_img.mode in ("RGBA", "LA") or "transparency" in src_img.info:
+            rgba = src_img.convert("RGBA")
+            bg = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
+            bg.alpha_composite(rgba)
+            img = bg.convert("RGB")
+        else:
+            img = src_img.convert("RGB")
         img.thumbnail((THUMB_PX, THUMB_PX))
-        # paste onto white so transparent/edge SVGs never look black
         canvas = Image.new("RGB", (THUMB_PX, THUMB_PX), (255, 255, 255))
         canvas.paste(img, ((THUMB_PX - img.width) // 2, (THUMB_PX - img.height) // 2))
         canvas.save(out, format="PNG", optimize=True)

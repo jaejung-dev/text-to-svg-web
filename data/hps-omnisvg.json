@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T10:11:25.679492Z",
+  "generated_at": "2026-06-04T10:19:28.236506Z",
   "checkpoint": "hps_lora_caption_epoch_002.pt (HPSv2.1 + LoRA, lica-score)",
   "dataset": "omnisvg_1k_v19_examples (1000 prompts; ground-truth SVG vs V19 Best-of-8 generated SVG)",
   "headline": {

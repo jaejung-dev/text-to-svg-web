@@ -117,45 +117,68 @@ function sliceTable(title, obj, colKey) {
 }
 
 const METRIC_LABELS = {
-  hpsv21: "HPS", pickscore: "Pick", clipscore: "CLIP", imagereward: "ImgRwd", laion_aesthetic: "LAION",
+  hpsv21: "HPSv2.1", pickscore: "PickScore", clipscore: "CLIPScore",
+  imagereward: "ImageReward", laion_aesthetic: "LAION aes.",
+};
+const METRIC_DECIMALS = {
+  hpsv21: 3, pickscore: 2, clipscore: 1, imagereward: 2, laion_aesthetic: 2,
 };
 
-function renderMetricWinners(c) {
+function scoreTableRow(label, gtVal, genVal, decimals, opts = {}) {
+  const gtWin = gtVal > genVal;
+  return `
+    <tr class="${opts.lead ? "lead" : ""}">
+      <th>${escapeHtml(label)}</th>
+      <td class="num ${gtWin ? "win" : ""}">${fmt(gtVal, decimals)}${gtWin ? '<i class="chk">✓</i>' : ""}</td>
+      <td class="num ${gtWin ? "" : "win"}">${fmt(genVal, decimals)}${gtWin ? "" : '<i class="chk">✓</i>'}</td>
+    </tr>
+  `;
+}
+
+function renderScoreTable(c) {
   const ms = c.metric_scores || {};
-  const ids = Object.keys(ms);
-  if (!ids.length) return "";
-  const chips = ["hpsv21", "pickscore", "clipscore", "imagereward", "laion_aesthetic"]
-    .filter((id) => ms[id])
-    .map((id) => {
-      const w = ms[id].winner;
-      return `<span class="mw ${w}" title="${escapeHtml(METRIC_LABELS[id])}: GT ${fmt(ms[id].gt, 2)} vs GEN ${fmt(ms[id].gen, 2)} → ${w.toUpperCase()} wins">
-        ${escapeHtml(METRIC_LABELS[id])}<b>${w.toUpperCase()}</b>
-      </span>`;
-    }).join("");
-  return `<div class="metric-winners"><span class="mw-title">per-metric winner</span>${chips}</div>`;
+  const order = ["hpsv21", "pickscore", "clipscore", "imagereward", "laion_aesthetic"];
+  const rows = [scoreTableRow("Our HPS (LoRA)", c.gt_score, c.gen_score, 3, { lead: true })];
+  for (const id of order) {
+    if (ms[id]) rows.push(scoreTableRow(METRIC_LABELS[id], ms[id].gt, ms[id].gen, METRIC_DECIMALS[id]));
+  }
+  return `
+    <table class="case-scores">
+      <thead><tr><th>metric</th><th>GT</th><th>GEN</th></tr></thead>
+      <tbody>${rows.join("")}</tbody>
+    </table>
+  `;
 }
 
 function renderCase(c) {
   const gtWin = c.margin > 0;
+  const ms = c.metric_scores || {};
+  const gtVotes = Object.values(ms).filter((m) => m.winner === "gt").length;
+  const total = Object.keys(ms).length;
+  const verdict = gtWin
+    ? `Our HPS picks <b class="gt-txt">ground-truth</b>`
+    : `Our HPS picks <b class="gen-txt">generated</b> — a miss`;
+  const consensus = total
+    ? `${gtVotes}/${total} other metrics agree with GT`
+    : "";
   return `
     <article class="case ${c.tags.includes("miss") ? "miss" : ""}" data-tags="${escapeHtml(c.tags.join(" "))}">
       <div class="case-imgs">
         <figure class="${gtWin ? "win" : ""}">
-          <figcaption>GT</figcaption>
+          <figcaption>GT${gtWin ? " ✓" : ""}</figcaption>
           <img src="${escapeHtml(c.gt_thumb)}" alt="ground truth ${escapeHtml(c.id)}" loading="lazy" />
         </figure>
         <figure class="${gtWin ? "" : "win"}">
-          <figcaption>GEN</figcaption>
+          <figcaption>GEN${gtWin ? "" : " ✓"}</figcaption>
           <img src="${escapeHtml(c.gen_thumb)}" alt="generated ${escapeHtml(c.id)}" loading="lazy" />
         </figure>
       </div>
       <div class="case-body">
-        <div class="score-row">
-          <span class="pill gt">our-HPS GT ${fmt(c.gt_score)}</span>
-          <span class="pill gen">GEN ${fmt(c.gen_score)}</span>
-          <span class="pill margin ${gtWin ? "pos" : "neg"}">${gtWin ? "+" : ""}${fmt(c.margin)}</span>
+        <div class="verdict ${gtWin ? "" : "miss"}">
+          <span>${verdict}</span>
+          ${consensus ? `<small>${escapeHtml(consensus)}</small>` : ""}
         </div>
-        ${renderMetricWinners(c)}
+        ${renderScoreTable(c)}
         <p class="case-prompt">${escapeHtml(c.prompt)}</p>
         <div class="tags">
           ${c.tags.map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
