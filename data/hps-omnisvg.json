@@ -1,0 +1,772 @@
+{
+  "generated_at": "2026-06-04T09:39:42.787305Z",
+  "checkpoint": "hps_lora_caption_epoch_002.pt (HPSv2.1 + LoRA, lica-score)",
+  "dataset": "omnisvg_1k_v19_examples (1000 prompts; ground-truth SVG vs V19 Best-of-8 generated SVG)",
+  "headline": {
+    "n": 1000,
+    "gt_preferred_rate": 0.964,
+    "gen_preferred_rate": 0.034,
+    "hps_vs_bon_reward_pearson": 0.2169,
+    "score_range": [
+      0.0619,
+      0.3225
+    ],
+    "median_margin": 0.06
+  },
+  "dist": {
+    "gt": {
+      "n": 1000,
+      "mean": 0.23,
+      "std": 0.0293,
+      "min": 0.1175,
+      "p25": 0.2125,
+      "median": 0.2313,
+      "p75": 0.25,
+      "max": 0.3225
+    },
+    "generated": {
+      "n": 1000,
+      "mean": 0.1724,
+      "std": 0.0246,
+      "min": 0.0619,
+      "p25": 0.1561,
+      "median": 0.1725,
+      "p75": 0.1887,
+      "max": 0.2562
+    },
+    "margin": {
+      "n": 1000,
+      "mean": 0.0576,
+      "std": 0.0318,
+      "min": -0.0556,
+      "p25": 0.0362,
+      "median": 0.06,
+      "p75": 0.0781,
+      "max": 0.1781
+    }
+  },
+  "histograms": {
+    "gt": [
+      {
+        "x0": 0.05,
+        "x1": 0.0625,
+        "count": 0
+      },
+      {
+        "x0": 0.0625,
+        "x1": 0.075,
+        "count": 0
+      },
+      {
+        "x0": 0.075,
+        "x1": 0.0875,
+        "count": 0
+      },
+      {
+        "x0": 0.0875,
+        "x1": 0.1,
+        "count": 0
+      },
+      {
+        "x0": 0.1,
+        "x1": 0.1125,
+        "count": 0
+      },
+      {
+        "x0": 0.1125,
+        "x1": 0.125,
+        "count": 1
+      },
+      {
+        "x0": 0.125,
+        "x1": 0.1375,
+        "count": 1
+      },
+      {
+        "x0": 0.1375,
+        "x1": 0.15,
+        "count": 4
+      },
+      {
+        "x0": 0.15,
+        "x1": 0.1625,
+        "count": 14
+      },
+      {
+        "x0": 0.1625,
+        "x1": 0.175,
+        "count": 16
+      },
+      {
+        "x0": 0.175,
+        "x1": 0.1875,
+        "count": 38
+      },
+      {
+        "x0": 0.1875,
+        "x1": 0.2,
+        "count": 75
+      },
+      {
+        "x0": 0.2,
+        "x1": 0.2125,
+        "count": 95
+      },
+      {
+        "x0": 0.2125,
+        "x1": 0.225,
+        "count": 183
+      },
+      {
+        "x0": 0.225,
+        "x1": 0.2375,
+        "count": 171
+      },
+      {
+        "x0": 0.2375,
+        "x1": 0.25,
+        "count": 143
+      },
+      {
+        "x0": 0.25,
+        "x1": 0.2625,
+        "count": 142
+      },
+      {
+        "x0": 0.2625,
+        "x1": 0.275,
+        "count": 66
+      },
+      {
+        "x0": 0.275,
+        "x1": 0.2875,
+        "count": 32
+      },
+      {
+        "x0": 0.2875,
+        "x1": 0.3,
+        "count": 11
+      },
+      {
+        "x0": 0.3,
+        "x1": 0.3125,
+        "count": 6
+      },
+      {
+        "x0": 0.3125,
+        "x1": 0.325,
+        "count": 2
+      },
+      {
+        "x0": 0.325,
+        "x1": 0.3375,
+        "count": 0
+      },
+      {
+        "x0": 0.3375,
+        "x1": 0.35,
+        "count": 0
+      }
+    ],
+    "generated": [
+      {
+        "x0": 0.05,
+        "x1": 0.0625,
+        "count": 1
+      },
+      {
+        "x0": 0.0625,
+        "x1": 0.075,
+        "count": 0
+      },
+      {
+        "x0": 0.075,
+        "x1": 0.0875,
+        "count": 0
+      },
+      {
+        "x0": 0.0875,
+        "x1": 0.1,
+        "count": 2
+      },
+      {
+        "x0": 0.1,
+        "x1": 0.1125,
+        "count": 9
+      },
+      {
+        "x0": 0.1125,
+        "x1": 0.125,
+        "count": 8
+      },
+      {
+        "x0": 0.125,
+        "x1": 0.1375,
+        "count": 58
+      },
+      {
+        "x0": 0.1375,
+        "x1": 0.15,
+        "count": 95
+      },
+      {
+        "x0": 0.15,
+        "x1": 0.1625,
+        "count": 186
+      },
+      {
+        "x0": 0.1625,
+        "x1": 0.175,
+        "count": 193
+      },
+      {
+        "x0": 0.175,
+        "x1": 0.1875,
+        "count": 172
+      },
+      {
+        "x0": 0.1875,
+        "x1": 0.2,
+        "count": 130
+      },
+      {
+        "x0": 0.2,
+        "x1": 0.2125,
+        "count": 96
+      },
+      {
+        "x0": 0.2125,
+        "x1": 0.225,
+        "count": 36
+      },
+      {
+        "x0": 0.225,
+        "x1": 0.2375,
+        "count": 9
+      },
+      {
+        "x0": 0.2375,
+        "x1": 0.25,
+        "count": 4
+      },
+      {
+        "x0": 0.25,
+        "x1": 0.2625,
+        "count": 1
+      },
+      {
+        "x0": 0.2625,
+        "x1": 0.275,
+        "count": 0
+      },
+      {
+        "x0": 0.275,
+        "x1": 0.2875,
+        "count": 0
+      },
+      {
+        "x0": 0.2875,
+        "x1": 0.3,
+        "count": 0
+      },
+      {
+        "x0": 0.3,
+        "x1": 0.3125,
+        "count": 0
+      },
+      {
+        "x0": 0.3125,
+        "x1": 0.325,
+        "count": 0
+      },
+      {
+        "x0": 0.325,
+        "x1": 0.3375,
+        "count": 0
+      },
+      {
+        "x0": 0.3375,
+        "x1": 0.35,
+        "count": 0
+      }
+    ],
+    "margin": [
+      {
+        "x0": -0.1,
+        "x1": -0.0875,
+        "count": 0
+      },
+      {
+        "x0": -0.0875,
+        "x1": -0.075,
+        "count": 0
+      },
+      {
+        "x0": -0.075,
+        "x1": -0.0625,
+        "count": 0
+      },
+      {
+        "x0": -0.0625,
+        "x1": -0.05,
+        "count": 1
+      },
+      {
+        "x0": -0.05,
+        "x1": -0.0375,
+        "count": 2
+      },
+      {
+        "x0": -0.0375,
+        "x1": -0.025,
+        "count": 5
+      },
+      {
+        "x0": -0.025,
+        "x1": -0.0125,
+        "count": 8
+      },
+      {
+        "x0": -0.0125,
+        "x1": 0.0,
+        "count": 20
+      },
+      {
+        "x0": 0.0,
+        "x1": 0.0125,
+        "count": 42
+      },
+      {
+        "x0": 0.0125,
+        "x1": 0.025,
+        "count": 76
+      },
+      {
+        "x0": 0.025,
+        "x1": 0.0375,
+        "count": 113
+      },
+      {
+        "x0": 0.0375,
+        "x1": 0.05,
+        "count": 113
+      },
+      {
+        "x0": 0.05,
+        "x1": 0.0625,
+        "count": 164
+      },
+      {
+        "x0": 0.0625,
+        "x1": 0.075,
+        "count": 157
+      },
+      {
+        "x0": 0.075,
+        "x1": 0.0875,
+        "count": 138
+      },
+      {
+        "x0": 0.0875,
+        "x1": 0.1,
+        "count": 86
+      },
+      {
+        "x0": 0.1,
+        "x1": 0.1125,
+        "count": 33
+      },
+      {
+        "x0": 0.1125,
+        "x1": 0.125,
+        "count": 20
+      },
+      {
+        "x0": 0.125,
+        "x1": 0.1375,
+        "count": 15
+      },
+      {
+        "x0": 0.1375,
+        "x1": 0.15,
+        "count": 6
+      },
+      {
+        "x0": 0.15,
+        "x1": 0.1625,
+        "count": 0
+      },
+      {
+        "x0": 0.1625,
+        "x1": 0.175,
+        "count": 0
+      },
+      {
+        "x0": 0.175,
+        "x1": 0.1875,
+        "count": 1
+      },
+      {
+        "x0": 0.1875,
+        "x1": 0.2,
+        "count": 0
+      }
+    ]
+  },
+  "by_color_word_count": {
+    "0-1_colors": {
+      "n": 3,
+      "gt_mean": 0.2154,
+      "gen_mean": 0.1821,
+      "gt_preferred_rate": 1.0
+    },
+    "2-3_colors": {
+      "n": 144,
+      "gt_mean": 0.2206,
+      "gen_mean": 0.1735,
+      "gt_preferred_rate": 0.8958
+    },
+    "4+_colors": {
+      "n": 853,
+      "gt_mean": 0.2317,
+      "gen_mean": 0.1721,
+      "gt_preferred_rate": 0.9754
+    }
+  },
+  "by_prompt_length": {
+    "2_medium(31-50w)": {
+      "n": 2,
+      "gt_mean": 0.2088,
+      "gen_mean": 0.1562,
+      "gt_preferred_rate": 1.0
+    },
+    "3_long(51-70w)": {
+      "n": 469,
+      "gt_mean": 0.2298,
+      "gen_mean": 0.1735,
+      "gt_preferred_rate": 0.9616
+    },
+    "4_verylong(>70w)": {
+      "n": 529,
+      "gt_mean": 0.2303,
+      "gen_mean": 0.1715,
+      "gt_preferred_rate": 0.966
+    }
+  },
+  "checkpoint_train_eval": {
+    "pairwise_accuracy": 0.8888888888888888,
+    "preference_accuracy": 0.8888888888888888,
+    "ranking_accuracy": 0.8666666666666667,
+    "group_perfect_accuracy": 0.8,
+    "hit_at_1": 0.8,
+    "mrr": 0.8722222222222221,
+    "mean_positive_rank": 1.4,
+    "mean_margin": 4.395833333333333,
+    "num_pairs": 45,
+    "num_groups": 15,
+    "by_bucket": {
+      "complex": {
+        "pairwise_accuracy": 0.9444444444444444,
+        "correct": 17,
+        "total": 18
+      },
+      "medium": {
+        "pairwise_accuracy": 1.0,
+        "correct": 12,
+        "total": 12
+      },
+      "simple": {
+        "pairwise_accuracy": 0.6666666666666666,
+        "correct": 10,
+        "total": 15
+      }
+    }
+  },
+  "raw_scores": {
+    "jsonl": "data/hps-omnisvg-scores/scores.jsonl",
+    "csv": "data/hps-omnisvg-scores/scores.csv",
+    "rows": 1000,
+    "columns": [
+      "id",
+      "gt_score",
+      "gen_score",
+      "margin_gt_minus_gen",
+      "bon_reward",
+      "prompt"
+    ],
+    "join_key": "id (OmniSVG example id = examples/<id>/ folder name)"
+  },
+  "examples": [
+    {
+      "id": "9e362656c843e78bf7edda1963aa5b73",
+      "prompt": "An illustration featuring three buildings of varying heights, each with distinct colors and window patterns. The tallest building is orange with dark brown windows, flanked by two slightly shorter buildings—one lime green with dark gray windows on the left and one pale yellow with olive-green windows on the right. Each building has a blue roof-like structure and a green antenna on top. A small yellow banner is attached to the lime green building on the far left.",
+      "gt_score": 0.1494,
+      "gen_score": 0.205,
+      "margin": -0.0556,
+      "bon_reward": 0.524,
+      "color_words": 6,
+      "gt_thumb": "assets/hps-omnisvg-renders/9e362656c843e78bf7edda1963aa5b73-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/9e362656c843e78bf7edda1963aa5b73-generated.png",
+      "tags": [
+        "miss"
+      ],
+      "model_prefers": "generated"
+    },
+    {
+      "id": "5e12d5fe371d51bddf19bebcf185b7c8",
+      "prompt": "The image features a single, stylized mushroom with a light peach-colored cap and stem. The cap has two pink spots near the top edge and a small pink heart-shaped detail toward the bottom edge. The stem has a subtle shadow effect and blends seamlessly into the cap, which is slightly curved at the edges. The entire illustration is set against a plain white background.",
+      "gt_score": 0.1519,
+      "gen_score": 0.1963,
+      "margin": -0.0444,
+      "bon_reward": 0.4826,
+      "color_words": 2,
+      "gt_thumb": "assets/hps-omnisvg-renders/5e12d5fe371d51bddf19bebcf185b7c8-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/5e12d5fe371d51bddf19bebcf185b7c8-generated.png",
+      "tags": [
+        "miss"
+      ],
+      "model_prefers": "generated"
+    },
+    {
+      "id": "355f7e9678697f32493fa9ca1ceb3474",
+      "prompt": "A cartoon-style drawing of a yellow triangle-shaped character with purple features, including pointed ears, facial markings, and limbs. The character has a simple design with closed eyes, rounded nose, and small mouth, wearing a dark purple collar around its neck. The background is completely white, emphasizing the character's bright yellow and contrasting purple details.",
+      "gt_score": 0.1538,
+      "gen_score": 0.1963,
+      "margin": -0.0425,
+      "bon_reward": 0.4898,
+      "color_words": 3,
+      "gt_thumb": "assets/hps-omnisvg-renders/355f7e9678697f32493fa9ca1ceb3474-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/355f7e9678697f32493fa9ca1ceb3474-generated.png",
+      "tags": [
+        "miss"
+      ],
+      "model_prefers": "generated"
+    },
+    {
+      "id": "be5f92c7acf71df99445cc337189ec84",
+      "prompt": "The image features a beige circular platform with a tall, vertical structure resembling a stack of gold coins rising from its center. Surrounding the platform are multiple small golden plus signs (+) and circles (○), scattered across the background. A stylized light beige hand extends towards the left side of the scene, near some of the plus signs and circles.",
+      "gt_score": 0.1538,
+      "gen_score": 0.1912,
+      "margin": -0.0375,
+      "bon_reward": 0.484,
+      "color_words": 2,
+      "gt_thumb": "assets/hps-omnisvg-renders/be5f92c7acf71df99445cc337189ec84-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/be5f92c7acf71df99445cc337189ec84-generated.png",
+      "tags": [
+        "miss"
+      ],
+      "model_prefers": "generated"
+    },
+    {
+      "id": "718c79036d6ab49199675edb69ad4ee5",
+      "prompt": "A stylized, pastel-colored cartoon character with light peach skin, rounded features, and winking eyes, set against a plain white background. The character has two small peach-colored blush marks on the cheeks, a single raised eyebrow on one side, and a curved line indicating a smirk. Two slanted peach-colored eye shapes suggest a winking expression, and a small pinkish line near the mouth adds to the playful appearance.",
+      "gt_score": 0.1175,
+      "gen_score": 0.1538,
+      "margin": -0.0363,
+      "bon_reward": 0.4912,
+      "color_words": 2,
+      "gt_thumb": "assets/hps-omnisvg-renders/718c79036d6ab49199675edb69ad4ee5-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/718c79036d6ab49199675edb69ad4ee5-generated.png",
+      "tags": [
+        "miss"
+      ],
+      "model_prefers": "generated"
+    },
+    {
+      "id": "62ac0d1b771dca880e9ffde84f54687b",
+      "prompt": "The image depicts a stylized, pastel-colored mushroom with a light peach cap and stem. The cap features two curved, peach-colored sections resembling eyelids, positioned horizontally across it, along with two small pink spots near the top left and bottom right of the cap. The stem is plain and connects seamlessly to the rounded cap, which dominates the upper portion of the image. The entire illustration is set against a plain white background.",
+      "gt_score": 0.1344,
+      "gen_score": 0.1637,
+      "margin": -0.0294,
+      "bon_reward": 0.4454,
+      "color_words": 3,
+      "gt_thumb": "assets/hps-omnisvg-renders/62ac0d1b771dca880e9ffde84f54687b-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/62ac0d1b771dca880e9ffde84f54687b-generated.png",
+      "tags": [
+        "miss"
+      ],
+      "model_prefers": "generated"
+    },
+    {
+      "id": "0b9efef587f0a863179b7dc9fc9fbda2",
+      "prompt": "An illustration of a cartoon bee with a yellow head and body, black stripes on its abdomen, and transparent light blue wings, set against a solid pink circular background. The bee has two black antennae, large black eyes, and a small smiling mouth with teeth. Its arms are raised, resembling a waving gesture, with one hand near its face. A soft shadow under the bee suggests a slight elevation from the ground.",
+      "gt_score": 0.2338,
+      "gen_score": 0.2562,
+      "margin": -0.0225,
+      "bon_reward": 0.5059,
+      "color_words": 4,
+      "gt_thumb": "assets/hps-omnisvg-renders/0b9efef587f0a863179b7dc9fc9fbda2-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/0b9efef587f0a863179b7dc9fc9fbda2-generated.png",
+      "tags": [
+        "high_score"
+      ],
+      "model_prefers": "generated"
+    },
+    {
+      "id": "5df43aea7e33f4497fd5a6cd84e1d409",
+      "prompt": "The image features a colorful illustration of a house with a pink section on the right and a beige section on the left, both topped by a light blue roof. The house has multiple windows with orange panes, a pink door, and a chimney emitting white smoke against a deep blue sky with two white clouds. The scene is framed within a dark blue circular border, and there are small patches of green grass at the base of the house.",
+      "gt_score": 0.2313,
+      "gen_score": 0.2475,
+      "margin": -0.0162,
+      "bon_reward": 0.5229,
+      "color_words": 6,
+      "gt_thumb": "assets/hps-omnisvg-renders/5df43aea7e33f4497fd5a6cd84e1d409-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/5df43aea7e33f4497fd5a6cd84e1d409-generated.png",
+      "tags": [
+        "high_score"
+      ],
+      "model_prefers": "generated"
+    },
+    {
+      "id": "6e57ee8f3196ac3bc1ec3924ff9aa12d",
+      "prompt": "The image features a light blue square frame containing a calendar page with a light pink background. At the top of the page, there is a yellow horizontal strip with seven dark purple vertical lines. Below it, on the left side, there is a large orange heart shape with a white cross in the center. To the right of the heart, the text 'WORLD HEALTH DAY' is written in dark purple cursive font.",
+      "gt_score": 0.245,
+      "gen_score": 0.2412,
+      "margin": 0.0038,
+      "bon_reward": 0.4832,
+      "color_words": 6,
+      "gt_thumb": "assets/hps-omnisvg-renders/6e57ee8f3196ac3bc1ec3924ff9aa12d-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/6e57ee8f3196ac3bc1ec3924ff9aa12d-generated.png",
+      "tags": [
+        "high_score"
+      ],
+      "model_prefers": "ground_truth"
+    },
+    {
+      "id": "5106de00e851ce164659bcd83a8f554b",
+      "prompt": "An illustration of a light beige bear with pink cheeks and small heart-shaped blushes on its face, holding a large, light blue glass bowl filled with pink liquid. The bear has one paw inside the bowl and a small purple cup with pink liquid held by the other paw. The bear's ears are rounded, and it has a calm facial expression with black eyes and a small brown nose. The overall background is transparent, allowing the bear and the objects to stand out prominently.",
+      "gt_score": 0.26,
+      "gen_score": 0.2412,
+      "margin": 0.0187,
+      "bon_reward": 0.5019,
+      "color_words": 6,
+      "gt_thumb": "assets/hps-omnisvg-renders/5106de00e851ce164659bcd83a8f554b-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/5106de00e851ce164659bcd83a8f554b-generated.png",
+      "tags": [
+        "high_score"
+      ],
+      "model_prefers": "ground_truth"
+    },
+    {
+      "id": "713f9744e09ac2b44215979214c84351",
+      "prompt": "An illustration features a green map outline of China with a smiling face, dotted with small green and blue spots, and a red location pin with an animated face positioned near the northern part of the map. The red pin has black eyes, pink cheeks, and a white dot in the center, along with a smiley face. The overall background is white, emphasizing the bright colors of the map and pin.",
+      "gt_score": 0.2163,
+      "gen_score": 0.1037,
+      "margin": 0.1125,
+      "bon_reward": 0.483,
+      "color_words": 6,
+      "gt_thumb": "assets/hps-omnisvg-renders/713f9744e09ac2b44215979214c84351-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/713f9744e09ac2b44215979214c84351-generated.png",
+      "tags": [
+        "low_score"
+      ],
+      "model_prefers": "ground_truth"
+    },
+    {
+      "id": "a71bc8902659171c23fab149d8f4ae4b",
+      "prompt": "The image features a stylized profile of a person wearing white sunglasses, set against a solid teal background. The person has dark hair and beard, and their head is adorned with multiple curved lines extending outward from it, resembling sound waves or signals. The figure is outlined in black, and there are additional black lines connecting specific points on the head to the emanating waves.",
+      "gt_score": 0.2212,
+      "gen_score": 0.0969,
+      "margin": 0.1244,
+      "bon_reward": 0.4516,
+      "color_words": 3,
+      "gt_thumb": "assets/hps-omnisvg-renders/a71bc8902659171c23fab149d8f4ae4b-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/a71bc8902659171c23fab149d8f4ae4b-generated.png",
+      "tags": [
+        "low_score"
+      ],
+      "model_prefers": "ground_truth"
+    },
+    {
+      "id": "1c134adc7ae0e4846f18b2c2956ad986",
+      "prompt": "The image features three colorful cupcakes with distinct designs, each with a vibrant base, frosting, and decorative toppings. The cupcakes are positioned triangularly, with one at the top center, another in the bottom left, and the third in the bottom right. Each cupcake has unique colors and patterns in its frosting and decorations, including orange, green, pink, yellow, and others, creating a playful and whimsical arrangement.",
+      "gt_score": 0.22,
+      "gen_score": 0.095,
+      "margin": 0.125,
+      "bon_reward": 0.4638,
+      "color_words": 4,
+      "gt_thumb": "assets/hps-omnisvg-renders/1c134adc7ae0e4846f18b2c2956ad986-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/1c134adc7ae0e4846f18b2c2956ad986-generated.png",
+      "tags": [
+        "low_score"
+      ],
+      "model_prefers": "ground_truth"
+    },
+    {
+      "id": "160a9b61f79f313b1862f54f215fb42b",
+      "prompt": "A stylized illustration features a bird perched on a dark gray branch with small green leaves and sprouts. The bird has a light beige body, a black head and wing stripe, and blue cheek patches. There are six blue leaf-like shapes scattered around the bird, along with two pink heart shapes positioned to the right of the bird. The entire scene is set against a white background.",
+      "gt_score": 0.245,
+      "gen_score": 0.1044,
+      "margin": 0.1406,
+      "bon_reward": 0.4779,
+      "color_words": 7,
+      "gt_thumb": "assets/hps-omnisvg-renders/160a9b61f79f313b1862f54f215fb42b-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/160a9b61f79f313b1862f54f215fb42b-generated.png",
+      "tags": [
+        "low_score"
+      ],
+      "model_prefers": "ground_truth"
+    },
+    {
+      "id": "07d583331f611f965ef9d5cb13baa5c8",
+      "prompt": "The image features three colorful bowling pins standing upright in a row, each decorated with distinct colors, patterns, and stars. The leftmost pin is blue with teal accents and white spots, the middle pin is yellow with orange accents and white spots, and the rightmost pin is pink with light pink accents and white spots. Each pin has a simple face design and is adorned with sparkling stars near their bases and tops.",
+      "gt_score": 0.2812,
+      "gen_score": 0.1356,
+      "margin": 0.1456,
+      "bon_reward": 0.486,
+      "color_words": 6,
+      "gt_thumb": "assets/hps-omnisvg-renders/07d583331f611f965ef9d5cb13baa5c8-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/07d583331f611f965ef9d5cb13baa5c8-generated.png",
+      "tags": [
+        "gt_win"
+      ],
+      "model_prefers": "ground_truth"
+    },
+    {
+      "id": "9e6f8526b5fcb3449c7ca5a0c1348b9c",
+      "prompt": "An orange cartoon cat with dark orange stripes and round black eyes wearing black-rimmed glasses is sitting upright, reading an open book with white pages and an orange cover. The cat has a pink nose and white whiskers, and its tail is curved to the left side of the image. The background is plain white, emphasizing the cat and the book as the central elements.",
+      "gt_score": 0.3063,
+      "gen_score": 0.16,
+      "margin": 0.1463,
+      "bon_reward": 0.5129,
+      "color_words": 4,
+      "gt_thumb": "assets/hps-omnisvg-renders/9e6f8526b5fcb3449c7ca5a0c1348b9c-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/9e6f8526b5fcb3449c7ca5a0c1348b9c-generated.png",
+      "tags": [
+        "gt_win"
+      ],
+      "model_prefers": "ground_truth"
+    },
+    {
+      "id": "82b98051d6357c1ee85194a8d23856bf",
+      "prompt": "An illustration features a blue bust of a man with short hair, holding a white cigar to his mouth. The bust is positioned centrally against a white background, with a Cuban flag design placed below it. The flag consists of three horizontal stripes—two blue and one white—with a red triangle on the left side containing a white star. The overall composition is clean, with bold lines defining the figure and the flag elements.",
+      "gt_score": 0.2612,
+      "gen_score": 0.1125,
+      "margin": 0.1487,
+      "bon_reward": 0.4716,
+      "color_words": 3,
+      "gt_thumb": "assets/hps-omnisvg-renders/82b98051d6357c1ee85194a8d23856bf-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/82b98051d6357c1ee85194a8d23856bf-generated.png",
+      "tags": [
+        "gt_win"
+      ],
+      "model_prefers": "ground_truth"
+    },
+    {
+      "id": "9130cd63b5262a5cf447bf21419d76aa",
+      "prompt": "The image features a stylized, geometric design composed of two overlapping shapes against a white background. The larger shape is a pink silhouette resembling an abstract or simplified animal head with horn-like protrusions at the top. A smaller, light blue shape overlaps partially with the pink silhouette, forming a layered effect. The blue shape includes curved and angular lines that intersect with the pink silhouette, creating a dynamic interplay between the two colors.",
+      "gt_score": 0.24,
+      "gen_score": 0.0619,
+      "margin": 0.1781,
+      "bon_reward": 0.4773,
+      "color_words": 3,
+      "gt_thumb": "assets/hps-omnisvg-renders/9130cd63b5262a5cf447bf21419d76aa-ground_truth.png",
+      "gen_thumb": "assets/hps-omnisvg-renders/9130cd63b5262a5cf447bf21419d76aa-generated.png",
+      "tags": [
+        "gt_win",
+        "low_score"
+      ],
+      "model_prefers": "ground_truth"
+    }
+  ]
+}

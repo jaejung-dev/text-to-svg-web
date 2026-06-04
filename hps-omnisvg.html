@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HPS Fine-tune · OmniSVG Probe</title>
+    <link rel="stylesheet" href="hps-omnisvg.css?v=20260604-1" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <a href="index.html">Text-to-SVG Review</a>
+        <a href="model-comparison.html">Model scoreboard</a>
+        <a href="multigen.html">Multi-generation</a>
+        <a href="blue-star-scores.html">Blue star scores</a>
+      </nav>
+      <div class="hero-head">
+        <p class="eyebrow">Reward-model probe</p>
+        <h1>Fine-tuned HPSv2.1 scorer, stress-tested on 1,000 OmniSVG prompts.</h1>
+        <p class="lede">
+          We took the LoRA-fine-tuned HPSv2.1 LicaScore checkpoint and scored both
+          the human <strong>ground-truth SVG</strong> and the
+          <strong>V19 Best-of-8 generated SVG</strong> for every prompt. The goal
+          was not a benchmark number but to surface early <em>weaknesses and
+          biases</em> in the reward model.
+        </p>
+      </div>
+      <div id="headline" class="headline-grid"></div>
+    </header>
+
+    <main>
+      <section class="band">
+        <p class="eyebrow">Takeaway</p>
+        <h2>It reliably ranks ground-truth above generated — but it is a coarse, biased signal.</h2>
+        <div id="takeaways" class="takeaways"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <p class="eyebrow">Score distributions</p>
+          <h2>Ground-truth vs generated, and the per-prompt margin</h2>
+          <p class="muted">
+            Scores are raw HPS cosine. Note how narrow the band is — good and bad
+            outputs are separated by a median margin of only ~0.06.
+          </p>
+        </div>
+        <div id="charts" class="charts"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <p class="eyebrow">Bias slices</p>
+          <h2>Does the score depend on prompt traits?</h2>
+        </div>
+        <div id="slices" class="slices"></div>
+      </section>
+
+      <section class="band" id="raw-data">
+        <div class="section-head">
+          <p class="eyebrow">Raw scores · for data matching</p>
+          <h2>Download the full per-SVG scores (all 1,000)</h2>
+          <p class="muted">
+            Every prompt's ground-truth and generated HPS score, joinable by
+            <code>id</code> (the OmniSVG example id =
+            <code>examples/&lt;id&gt;/</code> folder). Use this to match results
+            back onto the source dataset — independent of the visualisation above.
+          </p>
+        </div>
+        <div id="downloads" class="downloads"></div>
+        <div class="table-wrap">
+          <table id="scores-preview" class="scores-preview">
+            <thead>
+              <tr><th>id</th><th>gt_score</th><th>gen_score</th><th>margin</th><th>bon_reward</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <p class="muted" id="scores-preview-note"></p>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <p class="eyebrow">Curated cases</p>
+          <h2>Where the model is interesting (not all 1,000 — the telling ones)</h2>
+          <p class="muted">
+            Filter below. <strong class="miss-tag">Miss</strong> = the model scored
+            the generated SVG higher than the human ground truth.
+          </p>
+        </div>
+        <div class="case-toolbar">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="miss">Misses (GEN &gt; GT)</button>
+          <button class="chip" data-filter="gt_win">Clear GT wins</button>
+          <button class="chip" data-filter="low_score">Lowest scores</button>
+          <button class="chip" data-filter="high_score">Highest scores</button>
+        </div>
+        <div id="cases" class="case-grid"></div>
+      </section>
+
+      <section class="band method">
+        <p class="eyebrow">Method &amp; provenance</p>
+        <h2>Reproducibility</h2>
+        <ul id="method-list"></ul>
+      </section>
+    </main>
+
+    <script src="hps-omnisvg.js?v=20260604-1"></script>
+  </body>
+</html>
