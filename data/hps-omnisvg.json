@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T10:19:28.236506Z",
+  "generated_at": "2026-06-05T06:18:40.603594Z",
   "checkpoint": "hps_lora_caption_epoch_002.pt (HPSv2.1 + LoRA, lica-score)",
   "dataset": "omnisvg_1k_v19_examples (1000 prompts; ground-truth SVG vs V19 Best-of-8 generated SVG)",
   "headline": {
@@ -1452,5 +1452,3094 @@
         }
       }
     }
-  ]
+  ],
+  "disagreements": {
+    "n": 67,
+    "n_finetuned_gt_pretrained_gen": 60,
+    "n_finetuned_gen_pretrained_gt": 7,
+    "cards": [
+      {
+        "id": "7fbca39c8c1d05ce179849735b1e1023",
+        "prompt": "A black peacock illustration is prominently displayed on a black monitor screen, which is centered within a larger black circular frame against a white background. The peacock's design includes stylized patterns of swirls and leaf-like shapes in black, creating an abstract, decorative effect. Below the monitor, there is a small black rectangular object, possibly representing a stand or base.",
+        "gt_score": 0.2475,
+        "gen_score": 0.1219,
+        "margin": 0.1256,
+        "bon_reward": 0.4284,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/7fbca39c8c1d05ce179849735b1e1023-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/7fbca39c8c1d05ce179849735b1e1023-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1378,
+            "gen": 0.143,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.6422,
+            "gen": 20.5746,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 19.3858,
+            "gen": 22.2272,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.0238,
+            "gen": -2.2569,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.9224,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2475,
+          "gen": 0.1219,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "1417e461279bdeb8066762be90e6e114",
+        "prompt": "The image features a black hand outline positioned at the bottom left, holding up three interlocking gears in black and white. The largest gear contains a clock face with black hands pointing to ten minutes past ten, while the medium-sized gear has a white dollar sign in its center, and the smallest gear displays a simple human figure silhouette. The entire illustration is set against a white background.",
+        "gt_score": 0.2525,
+        "gen_score": 0.1506,
+        "margin": 0.1019,
+        "bon_reward": 0.4546,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/1417e461279bdeb8066762be90e6e114-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/1417e461279bdeb8066762be90e6e114-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.165,
+            "gen": 0.1666,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.8233,
+            "gen": 20.5319,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 22.6588,
+            "gen": 29.2441,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.0542,
+            "gen": -1.6079,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.6889,
+            "gen": 4.8745,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2525,
+          "gen": 0.1506,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "aaf7c44ecca80ea4973c3da0902b2867",
+        "prompt": "The image features a black circular background with a white wallet icon centered within it. The wallet icon is outlined with a dashed white line, and it includes a small white oval representing a button or clasp near the bottom right corner of the wallet. The overall design is simple and symmetrical, with the wallet positioned directly in the middle of the circular background.",
+        "gt_score": 0.2788,
+        "gen_score": 0.2,
+        "margin": 0.0787,
+        "bon_reward": 0.4401,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/aaf7c44ecca80ea4973c3da0902b2867-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/aaf7c44ecca80ea4973c3da0902b2867-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1409,
+            "gen": 0.1936,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.1209,
+            "gen": 22.3023,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 20.695,
+            "gen": 25.9906,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.6421,
+            "gen": -0.7008,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.9742,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2788,
+          "gen": 0.2,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "2630aee6a9da2c79464ded120f428dbf",
+        "prompt": "The image features a black-and-white illustration of a rectangular stamp-like object with bold black Chinese characters '未开始' (meaning 'not started') diagonally inscribed. The rectangle is intersected by a large circular shape that also contains five small black stars evenly distributed along its arc. The entire design is outlined in thick black lines against a transparent background.",
+        "gt_score": 0.2425,
+        "gen_score": 0.1675,
+        "margin": 0.075,
+        "bon_reward": 0.4494,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/2630aee6a9da2c79464ded120f428dbf-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/2630aee6a9da2c79464ded120f428dbf-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1391,
+            "gen": 0.1914,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 19.6642,
+            "gen": 20.4882,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 24.4482,
+            "gen": 23.2196,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -1.0115,
+            "gen": -1.4679,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 5.0025,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2425,
+          "gen": 0.1675,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "9d9f494f1e8418c3cf74057be78c522e",
+        "prompt": "The image features a simple black silhouette of a person riding a bicycle against a white background. The person is depicted as a stick figure with a circular head, arms extended forward, and legs positioned to simulate pedaling. The bicycle has two large circular wheels and a straight frame, all in black. The entire illustration is monochromatic, with the black silhouette contrasting sharply against the white background.",
+        "gt_score": 0.24,
+        "gen_score": 0.1688,
+        "margin": 0.0712,
+        "bon_reward": 0.4948,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/9d9f494f1e8418c3cf74057be78c522e-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/9d9f494f1e8418c3cf74057be78c522e-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1643,
+            "gen": 0.1909,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.9214,
+            "gen": 23.9002,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 22.7222,
+            "gen": 32.8819,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.1941,
+            "gen": -0.713,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 5.2484,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.24,
+          "gen": 0.1688,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "956d8087647544e9d79969a44cc71b0e",
+        "prompt": "The image features a black-and-white icon consisting of a calendar on the left and a clock on the right, both outlined in black with no fill, set against a white background. The calendar displays a grid with six rows and five columns, totaling thirty individual cells, each represented by a small black square. To the right of the calendar, there is a circular clock face with a single black hand indicating time, encased within a larger black circular outline that resembles a stopwatch or timer.",
+        "gt_score": 0.2688,
+        "gen_score": 0.1988,
+        "margin": 0.07,
+        "bon_reward": 0.469,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/956d8087647544e9d79969a44cc71b0e-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/956d8087647544e9d79969a44cc71b0e-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1364,
+            "gen": 0.2195,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.8697,
+            "gen": 21.8417,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 22.4373,
+            "gen": 30.6459,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.67,
+            "gen": 0.6969,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.8187,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2688,
+          "gen": 0.1988,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "27d0c8cbe92e16fa7545e76f2483f581",
+        "prompt": "The image features a black-and-white logo with three Chinese characters '淘女郎' (tāo nǚ láng) prominently displayed at the center-left. Below the characters is a URL 'mm.taobao.com' in black text. To the right of the text, there is a stylized black circular shape containing a five-pointed star. The entire design is set against a plain white background, creating a clear contrast between the text and symbols.",
+        "gt_score": 0.2075,
+        "gen_score": 0.1375,
+        "margin": 0.07,
+        "bon_reward": 0.451,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/27d0c8cbe92e16fa7545e76f2483f581-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/27d0c8cbe92e16fa7545e76f2483f581-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1393,
+            "gen": 0.1649,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 19.5541,
+            "gen": 19.3928,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 24.547,
+            "gen": 32.7829,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.22,
+            "gen": -0.6093,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.8999,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2075,
+          "gen": 0.1375,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "9d96b145a41676348971e785ef0dacd5",
+        "prompt": "The image features a single black silhouette of a person running against a white background. The person is depicted mid-stride, wearing a black cap, and appears to be in motion, with one leg extended forward and the other trailing behind, accompanied by raised arms for balance. The overall composition is minimalist, with the black figure sharply contrasting against the plain white backdrop.",
+        "gt_score": 0.2288,
+        "gen_score": 0.1612,
+        "margin": 0.0675,
+        "bon_reward": 0.4318,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/9d96b145a41676348971e785ef0dacd5-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/9d96b145a41676348971e785ef0dacd5-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1606,
+            "gen": 0.1733,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.1696,
+            "gen": 20.652,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 21.8989,
+            "gen": 21.9125,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.0164,
+            "gen": -1.8399,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.413,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2288,
+          "gen": 0.1612,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "0bfb529389fa03ba8f75930eda3714fb",
+        "prompt": "A white background features a large, curved yellow line that starts from the top left, bends downward, and transitions into a black arrow pointing to the right at the bottom. The words 'way Down' are written in bold black script across the center of the image, with three small yellow lines positioned above the word 'way'. Additional yellow accents are placed along the curve of the yellow line near the top and middle sections, enhancing the design's visual flow.",
+        "gt_score": 0.255,
+        "gen_score": 0.195,
+        "margin": 0.06,
+        "bon_reward": 0.4203,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/0bfb529389fa03ba8f75930eda3714fb-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/0bfb529389fa03ba8f75930eda3714fb-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.213,
+            "gen": 0.2155,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.2966,
+            "gen": 21.8,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 33.2492,
+            "gen": 34.4796,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -0.0441,
+            "gen": 0.4646,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.1861,
+            "gen": 5.0693,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.255,
+          "gen": 0.195,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "aaf99913d0336f99c3132f9bc03a112a",
+        "prompt": "The image depicts a cartoon-style ant with a segmented body. The ant has a round head in light gray with two black antennae extending from the top, two simple black eyes, and a curved smile. Its thorax is also light gray, and its abdomen is larger with three horizontal black stripes on a light gray background. The ant has six thin legs in black, with three pairs extending from the thorax and abdomen. The entire image is set against a completely white background.",
+        "gt_score": 0.2175,
+        "gen_score": 0.1612,
+        "margin": 0.0563,
+        "bon_reward": 0.4782,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/aaf99913d0336f99c3132f9bc03a112a-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/aaf99913d0336f99c3132f9bc03a112a-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1515,
+            "gen": 0.1879,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.3594,
+            "gen": 21.3447,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 24.9684,
+            "gen": 29.0298,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.2758,
+            "gen": -0.625,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.8592,
+            "gen": 4.9824,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2175,
+          "gen": 0.1612,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "f648004a6dbf4c83beda1fd833052eb1",
+        "prompt": "The image depicts a single black cat sitting upright, wearing a white collar with small decorative patterns, against a plain white background. The cat has white eyes, whiskers, and a nose, and its tail curves slightly to the right. The overall composition is simple, with the cat centered and occupying most of the frame.",
+        "gt_score": 0.2237,
+        "gen_score": 0.1675,
+        "margin": 0.0562,
+        "bon_reward": 0.4723,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/f648004a6dbf4c83beda1fd833052eb1-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/f648004a6dbf4c83beda1fd833052eb1-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1464,
+            "gen": 0.1839,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.4759,
+            "gen": 20.7749,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 20.0588,
+            "gen": 27.3373,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.2201,
+            "gen": -1.7025,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 5.0853,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2237,
+          "gen": 0.1675,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "e00bdf5932da2e2e9db3759fbf4b5830",
+        "prompt": "A black and white line drawing of a simple chair and table combination. The chair has a backrest and two vertical supports, with a seat that connects to the legs. The table is rectangular and positioned in front of the chair, supported by two curved legs. Both the chair and table are depicted with clean, bold black lines against a white background.",
+        "gt_score": 0.235,
+        "gen_score": 0.1825,
+        "margin": 0.0525,
+        "bon_reward": 0.4324,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/e00bdf5932da2e2e9db3759fbf4b5830-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/e00bdf5932da2e2e9db3759fbf4b5830-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.136,
+            "gen": 0.2018,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.0939,
+            "gen": 23.0845,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 20.6244,
+            "gen": 31.9662,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.038,
+            "gen": -0.5488,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.8692,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.235,
+          "gen": 0.1825,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "0f39916d8772db272bc751410f4c1ba2",
+        "prompt": "The image shows a black-and-white illustration featuring a simple balance scale. On one side of the scale is a cartoonish figure with a rounded head and minimal facial features, depicted in black. On the opposite side is a large coin with a dollar symbol ($), also outlined in black. The scale itself, including the fulcrum and base, is drawn in black lines. Two small black sparkles are positioned near the top right corner of the image, indicating emphasis on the coin's side.",
+        "gt_score": 0.2125,
+        "gen_score": 0.1637,
+        "margin": 0.0488,
+        "bon_reward": 0.4727,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/0f39916d8772db272bc751410f4c1ba2-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/0f39916d8772db272bc751410f4c1ba2-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1068,
+            "gen": 0.1572,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.8718,
+            "gen": 20.3292,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 23.2842,
+            "gen": 31.815,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.5711,
+            "gen": -1.9593,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.9244,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2125,
+          "gen": 0.1637,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "8689509f447dc919e7528552367596df",
+        "prompt": "A hand-drawn illustration features a white ambulance outlined in black, adorned with a prominent red cross on its side. The back of the vehicle has a blue rectangular shape representing a window, with four purple lights forming a siren pattern above it. The wheels are depicted as simple black circles with white centers, positioned symmetrically beneath the vehicle's body.",
+        "gt_score": 0.22,
+        "gen_score": 0.1713,
+        "margin": 0.0487,
+        "bon_reward": 0.5152,
+        "color_words": 5,
+        "gt_thumb": "assets/hps-omnisvg-renders/8689509f447dc919e7528552367596df-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/8689509f447dc919e7528552367596df-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.146,
+            "gen": 0.2011,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 19.7461,
+            "gen": 22.1516,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 26.8806,
+            "gen": 29.6889,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.1672,
+            "gen": 0.6849,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.8698,
+            "gen": 4.8366,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.22,
+          "gen": 0.1713,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "8c2aaeafe85dcb83f26c063d2ea8dbbf",
+        "prompt": "The image features a black-and-white logo with a minimalist design, consisting of stylized text and symbols. The top portion includes a wordmark 'SHUOING' in bold black letters, with two black circular shapes positioned above the 'U', resembling eyes. Below the wordmark, there is Chinese text '树青科技' (Shù Qīng Kē Jì) in black, indicating the company name. The overall background is plain white, emphasizing the contrast between the black elements and the clean design.",
+        "gt_score": 0.205,
+        "gen_score": 0.1612,
+        "margin": 0.0438,
+        "bon_reward": 0.4222,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/8c2aaeafe85dcb83f26c063d2ea8dbbf-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/8c2aaeafe85dcb83f26c063d2ea8dbbf-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1322,
+            "gen": 0.1876,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.1281,
+            "gen": 19.6028,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 25.1187,
+            "gen": 29.855,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.3708,
+            "gen": -1.0132,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.6597,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.205,
+          "gen": 0.1612,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "5b954b1067b86cf31cec0417ed918fc4",
+        "prompt": "A black line drawing of a hand gesture over a minimalist face within a single black circular boundary, set against a white background. The face features two small black circle eyes and a central vertical line for a mouth, while the hand, also outlined in black, has four visible fingers pointing upwards, positioned below the face. All elements are starkly contrasted against the plain white backdrop.",
+        "gt_score": 0.2425,
+        "gen_score": 0.2,
+        "margin": 0.0425,
+        "bon_reward": 0.4766,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/5b954b1067b86cf31cec0417ed918fc4-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/5b954b1067b86cf31cec0417ed918fc4-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1322,
+            "gen": 0.2248,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 19.563,
+            "gen": 22.8996,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 23.7653,
+            "gen": 32.4307,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.9331,
+            "gen": -0.9953,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.8872,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2425,
+          "gen": 0.2,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "3626fc22aa24232186ed3513f0b65c81",
+        "prompt": "The image features a bold black text design on a white background, consisting of the phrase 'I'M FEELING GOOD' arranged in three rows. The top row has the words 'I'M' in cursive script enclosed within an arched black banner that includes six small black dots. Below it, the word 'FEELING' is written in large, stylized black letters. At the bottom, the word 'GOOD' is presented in similarly styled black letters, flanked by two small black dots on either side.",
+        "gt_score": 0.2325,
+        "gen_score": 0.1912,
+        "margin": 0.0413,
+        "bon_reward": 0.4428,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/3626fc22aa24232186ed3513f0b65c81-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/3626fc22aa24232186ed3513f0b65c81-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.128,
+            "gen": 0.2156,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.8971,
+            "gen": 21.6631,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 22.3231,
+            "gen": 34.6695,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.8755,
+            "gen": 0.4992,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 5.4388,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2325,
+          "gen": 0.1912,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "41f67a10188836f52673d2db0cd1b860",
+        "prompt": "The image features a simple cartoon-style face with light beige skin, black hair styled in spikes, two small oval-shaped ears on either side of the head, and a red curved line for a smiling mouth positioned below two circular eyes. The hair encircles the entire head, and the ears are slightly protruding from the sides, with the overall composition centered against a transparent background.",
+        "gt_score": 0.235,
+        "gen_score": 0.195,
+        "margin": 0.04,
+        "bon_reward": 0.4571,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/41f67a10188836f52673d2db0cd1b860-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/41f67a10188836f52673d2db0cd1b860-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2111,
+            "gen": 0.2171,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.8137,
+            "gen": 20.8068,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 28.6246,
+            "gen": 26.5627,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -0.6671,
+            "gen": -1.6101,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7857,
+            "gen": 5.1979,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.235,
+          "gen": 0.195,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "c21ebb39fcd9e433343ce193c226b1ca",
+        "prompt": "The image features a black logo prominently on the left side, consisting of two interlinked circles forming the Chinese character for 'chain.' To the right of the logo, there is a vertical black line separating it from the text '区块链交易所' (Blockchain Exchange) written in black Chinese characters. Below the text is the black website URL 'www.33.cn,' all set against a plain white background.",
+        "gt_score": 0.1925,
+        "gen_score": 0.1538,
+        "margin": 0.0387,
+        "bon_reward": 0.4127,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/c21ebb39fcd9e433343ce193c226b1ca-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/c21ebb39fcd9e433343ce193c226b1ca-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1626,
+            "gen": 0.1774,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.353,
+            "gen": 19.1077,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 26.7236,
+            "gen": 27.8475,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.2415,
+            "gen": -1.347,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.9387,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1925,
+          "gen": 0.1538,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "053b1a9af9d71d4ff638a2bb7bfdbb4b",
+        "prompt": "The image features a stylized, cartoon-like character with a light pink body, a yellow face, and dark purple ears. The character has one eye open and winking, with its right arm flexed prominently in the foreground. On its left side, there is a smaller, yellow, rounded object with two black eyes, a pink nose, and a smiling mouth, partially attached to the character's shoulder area.",
+        "gt_score": 0.2188,
+        "gen_score": 0.1813,
+        "margin": 0.0375,
+        "bon_reward": 0.4981,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/053b1a9af9d71d4ff638a2bb7bfdbb4b-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/053b1a9af9d71d4ff638a2bb7bfdbb4b-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2125,
+            "gen": 0.2172,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.7031,
+            "gen": 20.7866,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 24.8908,
+            "gen": 27.6033,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.5539,
+            "gen": -0.39,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7983,
+            "gen": 4.7784,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2188,
+          "gen": 0.1813,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "0606a06b5bf80f93b43fd89f6506fb2e",
+        "prompt": "The image features a black-and-white line drawing of an anthropomorphic cow-like character with exaggerated cartoonish features, including large ears, a prominent udder, and a tail. The cow has a simple, smiling face with two eyes, a nose, and a mouth, and is holding a rose in front of its belly. The character's posture suggests movement, with one leg slightly lifted, as if walking. The entire image consists of black outlines on a white background.",
+        "gt_score": 0.1963,
+        "gen_score": 0.16,
+        "margin": 0.0363,
+        "bon_reward": 0.4798,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/0606a06b5bf80f93b43fd89f6506fb2e-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/0606a06b5bf80f93b43fd89f6506fb2e-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1158,
+            "gen": 0.178,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.7304,
+            "gen": 20.7852,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 20.462,
+            "gen": 25.5396,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.902,
+            "gen": -0.6212,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.9915,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1963,
+          "gen": 0.16,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "25786c5019e1e59b838b27316da8b666",
+        "prompt": "A cartoon character with a predominantly red body, orange head and feet, and black outline features two round eyes and an open mouth. The character has two short arms and legs, with hands and feet depicted as simple white shapes. A tuft of hair styled like an exclamation mark protrudes from the top of the head, adding to the whimsical design. The entire illustration is set against a stark white background.",
+        "gt_score": 0.24,
+        "gen_score": 0.2062,
+        "margin": 0.0337,
+        "bon_reward": 0.5092,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/25786c5019e1e59b838b27316da8b666-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/25786c5019e1e59b838b27316da8b666-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2305,
+            "gen": 0.2332,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.4231,
+            "gen": 21.1525,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 28.0037,
+            "gen": 26.5636,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -0.4949,
+            "gen": -0.6212,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7822,
+            "gen": 4.8626,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.24,
+          "gen": 0.2062,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "c8720952f9ab2a5eeb5ca77a317f0652",
+        "prompt": "A black-and-white graphic featuring a stamp-like design with a circular border that contains five black stars evenly spaced around it. At the center, there is a rectangular label with bold black Chinese characters '已使用' (Yǐ shǐyòng), which translates to 'Used'. The stamp has a three-dimensional effect due to shading lines, and the overall background is completely white.",
+        "gt_score": 0.2412,
+        "gen_score": 0.2087,
+        "margin": 0.0325,
+        "bon_reward": 0.4783,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/c8720952f9ab2a5eeb5ca77a317f0652-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/c8720952f9ab2a5eeb5ca77a317f0652-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.125,
+            "gen": 0.2203,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.6722,
+            "gen": 20.7475,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 24.0439,
+            "gen": 23.971,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -1.4265,
+            "gen": 0.2033,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 5.0777,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2412,
+          "gen": 0.2087,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "a334d0ad5d71e3a1f35c653916034f97",
+        "prompt": "The image features an orange ant drawn with simple lines and shapes against a white background. The ant has a round head with two small white eyes and a curved black smile. It has two thin black antennae extending from the top of its head. The body is segmented into three parts: a midsection and a broader rear section, both outlined in black and filled with orange, featuring black stripes. Six thin black legs extend from the body, positioned beneath it. The overall design is cartoonish and minimalistic.",
+        "gt_score": 0.2412,
+        "gen_score": 0.21,
+        "margin": 0.0312,
+        "bon_reward": 0.4818,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/a334d0ad5d71e3a1f35c653916034f97-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/a334d0ad5d71e3a1f35c653916034f97-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1803,
+            "gen": 0.2354,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.8236,
+            "gen": 23.0676,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 23.804,
+            "gen": 32.065,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.0719,
+            "gen": -0.6739,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.846,
+            "gen": 4.8215,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2412,
+          "gen": 0.21,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "655e0a3755c482844b411ee2792ab8b7",
+        "prompt": "The image features a white background with bold, stylized text that reads 'STAY POSITIVE' in two distinct rows. The word 'STAY' is in smaller letters with a blue outline and white interior, positioned above the larger word 'POSITIVE,' which also has a blue outline but a bold, solid blue fill. Both words are centered horizontally, with 'STAY' slightly elevated above 'POSITIVE.' The overall design uses clean lines and a simple color scheme of blue and white, emphasizing positivity through its visual elements.",
+        "gt_score": 0.2438,
+        "gen_score": 0.2138,
+        "margin": 0.03,
+        "bon_reward": 0.4303,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/655e0a3755c482844b411ee2792ab8b7-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/655e0a3755c482844b411ee2792ab8b7-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2495,
+            "gen": 0.2509,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.2021,
+            "gen": 21.9095,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 34.4479,
+            "gen": 30.5134,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": 0.5344,
+            "gen": 0.6651,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.2259,
+            "gen": 5.4015,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2438,
+          "gen": 0.2138,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "99b8d2a308ed5c71fd8d19bad5be316e",
+        "prompt": "The image features a black-and-white graphic of a circular stamp design with six black stars evenly distributed around its perimeter. A rectangular label is positioned diagonally across the center of the circle, containing bold black Chinese characters '无结节' (translated as 'no nodules'). The background is entirely white, with no other colors or elements present.",
+        "gt_score": 0.2212,
+        "gen_score": 0.1925,
+        "margin": 0.0288,
+        "bon_reward": 0.5306,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/99b8d2a308ed5c71fd8d19bad5be316e-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/99b8d2a308ed5c71fd8d19bad5be316e-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.12,
+            "gen": 0.1989,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 19.2912,
+            "gen": 20.0981,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 22.5753,
+            "gen": 28.8874,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.4775,
+            "gen": 1.1999,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.6099,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2212,
+          "gen": 0.1925,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "10f9486a5705d302dcfbaeed34477425",
+        "prompt": "An illustration featuring two cartoon-style figures standing side by side against a white background. The figure on the left has a brown head, yellow body, and is wearing a purple backpack. The figure on the right has a navy blue head adorned with wavy patterns, a pink torso, and is dressed in a matching pink outfit with black straps. Both figures have simple facial features and are depicted with vibrant, solid colors, creating a playful and minimalist style.",
+        "gt_score": 0.18,
+        "gen_score": 0.155,
+        "margin": 0.025,
+        "bon_reward": 0.4904,
+        "color_words": 8,
+        "gt_thumb": "assets/hps-omnisvg-renders/10f9486a5705d302dcfbaeed34477425-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/10f9486a5705d302dcfbaeed34477425-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1676,
+            "gen": 0.1722,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.7441,
+            "gen": 19.8798,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 23.5401,
+            "gen": 29.1277,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.3546,
+            "gen": -0.3525,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.0678,
+            "gen": 4.4411,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.18,
+          "gen": 0.155,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "9196080b681d567c979ca681264f5ee6",
+        "prompt": "The image depicts a stylized, cartoon reindeer character with a distinct red nose, antlers, and a green scarf. The reindeer has exaggerated facial features, including a wide grin showing teeth and a single visible eye. The antlers are green, and the body is brown with a prominent red nose on the right side. The scarf is green with red dotted patterns, draped around the neck area.",
+        "gt_score": 0.225,
+        "gen_score": 0.2013,
+        "margin": 0.0237,
+        "bon_reward": 0.5166,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/9196080b681d567c979ca681264f5ee6-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/9196080b681d567c979ca681264f5ee6-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.215,
+            "gen": 0.2196,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.7017,
+            "gen": 21.219,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 31.2137,
+            "gen": 29.1153,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": 0.4533,
+            "gen": 0.7037,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.0675,
+            "gen": 4.8239,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.225,
+          "gen": 0.2013,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "5433d9dbeea34c184abaf5c1fe0839da",
+        "prompt": "An illustration featuring a character wearing a yellow hat and coat, a blue scarf, and dark blue pants, standing above a pink circular area containing a torn paper with white edges and two distinct letters: 'B' in blue and 'A' in black. The character has a white thought bubble emanating from their head, and they hold a blue object resembling a pen or tool on their right side.",
+        "gt_score": 0.2025,
+        "gen_score": 0.18,
+        "margin": 0.0225,
+        "bon_reward": 0.4765,
+        "color_words": 5,
+        "gt_thumb": "assets/hps-omnisvg-renders/5433d9dbeea34c184abaf5c1fe0839da-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/5433d9dbeea34c184abaf5c1fe0839da-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2058,
+            "gen": 0.2156,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.5587,
+            "gen": 20.8637,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 24.8165,
+            "gen": 27.6219,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": 0.4022,
+            "gen": -0.8323,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.9107,
+            "gen": 4.8916,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2025,
+          "gen": 0.18,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "e1a8973a19df32ac58c8c9a655651958",
+        "prompt": "An illustration features one cartoon otter standing upright on a light blue circular background adorned with smaller light blue shapes. The otter has a brown body, a lighter beige belly, and black-tipped ears. It has rosy pink cheeks, small black eyes, a pink nose, and a smiling mouth. One of its front paws is raised slightly as if waving, while the other paws are relaxed by its sides. The background consists of a solid white area surrounding the light blue circular design.",
+        "gt_score": 0.2225,
+        "gen_score": 0.2013,
+        "margin": 0.0212,
+        "bon_reward": 0.4893,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/e1a8973a19df32ac58c8c9a655651958-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/e1a8973a19df32ac58c8c9a655651958-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2194,
+            "gen": 0.2272,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.6568,
+            "gen": 22.2404,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 27.9875,
+            "gen": 29.9498,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": 0.4769,
+            "gen": 1.2618,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.3455,
+            "gen": 4.7649,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2225,
+          "gen": 0.2013,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "598ade1f6dac8bcb07790d56b7666bee",
+        "prompt": "The image depicts a network switch or router with a light gray body and dark gray accents around its edges. On the front panel, there are two rows of eight black ports each, aligned horizontally. To the right of the ports, there are four vertical indicator lights—arranged from top to bottom as green, red, green, and green. The background of the image is white, providing contrast to the device.",
+        "gt_score": 0.2013,
+        "gen_score": 0.18,
+        "margin": 0.0212,
+        "bon_reward": 0.479,
+        "color_words": 5,
+        "gt_thumb": "assets/hps-omnisvg-renders/598ade1f6dac8bcb07790d56b7666bee-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/598ade1f6dac8bcb07790d56b7666bee-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2023,
+            "gen": 0.2062,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 22.1756,
+            "gen": 21.2919,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 27.6774,
+            "gen": 33.1397,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": 0.8405,
+            "gen": -0.683,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.5379,
+            "gen": 4.8802,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2013,
+          "gen": 0.18,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "48a607eb799879a39c79f9ea8d58530f",
+        "prompt": "The image features two silhouetted figures, one larger and one smaller, standing against a plain white background. The larger figure appears to be an adult, while the smaller figure resembles a child. Both figures are depicted in black outlines, with no internal coloring or detail, creating a stark contrast against the white backdrop.",
+        "gt_score": 0.2087,
+        "gen_score": 0.1875,
+        "margin": 0.0212,
+        "bon_reward": 0.4359,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/48a607eb799879a39c79f9ea8d58530f-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/48a607eb799879a39c79f9ea8d58530f-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1624,
+            "gen": 0.1832,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.2582,
+            "gen": 21.669,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 21.8439,
+            "gen": 26.4139,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.6051,
+            "gen": -0.3597,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.5837,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2087,
+          "gen": 0.1875,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "94cb1c2a1621f8e1a990cb91810f6486",
+        "prompt": "The image features a stylized black-and-white illustration of a mountainous landscape with a central volcano erupting. The volcano is depicted with jagged lines indicating an eruption, and there are eight small black lines radiating outward from the top to represent smoke or ash. The mountain peaks are triangular with wavy lines for texture, set against a plain white background. The overall design uses bold black outlines to define the shapes and features.",
+        "gt_score": 0.1612,
+        "gen_score": 0.1419,
+        "margin": 0.0194,
+        "bon_reward": 0.4679,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/94cb1c2a1621f8e1a990cb91810f6486-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/94cb1c2a1621f8e1a990cb91810f6486-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1164,
+            "gen": 0.1662,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.8651,
+            "gen": 20.5667,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 19.541,
+            "gen": 25.6779,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.9271,
+            "gen": -1.5531,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.9191,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1612,
+          "gen": 0.1419,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "5df79e5674e37dd400bf738fdcf16a59",
+        "prompt": "An illustration of a cute, cartoonish character resembling a bee reading a newspaper. The character has a light purple body with pink wings and antennae, a light yellow face with two black eyes, and a dark blue hat. The newspapers held by the character are open, displaying horizontal lines representing text, and the character's hands are holding the edges of the paper. The overall background is white, emphasizing the colorful character and newspaper.",
+        "gt_score": 0.2125,
+        "gen_score": 0.1937,
+        "margin": 0.0188,
+        "bon_reward": 0.4953,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/5df79e5674e37dd400bf738fdcf16a59-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/5df79e5674e37dd400bf738fdcf16a59-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2018,
+            "gen": 0.2139,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.2984,
+            "gen": 20.2951,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 29.6451,
+            "gen": 36.8181,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -0.7341,
+            "gen": 0.0391,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.8061,
+            "gen": 5.2053,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2125,
+          "gen": 0.1937,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "d4ccddadedfff5ce5962e7aaf095a5ff",
+        "prompt": "The image consists of six black squares arranged in two rows and three columns against a white background. The top row contains two larger black squares, each with a smaller white square centered inside. The bottom row features one large black square on the left, containing a smaller white square, and three smaller black squares on the right, aligned horizontally. The black squares are uniformly filled with a solid black color, while the background remains entirely white.",
+        "gt_score": 0.2013,
+        "gen_score": 0.1838,
+        "margin": 0.0175,
+        "bon_reward": 0.4243,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/d4ccddadedfff5ce5962e7aaf095a5ff-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/d4ccddadedfff5ce5962e7aaf095a5ff-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1421,
+            "gen": 0.1994,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.4376,
+            "gen": 21.7979,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 22.5653,
+            "gen": 23.3861,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.0239,
+            "gen": -0.1207,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 4.9058,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2013,
+          "gen": 0.1838,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "c2e77f9aec573e23c43130246c3e717f",
+        "prompt": "The image features a cartoon-style yellow chick with orange feet and beak, depicted standing upright with its head turned slightly to the side. The chick has a large circular body, a small triangular tail, and two small, distinct feet with three toes each. Three small yellow footprints are positioned in front of the chick, indicating movement. The background is plain white, emphasizing the bright and simple design of the chick.",
+        "gt_score": 0.2237,
+        "gen_score": 0.2062,
+        "margin": 0.0175,
+        "bon_reward": 0.4783,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/c2e77f9aec573e23c43130246c3e717f-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/c2e77f9aec573e23c43130246c3e717f-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.214,
+            "gen": 0.2282,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.9209,
+            "gen": 22.2083,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 27.1445,
+            "gen": 27.6851,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -0.6736,
+            "gen": -1.1576,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 5.224,
+            "gen": 5.3834,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2237,
+          "gen": 0.2062,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "a24908eb4e9fe4421827b3f7f99a5abf",
+        "prompt": "The image shows a black-and-white icon depicting a person sitting on an inflatable ring floating on water. The person is represented by simple shapes, including a circular head with a dot for an eye, a curved line for the body, and two lines for arms extending outward. Below the person, there are wavy horizontal lines representing water, all set against a white background.",
+        "gt_score": 0.1963,
+        "gen_score": 0.18,
+        "margin": 0.0162,
+        "bon_reward": 0.4569,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/a24908eb4e9fe4421827b3f7f99a5abf-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/a24908eb4e9fe4421827b3f7f99a5abf-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.127,
+            "gen": 0.2032,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 19.6797,
+            "gen": 24.4503,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 20.4541,
+            "gen": 36.5717,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -2.0178,
+            "gen": 0.5244,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7762,
+            "gen": 5.2693,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1963,
+          "gen": 0.18,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "e0dc914f53d5e0aea0ec3cbd2e84e157",
+        "prompt": "An illustration of a person with short orange hair wearing a light blue checkered shirt over a white undershirt, holding a green rectangular box with a white label in one hand. The person is standing behind an orange shopping basket with black handles. The background is white, and the illustration uses simple line art with flat colors.",
+        "gt_score": 0.205,
+        "gen_score": 0.1887,
+        "margin": 0.0162,
+        "bon_reward": 0.4882,
+        "color_words": 5,
+        "gt_thumb": "assets/hps-omnisvg-renders/e0dc914f53d5e0aea0ec3cbd2e84e157-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/e0dc914f53d5e0aea0ec3cbd2e84e157-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2052,
+            "gen": 0.2066,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.8486,
+            "gen": 19.7695,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 25.2921,
+            "gen": 24.9868,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -0.0632,
+            "gen": 0.7144,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.2545,
+            "gen": 5.0416,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.205,
+          "gen": 0.1887,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "87b72e16952d250e1f9b25420d4ed2b4",
+        "prompt": "The image features a single black line drawing of a person standing on a light blue hill against a darker blue background. The person casts a large shadow behind them, also depicted in black. The overall composition includes a simple silhouette with no facial or anatomical details, emphasizing the contrast between the figure, its shadow, and the background.",
+        "gt_score": 0.1875,
+        "gen_score": 0.1725,
+        "margin": 0.015,
+        "bon_reward": 0.4538,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/87b72e16952d250e1f9b25420d4ed2b4-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/87b72e16952d250e1f9b25420d4ed2b4-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1954,
+            "gen": 0.1969,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.9015,
+            "gen": 20.9148,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 31.2093,
+            "gen": 31.9562,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": 0.8851,
+            "gen": 0.713,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.9713,
+            "gen": 4.9933,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1875,
+          "gen": 0.1725,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "aff3c8716ed033864713285862704913",
+        "prompt": "The image features a stylized representation of the number '10' within a pastel pink circular frame. The left side displays a vibrant red '1' adorned with three red berries, each with a small green leafy stem, and two green oak leaves at its base. On the right side, the number '0' is depicted in a light orange hue with a large circular eye in the center, consisting of a dark gray pupil and white highlights. The background includes scattered white stars, adding a whimsical touch to the overall design.",
+        "gt_score": 0.1912,
+        "gen_score": 0.1762,
+        "margin": 0.015,
+        "bon_reward": 0.4956,
+        "color_words": 7,
+        "gt_thumb": "assets/hps-omnisvg-renders/aff3c8716ed033864713285862704913-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/aff3c8716ed033864713285862704913-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1872,
+            "gen": 0.1909,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.2869,
+            "gen": 20.7505,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 17.7631,
+            "gen": 28.1763,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.6742,
+            "gen": 0.7009,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.8876,
+            "gen": 4.7043,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1912,
+          "gen": 0.1762,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "77091d428f0a6676df02c3e84cef8cb0",
+        "prompt": "The image features a bright lime-green, cartoonish creature with two large, bulging black eyes with white pupils, sitting upright on a gray surface against a white background. The creature has a round, smooth body with small, scattered yellow spots across it, and two long, thin antennae extending upward from its head. It has two short, stubby legs positioned beneath its body, supporting its upright posture.",
+        "gt_score": 0.2313,
+        "gen_score": 0.2175,
+        "margin": 0.0138,
+        "bon_reward": 0.4807,
+        "color_words": 5,
+        "gt_thumb": "assets/hps-omnisvg-renders/77091d428f0a6676df02c3e84cef8cb0-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/77091d428f0a6676df02c3e84cef8cb0-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2276,
+            "gen": 0.2394,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.5231,
+            "gen": 22.7623,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 27.8871,
+            "gen": 23.6115,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -0.2291,
+            "gen": 0.0759,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.3113,
+            "gen": 4.7716,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2313,
+          "gen": 0.2175,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "0bb57164df04ac6c7d00e8029c39f815",
+        "prompt": "The image shows a single, simplistic design of an object resembling a turtle or similar creature. It has a light brown body with rounded edges, two small brown feet at the bottom, and a large white circle near the center representing a shell. Inside the white circle, there is a black shape with a pink tip, which appears to be a tongue sticking out. The background is completely white, emphasizing the central figure.",
+        "gt_score": 0.155,
+        "gen_score": 0.1419,
+        "margin": 0.0131,
+        "bon_reward": 0.4526,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/0bb57164df04ac6c7d00e8029c39f815-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/0bb57164df04ac6c7d00e8029c39f815-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1681,
+            "gen": 0.1857,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.2336,
+            "gen": 22.0261,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 26.6952,
+            "gen": 25.4709,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -1.6937,
+            "gen": -1.7926,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.8372,
+            "gen": 4.5209,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.155,
+          "gen": 0.1419,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "e112332b26abddc0d1fe26535711cb4d",
+        "prompt": "A cartoon-style drawing of a bright green submarine-like object with a smiling face. It has two large, circular eyes that are white with black pupils, positioned near the top front. The mouth is open, revealing red lips and sharp white teeth, situated below the eyes. Two green fins extend horizontally from the sides of the object, and a smaller green fin is located at the back right. The entire illustration is set against a plain white background.",
+        "gt_score": 0.195,
+        "gen_score": 0.1825,
+        "margin": 0.0125,
+        "bon_reward": 0.4768,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/e112332b26abddc0d1fe26535711cb4d-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/e112332b26abddc0d1fe26535711cb4d-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2078,
+            "gen": 0.2133,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.0895,
+            "gen": 21.502,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 28.9751,
+            "gen": 32.1931,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -0.2685,
+            "gen": 0.4778,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.8037,
+            "gen": 4.9674,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.195,
+          "gen": 0.1825,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "199a85f8e68a77efdb1aa9097d6fb993",
+        "prompt": "The image features black and white typography with the phrases 'ONE THING' and 'AT A TIME' arranged vertically within a rounded rectangular border. The text is bold and playful, with a hand-drawn style, set against a solid white background. The top phrase 'ONE THING' appears in a slightly smaller font compared to the bottom phrase 'AT A TIME', both enclosed within a black outline that frames the design.",
+        "gt_score": 0.2463,
+        "gen_score": 0.2338,
+        "margin": 0.0125,
+        "bon_reward": 0.4603,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/199a85f8e68a77efdb1aa9097d6fb993-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/199a85f8e68a77efdb1aa9097d6fb993-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2449,
+            "gen": 0.2581,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 19.726,
+            "gen": 19.9739,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 37.7919,
+            "gen": 36.5953,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": 0.0329,
+            "gen": 0.6167,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.2519,
+            "gen": 4.9476,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2463,
+          "gen": 0.2338,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "ec55af51dceab3c54d6ddb7c52ff6509",
+        "prompt": "The image features a cartoon character with a light beige head and ears, wearing a pink hat with a white circular emblem that has two black horizontal lines. The character's face is round with large white eyes, small black pupils, and a slightly open mouth revealing a pink tongue. A banana, depicted in bright yellow with dark brown spots and a pink blush, is positioned to the left of the character’s head. The background is completely white, emphasizing the colorful elements in the foreground.",
+        "gt_score": 0.1937,
+        "gen_score": 0.1813,
+        "margin": 0.0125,
+        "bon_reward": 0.4943,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/ec55af51dceab3c54d6ddb7c52ff6509-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/ec55af51dceab3c54d6ddb7c52ff6509-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1951,
+            "gen": 0.1964,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.2482,
+            "gen": 21.6242,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 27.6725,
+            "gen": 29.8843,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.701,
+            "gen": -0.4688,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.9983,
+            "gen": 4.6041,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1937,
+          "gen": 0.1813,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "561416e2bb8ae1f84a6f63f5c0a26a42",
+        "prompt": "An abstract illustration features a wooden texture pattern composed of beige and light brown vertical lines and curves against a pure white background. The lines vary in thickness and curvature, creating a natural, uneven appearance that mimics wood grain. The pattern occupies the entire visible area, extending from edge to edge with no additional elements present.",
+        "gt_score": 0.2387,
+        "gen_score": 0.2275,
+        "margin": 0.0112,
+        "bon_reward": 0.4703,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/561416e2bb8ae1f84a6f63f5c0a26a42-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/561416e2bb8ae1f84a6f63f5c0a26a42-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.215,
+            "gen": 0.2154,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.101,
+            "gen": 21.9491,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 29.0832,
+            "gen": 25.1804,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -1.2444,
+            "gen": -0.3599,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.1913,
+            "gen": 5.173,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2387,
+          "gen": 0.2275,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "e41d29586fc5f3893eb6c5553d4b0fba",
+        "prompt": "The image features a cartoon pig's head centered against a white background. The pig has a gray body, two brown eyes with black pupils, small brown inner ears, and one large yellow outer ear. It has a pink snout and two pink circles near its cheeks, possibly representing blushing or spots. Above the pig, there are three vertical black lines indicating motion or energy. The overall design is simple and stylized, with bold outlines and solid colors.",
+        "gt_score": 0.1863,
+        "gen_score": 0.1787,
+        "margin": 0.0075,
+        "bon_reward": 0.4886,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/e41d29586fc5f3893eb6c5553d4b0fba-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/e41d29586fc5f3893eb6c5553d4b0fba-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1894,
+            "gen": 0.2002,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.2692,
+            "gen": 21.5659,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 23.9529,
+            "gen": 29.9121,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.9292,
+            "gen": -1.346,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7471,
+            "gen": 4.7232,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1863,
+          "gen": 0.1787,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "058040bfa78362786f083adabf8009d9",
+        "prompt": "An illustration features a stylized, light green creature with a round body and simple facial features, including a dark brown eye, a pink nose, and a small brown mouth. The creature has five black dots along its head as decorative elements. It is holding a curved, brown object near its face with one hand. The background consists of a gradient of warm yellow tones, resembling a sunset scene with soft, pastel waves in shades of beige and pink, positioned behind the creature.",
+        "gt_score": 0.1912,
+        "gen_score": 0.1838,
+        "margin": 0.0075,
+        "bon_reward": 0.4665,
+        "color_words": 7,
+        "gt_thumb": "assets/hps-omnisvg-renders/058040bfa78362786f083adabf8009d9-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/058040bfa78362786f083adabf8009d9-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1922,
+            "gen": 0.1991,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.1852,
+            "gen": 21.3225,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 21.8011,
+            "gen": 23.7917,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -0.2467,
+            "gen": -1.4352,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 5.2148,
+            "gen": 4.8132,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1912,
+          "gen": 0.1838,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "2222469d885cb827cc66a15df3dfee40",
+        "prompt": "An illustration of a stylized tiger-like creature with an orange head and body, black stripes, and white facial features. The creature has two small, round ears with white inner circles, and its face displays bold black markings, including a vertical stripe down the middle and a horizontal line as part of its mouth. The tiger's body is mostly orange, with one visible leg showing orange fur and black stripes. The background is completely white.",
+        "gt_score": 0.18,
+        "gen_score": 0.1725,
+        "margin": 0.0075,
+        "bon_reward": 0.4905,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/2222469d885cb827cc66a15df3dfee40-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/2222469d885cb827cc66a15df3dfee40-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1876,
+            "gen": 0.1971,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.7881,
+            "gen": 21.1122,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 28.0366,
+            "gen": 31.7766,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.518,
+            "gen": 0.0939,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.6881,
+            "gen": 4.9631,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.18,
+          "gen": 0.1725,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "24c436fff473bec703fa4952fe1d62bd",
+        "prompt": "The image features a minimalist design with a circular clock in the center, outlined in dark brown, and a beige face with brown hour and minute hands pointing to 'ten past ten.' Below the clock, the phrase 'START TODAY' is written in large, peach-colored, sans-serif font. The entire composition is set against a plain white background.",
+        "gt_score": 0.2125,
+        "gen_score": 0.205,
+        "margin": 0.0075,
+        "bon_reward": 0.482,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/24c436fff473bec703fa4952fe1d62bd-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/24c436fff473bec703fa4952fe1d62bd-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2225,
+            "gen": 0.2254,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.7082,
+            "gen": 22.383,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 24.5863,
+            "gen": 29.427,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -0.888,
+            "gen": -0.85,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.1395,
+            "gen": 4.9865,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2125,
+          "gen": 0.205,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "b40851e9e734aac624f36129525ee2d2",
+        "prompt": "The image features two cartoonish characters with distinct designs: one character is beige with large, expressive eyes and a slightly open mouth, while the other character is predominantly green and blue with pink flames above its head. The green and blue character has a circular body with a light blue outline, pink cheeks, and a simple facial expression. The beige character is positioned to the left and slightly behind the green and blue character, which is centered and more prominent in the image.",
+        "gt_score": 0.19,
+        "gen_score": 0.1825,
+        "margin": 0.0075,
+        "bon_reward": 0.4751,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/b40851e9e734aac624f36129525ee2d2-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/b40851e9e734aac624f36129525ee2d2-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1959,
+            "gen": 0.2031,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.0314,
+            "gen": 21.2576,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 25.9124,
+            "gen": 24.3394,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -1.6168,
+            "gen": -1.8075,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7307,
+            "gen": 4.7519,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.19,
+          "gen": 0.1825,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "ade9d347e8346f8b3cae199d39b44ce4",
+        "prompt": "A circular emoji-like illustration featuring a yellow face with fiery red eyes, thin black eyebrows, a small curved black mouth, and a white paw-like hand holding the bottom of the face. The background consists of concentric circles with distinct color gradients, including soft pinks and corals, surrounding the central yellow face. The overall design is stylized and cartoonish, with smooth, rounded edges and minimalistic features.",
+        "gt_score": 0.2075,
+        "gen_score": 0.2013,
+        "margin": 0.0062,
+        "bon_reward": 0.4549,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/ade9d347e8346f8b3cae199d39b44ce4-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/ade9d347e8346f8b3cae199d39b44ce4-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2197,
+            "gen": 0.2298,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.5568,
+            "gen": 20.9247,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 22.5986,
+            "gen": 30.5942,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -0.6599,
+            "gen": -1.0596,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.7381,
+            "gen": 4.8367,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2075,
+          "gen": 0.2013,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "6165c6112461b78e254748f92c69edf2",
+        "prompt": "The image features a colorful logo design with elements including a large green plus sign (+), blue squiggly lines to the left, a light blue 'C' shape to the right, a small red dot near the top-right corner, and abstract shapes in beige, light gray, and dark gray at the bottom. The design elements are scattered across a white background, with some overlapping and positioned diagonally from top-left to bottom-right.",
+        "gt_score": 0.1506,
+        "gen_score": 0.145,
+        "margin": 0.0056,
+        "bon_reward": 0.4448,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/6165c6112461b78e254748f92c69edf2-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/6165c6112461b78e254748f92c69edf2-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1483,
+            "gen": 0.166,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 18.2943,
+            "gen": 19.8137,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 15.0195,
+            "gen": 22.6177,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.3178,
+            "gen": -1.026,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.9533,
+            "gen": 4.8855,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1506,
+          "gen": 0.145,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "34c6d1fc832306ff5ab02177f5be3414",
+        "prompt": "An illustration featuring a cartoon-style lime character wearing an orange sombrero with yellow and pink decorative patterns, placed above a pink rectangular frame with a white inner section. The lime has black eyebrows, a black mustache, and a wide smile with white teeth, surrounded by small green sparkles indicating motion. The background is plain white.",
+        "gt_score": 0.175,
+        "gen_score": 0.17,
+        "margin": 0.005,
+        "bon_reward": 0.4897,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/34c6d1fc832306ff5ab02177f5be3414-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/34c6d1fc832306ff5ab02177f5be3414-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1802,
+            "gen": 0.1899,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.6553,
+            "gen": 20.3999,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 30.7999,
+            "gen": 27.4751,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -0.2248,
+            "gen": -0.1753,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.0908,
+            "gen": 4.9459,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.175,
+          "gen": 0.17,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "7697ffd8fba5265626d4d68b4a9f4753",
+        "prompt": "The image showcases five distinct electronic components arranged horizontally against a plain white background. From left to right, there is one orange cylindrical capacitor, one black cylindrical capacitor, one blue disk-shaped capacitor with a yellow band, one gray rectangular component with black and white markings, and one taller gray rectangular component with a black section and a white triangular marking. Each component has metallic leads extending downward.",
+        "gt_score": 0.1825,
+        "gen_score": 0.1787,
+        "margin": 0.0038,
+        "bon_reward": 0.5001,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/7697ffd8fba5265626d4d68b4a9f4753-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/7697ffd8fba5265626d4d68b4a9f4753-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1871,
+            "gen": 0.2032,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.8933,
+            "gen": 23.0693,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 33.9115,
+            "gen": 32.5318,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -1.6858,
+            "gen": -1.3018,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.0098,
+            "gen": 5.1594,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1825,
+          "gen": 0.1787,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "cadedd23c1a8697900fb24a76f61c1e2",
+        "prompt": "An orange cartoon character with arms crossed is positioned centrally, surrounded by a large purple circular shape. Above the character's head, there are three light purple bubble-like shapes. The character has black hair tied into a small ponytail at the back of the head, two orange spots on the cheeks, and a small orange question mark on the forehead. The background is entirely white, providing high contrast to the colorful elements.",
+        "gt_score": 0.2262,
+        "gen_score": 0.2225,
+        "margin": 0.0037,
+        "bon_reward": 0.4454,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/cadedd23c1a8697900fb24a76f61c1e2-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/cadedd23c1a8697900fb24a76f61c1e2-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2356,
+            "gen": 0.2454,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.7301,
+            "gen": 21.3711,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 22.9976,
+            "gen": 27.0405,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": 0.958,
+            "gen": -0.2944,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 5.1628,
+            "gen": 4.7537,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2262,
+          "gen": 0.2225,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "a78f200754ac503f4fd60343baeed3ba",
+        "prompt": "An animated character wearing a light purple shirt, dark pants, and blue shoes is skiing on orange skis against a white background. The character has long, flowing light blue hair, a pink face with black eyebrows and expressive eyes, and is holding two black ski poles with circular tops. The character appears to be sliding down a slope, with some light blue motion lines indicating movement.",
+        "gt_score": 0.1625,
+        "gen_score": 0.1587,
+        "margin": 0.0037,
+        "bon_reward": 0.4867,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/a78f200754ac503f4fd60343baeed3ba-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/a78f200754ac503f4fd60343baeed3ba-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1689,
+            "gen": 0.1779,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 19.7,
+            "gen": 19.4448,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 30.4547,
+            "gen": 28.8906,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -1.6364,
+            "gen": -0.1607,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.3415,
+            "gen": 5.2999,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1625,
+          "gen": 0.1587,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "85e01bb0ecace8e6075484c7be9e25e7",
+        "prompt": "An illustration features a cartoon monkey with closed eyes marked by 'X's, peach-colored cheeks, and fluffy purple fur sitting atop a gray rock formation. The monkey is surrounded by a light blue, wavy background with scattered white clouds and colorful geometric shapes, including a pink triangle, yellow half-circle, orange diamond, and green teardrop. The scene includes various small gray circles and a smaller white cloud near the monkey's feet.",
+        "gt_score": 0.1975,
+        "gen_score": 0.1963,
+        "margin": 0.0012,
+        "bon_reward": 0.5239,
+        "color_words": 8,
+        "gt_thumb": "assets/hps-omnisvg-renders/85e01bb0ecace8e6075484c7be9e25e7-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/85e01bb0ecace8e6075484c7be9e25e7-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2006,
+            "gen": 0.2075,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 21.8422,
+            "gen": 20.9228,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 27.8321,
+            "gen": 29.1799,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -0.6926,
+            "gen": 0.9663,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.19,
+            "gen": 5.0689,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1975,
+          "gen": 0.1963,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "d14d5da2a7f05c30eb334c0807cce13c",
+        "prompt": "An illustration features a blackboard with white text 'ABC' and a horizontal white line below it, framed by an orange border. In front of the blackboard, there is a stylized pink dog lying down, wearing a purple collar and orange harness straps. To the right of the dog, there is a yellow ball with blue lines. The entire scene is set against a gradient background transitioning from light purple to darker purple hues, with abstract white lines forming geometric patterns in the upper-right corner.",
+        "gt_score": 0.2013,
+        "gen_score": 0.2,
+        "margin": 0.0012,
+        "bon_reward": 0.5237,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/d14d5da2a7f05c30eb334c0807cce13c-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/d14d5da2a7f05c30eb334c0807cce13c-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2053,
+            "gen": 0.2122,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.6389,
+            "gen": 20.3989,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 24.6954,
+            "gen": 33.0974,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": 0.5411,
+            "gen": 0.7451,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.0227,
+            "gen": 4.7492,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2013,
+          "gen": 0.2,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "d5f9722cbfbb0e04e47222a822198d1b",
+        "prompt": "The image features a central large blue number '9' with wavy lines, surrounded by a pink circular background. The number '9' has a pink circle in its center and is adorned with multiple yellow stars and light blue triangles scattered around it. Additionally, there are yellow curved shapes radiating outward from the bottom left and right sides of the circle. The overall design is playful and vibrant, with geometric shapes and bright colors used throughout.",
+        "gt_score": 0.1737,
+        "gen_score": 0.1725,
+        "margin": 0.0012,
+        "bon_reward": 0.4902,
+        "color_words": 3,
+        "gt_thumb": "assets/hps-omnisvg-renders/d5f9722cbfbb0e04e47222a822198d1b-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/d5f9722cbfbb0e04e47222a822198d1b-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1908,
+            "gen": 0.193,
+            "winner": "gen"
+          },
+          "pickscore": {
+            "gt": 20.0157,
+            "gen": 20.5208,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 19.5512,
+            "gen": 27.6087,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": 1.3119,
+            "gen": 0.639,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.4955,
+            "gen": 4.666,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1737,
+          "gen": 0.1725,
+          "winner": "gt"
+        },
+        "direction": "ft_gt_pt_gen"
+      },
+      {
+        "id": "5df43aea7e33f4497fd5a6cd84e1d409",
+        "prompt": "The image features a colorful illustration of a house with a pink section on the right and a beige section on the left, both topped by a light blue roof. The house has multiple windows with orange panes, a pink door, and a chimney emitting white smoke against a deep blue sky with two white clouds. The scene is framed within a dark blue circular border, and there are small patches of green grass at the base of the house.",
+        "gt_score": 0.2313,
+        "gen_score": 0.2475,
+        "margin": -0.0162,
+        "bon_reward": 0.5229,
+        "color_words": 6,
+        "gt_thumb": "assets/hps-omnisvg-renders/5df43aea7e33f4497fd5a6cd84e1d409-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/5df43aea7e33f4497fd5a6cd84e1d409-generated.png",
+        "tags": [],
+        "model_prefers": "generated",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2406,
+            "gen": 0.2393,
+            "winner": "gt"
+          },
+          "pickscore": {
+            "gt": 21.3395,
+            "gen": 21.4295,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 31.0885,
+            "gen": 29.9757,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": 0.4123,
+            "gen": -0.5787,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.9575,
+            "gen": 5.1593,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2313,
+          "gen": 0.2475,
+          "winner": "gen"
+        },
+        "direction": "ft_gen_pt_gt"
+      },
+      {
+        "id": "fb52ea6e0396935c8e5f3932e17c43ac",
+        "prompt": "The image features a bright yellow rectangular box with a light peach-colored star-shaped tag labeled 'SOLD' in bold red letters. The tag has small white dots along its edges, giving it a dotted outline effect. Three small golden stars, one positioned to the left, one above, and one to the right of the tag, surround the tag. A black circular tag holder is attached to the top edge of the star tag. The background is completely white, emphasizing the vibrant colors and shapes within the image.",
+        "gt_score": 0.1912,
+        "gen_score": 0.1963,
+        "margin": -0.005,
+        "bon_reward": 0.486,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/fb52ea6e0396935c8e5f3932e17c43ac-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/fb52ea6e0396935c8e5f3932e17c43ac-generated.png",
+        "tags": [],
+        "model_prefers": "generated",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2235,
+            "gen": 0.2228,
+            "winner": "gt"
+          },
+          "pickscore": {
+            "gt": 21.141,
+            "gen": 21.2412,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 22.2712,
+            "gen": 29.6942,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": 0.5542,
+            "gen": 0.7328,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.9225,
+            "gen": 4.7845,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1912,
+          "gen": 0.1963,
+          "winner": "gen"
+        },
+        "direction": "ft_gen_pt_gt"
+      },
+      {
+        "id": "92fefd579d00187d9c4d579b8750afcd",
+        "prompt": "The image shows a cartoon-style church icon with a beige exterior outlined in dark maroon, featuring a turquoise rectangular door at the center, two square windows with yellow panes flanking it, a red circular window above the door, and a teal cross atop a pointed roof with a white triangular section at the peak. The background is transparent.",
+        "gt_score": 0.205,
+        "gen_score": 0.21,
+        "margin": -0.005,
+        "bon_reward": 0.514,
+        "color_words": 7,
+        "gt_thumb": "assets/hps-omnisvg-renders/92fefd579d00187d9c4d579b8750afcd-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/92fefd579d00187d9c4d579b8750afcd-generated.png",
+        "tags": [],
+        "model_prefers": "generated",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.231,
+            "gen": 0.2305,
+            "winner": "gt"
+          },
+          "pickscore": {
+            "gt": 22.229,
+            "gen": 21.6557,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 24.856,
+            "gen": 30.9663,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.2791,
+            "gen": 0.6736,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.5991,
+            "gen": 4.875,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.205,
+          "gen": 0.21,
+          "winner": "gen"
+        },
+        "direction": "ft_gen_pt_gt"
+      },
+      {
+        "id": "87bdf8fb9988d6fc7f2284d783989f06",
+        "prompt": "A fan-shaped object composed of three distinct rectangular sections, each with a unique color and texture, arranged in a semi-circular pattern against a white background. The leftmost section is white with a dark red border, the middle section is yellow with orange radial lines, and the rightmost section is red with small white dots, forming a cohesive design.",
+        "gt_score": 0.1594,
+        "gen_score": 0.1625,
+        "margin": -0.0031,
+        "bon_reward": 0.4714,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/87bdf8fb9988d6fc7f2284d783989f06-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/87bdf8fb9988d6fc7f2284d783989f06-generated.png",
+        "tags": [],
+        "model_prefers": "generated",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.1764,
+            "gen": 0.1763,
+            "winner": "gt"
+          },
+          "pickscore": {
+            "gt": 21.1343,
+            "gen": 20.6452,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 27.024,
+            "gen": 21.3558,
+            "winner": "gt"
+          },
+          "imagereward": {
+            "gt": -0.7401,
+            "gen": -1.4246,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 4.8542,
+            "gen": 4.7378,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1594,
+          "gen": 0.1625,
+          "winner": "gen"
+        },
+        "direction": "ft_gen_pt_gt"
+      },
+      {
+        "id": "ead9a00ec007e539291fcee31323d77b",
+        "prompt": "An animated character resembling a smartphone with a blue rectangular body, a pink hat labeled 'NEWS', two megaphones (one orange and one pink), and expressive facial features, including black eyes, a wide-open mouth showing pink tongue and white teeth, and curved eyebrows. The character has blue limbs holding the megaphones, which are positioned symmetrically on either side of its head.",
+        "gt_score": 0.2,
+        "gen_score": 0.2025,
+        "margin": -0.0025,
+        "bon_reward": 0.5048,
+        "color_words": 5,
+        "gt_thumb": "assets/hps-omnisvg-renders/ead9a00ec007e539291fcee31323d77b-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/ead9a00ec007e539291fcee31323d77b-generated.png",
+        "tags": [],
+        "model_prefers": "generated",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2222,
+            "gen": 0.2175,
+            "winner": "gt"
+          },
+          "pickscore": {
+            "gt": 21.7542,
+            "gen": 21.2758,
+            "winner": "gt"
+          },
+          "clipscore": {
+            "gt": 25.6494,
+            "gen": 29.1047,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": 1.2403,
+            "gen": 0.5861,
+            "winner": "gt"
+          },
+          "laion_aesthetic": {
+            "gt": 5.4602,
+            "gen": 5.1091,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.2,
+          "gen": 0.2025,
+          "winner": "gen"
+        },
+        "direction": "ft_gen_pt_gt"
+      },
+      {
+        "id": "d5ddaf420f76bca589a49e4753dd1c4a",
+        "prompt": "The image features three pink cherry-like fruits arranged in a triangular formation, with one partially obscured behind the others. A yellow and white ladybug-like character is positioned in the center of the arrangement, facing outward. Surrounding the cherries and the ladybug are four yellow stars, each located at different points around the edges of the image. Two red squiggly lines are present, one in the top left corner and another in the bottom right corner. The overall background is white.",
+        "gt_score": 0.1762,
+        "gen_score": 0.1775,
+        "margin": -0.0012,
+        "bon_reward": 0.4834,
+        "color_words": 4,
+        "gt_thumb": "assets/hps-omnisvg-renders/d5ddaf420f76bca589a49e4753dd1c4a-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/d5ddaf420f76bca589a49e4753dd1c4a-generated.png",
+        "tags": [],
+        "model_prefers": "generated",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.2082,
+            "gen": 0.1814,
+            "winner": "gt"
+          },
+          "pickscore": {
+            "gt": 20.7127,
+            "gen": 20.91,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 21.9765,
+            "gen": 29.0152,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -1.1113,
+            "gen": -0.6401,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 5.0512,
+            "gen": 4.8285,
+            "winner": "gt"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1762,
+          "gen": 0.1775,
+          "winner": "gen"
+        },
+        "direction": "ft_gen_pt_gt"
+      },
+      {
+        "id": "a5d6e7458a717e2dd46e9b6117ec1c20",
+        "prompt": "A stylized illustration of a purple character with large, curved horns protruding from its head, standing upright with its arms positioned in a dramatic gesture. The character has a flowing, triangular shape for its body, adorned with various purple decorative elements such as swirls and lines. A darker purple belt cinches the waist, and the overall figure is set against a plain white background.",
+        "gt_score": 0.1419,
+        "gen_score": 0.1419,
+        "margin": 0.0,
+        "bon_reward": 0.4957,
+        "color_words": 2,
+        "gt_thumb": "assets/hps-omnisvg-renders/a5d6e7458a717e2dd46e9b6117ec1c20-ground_truth.png",
+        "gen_thumb": "assets/hps-omnisvg-renders/a5d6e7458a717e2dd46e9b6117ec1c20-generated.png",
+        "tags": [],
+        "model_prefers": "ground_truth",
+        "metric_scores": {
+          "hpsv21": {
+            "gt": 0.166,
+            "gen": 0.1623,
+            "winner": "gt"
+          },
+          "pickscore": {
+            "gt": 19.3043,
+            "gen": 19.3935,
+            "winner": "gen"
+          },
+          "clipscore": {
+            "gt": 23.3332,
+            "gen": 25.9571,
+            "winner": "gen"
+          },
+          "imagereward": {
+            "gt": -0.4713,
+            "gen": -0.2365,
+            "winner": "gen"
+          },
+          "laion_aesthetic": {
+            "gt": 4.2674,
+            "gen": 5.019,
+            "winner": "gen"
+          }
+        },
+        "finetuned_hps": {
+          "gt": 0.1419,
+          "gen": 0.1419,
+          "winner": "gen"
+        },
+        "direction": "ft_gen_pt_gt"
+      }
+    ]
+  }
 }

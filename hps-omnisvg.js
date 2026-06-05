@@ -150,6 +150,56 @@ function renderScoreTable(c) {
   `;
 }
 
+function renderDisagreementCard(c) {
+  const ms = c.metric_scores || {};
+  const ft = c.finetuned_hps;
+  const pt = ms.hpsv21;
+  const order = ["pickscore", "clipscore", "imagereward", "laion_aesthetic"];
+  const ftGtWin = ft.winner === "gt";
+  // both HPS rows first (the disagreement), then the other metrics for context
+  const rows = [
+    scoreTableRow("Fine-tuned HPS", ft.gt, ft.gen, 3, { lead: true }),
+    pt ? scoreTableRow("Pretrained HPSv2.1", pt.gt, pt.gen, 3, { lead: true }) : "",
+  ];
+  for (const id of order) {
+    if (ms[id]) rows.push(scoreTableRow(METRIC_LABELS[id], ms[id].gt, ms[id].gen, METRIC_DECIMALS[id]));
+  }
+  const headline = ftGtWin
+    ? `Fine-tuned picks <b class="gt-txt">GT</b>, pretrained picks <b class="gen-txt">GEN</b>`
+    : `Fine-tuned picks <b class="gen-txt">GEN</b>, pretrained picks <b class="gt-txt">GT</b>`;
+  const sub = ftGtWin
+    ? "Fine-tuning recovered the human reference the base model missed."
+    : "Rare regression: fine-tuning moved away from the human reference.";
+  return `
+    <article class="case ${ftGtWin ? "" : "miss"}" data-dir="${escapeHtml(c.direction)}">
+      <div class="case-imgs">
+        <figure class="${ftGtWin ? "win" : ""}">
+          <figcaption>GT</figcaption>
+          <img src="${escapeHtml(c.gt_thumb)}" alt="ground truth ${escapeHtml(c.id)}" loading="lazy" />
+        </figure>
+        <figure class="${ftGtWin ? "" : "win"}">
+          <figcaption>GEN</figcaption>
+          <img src="${escapeHtml(c.gen_thumb)}" alt="generated ${escapeHtml(c.id)}" loading="lazy" />
+        </figure>
+      </div>
+      <div class="case-body">
+        <div class="verdict ${ftGtWin ? "" : "miss"}">
+          <span>${headline}</span>
+          <small>${escapeHtml(sub)}</small>
+        </div>
+        <table class="case-scores">
+          <thead><tr><th>metric</th><th>GT</th><th>GEN</th></tr></thead>
+          <tbody>${rows.join("")}</tbody>
+        </table>
+        <p class="case-prompt">${escapeHtml(c.prompt)}</p>
+        <div class="tags">
+          <span class="tag">${escapeHtml(c.color_words)} color words</span>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
 function renderCase(c) {
   const gtWin = c.margin > 0;
   const ms = c.metric_scores || {};
@@ -304,6 +354,34 @@ function renderMethod(d) {
   return items.map((i) => `<li>${i}</li>`).join("");
 }
 
+function renderDisagreements(dis) {
+  const summary = document.getElementById("disagree-summary");
+  const grid = document.getElementById("disagree-cases");
+  if (!dis || !dis.cards?.length) {
+    if (summary) summary.innerHTML = "<p class='muted'>No disagreement data available.</p>";
+    return;
+  }
+  summary.innerHTML = `
+    <div class="stat"><strong>${dis.n}</strong><span>total disagreements</span><small>out of 1,000 prompts</small></div>
+    <div class="stat"><strong>${dis.n_finetuned_gt_pretrained_gen}</strong><span>Fine-tuned → GT, base → GEN</span><small>fine-tuning recovered the reference</small></div>
+    <div class="stat"><strong>${dis.n_finetuned_gen_pretrained_gt}</strong><span>Fine-tuned → GEN, base → GT</span><small>rare regressions</small></div>
+  `;
+  const draw = (filter) => {
+    grid.innerHTML = dis.cards
+      .filter((c) => filter === "all" || c.direction === filter)
+      .map(renderDisagreementCard)
+      .join("");
+  };
+  draw("all");
+  document.querySelectorAll(".disagree-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll(".disagree-chip").forEach((x) => x.classList.remove("active"));
+      chip.classList.add("active");
+      draw(chip.dataset.filter);
+    });
+  });
+}
+
 function wireFilters() {
   const chips = document.querySelectorAll(".chip");
   chips.forEach((chip) => {
@@ -333,6 +411,7 @@ async function main() {
     sliceTable("By prompt length", d.by_prompt_length, "length");
   document.getElementById("downloads").innerHTML = renderDownloads(d.raw_scores);
   document.getElementById("cases").innerHTML = d.examples.map(renderCase).join("");
+  renderDisagreements(d.disagreements);
   document.getElementById("method-list").innerHTML = renderMethod(d);
   wireFilters();
   renderScoresPreview(d.raw_scores);

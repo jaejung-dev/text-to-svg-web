@@ -129,33 +129,80 @@ def curate(results: list[dict], multimetric: dict[str, dict]) -> list[dict]:
         gen_thumb = make_thumb(rec["id"], "generated")
         if not gt_thumb or not gen_thumb:
             continue
-        mm = multimetric.get(rec["id"], {})
-        metric_scores = {}
-        for m in METRIC_IDS:
-            if mm.get("gt") and mm.get("gen"):
-                gt_v = mm["gt"][m]
-                gen_v = mm["gen"][m]
-                metric_scores[m] = {
-                    "gt": round(gt_v, 4),
-                    "gen": round(gen_v, 4),
-                    "winner": "gt" if gt_v > gen_v else "gen",
-                }
-        cards.append({
-            "id": rec["id"],
-            "prompt": rec["prompt"],
-            "gt_score": round(rec["gt_score"], 4),
-            "gen_score": round(rec["gen_score"], 4),
-            "margin": round(rec["margin_gt_minus_gen"], 4),
-            "bon_reward": round(rec["bon_reward"], 4) if rec.get("bon_reward") is not None else None,
-            "color_words": color_count(rec["prompt"]),
-            "gt_thumb": gt_thumb,
-            "gen_thumb": gen_thumb,
-            "tags": rec["tags"],
-            "model_prefers": "generated" if rec["margin_gt_minus_gen"] < 0 else "ground_truth",
-            "metric_scores": metric_scores,
-        })
+        card = build_card(rec, multimetric, gt_thumb, gen_thumb)
+        card["tags"] = rec["tags"]
+        cards.append(card)
     cards.sort(key=lambda c: c["margin"])
     return cards
+
+
+def build_card(rec: dict, multimetric: dict, gt_thumb: str, gen_thumb: str) -> dict:
+    mm = multimetric.get(rec["id"], {})
+    metric_scores = {}
+    for m in METRIC_IDS:
+        if mm.get("gt") and mm.get("gen"):
+            gt_v = mm["gt"][m]
+            gen_v = mm["gen"][m]
+            metric_scores[m] = {
+                "gt": round(gt_v, 4),
+                "gen": round(gen_v, 4),
+                "winner": "gt" if gt_v > gen_v else "gen",
+            }
+    return {
+        "id": rec["id"],
+        "prompt": rec["prompt"],
+        "gt_score": round(rec["gt_score"], 4),
+        "gen_score": round(rec["gen_score"], 4),
+        "margin": round(rec["margin_gt_minus_gen"], 4),
+        "bon_reward": round(rec["bon_reward"], 4) if rec.get("bon_reward") is not None else None,
+        "color_words": color_count(rec["prompt"]),
+        "gt_thumb": gt_thumb,
+        "gen_thumb": gen_thumb,
+        "tags": [],
+        "model_prefers": "generated" if rec["margin_gt_minus_gen"] < 0 else "ground_truth",
+        "metric_scores": metric_scores,
+    }
+
+
+def disagreements(results: list[dict], multimetric: dict[str, dict]) -> dict:
+    """Cards where fine-tuned HPS and pretrained HPSv2.1 disagree on GT vs GEN."""
+    by_id = {r["id"]: r for r in results}
+    cards = []
+    n_ft_gt = 0  # fine-tuned prefers GT, pretrained prefers GEN
+    n_ft_gen = 0  # fine-tuned prefers GEN, pretrained prefers GT
+    for rec in results:
+        mm = multimetric.get(rec["id"])
+        if not mm or not mm.get("gt") or not mm.get("gen"):
+            continue
+        ft_gt_wins = rec["gt_score"] > rec["gen_score"]
+        pt_gt_wins = mm["gt"]["hpsv21"] > mm["gen"]["hpsv21"]
+        if ft_gt_wins == pt_gt_wins:
+            continue
+        gt_thumb = make_thumb(rec["id"], "ground_truth")
+        gen_thumb = make_thumb(rec["id"], "generated")
+        if not gt_thumb or not gen_thumb:
+            continue
+        card = build_card(rec, multimetric, gt_thumb, gen_thumb)
+        # fine-tuned HPS scores are in metric_scores? no - add explicitly
+        card["finetuned_hps"] = {
+            "gt": round(rec["gt_score"], 4),
+            "gen": round(rec["gen_score"], 4),
+            "winner": "gt" if ft_gt_wins else "gen",
+        }
+        card["direction"] = "ft_gt_pt_gen" if ft_gt_wins else "ft_gen_pt_gt"
+        if ft_gt_wins:
+            n_ft_gt += 1
+        else:
+            n_ft_gen += 1
+        cards.append(card)
+    # most informative first: fine-tuned recovers GT that pretrained missed
+    cards.sort(key=lambda c: (c["direction"] != "ft_gt_pt_gen", -abs(c["margin"])))
+    return {
+        "n": len(cards),
+        "n_finetuned_gt_pretrained_gen": n_ft_gt,
+        "n_finetuned_gen_pretrained_gt": n_ft_gen,
+        "cards": cards,
+    }
 
 
 def load_multimetric() -> dict[str, dict]:
@@ -260,6 +307,7 @@ def main() -> int:
         "bias": bias,
         "raw_scores": export_raw_scores(results, multimetric),
         "examples": curate(results, multimetric),
+        "disagreements": disagreements(results, multimetric),
     }
 
     DATA_OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -267,6 +315,10 @@ def main() -> int:
     print(f"wrote {DATA_OUT} ({len(payload['examples'])} curated cards, {n_thumbs} thumbnails)")
     print(f"wrote raw scores: {payload['raw_scores']['rows']} rows -> "
           f"{payload['raw_scores']['jsonl']} + {payload['raw_scores']['csv']}")
+    dis = payload["disagreements"]
+    print(f"disagreements: {dis['n']} cards "
+          f"(ft-GT/pt-GEN={dis['n_finetuned_gt_pretrained_gen']}, "
+          f"ft-GEN/pt-GT={dis['n_finetuned_gen_pretrained_gt']})")
     return 0
 
 

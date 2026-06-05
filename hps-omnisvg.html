@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HPS Fine-tune · OmniSVG Probe</title>
-    <link rel="stylesheet" href="hps-omnisvg.css?v=20260604-3" />
+    <link rel="stylesheet" href="hps-omnisvg.css?v=20260605-1" />
   </head>
   <body>
     <header class="hero">
       <nav class="topbar">
         <a href="index.html">Text-to-SVG Review</a>
         <a href="#metrics">5-model comparison</a>
+        <a href="#disagree">Fine-tuned vs base</a>
         <a href="#raw-data">Raw scores</a>
         <a href="model-comparison.html">Model scoreboard</a>
         <a href="multigen.html">Multi-generation</a>
@@ -115,6 +116,26 @@
         <div id="cases" class="case-grid"></div>
       </section>
 
+      <section class="band" id="disagree">
+        <div class="section-head">
+          <p class="eyebrow">Fine-tuned vs base HPS</p>
+          <h2>Where fine-tuning changed the verdict</h2>
+          <p class="muted">
+            The cases where our fine-tuned HPS and the pretrained HPSv2.1
+            <strong>disagree</strong> on ground-truth vs generated. Same score
+            layout as above — both HPS scores are shown together (highlighted),
+            with the other 4 metrics for context.
+          </p>
+        </div>
+        <div id="disagree-summary" class="headline-grid"></div>
+        <div class="case-toolbar">
+          <button class="disagree-chip active" data-filter="all">All</button>
+          <button class="disagree-chip" data-filter="ft_gt_pt_gen">Fine-tuned recovered GT</button>
+          <button class="disagree-chip" data-filter="ft_gen_pt_gt">Regressions</button>
+        </div>
+        <div id="disagree-cases" class="case-grid"></div>
+      </section>
+
       <section class="band method">
         <p class="eyebrow">Method &amp; provenance</p>
         <h2>Reproducibility</h2>
@@ -122,6 +143,6 @@
       </section>
     </main>
 
-    <script src="hps-omnisvg.js?v=20260604-3"></script>
+    <script src="hps-omnisvg.js?v=20260605-1"></script>
   </body>
 </html>
